@@ -60,6 +60,12 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   sintetizzata.
 - GitHub Pages: `docs/` su main, deploy via Actions (`configure-pages`
   con `enablement: true`). HEAD sulle immagini prima di chiamare l'API.
+- Download da Wikimedia/Flickr DAL CONTAINER: spesso rate-limitati
+  (429 robot-policy / 502). I thumbnail di Commons accettano solo
+  larghezze standard (1920px sì, 1600 no) e serve uno User-Agent con
+  contatto. Se il container è bloccato NON insistere: si usa il
+  workflow `scarica-foto.yml` (dispatch con url+dest), che scarica da
+  un runner GitHub con IP pulito e committa.
 
 ## Sessione di rifornimento schede (ricorrente)
 

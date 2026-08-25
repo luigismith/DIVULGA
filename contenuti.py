@@ -575,10 +575,7 @@ SCHEDE = [
              "data": "2026-08-25"},
         ],
         "hashtags": ["#fairlight", "#sampling", "#campionatore", "#musicaelettronica", "#anni80"],
-        # Fatti verificati il 2026-08-25, ma la foto libera non è ancora nel
-        # repo (rate limit sul download): resta False finché non c'è —
-        # la regola della foto obbligatoria vale più della coda.
-        "verificata": False,
+        "verificata": True,   # verifica 2026-08-25; foto SMEM scaricata via workflow scarica-foto
     },
 ]
 
