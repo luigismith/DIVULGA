@@ -1,0 +1,38 @@
+# ELETTROFONI — scarica una foto libera e la committa nel repo.
+# Serve quando il container di sviluppo è rate-limitato da Wikimedia/Flickr:
+# i runner GitHub hanno IP puliti. Solo lancio manuale (maintainer).
+name: Scarica foto
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'URL diretto della foto (verificare prima la licenza!)'
+        required: true
+        type: string
+      dest:
+        description: 'Percorso di destinazione nel repo (es. assets/foto/x/principale.jpg)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  scarica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scarica e committa
+        run: |
+          mkdir -p "$(dirname "${{ inputs.dest }}")"
+          curl -sSL -A "ElettrofoniBot/1.0 (+https://github.com/${{ github.repository }})" \
+            -o "${{ inputs.dest }}" "${{ inputs.url }}"
+          FILETYPE=$(file -b --mime-type "${{ inputs.dest }}")
+          echo "Scaricato: $(stat -c%s "${{ inputs.dest }}") byte, tipo $FILETYPE"
+          case "$FILETYPE" in image/*) ;; *) echo "NON è un'immagine: mi fermo"; exit 1;; esac
+          git config user.name "elettrofoni-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add "${{ inputs.dest }}"
+          git diff --cached --quiet || git commit -m "foto: ${{ inputs.dest }}"
+          git push
