@@ -139,6 +139,96 @@ SCHEDE = [
         "hashtags": ["#minimoog", "#sintetizzatore", "#musicaelettronica", "#synth", "#storiadellamusica"],
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
     },
+    {
+        "slug": "tr808",
+        "numero": 2,
+        "serie": "LE DRUM MACHINE",
+        "strumento": "Roland TR-808",
+        "anno": "1980",
+        "luogo": "Giappone",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("ANNO", "1980"),
+            ("COSTRUTTORE", "Roland"),
+            ("SUONI", "Analogici"),
+            ("LISTINO", "1.195 $"),
+        ],
+        "gancio": "Morì quando finirono i transistor difettosi",
+        "sottotitolo": "La drum machine che da flop diventò il battito dell'hip hop, della house e della trap.",
+        "la_macchina": (
+            "Nel 1980 la TR-808 sembra un errore commerciale: suoni «finti» "
+            "in un'epoca che vuole batterie vere. Fu un flop, e a metà anni "
+            "'80 si trovava nei banchi dei pegni a meno di 100 dollari. La "
+            "comprarono i ragazzi squattrinati di New York, Chicago e "
+            "Detroit: da quelle camerette uscirono l'electro, la house e la "
+            "techno. Oggi un originale supera i 4.000 dollari."
+        ),
+        "inventore_nome": "Ikutaro Kakehashi e Tadao Kikumoto",
+        "inventore": (
+            "Ikutaro Kakehashi, il fondatore di Roland, la volle; il capo "
+            "ingegnere Tadao Kikumoto la progettò. La scelta chiave fu la "
+            "sintesi analogica: niente costosi campioni digitali come la "
+            "rivale Linn LM-1 da 5.000 dollari, ma circuiti che imitano i "
+            "tamburi. Risultato: 1.195 dollari di listino."
+        ),
+        "come_funziona": (
+            "Ogni suono è generato da un circuito, non registrato: il kick è "
+            "un filtro «bridged-T» spinto a oscillare, una sinusoide smorzata "
+            "che scende di tono. Il fruscio di rullante, clap e piatti viene "
+            "invece da transistor 2SC828 FUORI SPECIFICA, scartati dalla "
+            "fabbrica: Kakehashi li comprava apposta, perché quel difetto "
+            "produceva il rumore giusto."
+        ),
+        "richiami": [
+            ("FIG. 1", "16 suoni analogici"),
+            ("FIG. 2", "Kick bridged-T"),
+            ("FIG. 3", "Sequencer a step"),
+        ],
+        "chi_lusata": [
+            # «Planet Rock» si cita come brano, accreditando il produttore:
+            # niente tag né celebrazione di Bambaataa (accuse gravissime,
+            # causa civile persa nel 2021 — regola: mai taggare figure
+            # controverse, si racconta il disco).
+            {"artista": "«Planet Rock»", "nota": "1982, prod. Arthur Baker: la pietra fondativa dell'electro", "ig": None},
+            {"artista": "Marvin Gaye", "nota": "il battito di «Sexual Healing» (1982)", "ig": None},
+            {"artista": "Whitney Houston", "nota": "«I Wanna Dance with Somebody» (1987)", "ig": None},
+            {"artista": "Kanye West", "nota": "l'omaggio nel titolo: «808s & Heartbreak» (2008)", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "rolandglobal",
+             "riga": "Oggi @rolandglobal la celebra ogni 8 agosto: è l'808 Day."},
+        ],
+        "aneddoto": (
+            "La 808 morì di qualità: il suo fruscio veniva da lotti di "
+            "transistor difettosi, e quando le fabbriche impararono a non "
+            "sbagliarne più, Roland rimase senza ricambi. Produzione chiusa "
+            "nel 1983, circa 12.000 unità. Le imitazioni digitali sono "
+            "ovunque; i difetti originali, introvabili."
+        ),
+        "battuta_dinamo": "Difettosa per la fabbrica, perfetta per tutti gli altri.",
+        "foto": {
+            "file": "assets/foto/tr808/principale.jpg",
+            "autore": "Brandon Daniel",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«The Strange Heart of the Roland TR-808» — Secret Life of Synthesizers",
+             "url": "https://secretlifeofsynthesizers.com/the-strange-heart-of-the-roland-tr-808/",
+             "data": "2026-08-25"},
+            {"titolo": "«A Brief History of the TR-808» — Smithsonian Magazine",
+             "url": "https://www.smithsonianmag.com/arts-culture/history-tr-808-drum-machine-180975205/",
+             "data": "2026-08-25"},
+            {"titolo": "«The History of the Roland TR-808» — Sweetwater",
+             "url": "https://www.sweetwater.com/insync/history-roland-808/",
+             "data": "2026-08-25"},
+            {"titolo": "Documentario «808» (2015, regia A. Dunn) — con l'intervista a Kakehashi",
+             "url": "https://en.wikipedia.org/wiki/808_(film)",
+             "data": "2026-08-25"},
+        ],
+        "hashtags": ["#tr808", "#drummachine", "#musicaelettronica", "#hiphop", "#roland"],
+        "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
+    },
 ]
 
 
