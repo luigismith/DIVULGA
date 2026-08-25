@@ -1,0 +1,31 @@
+# ELETTROFONI — verifica del setup dopo la fase 1 (lancio manuale).
+# Controlla i secrets e il token contro l'API senza mai stamparlo,
+# fa il bootstrap di token.enc e valida le schede.
+name: Verifica setup
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  verifica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Dipendenze (senza browser)
+        run: pip install requests cryptography
+      - name: Identità git
+        run: |
+          git config user.name "elettrofoni-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - name: Verifica
+        env:
+          STATE_KEY: ${{ secrets.STATE_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python verifica_setup.py

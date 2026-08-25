@@ -1,0 +1,89 @@
+# ELETTROFONI — pubblicazione automatica della prossima scheda.
+#
+# Tutta l'automazione vive qui (GitHub Actions), non in locale: il PC del
+# proprietario può restare spento una settimana e la pagina continua.
+name: Pubblica scheda
+
+on:
+  schedule:
+    # 18:00 ora italiana, lunedì-mercoledì-venerdì.
+    # ATTENZIONE: il cron di GitHub è in UTC e IGNORA l'ora legale.
+    # Con l'ora legale (CEST, UTC+2) le 18:00 sono le 16:00 UTC.
+    # >>> DAL 25 OTTOBRE 2026 (ritorno all'ora solare, CET, UTC+1) <<<
+    # >>> questo cron va cambiato in: '0 17 * * 1,3,5'            <<<
+    - cron: '0 16 * * 1,3,5'
+  workflow_dispatch: {}
+
+# Mai due pubblicazioni in parallelo (guardia anti-doppione e anti-soft-block)
+concurrency:
+  group: pubblicazione
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Dipendenze
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Identità git
+        run: |
+          git config user.name "elettrofoni-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+      - name: Controlli automatici sulle schede
+        run: python contenuti.py
+
+      - name: Genera le tavole della prossima scheda e l'archivio
+        run: |
+          python genera_tavole.py --prossima
+          python genera_archivio.py
+          git add docs
+          git diff --cached --quiet || (git commit -m "tavole: prossima scheda + archivio" && git push)
+
+      # Le immagini devono essere online PRIMA di chiamare l'API di
+      # Instagram (che scarica da URL pubblico): deploy di GitHub Pages.
+      - name: Configura Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy Pages
+        uses: actions/deploy-pages@v4
+
+      - name: Pubblica su Instagram
+        env:
+          STATE_KEY: ${{ secrets.STATE_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python pubblica.py
+
+      - name: Aggiorna l'archivio con il permalink
+        run: |
+          git pull --rebase
+          python genera_archivio.py
+          git add docs
+          git diff --cached --quiet || (git commit -m "archivio: permalink ultima scheda" && git push)
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Redeploy Pages con archivio aggiornato
+        uses: actions/deploy-pages@v4

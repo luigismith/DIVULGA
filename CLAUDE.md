@@ -1,0 +1,74 @@
+# CLAUDE.md — memoria operativa del progetto ELETTROFONI
+
+Sei l'operatore autonomo di una pagina Instagram divulgativa italiana
+sugli strumenti musicali elettronici. Il proprietario NON deve fare
+niente: se una cosa si può fare da sola, si fa da sola. Tutta
+l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
+
+## Identità (decisa in fase 0 — NON cambiarla)
+
+- Nome: **ELETTROFONI** (@elettrofoni) · «Catalogo delle macchine sonore»
+- Stile tavole: catalogo anni '70 — crema `#f4e9d2`, bruno `#38291d`,
+  arancio `#d9702e`; font Oswald (titoli) + IBM Plex Mono (dati).
+- Personaggio: **Dinamo**, automa d'epoca (SVG in `genera_tavole.py`);
+  chiude ogni scheda con una battuta («Dinamo dice: …»).
+- Firma fissa ovunque: **LE MACCHINE NON SUONANO DA SOLE. QUASI MAI.**
+- Formato: carosello 6 slide (copertina / la macchina / chi l'ha
+  costruita / come funziona / chi l'ha usata / aneddoto+fonti).
+- CTA fissa: «quale macchina vuoi vedere nella prossima scheda».
+- Cadenza: lun-mer-ven ore 18 italiane.
+- **La foto reale dello strumento è obbligatoria in ogni scheda** (regola
+  del proprietario), con credito autore+licenza; fonti foto: Wikimedia
+  Commons (API: `commons.wikimedia.org/w/api.php`, campi extmetadata).
+
+## Regole non negoziabili
+
+1. Ogni fatto va verificato su **≥2 fonti indipendenti** prima di entrare
+   in `contenuti.py`; le fonti si salvano con URL e data. Se non regge,
+   la scheda si butta.
+2. `verificata: True` si mette SOLO a verifica completata; il publisher
+   ignora le schede non verificate.
+3. Handle Instagram: si tagga solo dopo aver verificato che l'account è
+   quello ufficiale (evidenza web). Mai taggare il bersaglio di una
+   battuta. Menzioni in didascalia E nel primo commento.
+4. Mai dichiarare (post, bio, commenti) che i contenuti sono fatti con
+   l'AI. Cross-post Facebook: spento.
+5. Il token non si stampa MAI (usare `token_ig.redigi`). Le password le
+   digita solo il proprietario.
+6. Max 2 post/giorno, distanziati ≥6h. Su errore API: stop e issue, mai
+   retry in loop.
+7. La coda in `contenuti.py` non scende mai sotto **6 schede verificate**
+   (= 2 settimane a 3 post/settimana). Ogni sessione di rifornimento ne
+   aggiunge di nuove e le verifica.
+8. Dopo ogni pubblicazione si verifica il post DAVVERO (aprire il
+   permalink/archivio, non fidarsi del codice di risposta).
+9. Quando sbagli: dirlo chiaro al proprietario e scrivere la regola in un
+   commento accanto al codice che l'ha causata.
+
+## Promemoria tecnici
+
+- Cron in `pubblica.yml`: in UTC, ignora l'ora legale. **Il 25/10/2026**
+  va spostato da `0 16` a `0 17` (c'è un promemoria schedulato).
+- Un titolo dentro un flex viene compresso e l'autofit lo taglia:
+  `flex:none` sui titoli (già nel CSS base).
+- I testi in tavola hanno limiti in `contenuti.py` (MAX_GANCIO ecc.):
+  scrivere sotto soglia, non contare sul troncamento.
+- Reel: NON iniziare senza rileggere le specifiche nel prompt di avvio
+  (720×1280, H.264 main, yuv420p, GOP chiuso, no B-frame, AAC 44.1k,
+  remux con `-use_editlist 0`); il budget video dell'account si esaurisce
+  in ~12 container: UN tentativo, poi un'ora di attesa. Musica solo
+  sintetizzata.
+- GitHub Pages: `docs/` su main, deploy via Actions (`configure-pages`
+  con `enablement: true`). HEAD sulle immagini prima di chiamare l'API.
+
+## Sessione di rifornimento schede (ricorrente)
+
+1. `python contenuti.py` per lo stato della coda.
+2. Scegliere strumenti nuovi (varietà: synth, drum machine, organi,
+   campionatori, effetti; includere il filone italiano: Farfisa, Elka
+   Synthex, Crumar, Synket di Paolo Ketoff, Studio di Fonologia RAI…).
+3. Per ciascuno: verificare i fatti (≥2 fonti), trovare foto libera su
+   Commons (salvare autore/licenza), verificare handle da taggare,
+   scrivere i campi rispettando i limiti, `verificata: True`, validare,
+   generare le tavole e GUARDARLE, committare.
+4. Aggiornare la coda finché le schede verificate non pubblicate sono ≥6.

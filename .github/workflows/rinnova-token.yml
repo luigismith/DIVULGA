@@ -1,0 +1,35 @@
+# ELETTROFONI — rinnovo del token anche se la pubblicazione si ferma.
+# Il rinnovo avviene già dentro ogni run di pubblicazione; questo cron
+# settimanale è la rete di sicurezza (il token scade a 60 giorni).
+name: Rinnova token
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'   # domenica 03:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  rinnova:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install requests cryptography
+      - name: Identità git
+        run: |
+          git config user.name "elettrofoni-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - name: Rinnova se necessario
+        env:
+          STATE_KEY: ${{ secrets.STATE_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          python -c "import token_ig; token_ig.token_corrente()"
+          git add token.enc
+          git diff --cached --quiet || (git commit -m "token: rinnovo automatico" && git push)

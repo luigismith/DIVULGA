@@ -1,0 +1,23 @@
+# ELETTROFONI — controlli automatici a ogni push: una scheda fuori misura
+# si scopre in fase di scrittura, non davanti all'errore dell'API.
+name: Controlli
+
+on:
+  push: {}
+  pull_request: {}
+
+permissions:
+  contents: read
+
+jobs:
+  controlli:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compilazione
+        run: python -m py_compile contenuti.py genera_tavole.py genera_archivio.py pubblica.py token_ig.py verifica_setup.py
+      - name: Validazione schede
+        run: python contenuti.py
