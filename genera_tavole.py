@@ -136,6 +136,7 @@ def _foto_credito(scheda):
 
 def slide_copertina(scheda):
     foto_uri = (RADICE / scheda["foto"]["file"]).as_uri()
+    pos = scheda["foto"].get("posizione", "center")
     spec = "".join(
         f'<div class="spec"><div class="k">{k}</div><div class="v">{v}</div></div>'
         for k, v in scheda["specifiche"]
@@ -145,7 +146,7 @@ def slide_copertina(scheda):
 .titolone{{position:relative;z-index:1;font-size:86px}}
 .sottotitolo{{flex:none;position:relative;z-index:1;font-weight:500;font-size:29px;margin-top:12px;color:#6b5138;max-width:850px;line-height:1.3}}
 .fototel{{flex:none;position:relative;z-index:1;margin-top:30px;border-top:8px solid {BRUNO};border-bottom:8px solid {BRUNO};background:#111}}
-.fototel img{{display:block;width:100%;height:500px;object-fit:cover}}
+.fototel img{{display:block;width:100%;height:500px;object-fit:cover;object-position:{pos}}}
 .etichetta-foto{{position:absolute;left:0;bottom:8px;background:{ARANCIO};color:{BRUNO};font-family:'PlexMono';font-weight:600;font-size:15px;letter-spacing:.12em;padding:9px 16px}}
 .specifiche{{flex:none;display:flex;margin-top:30px;border:2px solid {BRUNO}}}
 .spec{{flex:1;padding:16px 20px;border-right:2px solid {BRUNO}}}
@@ -182,7 +183,7 @@ def _slide_testo(scheda, n, etichetta, titolo, testo, foto_alta=None):
 .testo{{flex:1 1 auto;font-family:'PlexMono';font-size:30px;line-height:1.62;margin-top:30px;
   overflow:hidden;max-width:940px}}
 .fotobanda{{flex:none;position:relative;margin:26px -56px 0;border-top:6px solid {BRUNO};background:#111}}
-.fotobanda img{{display:block;width:100%;height:{foto_alta or 0}px;object-fit:cover}}
+.fotobanda img{{display:block;width:100%;height:{foto_alta or 0}px;object-fit:cover;object-position:{scheda["foto"].get("posizione", "center")}}}
 """
     foto_html = ""
     if foto_alta:
