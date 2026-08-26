@@ -1,4 +1,10 @@
 {
- "pubblicati": [],
+ "pubblicati": [
+  {
+   "slug": "minimoog",
+   "quando": "2026-08-26T08:53:39.780925+00:00",
+   "media_id": "18109674947326717"
+  }
+ ],
  "ultimo_errore": null
 }
