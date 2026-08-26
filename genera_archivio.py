@@ -13,6 +13,8 @@ import contenuti
 
 RADICE = pathlib.Path(__file__).parent
 DOCS = RADICE / "docs"
+# Indirizzo pubblico dell'archivio (og:, canonical, sitemap)
+BASE = "https://luigismith.github.io/DIVULGA"
 
 FONT_LINK = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
              '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
@@ -83,10 +85,17 @@ def _piede():
     return f"""<footer>{html.escape(contenuti.FIRMA)} · <a style="color:#38291d" href="https://www.instagram.com/elettrofoni/">@elettrofoni</a></footer>"""
 
 
-def _pagina(titolo, corpo, descrizione):
+def _pagina(titolo, corpo, descrizione, og_image=None, canonical=None):
+    og = (f'<meta property="og:title" content="{html.escape(titolo)}">'
+          f'<meta property="og:description" content="{html.escape(descrizione)}">'
+          '<meta property="og:type" content="website">')
+    if og_image:
+        og += f'<meta property="og:image" content="{og_image}">'
+    if canonical:
+        og += f'<link rel="canonical" href="{canonical}">'
     return f"""<!doctype html><html lang="it"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="{html.escape(descrizione)}">
+<meta name="description" content="{html.escape(descrizione)}">{og}
 <title>{html.escape(titolo)}</title>{FONT_LINK}<style>{STILE}</style></head>
 <body>{corpo}</body></html>"""
 
@@ -125,16 +134,28 @@ def main():
 <br><a href="../../">← tutte le schede</a></div>
 </main>{_piede()}"""
         (DOCS / "tavole" / s["slug"] / "index.html").write_text(
-            _pagina(f"{s['strumento']} — Elettrofoni", corpo, s["gancio"]), encoding="utf-8")
+            _pagina(f"{s['strumento']} — Elettrofoni", corpo, s["gancio"],
+                    og_image=f"{BASE}/tavole/{s['slug']}/01.jpg",
+                    canonical=f"{BASE}/tavole/{s['slug']}/"), encoding="utf-8")
 
     vuoto = "<p>Le prime schede stanno arrivando.</p>" if not card else ""
     corpo = f"""{_testata(" L'archivio completo delle schede pubblicate.")}<main>{vuoto}{''.join(card)}</main>{_piede()}"""
+    og_idx = f"{BASE}/tavole/{stato['pubblicati'][-1]['slug']}/01.jpg" if stato["pubblicati"] else None
     (DOCS / "index.html").write_text(
         _pagina("Elettrofoni — le macchine che hanno cambiato la musica",
-                corpo, "Storia e tecnologia degli strumenti musicali elettronici, una scheda alla volta."),
+                corpo, "Storia e tecnologia degli strumenti musicali elettronici, una scheda alla volta.",
+                og_image=og_idx, canonical=f"{BASE}/"),
         encoding="utf-8")
     # Pages non deve passare da Jekyll (servirebbe solo a rompere i path)
     (DOCS / ".nojekyll").write_text("")
+    # SEO: sitemap con le sole pagine pubblicate + robots che la indica
+    urls = [f"{BASE}/"] + [f"{BASE}/tavole/{q['slug']}/" for q in stato["pubblicati"]]
+    righe_sm = "".join(f"<url><loc>{u}</loc></url>" for u in urls)
+    (DOCS / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        f"{righe_sm}</urlset>", encoding="utf-8")
+    (DOCS / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
     print(f"[archivio] {len(card)} schede pubblicate in docs/")
 
 

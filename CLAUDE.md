@@ -16,7 +16,7 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 - Formato: carosello 6 slide (copertina / la macchina / chi l'ha
   costruita / come funziona / chi l'ha usata / aneddoto+fonti).
 - CTA fissa: «quale macchina vuoi vedere nella prossima scheda».
-- Cadenza: lun-mer-ven ore 18 italiane.
+- Cadenza: OGNI GIORNO alle 18 italiane (dal 26/08/2026).
 - **La foto reale dello strumento è obbligatoria in ogni scheda** (regola
   del proprietario), con credito autore+licenza; fonti foto: Wikimedia
   Commons (API: `commons.wikimedia.org/w/api.php`, campi extmetadata).
@@ -37,9 +37,10 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
    digita solo il proprietario.
 6. Max 2 post/giorno, distanziati ≥6h. Su errore API: stop e issue, mai
    retry in loop.
-7. La coda in `contenuti.py` non scende mai sotto **6 schede verificate**
-   (= 2 settimane a 3 post/settimana). Ogni sessione di rifornimento ne
-   aggiunge di nuove e le verifica.
+7. La coda in `contenuti.py` non scende mai sotto **14 schede verificate**
+   (= 2 settimane a 1 post/giorno). Ogni sessione di rifornimento ne
+   aggiunge di nuove e le verifica; c'è una Routine che apre sessioni di
+   rifornimento due volte a settimana.
 8. Dopo ogni pubblicazione si verifica il post DAVVERO (aprire il
    permalink/archivio, non fidarsi del codice di risposta).
 9. Quando sbagli: dirlo chiaro al proprietario e scrivere la regola in un
@@ -48,7 +49,10 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 ## Promemoria tecnici
 
 - Cron in `pubblica.yml`: in UTC, ignora l'ora legale. **Il 25/10/2026**
-  va spostato da `0 16` a `0 17` (c'è un promemoria schedulato).
+  va spostato da `0 16 * * *` a `0 17 * * *` (c'è un promemoria schedulato).
+- Dopo ogni post il publisher rilancia la copertina come STORY: è
+  facoltativa per scelta — se fallisce si annota nel log e non si blocca
+  niente (il post è la missione, la story il megafono).
 - Un titolo dentro un flex viene compresso e l'autofit lo taglia:
   `flex:none` sui titoli (già nel CSS base).
 - I testi in tavola hanno limiti in `contenuti.py` (MAX_GANCIO ecc.):
@@ -77,4 +81,4 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
    Commons (salvare autore/licenza), verificare handle da taggare,
    scrivere i campi rispettando i limiti, `verificata: True`, validare,
    generare le tavole e GUARDARLE, committare.
-4. Aggiornare la coda finché le schede verificate non pubblicate sono ≥6.
+4. Aggiornare la coda finché le schede verificate non pubblicate sono ≥14.

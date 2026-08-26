@@ -226,6 +226,19 @@ def main():
         segnala_errore(f"verifica post-pubblicazione fallita per '{scheda['slug']}'", str(e))
         sys.exit(1)
 
+    # Story di rilancio: la copertina ripubblicata come storia, per dare al
+    # post il doppio di occasioni di essere visto. È facoltativa PER SCELTA:
+    # se fallisce si annota nel log e basta — niente issue, niente retry —
+    # perché il post è la missione, la story solo il megafono.
+    try:
+        st = api("POST", f"{ig_user}/media", token,
+                 media_type="STORIES", image_url=urls[0])
+        attendi_container(st["id"], token)
+        api("POST", f"{ig_user}/media_publish", token, creation_id=st["id"])
+        print("[ok] story di rilancio pubblicata")
+    except Exception as e:
+        print(f"[warn] story di rilancio non pubblicata (non blocca): {e}")
+
 
 if __name__ == "__main__":
     main()

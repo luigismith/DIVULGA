@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://luigismith.github.io/DIVULGA/sitemap.xml

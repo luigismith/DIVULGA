@@ -6,12 +6,12 @@ name: Pubblica scheda
 
 on:
   schedule:
-    # 18:00 ora italiana, lunedì-mercoledì-venerdì.
+    # 18:00 ora italiana, TUTTI I GIORNI (deciso dal proprietario il 26/08/2026).
     # ATTENZIONE: il cron di GitHub è in UTC e IGNORA l'ora legale.
     # Con l'ora legale (CEST, UTC+2) le 18:00 sono le 16:00 UTC.
     # >>> DAL 25 OTTOBRE 2026 (ritorno all'ora solare, CET, UTC+1) <<<
-    # >>> questo cron va cambiato in: '0 17 * * 1,3,5'            <<<
-    - cron: '0 16 * * 1,3,5'
+    # >>> questo cron va cambiato in: '0 17 * * *'                <<<
+    - cron: '0 16 * * *'
   workflow_dispatch: {}
 
 # Mai due pubblicazioni in parallelo (guardia anti-doppione e anti-soft-block)
