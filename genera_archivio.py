@@ -57,6 +57,31 @@ footer a{color:#38291d}
 a.ig{display:inline-block;margin-top:16px;background:#38291d;color:#f4e9d2;padding:12px 20px;
   text-decoration:none;font-family:'Oswald',sans-serif;font-weight:500;font-size:15px;letter-spacing:.1em;text-transform:uppercase}
 a.ig:hover{background:#c25f1d}
+
+article h1.titolo-scheda{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(30px,7vw,44px);
+  text-transform:uppercase;margin-top:8px;line-height:1.06;text-wrap:balance}
+article .occhiello{font-family:'Oswald',sans-serif;font-weight:500;font-size:clamp(20px,3.4vw,26px);
+  margin-top:10px;color:#38291d;line-height:1.25}
+article .sommario{margin-top:10px;font-size:18px;color:#6b5138;max-width:62ch}
+article h2{font-family:'Oswald',sans-serif;font-weight:700;font-size:25px;text-transform:uppercase;
+  margin-top:36px;letter-spacing:.02em}
+article p{margin-top:12px;max-width:66ch}
+.specifiche{display:flex;flex-wrap:wrap;border:2px solid #38291d;margin-top:26px;background:#fdf6e7}
+.specifiche .spec{flex:1 1 160px;padding:14px 18px;border-right:2px solid #38291d}
+.specifiche .spec:last-child{border-right:none}
+.specifiche dt{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;color:#c25f1d;font-weight:600}
+.specifiche dd{font-family:'Oswald',sans-serif;font-weight:700;font-size:23px;text-transform:uppercase;margin-top:4px}
+ul.artisti{margin-top:14px;padding-left:20px;max-width:66ch}
+ul.artisti li{margin-bottom:9px}
+blockquote.dinamo{margin-top:22px;background:#e9dcbf;border:2px solid #38291d;padding:18px 22px;
+  font-family:'Oswald',sans-serif;font-weight:500;font-size:23px;line-height:1.3;max-width:66ch}
+blockquote.dinamo span{display:block;font-family:'IBM Plex Mono',monospace;font-size:11.5px;
+  letter-spacing:.18em;color:#c25f1d;font-weight:600;margin-bottom:7px}
+.slides figure{margin:0}
+.fonti ol{margin:10px 0 0 20px}
+.fonti li{margin-bottom:7px}
+.fonti .data{color:#8a7a63}
+.credito-foto{margin-top:12px}
 @media(max-width:640px){
   body{font-size:16px}
   .scheda{flex-direction:column}
@@ -118,25 +143,95 @@ def main():
   <h2>{html.escape(s['strumento'])}</h2>
   <p>{html.escape(s['gancio'])}.</p></div>
 </a>""")
-        # pagina della singola scheda
-        slides = "".join(f'<img src="{i:02d}.jpg" alt="{html.escape(s["strumento"])} — slide {i}">'
-                         for i in range(1, 7))
-        fonti = "".join(f"<div>· {html.escape(f['titolo'])} — verificata il {f['data']}</div>"
-                        for f in s["fonti"])
+        # pagina della singola scheda.
+        # LEZIONE IMPARATA (27/08/2026): prima qui finivano solo le sei
+        # immagini, e Google non legge il testo dentro un JPEG: ogni pagina
+        # aveva ~126 parole indicizzabili, tutte di servizio. Il contenuto
+        # vero (la macchina, l'inventore, come funziona, gli artisti,
+        # l'aneddoto) resta nelle tavole PER IL LETTORE, ma da qui in poi
+        # va anche in HTML, che è ciò che i motori sanno leggere.
+        slides = "".join(
+            f'<figure><img src="{i:02d}.jpg" loading="lazy" '
+            f'alt="{html.escape(contenuti.alt_slide(s, i))[:300]}"></figure>'
+            for i in range(1, 7))
+        fonti = "".join(
+            f'<li><a href="{html.escape(f["url"])}" rel="nofollow noopener" '
+            f'target="_blank">{html.escape(f["titolo"])}</a> '
+            f'<span class="data">verificata il {f["data"]}</span></li>'
+            for f in s["fonti"])
+        artisti = "".join(
+            f'<li><strong>{html.escape(u["artista"])}</strong> — {html.escape(u["nota"])}</li>'
+            for u in s["chi_lusata"])
+        specifiche = "".join(
+            f'<div class="spec"><dt>{html.escape(k)}</dt><dd>{html.escape(v)}</dd></div>'
+            for k, v in s["specifiche"])
         foto = s["foto"]
+
+        # Dati strutturati: dicono ai motori che questa è una scheda
+        # divulgativa su uno strumento musicale, con data e fonti.
+        strutturati = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": f"{s['strumento']} ({s['anno']}) — {s['gancio']}",
+            "description": s["sottotitolo"],
+            "image": f"{BASE}/tavole/{s['slug']}/01.jpg",
+            "datePublished": p.get("quando", "")[:10],
+            "author": {"@type": "Organization", "name": "Elettrofoni"},
+            "publisher": {"@type": "Organization", "name": "Elettrofoni"},
+            "about": {
+                "@type": "Product",
+                "name": s["strumento"],
+                "manufacturer": {"@type": "Organization", "name": s["costruttore"]},
+            },
+            "citation": [f["titolo"] for f in s["fonti"]],
+        }, ensure_ascii=False)
+
         corpo = f"""{_testata()}<main>
-<div class="anno" style="color:#d9702e;font-weight:bold;letter-spacing:.15em">SCHEDA {s['numero']:03d} · {s['anno']} · {html.escape(s['luogo'])}</div>
-<h2 style="font-size:34px;text-transform:uppercase;margin-top:6px">{html.escape(s['strumento'])}</h2>
-<p style="margin-top:10px">{html.escape(s['sottotitolo'])}</p>
-{f'<a class="ig" href="{p["permalink"]}">VEDI SU INSTAGRAM →</a>' if p.get('permalink') else ''}
+<article>
+<div class="anno">SCHEDA {s['numero']:03d} · {s['anno']} · {html.escape(s['luogo'])}</div>
+<h1 class="titolo-scheda">{html.escape(s['strumento'])}</h1>
+<p class="occhiello">{html.escape(s['gancio'])}</p>
+<p class="sommario">{html.escape(s['sottotitolo'])}</p>
+{f'<a class="ig" href="{p["permalink"]}" rel="noopener">VEDI IL POST SU INSTAGRAM →</a>' if p.get('permalink') else ''}
+
+<dl class="specifiche">{specifiche}</dl>
+
+<h2>Che cos'è</h2>
+<p>{html.escape(s['la_macchina'])}</p>
+
+<h2>Chi l'ha costruita: {html.escape(s['inventore_nome'])}</h2>
+<p>{html.escape(s['inventore'])}</p>
+
+<h2>Come funziona</h2>
+<p>{html.escape(s['come_funziona'])}</p>
+
+<h2>Chi l'ha usata</h2>
+<ul class="artisti">{artisti}</ul>
+
+<h2>L'aneddoto</h2>
+<p>{html.escape(s['aneddoto'])}</p>
+<blockquote class="dinamo"><span>Dinamo dice</span>«{html.escape(s['battuta_dinamo'])}»</blockquote>
+
 <div class="slides">{slides}</div>
-<div class="fonti"><b>FONTI</b>{fonti}<br>Foto: {html.escape(foto['autore'])} · {foto['licenza']} · {foto['fonte']}
-<br><a href="../../">← tutte le schede</a></div>
-</main>{_piede()}"""
+
+<div class="fonti">
+<h2>Fonti</h2>
+<ol>{fonti}</ol>
+<p class="credito-foto">Foto: {html.escape(foto['autore'])} · {foto['licenza']} · {foto['fonte']}</p>
+<p><a href="../../">← tutte le schede</a></p>
+</div>
+</article>
+</main>{_piede()}
+<script type="application/ld+json">{strutturati}</script>"""
+
+        descrizione = f"{s['strumento']} ({s['anno']}): {s['sottotitolo']} Storia, tecnologia e artisti, con fonti verificate."
+        (DOCS / "tavole" / s["slug"]).mkdir(parents=True, exist_ok=True)
         (DOCS / "tavole" / s["slug"] / "index.html").write_text(
-            _pagina(f"{s['strumento']} — Elettrofoni", corpo, s["gancio"],
+            _pagina(f"{s['strumento']} ({s['anno']}) — storia e come funziona | Elettrofoni",
+                    corpo, descrizione,
                     og_image=f"{BASE}/tavole/{s['slug']}/01.jpg",
-                    canonical=f"{BASE}/tavole/{s['slug']}/"), encoding="utf-8")
+                    canonical=f"{BASE}/tavole/{s['slug']}/"),
+            encoding="utf-8")
 
     vuoto = "<p>Le prime schede stanno arrivando.</p>" if not card else ""
     corpo = f"""{_testata(" L'archivio completo delle schede pubblicate.")}<main>{vuoto}{''.join(card)}</main>{_piede()}"""

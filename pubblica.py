@@ -175,8 +175,13 @@ def main():
         verifica_immagini_online(urls)
 
         figli = []
-        for url in urls:
-            c = api("POST", f"{ig_user}/media", token, image_url=url, is_carousel_item="true")
+        for n, url in enumerate(urls, start=1):
+            # alt_text: accessibilità E indicizzazione. Google legge l'alt
+            # dei post pubblici degli account professionali (dal 2025), quindi
+            # qui passa il contenuto vero della slide, non un'etichetta.
+            c = api("POST", f"{ig_user}/media", token, image_url=url,
+                    is_carousel_item="true",
+                    alt_text=contenuti.alt_slide(scheda, n)[:1000])
             attendi_container(c["id"], token)
             figli.append(c["id"])
         carosello = api("POST", f"{ig_user}/media", token,

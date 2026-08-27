@@ -1146,6 +1146,36 @@ def componi_didascalia(scheda):
     return "\n".join(righe)
 
 
+def alt_slide(scheda, n):
+    """Testo alternativo di ogni slide del carosello.
+
+    NON è solo accessibilità: da metà 2025 Google indicizza i post
+    pubblici degli account professionali e legge ESPLICITAMENTE l'alt
+    text (oltre alla didascalia). Il campo `alt_text` esiste sull'API
+    dal marzo 2025 — usarlo è gratis e ci fa trovare da chi cerca
+    «chi ha inventato il minimoog» su Google, non solo su Instagram.
+    Quindi qui si scrivono frasi vere, con dentro le parole che una
+    persona digiterebbe.
+    """
+    nome, anno = scheda["strumento"], scheda["anno"]
+    costruttore = scheda["costruttore"]
+    if n == 1:
+        # Niente acrobazie sul plurale della serie: una frase semplice con
+        # dentro le parole che uno cerca davvero (nome, anno, costruttore).
+        return (f"{nome}: fotografia dello strumento del {anno}, "
+                f"costruito da {costruttore}. {scheda['gancio']}.")
+    if n == 2:
+        return f"Che cos'è il {nome}: {scheda['la_macchina'][:600]}"
+    if n == 3:
+        return f"Chi ha inventato il {nome}: {scheda['inventore_nome']}. {scheda['inventore'][:520]}"
+    if n == 4:
+        return f"Come funziona il {nome}: {scheda['come_funziona'][:600]}"
+    if n == 5:
+        artisti = ", ".join(f"{u['artista']} ({u['nota']})" for u in scheda["chi_lusata"])
+        return f"Chi ha usato il {nome}: {artisti}"[:900]
+    return f"La storia del {nome}: {scheda['aneddoto'][:600]}"
+
+
 def primo_commento(scheda):
     """Il primo commento ripete le menzioni: dentro una didascalia lunga,
     sul telefono, il tag resta nascosto dietro «... altro» — quindi la
