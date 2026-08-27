@@ -18,18 +18,21 @@ on:
     # massimo è esattamente lo scoccare dell'ora — cioè il minuto che
     # avevo scelto io. Nessun errore nei log, semplicemente nessun run.
     #
-    # Due contromisure, perché una sola non basta:
+    # Le contromisure, perché una sola non basta:
     #  1. non più allo scoccare dell'ora, ma a un minuto qualsiasi;
-    #  2. una seconda passata di scorta più tardi. Non fa doppioni: se il
-    #     primo run ha già pubblicato, pubblica.py esce da solo per la
-    #     regola delle 6 ore minime fra un post e l'altro (uscita pulita,
-    #     nessun errore, nessuna issue). Se invece il primo è stato
-    #     scartato, la scorta pubblica e la giornata è salva.
+    #  2. TRE passate invece di una. Non fanno doppioni: se una ha già
+    #     pubblicato, pubblica.py esce da solo per la regola delle 6 ore
+    #     minime fra un post e l'altro (uscita pulita, nessun errore,
+    #     nessuna issue). Perché la giornata salti davvero, GitHub deve
+    #     scartare tutte e tre le passate, non una.
+    # L'ultima è tardi apposta: un post alle 21:40 è fuori orario, ma un
+    # post fuori orario batte una giornata di silenzio.
     #
     # >>> DAL 25 OTTOBRE 2026 (ritorno all'ora solare, CET, UTC+1) <<<
-    # >>> i due cron vanno spostati a: '50 16 * * *' e '35 17 * * *' <<<
+    # >>> i tre cron vanno spostati a: '50 16', '35 17', '40 20'      <<<
     - cron: '50 15 * * *'   # 17:50 italiane — passata principale
-    - cron: '35 16 * * *'   # 18:35 italiane — scorta, se la prima salta
+    - cron: '35 16 * * *'   # 18:35 italiane — prima scorta
+    - cron: '40 19 * * *'   # 21:40 italiane — ultima spiaggia
   workflow_dispatch: {}
 
 # Mai due pubblicazioni in parallelo (guardia anti-doppione e anti-soft-block)

@@ -48,16 +48,23 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 
 ## Promemoria tecnici
 
-- Cron in `pubblica.yml`: in UTC, ignora l'ora legale. Sono DUE passate
-  (`50 15` principale, `35 16` di scorta): il cron di GitHub è best effort
-  e il 27/08/2026 ha semplicemente saltato il giro, senza alcun errore nei
-  log — mai schedulare allo scoccare dell'ora, ed è la scorta a salvare la
-  giornata (il doppione lo impedisce la regola delle 6 ore in
-  `pubblica.py`). **Il 25/10/2026** vanno spostate a `50 16` e `35 17`
-  (c'è un promemoria schedulato).
+- Cron in `pubblica.yml`: in UTC, ignora l'ora legale. Sono TRE passate
+  (`50 15`, `35 16`, `40 19`): il cron di GitHub è best effort e il
+  27/08/2026 ha semplicemente saltato il giro, senza alcun errore nei log
+  — mai schedulare allo scoccare dell'ora, e perché la giornata salti
+  davvero devono cadere tutte e tre (il doppione lo impedisce la regola
+  delle 6 ore in `pubblica.py`). **Il 25/10/2026** vanno spostate a
+  `50 16`, `35 17`, `40 20` (c'è un promemoria schedulato).
 - Un cron che non parte non lascia traccia: in Actions non compare nessun
   run fallito, compare il nulla. Se la pagina tace, la prima cosa da
   guardare è se il run esiste, non se è andato in errore.
+- `sentinella.yml` (23:25 italiane) è l'allarme rovesciato: non guarda i
+  run, guarda `stato.json`. Se oggi non c'è un post, apre una issue senza
+  chiedersi il perché. Serve contro il modo in cui è morta la pagina
+  precedente — non un errore, ma il nulla.
+- I push dentro `pubblica.yml` si riallineano e riprovano: un commit
+  arrivato sul branch mentre il run gira non deve poter uccidere la
+  pubblicazione del giorno (successo il 27/08/2026).
 - Dopo ogni post il publisher rilancia la scheda come STORY (tavola
   dedicata 1080×1920, `story.jpg`, generata da `slide_storia`): è
   facoltativa per scelta — se fallisce si annota nel log e non si blocca

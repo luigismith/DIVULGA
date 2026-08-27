@@ -1,0 +1,31 @@
+# ELETTROFONI — controlla che oggi sia uscito qualcosa.
+#
+# Tutti gli altri allarmi guardano i run e si accorgono di una
+# pubblicazione ANDATA MALE. Questo guarda il risultato e si accorge di
+# una pubblicazione MAI TENTATA: il 27/08/2026 il cron delle 18:00 è
+# stato scartato da GitHub e in Actions non c'era nessun run da guardare.
+name: Sentinella
+
+on:
+  schedule:
+    - cron: '25 21 * * *'   # 23:25 italiane (mai allo scoccare dell'ora)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  controlla:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install requests
+      - name: Oggi è uscito un post?
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python sentinella.py
