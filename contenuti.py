@@ -1097,6 +1097,339 @@ SCHEDE = [
         "hashtags": ["#farfisa", "#organo", "#madeinitaly", "#storiadellamusica", "#musicaelettronica"],
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
+    # NOTA EDITORIALE (27/08/2026, scheda "stylophone"): la faccia della
+    # campagna pubblicitaria dello Stylophone nel Regno Unito fu un noto
+    # presentatore televisivo, poi condannato per reati sessuali. Il fatto
+    # storico e' vero ma non entra nella scheda: non serve a spiegare la
+    # macchina e trascinerebbe la pagina dove non deve andare. Non e' una
+    # dimenticanza — se una prossima sessione lo "scopre", sappia che la
+    # scelta e' stata presa apposta.
+    # ---------------------------------------------------------------- 13
+    {
+        "slug": "trautonium",
+        "numero": 13,
+        "serie": "LE ORIGINI",
+        "strumento": "Trautonium",
+        "anno": "1930",
+        "luogo": "Berlino",
+        "costruttore": "Friedrich Trautwein",
+        "specifiche": [
+            ("ANNO", "1930"),
+            ("ORIGINE", "Berlino"),
+            ("TASTIERA", "Nessuna: un filo"),
+            ("VENDUTI", "Poche centinaia"),
+        ],
+        "gancio": "Gli uccelli di Hitchcock non sono uccelli: sono questa macchina",
+        "sottotitolo": "Niente tasti: un filo teso sopra una barra di metallo, e il dito che sceglie la nota.",
+        "la_macchina": "Una cassa di legno con sopra un filo teso su una barra metallica. Si preme il filo con il dito: dove lo premi, quella è la nota. Non ci sono tasti, quindi non ci sono note fisse — il quarto di tono, il glissando e il vibrato non sono effetti, sono il modo normale di suonarlo. La Telefunken provò a venderne una versione domestica dal 1933, il Volkstrautonium: ne uscirono poche centinaia e fu un fiasco. Trautwein lasciò perdere.",
+        "inventore_nome": "Friedrich Trautwein",
+        "inventore": "Trautwein lo costruisce nel 1930 alla Rundfunkversuchsstelle, il laboratorio di radio e musica della Musikhochschule di Berlino. Paul Hindemith ci scrive sopra dei pezzi e lo porta in concerto; un suo allievo di composizione, Oskar Sala, se ne innamora, va a studiare fisica per capirlo meglio e ci passerà i settant'anni successivi. Nel 1948 lo trasforma nel Mixtur-Trautonium, che a differenza dell'originale può suonare più voci insieme.",
+        "come_funziona": "Il filo è una resistenza. Premendolo contro la barra si chiude il circuito in quel punto preciso: più avanti premi, meno resistenza, più alta la nota. La pressione del dito, in più, regola il volume. La trovata di Sala sono le subarmoniche: invece di sommare multipli della frequenza fondamentale, come fa qualsiasi organo, il Mixtur ne genera le frazioni. È un modo di costruire il timbro che non assomiglia a niente — e infatti il risultato non assomiglia a niente.",
+        "richiami": [
+            ("FIG. 1", "Filo su barra metallica"),
+            ("FIG. 2", "Pressione = volume"),
+            ("FIG. 3", "Subarmoniche"),
+        ],
+        "chi_lusata": [
+            {"artista": "Paul Hindemith", "nota": "Ci scrisse un concerto e dei trii: fu lui a portarlo in sala da concerto", "ig": None},
+            {"artista": "Oskar Sala", "nota": "Fisico e compositore: di fatto l'unico al mondo che sapesse suonarlo", "ig": None},
+            {"artista": "Alfred Hitchcock", "nota": "«Gli uccelli» (1963): nessuna colonna sonora, solo questa macchina", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "deutschesmuseum",
+             "riga": "Il fondo Oskar Sala oggi sta al @deutschesmuseum di Monaco."},
+        ],
+        "aneddoto": "«Gli uccelli» di Hitchcock non ha colonna sonora. Non una nota: Bernard Herrmann, il compositore di tutti i suoi film, compare nei titoli solo come «consulente del suono». Ogni stormire, ogni stridio, ogni ala che sbatte è Oskar Sala a Berlino, sul suo Mixtur-Trautonium, insieme a Remi Gassmann. Hitchcock quello strumento lo aveva sentito da giovane alla radio tedesca e se l'era ricordato per trent'anni.",
+        "battuta_dinamo": "Il film più spaventoso del secolo non ha musica. Ha una macchina che urla.",
+        "foto": {
+            "file": "assets/foto/trautonium/principale.jpg",
+            "autore": "Morn the Gorn",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Trautonium» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Trautonium", "data": "2026-08-27"},
+            {"titolo": "«Oskar Sala» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Oskar_Sala", "data": "2026-08-27"},
+            {"titolo": "«The Birds» (suono e musica) — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/The_Birds_(film)", "data": "2026-08-27"},
+            {"titolo": "«How the Bird Sound Effects in The Birds Were Created» — Open Culture",
+             "url": "https://www.openculture.com/2026/08/how-the-bird-sound-effects-in-alfred-hitchcocks-the-birds-were-created-with-a-pioneering-electronic-instrument-the-trautonium.html",
+             "data": "2026-08-27"},
+        ],
+        "hashtags": ["#trautonium", "#oskarsala", "#hitchcock", "#storiadellamusica", "#musicaelettronica"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 14
+    {
+        "slug": "fonologia",
+        "numero": 14,
+        "serie": "GLI STUDI",
+        "strumento": "Studio di Fonologia della RAI",
+        "anno": "1955",
+        "luogo": "Milano, corso Sempione",
+        "costruttore": "RAI",
+        "specifiche": [
+            ("ANNO", "1955"),
+            ("ORIGINE", "Milano"),
+            ("OSCILLATORI", "Nove"),
+            ("CHIUSO", "1983"),
+        ],
+        "gancio": "La terza officina elettronica d'Europa stava in una stanza della RAI di Milano",
+        "sottotitolo": "Nove oscillatori, un tecnico paziente e mezzo Novecento della musica passato di lì.",
+        "la_macchina": "Non uno strumento: una stanza intera. Generatori di onde sinusoidali e quadre, un generatore di impulsi, uno di rumore bianco, modulatori d'ampiezza e di frequenza, filtri d'ottava e passabanda, apparecchi per l'eco. Quasi tutto costruito lì dentro, perché sul mercato non esisteva. Il vanto erano i nove oscillatori: un numero enorme per il 1955, e la ragione per cui a Milano si poteva fare ciò che altrove no.",
+        "inventore_nome": "Berio, Maderna e Lietti",
+        "inventore": "Lo vollero due compositori, Luciano Berio e Bruno Maderna, e la RAI pagò. A progettarlo e costruirlo fu l'ingegnere Alfredo Lietti, che inventava gli apparecchi man mano che i musicisti chiedevano cose impossibili. Alla console stava il tecnico Marino Zuccheri, le mani che per ventotto anni trasformarono le idee dei compositori in nastro. Prima di Milano esistevano solo Colonia e Parigi.",
+        "come_funziona": "Non si suona: si costruisce. Si genera una frequenza, la si incide su nastro magnetico, si taglia il nastro con la lametta, si incolla, si sovrappone. Un secondo di musica può voler dire un pomeriggio di forbici. I nove oscillatori permettono di impilare nove frequenze insieme; il selettore d'ampiezza disegna l'attacco e la coda di ogni suono; i filtri scavano il timbro togliendo quello che non serve.",
+        "richiami": [
+            ("FIG. 1", "Nove oscillatori"),
+            ("FIG. 2", "Filtri e selettore"),
+            ("FIG. 3", "Nastro e lametta"),
+        ],
+        "chi_lusata": [
+            {"artista": "Luciano Berio", "nota": "«Thema (Omaggio a Joyce)», 1958: la voce di Cathy Berberian che legge l'Ulisse, fatta a pezzi", "ig": None},
+            {"artista": "Bruno Maderna", "nota": "Con Berio firma «Ritratto di città» (1955), il primo lavoro uscito dallo Studio", "ig": None},
+            {"artista": "Luigi Nono", "nota": "Ci porta la politica: le voci degli operai dentro il nastro", "ig": None},
+            {"artista": "John Cage", "nota": "Invitato da Berio, ci realizza «Fontana Mix» fra il novembre 1958 e il 1959", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Mentre montava «Fontana Mix» a Milano, John Cage andò a «Lascia o raddoppia?». Non come musicista: come esperto di funghi. Cinque puntate fra il gennaio e il febbraio 1959, con Mike Bongiorno che lo interrogava sulla micologia, e fra una domanda e l'altra Cage eseguiva i suoi pezzi in prima serata. Vinse cinque milioni di lire. L'avanguardia europea, finanziata da un quiz televisivo italiano.",
+        "battuta_dinamo": "Il futuro della musica pagato da un quiz sui funghi. Non chiedetemi di spiegarlo.",
+        "foto": {
+            "file": "assets/foto/fonologia/principale.jpg",
+            "autore": "Stefano Stabile (mod. Clusternote)",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "Studio di Fonologia Musicale di Milano della RAI — LIM, Università degli Studi di Milano",
+             "url": "https://fonologia.lim.di.unimi.it/introduzione.php", "data": "2026-08-27"},
+            {"titolo": "«Studio di fonologia musicale di Radio Milano» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Studio_di_fonologia_musicale_di_Radio_Milano", "data": "2026-08-27"},
+            {"titolo": "Cage in Italia, cronologia 1958-1959 — johncage.it",
+             "url": "https://www.johncage.it/en/chronology.html", "data": "2026-08-27"},
+            {"titolo": "«La volta che John Cage andò a Lascia o raddoppia?» — Il Post",
+             "url": "https://www.ilpost.it/2012/09/05/john-cage-mike-bongiorno-lascia-o-raddoppia/", "data": "2026-08-27"},
+        ],
+        "hashtags": ["#studiodifonologia", "#lucianoberio", "#johncage", "#milano", "#musicaelettronica"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 15
+    {
+        "slug": "stylophone",
+        "numero": 15,
+        "serie": "I GIOCATTOLI",
+        "strumento": "Stylophone",
+        "anno": "1968",
+        "luogo": "Londra",
+        "costruttore": "Dubreq",
+        "specifiche": [
+            ("ANNO", "1968"),
+            ("ORIGINE", "Londra"),
+            ("VOCI", "Una sola"),
+            ("VENDUTI", "3 milioni"),
+        ],
+        "gancio": "Un giocattolo per bambini. Ci è nato sopra il pezzo che ha lanciato Bowie",
+        "sottotitolo": "Tastiera di rame stampata, una penna al posto delle dita, tre milioni di pezzi.",
+        "la_macchina": "Sta in una mano. Una scatoletta con un altoparlante, una manopola di accordatura, un interruttore per il vibrato e una tastiera che non è una tastiera: è un circuito stampato, con i tasti disegnati in rame. Si suona con un pennino legato alla scatola. Una nota per volta, nessuna dinamica, intonazione che va per conto suo. Venduto come giocattolo: tre milioni di pezzi in sette anni, poi fuori produzione nel 1975 e di nuovo in commercio dal 2007.",
+        "inventore_nome": "Brian Jarvis",
+        "inventore": "Brian Jarvis lavorava alla Dubreq, a Londra. Nel 1967 stava riparando il pianoforte giocattolo della nipote quando gli venne l'idea: e se al posto dei tasti meccanici ci mettessi dell'elettronica? Un anno dopo lo Stylophone era in produzione. Non nasce in un laboratorio di ricerca né in un conservatorio: nasce su un tavolo di casa, da un giocattolo rotto.",
+        "come_funziona": "Ogni tasto di rame è collegato all'oscillatore attraverso una resistenza di valore diverso. Il pennino chiude il circuito: appoggiandolo su un tasto scegli quale resistenza entra in gioco, e quindi quale nota esce. Tutto qui. L'unica espressione disponibile è l'interruttore del vibrato. Il timbro ronzante e sporco che riconosci non è una scelta di progetto: è quello che succede quando un oscillatore così semplice non sta perfettamente in accordatura.",
+        "richiami": [
+            ("FIG. 1", "Tastiera in rame stampato"),
+            ("FIG. 2", "Pennino = interruttore"),
+            ("FIG. 3", "Una resistenza per nota"),
+        ],
+        "chi_lusata": [
+            {"artista": "David Bowie", "nota": "«Space Oddity»: la melodia la compose sullo Stylophone, poi lo suonò sul disco", "ig": "davidbowie"},
+            {"artista": "Marc Bolan", "nota": "Fu lui a metterglielo in mano: «Ti piacciono queste cose, fanne qualcosa»", "ig": None},
+            {"artista": "Kraftwerk", "nota": "Fra i primi a prendere sul serio un giocattolo da tre soldi", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Tony Visconti, il produttore di Bowie, si rifiutò di produrre «Space Oddity»: la chiamò una trovata per lucrare sullo sbarco sulla Luna. Il pezzo lo produsse Gus Dudgeon; Visconti fece il resto dell'album. Registrata il 20 giugno 1969, uscì l'11 luglio: cinque giorni prima che l'Apollo 11 partisse davvero. Fu il primo successo di Bowie, e c'è dentro un giocattolo suonato con una penna.",
+        "battuta_dinamo": "Il produttore la chiamò una trovata pubblicitaria. Aveva ragione. Ha perso lo stesso.",
+        "foto": {
+            "file": "assets/foto/stylophone/principale.jpg",
+            "autore": "Alex Ashbourne",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Stylophone» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Stylophone", "data": "2026-08-27"},
+            {"titolo": "History — Stylophone / Dubreq (sito ufficiale)",
+             "url": "https://stylophone.com/history/", "data": "2026-08-27"},
+            {"titolo": "«Space Oddity» (registrazione e crediti) — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Space_Oddity", "data": "2026-08-27"},
+        ],
+        "hashtags": ["#stylophone", "#davidbowie", "#spaceoddity", "#storiadellamusica", "#musicaelettronica"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 16
+    {
+        "slug": "spaceecho",
+        "numero": 16,
+        "serie": "GLI EFFETTI",
+        "strumento": "Roland RE-201 Space Echo",
+        "anno": "1974",
+        "luogo": "Osaka",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("ANNO", "1974"),
+            ("ORIGINE", "Osaka"),
+            ("TESTINE", "Tre in lettura"),
+            ("RIVERBERO", "A molla"),
+        ],
+        "gancio": "Un nastro che gira a vuoto in una scatola: così il dub ha imparato a rimbombare",
+        "sottotitolo": "Non uno strumento ma una macchina per lo spazio: tre testine, un anello di nastro, tre molle.",
+        "la_macchina": "Un anello di nastro da un quarto di pollice che non sta su bobine: viene lasciato cadere sciolto dentro una camera, senza tensione, e gira all'infinito. Sopra ci sono tre testine di lettura a distanze diverse e un selettore a undici posizioni che le combina, più un riverbero a tre molle e i controlli di tono. Esce nel 1974 e rimane in catalogo per anni: quasi ogni studio del mondo ne ha avuto uno.",
+        "inventore_nome": "Ikutaro Kakehashi",
+        "inventore": "Kakehashi aveva già costruito eco a nastro alla Ace Tone prima di fondare la Roland a Osaka, nel 1972. Il problema di tutte le macchine precedenti era lo stesso: il nastro, teso e tirato, si consumava in fretta e la macchina moriva. La soluzione fu smettere di tirarlo. Nastro lento, lasco, in un cassetto: dura, e nel frattempo suona meglio.",
+        "come_funziona": "Una testina incide il suono sul nastro. Poco dopo la prima testina di lettura lo ritrova, poi la seconda, poi la terza: la distanza fra la testina che scrive e quelle che leggono è il tempo dell'eco. Alzando il ritorno, l'eco si rimangia se stessa e cresce invece di spegnersi, fino a partire in oscillazione. Quel fischio che sale è il difetto della macchina — ed è esattamente il motivo per cui la comprano ancora.",
+        "richiami": [
+            ("FIG. 1", "Anello di nastro senza bobine"),
+            ("FIG. 2", "Tre testine di lettura"),
+            ("FIG. 3", "Riverbero a molla"),
+        ],
+        "chi_lusata": [
+            {"artista": "King Tubby", "nota": "A Kingston lo usa come strumento, non come effetto: nasce il dub", "ig": None},
+            {"artista": "Lee «Scratch» Perry", "nota": "Al Black Ark ci costruisce sopra un intero modo di mixare", "ig": None},
+            {"artista": "Pink Floyd", "nota": "David Gilmour: l'eco che allarga la chitarra fino all'orizzonte", "ig": "pinkfloyd"},
+            {"artista": "Portishead", "nota": "Trent'anni dopo, la stessa scatola per lo stesso motivo: il nastro sporca", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "rolandglobal",
+             "riga": "Chi l'ha costruita esiste ancora: @rolandglobal."},
+        ],
+        "aneddoto": "In Giamaica non lo trattarono da effetto. King Tubby e Lee Perry ci mettevano le mani sopra mentre il mix andava: alzavano il ritorno finché la macchina non partiva a ululare, poi lo riabbassavano al momento giusto. Il dub non è un genere suonato, è un genere mixato — ed è nato da quello che questa scatola fa quando la spingi oltre il punto in cui dovrebbe funzionare.",
+        "battuta_dinamo": "Mi hanno comprato per fare l'eco. Ho finito per inventare un genere musicale.",
+        "foto": {
+            "file": "assets/foto/spaceecho/principale.jpg",
+            "autore": "1904.CC",
+            "licenza": "CC BY 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Why the RE-201 Space Echo Remains a Classic» — BOSS/Roland",
+             "url": "https://articles.boss.info/why-the-re-201-space-echo-remains-a-classic/", "data": "2026-08-27"},
+            {"titolo": "«Studio Icons: Roland RE-201 Space Echo» — MusicTech",
+             "url": "https://musictech.com/reviews/roland-re201-space-echo/", "data": "2026-08-27"},
+            {"titolo": "«Roland Space Echo» — Attack Magazine",
+             "url": "https://www.attackmagazine.com/technique/hardware-focus/roland-space-echo/", "data": "2026-08-27"},
+        ],
+        "hashtags": ["#spaceecho", "#roland", "#dub", "#kingtubby", "#musicaelettronica"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 17
+    {
+        "slug": "ms20",
+        "numero": 17,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Korg MS-20",
+        "anno": "1978",
+        "luogo": "Tokyo",
+        "costruttore": "Korg",
+        "specifiche": [
+            ("ANNO", "1978"),
+            ("ORIGINE", "Tokyo"),
+            ("FILTRI", "Due, in serie"),
+            ("USCITA", "1978-1983"),
+        ],
+        "gancio": "Il sintetizzatore che si fa suonare dalla tua voce, se gliela colleghi",
+        "sottotitolo": "Semimodulare ed economico: il pannello di patch che ha insegnato la sintesi a una generazione.",
+        "la_macchina": "Due oscillatori, due filtri in serie — uno passa-alto e uno passa-basso — e a destra un pannello di prese con i cavetti. È semimodulare: suona anche senza collegare niente, ma ogni collegamento interno si può interrompere e rifare a mano. Costava poco e finì nelle scuole di mezzo Giappone. In produzione dal 1978 al 1983; nel 2013 la Korg lo ha rifatto all'86% delle dimensioni originali.",
+        "inventore_nome": "Fumio Mieda",
+        "inventore": "Mieda alla Korg aveva già firmato l'Uni-Vibe, il pedale che fa girare il suono. Con l'MS-20 guida un progetto con un'idea precisa: prendere il pannello di patch dei modulari — roba da università e da studi ricchi — e metterlo su uno strumento che uno studente possa permettersi. Non è un modulare in miniatura: è un modulare per chi non ne avrà mai uno.",
+        "come_funziona": "La parte che nessuno si aspetta è l'ESP, il processore di segnale esterno. Ci colleghi una chitarra, un microfono, un rullante: l'ESP estrae l'altezza del suono e la trasforma in tensione di controllo, e l'attacco in un impulso di innesco. A quel punto il sintetizzatore suona quello che hai cantato. In più i due filtri, con quella risonanza sporca e stridula che è la sua impronta digitale.",
+        "richiami": [
+            ("FIG. 1", "Pannello di patch"),
+            ("FIG. 2", "Due filtri in serie"),
+            ("FIG. 3", "ESP: audio in tensione"),
+        ],
+        "chi_lusata": [
+            {"artista": "Aphex Twin", "nota": "Uno dei suoi strumenti di partenza, e si sente da quale filtro arriva", "ig": None},
+            {"artista": "Daft Punk", "nota": "Nel corredo francese degli anni Novanta c'è quasi sempre", "ig": None},
+            {"artista": "The Chemical Brothers", "nota": "Bassi e stridori: l'MS-20 dà il meglio quando lo maltratti", "ig": None},
+            {"artista": "Vangelis", "nota": "Dall'altra parte del catalogo: lo stesso strumento, tutt'altra musica", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "korgofficial",
+             "riga": "Lo ha rifatto uguale trentacinque anni dopo: @korgofficial."},
+        ],
+        "aneddoto": "L'MS-20 nasce come strumento didattico: costa poco, il pannello di patch mostra a occhio come è fatta la sintesi, entra nelle scuole. Poi passa di moda e finisce nei negozi dell'usato a prezzi da svendita — ed è lì che se lo comprano quelli che stanno inventando la techno. Nel 2013 la Korg lo rimette in produzione partendo dai disegni originali, e poi lo vende perfino in kit, da montare a mano.",
+        "battuta_dinamo": "Collegami la voce e ti rispondo. Non sempre in modo gentile.",
+        "foto": {
+            "file": "assets/foto/ms20/principale.jpg",
+            "autore": "Wilfredor",
+            "licenza": "CC0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Korg MS-20» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Korg_MS-20", "data": "2026-08-27"},
+            {"titolo": "«The Story of the KORG MS-20 Synthesizer» — Guitar Center Riffs",
+             "url": "https://www.guitarcenter.com/riffs/gear-tips/keyboards--midi/korg-ms-20-history-overview", "data": "2026-08-27"},
+            {"titolo": "MS-20 Kit, funzioni dell'External Signal Processor — Korg (sito ufficiale)",
+             "url": "https://www.korg.com/us/products/dj/ms_20kit/page_1.php", "data": "2026-08-27"},
+            {"titolo": "MS-20 mini (86% dell'originale, 1978) — Korg (sito ufficiale)",
+             "url": "https://www.korg.com/us/products/synthesizers/ms_20mini/", "data": "2026-08-27"},
+        ],
+        "hashtags": ["#korgms20", "#korg", "#sintetizzatore", "#storiadellamusica", "#musicaelettronica"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 18
+    {
+        "slug": "lm1",
+        "numero": 18,
+        "serie": "LE DRUM MACHINE",
+        "strumento": "Linn LM-1",
+        "anno": "1980",
+        "luogo": "Los Angeles",
+        "costruttore": "Linn Electronics",
+        "specifiche": [
+            ("ANNO", "1980"),
+            ("ORIGINE", "Los Angeles"),
+            ("CAMPIONI", "8 bit / 28 kHz"),
+            ("COSTRUITI", "Circa 500"),
+        ],
+        "gancio": "La prima drum machine con dentro una batteria vera. Costava come un'automobile",
+        "sottotitolo": "Dodici suoni campionati, nessun piatto, cinquecento esemplari: il suono degli anni Ottanta.",
+        "la_macchina": "Dodici suoni presi da una batteria vera, registrati in digitale a 8 bit e messi in memoria: cassa, rullante, charleston aperto e chiuso, tom, congas, cabasa, tamburello, campanaccio, claves, battimani. Programmabile, con un'uscita separata per ogni suono così il fonico può trattarli uno per uno. Cinquemila dollari nel 1980. Ne furono costruite circa cinquecento.",
+        "inventore_nome": "Roger Linn",
+        "inventore": "Roger Linn era un chitarrista e un tecnico di Los Angeles, stufo di drum machine che facevano rumori da organetto. La sua idea non era sintetizzare la batteria: era registrarla. Chiamò un amico batterista, Art Wood, lo mise a suonare colpo per colpo, campionò quei colpi e li chiuse dentro la memoria della macchina. Nello stesso anno, a Osaka, la Roland faceva l'esatto contrario con la TR-808.",
+        "come_funziona": "Ogni suono è una registrazione digitale: 8 bit di risoluzione, 28.000 campioni al secondo. Sembra poco ed è pochissimo, ma nel 1980 la memoria costava una fortuna — ed è tutta lì la storia. Bastava per una cassa, un rullante, delle percussioni. Non bastava per un piatto, che ha una coda lunga e quindi occupa troppo. Per questo su quei dischi il crash non c'è: non è gusto, è il prezzo dei chip.",
+        "richiami": [
+            ("FIG. 1", "Campioni a 8 bit"),
+            ("FIG. 2", "Un'uscita per suono"),
+            ("FIG. 3", "Niente piatti"),
+        ],
+        "chi_lusata": [
+            {"artista": "Prince", "nota": "«1999», «Little Red Corvette», «When Doves Cry»: la accordava verso il basso finché non era sua", "ig": None},
+            {"artista": "The Human League", "nota": "Il synth-pop inglese del 1981 passa da qui", "ig": "humanleaguehq"},
+            {"artista": "Gary Numan", "nota": "Fra i primi in Europa a metterci le mani", "ig": None},
+            {"artista": "Stevie Wonder", "nota": "Anche chi la batteria la sa suonare davvero se la comprò", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "L'assenza dei piatti non è una scelta estetica: è il prezzo della memoria nel 1980. Un crash dura troppo, e quei secondi in RAM costavano più di quanto valesse il suono. Il risultato è che un decennio intero di dischi si ferma di colpo invece di aprirsi — e quella brusca chiusura, nata da un vincolo di bilancio, è diventata uno dei suoni riconoscibili del pop degli anni Ottanta.",
+        "battuta_dinamo": "Niente piatti: la memoria costava troppo. Dieci anni di musica senza un crash.",
+        "foto": {
+            "file": "assets/foto/lm1/principale.jpg",
+            "autore": "Forat Electronics",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Linn LM-1» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Linn_LM-1", "data": "2026-08-27"},
+            {"titolo": "«Roger Linn Electronics LM-1» — Polynominal",
+             "url": "https://www.polynominal.com/Roger-Linn-lm1/", "data": "2026-08-27"},
+            {"titolo": "«Roger Linn on Drum Samples, Prince…» (Art Wood, il batterista campionato) — Reverb",
+             "url": "https://reverb.com/news/roger-linn-on-drum-samples-prince-and-unlocking-virtuosity-in-electronic-music", "data": "2026-08-27"},
+        ],
+        "hashtags": ["#linnlm1", "#drummachine", "#prince", "#anni80", "#musicaelettronica"],
+        "verificata": True,
+    },
 ]
 
 
@@ -1164,16 +1497,26 @@ def alt_slide(scheda, n):
         # dentro le parole che uno cerca davvero (nome, anno, costruttore).
         return (f"{nome}: fotografia dello strumento del {anno}, "
                 f"costruito da {costruttore}. {scheda['gancio']}.")
+    # LEZIONE IMPARATA (27/08/2026). Qui c'era l'articolo «il» scritto a
+    # mano davanti al nome dello strumento, e usciva «il Hammond B-3»,
+    # «il Ondes Martenot», «il ARP 2600», «il Stylophone». È lo stesso
+    # errore del plurale sbagliato nella serie: appena provi a declinare
+    # qualcosa che dipende dal nome, sbagli su qualche nome. Google e i
+    # lettori di schermo leggono questo testo davvero.
+    # REGOLA: nell'alt text nessun articolo e nessun participio che debba
+    # accordarsi col nome dello strumento. Il nome va da solo, e ciò che
+    # segue si accorda con «macchina», che è sempre femminile singolare.
     if n == 2:
-        return f"Che cos'è il {nome}: {scheda['la_macchina'][:600]}"
+        return f"{nome} ({anno}) — che cos'è. {scheda['la_macchina'][:600]}"
     if n == 3:
-        return f"Chi ha inventato il {nome}: {scheda['inventore_nome']}. {scheda['inventore'][:520]}"
+        return (f"{nome} ({anno}) — chi ha progettato questa macchina: "
+                f"{scheda['inventore_nome']}. {scheda['inventore'][:500]}")
     if n == 4:
-        return f"Come funziona il {nome}: {scheda['come_funziona'][:600]}"
+        return f"{nome} ({anno}) — come funziona. {scheda['come_funziona'][:600]}"
     if n == 5:
         artisti = ", ".join(f"{u['artista']} ({u['nota']})" for u in scheda["chi_lusata"])
-        return f"Chi ha usato il {nome}: {artisti}"[:900]
-    return f"La storia del {nome}: {scheda['aneddoto'][:600]}"
+        return f"{nome} ({anno}) — chi ha usato questa macchina: {artisti}"[:900]
+    return f"{nome} ({anno}) — la storia. {scheda['aneddoto'][:600]}"
 
 
 def primo_commento(scheda):
