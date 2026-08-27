@@ -297,6 +297,56 @@ def slide_aneddoto(scheda):
     return _pagina(corpo, css)
 
 
+# ---------------------------------------------------------- storia ---
+
+def slide_storia(scheda):
+    """Tavola verticale 1080x1920 per le Storie: stesso mondo visivo, ma
+    formato 9:16. La storia e' il megafono, il post e' la missione: se
+    fallisce non blocca niente (vedi pubblica.py)."""
+    foto_uri = (RADICE / scheda["foto"]["file"]).as_uri()
+    pos = scheda["foto"].get("posizione", "center")
+    css = f"""
+body{{height:1920px}}
+.corpo{{padding:0 60px;justify-content:center;gap:0}}
+.kicker{{font-size:20px;letter-spacing:.22em}}
+.titolone{{font-size:82px;margin-top:20px}}
+.sottotitolo{{flex:none;font-weight:500;font-size:32px;margin-top:18px;color:#6b5138;line-height:1.32}}
+.fotostoria{{flex:none;position:relative;margin-top:46px;border:6px solid {BRUNO};background:#111}}
+.fotostoria img{{display:block;width:100%;height:640px;object-fit:cover;object-position:{pos}}}
+.etichetta-foto{{position:absolute;left:0;bottom:10px;background:{ARANCIO};color:{BRUNO};
+  font-family:'PlexMono';font-weight:600;font-size:18px;letter-spacing:.12em;padding:11px 20px}}
+.invito{{flex:none;margin-top:52px;text-align:center}}
+.invito .riga{{font-family:'PlexMono';font-weight:600;font-size:23px;letter-spacing:.15em;color:{ARANCIO}}}
+.invito .grande{{font-weight:700;font-size:54px;text-transform:uppercase;margin-top:14px;line-height:1.1}}
+.freccia{{font-size:60px;margin-top:18px;color:{ARANCIO}}}
+.testata{{padding:34px 60px}}
+.nome{{font-size:50px}}
+.zoccolo{{padding:26px 60px}}
+.motto{{font-size:19px}}
+.handle{{font-size:27px}}
+"""
+    corpo = f"""
+{_testata(scheda)}
+<div class="corpo">
+  <div class="kicker">{scheda['anno']} · {scheda['luogo'].upper()}</div>
+  <div class="titolone autofit" data-min="48" style="height:auto;max-height:340px">{scheda['gancio']}</div>
+  <div class="sottotitolo">{scheda['sottotitolo']}</div>
+  <div class="fotostoria">
+    <img src="{foto_uri}">
+    <div class="etichetta-foto">SCHEDA {scheda['numero']:03d}</div>
+    <div class="credito">{_foto_credito(scheda)}</div>
+  </div>
+  <div class="invito">
+    <div class="riga">LA SCHEDA COMPLETA</div>
+    <div class="grande">nel profilo</div>
+    <div class="freccia">↓</div>
+  </div>
+</div>
+<div class="zoccolo"><div class="motto">{contenuti.FIRMA}</div><div class="handle">@ELETTROFONI</div></div>
+"""
+    return _pagina(corpo, css)
+
+
 SLIDES = [slide_copertina, slide_macchina, slide_inventore,
           slide_funzionamento, slide_artisti, slide_aneddoto]
 
@@ -315,7 +365,18 @@ def rendi_scheda(scheda, page):
         page.screenshot(path=str(out_dir / f"{i:02d}.jpg"), type="jpeg", quality=90,
                         clip={"x": 0, "y": 0, "width": 1080, "height": 1350})
         tmp.unlink()
-    print(f"[tavole] {scheda['slug']}: 6 slide in {out_dir}")
+
+    # tavola verticale per la Storia (1080x1920)
+    tmp = out_dir / "_story.html"
+    tmp.write_text(slide_storia(scheda), encoding="utf-8")
+    page.set_viewport_size({"width": 1080, "height": 1920})
+    page.goto(tmp.as_uri())
+    page.wait_for_selector("body[data-pronto='1']")
+    page.screenshot(path=str(out_dir / "story.jpg"), type="jpeg", quality=90,
+                    clip={"x": 0, "y": 0, "width": 1080, "height": 1920})
+    tmp.unlink()
+    page.set_viewport_size({"width": 1080, "height": 1350})
+    print(f"[tavole] {scheda['slug']}: 6 slide + storia in {out_dir}")
 
 
 def main():

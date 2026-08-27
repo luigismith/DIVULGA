@@ -50,9 +50,19 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 
 - Cron in `pubblica.yml`: in UTC, ignora l'ora legale. **Il 25/10/2026**
   va spostato da `0 16 * * *` a `0 17 * * *` (c'è un promemoria schedulato).
-- Dopo ogni post il publisher rilancia la copertina come STORY: è
+- Dopo ogni post il publisher rilancia la scheda come STORY (tavola
+  dedicata 1080×1920, `story.jpg`, generata da `slide_storia`): è
   facoltativa per scelta — se fallisce si annota nel log e non si blocca
   niente (il post è la missione, la story il megafono).
+- COSA L'API NON CONSENTE (verificato il 27/08/2026 con
+  `diagnostica_api.py`): il profilo è in sola lettura. `POST /me` con
+  `biography` risponde 400 «does not support this operation». Bio, nome,
+  foto profilo e link in bio li può cambiare SOLO il proprietario
+  dall'app. Non è un permesso mancante: l'endpoint non esiste per
+  nessuno. Non riproporlo come se fosse un problema di scope.
+- Commenti: `commenti.py` elenca quelli mai visti; `commenti.rispondi()`
+  pubblica una risposta. NON si risponde con template automatici: le
+  risposte le scrive la sessione di presidio, che ha letto il commento.
 - Un titolo dentro un flex viene compresso e l'autofit lo taglia:
   `flex:none` sui titoli (già nel CSS base).
 - I testi in tavola hanno limiti in `contenuti.py` (MAX_GANCIO ecc.):

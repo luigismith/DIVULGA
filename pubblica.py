@@ -226,6 +226,21 @@ def main():
         segnala_errore(f"verifica post-pubblicazione fallita per '{scheda['slug']}'", str(e))
         sys.exit(1)
 
+    # Rilancio come STORIA. È facoltativa PER SCELTA: il post è la missione,
+    # la storia il megafono. Se fallisce si annota e si tira dritto — non
+    # vale la pena far fallire una run (e allarmare il proprietario) per un
+    # megafono. Formato dedicato 1080x1920: story.jpg.
+    try:
+        story_url = f"{BASE_PAGES}/tavole/{scheda['slug']}/story.jpg"
+        verifica_immagini_online([story_url])
+        c = api("POST", f"{ig_user}/media", token,
+                image_url=story_url, media_type="STORIES")
+        attendi_container(c["id"], token)
+        s = api("POST", f"{ig_user}/media_publish", token, creation_id=c["id"])
+        print(f"[ok] storia pubblicata: {s['id']}")
+    except Exception as e:
+        print(f"[warn] storia non pubblicata (non blocca il post): {e}")
+
     # Story di rilancio: la copertina ripubblicata come storia, per dare al
     # post il doppio di occasioni di essere visto. È facoltativa PER SCELTA:
     # se fallisce si annota nel log e basta — niente issue, niente retry —
