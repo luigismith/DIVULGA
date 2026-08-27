@@ -72,7 +72,22 @@ jobs:
           python genera_tavole.py --prossima
           python genera_archivio.py
           git add docs
-          git diff --cached --quiet || (git commit -m "tavole: prossima scheda + archivio" && git push)
+          # LEZIONE IMPARATA (27/08/2026): qui il push era secco, senza
+          # riallineamento. Il run e' morto con "! [rejected] (fetch first)"
+          # solo perche' nel frattempo era arrivato un commit sul branch —
+          # e la pubblicazione del giorno e' saltata per un motivo che non
+          # c'entrava niente con la pubblicazione. Una pubblicazione non
+          # deve morire perche' qualcuno ha committato: si riallinea e
+          # riprova, e fallisce solo se non ce la fa davvero.
+          if ! git diff --cached --quiet; then
+            git commit -m "tavole: prossima scheda + archivio"
+            for i in 1 2 3; do
+              git pull --rebase --autostash && git push && exit 0
+              echo "[warn] push respinto, mi riallineo e ritento ($i/3)"
+              sleep 5
+            done
+            echo "[errore] push fallito dopo 3 tentativi"; exit 1
+          fi
 
       # Le immagini devono essere online PRIMA di chiamare l'API di
       # Instagram (che scarica da URL pubblico): deploy di GitHub Pages.
@@ -93,12 +108,23 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python pubblica.py
 
+      # Il post e' gia' uscito: da qui in poi nessun errore deve poter
+      # far sembrare fallita una pubblicazione riuscita. Stessa logica di
+      # riallineamento e riprova del passo precedente.
       - name: Aggiorna l'archivio con il permalink
         run: |
-          git pull --rebase
+          git pull --rebase --autostash
           python genera_archivio.py
           git add docs
-          git diff --cached --quiet || (git commit -m "archivio: permalink ultima scheda" && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "archivio: permalink ultima scheda"
+            for i in 1 2 3; do
+              git pull --rebase --autostash && git push && exit 0
+              echo "[warn] push respinto, mi riallineo e ritento ($i/3)"
+              sleep 5
+            done
+            echo "[errore] push dell'archivio fallito dopo 3 tentativi"; exit 1
+          fi
 
       # LEZIONE IMPARATA (26/08/2026): due upload-pages-artifact nello stesso
       # run con lo stesso nome danno "409 Conflict: an artifact with this name
