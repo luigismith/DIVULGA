@@ -16,6 +16,11 @@ DOCS = RADICE / "docs"
 # Indirizzo pubblico dell'archivio (og:, canonical, sitemap)
 BASE = "https://luigismith.github.io/DIVULGA"
 
+# Verifica di Google Search Console: incollare qui SOLO il valore del
+# meta tag (l'attributo content=""), non il tag intero. Serve una volta
+# sola: Google lo rilegge a ogni controllo, quindi va lasciato.
+VERIFICA_GOOGLE = ""
+
 FONT_LINK = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
              '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
              '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
@@ -110,7 +115,8 @@ def _piede():
     return f"""<footer>{html.escape(contenuti.FIRMA)} · <a style="color:#38291d" href="https://www.instagram.com/elettrofoni/">@elettrofoni</a></footer>"""
 
 
-def _pagina(titolo, corpo, descrizione, og_image=None, canonical=None):
+def _pagina(titolo, corpo, descrizione, og_image=None, canonical=None,
+            verifica=False):
     og = (f'<meta property="og:title" content="{html.escape(titolo)}">'
           f'<meta property="og:description" content="{html.escape(descrizione)}">'
           '<meta property="og:type" content="website">')
@@ -118,6 +124,8 @@ def _pagina(titolo, corpo, descrizione, og_image=None, canonical=None):
         og += f'<meta property="og:image" content="{og_image}">'
     if canonical:
         og += f'<link rel="canonical" href="{canonical}">'
+    if verifica and VERIFICA_GOOGLE:
+        og += f'<meta name="google-site-verification" content="{VERIFICA_GOOGLE}">'
     return f"""<!doctype html><html lang="it"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="{html.escape(descrizione)}">{og}
@@ -237,8 +245,11 @@ def main():
     corpo = f"""{_testata(" L'archivio completo delle schede pubblicate.")}<main>{vuoto}{''.join(card)}</main>{_piede()}"""
     og_idx = f"{BASE}/tavole/{stato['pubblicati'][-1]['slug']}/01.jpg" if stato["pubblicati"] else None
     (DOCS / "index.html").write_text(
-        _pagina("Elettrofoni — le macchine che hanno cambiato la musica",
-                corpo, "Storia e tecnologia degli strumenti musicali elettronici, una scheda alla volta.",
+        _pagina("Elettrofoni — storia dei sintetizzatori e degli strumenti elettronici",
+                corpo,
+                "Sintetizzatori, drum machine, organi e campionatori: chi li ha inventati, "
+                "come funzionano e chi li ha suonati. Una scheda al giorno, con fonti verificate.",
+                verifica=True,
                 og_image=og_idx, canonical=f"{BASE}/"),
         encoding="utf-8")
     # Pages non deve passare da Jekyll (servirebbe solo a rompere i path)
