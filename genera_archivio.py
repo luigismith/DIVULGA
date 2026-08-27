@@ -19,7 +19,7 @@ BASE = "https://luigismith.github.io/DIVULGA"
 # Verifica di Google Search Console: incollare qui SOLO il valore del
 # meta tag (l'attributo content=""), non il tag intero. Serve una volta
 # sola: Google lo rilegge a ogni controllo, quindi va lasciato.
-VERIFICA_GOOGLE = ""
+VERIFICA_GOOGLE = "0vfIqQS7qWidmaUT612RKvzIQcODP0mePQOechm3OO0"
 
 FONT_LINK = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
              '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
