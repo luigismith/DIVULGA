@@ -254,13 +254,29 @@ def main():
         encoding="utf-8")
     # Pages non deve passare da Jekyll (servirebbe solo a rompere i path)
     (DOCS / ".nojekyll").write_text("")
-    # SEO: sitemap con le sole pagine pubblicate + robots che la indica
-    urls = [f"{BASE}/"] + [f"{BASE}/tavole/{q['slug']}/" for q in stato["pubblicati"]]
-    righe_sm = "".join(f"<url><loc>{u}</loc></url>" for u in urls)
+    # SEO: sitemap con le sole pagine pubblicate + robots che la indica.
+    # <lastmod> dice a Google quando la pagina è cambiata: senza, ogni
+    # ripassata è alla cieca. La home porta la data dell'ultimo post,
+    # ogni scheda la propria data di pubblicazione.
+    ultimo = max((q["quando"][:10] for q in stato["pubblicati"]), default=None)
+    voci = [(f"{BASE}/", ultimo, "daily")]
+    voci += [(f"{BASE}/tavole/{q['slug']}/", q["quando"][:10], "monthly")
+             for q in stato["pubblicati"]]
+    righe_sm = "".join(
+        f"<url><loc>{u}</loc>"
+        + (f"<lastmod>{d}</lastmod>" if d else "")
+        + f"<changefreq>{f}</changefreq></url>"
+        for u, d, f in voci)
     (DOCS / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         f"{righe_sm}</urlset>", encoding="utf-8")
+    # NOTA (27/08/2026): su GitHub Pages in un sottopercorso questo
+    # robots.txt NON viene letto dai crawler — vale solo quello alla
+    # radice del dominio (luigismith.github.io/robots.txt), che non è
+    # nostro. Lo teniamo perché è innocuo e diventerà valido il giorno
+    # in cui il sito avrà un dominio proprio. La sitemap va comunque
+    # dichiarata a mano in Search Console, come abbiamo fatto.
     (DOCS / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
     print(f"[archivio] {len(card)} schede pubblicate in docs/")
 
