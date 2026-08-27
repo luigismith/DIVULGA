@@ -1,0 +1,24 @@
+# ELETTROFONI — cosa ci consente davvero l'API (lancio manuale).
+# Interroga i permessi del token: letture del profilo, tentativi di
+# scrittura, commenti e storie. Non modifica nulla.
+name: Diagnostica API
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  diagnostica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests cryptography
+      - env:
+          STATE_KEY: ${{ secrets.STATE_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python diagnostica_api.py
