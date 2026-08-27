@@ -177,6 +177,19 @@ def main():
 
         # Dati strutturati: dicono ai motori che questa è una scheda
         # divulgativa su uno strumento musicale, con data e fonti.
+        #
+        # LEZIONE IMPARATA (27/08/2026): qui l'oggetto della scheda era
+        # marcato "@type": "Product". Search Console l'ha bocciato —
+        # «Snippet prodotto: 1 elemento non valido» — perché Google
+        # convalida i Product come schede di negozio e PRETENDE almeno uno
+        # fra offers, review, aggregateRating. Un Minimoog del 1970 non è
+        # in vendita e non ha recensioni: non mancava un campo, era
+        # sbagliato il tipo. Thing descrive la stessa entità senza
+        # promettere un prezzo che non esiste.
+        # REGOLA: mai Product per qualcosa che non si compra. Prima di
+        # aggiungere un tipo schema.org, controllare se Google ci attacca
+        # un rich result: se sì, o si rispettano i campi obbligatori o si
+        # usa un tipo più generico.
         strutturati = json.dumps({
             "@context": "https://schema.org",
             "@type": "Article",
@@ -184,12 +197,18 @@ def main():
             "description": s["sottotitolo"],
             "image": f"{BASE}/tavole/{s['slug']}/01.jpg",
             "datePublished": p.get("quando", "")[:10],
+            "inLanguage": "it",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": f"{BASE}/tavole/{s['slug']}/",
+            },
             "author": {"@type": "Organization", "name": "Elettrofoni"},
             "publisher": {"@type": "Organization", "name": "Elettrofoni"},
             "about": {
-                "@type": "Product",
+                "@type": "Thing",
                 "name": s["strumento"],
-                "manufacturer": {"@type": "Organization", "name": s["costruttore"]},
+                "description": (f"Strumento musicale elettronico del {s['anno']}, "
+                                f"costruito da {s['costruttore']} ({s['luogo']})."),
             },
             "citation": [f["titolo"] for f in s["fonti"]],
         }, ensure_ascii=False)
