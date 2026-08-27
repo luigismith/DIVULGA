@@ -144,6 +144,23 @@ def main():
             print("[stop] ultimo post troppo recente: niente da fare."); return
 
     gia = {p["slug"] for p in stato["pubblicati"]}
+
+    # ALLARME PREVENTIVO (aggiunto il 27/08/2026). Prima qui si segnalava
+    # solo la coda VUOTA: cioè quando il danno era già fatto e la pagina
+    # taceva. È così che è morta la pagina precedente — nove giorni di
+    # silenzio. A un post al giorno servono sette schede a settimana:
+    # sotto le SETTE rimaste restano meno di sette giorni di margine, il
+    # tempo esatto perché la Routine di rifornimento (mar+ven) rimedi.
+    rimaste = sum(1 for s in contenuti.SCHEDE
+                  if s["verificata"] and s["slug"] not in gia)
+    if 0 < rimaste < 7:
+        segnala_errore(
+            f"coda bassa: restano {rimaste} schede ({rimaste} giorni)",
+            f"A un post al giorno la coda si esaurisce tra {rimaste} giorni.\n"
+            "La sessione di rifornimento (martedì e venerdì) deve riportarla "
+            "ad almeno 14 schede verificate.\n\n"
+            "Questa non è un'emergenza: è il preavviso perché non diventi tale.")
+
     scheda = contenuti.scheda_da_pubblicare(gia)
     if scheda is None:
         # La coda vuota è un'emergenza editoriale (9 giorni di silenzio sul
