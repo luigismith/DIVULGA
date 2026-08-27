@@ -6,12 +6,30 @@ name: Pubblica scheda
 
 on:
   schedule:
-    # 18:00 ora italiana, TUTTI I GIORNI (deciso dal proprietario il 26/08/2026).
+    # Circa le 18:00 italiane, TUTTI I GIORNI (deciso dal proprietario il 26/08/2026).
     # ATTENZIONE: il cron di GitHub è in UTC e IGNORA l'ora legale.
     # Con l'ora legale (CEST, UTC+2) le 18:00 sono le 16:00 UTC.
+    #
+    # LEZIONE IMPARATA (27/08/2026): qui c'era un solo cron a '0 16 * * *'.
+    # Il 26 agosto è partito con 43 minuti di ritardo; il 27 agosto NON è
+    # partito affatto e la pagina è rimasta muta. Il cron di GitHub è
+    # "best effort": nei momenti di carico gli eventi schedulati vengono
+    # ritardati e possono essere SCARTATI del tutto, e il minuto di carico
+    # massimo è esattamente lo scoccare dell'ora — cioè il minuto che
+    # avevo scelto io. Nessun errore nei log, semplicemente nessun run.
+    #
+    # Due contromisure, perché una sola non basta:
+    #  1. non più allo scoccare dell'ora, ma a un minuto qualsiasi;
+    #  2. una seconda passata di scorta più tardi. Non fa doppioni: se il
+    #     primo run ha già pubblicato, pubblica.py esce da solo per la
+    #     regola delle 6 ore minime fra un post e l'altro (uscita pulita,
+    #     nessun errore, nessuna issue). Se invece il primo è stato
+    #     scartato, la scorta pubblica e la giornata è salva.
+    #
     # >>> DAL 25 OTTOBRE 2026 (ritorno all'ora solare, CET, UTC+1) <<<
-    # >>> questo cron va cambiato in: '0 17 * * *'                <<<
-    - cron: '0 16 * * *'
+    # >>> i due cron vanno spostati a: '50 16 * * *' e '35 17 * * *' <<<
+    - cron: '50 15 * * *'   # 17:50 italiane — passata principale
+    - cron: '35 16 * * *'   # 18:35 italiane — scorta, se la prima salta
   workflow_dispatch: {}
 
 # Mai due pubblicazioni in parallelo (guardia anti-doppione e anti-soft-block)

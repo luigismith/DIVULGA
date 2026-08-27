@@ -48,8 +48,16 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 
 ## Promemoria tecnici
 
-- Cron in `pubblica.yml`: in UTC, ignora l'ora legale. **Il 25/10/2026**
-  va spostato da `0 16 * * *` a `0 17 * * *` (c'è un promemoria schedulato).
+- Cron in `pubblica.yml`: in UTC, ignora l'ora legale. Sono DUE passate
+  (`50 15` principale, `35 16` di scorta): il cron di GitHub è best effort
+  e il 27/08/2026 ha semplicemente saltato il giro, senza alcun errore nei
+  log — mai schedulare allo scoccare dell'ora, ed è la scorta a salvare la
+  giornata (il doppione lo impedisce la regola delle 6 ore in
+  `pubblica.py`). **Il 25/10/2026** vanno spostate a `50 16` e `35 17`
+  (c'è un promemoria schedulato).
+- Un cron che non parte non lascia traccia: in Actions non compare nessun
+  run fallito, compare il nulla. Se la pagina tace, la prima cosa da
+  guardare è se il run esiste, non se è andato in errore.
 - Dopo ogni post il publisher rilancia la scheda come STORY (tavola
   dedicata 1080×1920, `story.jpg`, generata da `slide_storia`): è
   facoltativa per scelta — se fallisce si annota nel log e non si blocca
