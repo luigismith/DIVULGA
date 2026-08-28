@@ -1,0 +1,15 @@
+# TIRA IL CORDONE.
+#
+# Toccare questo file e fare push AVVIA la pubblicazione del giorno.
+# Serve perche' il cron di GitHub e' inaffidabile (ha saltato le passate
+# serali per tre giorni di fila, 26-28/08/2026) e perche' chi fa da
+# innesco esterno non sempre ha un token per chiamare l'API: un push,
+# invece, lo sa fare chiunque abbia accesso al repository.
+#
+# Non c'e' rischio di doppioni ne' di post fuori orario: le guardie
+# stanno in pubblica.py e valgono comunque — finestra 16-23 italiane,
+# massimo 2 post al giorno, almeno 6 ore fra uno e l'altro. Se la
+# giornata e' gia' a posto, il run parte e si ferma da solo.
+#
+# Ultimo scatto:
+2026-08-29T00:05:00Z

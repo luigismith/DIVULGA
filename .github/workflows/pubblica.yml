@@ -34,6 +34,13 @@ on:
     - cron: '35 16 * * *'   # 18:35 italiane — prima scorta
     - cron: '40 19 * * *'   # 21:40 italiane — ultima spiaggia
   workflow_dispatch: {}
+  # Innesco esterno "tira il cordone": chi non ha un token per chiamare
+  # l'API puo' comunque far partire la pubblicazione con un push su
+  # questo solo file. Le guardie di pubblica.py (finestra oraria, max 2
+  # al giorno, 6 ore di distanza) restano valide, quindi non puo' fare
+  # danni: se non e' il momento, il run parte e si ferma da solo.
+  push:
+    paths: ['scatto.txt']
 
 # Mai due pubblicazioni in parallelo (guardia anti-doppione e anti-soft-block)
 concurrency:
