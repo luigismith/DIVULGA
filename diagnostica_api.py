@@ -33,6 +33,41 @@ def prova(descrizione, metodo, percorso, token, **params):
         return False, None
 
 
+def profilo():
+    """Solo lettura: com'e' il profilo ADESSO.
+
+    Serve ogni volta che il proprietario cambia bio, nome o link dall'app:
+    quelli non li possiamo scrivere noi (l'API rifiuta), ma possiamo
+    LEGGERLI — e una modifica fatta a mano va verificata come tutto il
+    resto, invece di darla per fatta. Niente tentativi di scrittura qui:
+    su un account giovane non si bussa a un endpoint solo per sentire il
+    "no" che sappiamo gia'."""
+    token, _ = token_ig.token_corrente()
+    print(f"Token in uso: {token_ig.redigi(token)}\n")
+    ok, r = prova("profilo", "GET", "me", token,
+                  fields="username,name,biography,website,followers_count,media_count")
+    if not ok:
+        raise SystemExit(1)
+    d = r.json()
+    print("=" * 68)
+    for campo in ("username", "name", "biography", "website",
+                  "followers_count", "media_count"):
+        valore = d.get(campo)
+        if campo == "biography" and valore:
+            print(f"{campo:>16}  ({len(valore)}/150 caratteri)")
+            for riga in str(valore).split("\n"):
+                print(f"{'':>18}{riga}")
+            continue
+        if campo == "name" and valore:
+            print(f"{campo:>16}: {valore}   ({len(valore)}/30 caratteri)")
+            continue
+        print(f"{campo:>16}: {valore if valore not in (None, '') else '— VUOTO —'}")
+    print("=" * 68)
+    if not d.get("website"):
+        print("ATTENZIONE: il campo sito web e' vuoto. Se la bio finisce con")
+        print("una freccia verso il basso, sta indicando il nulla.")
+
+
 def main():
     token, _ = token_ig.token_corrente()
     print(f"Token in uso: {token_ig.redigi(token)}\n")
@@ -77,4 +112,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    if "--profilo" in sys.argv:
+        profilo()
+    else:
+        main()
