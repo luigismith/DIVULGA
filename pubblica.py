@@ -128,23 +128,32 @@ def api(metodo, percorso, token, **params):
 
 
 def verifica_immagini_online(urls):
-    """HEAD su ogni immagine prima di chiamare l'API: Pages impiega un
-    minuto a distribuire. Attesa di cortesia, non retry su errore."""
+    """HEAD su ogni file prima di chiamare l'API: Pages impiega un minuto
+    a distribuire. Attesa di cortesia, non retry su errore.
+
+    ATTENZIONE (28/08/2026): qui si accettava solo `content-type: image/`.
+    Quando la storia è diventata un video, story.mp4 (video/mp4) non
+    passava mai il controllo: quattro minuti di attesa e poi ripiego sul
+    JPEG muto — cioè la funzione nuova non avrebbe MAI funzionato, senza
+    dare errore. Un controllo troppo stretto non protegge: mente."""
+    ok = ("image/", "video/")
     for url in urls:
         for tentativo in range(24):           # max ~4 minuti
             r = requests.head(url, timeout=20)
-            if r.status_code == 200 and r.headers.get("content-type", "").startswith("image/"):
+            tipo = r.headers.get("content-type", "")
+            if r.status_code == 200 and tipo.startswith(ok):
                 break
             time.sleep(10)
         else:
-            raise RuntimeError(f"immagine mai apparsa online: {url}")
+            raise RuntimeError(f"file mai apparso online: {url}")
         print(f"[pages] online: {url}")
 
 
-def attendi_container(cid, token):
+def attendi_container(cid, token, tentativi=10):
     """Attesa del processing del container (non è un retry su errore:
-    è il normale ciclo di vita del media)."""
-    for _ in range(10):
+    è il normale ciclo di vita del media). I video ci mettono di più
+    delle immagini: chi ne pubblica uno alza `tentativi`."""
+    for _ in range(tentativi):
         st = api("GET", cid, token, fields="status_code")
         if st.get("status_code") == "FINISHED":
             return
@@ -289,20 +298,39 @@ def main():
     # Rilancio come STORIA. È facoltativa PER SCELTA: il post è la missione,
     # la storia il megafono. Se fallisce si annota e si tira dritto — non
     # vale la pena far fallire una run (e allarmare il proprietario) per un
-    # megafono. Formato dedicato 1080x1920: story.jpg.
+    # megafono.
+    #
+    # DAL 28/08/2026 LA STORIA È UN VIDEO. Prima era `story.jpg`, e una
+    # foto su Instagram non ha audio: non era un difetto, era il formato.
+    # Ora è `story.mp4`, otto secondi con la sigla sintetizzata nel timbro
+    # della macchina (vedi suoni.py). Il suono dev'essere DENTRO il file:
+    # l'API non consente di agganciare la musica del catalogo Instagram.
+    # Se il video manca o non è online si ripiega sul JPEG muto: meglio una
+    # storia senza audio che nessuna storia.
     try:
-        story_url = f"{BASE_PAGES}/tavole/{scheda['slug']}/story.jpg"
-        verifica_immagini_online([story_url])
+        base = f"{BASE_PAGES}/tavole/{scheda['slug']}"
+        campo, valore, tentativi = "image_url", f"{base}/story.jpg", 10
+        try:
+            verifica_immagini_online([f"{base}/story.mp4"])
+            campo, valore, tentativi = "video_url", f"{base}/story.mp4", 25
+        except Exception as e:
+            print(f"[warn] story.mp4 non raggiungibile, ripiego sul JPEG: {e}")
+            verifica_immagini_online([valore])
         c = api("POST", f"{ig_user}/media", token,
-                image_url=story_url, media_type="STORIES")
-        attendi_container(c["id"], token)
+                media_type="STORIES", **{campo: valore})
+        # UN SOLO TENTATIVO, mai un ciclo: il budget di elaborazione video
+        # dell'account si esaurisce dopo una dozzina di container, e anche
+        # i tentativi falliti lo consumano.
+        attendi_container(c["id"], token, tentativi=tentativi)
         s = api("POST", f"{ig_user}/media_publish", token, creation_id=c["id"])
-        print(f"[ok] storia pubblicata: {s['id']}")
+        print(f"[ok] storia pubblicata ({campo}): {s['id']}")
     except Exception as e:
         print(f"[warn] storia non pubblicata (non blocca il post): {e}")
 
     # Story di rilancio: la copertina ripubblicata come storia, per dare al
-    # post il doppio di occasioni di essere visto. È facoltativa PER SCELTA:
+    # post il doppio di occasioni di essere visto. Questa resta un'IMMAGINE
+    # apposta: ogni video consuma il budget di elaborazione dell'account, e
+    # due video al giorno per la stessa scheda non li vale. È facoltativa PER SCELTA:
     # se fallisce si annota nel log e basta — niente issue, niente retry —
     # perché il post è la missione, la story solo il megafono.
     try:

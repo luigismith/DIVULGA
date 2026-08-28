@@ -82,10 +82,22 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 - I push dentro `pubblica.yml` si riallineano e riprovano: un commit
   arrivato sul branch mentre il run gira non deve poter uccidere la
   pubblicazione del giorno (successo il 27/08/2026).
-- Dopo ogni post il publisher rilancia la scheda come STORY (tavola
-  dedicata 1080×1920, `story.jpg`, generata da `slide_storia`): è
-  facoltativa per scelta — se fallisce si annota nel log e non si blocca
-  niente (il post è la missione, la story il megafono).
+- Dopo ogni post il publisher rilancia la scheda come STORY: dal
+  28/08/2026 è un VIDEO di 8 s (`story.mp4`, 1080×1920, H.264 main +
+  AAC 44.1k) con colonna sonora **sintetizzata** da `suoni.py` — un
+  motivo fisso suonato col timbro della famiglia di quella macchina (FM
+  per il DX7, ruote foniche per l'Hammond, filtro che spazza per la
+  303…). Il suono deve stare DENTRO il file: l'API non permette di
+  agganciare la musica del catalogo Instagram, quella si sceglie solo
+  dall'app. Se il video manca si ripiega sul vecchio `story.jpg` muto.
+  La storia resta facoltativa per scelta — se fallisce si annota nel log
+  e non si blocca niente (il post è la missione, la story il megafono).
+- Audio: si normalizza sull'**RMS** (≈ −15 dBFS), non sul picco. Con la
+  normalizzazione a picco la voce «acido» usciva a −2,4 dB contro i −11
+  delle altre: stesso picco, volume percepito triplo.
+- Un controllo troppo stretto mente invece di proteggere: il HEAD prima
+  dell'API accettava solo `image/`, e con la storia video avrebbe
+  ripiegato in silenzio sul JPEG per sempre. Ora accetta anche `video/`.
 - COSA L'API NON CONSENTE (verificato il 27/08/2026 con
   `diagnostica_api.py`): il profilo è in sola lettura. `POST /me` con
   `biography` risponde 400 «does not support this operation». Bio, nome,

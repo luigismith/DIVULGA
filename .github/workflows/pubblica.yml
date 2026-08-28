@@ -70,9 +70,15 @@ jobs:
       - name: Controlli automatici sulle schede
         run: python contenuti.py
 
+      # ffmpeg serve per la storia video (audio sintetizzato). Su
+      # ubuntu-latest c'e' gia': si controlla e basta, senza installare.
+      - name: Controlla ffmpeg
+        run: ffmpeg -version | head -1
+
       - name: Genera le tavole della prossima scheda e l'archivio
         run: |
           python genera_tavole.py --prossima
+          python genera_storia_video.py --prossima
           python genera_archivio.py
           git add docs
           # LEZIONE IMPARATA (27/08/2026): qui il push era secco, senza
