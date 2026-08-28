@@ -10,8 +10,17 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 - Nome: **ELETTROFONI** (@elettrofoni) · «Catalogo delle macchine sonore»
 - Stile tavole: catalogo anni '70 — crema `#f4e9d2`, bruno `#38291d`,
   arancio `#d9702e`; font Oswald (titoli) + IBM Plex Mono (dati).
-- Personaggio: **Dinamo**, automa d'epoca (SVG in `genera_tavole.py`);
-  chiude ogni scheda con una battuta («Dinamo dice: …»).
+- Personaggio: **Dinamo**, automa d'epoca (SVG in `genera_tavole.py`).
+  NON è la spalla comica: è chi compila il catalogo. Chiude ogni scheda
+  con un'**AVVERTENZA** in forma di etichetta da manuale d'uso, agganciata
+  a un fatto tecnico di QUELLA macchina. Prova del nove: se l'avvertenza
+  la puoi spostare su un'altra scheda, è sbagliata (le vecchie «Dinamo
+  dice: …» fallivano tutte questa prova). Le schede 001-004 erano già
+  pubblicate al cambio di regola e restano com'erano.
+- Ogni scheda porta anche un **DA ASCOLTARE** in fondo alla slide 5: un
+  brano, l'anno e cosa sentirci dentro. Vale la regola delle due fonti
+  anche qui — se l'attribuzione non regge, il campo si omette (è il caso
+  dello Space Echo: nessuna fonte lo lega a un disco preciso).
 - Firma fissa ovunque: **LE MACCHINE NON SUONANO DA SOLE. QUASI MAI.**
 - Formato: carosello 6 slide (copertina / la macchina / chi l'ha
   costruita / come funziona / chi l'ha usata / aneddoto+fonti).

@@ -254,17 +254,45 @@ def slide_artisti(scheda):
 .artista:first-child{{border-top:2px solid {BRUNO}}}
 .chi{{font-weight:700;font-size:46px;text-transform:uppercase;letter-spacing:.02em;flex:none}}
 .cosa{{font-family:'PlexMono';font-size:22px;color:#6b5138;text-align:right;line-height:1.45}}
+.ascolto{{flex:none;border:2px solid {BRUNO};background:{CREMA2};padding:22px 26px;margin-top:26px}}
+.ascolto .et{{font-family:'PlexMono';font-weight:600;font-size:14px;letter-spacing:.18em;
+  color:{ARANCIO};margin-bottom:10px}}
+.ascolto .brano{{font-weight:700;font-size:34px;line-height:1.15;margin-bottom:8px}}
+.ascolto .nota{{font-family:'PlexMono';font-size:21px;line-height:1.5;color:#5a4530}}
 """
+    # Il riquadro sta qui e non sulla slide 6 per due motivi: e' la
+    # continuazione naturale di «chi l'ha usata», e la slide 5 aveva un
+    # buco di spazio vuoto in fondo su tutte le schede.
+    a = scheda.get("da_ascoltare")
+    ascolto = ""
+    if a:
+        ascolto = (f'<div class="ascolto"><div class="et">DA ASCOLTARE</div>'
+                   f'<div class="brano">{a["artista"]}, «{a["brano"]}» ({a["anno"]})</div>'
+                   f'<div class="nota">{a["cosa"]}</div></div>')
     corpo = f"""
 {_testata(scheda)}
 <div class="corpo">
   <div class="kicker">05 · CHI L'HA USATA</div>
   <div class="titolone autofit" data-min="40" style="height:auto;max-height:160px">Dai laboratori ai dischi</div>
   <div class="lista autofit" data-min="16">{righe}</div>
+  {ascolto}
   {_pager(scheda, 5)}
 </div>
 """
     return _pagina(corpo, css)
+
+
+def _etichetta_chiusura(scheda):
+    """«AVVERTENZE» sulle schede nuove, «DINAMO DICE» sulle prime quattro.
+    Quelle quattro erano gia' pubblicate quando la regola e' cambiata: le
+    tavole online devono continuare a corrispondere ai post usciti."""
+    return "AVVERTENZE" if scheda.get("avvertenza") else "DINAMO DICE"
+
+
+def _testo_chiusura(scheda):
+    if scheda.get("avvertenza"):
+        return scheda["avvertenza"]
+    return f"«{scheda['battuta_dinamo']}»"
 
 
 def slide_aneddoto(scheda):
@@ -288,7 +316,7 @@ def slide_aneddoto(scheda):
   <div class="testo autofit" data-min="20">{scheda['aneddoto']}</div>
   <div class="dinamo">
     {_automa(ARANCIO, BRUNO)}
-    <div class="balloon"><div class="chi">DINAMO DICE</div>«{scheda['battuta_dinamo']}»</div>
+    <div class="balloon"><div class="chi">{_etichetta_chiusura(scheda)}</div>{_testo_chiusura(scheda)}</div>
   </div>
   <div class="fonti autofit" data-min="11"><b>FONTI</b><br>{fonti}</div>
 </div>

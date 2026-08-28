@@ -39,7 +39,9 @@ MAX_SLIDE = 10
 # scritto SOTTO quella soglia, o la battuta finale sparisce dalla tavola
 # pur restando nella didascalia. Quindi il limite si impone qui, a monte.
 MAX_GANCIO = 110          # copertina, 3 righe grandi
-MAX_BATTUTA = 150         # battuta di Dinamo, slide 6
+MAX_BATTUTA = 150         # battuta di Dinamo, slide 6 (solo schede 1-4)
+MAX_AVVERTENZA = 150      # riga di chiusura in forma di avvertenza, slide 6
+MAX_ASCOLTO = 180         # riga «da ascoltare», in fondo alla slide 5
 MAX_TESTO_SLIDE = 620     # testo corrente di ogni slide interna
 
 SCHEDE = [
@@ -466,7 +468,10 @@ SCHEDE = [
             "un suo SINGOLO preset. Nessun suono di fabbrica ha mai "
             "dominato le classifiche così."
         ),
-        "battuta_dinamo": "Trentadue algoritmi e nessuna manopola: c'è chi lo chiama progresso.",
+        "avvertenza": "Contiene trentadue algoritmi. Non è previsto che l'acquirente sappia cosa sia un algoritmo.",
+        "da_ascoltare": {"brano": 'Take On Me', "artista": 'a-ha',
+                          "anno": '1985',
+                          "cosa": 'Quel basso è il preset BASS 1 del DX7, uscito così dalla fabbrica e mai modificato.'},
         "foto": {
             "file": "assets/foto/dx7/principale.jpg",
             "autore": "Leo-setä, iixorbiusii, Georgfotoart (mod. Pittigrilli)",
@@ -551,7 +556,10 @@ SCHEDE = [
             "davanti a loro. Il campionamento spiegato meglio di qualunque "
             "manuale, in tre minuti di TV per l'infanzia."
         ),
-        "battuta_dinamo": "Attento a cosa dici qui davanti: potrebbe finire in tastiera.",
+        "avvertenza": 'Registra qualunque suono e lo rende suonabile sulla tastiera. Non distingue una nota da un colpo di tosse.',
+        "da_ascoltare": {"brano": 'The Dreaming', "artista": 'Kate Bush',
+                          "anno": '1982',
+                          "cosa": 'I suoni che non riesci ad attribuire a nessuno strumento sono campioni suonati sul Fairlight.'},
         "foto": {
             # In attesa di scaricare la foto SMEM (rate limit Wikimedia):
             # File:Fairlight CMI at the SMEM Schaulager 09.jpg — CC BY 4.0
@@ -639,7 +647,10 @@ SCHEDE = [
             "pattern suonava, e Spanky disse «continua così». «We didn't "
             "know how to program it»: è per questo che ha funzionato."
         ),
-        "battuta_dinamo": "Se non sai programmarla, forse stai per inventare qualcosa.",
+        "avvertenza": 'Non suona come un basso. Il manuale sostiene il contrario.',
+        "da_ascoltare": {"brano": 'Acid Tracks', "artista": 'Phuture',
+                          "anno": '1987',
+                          "cosa": "La 303 non accompagna niente: dall'inizio alla fine è lei il pezzo."},
         "foto": {
             "file": "assets/foto/tb303/principale.jpg",
             "autore": "Alexandre Dulaunoy",
@@ -728,7 +739,10 @@ SCHEDE = [
             "per quarant'anni. I marchi si riunirono solo nel 1980, a "
             "fondatori usciti di scena."
         ),
-        "battuta_dinamo": "Anche le macchine hanno storie d'amore complicate.",
+        "avvertenza": 'Peso: centonovantatré chili. Prevedere quattro persone e una rampa, non un ripensamento.',
+        "da_ascoltare": {"brano": 'Back at the Chicken Shack', "artista": 'Jimmy Smith',
+                          "anno": '1960',
+                          "cosa": "Nel quartetto non c'è un bassista: quel basso lo fanno i piedi di Smith sui pedali."},
         "foto": {
             "file": "assets/foto/hammond/principale.jpg",
             "autore": "bobistraveling",
@@ -736,6 +750,8 @@ SCHEDE = [
             "fonte": "Wikimedia Commons",
         },
         "fonti": [
+            {"titolo": '«Back at the Chicken Shack» (registrato il 25/04/1960, senza bassista) — Wikipedia (EN)',
+             "url": 'https://en.wikipedia.org/wiki/Back_at_the_Chicken_Shack', "data": '2026-08-28'},
             {"titolo": "«Hammond organ» — Wikipedia (EN)",
              "url": "https://en.wikipedia.org/wiki/Hammond_organ",
              "data": "2026-08-26"},
@@ -814,7 +830,10 @@ SCHEDE = [
             "fuochi. L'ultimo movimento disegna in musica il razzo che sale "
             "e le scintille che ricadono."
         ),
-        "battuta_dinamo": "Trecento esemplari in un secolo. Anche le macchine possono essere rare.",
+        "avvertenza": 'Ne esistono circa trecento in tutto il mondo. In caso di guasto, mettersi comodi.',
+        "da_ascoltare": {"brano": 'Turangalîla-Symphonie', "artista": 'Olivier Messiaen',
+                          "anno": '1949',
+                          "cosa": "La voce che sale sopra l'orchestra e sembra un soprano non è un soprano."},
         "foto": {
             "file": "assets/foto/ondes/principale.jpg",
             "autore": "andrew garton",
@@ -901,7 +920,10 @@ SCHEDE = [
             "acuto che tutti riconoscono — R2-D2 — è mezzo circuito e mezzo "
             "essere umano. Ci mise sei mesi."
         ),
-        "battuta_dinamo": "Metà macchina e metà persona. Come tutte le voci migliori.",
+        "avvertenza": 'Funziona senza collegare un solo cavo. Diventa interessante solo quando ne colleghi qualcuno.',
+        "da_ascoltare": {"brano": 'Frankenstein', "artista": 'Edgar Winter',
+                          "anno": '1972',
+                          "cosa": "Il synth che Winter si mise a tracolla per suonarlo in piedi: quel riff è un ARP 2600."},
         "foto": {
             "file": "assets/foto/arp2600/principale.jpg",
             "autore": "Ville Hyvönen",
@@ -985,7 +1007,10 @@ SCHEDE = [
             "fosse il primo computer al mondo in una casa privata. Poi "
             "un'alluvione del Tamigi si prese lo studio."
         ),
-        "battuta_dinamo": "Una tiara per un computer. Ognuno ha i suoi gioielli.",
+        "avvertenza": 'I collegamenti si fanno con spilli infilati in una matrice. Con gli spilli sbagliati si ottiene comunque qualcosa.',
+        "da_ascoltare": {"brano": 'Fetus', "artista": 'Franco Battiato',
+                          "anno": '1972',
+                          "cosa": 'Il VCS3 che Battiato era andato a prendersi a Londra, su un disco uscito a gennaio.'},
         "foto": {
             "file": "assets/foto/vcs3/principale.jpg",
             "autore": "Alexander Baxevanis",
@@ -1073,7 +1098,10 @@ SCHEDE = [
             "Oldham che lo suonò: quel booster «suonava come mille "
             "calabroni». Oggi il marchio sopravvive sui citofoni."
         ),
-        "battuta_dinamo": "Made in Marche, suonato ovunque. Nessuno se n'è accorto.",
+        "avvertenza": 'Il timbro non si può addolcire. È stato progettato per passare attraverso un muro di chitarre.',
+        "da_ascoltare": {"brano": 'When a Man Loves a Woman', "artista": 'Percy Sledge',
+                          "anno": '1966',
+                          "cosa": "L'organo dell'introduzione non è un Hammond: è un Farfisa fatto in provincia di Ancona."},
         "foto": {
             "file": "assets/foto/farfisa/principale.jpg",
             "autore": "TheTankman",
@@ -1140,7 +1168,10 @@ SCHEDE = [
              "riga": "Il fondo Oskar Sala oggi sta al @deutschesmuseum di Monaco."},
         ],
         "aneddoto": "«Gli uccelli» di Hitchcock non ha colonna sonora. Non una nota: Bernard Herrmann, il compositore di tutti i suoi film, compare nei titoli solo come «consulente del suono». Ogni stormire, ogni stridio, ogni ala che sbatte è Oskar Sala a Berlino, sul suo Mixtur-Trautonium, insieme a Remi Gassmann. Hitchcock quello strumento lo aveva sentito da giovane alla radio tedesca e se l'era ricordato per trent'anni.",
-        "battuta_dinamo": "Il film più spaventoso del secolo non ha musica. Ha una macchina che urla.",
+        "avvertenza": "Non ha tasti. Ogni nota stonata è esattamente dove l'avete messa.",
+        "da_ascoltare": {"brano": 'Gli uccelli', "artista": 'Alfred Hitchcock',
+                          "anno": '1963',
+                          "cosa": "Non c'è musica in tutto il film: ogni stridio e ogni battito d'ali è questa macchina."},
         "foto": {
             "file": "assets/foto/trautonium/principale.jpg",
             "autore": "Morn the Gorn",
@@ -1195,7 +1226,10 @@ SCHEDE = [
         ],
         "menzioni_extra": [],
         "aneddoto": "Mentre montava «Fontana Mix» a Milano, John Cage andò a «Lascia o raddoppia?». Non come musicista: come esperto di funghi. Cinque puntate fra il gennaio e il febbraio 1959, con Mike Bongiorno che lo interrogava sulla micologia, e fra una domanda e l'altra Cage eseguiva i suoi pezzi in prima serata. Vinse cinque milioni di lire. L'avanguardia europea, finanziata da un quiz televisivo italiano.",
-        "battuta_dinamo": "Il futuro della musica pagato da un quiz sui funghi. Non chiedetemi di spiegarlo.",
+        "avvertenza": 'Un secondo di musica può richiedere un pomeriggio di forbici. Non è un guasto.',
+        "da_ascoltare": {"brano": 'Thema (Omaggio a Joyce)', "artista": 'Luciano Berio',
+                          "anno": '1958',
+                          "cosa": "È soltanto la voce di Cathy Berberian che legge l'Ulisse, tagliata e rimontata su nastro."},
         "foto": {
             "file": "assets/foto/fonologia/principale.jpg",
             "autore": "Stefano Stabile (mod. Clusternote)",
@@ -1248,7 +1282,10 @@ SCHEDE = [
         ],
         "menzioni_extra": [],
         "aneddoto": "Tony Visconti, il produttore di Bowie, si rifiutò di produrre «Space Oddity»: la chiamò una trovata per lucrare sullo sbarco sulla Luna. Il pezzo lo produsse Gus Dudgeon; Visconti fece il resto dell'album. Registrata il 20 giugno 1969, uscì l'11 luglio: cinque giorni prima che l'Apollo 11 partisse davvero. Fu il primo successo di Bowie, e c'è dentro un giocattolo suonato con una penna.",
-        "battuta_dinamo": "Il produttore la chiamò una trovata pubblicitaria. Aveva ragione. Ha perso lo stesso.",
+        "avvertenza": 'Si suona con un pennino legato alla scatola. Perso il pennino, lo strumento è finito.',
+        "da_ascoltare": {"brano": 'Space Oddity', "artista": 'David Bowie',
+                          "anno": '1969',
+                          "cosa": 'Il ronzio sotto le strofe non è un sintetizzatore: è un giocattolo per bambini.'},
         "foto": {
             "file": "assets/foto/stylophone/principale.jpg",
             "autore": "Alex Ashbourne",
@@ -1303,7 +1340,7 @@ SCHEDE = [
              "riga": "Chi l'ha costruita esiste ancora: @rolandglobal."},
         ],
         "aneddoto": "In Giamaica non lo trattarono da effetto. King Tubby e Lee Perry ci mettevano le mani sopra mentre il mix andava: alzavano il ritorno finché la macchina non partiva a ululare, poi lo riabbassavano al momento giusto. Il dub non è un genere suonato, è un genere mixato — ed è nato da quello che questa scatola fa quando la spingi oltre il punto in cui dovrebbe funzionare.",
-        "battuta_dinamo": "Mi hanno comprato per fare l'eco. Ho finito per inventare un genere musicale.",
+        "avvertenza": 'Oltre metà corsa il ritorno si rimangia se stesso e la macchina ulula. Non è un difetto, è il motivo.',
         "foto": {
             "file": "assets/foto/spaceecho/principale.jpg",
             "autore": "1904.CC",
@@ -1358,7 +1395,10 @@ SCHEDE = [
              "riga": "Lo ha rifatto uguale trentacinque anni dopo: @korgofficial."},
         ],
         "aneddoto": "L'MS-20 nasce come strumento didattico: costa poco, il pannello di patch mostra a occhio come è fatta la sintesi, entra nelle scuole. Poi passa di moda e finisce nei negozi dell'usato a prezzi da svendita — ed è lì che se lo comprano quelli che stanno inventando la techno. Nel 2013 la Korg lo rimette in produzione partendo dai disegni originali, e poi lo vende perfino in kit, da montare a mano.",
-        "battuta_dinamo": "Collegami la voce e ti rispondo. Non sempre in modo gentile.",
+        "avvertenza": "L'ingresso ESP accetta qualsiasi segnale e lo trasforma in note. Anche quando cantate stonato.",
+        "da_ascoltare": {"brano": 'Da Funk', "artista": 'Daft Punk',
+                          "anno": '1995',
+                          "cosa": 'Quel lead sporco e saturo è un MS-20: il pezzo è nato su questa macchina.'},
         "foto": {
             "file": "assets/foto/ms20/principale.jpg",
             "autore": "Wilfredor",
@@ -1366,6 +1406,10 @@ SCHEDE = [
             "fonte": "Wikimedia Commons",
         },
         "fonti": [
+            {"titolo": '«The Korg MS-20: the unfinished story of a legendary monosynth» — Happy Mag',
+             "url": 'https://happymag.tv/the-korg-ms-20-the-unfinished-story-of-a-legendary-monosynth/', "data": '2026-08-28'},
+            {"titolo": '«How the Korg MS-20 and the MS-20 Mini became a powerhouse» (Da Funk) — MusicTech',
+             "url": 'https://musictech.com/features/opinion-analysis/korg-ms-20-mini-history/', "data": '2026-08-28'},
             {"titolo": "«Korg MS-20» — Wikipedia (EN)",
              "url": "https://en.wikipedia.org/wiki/Korg_MS-20", "data": "2026-08-27"},
             {"titolo": "«The Story of the KORG MS-20 Synthesizer» — Guitar Center Riffs",
@@ -1412,7 +1456,10 @@ SCHEDE = [
         ],
         "menzioni_extra": [],
         "aneddoto": "L'assenza dei piatti non è una scelta estetica: è il prezzo della memoria nel 1980. Un crash dura troppo, e quei secondi in RAM costavano più di quanto valesse il suono. Il risultato è che un decennio intero di dischi si ferma di colpo invece di aprirsi — e quella brusca chiusura, nata da un vincolo di bilancio, è diventata uno dei suoni riconoscibili del pop degli anni Ottanta.",
-        "battuta_dinamo": "Niente piatti: la memoria costava troppo. Dieci anni di musica senza un crash.",
+        "avvertenza": 'Non contiene piatti. Non è un errore di imballaggio: la memoria costava troppo.',
+        "da_ascoltare": {"brano": 'When Doves Cry', "artista": 'Prince',
+                          "anno": '1984',
+                          "cosa": 'Niente basso e nessun piatto: quel che resta è la LM-1 accordata verso il basso.'},
         "foto": {
             "file": "assets/foto/lm1/principale.jpg",
             "autore": "Forat Electronics",
@@ -1462,7 +1509,26 @@ def componi_didascalia(scheda):
     for m in scheda.get("menzioni_extra", []):
         righe.append(m["riga"])
         righe.append("")
-    righe.append(f"Dinamo dice: «{scheda['battuta_dinamo']}»")
+    a = scheda.get("da_ascoltare")
+    if a:
+        righe.append(f"DA ASCOLTARE — {a['artista']}, «{a['brano']}» ({a['anno']}): {a['cosa']}")
+        righe.append("")
+    # LEZIONE IMPARATA (28/08/2026). La chiusura era «Dinamo dice: …», una
+    # battuta. Riletta tutta insieme, la serie mostrava il problema: erano
+    # osservazioni generiche che si potevano scambiare fra una scheda e
+    # l'altra senza che nulla cambiasse — e una battuta intercambiabile non
+    # è una battuta, è riempitivo. Le uniche due che funzionavano non
+    # facevano dello spirito: raccontavano un fatto assurdo con la faccia
+    # seria. Da qui Dinamo cambia mestiere: non è la spalla comica, è chi
+    # compila il catalogo, e chiude con un'avvertenza da manuale d'uso.
+    # REGOLA: l'avvertenza deve poter stare SOLO su questa scheda. Se la
+    # puoi spostare su un'altra macchina, è sbagliata e va riscritta.
+    # Le schede 1-4 erano già pubblicate quando è cambiata la regola e
+    # restano com'erano: si riscrive il futuro, non i post usciti.
+    if scheda.get("avvertenza"):
+        righe.append(f"AVVERTENZE: {scheda['avvertenza']}")
+    else:
+        righe.append(f"Dinamo dice: «{scheda['battuta_dinamo']}»")
     righe.append("")
     righe.append(CTA)
     righe.append("")
@@ -1515,8 +1581,12 @@ def alt_slide(scheda, n):
         return f"{nome} ({anno}) — come funziona. {scheda['come_funziona'][:600]}"
     if n == 5:
         artisti = ", ".join(f"{u['artista']} ({u['nota']})" for u in scheda["chi_lusata"])
-        return f"{nome} ({anno}) — chi ha usato questa macchina: {artisti}"[:900]
-    return f"{nome} ({anno}) — la storia. {scheda['aneddoto'][:600]}"
+        a = scheda.get("da_ascoltare")
+        coda = (f" Da ascoltare: {a['artista']}, «{a['brano']}» ({a['anno']}), {a['cosa']}"
+                if a else "")
+        return f"{nome} ({anno}) — chi ha usato questa macchina: {artisti}.{coda}"[:900]
+    chiusura = scheda.get("avvertenza") or scheda.get("battuta_dinamo", "")
+    return f"{nome} ({anno}) — la storia. {scheda['aneddoto'][:600]} {chiusura}"
 
 
 def primo_commento(scheda):
@@ -1542,8 +1612,19 @@ def valida_scheda(scheda):
         errori.append(f"{len(scheda['hashtags'])} hashtag (max {MAX_HASHTAG})")
     if len(scheda["gancio"]) > MAX_GANCIO:
         errori.append(f"gancio {len(scheda['gancio'])} caratteri (max {MAX_GANCIO})")
-    if len(scheda["battuta_dinamo"]) > MAX_BATTUTA:
+    if not scheda.get("avvertenza") and not scheda.get("battuta_dinamo"):
+        errori.append("manca la riga di chiusura (avvertenza)")
+    if len(scheda.get("battuta_dinamo", "")) > MAX_BATTUTA:
         errori.append(f"battuta {len(scheda['battuta_dinamo'])} caratteri (max {MAX_BATTUTA})")
+    if len(scheda.get("avvertenza", "")) > MAX_AVVERTENZA:
+        errori.append(f"avvertenza {len(scheda['avvertenza'])} caratteri (max {MAX_AVVERTENZA})")
+    a = scheda.get("da_ascoltare")
+    if a:
+        mancanti = [k for k in ("brano", "artista", "anno", "cosa") if not a.get(k)]
+        if mancanti:
+            errori.append(f"da_ascoltare incompleto, mancano: {mancanti}")
+        elif len(a["cosa"]) > MAX_ASCOLTO:
+            errori.append(f"da_ascoltare {len(a['cosa'])} caratteri (max {MAX_ASCOLTO})")
     for campo in ("la_macchina", "inventore", "come_funziona", "aneddoto"):
         if len(scheda[campo]) > MAX_TESTO_SLIDE:
             errori.append(f"{campo} {len(scheda[campo])} caratteri (max {MAX_TESTO_SLIDE})")

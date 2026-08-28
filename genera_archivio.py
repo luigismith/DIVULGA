@@ -78,6 +78,9 @@ article p{margin-top:12px;max-width:66ch}
 .specifiche dd{font-family:'Oswald',sans-serif;font-weight:700;font-size:23px;text-transform:uppercase;margin-top:4px}
 ul.artisti{margin-top:14px;padding-left:20px;max-width:66ch}
 ul.artisti li{margin-bottom:9px}
+.ascolto{margin-top:26px;border:2px solid #38291d;padding:16px 22px 20px}
+.ascolto h2{margin:0 0 6px;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#d9702e}
+.ascolto .brano{font-weight:700;font-size:20px;margin:0 0 6px}
 blockquote.dinamo{margin-top:22px;background:#e9dcbf;border:2px solid #38291d;padding:18px 22px;
   font-family:'Oswald',sans-serif;font-weight:500;font-size:23px;line-height:1.3;max-width:66ch}
 blockquote.dinamo span{display:block;font-family:'IBM Plex Mono',monospace;font-size:11.5px;
@@ -175,6 +178,24 @@ def main():
             for k, v in s["specifiche"])
         foto = s["foto"]
 
+        # Chiusura della scheda: «AVVERTENZE» sulle schede nuove, la vecchia
+        # battuta sulle prime quattro (erano gia' pubblicate quando la regola
+        # e' cambiata; la pagina d'archivio deve corrispondere al post uscito).
+        if s.get("avvertenza"):
+            etichetta = "Avvertenze"
+            chiusura = html.escape(s["avvertenza"])
+        else:
+            etichetta = "Dinamo dice"
+            chiusura = f"«{html.escape(s['battuta_dinamo'])}»"
+        a = s.get("da_ascoltare")
+        ascolto_html = ""
+        if a:
+            ascolto_html = (
+                '<div class="ascolto"><h2>Da ascoltare</h2>'
+                f'<p class="brano">{html.escape(a["artista"])}, '
+                f'«{html.escape(a["brano"])}» ({html.escape(a["anno"])})</p>'
+                f'<p>{html.escape(a["cosa"])}</p></div>')
+
         # Dati strutturati: dicono ai motori che questa è una scheda
         # divulgativa su uno strumento musicale, con data e fonti.
         #
@@ -237,7 +258,8 @@ def main():
 
 <h2>L'aneddoto</h2>
 <p>{html.escape(s['aneddoto'])}</p>
-<blockquote class="dinamo"><span>Dinamo dice</span>«{html.escape(s['battuta_dinamo'])}»</blockquote>
+{ascolto_html}
+<blockquote class="dinamo"><span>{etichetta}</span>{chiusura}</blockquote>
 
 <div class="slides">{slides}</div>
 
