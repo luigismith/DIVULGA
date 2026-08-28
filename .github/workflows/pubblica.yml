@@ -70,15 +70,31 @@ jobs:
       - name: Controlli automatici sulle schede
         run: python contenuti.py
 
-      # ffmpeg serve per la storia video (audio sintetizzato). Su
-      # ubuntu-latest c'e' gia': si controlla e basta, senza installare.
-      - name: Controlla ffmpeg
-        run: ffmpeg -version | head -1
+      # ffmpeg serve per la storia video (audio sintetizzato).
+      # LEZIONE IMPARATA (28/08/2026), tre errori in uno:
+      #  1. avevo scritto "su ubuntu-latest c'e' gia'". NON C'E'. Non
+      #     l'avevo verificato: l'avevo dato per scontato.
+      #  2. il controllo era `ffmpeg -version | head -1`. Con la pipe,
+      #     bash -e guarda l'uscita di `head`, che vale sempre 0: il passo
+      #     stampava "command not found" e passava lo stesso. Un controllo
+      #     che non puo' fallire e' peggio di nessun controllo, perche'
+      #     dice che va tutto bene.
+      #  3. la storia e' "facoltativa per scelta", ma la sua generazione
+      #     stava nel percorso critico: ffmpeg mancante ha ucciso la
+      #     pubblicazione del giorno. Il megafono ha ammazzato la missione.
+      - name: Installa ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffmpeg -version    # niente pipe: se manca, QUI si deve fermare
 
       - name: Genera le tavole della prossima scheda e l'archivio
         run: |
           python genera_tavole.py --prossima
-          python genera_storia_video.py --prossima
+          # La storia non deve poter bloccare il post: se il video non si
+          # genera si va avanti e il publisher ripiega sul JPEG muto.
+          python genera_storia_video.py --prossima \
+            || echo "[warn] storia video non generata: si prosegue senza"
           python genera_archivio.py
           git add docs
           # LEZIONE IMPARATA (27/08/2026): qui il push era secco, senza
