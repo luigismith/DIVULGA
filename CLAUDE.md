@@ -44,8 +44,11 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
    l'AI. Cross-post Facebook: spento.
 5. Il token non si stampa MAI (usare `token_ig.redigi`). Le password le
    digita solo il proprietario.
-6. Max 2 post/giorno, distanziati ≥6h. Su errore API: stop e issue, mai
-   retry in loop.
+6. Max 2 post/giorno, distanziati ≥6h, e **solo fra le 16 e le 23 italiane**
+   (`FINESTRA_ORE` in `pubblica.py`). Più di un post al giorno va bene —
+   serve a recuperare una giornata saltata — la raffica no. Fuori
+   finestra non si pubblica: la scheda resta in coda. Su errore API:
+   stop e issue, mai retry in loop.
 7. La coda in `contenuti.py` non scende mai sotto **14 schede verificate**
    (= 2 settimane a 1 post/giorno). Ogni sessione di rifornimento ne
    aggiunge di nuove e le verifica; c'è una Routine che apre sessioni di
@@ -71,6 +74,11 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   run, guarda `stato.json`. Se oggi non c'è un post, apre una issue senza
   chiedersi il perché. Serve contro il modo in cui è morta la pagina
   precedente — non un errore, ma il nulla.
+- Un cron in ritardo può arrivare ORE dopo: il 28/08/2026 una passata
+  serale è partita alle 03:04 italiane e ha pubblicato il Mellotron nel
+  cuore della notte. Il cron non lo controlliamo, l'orologio sì: fuori
+  dalla finestra `pubblica.py` si ferma da solo. Il lancio a mano
+  (`workflow_dispatch`) passa sempre, apposta, per recuperare.
 - I push dentro `pubblica.yml` si riallineano e riprovano: un commit
   arrivato sul branch mentre il run gira non deve poter uccidere la
   pubblicazione del giorno (successo il 27/08/2026).

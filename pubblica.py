@@ -28,6 +28,7 @@ import pathlib
 import subprocess
 import sys
 import time
+import zoneinfo
 
 import requests
 
@@ -40,6 +41,32 @@ GRAPH = token_ig.GRAPH
 
 MAX_POST_AL_GIORNO = 2
 DISTANZA_MINIMA_ORE = 6
+
+# Il fuso in cui vive la pagina. I conteggi "di oggi" si fanno QUI, non in
+# UTC: un post delle 00:30 italiane in UTC appartiene al giorno prima.
+ROMA = zoneinfo.ZoneInfo("Europe/Rome")
+
+# FINESTRA DI PUBBLICAZIONE (aggiunta il 28/08/2026).
+# LEZIONE IMPARATA: il 27/08 GitHub ha scartato tutte e tre le passate
+# serali e poi ne ha eseguita una con cinque ore e mezza di ritardo. Il
+# Mellotron e' uscito alle 03:04 di notte: pubblicato sul serio, e visto
+# da nessuno. Una scheda buona bruciata nel vuoto.
+# Il cron non lo controlliamo, l'orologio si': se il run arriva fuori
+# orario, non si pubblica. Si perde una giornata (e la sentinella delle
+# 23:25 apre la issue) invece di sprecare una scheda. La scheda resta in
+# coda: non si perde niente, si sposta solo.
+FINESTRA_ORE = (16, 23)   # ora italiana: si pubblica solo qui dentro
+
+
+def dentro_la_finestra():
+    """Vero se e' un orario decente per pubblicare.
+
+    Il lancio a mano (workflow_dispatch) passa sempre: se qualcuno preme
+    il bottone alle 4 del mattino sa cosa sta facendo, e serve per
+    recuperare una giornata saltata."""
+    if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
+        return True
+    return FINESTRA_ORE[0] <= dt.datetime.now(ROMA).hour < FINESTRA_ORE[1]
 
 # Le immagini vengono servite da GitHub Pages (l'API di Instagram non
 # accetta upload di file: scarica da un URL pubblico).
@@ -133,9 +160,20 @@ def main():
     stato = leggi_stato()
     ora = dt.datetime.now(dt.timezone.utc)
 
+    if not dentro_la_finestra():
+        adesso = dt.datetime.now(ROMA)
+        print(f"[stop] sono le {adesso:%H:%M} italiane, fuori dalla finestra "
+              f"{FINESTRA_ORE[0]}:00-{FINESTRA_ORE[1]}:00: la scheda resta in coda.")
+        return
+
     # Guardie anti-soft-block: mai più di 2 post al giorno, mai ravvicinati.
+    # Più di un post in un giorno è ammesso (deciso dal proprietario il
+    # 28/08/2026): serve a recuperare una giornata saltata. Quello che non
+    # è ammesso è la raffica — quattro pubblicazioni ravvicinate sono già
+    # costate un soft-block.
+    oggi_it = dt.datetime.now(ROMA).date()
     recenti = [p for p in stato["pubblicati"]
-               if dt.datetime.fromisoformat(p["quando"]).date() == ora.date()]
+               if dt.datetime.fromisoformat(p["quando"]).astimezone(ROMA).date() == oggi_it]
     if len(recenti) >= MAX_POST_AL_GIORNO:
         print("[stop] già pubblicati 2 post oggi: niente da fare."); return
     if stato["pubblicati"]:
