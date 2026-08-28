@@ -81,8 +81,9 @@ def profilo():
             if ok2:
                 s = r2.json()
                 tipo = s.get("media_type")
-                print(f"        -> {s.get('timestamp')}  media_type={tipo}"
-                      f"  {'VIDEO: la colonna sonora c'e'' if tipo == 'VIDEO' else 'IMMAGINE: muta'}")
+                nota = ("VIDEO: la colonna sonora c'e'" if tipo == "VIDEO"
+                        else "IMMAGINE: muta")
+                print(f"        -> {s.get('timestamp')}  media_type={tipo}  {nota}")
 
 
 def main():
