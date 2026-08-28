@@ -111,7 +111,19 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   `flex:none` sui titoli (già nel CSS base).
 - I testi in tavola hanno limiti in `contenuti.py` (MAX_GANCIO ecc.):
   scrivere sotto soglia, non contare sul troncamento.
-- Reel: NON iniziare senza rileggere le specifiche nel prompt di avvio
+- Reel: `genera_reel.py` costruisce e VERIFICA il file, ma non pubblica
+  niente — il publisher non tocca i reel. Sei scene proprie (non le
+  tavole del carosello, che sono 4:5 e troppo piene), 4 s l'una, 24 s in
+  tutto, sigla di `suoni.py` sopra. Provato il 28/08/2026: 720×1280,
+  H.264 main, no B-frame, AAC 44.1k, 2,9 MB. Primo reel da pubblicare a
+  mano, UNO SOLO, e solo dopo che la storia video è passata.
+- Chi genera tavole o scene con Playwright: NON usare `set_content()`.
+  La pagina finisce con origine `about:blank` e Chromium blocca le
+  sottorisorse `file://` — spariscono font e foto, senza errori. Si
+  scrive un file e si fa `goto(file.as_uri())`. E si aspetta anche il
+  decode delle immagini: `data-pronto` scatta su `fonts.ready`, che può
+  arrivare prima della foto.
+- Reel: NON toccare le specifiche senza rileggerle nel prompt di avvio
   (720×1280, H.264 main, yuv420p, GOP chiuso, no B-frame, AAC 44.1k,
   remux con `-use_editlist 0`); il budget video dell'account si esaurisce
   in ~12 container: UN tentativo, poi un'ora di attesa. Musica solo

@@ -252,16 +252,20 @@ def _eco(campioni, ritardo_s=0.375, ritorno=0.42):
 
 # ------------------------------------------------------------------ mix ---
 
-def genera(scheda, percorso_wav):
-    """Scrive il WAV della sigla nel timbro della macchina della scheda."""
+def genera(scheda, percorso_wav, durata=None):
+    """Scrive il WAV della sigla nel timbro della macchina della scheda.
+
+    `durata` serve al reel, che è più lungo di una storia: la sigla si
+    allunga ripetendo il motivo, non cambiando musica."""
     slug = scheda["slug"] if isinstance(scheda, dict) else str(scheda)
     voce = VOCI[VOCE_SCHEDA.get(slug, "sega")]
-    n_tot = int(SR * DURATA)
+    secondi = float(durata or DURATA)
+    n_tot = int(SR * secondi)
     passo = int(SR * 60.0 / BPM)          # un movimento
     n_nota = int(passo * 1.6)             # le note si sovrappongono un po'
 
     mix = [0.0] * n_tot
-    for k in range(int(DURATA * BPM / 60.0)):
+    for k in range(int(secondi * BPM / 60.0) + 1):
         gradi = SEMITONI[k % len(SEMITONI)]
         ott = 0 if k % 2 == 0 else 1
         campioni = voce(_nota(gradi, ott), n_nota)
