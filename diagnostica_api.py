@@ -67,6 +67,23 @@ def profilo():
         print("ATTENZIONE: il campo sito web e' vuoto. Se la bio finisce con")
         print("una freccia verso il basso, sta indicando il nulla.")
 
+    # Le storie durano 24 ore e non lasciano traccia in stato.json: l'unico
+    # modo di sapere se quella di stasera e' uscita davvero — e se e' un
+    # VIDEO o il ripiego muto — e' chiederlo all'API finche' e' attiva.
+    print()
+    ok, r = prova("storie attive", "GET", "me/stories", token)
+    if ok:
+        ids = [s["id"] for s in r.json().get("data", [])]
+        print(f"        -> {len(ids)} storie attive")
+        for sid in ids:
+            ok2, r2 = prova(f"  storia {sid}", "GET", sid, token,
+                            fields="id,media_type,media_url,timestamp")
+            if ok2:
+                s = r2.json()
+                tipo = s.get("media_type")
+                print(f"        -> {s.get('timestamp')}  media_type={tipo}"
+                      f"  {'VIDEO: la colonna sonora c'e'' if tipo == 'VIDEO' else 'IMMAGINE: muta'}")
+
 
 def main():
     token, _ = token_ig.token_corrente()
