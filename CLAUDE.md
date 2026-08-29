@@ -67,6 +67,19 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   davvero devono cadere tutte e tre (il doppione lo impedisce la regola
   delle 6 ore in `pubblica.py`). **Il 25/10/2026** vanno spostate a
   `50 16`, `35 17`, `40 20` (c'è un promemoria schedulato).
+- **L'innesco vero non e' il cron di GitHub.** Il 26, 27 e 28/08/2026 ha
+  scartato passate serali (il 27 tutte e tre). Ora ci sono tre inneschi
+  indipendenti, in ordine di affidabilita':
+  1. una **Routine** (lato Claude, 17:45 italiane) che guarda `stato.json`
+     e, se oggi non e' uscito niente, TIRA IL CORDONE;
+  2. un **servizio cron esterno** (cron-job.org), quando il proprietario
+     lo configura: chiama l'API di GitHub con un suo token;
+  3. i tre cron di GitHub (`50 15`, `35 16`, `40 19`), che restano come
+     rete di sicurezza.
+  «Tirare il cordone» = toccare `scatto.txt` e fare push: `pubblica.yml`
+  parte su `push: paths: ['scatto.txt']`. Serve perche' un innesco puo'
+  avere `git` ma non un token per l'API. Non fa danni: le guardie di
+  `pubblica.py` valgono comunque e un run fuori tempo si ferma da solo.
 - Un cron che non parte non lascia traccia: in Actions non compare nessun
   run fallito, compare il nulla. Se la pagina tace, la prima cosa da
   guardare è se il run esiste, non se è andato in errore.
