@@ -12,4 +12,4 @@
 # giornata e' gia' a posto, il run parte e si ferma da solo.
 #
 # Ultimo scatto:
-2026-08-29T00:05:00Z
+2026-08-29T16:16:38Z
