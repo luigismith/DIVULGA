@@ -33,7 +33,13 @@ on:
     - cron: '50 15 * * *'   # 17:50 italiane — passata principale
     - cron: '35 16 * * *'   # 18:35 italiane — prima scorta
     - cron: '40 19 * * *'   # 21:40 italiane — ultima spiaggia
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      forza:
+        description: 'Pubblica anche fuori dalla finestra 16-23 (solo se sai perche)'
+        required: false
+        default: false
+        type: boolean
   # Innesco esterno "tira il cordone": chi non ha un token per chiamare
   # l'API puo' comunque far partire la pubblicazione con un push su
   # questo solo file. Le guardie di pubblica.py (finestra oraria, max 2
@@ -138,6 +144,10 @@ jobs:
           STATE_KEY: ${{ secrets.STATE_KEY }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Solo chi lancia a mano e spunta la casella scavalca l'orario.
+          # Un innesco automatico non manda questo input, quindi per lui
+          # la finestra vale eccome.
+          FORZA_ORARIO: ${{ inputs.forza && '1' || '0' }}
         run: python pubblica.py
 
       # Il post e' gia' uscito: da qui in poi nessun errore deve poter

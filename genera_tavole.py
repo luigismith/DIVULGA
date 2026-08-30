@@ -80,6 +80,7 @@ body{{width:1080px;height:1350px;overflow:hidden;background:{CREMA};color:{BRUNO
 .pager{{flex:none;margin-top:auto;display:flex;align-items:center;justify-content:space-between;
   border-top:3px solid {BRUNO};padding:16px 0 22px;font-family:'PlexMono';font-weight:600;font-size:15px;letter-spacing:.16em}}
 .pager .num{{color:{ARANCIO}}}
+.pager .qui{{font-family:'Oswald';font-weight:700;font-size:24px;letter-spacing:.04em}}
 .zoccolo{{flex:none;background:{ARANCIO};color:{BRUNO};padding:20px 56px;display:flex;align-items:center;justify-content:space-between}}
 .motto{{font-family:'PlexMono';font-weight:600;font-size:16px;letter-spacing:.12em}}
 .handle{{font-weight:700;font-size:22px;letter-spacing:.14em}}
@@ -124,7 +125,7 @@ def _testata(scheda):
 
 
 def _pager(scheda, n):
-    return f"""<div class="pager"><span>{scheda['strumento'].upper()}</span><span class="num">{n} / 6 →</span></div>"""
+    return f"""<div class="pager"><span class="qui">{scheda['strumento'].upper()}</span><span class="num">{n} / 6 →</span></div>"""
 
 
 def _foto_credito(scheda):
@@ -143,7 +144,17 @@ def slide_copertina(scheda):
     )
     css = f"""
 .ghost{{position:absolute;top:2px;right:40px;font-weight:700;font-size:200px;line-height:1;color:{CREMA2};z-index:0}}
-.titolone{{position:relative;z-index:1;font-size:86px}}
+/* LEZIONE IMPARATA (30/08/2026): la copertina non portava il nome dello
+   strumento. Da nessuna parte. C'erano anno, luogo, gancio, sottotitolo,
+   foto e specifiche — ma non «Yamaha DX7». In un catalogo e' il difetto
+   peggiore: nella griglia del profilo si vede solo la copertina, e chi
+   scorre non sa di che macchina si parla. Il gancio resta la cosa piu'
+   grande, perche' e' quello che ferma il pollice, ma il nome viene
+   PRIMA e si legge da lontano. */
+.nome-macchina{{flex:none;position:relative;z-index:1;font-weight:700;font-size:58px;
+  line-height:1.02;text-transform:uppercase;letter-spacing:.01em;margin-top:10px;
+  padding-bottom:14px;border-bottom:5px solid {ARANCIO}}}
+.titolone{{position:relative;z-index:1;font-size:70px;margin-top:18px}}
 .sottotitolo{{flex:none;position:relative;z-index:1;font-weight:500;font-size:29px;margin-top:12px;color:#6b5138;max-width:850px;line-height:1.3}}
 .fototel{{flex:none;position:relative;z-index:1;margin-top:30px;border-top:8px solid {BRUNO};border-bottom:8px solid {BRUNO};background:#111}}
 .fototel img{{display:block;width:100%;height:500px;object-fit:cover;object-position:{pos}}}
@@ -160,11 +171,12 @@ def slide_copertina(scheda):
 <div class="corpo">
   <div class="ghost">{scheda['numero']:03d}</div>
   <div class="kicker">{scheda['anno']} · {scheda['luogo'].upper()}</div>
-  <div class="titolone autofit" data-min="46" style="height:auto;max-height:300px">{scheda['gancio']}</div>
+  <div class="nome-macchina autofit" data-min="34" style="height:auto;max-height:130px">{scheda['strumento']}</div>
+  <div class="titolone autofit" data-min="40" style="height:auto;max-height:240px">{scheda['gancio']}</div>
   <div class="sottotitolo">{scheda['sottotitolo']}</div>
   <div class="fototel">
     <img src="{foto_uri}">
-    <div class="etichetta-foto">LA MACCHINA, DAL VERO</div>
+    <div class="etichetta-foto">{scheda['strumento'].upper()} · DAL VERO</div>
     <div class="credito">{_foto_credito(scheda)}</div>
   </div>
   <div class="specifiche">{spec}</div>

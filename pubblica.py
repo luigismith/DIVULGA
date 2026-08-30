@@ -61,12 +61,19 @@ FINESTRA_ORE = (16, 23)   # ora italiana: si pubblica solo qui dentro
 def dentro_la_finestra():
     """Vero se e' un orario decente per pubblicare.
 
-    Il lancio a mano (workflow_dispatch) passa sempre: se qualcuno preme
-    il bottone alle 4 del mattino sa cosa sta facendo, e serve per
-    recuperare una giornata saltata."""
-    if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch":
-        return True
-    return FINESTRA_ORE[0] <= dt.datetime.now(ROMA).hour < FINESTRA_ORE[1]
+    LEZIONE IMPARATA (30/08/2026). Qui c'era scritto: se l'evento e'
+    `workflow_dispatch` passa sempre, perche' "chi preme il bottone alle 4
+    del mattino sa cosa sta facendo". Vero per una persona, FALSO per una
+    macchina: dal 30/08 l'innesco esterno (cron-job.org) chiama l'API di
+    GitHub, e l'API genera esattamente lo stesso `workflow_dispatch`. Il
+    test di configurazione delle 11:25 ha quindi scavalcato la finestra e
+    pubblicato il TB-303 in tarda mattinata.
+    REGOLA: non dedurre l'INTENZIONE dal canale. Chi vuole davvero
+    scavalcare la finestra deve dirlo, e lo dice mettendo `forza: true`
+    fra gli input del workflow. Un innesco automatico non lo fa mai.
+    """
+    return (os.environ.get("FORZA_ORARIO") == "1"
+            or FINESTRA_ORE[0] <= dt.datetime.now(ROMA).hour < FINESTRA_ORE[1])
 
 # Le immagini vengono servite da GitHub Pages (l'API di Instagram non
 # accetta upload di file: scarica da un URL pubblico).

@@ -102,6 +102,13 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   run, guarda `stato.json`. Se oggi non c'è un post, apre una issue senza
   chiedersi il perché. Serve contro il modo in cui è morta la pagina
   precedente — non un errore, ma il nulla.
+- **Non dedurre l'intenzione dal canale.** La finestra oraria si
+  scavalcava quando l'evento era `workflow_dispatch`, ragionando «se
+  qualcuno preme il bottone sa cosa fa». Ma dal 30/08 anche l'innesco
+  esterno chiama l'API, e l'API genera lo stesso identico evento: un test
+  di configurazione ha pubblicato il TB-303 alle 11:25. Ora si scavalca
+  solo dichiarandolo (input `forza: true` → `FORZA_ORARIO=1`), e un
+  innesco automatico non lo dichiara mai.
 - Un cron in ritardo può arrivare ORE dopo: il 28/08/2026 una passata
   serale è partita alle 03:04 italiane e ha pubblicato il Mellotron nel
   cuore della notte. Il cron non lo controlliamo, l'orologio sì: fuori
