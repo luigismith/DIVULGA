@@ -57,6 +57,11 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
    permalink/archivio, non fidarsi del codice di risposta).
 9. Quando sbagli: dirlo chiaro al proprietario e scrivere la regola in un
    commento accanto al codice che l'ha causata.
+10. **Un ambiente diverso da quello in cui giri va PROVATO, non dedotto.**
+   In tre giorni lo stesso errore tre volte: ffmpeg dato per presente su
+   ubuntu-latest (non c'era), un controllo con la pipe che non poteva
+   fallire, una Routine che avrebbe dovuto pushare senza avere le
+   credenziali. Se una verifica non puo' dire di no, non e' una verifica.
 
 ## Promemoria tecnici
 
@@ -70,12 +75,22 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 - **L'innesco vero non e' il cron di GitHub.** Il 26, 27 e 28/08/2026 ha
   scartato passate serali (il 27 tutte e tre). Ora ci sono tre inneschi
   indipendenti, in ordine di affidabilita':
-  1. una **Routine** (lato Claude, 17:45 italiane) che guarda `stato.json`
-     e, se oggi non e' uscito niente, TIRA IL CORDONE;
-  2. un **servizio cron esterno** (cron-job.org), quando il proprietario
-     lo configura: chiama l'API di GitHub con un suo token;
-  3. i tre cron di GitHub (`50 15`, `35 16`, `40 19`), che restano come
-     rete di sicurezza.
+  1. **cron-job.org** (attivo dal 30/08/2026): ogni giorno alle 18:00
+     con fuso **Europe/Rome** — quindi sopravvive da solo al cambio
+     dell'ora — chiama `POST .../workflows/pubblica.yml/dispatches` con
+     un token GitHub «fine-grained» del proprietario (solo questo repo,
+     permesso Actions: read and write). Risposta attesa: 204. E' il
+     PRIMO innesco perche' e' l'unico che non dipende ne' da Claude ne'
+     dalla schedulazione di GitHub;
+  2. una **Routine** (lato Claude, 18:20 italiane) come rete di
+     sicurezza: guarda `stato.json` e, se oggi non e' uscito niente,
+     fa partire la pubblicazione. Arriva DOPO cron-job.org apposta,
+     altrimenti pubblicherebbe sempre lei e non sapremmo mai se
+     l'innesco indipendente funziona. NOTA: deve essere legata a una
+     sessione esistente — una sessione nuova non eredita le credenziali
+     git e non riesce a pushare (provato il 29/08: 74 secondi e nessun
+     innesco, con esito «SUCCEEDED»);
+  3. i tre cron di GitHub (`50 15`, `35 16`, `40 19`), ultima rete.
   «Tirare il cordone» = toccare `scatto.txt` e fare push: `pubblica.yml`
   parte su `push: paths: ['scatto.txt']`. Serve perche' un innesco puo'
   avere `git` ma non un token per l'API. Non fa danni: le guardie di
