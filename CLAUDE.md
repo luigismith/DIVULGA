@@ -40,6 +40,13 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 3. Handle Instagram: si tagga solo dopo aver verificato che l'account è
    quello ufficiale (evidenza web). Mai taggare il bersaglio di una
    battuta. Menzioni in didascalia E nel primo commento.
+   **Le pagine che taggheremo si seguono PRIMA che la scheda esca**
+   (regola del proprietario, 31/08/2026): un tag da chi non ti segue è
+   una richiesta, un tag da chi ti segue è una conversazione.
+   `python da_seguire.py` stampa la lista in ordine di uscita. Lo fa il
+   proprietario dall'app: l'API non ha nessun endpoint per seguire, e
+   automatizzare i «segui» viola le regole di Instagram e fa scattare i
+   blocchi.
 4. Mai dichiarare (post, bio, commenti) che i contenuti sono fatti con
    l'AI. Cross-post Facebook: spento.
 5. Il token non si stampa MAI (usare `token_ig.redigi`). Le password le
@@ -117,14 +124,16 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 - I push dentro `pubblica.yml` si riallineano e riprovano: un commit
   arrivato sul branch mentre il run gira non deve poter uccidere la
   pubblicazione del giorno (successo il 27/08/2026).
-- Dopo ogni post il publisher rilancia la scheda come STORY: dal
-  28/08/2026 è un VIDEO di 8 s (`story.mp4`, 1080×1920, H.264 main +
-  AAC 44.1k) con colonna sonora **sintetizzata** da `suoni.py` — un
-  motivo fisso suonato col timbro della famiglia di quella macchina (FM
-  per il DX7, ruote foniche per l'Hammond, filtro che spazza per la
-  303…). Il suono deve stare DENTRO il file: l'API non permette di
-  agganciare la musica del catalogo Instagram, quella si sceglie solo
-  dall'app. Se il video manca si ripiega sul vecchio `story.jpg` muto.
+- **Un solo video per scheda** (regola del proprietario, 31/08/2026):
+  si genera il REEL, e quello stesso file viene pubblicato anche come
+  STORY. Prima se ne costruivano due — `story.mp4` di 8 s e `reel.mp4`
+  di 24 s — cioè doppio lavoro e due versioni della stessa cosa;
+  `genera_storia_video.py` è stato rimosso. Il reel è già 720×1280 e
+  24 s stanno dentro il minuto che le storie consentono. La colonna
+  sonora è **sintetizzata** da `suoni.py` (un motivo fisso col timbro
+  della famiglia di quella macchina) e deve stare DENTRO il file:
+  l'API non permette di agganciare la musica del catalogo Instagram.
+  Se il reel manca si ripiega sul `story.jpg` muto.
   La storia resta facoltativa per scelta — se fallisce si annota nel log
   e non si blocca niente (il post è la missione, la story il megafono).
 - Audio: si normalizza sull'**RMS** (≈ −15 dBFS), non sul picco. Con la

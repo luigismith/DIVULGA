@@ -307,21 +307,23 @@ def main():
     # vale la pena far fallire una run (e allarmare il proprietario) per un
     # megafono.
     #
-    # DAL 28/08/2026 LA STORIA È UN VIDEO. Prima era `story.jpg`, e una
-    # foto su Instagram non ha audio: non era un difetto, era il formato.
-    # Ora è `story.mp4`, otto secondi con la sigla sintetizzata nel timbro
-    # della macchina (vedi suoni.py). Il suono dev'essere DENTRO il file:
-    # l'API non consente di agganciare la musica del catalogo Instagram.
-    # Se il video manca o non è online si ripiega sul JPEG muto: meglio una
-    # storia senza audio che nessuna storia.
+    # DAL 28/08/2026 LA STORIA È UN VIDEO: una foto su Instagram non ha
+    # audio, non era un difetto ma il formato.
+    # DAL 31/08/2026, per regola del proprietario, quel video è il REEL
+    # stesso. Prima si costruivano due filmati diversi per la stessa
+    # scheda — uno da 8 s per la storia e uno da 24 s per il reel — con il
+    # doppio del lavoro e due versioni della stessa cosa in giro. Il reel
+    # è già 720x1280, cioè verticale, e 24 s stanno comodi nel minuto che
+    # le storie consentono. Se il reel manca si ripiega sul vecchio
+    # story.jpg muto: meglio una storia senza audio che nessuna storia.
     try:
         base = f"{BASE_PAGES}/tavole/{scheda['slug']}"
         campo, valore, tentativi = "image_url", f"{base}/story.jpg", 10
         try:
-            verifica_immagini_online([f"{base}/story.mp4"])
-            campo, valore, tentativi = "video_url", f"{base}/story.mp4", 25
+            verifica_immagini_online([f"{base}/reel.mp4"])
+            campo, valore, tentativi = "video_url", f"{base}/reel.mp4", 25
         except Exception as e:
-            print(f"[warn] story.mp4 non raggiungibile, ripiego sul JPEG: {e}")
+            print(f"[warn] reel.mp4 non raggiungibile, ripiego sul JPEG: {e}")
             verifica_immagini_online([valore])
         c = api("POST", f"{ig_user}/media", token,
                 media_type="STORIES", **{campo: valore})

@@ -106,13 +106,12 @@ jobs:
           python genera_tavole.py --prossima
           # La storia non deve poter bloccare il post: se il video non si
           # genera si va avanti e il publisher ripiega sul JPEG muto.
-          python genera_storia_video.py --prossima \
-            || echo "[warn] storia video non generata: si prosegue senza"
-          # Il reel della scheda di oggi si COSTRUISCE qui — non si
-          # pubblica. Serve che il file sia gia' online su Pages quando il
-          # workflow dei reel decidera' di mandarne uno: cosi' quel giorno
-          # non c'e' niente da generare e nessun rischio in piu'.
-          # Come la storia, non deve poter bloccare il post.
+          # REGOLA DEL PROPRIETARIO (31/08/2026): si genera UN SOLO
+          # video, il reel, e quello stesso file fa anche da storia. Prima
+          # se ne costruivano due (story.mp4 di 8 s e reel.mp4 di 24 s):
+          # doppio lavoro, doppio peso su Pages e due filmati diversi per
+          # la stessa scheda. genera_storia_video.py e' stato tolto.
+          # Come prima, il video non deve poter bloccare il post.
           python genera_reel.py --prossima \
             || echo "[warn] reel non generato: si prosegue senza"
           python genera_archivio.py
