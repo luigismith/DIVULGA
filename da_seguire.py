@@ -50,26 +50,26 @@ def main(giorni=10):
     coda = [s for s in contenuti.SCHEDE if s["verificata"] and s["slug"] not in gia]
 
     oggi = dt.datetime.now(ROMA).date()
-    print("DA SEGUIRE PRIMA CHE ESCA LA SCHEDA")
-    print("=" * 66)
-    totale = 0
+    # Un account si segue UNA volta sola, anche se lo taggano tre schede:
+    # la lista utile e' quella senza doppioni, ordinata per quando serve.
+    visti, elenco = set(), []
     for i, s in enumerate(coda[:giorni]):
         quando = oggi + dt.timedelta(days=i + 1)
-        handle = handle_di(s)
-        if not handle:
-            continue
-        print(f"\n{quando:%d/%m} — {s['strumento']}")
-        for h, chi in handle:
-            print(f"    instagram.com/{h:<28} {chi}")
-            totale += 1
-    print()
-    print("=" * 66)
-    if totale:
-        print(f"{totale} account da seguire nei prossimi {giorni} giorni.")
-        print("Le schede senza righe qui sopra non taggano nessuno: e' normale,")
-        print("si tagga solo quando l'account ufficiale e' stato verificato.")
-    else:
-        print("Nessun account da seguire nelle prossime schede.")
+        for h, chi in handle_di(s):
+            if h in visti:
+                continue
+            visti.add(h)
+            elenco.append((quando, h, chi, s["strumento"]))
+
+    print("DA SEGUIRE PRIMA CHE ESCA LA SCHEDA CHE LI TAGGA")
+    print("=" * 72)
+    for quando, h, chi, strumento in elenco:
+        print(f"  {quando:%d/%m}  https://www.instagram.com/{h}/")
+        print(f"         {chi} — scheda «{strumento}»")
+    print("=" * 72)
+    print(f"{len(elenco)} account da seguire, uno per riga, nessun doppione.")
+    print("Le schede che non compaiono non taggano nessuno: si tagga solo")
+    print("quando l'account ufficiale e' stato verificato.")
 
 
 if __name__ == "__main__":
