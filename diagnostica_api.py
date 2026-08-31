@@ -70,6 +70,28 @@ def profilo():
     # Le storie durano 24 ore e non lasciano traccia in stato.json: l'unico
     # modo di sapere se quella di stasera e' uscita davvero — e se e' un
     # VIDEO o il ripiego muto — e' chiederlo all'API finche' e' attiva.
+    # Come stanno andando i post: senza numeri non si decide una cadenza.
+    # Le metriche cambiano nome fra un aggiornamento e l'altro dell'API,
+    # quindi si chiede e si stampa quello che torna, senza dare per
+    # scontato che un nome esista ancora.
+    print()
+    ok, r = prova("ultimi contenuti", "GET", "me/media", token,
+                  fields="id,media_type,media_product_type,permalink,timestamp",
+                  limit=8)
+    if ok:
+        for m in r.json().get("data", []):
+            tipo = m.get("media_product_type") or m.get("media_type")
+            quando = (m.get("timestamp") or "")[:16].replace("T", " ")
+            metriche = ("reach,likes,comments,saved,shares,total_interactions"
+                        if tipo == "REELS" else "reach,likes,comments,saved")
+            ok2, r2 = prova(f"  resa {tipo} del {quando}", "GET",
+                            f"{m['id']}/insights", token, metric=metriche)
+            if ok2:
+                vals = {d["name"]: d["values"][0]["value"]
+                        for d in r2.json().get("data", []) if d.get("values")}
+                riga = "  ".join(f"{k}={v}" for k, v in vals.items())
+                print(f"        -> {riga}   {m.get('permalink')}")
+
     print()
     ok, r = prova("storie attive", "GET", "me/stories", token)
     if ok:
