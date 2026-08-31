@@ -146,8 +146,17 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   `flex:none` sui titoli (già nel CSS base).
 - I testi in tavola hanno limiti in `contenuti.py` (MAX_GANCIO ecc.):
   scrivere sotto soglia, non contare sul troncamento.
-- Reel: `genera_reel.py` costruisce e VERIFICA il file, ma non pubblica
-  niente — il publisher non tocca i reel. Sei scene proprie (non le
+- **I reel sono l'unica cosa che esce dal recinto.** Misurato il
+  31/08/2026: copertura del reel 46 contro una media di 6,6 dei
+  caroselli, sette volte tanto, e i follower da 2 a 7 in due giorni. I
+  caroselli li vedono quasi solo i follower: servono per la griglia,
+  l'archivio e Google. Se un giorno bisogna scegliere cosa salvare, il
+  reel viene prima.
+- Reel: `genera_reel.py` costruisce e VERIFICA il file (`--prossima` per
+  la scheda del giorno, generata dentro `pubblica.yml` insieme alle
+  tavole, cosi' e' gia' online su Pages); `pubblica_reel.py` ne pubblica
+  UNO, a comando, e senza slug sceglie la scheda piu' vecchia che non ha
+  ancora avuto il suo reel. Il publisher quotidiano non pubblica reel. Sei scene proprie (non le
   tavole del carosello, che sono 4:5 e troppo piene), 4 s l'una, 24 s in
   tutto, sigla di `suoni.py` sopra. Provato il 28/08/2026: 720×1280,
   H.264 main, no B-frame, AAC 44.1k, 2,9 MB. Primo reel da pubblicare a

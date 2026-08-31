@@ -269,6 +269,17 @@ def verifica(percorso):
 
 if __name__ == "__main__":
     slug = sys.argv[1] if len(sys.argv) > 1 else "dx7"
+    if slug == "--prossima":
+        import json
+        stato = RADICE / "stato.json"
+        gia = set()
+        if stato.exists():
+            gia = {x["slug"] for x in json.loads(stato.read_text())["pubblicati"]}
+        prossima = contenuti.scheda_da_pubblicare(gia)
+        if prossima is None:
+            print("[reel] nessuna scheda in coda: niente da costruire")
+            raise SystemExit(0)
+        slug = prossima["slug"]
     scheda = next((s for s in contenuti.SCHEDE if s["slug"] == slug), None)
     if scheda is None:
         print(f"nessuna scheda '{slug}'"); raise SystemExit(1)

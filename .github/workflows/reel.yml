@@ -10,8 +10,9 @@ on:
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Slug della scheda (deve essere gia uscita come post)'
-        required: true
+        description: 'Slug della scheda; vuoto = la piu vecchia senza reel'
+        required: false
+        default: ''
         type: string
 
 concurrency:
@@ -41,4 +42,4 @@ jobs:
           STATE_KEY: ${{ secrets.STATE_KEY }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python pubblica_reel.py "${{ inputs.slug }}"
+        run: python pubblica_reel.py "${{ inputs.slug || '--prossimo' }}"

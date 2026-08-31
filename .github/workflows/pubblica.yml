@@ -108,6 +108,13 @@ jobs:
           # genera si va avanti e il publisher ripiega sul JPEG muto.
           python genera_storia_video.py --prossima \
             || echo "[warn] storia video non generata: si prosegue senza"
+          # Il reel della scheda di oggi si COSTRUISCE qui — non si
+          # pubblica. Serve che il file sia gia' online su Pages quando il
+          # workflow dei reel decidera' di mandarne uno: cosi' quel giorno
+          # non c'e' niente da generare e nessun rischio in piu'.
+          # Come la storia, non deve poter bloccare il post.
+          python genera_reel.py --prossima \
+            || echo "[warn] reel non generato: si prosegue senza"
           python genera_archivio.py
           git add docs
           # LEZIONE IMPARATA (27/08/2026): qui il push era secco, senza

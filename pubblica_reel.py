@@ -79,7 +79,24 @@ def main(slug):
     return 0
 
 
+def prossimo_reel():
+    """La scheda piu' vecchia gia' uscita nel feed che non ha ancora avuto
+    il suo reel. Si parte dalle vecchie apposta: hanno gia' esaurito la
+    loro spinta nel feed, e il reel gliene da' una seconda."""
+    stato = P.leggi_stato()
+    fatti = gia_pubblicati(stato)
+    for p in stato["pubblicati"]:
+        if p["slug"] not in fatti:
+            return p["slug"]
+    return None
+
+
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("uso: python pubblica_reel.py <slug>"); raise SystemExit(1)
-    raise SystemExit(main(sys.argv[1]))
+    slug = sys.argv[1] if len(sys.argv) > 1 else "--prossimo"
+    if slug == "--prossimo":
+        slug = prossimo_reel()
+        if slug is None:
+            print("[stop] tutte le schede pubblicate hanno gia' il loro reel.")
+            raise SystemExit(0)
+        print(f"[reel] scelto in automatico: {slug}")
+    raise SystemExit(main(slug))
