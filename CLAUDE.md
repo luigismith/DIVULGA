@@ -106,9 +106,25 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   run fallito, compare il nulla. Se la pagina tace, la prima cosa da
   guardare è se il run esiste, non se è andato in errore.
 - `sentinella.yml` (23:25 italiane) è l'allarme rovesciato: non guarda i
-  run, guarda `stato.json`. Se oggi non c'è un post, apre una issue senza
-  chiedersi il perché. Serve contro il modo in cui è morta la pagina
-  precedente — non un errore, ma il nulla.
+  run, guarda `stato.json`. Se la giornata non ha un post, apre una issue
+  senza chiedersi il perché. Serve contro il modo in cui è morta la
+  pagina precedente — non un errore, ma il nulla.
+- **Un allarme non deduce di che giorno parla dall'ora in cui si
+  sveglia.** La sentinella chiedeva «è uscito qualcosa OGGI?» con
+  `datetime.now(ROMA).date()`. Ma nessuna delle sue cinque passate
+  schedulate è mai partita in orario (ritardo minimo 2 ore, massimo 8) e
+  quattro sono finite dopo la mezzanotte: chiedevano di un giorno appena
+  cominciato, e la risposta poteva essere una sola. Quattro issue, tutte
+  false, su una pagina che pubblicava ogni giorno. Ora
+  `giorno_da_controllare()` risponde «l'ultima giornata con la finestra
+  già chiusa», quindi il ritardo del cron non cambia il verdetto, e il
+  confronto è con la data dell'ULTIMO post (così la sentinella recupera
+  anche le proprie notti saltate). La regola 10 vale anche al contrario:
+  una verifica che non può dire di sì non è una verifica, è un allarme
+  antincendio che suona sempre — e dopo quattro notti di rosso il
+  proprietario smette di aprire le issue, che è esattamente il silenzio
+  da cui doveva proteggere. `prova_sentinella.py` rimette in scena i
+  quattro orari veri e gira in `sentinella.yml` prima dell'allarme.
 - **Non dedurre l'intenzione dal canale.** La finestra oraria si
   scavalcava quando l'evento era `workflow_dispatch`, ragionando «se
   qualcuno preme il bottone sa cosa fa». Ma dal 30/08 anche l'innesco
