@@ -8,9 +8,11 @@ la leva di crescita più forte, e a costo zero.
 COSA NON È. Non sono le sei tavole del carosello incollate una dopo
 l'altra: quelle sono 4:5 e piene di testo lungo, illeggibili in verticale
 e a quel ritmo. Il reel ha scene proprie, poche parole per schermata, e
-il ritmo della sigla — quattro secondi a scena, sei scene, ventiquattro
+il ritmo della sigla — quattro secondi a scena, sette scene, ventotto
 secondi. Un reel sotto i trenta secondi viene guardato fino in fondo, e
-la percentuale di completamento è quello che conta davvero.
+la percentuale di completamento è quello che conta davvero: l'ultima
+scena è la domanda, da sola, perché è l'unico posto in cui qualcuno che
+non ci segue può ancora leggerla.
 
 SPECIFICHE (imparate a fatica, NON toccarle senza rileggerle):
 720x1280 — a 1080x1920 i video lunghi vengono rifiutati; H.264 profilo
@@ -100,6 +102,20 @@ body{{width:{L}px;height:{H}px}}
 .chiusa .firma{{font-weight:700;font-size:64px;line-height:1.1;text-transform:uppercase}}
 .chiusa .cta{{font-family:'PlexMono';font-size:34px;margin-top:34px;color:{gt.ARANCIO}}}
 .chiusa .tag{{font-weight:700;font-size:52px;letter-spacing:.1em;margin-top:26px}}
+.avviso{{justify-content:center}}
+.avviso .automa{{flex:none;margin-top:40px}}
+.avviso .automa svg{{width:200px;height:200px}}
+.avviso .grande{{font-size:80px;margin-top:30px}}
+.domanda{{justify-content:center;text-align:center}}
+.domanda .kicker{{color:{gt.ARANCIO}}}
+/* La domanda deve essere la cosa piu' grande della schermata: e' l'unica
+   ragione per cui questa scena esiste. flex:none perche' dentro un flex
+   verrebbe compressa e l'autofit la rimpicciolirebbe fino a sparire —
+   e' il primo errore del progetto, gia' scritto nel CSS di base. */
+.domanda .grande{{flex:none;height:auto;font-size:96px;line-height:1.06;margin-top:34px}}
+.domanda .chiusa{{margin-top:96px}}
+.domanda .chiusa .firma{{font-size:30px;letter-spacing:.05em;color:#6b5138}}
+.domanda .chiusa .tag{{font-size:62px;margin-top:20px}}
 """
 
 
@@ -154,15 +170,34 @@ def scene(scheda):
   <div class="riquadro">{dentro}</div>
 </div>""")
 
-    # 6 — avvertenza e firma
+    # 6 — l'avvertenza, da sola
     chiusura = scheda.get("avvertenza") or scheda.get("battuta_dinamo", "")
     etichetta = "AVVERTENZE" if scheda.get("avvertenza") else "DINAMO DICE"
-    s.append(f"""{gt._testata(scheda)}<div class="corpo">
+    # Con la CTA spostata nella scena 7 questa restava mezza vuota: due
+    # righe di testo in mezzo a uno schermo verticale. Ci sta Dinamo, che
+    # e' chi le avvertenze le scrive — la stessa figura della tavola 6.
+    s.append(f"""{gt._testata(scheda)}<div class="corpo avviso">
   <div class="kicker">{etichetta}</div>
-  <div class="grande autofit" data-min="40" style="max-height:640px">{chiusura}</div>
+  <div class="automa">{gt._automa(gt.ARANCIO, gt.BRUNO)}</div>
+  <div class="grande autofit" data-min="44" style="height:auto;max-height:820px">{chiusura}</div>
+</div>""")
+
+    # 7 — la domanda, e basta.
+    #
+    # LEZIONE IMPARATA (04/09/2026): la CTA stava qui sotto, nella scena 6,
+    # a 34px — il testo PIU' PICCOLO della schermata piu' affollata del
+    # reel, schiacciato fra l'avvertenza, la firma a 64px e l'handle a
+    # 52px, negli ultimi quattro secondi, cioe' esattamente quando si
+    # scrolla via. Il reel e' l'unica cosa che esce dal recinto (46 di
+    # copertura contro 6,6 dei caroselli): se la domanda va fatta in un
+    # posto solo, va fatta qui, e da sola.
+    # Il reel passa da 24 a 28 secondi: resta sotto i trenta, che e' la
+    # soglia oltre la quale la percentuale di completamento crolla.
+    s.append(f"""{gt._testata(scheda)}<div class="corpo domanda">
+  <div class="kicker">ORA TOCCA A VOI</div>
+  <div class="grande autofit" data-min="56" style="height:auto;max-height:900px">{contenuti.cta(scheda)}</div>
   <div class="chiusa">
     <div class="firma">{contenuti.FIRMA}</div>
-    <div class="cta">{contenuti.CTA}</div>
     <div class="tag">@ELETTROFONI</div>
   </div>
 </div>""")

@@ -22,11 +22,36 @@ se una storia non regge la verifica si butta la scheda, non si ammorbidisce.
 
 FIRMA = "LE MACCHINE NON SUONANO DA SOLE. QUASI MAI."
 
-# CTA fissa in didascalia (decisa in fase 0): genera commenti e suggerimenti.
-CTA = (
-    "Conosci qualcuno che ha suonato questa macchina? Taggalo. "
-    "E dimmi quale macchina vuoi vedere nella prossima scheda."
+# CHIAMATA ALL'AZIONE — una sola richiesta per scheda, a rotazione.
+#
+# LEZIONE IMPARATA (04/09/2026). La CTA di fase 0 chiedeva due cose in una
+# riga: «Conosci qualcuno che ha suonato questa macchina? Taggalo. E dimmi
+# quale macchina vuoi vedere nella prossima scheda.» In undici schede non
+# ha prodotto un solo commento. Due richieste in una frase obbligano chi
+# legge a scegliere quale fare, e nel dubbio non ne fa nessuna.
+#
+# REGOLA: una richiesta per scheda, e deve essere una a cui si risponde
+# senza pensarci. Le tre forme ruotano sul numero della scheda, quindi la
+# stessa scheda ha SEMPRE la stessa CTA — in didascalia, sulla tavola e
+# nel reel devono coincidere, e la tavola vive per sempre nell'archivio.
+#
+# PERCHE' NON C'E' «la prossima scheda: A o B?», che pure funzionerebbe
+# meglio (si risponde con una parola): la didascalia di Instagram e la
+# tavola nell'archivio sono permanenti, e una domanda su «la prossima»
+# diventa falsa il giorno dopo. Una CTA deve restare vera quanto il posto
+# in cui e' scritta.
+CTA_FORME = (
+    "Conosci qualcuno che ha suonato questa macchina? Taggalo qui sotto.",
+    "Quale macchina vuoi nella prossima scheda? Scrivila qui sotto.",
+    "Qual è la prima macchina elettronica che hai riconosciuto in un disco? Raccontala qui sotto.",
 )
+
+
+def cta(scheda):
+    """La chiamata all'azione di questa scheda: sempre la stessa, per
+    sempre. Deriva dal numero, cosi' didascalia, tavola e reel non possono
+    divergere neanche se generati in momenti diversi."""
+    return CTA_FORME[(scheda["numero"] - 1) % len(CTA_FORME)]
 
 # Vincoli dell'API Instagram, controllati PRIMA della pubblicazione
 # (te ne accorgi in fase di scrittura, non davanti all'errore):
@@ -1530,7 +1555,7 @@ def componi_didascalia(scheda):
     else:
         righe.append(f"Dinamo dice: «{scheda['battuta_dinamo']}»")
     righe.append("")
-    righe.append(CTA)
+    righe.append(cta(scheda))
     righe.append("")
     if scheda["fonti"]:
         righe.append("Fonti (verificate il " + scheda["fonti"][0]["data"] + "):")

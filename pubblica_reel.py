@@ -69,6 +69,29 @@ def main(slug):
     v = P.api("GET", media_id, token, fields="id,permalink,media_type,timestamp")
     print(f"[ok] reel pubblicato: {v.get('permalink')} ({v.get('media_type')})")
 
+    # Primo commento con le menzioni.
+    #
+    # LEZIONE IMPARATA (04/09/2026). Questo blocco c'era in pubblica.py e
+    # NON qui: sette reel sono usciti con le menzioni solo in didascalia.
+    # Su un reel la didascalia e' ancora meno visibile che su un carosello
+    # — sta sotto il video, tagliata dopo due righe — quindi il tag c'era
+    # ma la NOTIFICA all'account taggato non partiva. Cioe' esattamente
+    # niente: taggare senza notificare non serve a nessuno.
+    # La regola 3 diceva gia' «menzioni in didascalia E nel primo
+    # commento»: era scritta, e valeva solo per meta' del codice.
+    # REGOLA: quando due file pubblicano la stessa cosa in due modi, il
+    # secondo non e' finito finche' non fa TUTTO quello che fa il primo.
+    # Come nel carosello, il commento non e' critico: se fallisce il reel
+    # resta pubblicato e si segnala soltanto.
+    try:
+        commento = contenuti.primo_commento(scheda)
+        if commento:
+            P.api("POST", f"{media_id}/comments", token, message=commento)
+            print("[ok] primo commento con menzioni")
+    except Exception as e:
+        P.segnala_errore(f"primo commento fallito per il reel '{slug}'",
+                         f"Il reel e' pubblicato ({media_id}); solo il commento e' fallito: {e}")
+
     stato.setdefault("reel", []).append({
         "slug": slug,
         "quando": dt.datetime.now(dt.timezone.utc).isoformat(),

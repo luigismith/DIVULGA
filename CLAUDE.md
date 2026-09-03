@@ -24,7 +24,15 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 - Firma fissa ovunque: **LE MACCHINE NON SUONANO DA SOLE. QUASI MAI.**
 - Formato: carosello 6 slide (copertina / la macchina / chi l'ha
   costruita / come funziona / chi l'ha usata / aneddoto+fonti).
-- CTA fissa: «quale macchina vuoi vedere nella prossima scheda».
+- **Una CTA sola per scheda**, a rotazione fra tre forme (`CTA_FORME` in
+  `contenuti.py`, scelta sul numero della scheda quindi sempre identica in
+  didascalia, tavola e reel): tagga chi l'ha suonata / quale macchina
+  vuoi nella prossima / qual è la prima che hai riconosciuto in un disco.
+  La CTA di fase 0 ne chiedeva due in una riga («taggalo E dimmi quale») e
+  in undici schede non ha prodotto un commento: due richieste insieme
+  obbligano a scegliere, e chi legge non ne fa nessuna. Niente domande
+  del tipo «la prossima: A o B?», che pure funzionerebbero meglio —
+  didascalia e tavola sono permanenti e il giorno dopo sarebbero false.
 - Cadenza: OGNI GIORNO alle 18 italiane (dal 26/08/2026).
 - **La foto reale dello strumento è obbligatoria in ogni scheda** (regola
   del proprietario), con credito autore+licenza; fonti foto: Wikimedia
@@ -171,6 +179,21 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   `flex:none` sui titoli (già nel CSS base).
 - I testi in tavola hanno limiti in `contenuti.py` (MAX_GANCIO ecc.):
   scrivere sotto soglia, non contare sul troncamento.
+- **La CTA va dove la vede chi non ci segue.** Stava nell'ultima scena del
+  reel a 34px: il testo più piccolo della schermata più affollata,
+  schiacciato fra avvertenza, firma (64px) e handle (52px), negli ultimi
+  quattro secondi. Ora ha una scena tutta sua — il reel passa da sei a
+  sette scene, da 24 a 28 secondi, sotto i trenta — con la domanda come
+  elemento più grande e la firma rimpicciolita. Sulla tavola 6 la CTA non
+  c'era per niente: chi salva l'immagine o la trova in archivio non
+  vedeva nessun invito.
+- **Quando due file pubblicano la stessa cosa, il secondo non è finito
+  finché non fa TUTTO quello che fa il primo.** `pubblica.py` metteva il
+  primo commento con le menzioni, `pubblica_reel.py` no: sette reel sono
+  usciti col tag solo in didascalia — che sotto un video è tagliata dopo
+  due righe — quindi la notifica all'account taggato non è mai partita.
+  La regola 3 diceva già «menzioni in didascalia E nel primo commento»:
+  era scritta, e valeva per metà del codice.
 - **I reel sono l'unica cosa che esce dal recinto.** Misurato il
   31/08/2026: copertura del reel 46 contro una media di 6,6 dei
   caroselli, sette volte tanto, e i follower da 2 a 7 in due giorni. I
@@ -182,8 +205,8 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   tavole, cosi' e' gia' online su Pages); `pubblica_reel.py` ne pubblica
   UNO, a comando, e senza slug sceglie la scheda piu' vecchia che non ha
   ancora avuto il suo reel. Il publisher quotidiano non pubblica reel. Sei scene proprie (non le
-  tavole del carosello, che sono 4:5 e troppo piene), 4 s l'una, 24 s in
-  tutto, sigla di `suoni.py` sopra. Provato il 28/08/2026: 720×1280,
+  tavole del carosello, che sono 4:5 e troppo piene), 4 s l'una, 28 s in
+  tutto (la settima è solo la CTA), sigla di `suoni.py` sopra. Provato il 28/08/2026: 720×1280,
   H.264 main, no B-frame, AAC 44.1k, 2,9 MB. Primo reel da pubblicare a
   mano, UNO SOLO, e solo dopo che la storia video è passata.
 - Chi genera tavole o scene con Playwright: NON usare `set_content()`.

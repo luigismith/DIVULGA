@@ -294,6 +294,11 @@ def slide_artisti(scheda):
     return _pagina(corpo, css)
 
 
+# ATTENZIONE (04/09/2026): la slide 6 porta anche la CTA. Le tavole delle
+# schede GIA' USCITE non vanno rigenerate — devono continuare a
+# corrispondere ai post pubblicati, come per «DINAMO DICE». Il workflow
+# genera solo la prossima scheda, quindi succede da solo; il rischio c'e'
+# solo se qualcuno le rigenera tutte a mano.
 def _etichetta_chiusura(scheda):
     """«AVVERTENZE» sulle schede nuove, «DINAMO DICE» sulle prime quattro.
     Quelle quattro erano gia' pubblicate quando la regola e' cambiata: le
@@ -318,6 +323,9 @@ def slide_aneddoto(scheda):
 .balloon{{font-weight:500;font-size:30px;line-height:1.3}}
 .balloon .chi{{font-family:'PlexMono';font-weight:600;font-size:14px;letter-spacing:.18em;color:{ARANCIO};margin-bottom:8px}}
 .fonti{{flex:1 1 auto;font-family:'PlexMono';font-size:15px;line-height:1.7;color:#6b5138;margin-top:26px;overflow:hidden}}
+.fonti{{flex:none}}
+.cta{{flex:none;margin-top:auto;border-top:3px solid {ARANCIO};padding:16px 0 22px;
+  font-family:'PlexMono';font-weight:600;font-size:21px;line-height:1.4;color:{ARANCIO}}}
 .corpo{{padding-bottom:0}}
 """
     corpo = f"""
@@ -331,6 +339,7 @@ def slide_aneddoto(scheda):
     <div class="balloon"><div class="chi">{_etichetta_chiusura(scheda)}</div>{_testo_chiusura(scheda)}</div>
   </div>
   <div class="fonti autofit" data-min="11"><b>FONTI</b><br>{fonti}</div>
+  <div class="cta">{contenuti.cta(scheda)}</div>
 </div>
 <div class="zoccolo"><div class="motto">{contenuti.FIRMA}</div><div class="handle">@ELETTROFONI</div></div>
 """
