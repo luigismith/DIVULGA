@@ -52,9 +52,18 @@ def main(slug):
 
     didascalia = contenuti.componi_didascalia(scheda)
     try:
+        # share_to_feed=false: il reel NON entra nella griglia del profilo
+        # (regola del proprietario, 04/09/2026). Resta dove conta — nella
+        # scheda Reel e nei feed di chi non ci segue, che e' da dove arriva
+        # tutta la sua copertura — ma la griglia resta il catalogo: solo
+        # caroselli, sei tavole l'uno, in ordine di scheda. Chi apre il
+        # profilo deve vedere un catalogo, non un misto.
+        # NOTA: si decide alla creazione del container e non si cambia
+        # dopo. I dieci reel usciti prima di questa riga sono gia' nella
+        # griglia e l'API non li puo' togliere: si fa a mano dall'app.
         c = P.api("POST", f"{ig_user}/media", token,
                   media_type="REELS", video_url=url, caption=didascalia,
-                  share_to_feed="true")
+                  share_to_feed="false")
         # I video ci mettono molto più delle immagini. Questa NON è una
         # riprova su errore: è l'attesa del normale ciclo di vita del
         # container. Se torna ERROR ci si ferma subito.

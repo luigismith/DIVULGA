@@ -194,6 +194,19 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   due righe — quindi la notifica all'account taggato non è mai partita.
   La regola 3 diceva già «menzioni in didascalia E nel primo commento»:
   era scritta, e valeva per metà del codice.
+- **I reel non entrano nella griglia** (regola del proprietario,
+  04/09/2026): `share_to_feed="false"` in `pubblica_reel.py`. La griglia
+  è il catalogo — solo caroselli, in ordine di scheda — e il reel vive
+  dove gli serve, cioè nella scheda Reel e nei feed di chi non ci segue.
+  Si decide alla creazione del container e non si cambia dopo: i dieci
+  reel usciti prima del 04/09 restano nella griglia e l'API non li può
+  togliere, si fa a mano dall'app.
+- **Non si recuperano i commenti sui reel vecchi.** I dieci reel usciti
+  senza il primo commento taggavano 19 account già avvisati dal primo
+  commento del CAROSELLO della stessa scheda: rimediare adesso vorrebbe
+  dire 21 notifiche in un colpo, doppie e identiche, da una pagina
+  piccola. È il profilo di un bot. Da qui in avanti ogni reel avvisa una
+  volta sola, il giorno che esce, e va bene così.
 - **I reel sono l'unica cosa che esce dal recinto.** Misurato il
   31/08/2026: copertura del reel 46 contro una media di 6,6 dei
   caroselli, sette volte tanto, e i follower da 2 a 7 in due giorni. I
