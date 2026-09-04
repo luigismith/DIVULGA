@@ -1709,11 +1709,6 @@ SCHEDE = [
         "da_ascoltare": {"brano": "Sentimental Institution", "artista": "Steve Hackett",
                           "anno": "1980",
                           "cosa": "Registrato con un solo Optigan e il disco «Big Band Beat», nel bagno degli Wessex Studios per un suono volutamente vecchio e sporco."},
-        # TODO (04/09/2026): licenza e autore verificati su Commons, ma il file
-        # binario non è ancora stato scaricato — container rate-limitato da
-        # Wikimedia (429 persistente su upload.wikimedia.org). Completare con
-        # scarica-foto.yml o un nuovo tentativo dal container prima che questa
-        # scheda arrivi in cima alla coda di pubblicazione.
         "foto": {
             "file": "assets/foto/optigan/principale.jpg",
             "autore": "PMDrive1061",
