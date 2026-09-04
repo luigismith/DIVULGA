@@ -1502,6 +1502,726 @@ SCHEDE = [
         "hashtags": ["#linnlm1", "#drummachine", "#prince", "#anni80", "#musicaelettronica"],
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 19
+    {
+        "slug": "emulator",
+        "numero": 19,
+        "serie": "I CAMPIONATORI",
+        "strumento": "E-mu Emulator",
+        "anno": "1981",
+        "luogo": "Santa Cruz, USA",
+        "costruttore": "E-mu Systems",
+        "specifiche": [
+            ("ANNO", "1981"),
+            ("ORIGINE", "Santa Cruz, USA"),
+            ("VOCI", "8, polifoniche"),
+            ("ARCHIVIO", "Floppy 5,25\""),
+        ],
+        "gancio": "Il campionatore che rese il sampling una cosa da studio normale, non solo da major discografica",
+        "sottotitolo": "Otto voci, un floppy da 5,25 pollici e un decimo del prezzo del Fairlight: il sampling esce dai grandi studi.",
+        "la_macchina": (
+            "Una tastiera di quattro ottave collegata a un lettore di floppy da "
+            "5,25 pollici: carichi il dischetto, dentro c'è un suono campionato, "
+            "e lo suoni a otto voci insieme. Debutta nel 1981 a circa diecimila "
+            "dollari (ottomila sterline nel Regno Unito): una frazione del costo "
+            "dei sistemi concorrenti dell'epoca. Nasce dalle ceneri dell'Audity, "
+            "il sintetizzatore analogico di E-mu mai arrivato in commercio, "
+            "riconvertito in fretta su un'idea diversa: campionare, non "
+            "sintetizzare."
+        ),
+        "inventore_nome": "Dave Rossum e Scott Wedge",
+        "inventore": (
+            "Rossum e Wedge fondano E-mu Systems nel 1971 a Santa Cruz, vendendo "
+            "moduli e la tastiera a scansione digitale che brevettano e "
+            "concedono in licenza a Oberheim e Sequential Circuits. Nel 1980 "
+            "puntano tutto sull'Audity, un sintetizzatore analogico da 69.200 "
+            "dollari: un solo esemplare costruito, mai completato, nessun "
+            "acquirente. Quando Sequential smette di pagare le royalty sul "
+            "brevetto, il progetto muore. Rossum, che all'AES 1980 aveva visto "
+            "il Fairlight, lo rimpiazza con un'idea più economica: il "
+            "campionatore."
+        ),
+        "come_funziona": (
+            "Otto voci polifoniche, campionamento a 8 bit, 128 KB di memoria: "
+            "bastano un paio di secondi di suono per volta, caricati o salvati "
+            "sul floppy da 5,25 pollici. Nella versione del 1981 non c'è un "
+            "vero filtro né un inviluppo: il campione parte e si interrompe di "
+            "scatto, senza attacco o rilascio regolabili. Per chi non sa cosa "
+            "campionare, E-mu vende a parte una libreria di venticinque "
+            "dischetti con suoni già pronti all'uso."
+        ),
+        "richiami": [
+            ("FIG. 1", "Floppy 5,25\""),
+            ("FIG. 2", "8 voci polifoniche"),
+            ("FIG. 3", "128 KB di memoria"),
+        ],
+        "chi_lusata": [
+            {"artista": "Stevie Wonder", "nota": "La prima unità prodotta, matricola 001, gli viene consegnata nel giugno 1981", "ig": None},
+            {"artista": "New Order", "nota": "Il coro di 'Blue Monday' (1983) è un campione preso da un disco dei Kraftwerk", "ig": None},
+            {"artista": "Genesis", "nota": "Tony Banks campiona un koto giapponese e lo suona nell'assolo di 'Mama' (1983)", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Al Winter NAMM del gennaio 1981 la prima unità prodotta era già "
+            "promessa a Daryl Dragon, dei Captain & Tennille. Poi la prova "
+            "Stevie Wonder: lo abbraccia, lo ordina seduta stante, e quell'"
+            "esemplare — matricola 001 — gli viene spedito in giugno, il primo "
+            "Emulator mai consegnato a un cliente."
+        ),
+        "avvertenza": "Non ha l'inviluppo: il campione parte e si ferma di scatto, senza attacco né rilascio regolabili. Arriverà solo con l'Emulator II, nel 1984.",
+        "da_ascoltare": {
+            "brano": "Blue Monday", "artista": "New Order", "anno": "1983",
+            "cosa": "Il coro che apre il pezzo è un campione dell'Emulator I: la voce presa da 'Uranium' dei Kraftwerk, tagliata e suonata sulla tastiera.",
+        },
+        "foto": {
+            "file": "assets/foto/emulator/principale.jpg",
+            "autore": "Matt Friedman",
+            "licenza": "CC BY 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«E-mu Emulator» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/E-mu_Emulator", "data": "2026-09-04"},
+            {"titolo": "«E-mu Audity» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/E-mu_Audity", "data": "2026-09-04"},
+            {"titolo": "«E-mu Emulator» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/e-mu/emulator", "data": "2026-09-04"},
+            {"titolo": "«E-mu Audity» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/e-mu/audity", "data": "2026-09-04"},
+            {"titolo": "«Blast from the past: E-MU Emulator» — MusicRadar",
+             "url": "https://www.musicradar.com/news/blast-from-the-past-e-mu-emulator", "data": "2026-09-04"},
+            {"titolo": "«30 Years Of Emu» — Sound On Sound",
+             "url": "https://www.soundonsound.com/music-business/30-years-emu", "data": "2026-09-04"},
+            {"titolo": "«Dave Rossum, The Visionary Behind EMU and Rossum Electro» — MIDI.org",
+             "url": "https://midi.org/dave-rossum-emu-and-rossum-electro", "data": "2026-09-04"},
+            {"titolo": "«Blue Monday» (New Order) — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Blue_Monday_(New_Order_song)", "data": "2026-09-04"},
+            {"titolo": "«Unraveling the Many Mysteries of New Order's 'Blue Monday'» — Mental Floss",
+             "url": "https://www.mentalfloss.com/entertainment/music/new-order-blue-monday-mysterious-origins", "data": "2026-09-04"},
+            {"titolo": "«Mama» (Genesis) — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Mama_(Genesis_song)", "data": "2026-09-04"},
+        ],
+        "hashtags": ["#emuemulator", "#sampler", "#campionatore", "#musicaelettronica", "#anni80"],
+        "verificata": True,
+    },
+
+    # ---------------------------------------------------------------- 20
+    {
+        "slug": "optigan",
+        "numero": 20,  # da assegnare
+        "serie": "GLI ANTENATI",
+        "strumento": "Optigan",
+        "anno": "1971",
+        "luogo": "Compton, Stati Uniti",
+        "costruttore": "Mattel (Optigan Corporation)",
+        "specifiche": [
+            ("ANNO", "1971"),
+            ("ORIGINE", "Compton, USA"),
+            ("TRACCE", "57 ottiche"),
+            ("USCITA", "1971-1976"),
+        ],
+        "gancio": "Il giocattolo Mattel che suona un'orchestra vera, incisa non su nastro ma su un disco",
+        "sottotitolo": "Un organo da salotto per chi non sa suonare: la musica arriva già registrata, su un disco di plastica trasparente.",
+        "la_macchina": (
+            "È un organo elettrico pensato per la casa, non per i musicisti: "
+            "Mattel lo vende come elettrodomestico da salotto, non come "
+            "strumento professionale. Al posto di circuiti che generano "
+            "l'onda, dentro c'è un disco trasparente di plastica — un "
+            "«Program Disc» — con incise, in anelli concentrici, le tracce "
+            "ottiche di un'orchestra vera già registrata. Trentasette tasti "
+            "più pulsanti per gli accordi, suonati con la mano sinistra, e un "
+            "repertorio di dischi intercambiabili — bossa nova, banda, Natale "
+            "— per cambiare genere senza cambiare strumento."
+        ),
+        "inventore_nome": "Mattel (Optigan Corporation)",
+        "inventore": (
+            "Il progetto nasce dentro Mattel nel 1968, come applicazione "
+            "musicale della stessa tecnologia ottica già usata dall'azienda "
+            "per le bambole parlanti: i brevetti arrivano nel 1970. Per "
+            "venderlo Mattel crea una società a parte, la Optigan "
+            "Corporation, così il nome della casa di giocattoli non compare "
+            "mai in etichetta. Si fabbrica a Compton, California. Nel 1973 "
+            "Mattel cede tutto — marchio, dischi, diritti — alla newyorkese "
+            "Miner Industries, che lo produce come Opsonar fino al 1976."
+        ),
+        "come_funziona": (
+            "Il principio è quello della colonna sonora ottica del cinema: "
+            "una lampadina illumina il disco, la luce che lo attraversa "
+            "varia con le zone chiare e scure incise sulla pista, e un "
+            "fotodiodo la trasforma in segnale audio. Cinquantasette tracce "
+            "concentriche — trentasette per i tasti, le altre per accordi e "
+            "ritmi — e ciascuna è un anello che gira senza fine: il tasto "
+            "non fa partire un suono, accende la lettura di un loop già in "
+            "corsa. Per questo una nota può durare quanto si vuole, ma parte "
+            "e finisce di scatto: niente attacco, niente decadimento."
+        ),
+        "richiami": [
+            ("FIG. 1", "57 tracce ottiche"),
+            ("FIG. 2", "Lampadina e fotodiodo"),
+            ("FIG. 3", "Loop continuo, non nastro"),
+        ],
+        "chi_lusata": [
+            {"artista": "Steve Hackett", "nota": "il finale «Sentimental Institution», Defector (1980), costruito sul disco Big Band Beat", "ig": None},
+            {"artista": "Optiganally Yours", "nota": "Pea Hix e Rob Crow (Pinback): band nata e vissuta dentro l'Optigan, dal 1997", "ig": None},
+            {"artista": "David Lynch e Dean Hurley", "nota": "«Slow 30s Room» in Twin Peaks: The Return (2017), dallo stesso disco Big Band Beat", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Mattel lo pensa per famiglie che non sanno suonare, non per "
+            "musicisti: nel 1973 lo cede già, e nel 1976 la produzione si "
+            "ferma per sempre. Per vent'anni resta un oggetto da mercatino. "
+            "Poi, a metà anni Novanta, Pea Hix ne trova uno alla Salvation "
+            "Army e con Rob Crow fonda un gruppo che si chiama Optiganally "
+            "Yours — l'Optigan non è più uno strumento fra gli altri, è il "
+            "soggetto. Vent'anni dopo David Lynch e Dean Hurley pescano lo "
+            "stesso disco, Big Band Beat, per una scena di Twin Peaks: The "
+            "Return."
+        ),
+        "avvertenza": "Ogni traccia è un anello che gira sempre: il tasto non fa partire il suono, lo accende. Niente attacco, niente decadimento.",
+        "da_ascoltare": {
+            "brano": "Sentimental Institution",
+            "artista": "Steve Hackett",
+            "anno": "1980",
+            "cosa": "Il finale di Defector usa il disco Optigan Big Band Beat: quell'orchestrina anni Quaranta esce identica dal disco, non da un arrangiamento.",
+        },
+        "foto": {
+            "file": "assets/foto/optigan/principale.jpg",
+            "autore": "PMDrive1061",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Optigan» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Optigan", "data": "2026-09-04"},
+            {"titolo": "«Optigan Program Disc (1971-1976)» — Museum of Obsolete Media / Dead Media Project (working notes)",
+             "url": "https://www.deadmedia.org/notes/8/082.html", "data": "2026-09-04"},
+            {"titolo": "«Forgotten Technologies: The Optigan» — RedShark News",
+             "url": "https://www.redsharknews.com/audio/item/4130-forgotten-technologies-the-optigan", "data": "2026-09-04"},
+            {"titolo": "«Optigan» — Out Of Phase",
+             "url": "https://www.outofphase.fr/en/optigan-en/", "data": "2026-09-04"},
+            {"titolo": "«Optigan Allusions: Sonic Dislocation in The Return» — Musicology Now",
+             "url": "https://musicologynow.org/optigan-allusions-sonic-dislocation-in-the-return/", "data": "2026-09-04"},
+            {"titolo": "«Defector (Steve Hackett album)» — Wikipedia (EN), crediti Personnel",
+             "url": "https://en.wikipedia.org/wiki/Defector_(Steve_Hackett_album)", "data": "2026-09-04"},
+            {"titolo": "«Steve Hackett — Defector (1980) review» — Genesis News",
+             "url": "https://www.genesis-news.com/article/steve-hackett-defector-album-review/", "data": "2026-09-04"},
+            {"titolo": "«Pea Hicks: Indie Recording Pioneer» — Tape Op Magazine",
+             "url": "https://tapeop.com/interviews/137/pea-hicks", "data": "2026-09-04"},
+        ],
+        "hashtags": ["#optigan", "#mattel", "#strumentimusicali", "#storiadellamusica", "#musicaelettronica"],
+        "verificata": True,
+    },
+
+    # ---------------------------------------------------------------- 21
+    {
+        "slug": "synket",
+        "numero": 21,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Synket",
+        "anno": "1964",
+        "luogo": "Roma, Italia",
+        "costruttore": "Paolo Ketoff",
+        "specifiche": [
+            ("ANNO", "1964"),
+            ("ORIGINE", "Roma"),
+            ("TASTIERE", "Tre, a due ottave"),
+            ("ESEMPLARI", "Nove in dodici anni"),
+        ],
+        "gancio": "Il primo sintetizzatore pensato per il palco, non per il nastro: nasce a Roma nel 1964",
+        "sottotitolo": "Tre moduli sonori indipendenti, tre tastiere a tocco variabile: fatto per essere suonato dal vivo.",
+        "la_macchina": "Sta in una valigia, non in una sala. Tre moduli indipendenti — i «sound combiner» — ciascuno con un oscillatore, divisori di frequenza, filtri e modulatori propri, mescolabili in un'unica uscita. Sopra, tre tastiere di due ottave, una per modulo. A differenza dei sintetizzatori americani coevi, pensati per la registrazione su nastro in studio, il Synket è costruito per essere suonato in concerto, in tempo reale, davanti a un pubblico. Ketoff ne costruisce nove esemplari in dodici anni, ognuno diverso dagli altri: mai un prodotto in serie.",
+        "inventore_nome": "Paolo Ketoff",
+        "inventore": "Ketoff è un tecnico del suono romano, dagli anni Cinquanta alla RCA Italiana e a Cinecittà: registra colonne sonore, non compone musica. Costruisce il Synket su richiesta dello studio di musica elettronica dell'American Academy in Rome. Decisivo è l'incontro con il compositore americano John Eaton, che nel 1963 riconosce nell'apparecchio uno strumento vero e chiede le modifiche che lo rendono suonabile: tastiere sensibili alla velocità del tocco e al movimento laterale del dito. Ketoff costruisce, Eaton suona: dirà di aver avuto lui stesso poca competenza tecnica, ogni circuito un'invenzione di Ketoff.",
+        "come_funziona": "Ogni sound combiner genera un'onda quadra, la divide in ottave con i divisori di frequenza, la filtra e la modula: tre moduli, tre timbri indipendenti, mescolabili in uscita. Le tastiere non sono interruttori on/off: rispondono alla velocità con cui si preme il tasto, e permettono di spingerlo lateralmente per piegare l'intonazione nota per nota, come su un violino. È questo — non gli oscillatori — a distinguerlo dai modulari coevi: un sintetizzatore progettato per essere suonato con le dita durante un concerto, non programmato prima e poi fatto partire.",
+        "richiami": [
+            ("FIG. 1", "Tre sound combiner"),
+            ("FIG. 2", "Tastiere a tocco variabile"),
+            ("FIG. 3", "Filtri multibanda"),
+        ],
+        "chi_lusata": [
+            {"artista": "John Eaton", "nota": "Oltre mille concerti col Synket fra il 1966 e il 1974, fra Europa, Stati Uniti e URSS", "ig": None},
+            {"artista": "Ennio Morricone", "nota": "Lo fa suonare a Walter Bianchi nella colonna sonora di «Sacco e Vanzetti» (1971)", "ig": None},
+            {"artista": "Gruppo di Improvvisazione Nuova Consonanza", "nota": "Il collettivo di improvvisazione romano lo usa nei propri concerti accanto agli strumenti tradizionali", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Nel 1966 Eaton porta il Synket negli Stati Uniti, per farlo conoscere nelle università. Il viaggio lo danneggia. Per ripararlo incontra Bob Moog — e da quella riparazione nasce una collaborazione che dura vent'anni: insieme progettano una tastiera sensibile al tocco su cinque parametri diversi, presentata solo nel 1992, dentro l'opera «Genesis» di Eaton. Il guasto di un sintetizzatore romano aiuta a inventare, con calma, quello che oggi si chiama controllo polifonico espressivo.",
+        "avvertenza": "Le tastiere rispondono al movimento laterale del dito: dritto o di traverso sono due intonazioni diverse.",
+        "foto": {
+            "file": "assets/foto/synket/principale.jpg",
+            "autore": "Dida Foto",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "Studio Paolo Ketoff — Accademia Nazionale di Santa Cecilia",
+             "url": "https://santacecilia.it/studiopaoloketoff/", "data": "2026-09-04"},
+            {"titolo": "«Paolo Ketoff» — Wikipedia (IT)",
+             "url": "https://it.wikipedia.org/wiki/Paolo_Ketoff", "data": "2026-09-04"},
+            {"titolo": "The 'Syn-ket' (or 'Synthesiser-Ketoff'). Paolo Ketoff & John Eaton, Italy. 1963 — 120 Years of Electronic Music",
+             "url": "https://120years.net/the-syn-ket-or-synthesiser-ketoff-paolo-ketoff-john-eaton-italy-1963/", "data": "2026-09-04"},
+            {"titolo": "«Il primo sintetizzatore portatile della storia» — Istituto Corelli",
+             "url": "https://www.istitutocorelli.com/il-primo-sintetizzatore-portatile-le-origini-della-musica-elettronica-a-roma/", "data": "2026-09-04"},
+            {"titolo": "«The Syn-Ket, aka 'The Morricone Synthesizer', Was Way Ahead Of Its Time» — Synthtopia",
+             "url": "https://www.synthtopia.com/content/2022/08/27/the-syn-ket-aka-the-morricone-synthesizer-was-way-ahead-of-its-time/", "data": "2026-09-04"},
+            {"titolo": "«Remembering John Eaton (1935-2015)» — Bob Moog Foundation",
+             "url": "https://moogfoundation.org/remembering-john-eaton-1935-2015/", "data": "2026-09-04"},
+            {"titolo": "«Five questions to John Eaton» — Astronauta Pinguim",
+             "url": "https://astronautapinguim.blogspot.com/2012/06/five-questions-to-john-eaton.html", "data": "2026-09-04"},
+            {"titolo": "«From the Archives: Electronic Music at AAR» — American Academy in Rome",
+             "url": "https://www.aarome.org/news/features/archives-electronic-music-aar", "data": "2026-09-04"},
+        ],
+        "hashtags": ["#synket", "#paoloketoff", "#johneaton", "#roma", "#musicaelettronica"],
+        "verificata": True,
+    },
+
+    # ---------------------------------------------------------------- 22
+    {
+        "slug": "juno106",
+        "numero": 22,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Roland Juno-106",
+        "anno": "1984",
+        "luogo": "Giappone",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("ANNO", "1984"),
+            ("COSTRUTTORE", "Roland"),
+            ("VOCI", "6, polifoniche"),
+            ("OSCILLATORI", "1 DCO per voce"),
+        ],
+        "gancio": "Accordarsi da solo: bastò un orologio al quarzo al posto di un tecnico e di un VCO instabile",
+        "sottotitolo": "Sei voci, DCO al posto dei VCO, chorus stereo di serie: il synth che ha reso normale il pad da house.",
+        "la_macchina": (
+            "Successore del Juno-60, nel 1984 la Roland sostituisce il bus "
+            "proprietario DCB con il MIDI, appena diventato uno standard. Sei "
+            "voci polifoniche, un DCO per voce con più forme d'onda, "
+            "sub-oscillatore e rumore combinabili, filtro passa-basso analogico "
+            "e un chorus stereo integrato che diventa parte del timbro. La "
+            "memoria sale a 128 patch contro le 56 del modello precedente. "
+            "Pannello leggibile a colpo d'occhio: da qui il soprannome "
+            "\"synth per tutti\"."
+        ),
+        "inventore_nome": "Roland Corporation",
+        "inventore": (
+            "Roland, fondata da Ikutaro Kakehashi, arriva al Juno-106 nel 1984 "
+            "come erede diretto del Juno-60: stessa filosofia di sintesi "
+            "accessibile, aggiornata al nuovo standard MIDI, fissato l'anno "
+            "prima. Nessuna fonte attribuisce il progetto a un ingegnere capo "
+            "specifico, a differenza della TR-808 e della TB-303, disegnate "
+            "entrambe da Tadao Kikumoto: qui il lavoro resta quello, meno "
+            "raccontato, del reparto sviluppo Roland."
+        ),
+        "come_funziona": (
+            "Al posto del VCO, sensibile al calore e alla tolleranza dei "
+            "componenti, un microcontrollore genera un clock digitale che "
+            "scarica un integratore analogico a intervalli regolari: il "
+            "percorso del suono resta analogico, ma la frequenza non deriva "
+            "più con la temperatura. Il filtro passa-basso analogico modella "
+            "il timbro, e un chorus stereo a BBD lo allarga: è quel chorus, "
+            "non il DCO, il suono più imitato del Juno-106."
+        ),
+        "richiami": [
+            ("FIG. 1", "DCO, non VCO"),
+            ("FIG. 2", "Chorus stereo BBD"),
+            ("FIG. 3", "MIDI al posto del DCB"),
+        ],
+        "chi_lusata": [
+            {"artista": "Daft Punk", "nota": "Nella lista gear di \"Homework\" (1997) dichiarata dal duo stesso", "ig": None},
+            {"artista": "Chvrches", "nota": "Quasi tutti i bassi di \"The Bones of What You Believe\" (2013) sono un Juno-106", "ig": None},
+            {"artista": "Vince Clarke", "nota": "Ce l'ha ancora nel suo studio, accanto al Juno-60", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "rolandglobal",
+             "riga": "Roland l'ha rifatta nel 2019 in formato Boutique, JU-06A: @rolandglobal."},
+        ],
+        "aneddoto": (
+            "Il difetto per cui è famoso non è nel MIDI né nel pannello: sono "
+            "i sei chip 80017A che racchiudono filtro e amplificatore di ogni "
+            "voce. Saldature interne mal fatte li fanno scricchiolare, poi "
+            "tacere, una voce alla volta, quando il synth si scalda. Non è un "
+            "guasto raro: è la ragione per cui esiste un intero mercato di "
+            "chip di ricambio moderni, e una comunità che sa aprirlo a "
+            "memoria."
+        ),
+        "avvertenza": "Contiene sei chip 80017A, uno per voce: con l'età si guastano uno alla volta, non tutti insieme.",
+        # NIENTE "da_ascoltare": nessuna fonte lega con certezza un brano
+        # specifico al Juno-106 (vedi report — Daft Punk e Chvrches sono
+        # confermati come utilizzatori, ma non su un singolo pezzo preciso).
+        "foto": {
+            "file": "assets/foto/juno106/principale.jpg",
+            "autore": "Iainf",
+            "licenza": "Pubblico dominio (PD-self)",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Roland Juno-106» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_Juno-106", "data": "2026-09-04"},
+            {"titolo": "«Roland Juno-60» — Wikipedia (EN), per il confronto DCB/MIDI",
+             "url": "https://en.wikipedia.org/wiki/Roland_Juno-60", "data": "2026-09-04"},
+            {"titolo": "«Roland Juno 106» — Polynominal (specifiche tecniche, chorus, MIDI sysex)",
+             "url": "https://www.polynominal.com/roland-juno106/", "data": "2026-09-04"},
+            {"titolo": "«The Design of the Roland Juno DCO» — Stargirl (Thea) Flowers",
+             "url": "https://blog.thea.codes/the-design-of-the-juno-dco/", "data": "2026-09-04"},
+            {"titolo": "«Roland 80017A» — Polynominal",
+             "url": "https://www.polynominal.com/roland-80017A/", "data": "2026-09-04"},
+            {"titolo": "«Roland Juno 106 80017a VCF/VCA Chip Repair — Part 1» — SynthTweaks.com",
+             "url": "https://synthtweaks.com/roland-juno-106-80017a-filter-chip-repair-1/", "data": "2026-09-04"},
+            {"titolo": "«Daft Punk's Homework Synth Sounds» — Reverb Machine",
+             "url": "https://reverbmachine.com/blog/daft-punk-homework-synth-sounds/", "data": "2026-09-04"},
+            {"titolo": "«Daft Punk's gear list for their 1997 album Homework has surfaced online» — MusicTech",
+             "url": "https://musictech.com/news/daft-punk-gear-list-1997-homework-album/", "data": "2026-09-04"},
+            {"titolo": "«Chvrches» (intervista/produzione) — Sound on Sound",
+             "url": "https://www.soundonsound.com/people/chvrches", "data": "2026-09-04"},
+            {"titolo": "«Chvrches talk synths and their forthcoming debut album» — MusicRadar",
+             "url": "https://www.musicradar.com/news/tech/chvrches-talk-synths-and-their-forthcoming-debut-album-the-bones-of-what-you-believe-582460", "data": "2026-09-04"},
+            {"titolo": "«Vince Clarke: Synth Pioneer's Production Secrets» — Tape Op Magazine",
+             "url": "https://tapeop.com/interviews/150/vince-clarke", "data": "2026-09-04"},
+            {"titolo": "«Vince Clarke's Studio» (elenco strumentazione) — Deep Signal Studios",
+             "url": "https://www.deepsignalstudios.com/vince-clarkes-studio", "data": "2026-09-04"},
+            {"titolo": "«Reworked Roland JU-06A Boutique now includes the soul of both Juno-106 and Juno-60» — gearnews.com",
+             "url": "https://www.gearnews.com/reworked-roland-ju-06a-boutique-now-includes-the-soul-of-both-juno-106-and-juno-60/", "data": "2026-09-04"},
+        ],
+        "hashtags": ["#juno106", "#roland", "#sintetizzatore", "#musicaelettronica", "#synth"],
+        "verificata": True,
+    },
+
+    # ---------------------------------------------------------------- 23
+    {
+        "slug": "crumards2",
+        "numero": 23,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Crumar DS-2",
+        "anno": "1978",
+        "luogo": "Castelfidardo, Italia",
+        "costruttore": "Crumar",
+        "specifiche": [
+            ("ANNO", "1978"),
+            ("ORIGINE", "Castelfidardo"),
+            ("OSCILLATORI", "2 DCO digitali"),
+            ("COSTRUITI", "Circa 700"),
+        ],
+        "gancio": "Il primo sintetizzatore vero costruito nella capitale italiana della fisarmonica",
+        "sottotitolo": "Un ibrido analogico-digitale del 1978, tra oscillatori a gradini e una sezione d'archi da 44 note.",
+        "la_macchina": "Il DS-2 è un ibrido: sezione sintetizzatore monofonica con due DCO — oscillatori controllati digitalmente — accoppiata a una sezione poli/archi parafonica da 44 note, filtro passa-basso a 4 poli dal timbro alla Moog e due LFO, uno dei quali genera un'onda letteralmente 'a gradini'. Le due sezioni condividono la stessa modulazione. Ne furono costruiti circa 700 esemplari: oggi trovarne uno ancora funzionante è raro.",
+        "inventore_nome": "Mario Crucianelli",
+        "inventore": "Mario Crucianelli lascia la Elka di famiglia — fondata dal fratello Piero — dopo una diatriba familiare, e nel 1971 apre la Crumar a Castelfidardo insieme al socio F. Marchetti: il nome fonde i due cognomi. Castelfidardo è dal 1864 la capitale italiana della fisarmonica, da Paolo Soprani in poi. Nel 1978 la Crumar mette in produzione il DS-2, il suo primo sintetizzatore vero e proprio, dopo anni di organi e archi elettronici.",
+        "come_funziona": "Le due DCO risolvono il problema classico degli oscillatori analogici — la deriva d'accordatura — ma generano un'onda digitale scalettata, non una curva continua: è quella scalettatura a dare al DS-2 il timbro ruvido e spigoloso. La sezione poli ottiene i denti di sega dividendo onde quadre e filtrandole in passa-alto. Risultato: un suono a metà tra il digitale e l'analogico, che non assomiglia bene a nessuno dei due.",
+        "richiami": [
+            ("FIG. 1", "2 DCO: oscillatori a gradini"),
+            ("FIG. 2", "Poli/archi parafonico, 44 note"),
+            ("FIG. 3", "Filtro 4 poli, timbro alla Moog"),
+        ],
+        "chi_lusata": [
+            {"artista": "Sun Ra", "nota": "Lo suona dal vivo con l'Arkestra, uno dei tanti sintetizzatori italiani nella sua collezione", "ig": None},
+            {"artista": "Legowelt (Danny Wolfers)", "nota": "Lo tiene in studio e lo mostra in un tour girato per Future Music Magazine", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Crumar chiude la produzione di strumenti nel 1986: la fisarmonica aveva reso Castelfidardo la capitale italiana della tastiera, ma il synth digitale giapponese la spiazza in meno di dieci anni. Il DS-2 resta una nota a margine, meno di 700 esemplari, finché nel 2026 Cherry Audio lo rimette in commercio come plugin — e perfino chi lo recensisce ammette di non averne mai suonato uno vero.",
+        "avvertenza": "Le due DCO generano onde letteralmente a gradini, non curve: è la loro natura digitale, non un guasto di accordatura.",
+        # "da_ascoltare" omesso: nessun brano attribuibile con certezza al DS-2 su due fonti
+        # (il brano di Sun Ra "Discipline Precision (Crumar synth)" risulta suonato sul
+        # Crumar Mainman/Orchestrator, non sul DS-2 — vedi report).
+        "foto": {
+            "file": "assets/foto/crumards2/principale.jpg",
+            "autore": "PerfectCircuit",
+            "licenza": "CC0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "Crumar DS-2 — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/crumar/ds-2", "data": "2026-09-04"},
+            {"titolo": "Say hello to the CRUMAR DS2 synthesizer, made in Italy — Legowelt.org",
+             "url": "https://legowelt.org/463-2/", "data": "2026-09-04"},
+            {"titolo": "Crumar — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Crumar", "data": "2026-09-04"},
+            {"titolo": "Crumar — Wikipedia (IT)",
+             "url": "https://it.wikipedia.org/wiki/Crumar", "data": "2026-09-04"},
+            {"titolo": "Crucianelli / Elka — Crumar — Fetishguitars.com",
+             "url": "https://www.fetishguitars.com/crucianelli/elka-crumar/", "data": "2026-09-04"},
+            {"titolo": "Cherry Audio revives an oddball 1978 Italian synth with the Crumar DS-2 — MusicTech",
+             "url": "https://musictech.com/news/gear/cherry-audio-crumar-ds-2/", "data": "2026-09-04"},
+            {"titolo": "The Crumar DS-2, Resurrected by Cherry Audio — Gearnews",
+             "url": "https://www.gearnews.com/cherry-audio-crumar-ds-2-synths/", "data": "2026-09-04"},
+            {"titolo": "Crumar DS-2 | Cherry Audio (pagina prodotto, ~700 esemplari costruiti)",
+             "url": "https://cherryaudio.com/products/ds-2-synthesizer", "data": "2026-09-04"},
+            {"titolo": "MATRIXSYNTH: Sun Ra Plays the Crumar DS-2 Synthesizer",
+             "url": "https://www.matrixsynth.com/2023/03/sun-ra-plays-crumar-ds-2-synthesizer.html", "data": "2026-09-04"},
+            {"titolo": "MATRIXSYNTH: Rare (Working) Crumar DS-2 Analog Synth, SN 551 (~700 costruiti)",
+             "url": "https://www.matrixsynth.com/2016/06/rare-working-crumar-ds-2-analog-synth.html", "data": "2026-09-04"},
+            {"titolo": "MATRIXSYNTH: LEGOWELT Studiostuff Crumar DS-2 Synthesizer (Future Music Magazine)",
+             "url": "https://www.matrixsynth.com/2015/01/legowelt-studiostuff-crumar-ds-2.html", "data": "2026-09-04"},
+            {"titolo": "File:Crumar Digital Synthesizer DS2 (front).jpg — Wikimedia Commons",
+             "url": "https://commons.wikimedia.org/wiki/File:Crumar_Digital_Synthesizer_DS2_(front).jpg", "data": "2026-09-04"},
+        ],
+        "hashtags": ["#crumar", "#ds2", "#castelfidardo", "#sintetizzatore", "#musicaelettronica"],
+        "verificata": True,
+    },
+
+    # ---------------------------------------------------------------- 24
+    {
+        "slug": "buchla",
+        "numero": 24,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Buchla 100 series (Music Box)",
+        "anno": "1965",
+        "luogo": "San Francisco, Stati Uniti",
+        "costruttore": "Don Buchla",
+        "specifiche": [
+            ("ANNO", "1965"),
+            ("ORIGINE", "San Francisco"),
+            ("COMANDO", "Piastre capacitive"),
+            ("MODULI", "Fino a 25"),
+        ],
+        "gancio": "Costruito per un centro di musica su nastro di San Francisco. Niente tastiera: solo piastre a contatto.",
+        "sottotitolo": "Piastre capacitive, sequencer analogico e filtri voltage-controlled: nasce la sintesi «West Coast».",
+        "la_macchina": "Il Buchla 100 series, o Music Box, è un sistema modulare senza tastiera: al posto dei tasti, piastre piatte a contatto capacitivo, ognuna accordabile a mano con un potenziometro — alcune ne portano due file, per due note diverse sotto lo stesso dito. Fino a 25 moduli in una cassa di legno: oscillatori e filtri voltage-controlled, un sequencer analogico, un generatore di rumore bianco. Fu installato nel 1965 al San Francisco Tape Music Center, il centro che Subotnick, Sender e Oliveros avevano fondato per lavorare sul nastro magnetico.",
+        "inventore_nome": "Don Buchla",
+        "inventore": "Don Buchla, fisico di formazione a Berkeley, comincia a montare i primi circuiti a controllo di tensione nel 1963. Nel 1965 consegna il sistema a Morton Subotnick e Ramon Sender, che lo avevano commissionato per il Tape Music Center: loro chiedono uno strumento per la sintesi dal vivo, lui rifiuta di copiare il pianoforte. Da qui nasce una scuola di progettazione — poi chiamata «West Coast» — diversa da quella di Robert Moog sulla costa opposta: niente tastiera, sequencer e casualità governata al posto delle note fisse.",
+        "come_funziona": "Ogni piastra, toccata, manda una tensione di controllo: decide l'altezza, non fa suonare una nota fissata a priori come un tasto di pianoforte. La stessa tensione può arrivare da un sequencer analogico, o da un generatore di valori casuali. Quella tensione pilota oscillatori e filtri voltage-controlled, fino a 24 dB per ottava: il risultato è un suono che si programma per processi, non per note scritte una a una.",
+        "richiami": [
+            ("FIG. 1", "Piastre capacitive"),
+            ("FIG. 2", "Sequencer analogico"),
+            ("FIG. 3", "Filtri voltage-controlled"),
+        ],
+        "chi_lusata": [
+            {"artista": "Morton Subotnick", "nota": "Compra il sistema nel 1966 e ci compone «Silver Apples of the Moon» (1967)", "ig": None},
+            {"artista": "Pauline Oliveros", "nota": "Lo usa nel 1966 per «Beautiful Soop», da direttrice del centro a Mills College", "ig": None},
+            {"artista": "Warner Jepson", "nota": "Nel 1969 ci registra «Buchla Christmas», canti natalizi per il MoMA di San Francisco", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Nel 1966 Subotnick compra il sistema e lo porta a New York, in uno studio di Bleecker Street: ci compone «Silver Apples of the Moon», primo disco elettronico commissionato da un'etichetta discografica, la Nonesuch. Lo stesso anno, a Oakland, Pauline Oliveros lo usa per «Beautiful Soop». Nel 1969 Warner Jepson lo trasforma in un disco di canti di Natale, «Buchla Christmas», registrato ai Mills College Electronic Music Studios per la festa di Natale del San Francisco Museum of Modern Art.",
+        "avvertenza": "Ogni piastra si accorda a mano con un potenziometro: due file danno due note diverse sotto lo stesso dito.",
+        "da_ascoltare": {
+            "brano": "Silver Apples of the Moon",
+            "artista": "Morton Subotnick",
+            "anno": "1967",
+            "cosa": "Primo disco elettronico commissionato da un'etichetta discografica, la Nonesuch: ogni suono nasce dal Buchla comprato da Subotnick per il suo studio newyorkese.",
+        },
+        "foto": {
+            "file": "assets/foto/buchla/principale.jpg",
+            "autore": "Ethan Hein",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Don Buchla» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Don_Buchla", "data": "2026-09-04"},
+            {"titolo": "«The San Francisco Tape Music Center Was an Early Home to the Avant-Garde» — Bandcamp Daily",
+             "url": "https://daily.bandcamp.com/features/san-francisco-tape-music-center-history", "data": "2026-09-04"},
+            {"titolo": "«Silver Apples of the Moon (Morton Subotnick album)» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Silver_Apples_of_the_Moon_(Morton_Subotnick_album)", "data": "2026-09-04"},
+            {"titolo": "Note di copertina per «Alien Bog / Beautiful Soop» di Pauline Oliveros — DRAM (Discover Recordings, American Made)",
+             "url": "https://www.dramonline.org/albums/pauline-oliveros-alien-bog-beautiful-soop/notes", "data": "2026-09-04"},
+            {"titolo": "«Warner Jepson» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Warner_Jepson", "data": "2026-09-04"},
+            {"titolo": "«Buchla 100 Series» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/buchla/100-series", "data": "2026-09-04"},
+        ],
+        "hashtags": ["#buchla", "#donbuchla", "#sintetizzatore", "#storiadellamusica", "#musicaelettronica"],
+        "verificata": True,
+    },
+
+    # ---------------------------------------------------------------- 25
+    {
+        "slug": "synclavier",
+        "numero": 25,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "New England Digital Synclavier",
+        "anno": "1978",
+        "luogo": "Norwich, Vermont",
+        "costruttore": "New England Digital",
+        "specifiche": [
+            ("ANNO", "1977-78"),
+            ("ORIGINE", "Dartmouth College"),
+            ("SINTESI", "FM su licenza Yamaha"),
+            ("PREZZO", "Oltre 200.000 $"),
+        ],
+        "gancio": "Il primo sintetizzatore FM in vendita: cinque anni prima del Yamaha DX7, con la sintesi FM di Yamaha",
+        "sottotitolo": "Nato in un laboratorio universitario, costava come una casa e finì nei dischi di Zappa e Michael Jackson.",
+        "la_macchina": (
+            "Il Synclavier è un sistema digitale per comporre, sintetizzare e registrare: tastiera, "
+            "terminale di controllo e un'elettronica che genera i suoni per sintesi FM. Esce sul mercato "
+            "nel 1977-78 come sintetizzatore puro; nel 1982 guadagna il campionamento a 16 bit e, con "
+            "l'opzione Sample-to-Disk, la registrazione diretta su disco fisso, diventando una stazione "
+            "di lavoro completa. Un sistema pieno poteva costare oltre 200.000 dollari: pochi studi se "
+            "lo potevano permettere."
+        ),
+        "inventore_nome": "Jon Appleton, Sydney Alonso e Cameron Jones",
+        "inventore": (
+            "Appleton insegna composizione al Dartmouth College e nei primi anni Settanta lavora con "
+            "Sydney Alonso e Cameron Jones, programmatori del college, per costruire un sintetizzatore "
+            "digitale in tempo reale. Nel 1976 Alonso e Jones fondano la New England Digital a Norwich, "
+            "Vermont, per commercializzare quello che era nato come strumento da laboratorio "
+            "universitario. Il primo Synclavier arriva in vendita nel 1977-78."
+        ),
+        "come_funziona": (
+            "Il Synclavier genera i suoni per sintesi FM, la tecnica brevettata da John Chowning e data "
+            "in licenza esclusiva da Stanford a Yamaha: New England Digital la sublicenzia da Yamaha e "
+            "la mette in vendita nel 1977-78, cinque anni prima che Yamaha stessa la usi nel DX7 del "
+            "1983. I suoni si programmano da un terminale, non da manopole: si scrivono i parametri, si "
+            "ascolta, si corregge. Nel 1982 arriva il campionamento a 16 bit, che affianca la sintesi."
+        ),
+        "richiami": [
+            ("FIG. 1", "Sintesi FM su licenza Yamaha"),
+            ("FIG. 2", "Terminale di controllo"),
+            ("FIG. 3", "Campionamento 16 bit (1982)"),
+        ],
+        "chi_lusata": [
+            {"artista": "Frank Zappa", "nota": "Lo possiede e lo usa per comporre l'intero album Jazz From Hell (1986), poi premiato con un Grammy", "ig": "zappa"},
+            {"artista": "Michael Jackson", "nota": "Nell'album Bad (1987): l'apertura di Dirty Diana e i patch d'archi di Bad e Smooth Criminal", "ig": None},
+            {"artista": "Sting", "nota": "Suo strumento principale per scrivere e arrangiare l'album ...Nothing Like the Sun (1987)", "ig": "theofficialsting"},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Nel 1992 la New England Digital fallisce, schiacciata dai prezzi troppo alti e dai "
+            "campionatori a basso costo che nel frattempo hanno raggiunto le sue stesse funzioni. "
+            "L'anno dopo alcuni ex dipendenti fondano una società solo per assistere le macchine già "
+            "vendute, e Cameron Jones ne rileva la proprietà intellettuale. Il prezzo che aveva fatto "
+            "del Synclavier uno status symbol degli studi newyorkesi negli anni Ottanta è lo stesso che "
+            "lo condanna quando arriva concorrenza a un decimo del costo."
+        ),
+        "avvertenza": "Un sistema completo poteva costare oltre 200.000 dollari. Il libretto non prevede una sezione sul finanziamento.",
+        "da_ascoltare": {
+            "brano": "G-Spot Tornado",
+            "artista": "Frank Zappa",
+            "anno": "1986",
+            "cosa": "Zappa lo scrive pensando che nessun musicista possa suonarlo: nel 1992 l'Ensemble Modern lo esegue dal vivo e lo smentisce.",
+        },
+        "foto": {
+            "file": "assets/foto/synclavier/principale.jpg",
+            "autore": "Wilfredor",
+            "licenza": "CC0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Synclavier» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Synclavier", "data": "2026-09-04"},
+            {"titolo": "«New England Digital» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/New_England_Digital", "data": "2026-09-04"},
+            {"titolo": "«The Synclavier I & II» — 120 Years of Electronic Music",
+             "url": "https://120years.net/the-synclavier-ii-new-england-digital-corporation-usa-1980/", "data": "2026-09-04"},
+            {"titolo": "«1978: New England Digital Synclavier» — Mix Magazine",
+             "url": "https://www.mixonline.com/technology/1978-new-england-digital-synclavier-383609", "data": "2026-09-04"},
+            {"titolo": "«Black Ice: The Science of the Yamaha DX7» — 5 Magazine",
+             "url": "https://5mag.net/gear/history-science-yamaha-dx7/", "data": "2026-09-04"},
+            {"titolo": "«Frank Zappa and the Synclavier» — MIDI.org",
+             "url": "https://www.midi.org/midi-articles/frank-zappa-and-the-synclavier", "data": "2026-09-04"},
+            {"titolo": "«G-Spot Tornado» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/G-Spot_Tornado", "data": "2026-09-04"},
+            {"titolo": "«The Event Horizon: Synclavier, Music and Michael Jackson, Part 3» — Headphone Guru",
+             "url": "https://headphone.guru/the-event-horizon-synclavier-music-and-michael-jackson-part-3/", "data": "2026-09-04"},
+            {"titolo": "«...Nothing Like the Sun (album)» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Nothing_Like_the_Sun_(album)", "data": "2026-09-04"},
+            {"titolo": "File:Synclavier 9600.jpg (foto, Wilfredor, CC0) — Wikimedia Commons",
+             "url": "https://commons.wikimedia.org/wiki/File:Synclavier_9600.jpg", "data": "2026-09-04"},
+        ],
+        "hashtags": ["#synclavier", "#newenglanddigital", "#sintetizzatore", "#storiadellamusica", "#musicaelettronica"],
+        "verificata": True,
+    },
+
+    # ---------------------------------------------------------------- 26
+    {
+        "slug": "synthex",
+        "numero": 26,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Elka Synthex",
+        "anno": "1981",
+        "luogo": "Castelfidardo, Ancona",
+        "costruttore": "Elka",
+        "specifiche": [
+            ("ANNO", "1981-1985"),
+            ("ORIGINE", "Castelfidardo, AN"),
+            ("VOCI", "8 polifoniche"),
+            ("PRODOTTI", "1.850 esemplari"),
+        ],
+        "gancio": "Il synth italiano che restava accordato da solo. Ne vendettero meno di duemila",
+        "sottotitolo": "Otto voci analogiche, oscillatori digitali: la risposta di Castelfidardo a Roland e Sequential.",
+        "la_macchina": (
+            "Un polifonico a 8 voci, analogico nel suono ma con gli oscillatori "
+            "pilotati da un circuito digitale. Lo fa la Elka, azienda della "
+            "provincia di Ancona nata dalle fisarmoniche, in un'epoca in cui i "
+            "sintetizzatori seri arrivavano dal Giappone o dalla California. "
+            "Costava intorno alle 2.500 sterline, filtro multimodo a quattro "
+            "poli, sequencer a quattro tracce, joystick per la modulazione. Ne "
+            "furono costruiti circa 1.850 esemplari fra il 1981 e il 1985: "
+            "pochi, per uno strumento che la critica di settore mette ancora "
+            "fra i migliori polifonici analogici mai fatti."
+        ),
+        "inventore_nome": "Mario Maggi",
+        "inventore": (
+            "Mario Maggi non lavora per la Elka: progetta il Synthex per conto "
+            "suo, da solo, e solo a strumento pronto lo porta all'azienda di "
+            "Castelfidardo perché lo metta in produzione e lo finanzi. La Elka "
+            "fino a quel momento fa organi e fisarmoniche elettrificate — il "
+            "Synthex, presentato al Musikmesse di Francoforte nei primi anni "
+            "Ottanta, è il suo primo sintetizzatore vero, pensato da zero come "
+            "tale e non come evoluzione di un organo."
+        ),
+        "come_funziona": (
+            "Il suono è analogico, ma l'intonazione la tiene un circuito "
+            "digitale: gli oscillatori DCO (digitally controlled oscillator) "
+            "si accordano da soli all'accensione e restano stabili per tutto "
+            "il concerto, mentre gli oscillatori puramente analogici dell'epoca "
+            "vanno controllati a orecchio. Il filtro è multimodo — passa-basso, "
+            "passa-alto, due varianti passa-banda — e si aggiunge un joystick "
+            "che manda insieme due parametri di modulazione, invece della sola "
+            "pitch bend a cui erano abituati gli altri synth."
+        ),
+        "richiami": [
+            ("FIG. 1", "Oscillatori DCO"),
+            ("FIG. 2", "Filtro multimodo 4 poli"),
+            ("FIG. 3", "Joystick a due assi"),
+        ],
+        "chi_lusata": [
+            {"artista": "Jean-Michel Jarre", "nota": "«Second Rendez-Vous» (1986): il tema dell'arpa laser è un preset del Synthex", "ig": "jeanmicheljarre"},
+            {"artista": "Stevie Wonder", "nota": "Lo usa in «Skeletons»; quando la produzione finisce, Elka gliene costruisce ancora uno su misura", "ig": None},
+            {"artista": "Nick Rhodes (Duran Duran)", "nota": "Fra gli strumenti della band fin dai primi anni Ottanta", "ig": None},
+            {"artista": "Tangerine Dream", "nota": "Fra i gruppi europei che lo adottano appena esce", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Quando la linea di produzione del Synthex chiude, in Elka ne "
+            "resta uno smontato, ordinato apposta: lo assemblano lo stesso e "
+            "lo spediscono a Stevie Wonder, che lo aveva usato in studio. È "
+            "l'ultimo Synthex mai uscito da Castelfidardo, dopo che la fabbrica "
+            "delle fisarmoniche marchigiane aveva provato — con uno strumento "
+            "che il mercato non aspettava da un'azienda italiana — a competere "
+            "con Roland e Sequential sul loro stesso terreno."
+        ),
+        "avvertenza": "Gli oscillatori sono digitali: si accordano da soli all'accensione. Non serve controllarli a orecchio.",
+        "da_ascoltare": {
+            "brano": "Second Rendez-Vous",
+            "artista": "Jean-Michel Jarre",
+            "anno": "1986",
+            "cosa": "Il tema che Jarre suona ancora oggi con l'arpa laser nasce come preset del Synthex, sull'album Rendez-Vous.",
+        },
+        "foto": {
+            "file": "assets/foto/synthex/principale.jpg",
+            "autore": "Matt Friedman",
+            "licenza": "CC BY 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "Elka Synthex — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Elka_Synthex", "data": "2026-09-04"},
+            {"titolo": "Elka Synthex — Specs & History — Vintage Technology Archive",
+             "url": "https://vintagetechnologyarchive.com/synth/elka/synthex/", "data": "2026-09-04"},
+            {"titolo": "Elka Synthex [Retrozone] — Sound on Sound",
+             "url": "https://www.soundonsound.com/reviews/elka-synthex-retrozone", "data": "2026-09-04"},
+            {"titolo": "Elka Synthex (Electronics & Music Maker, dicembre 1982) — muzines.co.uk",
+             "url": "https://www.muzines.co.uk/articles/elka-synthex/4443", "data": "2026-09-04"},
+            {"titolo": "ELKA Synthex — analog Classic and vintage Workstation — GreatSynthesizers",
+             "url": "https://greatsynthesizers.com/en/review/elka-synthex-polyphonic-classic/", "data": "2026-09-04"},
+            {"titolo": "Elka (azienda) — Wikipedia (IT)",
+             "url": "https://it.wikipedia.org/wiki/Elka_(azienda)", "data": "2026-09-04"},
+            {"titolo": "Rendez-Vous (Jean-Michel Jarre album) — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Rendez-Vous_(Jean-Michel_Jarre_album)", "data": "2026-09-04"},
+            {"titolo": "Italian Synthesizers: The Colorful History of 5 Italian Synth Giants — gearnews.com",
+             "url": "https://www.gearnews.com/italian-synthesizers/", "data": "2026-09-04"},
+        ],
+        "hashtags": ["#synthex", "#elka", "#madeinitaly", "#sintetizzatore", "#musicaelettronica"],
+        "verificata": True,
+    },
 ]
 
 
