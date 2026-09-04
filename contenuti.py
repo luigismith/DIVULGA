@@ -1709,6 +1709,11 @@ SCHEDE = [
         "da_ascoltare": {"brano": "Sentimental Institution", "artista": "Steve Hackett",
                           "anno": "1980",
                           "cosa": "Registrato con un solo Optigan e il disco «Big Band Beat», nel bagno degli Wessex Studios per un suono volutamente vecchio e sporco."},
+        # TODO (04/09/2026): licenza e autore verificati su Commons, ma il file
+        # binario non è ancora stato scaricato — container rate-limitato da
+        # Wikimedia (429 persistente su upload.wikimedia.org). Completare con
+        # scarica-foto.yml o un nuovo tentativo dal container prima che questa
+        # scheda arrivi in cima alla coda di pubblicazione.
         "foto": {
             "file": "assets/foto/optigan/principale.jpg",
             "autore": "PMDrive1061",
@@ -1764,6 +1769,11 @@ SCHEDE = [
         "avvertenza": "Il filtro SSM2045 scalda qualsiasi campione digitale. Anche un vetro rotto, se glielo chiedete gentilmente, suonerà quasi analogico.",
         "da_ascoltare": {"brano": "Sledgehammer", "artista": "Peter Gabriel", "anno": "1986",
                           "cosa": "Il flauto shakuhachi sintetico che apre il brano è un campione della libreria sonora dell'Emulator II."},
+        # TODO (04/09/2026): licenza e autore verificati su Commons, ma il file
+        # binario non è ancora stato scaricato — container rate-limitato da
+        # Wikimedia (429 persistente su upload.wikimedia.org). Completare con
+        # scarica-foto.yml o un nuovo tentativo dal container prima che questa
+        # scheda arrivi in cima alla coda di pubblicazione.
         "foto": {
             "file": "assets/foto/emulator/principale.jpg",
             "autore": "John R. Southern",
@@ -1876,6 +1886,13 @@ SCHEDE = [
         ],
         "aneddoto": "Ogni voce del Juno-106 dipende da un chip custom Roland, il 80017A (VCF+VCA in un solo componente): non è più prodotto da decenni e ha un tasso di guasto talmente alto da essere quasi proverbiale tra i tecnici, tanto che oggi esistono cloni moderni pensati apposta per rimpiazzarlo. È probabilmente il motivo per cui, oggi, quasi ogni Juno-106 in circolazione ha già perso e recuperato almeno una voce.",
         "avvertenza": "Ogni voce vive in un chip 80017A introvabile dagli anni '80. Quando muore una voce, è per sempre, finché non trovate un clone.",
+        # TODO (04/09/2026): licenza e autore verificati su Commons, ma il file
+        # binario non è ancora stato scaricato — container rate-limitato da
+        # Wikimedia (429 persistente su upload.wikimedia.org). Un primo
+        # tentativo aveva salvato per errore la pagina di errore HTML al posto
+        # della foto: controllare con `file --mime-type` prima di fidarsi.
+        # Completare con scarica-foto.yml o un nuovo tentativo dal container
+        # prima che questa scheda arrivi in cima alla coda di pubblicazione.
         "foto": {
             "file": "assets/foto/juno106/principale.jpg",
             "autore": "Iainf",
@@ -1987,6 +2004,11 @@ SCHEDE = [
         "avvertenza": "La sintesi FM è su licenza di un brevetto giapponese. Se ricorda un DX7 non è un caso: condividono il brevetto, non il conto in banca.",
         "da_ascoltare": {"brano": "Beat It", "artista": "Michael Jackson", "anno": "1983",
                           "cosa": "L'intro sintetica è la riproduzione nota per nota di un demo di fabbrica del Synclavier II inciso nel 1981."},
+        # TODO (04/09/2026): licenza e autore verificati su Commons, ma il file
+        # binario non è ancora stato scaricato — container rate-limitato da
+        # Wikimedia (429 persistente su upload.wikimedia.org). Completare con
+        # scarica-foto.yml o un nuovo tentativo dal container prima che questa
+        # scheda arrivi in cima alla coda di pubblicazione.
         "foto": {
             "file": "assets/foto/synclavier/principale.jpg",
             "autore": "John R. Southern",
