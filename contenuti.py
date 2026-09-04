@@ -1764,11 +1764,6 @@ SCHEDE = [
         "avvertenza": "Il filtro SSM2045 scalda qualsiasi campione digitale. Anche un vetro rotto, se glielo chiedete gentilmente, suonerà quasi analogico.",
         "da_ascoltare": {"brano": "Sledgehammer", "artista": "Peter Gabriel", "anno": "1986",
                           "cosa": "Il flauto shakuhachi sintetico che apre il brano è un campione della libreria sonora dell'Emulator II."},
-        # TODO (04/09/2026): licenza e autore verificati su Commons, ma il file
-        # binario non è ancora stato scaricato — container rate-limitato da
-        # Wikimedia (429 persistente su upload.wikimedia.org). Completare con
-        # scarica-foto.yml o un nuovo tentativo dal container prima che questa
-        # scheda arrivi in cima alla coda di pubblicazione.
         "foto": {
             "file": "assets/foto/emulator/principale.jpg",
             "autore": "John R. Southern",
