@@ -1741,7 +1741,7 @@ SCHEDE = [
         "chi_lusata": [
             {"artista": "John Eaton", "nota": "Oltre mille concerti col Synket fra il 1966 e il 1974, fra Europa, Stati Uniti e URSS", "ig": None},
             {"artista": "Ennio Morricone", "nota": "Lo fa suonare a Walter Bianchi nella colonna sonora di «Sacco e Vanzetti» (1971)", "ig": None},
-            {"artista": "Gruppo di Improvvisazione Nuova Consonanza", "nota": "Il collettivo di improvvisazione romano lo usa nei propri concerti accanto agli strumenti tradizionali", "ig": None},
+            {"artista": "Nuova Consonanza", "nota": "Il collettivo di improvvisazione romano lo usa nei propri concerti accanto agli strumenti tradizionali", "ig": None},
         ],
         "menzioni_extra": [],
         "aneddoto": "Nel 1966 Eaton porta il Synket negli Stati Uniti, per farlo conoscere nelle università. Il viaggio lo danneggia. Per ripararlo incontra Bob Moog — e da quella riparazione nasce una collaborazione che dura vent'anni: insieme progettano una tastiera sensibile al tocco su cinque parametri diversi, presentata solo nel 1992, dentro l'opera «Genesis» di Eaton. Il guasto di un sintetizzatore romano aiuta a inventare, con calma, quello che oggi si chiama controllo polifonico espressivo.",
@@ -2001,6 +2001,7 @@ SCHEDE = [
             "file": "assets/foto/buchla/principale.jpg",
             "autore": "Ethan Hein",
             "licenza": "CC BY 2.0",
+            "posizione": "85% 100%",
             "fonte": "Wikimedia Commons",
         },
         "fonti": [
