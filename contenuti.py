@@ -2004,11 +2004,6 @@ SCHEDE = [
         "avvertenza": "La sintesi FM è su licenza di un brevetto giapponese. Se ricorda un DX7 non è un caso: condividono il brevetto, non il conto in banca.",
         "da_ascoltare": {"brano": "Beat It", "artista": "Michael Jackson", "anno": "1983",
                           "cosa": "L'intro sintetica è la riproduzione nota per nota di un demo di fabbrica del Synclavier II inciso nel 1981."},
-        # TODO (04/09/2026): licenza e autore verificati su Commons, ma il file
-        # binario non è ancora stato scaricato — container rate-limitato da
-        # Wikimedia (429 persistente su upload.wikimedia.org). Completare con
-        # scarica-foto.yml o un nuovo tentativo dal container prima che questa
-        # scheda arrivi in cima alla coda di pubblicazione.
         "foto": {
             "file": "assets/foto/synclavier/principale.jpg",
             "autore": "John R. Southern",
