@@ -1876,13 +1876,6 @@ SCHEDE = [
         ],
         "aneddoto": "Ogni voce del Juno-106 dipende da un chip custom Roland, il 80017A (VCF+VCA in un solo componente): non è più prodotto da decenni e ha un tasso di guasto talmente alto da essere quasi proverbiale tra i tecnici, tanto che oggi esistono cloni moderni pensati apposta per rimpiazzarlo. È probabilmente il motivo per cui, oggi, quasi ogni Juno-106 in circolazione ha già perso e recuperato almeno una voce.",
         "avvertenza": "Ogni voce vive in un chip 80017A introvabile dagli anni '80. Quando muore una voce, è per sempre, finché non trovate un clone.",
-        # TODO (04/09/2026): licenza e autore verificati su Commons, ma il file
-        # binario non è ancora stato scaricato — container rate-limitato da
-        # Wikimedia (429 persistente su upload.wikimedia.org). Un primo
-        # tentativo aveva salvato per errore la pagina di errore HTML al posto
-        # della foto: controllare con `file --mime-type` prima di fidarsi.
-        # Completare con scarica-foto.yml o un nuovo tentativo dal container
-        # prima che questa scheda arrivi in cima alla coda di pubblicazione.
         "foto": {
             "file": "assets/foto/juno106/principale.jpg",
             "autore": "Iainf",
