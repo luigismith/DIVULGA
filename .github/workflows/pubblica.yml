@@ -95,11 +95,33 @@ jobs:
       #  3. la storia e' "facoltativa per scelta", ma la sua generazione
       #     stava nel percorso critico: ffmpeg mancante ha ucciso la
       #     pubblicazione del giorno. Il megafono ha ammazzato la missione.
-      - name: Installa ffmpeg
+      # ffmpeg serve SOLO al reel, che e' dichiarato facoltativo due passi
+      # piu' sotto. Quindi questo passo non deve poter fermare il post.
+      #
+      # LEZIONE IMPARATA (07/09/2026). Il 27/08 avevo scoperto che ffmpeg
+      # non c'e' su ubuntu-latest e che il controllo con la pipe non
+      # poteva fallire; ho scritto «niente pipe: se manca, QUI si deve
+      # fermare». La conclusione era troppo forte: ha reso BLOCCANTE la
+      # dipendenza di una cosa OPZIONALE. Oggi i mirror dei runner erano
+      # lenti — «Dipendenze» ha impiegato 13 minuti e 50 secondi contro i
+      # soliti pochi secondi — e apt-get per ffmpeg si e' piantato per
+      # oltre venti minuti, tenendo in ostaggio la pubblicazione del
+      # giorno per un pacchetto che serve al megafono, non alla missione.
+      #
+      # REGOLA: la criticita' di un passo la decide CHI LO USA, non la
+      # difficolta' di accorgersi che e' fallito. Se il reel puo' saltare,
+      # puo' saltare anche la sua installazione. Il controllo resta senza
+      # pipe (deve poter dire di no), ma con un tetto di tempo e senza
+      # potersi portare dietro il post: se ffmpeg manca, genera_reel.py
+      # fallisce, il suo `|| echo` lo assorbe e la storia ripiega sul
+      # JPEG muto, come gia' previsto.
+      - name: Installa ffmpeg (facoltativo, serve solo al reel)
+        timeout-minutes: 6
+        continue-on-error: true
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
-          ffmpeg -version    # niente pipe: se manca, QUI si deve fermare
+          ffmpeg -version    # niente pipe: deve poter fallire davvero
 
       - name: Genera le tavole della prossima scheda e l'archivio
         run: |
