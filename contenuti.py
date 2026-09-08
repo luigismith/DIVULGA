@@ -2008,6 +2008,401 @@ SCHEDE = [
         "hashtags": ["#synclavier", "#newenglanddigital", "#sintesifm", "#musicaelettronica", "#synth"],
         "verificata": True,
     },
+    # SCARTATO in sessione di rifornimento (08/09/2026): Davolisint (Athos
+    # Davoli/Krundaal, Parma, 1972), proposto per il filone italiano con
+    # l'aneddoto "lo usava Franco Battiato". La verifica lo smentisce: tre
+    # fonti indipendenti (Wikipedia EN, Avvenire, La Disgrazia) confermano
+    # che su «Fetus» (1972) e «Pollution» (1973) Battiato usò un EMS VCS3
+    # (già scheda n.11 di questo catalogo), non il Davolisint. Nessuna
+    # fonte lega Battiato al Davolisint. In più: zero foto libere su
+    # Wikimedia Commons e Openverse. Due motivi indipendenti, ciascuno
+    # già sufficiente da solo (regola 1: se non regge, si butta).
+    #
+    # SCARTATO nella stessa sessione: Roland CR-78 (CompuRhythm, 1978).
+    # I fatti reggono benissimo — inclusi gli aneddoti verificati di Phil
+    # Collins («In the Air Tonight») e Blondie («Heart of Glass») — ma
+    # nessuna foto libera esiste su Commons o Openverse: solo file audio
+    # e foto di modelli diversi (CR-8000, CR-5000). La foto reale è
+    # obbligatoria (regola del proprietario): scheda rimandata finché
+    # non salta fuori una foto libera altrove.
+    # ---------------------------------------------------------------- 28
+    {
+        "slug": "prophet5",
+        "numero": 28,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Sequential Circuits Prophet-5",
+        "anno": "1978",
+        "luogo": "San Jose, California",
+        "costruttore": "Sequential Circuits",
+        "specifiche": [
+            ("ANNO", "1978"),
+            ("COSTRUTTORE", "Sequential Circuits"),
+            ("SINTESI", "Sottrattiva analogica"),
+            ("VOCI", "5 (polifonico)"),
+        ],
+        "gancio": "Il primo synth che ricordava le sue impostazioni invece di dimenticarle a ogni spegnimento",
+        "sottotitolo": "Il primo sintetizzatore polifonico completamente programmabile: patch in memoria, niente più manopole da girare nota per nota.",
+        "la_macchina": (
+            "Fino al 1977 un sintetizzatore polifonico si programmava girando "
+            "decine di manopole per ogni singola voce, e a ogni spegnimento le "
+            "impostazioni sparivano. Il Prophet-5 è il primo synth "
+            "completamente programmabile della storia: un microprocessore "
+            "governa cinque voci polifoniche e memorizza le impostazioni in 40 "
+            "patch richiamabili con un tasto. Costava 3.995 dollari e in pochi "
+            "mesi diventò lo strumento più desiderato degli studi di "
+            "registrazione di fine anni '70."
+        ),
+        "inventore_nome": "Dave Smith e John Bowen",
+        "inventore": (
+            "Dave Smith aveva fondato Sequential Circuits nel 1974 a San Jose "
+            "vendendo sequencer per sintetizzatori modulari; con l'ingegnere "
+            "John Bowen sviluppò il Prophet-5 partendo da un'idea semplice: un "
+            "microprocessore, uno Zilog Z80, che leggesse la posizione di ogni "
+            "manopola e la salvasse in memoria. Lo presentarono al NAMM di "
+            "gennaio 1978: nessun altro costruttore aveva ancora messo un "
+            "microprocessore dentro un sintetizzatore per fargli ricordare i "
+            "propri suoni, e il Prophet-5 fissò lo standard che tutti i "
+            "polifonici avrebbero seguito da lì in avanti."
+        ),
+        "come_funziona": (
+            "Ogni voce ha due oscillatori e un filtro passa-basso risonante: "
+            "nelle prime due revisioni sono chip Solid State Music, sostituiti "
+            "dal 1980 con i più stabili Curtis CEM3340 (oscillatori) e CEM3320 "
+            "(filtro) quando il primo fornitore chiuse. La sintesi resta "
+            "sottrattiva classica, con l'aggiunta del Poly-Mod: gli inviluppi "
+            "e il secondo oscillatore possono modulare gli altri parametri in "
+            "tempo reale, un piccolo trucco di FM analogica. Il "
+            "microprocessore Z80 gestisce le 40 memorie patch e la scansione "
+            "della tastiera a cinque voci."
+        ),
+        "richiami": [
+            ("FIG. 1", "2 oscillatori per voce, 5 voci"),
+            ("FIG. 2", "Filtro Curtis CEM3320"),
+            ("FIG. 3", "40 patch in memoria (Z80)"),
+        ],
+        "chi_lusata": [
+            {"artista": "Talking Heads", "nota": "«Burning Down the House» (1983): Tina Weymouth lo suonò al posto del basso elettrico, sia per il basso sia per l'assolo", "ig": "talkingheadsofficial"},
+            {"artista": "Michael Jackson", "nota": "il coro raddoppiato di «P.Y.T.» (Thriller, 1982), insieme a un Jupiter-6", "ig": None},
+            {"artista": "Phil Collins", "nota": "citato tra gli strumenti di «In the Air Tonight» (1981)", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Durante le session di «Speaking in Tongues» la bassista Tina "
+            "Weymouth scrisse la linea di «Burning Down the House» al basso "
+            "elettrico, ma in studio non «stringeva» come voleva: la rifece al "
+            "Prophet-5, usandolo sia per il basso sia per la parte solista che "
+            "si sente nel brano. Dal vivo, nei tour successivi, tornò al basso "
+            "elettrico — il Prophet-5 restò una scelta da studio, non da "
+            "palco. Ne furono costruite circa 6.000 unità fino al 1984, in tre "
+            "revisioni elettroniche diverse."
+        ),
+        "avvertenza": "I chip Solid State Music delle prime revisioni furono sostituiti dai Curtis quando il fornitore chiuse: stessa sigla, filtro diverso.",
+        "da_ascoltare": {"brano": "Burning Down the House", "artista": "Talking Heads", "anno": "1983",
+                          "cosa": "Tina Weymouth suona la linea di basso e la parte solista entrambe al Prophet-5, non al basso elettrico che aveva scritto in origine."},
+        "foto": {
+            "file": "assets/foto/prophet5/principale.jpg",
+            "autore": "Clusternote (da un originale di CPRdave)",
+            "licenza": "Pubblico dominio",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«1978: Sequential Circuits Prophet-5 First Programmable Polyphonic Synth» — Mix Online",
+             "url": "https://www.mixonline.com/technology/1978-sequential-circuits-prophet-5-first-programmable-polyphonic-synth-383725", "data": "2026-09-08"},
+            {"titolo": "«Sequential Celebrates Prophet-5 40th Anniversary» — Sequential.com",
+             "url": "https://sequential.com/2018/08/sequential-celebrates-prophet-5-40th-anniversary/", "data": "2026-09-08"},
+            {"titolo": "«CEM3340 VCO Voltage Controlled Oscillator Designs» — Electric Druid",
+             "url": "https://electricdruid.net/cem3340-vco-voltage-controlled-oscillator-designs/", "data": "2026-09-08"},
+            {"titolo": "«The songs behind the synths: Prophet-5» — The Ransom Note",
+             "url": "https://www.theransomnote.com/music/playlists/the-songs-behind-the-synths-prophet-5/", "data": "2026-09-08"},
+        ],
+        "hashtags": ["#prophet5", "#sequentialcircuits", "#synth", "#sintetizzatore", "#musicaelettronica"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 29
+    {
+        "slug": "voxcontinental",
+        "numero": 29,
+        "serie": "GLI ORGANI",
+        "strumento": "Vox Continental",
+        "anno": "1962",
+        "luogo": "Dartford, Kent (Regno Unito)",
+        "costruttore": "Jennings Musical Industries",
+        "specifiche": [
+            ("ANNO", "1962"),
+            ("COSTRUTTORE", "JMI (poi anche Eko, Recanati)"),
+            ("TECNOLOGIA", "Oscillatori a transistor"),
+            ("TASTI", "Colori invertiti"),
+        ],
+        "gancio": "L'organo dal top rosso fiammante, coi tasti bianchi e neri scambiati apposta",
+        "sottotitolo": "L'organo transistorizzato che sostituì l'Hammond nei furgoni delle band: leggero, portatile, e dal 1966 costruito anche in Italia.",
+        "la_macchina": (
+            "Nel 1962 la Jennings Musical Industries di Dartford, in "
+            "Inghilterra, lancia un organo pensato per stare su un palco e non "
+            "in un salotto: top rosso fiammante, gambe cromate a X, peso "
+            "ridotto grazie ai circuiti a transistor al posto delle ruote "
+            "foniche dell'Hammond. Dalla fine del 1965 parte della produzione "
+            "passa in Italia, alla Eko di Recanati, e nel 1966 nasce a "
+            "Recanati la joint venture Elettronica Musicale Europea: i "
+            "Continental costruiti lì hanno tasti in plastica incollata, non "
+            "più i materiali originali inglesi."
+        ),
+        "inventore_nome": "Jennings Musical Industries",
+        "inventore": (
+            "Vox era il marchio della Jennings Musical Industries di Thomas "
+            "Jennings, già nota per gli amplificatori AC30 usati dai gruppi "
+            "beat inglesi. Il Continental applica la stessa filosofia agli "
+            "organi: niente parti meccaniche pesanti, solo oscillatori "
+            "elettronici e circuiti divisori di frequenza a transistor, in un "
+            "mobile pieghevole che due persone caricano in furgone in pochi "
+            "minuti. Il tasto invertito — naturali neri, diesis bianchi — "
+            "diventa il segno di riconoscimento visivo dello strumento sul "
+            "palco, oltre che sonoro."
+        ),
+        "come_funziona": (
+            "Dodici oscillatori master, uno per ogni nota della scala "
+            "cromatica, generano l'onda base; una catena di circuiti divisori "
+            "di frequenza — flip-flop a stadi, fino a sei per oscillatore — "
+            "dimezza il segnale per ottenere le ottave più basse, senza "
+            "bisogno di un oscillatore per ogni singolo tasto. Il suono passa "
+            "poi in drawbar in stile Hammond, ma «buzzy», più tagliente: "
+            "niente percussione né tastiera pesata, e fino al 1964 nemmeno il "
+            "vibrato, aggiunto solo con la Repeat Percussion di fine anno."
+        ),
+        "richiami": [
+            ("FIG. 1", "12 oscillatori master a transistor"),
+            ("FIG. 2", "Divisori di frequenza a stadi"),
+            ("FIG. 3", "Tasti a colori invertiti"),
+        ],
+        "chi_lusata": [
+            {"artista": "The Animals", "nota": "Alan Price, l'arpeggio che apre «House of the Rising Sun» (1964)", "ig": None},
+            {"artista": "The Beatles", "nota": "John Lennon lo suona in «Think for Yourself» (1965) e dal vivo, incluso lo show allo Shea Stadium", "ig": None},
+            {"artista": "The Doors", "nota": "Ray Manzarek, il riff di «Light My Fire», registrato nel settembre 1966", "ig": "thedoors"},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Il Continental nasce per il palco, non per il negozio di dischi: "
+            "pieghevole, con gambe cromate removibili, pensato per stare nel "
+            "retro di un furgone insieme ad amplificatori e batteria. Quando "
+            "alla fine del 1965 Jennings sposta parte della produzione in "
+            "Italia, alla Eko di Recanati, la joint venture italiana "
+            "Elettronica Musicale Europea nasce l'anno dopo con capitale anche "
+            "pubblico: i Continental «Made in Italy» hanno piccole differenze "
+            "— tasti in plastica incollata invece dei materiali originali "
+            "inglesi — ma restano lo stesso organo che Alan Price suonò nel "
+            "1964."
+        ),
+        "avvertenza": "I tasti sono invertiti rispetto a un piano normale: naturali neri, diesis bianchi. Chi lo suona a memoria da pianista sbaglia nota.",
+        "da_ascoltare": {"brano": "Light My Fire", "artista": "The Doors", "anno": "1966",
+                          "cosa": "Ray Manzarek apre il brano con un giro di accordi al Vox Continental, prima del riff che si sente per tutto il pezzo."},
+        "foto": {
+            "file": "assets/foto/voxcontinental/principale.jpg",
+            "autore": "Docrobbie",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Vox Continental, the early years 1962-1964» — voxac30.org.uk",
+             "url": "https://www.voxac30.org.uk/vox_continental.html", "data": "2026-09-08"},
+            {"titolo": "«Vox Continental» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Vox_Continental", "data": "2026-09-08"},
+            {"titolo": "«Vox Continental — Italian production» — voxac30.org.uk",
+             "url": "https://www.voxac30.org.uk/vox_continental_italian_production.html", "data": "2026-09-08"},
+            {"titolo": "«Ray Manzarek's solo in The Doors' Light My Fire» — Strange Days",
+             "url": "https://www.strangedaysbook.org/2024/10/ray-manzareks-solo-in-doors-light-my.html", "data": "2026-09-08"},
+        ],
+        "hashtags": ["#voxcontinental", "#organo", "#thedoors", "#musicaelettronica", "#storiadellamusica"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 30
+    {
+        "slug": "oberheimdmx",
+        "numero": 30,
+        "serie": "LE DRUM MACHINE",
+        "strumento": "Oberheim DMX",
+        "anno": "1981",
+        "luogo": "California, Stati Uniti",
+        "costruttore": "Oberheim Electronics",
+        "specifiche": [
+            ("ANNO", "1981"),
+            ("COSTRUTTORE", "Oberheim Electronics"),
+            ("SUONI", "Campioni PCM 8 bit"),
+            ("VOCI", "8 (una per suono)"),
+        ],
+        "gancio": "Tolsero tutto tranne lei da un disco hip hop del 1983, e bastò a cambiare la musica",
+        "sottotitolo": "La seconda drum machine a campioni digitali della storia, e la prima a suonare da sola su un disco che fece scuola nell'hip hop.",
+        "la_macchina": (
+            "Nel 1980 Tom Oberheim e il giovane ingegnere Marcus Ryle (poi "
+            "cofondatore di Line 6) progettano una drum machine che non "
+            "genera i suoni con circuiti analogici, come la coeva Roland "
+            "TR-808, ma li registra da una batteria vera e li riproduce come "
+            "campioni digitali PCM a 8 bit compansi. Esce sul mercato nel 1981 "
+            "a 2.895 dollari: 24 suoni ricavati da 11 campioni originali, 8 "
+            "voci simultanee con uscite separate. È solo la seconda drum "
+            "machine a campioni digitali della storia, dopo la Linn LM-1 del "
+            "1980."
+        ),
+        "inventore_nome": "Tom Oberheim e Marcus Ryle",
+        "inventore": (
+            "Tom Oberheim aveva già costruito sintetizzatori polifonici "
+            "quando decise di rincorrere la Linn LM-1, la prima drum machine a "
+            "campioni digitali, lanciata l'anno prima da Roger Linn. Il "
+            "progetto elettronico della DMX fu affidato in gran parte al "
+            "giovane Marcus Ryle, che negli anni successivi avrebbe "
+            "cofondato Line 6 e progettato strumenti per Alesis e Fender. La "
+            "DMX arrivò sul mercato pochi mesi dopo la LM-1, con un prezzo più "
+            "basso e un sequencer capace di sequenze umanizzate — roll, flam, "
+            "swing — pensate per non suonare rigide."
+        ),
+        "come_funziona": (
+            "I campioni di batteria vera sono digitalizzati a 8 bit con "
+            "compansione mu-law, che simula una risoluzione più alta "
+            "comprimendo il segnale prima della conversione, e conservati su "
+            "schede voce con EPROM sostituibili — da qui la possibilità di "
+            "aggiornare i suoni nel tempo. Il sequencer interno memorizza fino "
+            "a 100 pattern e 50 «song» che li concatenano, con funzioni per "
+            "umanizzare il tempo: roll, flam e uno swing regolabile, pensati "
+            "apposta perché i campioni digitali non suonassero metronomici "
+            "come i primi tentativi analogici."
+        ),
+        "richiami": [
+            ("FIG. 1", "Campioni PCM 8 bit compansi"),
+            ("FIG. 2", "Schede voce con EPROM sostituibili"),
+            ("FIG. 3", "Sequencer con roll, flam, swing"),
+        ],
+        "chi_lusata": [
+            {"artista": "Run-D.M.C.", "nota": "«Sucker M.C.'s» (1983): sull'intero brano suona solo la DMX, più qualche scratch", "ig": "rundmc"},
+            {"artista": "New Order", "nota": "«Blue Monday» (1983): la DMX scandisce il tempo e sincronizza gli altri strumenti", "ig": "neworderofficial"},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "«Sucker M.C.'s», il lato B del primo singolo dei Run-D.M.C., "
+            "nasce da un taglio: il produttore Larry Smith e il gruppo di "
+            "supporto Orange Krush avevano inciso «Action», un brano pieno di "
+            "strumenti. Per il nuovo pezzo tennero solo la batteria di quella "
+            "session, suonata da una Oberheim DMX, e tolsero tutto il resto — "
+            "synth, basso, chitarra — lasciando la macchina a suonare da sola "
+            "per l'intero brano, con qualche scratch sopra. Fu uno dei primi "
+            "dischi hip hop costruiti così, con una sola drum machine e "
+            "niente altro."
+        ),
+        "avvertenza": "I suoi 24 suoni derivano da appena 11 campioni originali: più voci condividono la stessa registrazione di partenza, compressa a 8 bit.",
+        "da_ascoltare": {"brano": "Sucker M.C.'s", "artista": "Run-D.M.C.", "anno": "1983",
+                          "cosa": "Per l'intero brano suona solo la DMX, con pochi scratch sopra: niente basso, niente synth, niente chitarra."},
+        "foto": {
+            "file": "assets/foto/oberheimdmx/principale.jpg",
+            "autore": "Alison",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Oberheim DMX» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Oberheim_DMX", "data": "2026-09-08"},
+            {"titolo": "«Oberheim DMX» — Vintage Technology Archive",
+             "url": "https://vintagetechnologyarchive.com/synth/oberheim/dmx/", "data": "2026-09-08"},
+            {"titolo": "«The Triumphs and Tragedies of Larry Smith» — Cuepoint (Medium), di Robbie Ettelson",
+             "url": "https://medium.com/cuepoint/the-triumphs-and-tragedies-of-larry-smith-ca3f259eec70", "data": "2026-09-08"},
+            {"titolo": "«The machine that helped New Order invent 'Blue Monday'» — Far Out Magazine",
+             "url": "https://faroutmagazine.co.uk/the-machine-helped-new-order-invent-blue-monday/", "data": "2026-09-08"},
+        ],
+        "hashtags": ["#oberheimdmx", "#drummachine", "#hiphop", "#musicaelettronica", "#rundmc"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 31
+    {
+        "slug": "jupiter8",
+        "numero": 31,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Roland Jupiter-8",
+        "anno": "1981",
+        "luogo": "Hamamatsu, Giappone",
+        "costruttore": "Roland Corporation",
+        "specifiche": [
+            ("ANNO", "1981"),
+            ("COSTRUTTORE", "Roland Corporation"),
+            ("SINTESI", "Sottrattiva analogica"),
+            ("VOCI", "8 (polifonico)"),
+        ],
+        "gancio": "L'ammiraglia polifonica di Roland: 8 voci, 64 memorie, e mezzo pop degli anni '80 suonato con questa",
+        "sottotitolo": "Il polifonico analogico che Roland mise al vertice del catalogo nel 1981, dai synth-pop di Londra alle session soul di Marvin Gaye.",
+        "la_macchina": (
+            "Nel 1981 Roland presenta il Jupiter-8, la sua ammiraglia "
+            "polifonica analogica: otto voci simultanee, due oscillatori per "
+            "voce, filtro commutabile fra 12 e 24 dB per ottava, 64 memorie "
+            "patch più 8 preset di fabbrica. Costava 5.295 dollari — più del "
+            "doppio di un Prophet-5 — ma offriva una polifonia doppia e un "
+            "timbro che diventa lo standard del pop e del synth-pop dei primi "
+            "anni '80, da Londra a Los Angeles. Ne furono costruite circa "
+            "3.300 unità fino al 1985."
+        ),
+        "inventore_nome": "Roland Corporation",
+        "inventore": (
+            "Il Jupiter-8 nasce nei laboratori Roland di Hamamatsu come "
+            "risposta ai polifonici americani come il Prophet-5: la sfida era "
+            "offrire più voci — otto contro cinque — restando dentro il "
+            "catalogo Roland, che in quegli anni produceva anche le prime "
+            "drum machine con microprocessore, come la CR-78. Il risultato è "
+            "il synth analogico più costoso mai messo in produzione "
+            "dall'azienda fino a quel momento, pensato per gli studi "
+            "professionali e i tour delle band con budget alto: il prezzo di "
+            "listino sfiorava le 4.000 sterline nel Regno Unito."
+        ),
+        "come_funziona": (
+            "Sedici oscillatori in tutto, due per ciascuna delle otto voci, "
+            "alimentano un filtro passa-basso commutabile a 12 o 24 dB per "
+            "ottava, più un passa-alto a 6 dB. Le 64 memorie patch si "
+            "richiamano con un tasto, senza dover girare manopole come sui "
+            "polifonici di prima generazione: una novità che nel 1981 pochi "
+            "altri costruttori offrivano a questo livello. La sezione Cross "
+            "Modulation permette agli oscillatori di modularsi a vicenda, "
+            "aggiungendo timbri metallici che il Prophet-5 coevo non aveva."
+        ),
+        "richiami": [
+            ("FIG. 1", "16 oscillatori (2 per voce, 8 voci)"),
+            ("FIG. 2", "Filtro 12/24 dB commutabile"),
+            ("FIG. 3", "64 memorie patch + 8 preset"),
+        ],
+        "chi_lusata": [
+            {"artista": "Marvin Gaye", "nota": "«Sexual Healing» (1982): CBS gli regalò un Jupiter-8 e una TR-808, e li suonò lui stesso per l'intero disco «Midnight Love»", "ig": None},
+            {"artista": "Journey", "nota": "Jonathan Cain, il riff che apre «Separate Ways» (1983)", "ig": "jonathancainofficial"},
+            {"artista": "Michael Jackson", "nota": "il pad delle strofe di «Thriller» (1982), con due oscillatori volutamente scordati", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "rolandglobal",
+             "riga": "Il costruttore originale, Roland Corporation, è ancora @rolandglobal."},
+        ],
+        "aneddoto": (
+            "Nel dicembre 1981 la CBS regalò a Marvin Gaye un Jupiter-8 e una "
+            "drum machine TR-808 per le session di quello che sarebbe "
+            "diventato «Midnight Love»: il chitarrista Gordon Banks ricordò "
+            "che furono gli unici due strumenti elettronici usati, «niente "
+            "Moog». Gaye, che l'ingegnere del disco Mike Butcher definì «non "
+            "tecnologico», suonò personalmente tutte le parti di Jupiter-8, "
+            "facendosi aiutare da Butcher per programmare i suoni. Ne uscì "
+            "«Sexual Healing», il singolo che nel 1983 valse a Gaye il primo "
+            "Grammy della carriera."
+        ),
+        "avvertenza": "Costava più del doppio di un Prophet-5 americano per una ragione precisa: otto voci polifoniche invece di cinque.",
+        "da_ascoltare": {"brano": "Separate Ways (Worlds Apart)", "artista": "Journey", "anno": "1983",
+                          "cosa": "Il riff di sintetizzatore che apre e attraversa il brano è il Jupiter-8 di Jonathan Cain, con due oscillatori scordati per quel taglio metallico."},
+        "foto": {
+            "file": "assets/foto/jupiter8/principale.jpg",
+            "autore": "Ed Uthman",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Roland Jupiter-8» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_Jupiter-8", "data": "2026-09-08"},
+            {"titolo": "«Roland Jupiter-8 Technical Specifications» — Sweetwater",
+             "url": "https://www.sweetwater.com/sweetcare/articles/roland-jupiter-8-technical-specifications/", "data": "2026-09-08"},
+            {"titolo": "«Marvin Gaye 'Sexual Healing'» — Electronic Sound",
+             "url": "https://www.electronicsound.co.uk/features/time-machine/marvin-gaye-sexual-healing/", "data": "2026-09-08"},
+            {"titolo": "«Journey — Separate Ways synth» — brianfunk.com",
+             "url": "https://brianfunk.com/blog/2020/4/29/journey-separate-ways-synth", "data": "2026-09-08"},
+        ],
+        "hashtags": ["#jupiter8", "#roland", "#synth", "#sintetizzatore", "#musicaelettronica"],
+        "verificata": True,
+    },
 ]
 
 
