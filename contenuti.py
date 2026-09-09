@@ -2008,6 +2008,56 @@ SCHEDE = [
         "hashtags": ["#synclavier", "#newenglanddigital", "#sintesifm", "#musicaelettronica", "#synth"],
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 28
+    {
+        "slug": "simmonssds5",
+        "numero": 28,
+        "serie": "LE DRUM MACHINE",
+        "strumento": "Simmons SDS-V",
+        "anno": "1981",
+        "luogo": "Hatfield",
+        "costruttore": "Simmons",
+        "specifiche": [
+            ("ANNO", "1981"),
+            ("ORIGINE", "Inghilterra"),
+            ("PELLI", "Esagonali, in policarbonato"),
+            ("SUONO", "Sintesi analogica"),
+        ],
+        "gancio": "Le pelli sono ricavate dagli scudi antisommossa. Non è una metafora",
+        "sottotitolo": "Il primo kit elettronico che un batterista poteva suonare al posto della batteria, non accanto.",
+        "la_macchina": "Sei pastiglie esagonali collegate a un cervello a moduli: uno per la cassa, uno per il rullante, uno per ogni tom. Ogni modulo è un piccolo sintetizzatore con le sue manopole \u2014 rumore, tono, tempo di decadimento, click d'attacco \u2014 e non c'è nessun campione dentro: il suono si costruisce girando i comandi. Esce nella prima metà del 1981 e nel giro di due anni sta su metà dei dischi che passano alla radio.",
+        "inventore_nome": "Dave Simmons",
+        "inventore": "Simmons fonda la sua azienda nel 1978 a St Albans e porta la prima versione alla fiera musicale di Londra nel 1981. Non aveva solo pastiglie esagonali: al banchetto c'erano anche un kit a forma di cuore e uno a forma di pipistrello. L'esagono vinse perché era l'unica forma che si poteva affiancare senza lasciare buchi, e perché sembrava una cosa del futuro invece di una batteria mancata.",
+        "come_funziona": "Sotto la superficie dura c'è un sensore che misura quanto forte la colpisci, e basta: non registra dove, non registra come. Quel singolo numero fa partire il modulo, che genera il suono da zero \u2014 un impulso di rumore per il rullante, un'oscillazione che scende di tono per il tom. È per questo che il tom della Simmons fa quel «pioum» che scivola verso il basso: non è un tom registrato, è un'onda a cui qualcuno ha detto di cadere.",
+        "richiami": [
+            ("FIG. 1", "Pastiglia esagonale, sensore unico"),
+            ("FIG. 2", "Un modulo per ogni pezzo"),
+            ("FIG. 3", "Tom: oscillatore che scende"),
+        ],
+        "chi_lusata": [
+            {"artista": "Bill Bruford", "nota": "Dai King Crimson in poi: la batteria smette di imitare il legno", "ig": None},
+            {"artista": "Phil Collins", "nota": "Il tom elettronico diventa il suono degli anni Ottanta", "ig": None},
+            {"artista": "Talk Talk", "nota": "Lee Harris la usa quando suonava ancora nuova, non nostalgica", "ig": None},
+            {"artista": "The Cars", "nota": "David Robinson fra i primi a metterla su disco in America", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Le pastiglie erano fatte dello stesso policarbonato durissimo degli scudi che la polizia inglese usava in quegli anni. Robustissime: reggevano qualunque bacchettata. Il problema è che restituivano tutto il colpo al braccio di chi le suonava, e i batteristi cominciarono a lamentarsi di polsi e gomiti. Una batteria costruita per non rompersi mai, che rompeva chi la suonava.",
+        "avvertenza": "La superficie non cede di un millimetro. Tutto quello che dai torna indietro, e a fine serata lo senti nei polsi.",
+        "foto": {
+            "file": "assets/foto/simmonssds5/principale.jpg",
+            "autore": "Wolfgang Stief",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons \u2014 Deutsches Museum",
+        },
+        "fonti": [
+            {"titolo": "«Simmons SDSV» \u2014 Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Simmons_SDSV", "data": "2026-09-09"},
+            {"titolo": "«SDS-V Drum Synthesizer, 1981» \u2014 We Are the Mutants",
+             "url": "https://wearethemutants.com/2017/04/12/sds-v-drum-synthesizer-1981/", "data": "2026-09-09"},
+        ],
+        "hashtags": ["#simmons", "#drummachine", "#anni80", "#batteriaelettronica", "#musicaelettronica"],
+        "verificata": True,
+    },
 ]
 
 
