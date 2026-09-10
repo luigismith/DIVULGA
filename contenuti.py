@@ -2108,6 +2108,58 @@ SCHEDE = [
         "hashtags": ["#solina", "#eminent", "#arp", "#anni70", "#musicaelettronica"],
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 30
+    {
+        "slug": "ppgwave",
+        "numero": 30,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "PPG Wave 2.2",
+        "anno": "1982",
+        "luogo": "Amburgo",
+        "costruttore": "Palm Products GmbH",
+        "specifiche": [
+            ("ANNO", "1982"),
+            ("ORIGINE", "Germania"),
+            ("OSCILLATORI", "Digitali, 8 bit"),
+            ("FILTRI", "Analogici, 24 dB"),
+        ],
+        "gancio": "Oscillatori digitali dentro, filtri analogici fuori: nessuno l'aveva ancora fatto",
+        "sottotitolo": "Trenta tabelle da sessantaquattro onde l'una, e una manopola che ci cammina dentro.",
+        "la_macchina": "Otto voci, sedici oscillatori digitali a 8 bit, e in memoria trenta «tavole d'onda»: ognuna \u00e8 una fila di 64 forme d'onda diverse, messe in ordine come i fotogrammi di un film. Il suono non sta in una forma sola, sta nel percorso che si fa attraverso la fila. Poi tutto esce da filtri passa-basso analogici da 24 dB per ottava, gli stessi che avrebbe un sintetizzatore tradizionale.",
+        "inventore_nome": "Wolfgang Palm",
+        "inventore": "Palm fonda la PPG ad Amburgo nel 1975 e chiude nel 1987, in debito per una macchina che non fece mai in tempo a vendere. In mezzo ci sono dodici anni in cui inventa la sintesi a tavole d'onda: oggi \u00e8 dentro quasi ogni sintetizzatore digitale del mondo, di solito senza che nessuno ricordi da dove viene.",
+        "come_funziona": "Prendi 64 onde leggermente diverse e mettile in fila. Se ne suoni una sola hai un timbro fermo; se una manopola o un inviluppo cammina lungo la fila, il timbro cambia mentre la nota suona, e cambia in modi che nessun filtro pu\u00f2 imitare \u2014 perch\u00e9 non sta togliendo armoniche, sta sostituendo l'onda. A 8 bit i numeri sono pochi e si sente: ogni onda porta con s\u00e9 una grana metallica.",
+        "richiami": [
+            ("FIG. 1", "30 tavole, 64 onde ciascuna"),
+            ("FIG. 2", "Scansione: si cammina nella fila"),
+            ("FIG. 3", "Filtri analogici in uscita"),
+        ],
+        "chi_lusata": [
+            {"artista": "David Bowie", "nota": "Fra i primi a portarlo su un disco grande", "ig": "davidbowie"},
+            {"artista": "Depeche Mode", "nota": "Il timbro che si muove mentre la nota resta ferma", "ig": None},
+            {"artista": "Thomas Dolby", "nota": "Lo usa quando il digitale suonava ancora come una promessa", "ig": None},
+            {"artista": "Tangerine Dream", "nota": "Tavole d'onda al posto delle sequenze analogiche", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Gli 8 bit non erano una scelta estetica: erano quello che si poteva permettere nel 1982. Quella povert\u00e0 di numeri lascia un residuo ruvido su ogni suono, e per anni i costruttori hanno inseguito pi\u00f9 bit per toglierlo. Oggi chi cerca «il suono PPG» cerca esattamente quel residuo, e i sintetizzatori moderni lo rimettono dentro apposta.",
+        "avvertenza": "La grana metallica non si toglie: sono gli 8 bit degli oscillatori. Non \u00e8 un difetto da correggere, \u00e8 la voce.",
+        "foto": {
+            "file": "assets/foto/ppgwave/principale.jpg",
+            "autore": "John R. Southern",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "\u00abPPG Wave\u00bb \u2014 Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/PPG_Wave", "data": "2026-09-10"},
+            {"titolo": "\u00abPPG Wave 2\u00bb \u2014 Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/ppg/wave-2", "data": "2026-09-10"},
+            {"titolo": "\u00abPalm Products GmbH\u00bb \u2014 Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Palm_Products_GmbH", "data": "2026-09-10"},
+        ],
+        "hashtags": ["#ppgwave", "#wavetable", "#wolfgangpalm", "#anni80", "#musicaelettronica"],
+        "verificata": True,
+    },
 ]
 
 
