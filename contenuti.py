@@ -2095,8 +2095,8 @@ SCHEDE = [
         "avvertenza": "Il chorus non si spegne mai. Senza, restano dodici oscillatori fermi: l'effetto non abbellisce il suono, lo costruisce.",
         "foto": {
             "file": "assets/foto/solina/principale.jpg",
-            "autore": "Kimi95",
-            "licenza": "CC BY 3.0",
+            "autore": "Pingel",
+            "licenza": "CC BY-SA 3.0",
             "fonte": "Wikimedia Commons",
         },
         "fonti": [
