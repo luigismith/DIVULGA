@@ -2058,6 +2058,56 @@ SCHEDE = [
         "hashtags": ["#simmons", "#drummachine", "#anni80", "#batteriaelettronica", "#musicaelettronica"],
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 29
+    {
+        "slug": "solina",
+        "numero": 29,
+        "serie": "GLI ORGANI",
+        "strumento": "Solina String Ensemble",
+        "anno": "1974",
+        "luogo": "Bodegraven",
+        "costruttore": "Eminent",
+        "specifiche": [
+            ("ANNO", "1974"),
+            ("ORIGINE", "Paesi Bassi"),
+            ("VOCI", "Sei, a interruttore"),
+            ("CHORUS", "Triplo, a secchielli"),
+        ],
+        "gancio": "Spegni il chorus e resta un organo mediocre. Quell'effetto \u00e8 met\u00e0 dello strumento",
+        "sottotitolo": "Non imita gli archi: fabbrica un suono che gli assomiglia e che nessuna orchestra ha mai fatto.",
+        "la_macchina": "Dodici oscillatori, uno per ogni nota della scala, e una catena di divisori che li abbassa di ottava in ottava: cos\u00ec tutti i tasti suonano insieme, senza limiti di polifonia. Sei interruttori accendono le voci \u2014 violino, viola, tromba, corno, violoncello, contrabbasso \u2014 e si possono tenere premuti tutti insieme. Nasce nel 1974 dalla sezione archi di un organo da salotto, l'Eminent 310 Unique, e negli Stati Uniti la distribuisce ARP col proprio marchio.",
+        "inventore_nome": "Eminent BV",
+        "inventore": "Eminent costruiva organi elettronici in Olanda, a Bodegraven. Nel 310 Unique del 1972 c'era una sezione «archi» che piaceva pi\u00f9 di tutto il resto dell'organo: la staccarono, le misero una tastiera intorno e la vendettero da sola. \u00c8 uno dei rari casi in cui uno strumento nasce non da un'invenzione ma da un pezzo di un'altra macchina che funzionava troppo bene per restare l\u00ec dentro.",
+        "come_funziona": "Il trucco non sta negli oscillatori, che da soli darebbero un suono fermo e sottile. Sta dopo: tre linee di ritardo a «secchielli» \u2014 catene di condensatori che passano il segnale di mano in mano \u2014 pilotate da due oscillatori lenti che ne cambiano di continuo la velocit\u00e0. Il risultato \u00e8 la stessa nota sfasata tre volte, che batte contro se stessa: l'orecchio la sente come tanti strumenti leggermente scordati, cio\u00e8 come una sezione d'archi.",
+        "richiami": [
+            ("FIG. 1", "Dodici oscillatori, divisori a valle"),
+            ("FIG. 2", "Sei voci a interruttore"),
+            ("FIG. 3", "Tre ritardi + due oscillatori lenti"),
+        ],
+        "chi_lusata": [
+            {"artista": "Pink Floyd", "nota": "Richard Wright: il tappeto sotto met\u00e0 di quello che suonano dal 1975", "ig": "pinkfloyd"},
+            {"artista": "Jean-Michel Jarre", "nota": "Il velo di archi che tiene insieme le sue lunghe distese", "ig": "jeanmicheljarre"},
+            {"artista": "Herbie Hancock", "nota": "Lo porta dentro il jazz elettrico quando nessuno se lo aspettava", "ig": "herbiehancock"},
+            {"artista": "Elton John", "nota": "Archi finti su dischi che potevano permettersi quelli veri", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "La Solina non \u00e8 nata come strumento: era una sezione dentro un organo da casa. Eminent la ritagli\u00f2 e la mise in vendita da sola, e la copia che arriv\u00f2 in America fu ribattezzata col marchio di un'altra azienda \u2014 ARP \u2014 che non l'aveva progettata. Met\u00e0 dei dischi degli anni Settanta che sembrano avere un'orchestra hanno dentro questa scatola olandese venduta sotto due nomi diversi.",
+        "avvertenza": "Il chorus non si spegne mai. Senza, restano dodici oscillatori fermi: l'effetto non abbellisce il suono, lo costruisce.",
+        "foto": {
+            "file": "assets/foto/solina/principale.jpg",
+            "autore": "Kimi95",
+            "licenza": "CC BY 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "\u00abARP String Ensemble\u00bb \u2014 Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/ARP_String_Ensemble", "data": "2026-09-10"},
+            {"titolo": "\u00abSolina String Ensemble Series 2 e Series 42\u00bb \u2014 EBOARDMUSEUM, Google Arts & Culture",
+             "url": "https://artsandculture.google.com/story/solina-string-ensemble-series-2-and-series-42/ZAVBDLMPNTX_zQ", "data": "2026-09-10"},
+        ],
+        "hashtags": ["#solina", "#eminent", "#arp", "#anni70", "#musicaelettronica"],
+        "verificata": True,
+    },
 ]
 
 
