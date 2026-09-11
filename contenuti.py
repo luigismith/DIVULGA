@@ -2160,6 +2160,384 @@ SCHEDE = [
         "hashtags": ["#ppgwave", "#wavetable", "#wolfgangpalm", "#anni80", "#musicaelettronica"],
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 31
+    {
+        "slug": "mpc60",
+        "numero": 31,
+        "serie": "I CAMPIONATORI",
+        "strumento": "Akai MPC60",
+        "anno": "1988",
+        "luogo": "Los Angeles e Tokyo",
+        "costruttore": "Akai",
+        "specifiche": [
+            ("ANNO", "1988"),
+            ("DESIGN", "Roger Linn"),
+            ("CAMPIONAMENTO", "12 bit, 40 kHz"),
+            ("MEMORIA", "13-26 secondi"),
+        ],
+        "gancio": "Non inventò il campionamento: gli diede sedici pad da colpire con le dita",
+        "sottotitolo": "Roger Linn disegna l'interfaccia, Akai costruisce l'elettronica: nasce la macchina che insegna all'hip hop a suonare con le mani.",
+        "la_macchina": (
+            "Otto anni dopo la sua prima drum machine, Roger Linn torna con "
+            "un'idea diversa: non più suoni disegnati, ma suoni registrati. "
+            "La MPC60 campiona a 12 bit e 40 kHz, li distribuisce su sedici "
+            "pad quadrati sensibili alla pressione — un dito, sedici livelli "
+            "di forza — e li mette in fila con un sequencer che arriva a "
+            "60.000 note. Linn disegna l'interfaccia in California, Akai "
+            "costruisce l'elettronica a Tokyo: esce nel dicembre 1988 a "
+            "5.000 dollari."
+        ),
+        "inventore_nome": "Roger Linn (con Akai)",
+        "inventore": (
+            "Linn aveva già inventato la LM-1 e la LinnDrum, le prime drum "
+            "machine con suoni campionati invece che sintetizzati. Per la "
+            "MPC60 lascia il lavoro elettronico ad Akai, a Tokyo, e si "
+            "concentra su quello che sa fare meglio: il modo in cui la si "
+            "suona. È lui a disegnare i sedici pad quadrati sensibili al "
+            "tocco, pensati per essere colpiti con le dita come una piccola "
+            "batteria, non programmati un passo alla volta con un cursore."
+        ),
+        "come_funziona": (
+            "Ogni pad richiama un campione diverso, e la pressione del dito "
+            "ne decide il volume: sedici livelli dinamici, non acceso o "
+            "spento. Il sequencer aggiunge uno swing regolabile — a metà "
+            "corsa i colpi cadono dritti, oltre iniziano a slittare verso il "
+            "tempo di una terzina — la stessa formula che Linn aveva già "
+            "messo nella sua prima drum machine, e che qui i produttori "
+            "usano per far suonare umano un ritmo scritto al computer."
+        ),
+        "richiami": [
+            ("FIG. 1", "16 pad a pressione"),
+            ("FIG. 2", "Campioni 12 bit"),
+            ("FIG. 3", "Sequencer 60.000 note"),
+        ],
+        "chi_lusata": [
+            {"artista": "DJ Premier", "nota": "La svolta nel suono di Gang Starr, da «Daily Operation» (1992) in poi", "ig": None},
+            {"artista": "DJ Shadow", "nota": "«Endtroducing.....» (1996), un intero album da una sola MPC60", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "akai_pro",
+             "riga": "La sigla MPC è oggi di @akai_pro."},
+            {"ig": "roger.linn",
+             "riga": "Il suo disegnatore, Roger Linn, è ancora in attività: lo trovi come @roger.linn."},
+        ],
+        "aneddoto": (
+            "Nel 1996 DJ Shadow pubblica «Endtroducing.....»: quasi tutto il "
+            "disco esce da un'unica MPC60 comprata usata su consiglio di un "
+            "altro DJ, senza tastiera né sintetizzatore. Solo dischi trovati "
+            "nei mercatini, spezzettati e rimessi in fila sedici pad alla "
+            "volta. Il campionatore nato per mettere un beat sotto un "
+            "rapper diventa lo strumento con cui si scrive un intero album."
+        ),
+        "avvertenza": "Il sequencer regge 60.000 note. I campioni no: appena 13 secondi di serie, 26 con l'espansione. Una sinfonia in coda, un rullante in memoria.",
+        "da_ascoltare": {"brano": 'Endtroducing.....', "artista": 'DJ Shadow',
+                          "anno": '1996',
+                          "cosa": 'Ogni suono del disco arriva da un vinile diverso, tutti richiamati con gli stessi sedici pad.'},
+        "foto": {
+            "file": "assets/foto/mpc60/principale.jpg",
+            "autore": "Matt Friedman",
+            "licenza": "CC BY 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Akai MPC» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Akai_MPC", "data": "2026-09-11"},
+            {"titolo": "«It's the heart of my studio»: the story of the Akai MPC — MusicRadar",
+             "url": "https://www.musicradar.com/music-tech/its-the-heart-of-my-studio-the-story-of-the-akai-mpc-from-the-mpc60-to-the-mpc-live-iii",
+             "data": "2026-09-11"},
+            {"titolo": "«Akai MPC60 Revisited» — Sound On Sound",
+             "url": "https://www.soundonsound.com/music-business/akai-mpc60-revisited", "data": "2026-09-11"},
+            {"titolo": "«Akai MPC60» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/akai/mpc60", "data": "2026-09-11"},
+        ],
+        "hashtags": ["#mpc60", "#akai", "#campionatore", "#hiphop", "#musicaelettronica"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 32
+    {
+        "slug": "prophet5",
+        "numero": 32,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Sequential Circuits Prophet-5",
+        "anno": "1978",
+        "luogo": "San Jose, California",
+        "costruttore": "Sequential Circuits",
+        "specifiche": [
+            ("ANNO", "1978"),
+            ("COSTRUTTORE", "Sequential Circuits"),
+            ("VOCI", "5, polifonico"),
+            ("MEMORIA", "40 patch"),
+        ],
+        "gancio": "Il primo synth che si ricordava i suoni: bastava un numero, non venti manopole",
+        "sottotitolo": "Cinque voci analogiche pilotate da un piccolo cervello digitale: nasce la memoria patch, e da qui nascerà anche il MIDI.",
+        "la_macchina": (
+            "Fino al 1977 un sintetizzatore polifonico si programmava "
+            "girando decine di manopole, ogni volta da capo: nessuna "
+            "macchina ricordava un suono. Il Prophet-5 ne memorizza "
+            "quaranta, richiamabili premendo un numero. Dentro, cinque voci "
+            "analogiche identiche; sopra, un microprocessore che non genera "
+            "il suono ma registra la posizione di ogni manopola. Debutta al "
+            "NAMM di gennaio 1978, quasi 4.000 dollari, e raccoglie 400 "
+            "ordini nelle prime settimane."
+        ),
+        "inventore_nome": "Dave Smith e John Bowen",
+        "inventore": (
+            "Dave Smith fonda la Sequential Circuits a San Jose, in "
+            "California, e disegna il Prophet-5 con John Bowen, che firma "
+            "anche la sezione Poly-Mod. Sarà lo stesso Smith, pochi anni "
+            "dopo, a mettere a punto con Ikutaro Kakehashi di Roland il "
+            "protocollo MIDI: il primo collegamento reale della storia "
+            "unisce un Prophet-600, erede diretto di questa macchina, a uno "
+            "Jupiter-6 Roland. La memoria digitale che salva un suono "
+            "analogico nasce qui."
+        ),
+        "come_funziona": (
+            "Il microprocessore non tocca l'audio: legge la posizione di "
+            "ogni manopola e la scrive in memoria, poi la richiama esatta "
+            "quando premi un numero. Il suono resta interamente analogico. "
+            "Nei primi esemplari, però, gli oscillatori SSM slittano di "
+            "accordatura con il calore della stanza: bisogna riaccordare la "
+            "macchina più volte in un concerto. Solo dalla terza revisione, "
+            "con un chip diverso al posto degli SSM, il Prophet-5 impara a "
+            "restare accordato da solo."
+        ),
+        "richiami": [
+            ("FIG. 1", "5 voci analogiche"),
+            ("FIG. 2", "Microprocessore di memoria"),
+            ("FIG. 3", "40 patch richiamabili"),
+        ],
+        "chi_lusata": [
+            {"artista": "Talking Heads", "nota": "Il basso e il lead di «Burning Down the House» (1983)", "ig": None},
+            {"artista": "The Cars", "nota": "Il riff che apre «Let's Go» (1979), sincronia fra due oscillatori", "ig": None},
+            {"artista": "Radiohead", "nota": "L'accordo che apre «Everything in Its Right Place» (2000)", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "sequential_llc",
+             "riga": "L'azienda esiste ancora, oggi si chiama Sequential: la trovi come @sequential_llc."},
+        ],
+        "aneddoto": (
+            "Le prime due revisioni del Prophet-5 si scordano da sole a "
+            "ogni concerto, per colpa degli stessi chip SSM che dovevano "
+            "renderlo stabile. Sequential non lo nasconde: sostituisce il "
+            "componente nella terza revisione, e il synth che aveva "
+            "inventato la memoria dei suoni impara solo dopo a tenerli "
+            "accordati. Ne furono costruiti circa 8.000, prima che la "
+            "produzione chiudesse a metà anni '80."
+        ),
+        "avvertenza": "Le prime due revisioni si scordano con il calore: chip instabili. Solo la terza, con un chip diverso, resta accordata da sola.",
+        "da_ascoltare": {"brano": "Let's Go", "artista": "The Cars",
+                          "anno": "1979",
+                          "cosa": "Quel riff metallico che apre il pezzo è hard sync fra i due oscillatori: la firma tecnica del Prophet-5."},
+        "foto": {
+            "file": "assets/foto/prophet5/principale.jpg",
+            "autore": "Michele Brina",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Dave Smith and Sequential Circuits» — MIDI.org",
+             "url": "https://midi.org/dave-smith-and-sequential-circuits", "data": "2026-09-11"},
+            {"titolo": "«Prophet-5» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Prophet-5", "data": "2026-09-11"},
+            {"titolo": "«1978: Sequential Circuits Prophet-5» — Mix Online",
+             "url": "https://www.mixonline.com/technology/1978-sequential-circuits-prophet-5-first-programmable-polyphonic-synth-383725",
+             "data": "2026-09-11"},
+            {"titolo": "«Sequential Circuits Prophet 5» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/sequential-circuits/prophet-5", "data": "2026-09-11"},
+        ],
+        "hashtags": ["#prophet5", "#sequentialcircuits", "#synth", "#musicaelettronica", "#anni70"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 33
+    {
+        "slug": "dmx",
+        "numero": 33,
+        "serie": "LE DRUM MACHINE",
+        "strumento": "Oberheim DMX",
+        "anno": "1980",
+        "luogo": "Los Angeles",
+        "costruttore": "Oberheim Electronics",
+        "specifiche": [
+            ("ANNO", "1980"),
+            ("COSTRUTTORE", "Oberheim"),
+            ("CAMPIONI", "8 bit, reali"),
+            ("VOCI", "Regolabili singolarmente"),
+        ],
+        "gancio": "Non finge una batteria: la registra, e te la lascia accordare come un nastro",
+        "sottotitolo": "Suoni veri di batteria dentro una macchina del 1980, con la stessa manopola che un tempo accelerava un registratore a bobine.",
+        "la_macchina": (
+            "Fino a quel momento le drum machine imitavano il suono di una "
+            "batteria con circuiti che oscillano. La DMX lo registra: "
+            "dentro ci sono ventiquattro campioni digitali a 8 bit di "
+            "rullante, cassa, piatti e percussioni vere, richiamabili con "
+            "volume e accordatura regolabili voce per voce. Esce nel 1980 a "
+            "quasi 2.900 dollari, disegnata da Marcus Ryle per l'azienda di "
+            "Tom Oberheim, e diventa in pochi anni la base ritmica di mezza "
+            "new wave e dei primi dischi hip hop."
+        ),
+        "inventore_nome": "Marcus Ryle (Oberheim)",
+        "inventore": (
+            "Tom Oberheim fonda la sua azienda a Los Angeles nel 1969, "
+            "costruendo prima moduli per altri synth e poi sintetizzatori "
+            "propri. Alla DMX lavora un giovane ingegnere, Marcus Ryle, "
+            "che la presenta insieme a Oberheim stesso al NAMM dei primi "
+            "anni '80. È una delle prime drum machine a sostituire gli "
+            "oscillatori con suoni campionati: da lì in avanti quasi ogni "
+            "macchina ritmica seguirà la stessa strada."
+        ),
+        "come_funziona": (
+            "Ogni voce ha una sua schedina con il campione già inciso: non "
+            "un oscillatore che disegna un'onda, ma una piccola memoria che "
+            "la rilegge. Per accordarla non si tocca il timbro: si cambia "
+            "la velocità con cui il campione viene riletto, esattamente "
+            "come si accelera o rallenta un nastro. Alzarla lo rende più "
+            "corto e più acuto, abbassarla lo allunga e lo scurisce — la "
+            "stessa nota, letta a un'altra velocità."
+        ),
+        "richiami": [
+            ("FIG. 1", "24 campioni digitali"),
+            ("FIG. 2", "8 bit per voce"),
+            ("FIG. 3", "Accordatura a velocità variabile"),
+        ],
+        "chi_lusata": [
+            {"artista": "New Order", "nota": "Il ritmo di «Blue Monday» (1983), tutto programmato a mano", "ig": None},
+            {"artista": "Run-D.M.C.", "nota": "L'unico accompagnamento di «Sucker M.C.'s» (1983)", "ig": None},
+            {"artista": "Herbie Hancock", "nota": "Il backbeat di «Rockit» (1983), sotto il riff campionato dal Fairlight", "ig": "herbiehancock"},
+        ],
+        "menzioni_extra": [
+            {"ig": "oberheim_electronics",
+             "riga": "L'azienda di Tom Oberheim è tornata: oggi è @oberheim_electronics."},
+        ],
+        "aneddoto": (
+            "Nel 1983 i New Order affidano alla DMX il ritmo di «Blue "
+            "Monday»: sedicesimi di cassa incalzanti e rullate di tom "
+            "programmate un colpo alla volta, senza un batterista in "
+            "studio. Lo stesso anno la usano anche i Run-D.M.C., unico "
+            "accompagnamento oltre alla voce e ai dischi scratchati su "
+            "«Sucker M.C.'s» — la disco e l'hip hop delle origini, nate a "
+            "un anno di distanza, si appoggiano alla stessa manciata di "
+            "campioni di batteria."
+        ),
+        "avvertenza": "Non ha un filtro per accordare i suoni: cambia la velocità con cui rilegge il campione, come un nastro. Più veloce è più acuto.",
+        "da_ascoltare": {"brano": "Blue Monday", "artista": "New Order",
+                          "anno": "1983",
+                          "cosa": "Quel rullo di cassa incalzante nell'intro è la DMX programmata colpo per colpo, non un giro suonato."},
+        "foto": {
+            "file": "assets/foto/dmx/principale.jpg",
+            "autore": "Matt Mechtley (ritagliata da Shoulder-synth)",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons — Deutsches Museum",
+        },
+        "fonti": [
+            {"titolo": "«Oberheim DMX» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Oberheim_DMX", "data": "2026-09-11"},
+            {"titolo": "«Oberheim DMX» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/oberheim/dmx.php", "data": "2026-09-11"},
+            {"titolo": "«The Happy Drum Machine Accident That Produced New Order's Best Known Hit» — Reverb",
+             "url": "https://reverb.com/news/the-happy-drum-machine-accident-that-produced-new-orders-best-known-hit",
+             "data": "2026-09-11"},
+            {"titolo": "«Sucker M.C.'s» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Sucker_M.C.%27s", "data": "2026-09-11"},
+        ],
+        "hashtags": ["#oberheimdmx", "#drummachine", "#newwave", "#hiphop", "#musicaelettronica"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 34
+    {
+        "slug": "h910",
+        "numero": 34,
+        "serie": "GLI EFFETTI",
+        "strumento": "Eventide H910 Harmonizer",
+        "anno": "1975",
+        "luogo": "New York",
+        "costruttore": "Eventide",
+        "specifiche": [
+            ("ANNO", "1975"),
+            ("COSTRUTTORE", "Eventide"),
+            ("PRINCIPIO", "Pitch-shift digitale"),
+            ("ESCURSIONE", "±1 ottava"),
+        ],
+        "gancio": "Il primo effetto digitale in commercio: storpiava il tempo, non solo il suono",
+        "sottotitolo": "Cambia l'intonazione senza toccare la velocità: una magia che nel 1975 nessun altro sapeva fare.",
+        "la_macchina": (
+            "Nel 1975 processare il suono in digitale è quasi impensabile "
+            "per il mercato: i convertitori costano una fortuna e li usano "
+            "solo i laboratori. L'H910 li mette in un rack da studio. Alza "
+            "o abbassa l'intonazione di un suono fino a un'ottava intera "
+            "senza cambiarne la velocità — la prima volta che succede fuori "
+            "da un laboratorio — con un ritardo rigenerativo che può anche "
+            "accumularsi su se stesso fino a esplodere. Costa 1.600 "
+            "dollari, e cambia il modo in cui si registra una batteria."
+        ),
+        "inventore_nome": "Richard Factor e Tony Agnello (Eventide)",
+        "inventore": (
+            "Eventide nasce nel 1971 a Manhattan, fondata da Richard Factor "
+            "insieme a Stephen Katz e Orville Greene. È Factor ad assegnare "
+            "il progetto dell'H910 all'ingegnere Tony Agnello, che lo "
+            "costruisce nel 1974 e lo presenta a un'associazione di "
+            "ingegneri del suono l'anno dopo. Non è un'azienda di strumenti "
+            "musicali: fa apparecchiature per la radiotelevisione. L'H910 "
+            "nasce quasi per caso, e finisce nei rack di mezza discografia "
+            "mondiale."
+        ),
+        "come_funziona": (
+            "Dentro, due letture della stessa linea di ritardo digitale, "
+            "incrociate per cambiare l'intonazione senza toccare la "
+            "durata. Nel punto dove le due letture si scambiano resta un "
+            "piccolo vuoto di fase, udibile come un'imperfezione: da questa "
+            "macchina nasce la parola inglese «glitch», usata ancora oggi "
+            "per lo stesso difetto. Alzando il ritorno il segnale rientra "
+            "pitchato su se stesso: ogni giro sale o scende di quota, "
+            "finché non parte in oscillazione controllata."
+        ),
+        "richiami": [
+            ("FIG. 1", "Pitch-shift ±1 ottava"),
+            ("FIG. 2", "Ritardo rigenerativo"),
+            ("FIG. 3", "Conversione analogico-digitale"),
+        ],
+        "chi_lusata": [
+            {"artista": "David Bowie", "nota": "La batteria rigenerata di «Low» (1977), prod. Tony Visconti", "ig": "davidbowie"},
+            {"artista": "AC/DC", "nota": "Sotto il rullante di «Back in Black» (1980), scordato di proposito", "ig": None},
+            {"artista": "Frank Zappa", "nota": "Nel suo rig per chitarra, da metà anni '70", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "eventideaudio",
+             "riga": "L'azienda esiste ancora e fa ancora effetti da studio: @eventideaudio."},
+        ],
+        "aneddoto": (
+            "Nel 1977, in studio per «Low» di David Bowie, il produttore "
+            "Tony Visconti convince tutti a provare l'H910 sulla batteria "
+            "di Dennis Davis, rimandando l'uscita di nuovo dentro la "
+            "macchina: il rullante metallico e discendente di «Breaking "
+            "Glass» esce da lì. Tre anni dopo Tony Platt lo usa scordato di "
+            "proposito sotto il rullante vero di «Back in Black» degli "
+            "AC/DC — la stessa macchina, due dischi opposti, lo stesso "
+            "trucco."
+        ),
+        "avvertenza": "Ogni cambio di intonazione lascia un vuoto di fase nel punto di incrocio: da questo difetto nasce la parola «glitch».",
+        "da_ascoltare": {"brano": "Breaking Glass", "artista": "David Bowie",
+                          "anno": "1977",
+                          "cosa": "Quel rullante metallico che scende di tono è l'H910 che rimanda il suono dentro se stesso, pitchato a ogni giro."},
+        "foto": {
+            "file": "assets/foto/h910/principale.jpg",
+            "autore": "Nalzatron",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Eventide, Inc.» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Eventide,_Inc", "data": "2026-09-11"},
+            {"titolo": "«1975: Eventide H910 Harmonizer» — Mix Online",
+             "url": "https://www.mixonline.com/technology/1975-eventide-h910-harmonizer-377972", "data": "2026-09-11"},
+            {"titolo": "«H910 Harmonizer» — Eventide Audio",
+             "url": "https://www.eventideaudio.com/rackmount/h910-harmonizer/", "data": "2026-09-11"},
+            {"titolo": "Intervista a Tony Platt su «Back in Black» — SoloDallas",
+             "url": "https://solodallas.com/blogs/blog/recording-back-in-black-the-album-interviews-with-tony-platt",
+             "data": "2026-09-11"},
+        ],
+        "hashtags": ["#eventide", "#h910", "#harmonizer", "#davidbowie", "#musicaelettronica"],
+        "verificata": True,
+    },
 ]
 
 
