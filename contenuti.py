@@ -2538,6 +2538,55 @@ SCHEDE = [
         "hashtags": ["#eventide", "#h910", "#harmonizer", "#davidbowie", "#musicaelettronica"],
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 35
+    {
+        "slug": "ondioline",
+        "numero": 35,
+        "serie": "GLI ANTENATI",
+        "strumento": "Ondioline",
+        "anno": "1947",
+        "luogo": "Parigi",
+        "costruttore": "Georges Jenny",
+        "specifiche": [
+            ("ANNO", "1947"),
+            ("ORIGINE", "Francia"),
+            ("TASTIERA", "Sospesa su molle"),
+            ("VOLUME", "Leva al ginocchio"),
+        ],
+        "gancio": "La tastiera \u00e8 appoggiata su molle: si spinge di lato, come una corda di violino",
+        "sottotitolo": "L'alternativa povera alle Ondes Martenot, costruita a mano da un uomo solo per vent'anni.",
+        "la_macchina": "Una tastiera corta montata sopra un mobile con l'altoparlante dentro. Il timbro nasce da un circuito a multivibratore e passa per un banco di cursori \u2014 da dieci a diciassette secondo il modello \u2014 che tolgono e aggiungono armoniche: da l\u00ec escono legni, ottoni, archi, e cose che non assomigliano a niente. Il volume non sta su una manopola ma su una leva che si spinge col ginocchio, cos\u00ec le mani restano libere.",
+        "inventore_nome": "Georges Jenny",
+        "inventore": "Jenny comincia a costruirne il primo esemplare alla fine degli anni Trenta, mentre \u00e8 ricoverato in un sanatorio del sud della Francia per tubercolosi. Voleva una macchina che facesse quello che facevano le Ondes Martenot ma che una famiglia potesse permettersi. Ne costru\u00ec circa milleduecento fra la met\u00e0 degli anni Quaranta e la fine dei Sessanta, quasi tutti con le proprie mani.",
+        "come_funziona": "I tasti non sono avvitati al telaio: poggiano su molle disegnate apposta. Premuto un tasto, lo si pu\u00f2 spingere a destra e a sinistra, e l'intonazione si piega di conseguenza \u2014 lo stesso gesto che fa un violinista sulla corda, su una tastiera. Il vibrato quindi non arriva da un oscillatore che lo produce sempre uguale: lo fa la mano, nota per nota, e non ce ne sono due identici.",
+        "richiami": [
+            ("FIG. 1", "Tasti su molle, spinta laterale"),
+            ("FIG. 2", "Multivibratore + cursori armonici"),
+            ("FIG. 3", "Leva del volume al ginocchio"),
+        ],
+        "chi_lusata": [
+            {"artista": "Jean-Jacques Perrey", "nota": "Vent'anni a costruirci sopra una tecnica che non aveva nessun altro", "ig": None},
+            {"artista": "Georges Jenny", "nota": "Il costruttore la presentava lui stesso alla radio francese", "ig": None},
+            {"artista": "Gotye", "nota": "Settant'anni dopo ne restaura gli esemplari e ci porta in tour un'orchestra", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Nel 1949 uno studente di medicina sent\u00ec alla radio francese un signore che presentava una macchina sconosciuta. Si chiamava Jean-Jacques Perrey, and\u00f2 a cercarlo, e Jenny gli mise in mano uno strumento e un lavoro: fu il primo venditore dell'Ondioline. Non ne vendette moltissimi, ma ci pass\u00f2 vent'anni sopra e ne divenne l'unico vero virtuoso: quasi tutto quello che oggi sappiamo di come suona lo si deve a lui.",
+        "avvertenza": "Il vibrato non c'\u00e8 finch\u00e9 non lo fai tu. Se tieni il dito fermo, la nota resta dritta come un tubo.",
+        "foto": {
+            "file": "assets/foto/ondioline/principale.jpg",
+            "autore": "ForgottenFuturesBB",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "\u00abOndioline\u00bb \u2014 Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Ondioline", "data": "2026-09-11"},
+            {"titolo": "\u00abWally De Backer on the Lasting Influence of Jean-Jacques Perrey and the Ondioline\u00bb \u2014 Red Bull Music Academy Daily",
+             "url": "https://daily.redbullmusicacademy.com/2017/07/gotye-ondioline-interview/", "data": "2026-09-11"},
+        ],
+        "hashtags": ["#ondioline", "#georgesjenny", "#jeanjacquesperrey", "#anni50", "#musicaelettronica"],
+        "verificata": True,
+    },
 ]
 
 
