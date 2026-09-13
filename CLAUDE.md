@@ -9,7 +9,26 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 
 - Nome: **ELETTROFONI** (@elettrofoni) · «Catalogo delle macchine sonore»
 - Stile tavole: catalogo anni '70 — crema `#f4e9d2`, bruno `#38291d`,
-  arancio `#d9702e`; font Oswald (titoli) + IBM Plex Mono (dati).
+  arancio `#d9702e`. **Tre ruoli tipografici** (dal 13/09/2026, richiesta
+  del proprietario): Oswald per il display (nome, titoli, valori), IBM
+  Plex Serif per tutta la prosa, IBM Plex Mono SOLO per dati, etichette,
+  specifiche, fonti e crediti. Prima la prosa lunga stava in mono a
+  28-30px: il monospazio è una faccia da dati e su otto righe di racconto
+  fa sembrare la tavola un terminale. Serif e mono sono della stessa
+  superfamiglia — stesso scheletro, stessa altezza-x — quindi la coppia è
+  compatibile per costruzione, non per gusto.
+- **Foto: una per slide, non una ripetuta.** Le slide 2 e 3 la banda
+  fotografica ce l'avevano già, ma pescavano tutte da `scheda["foto"]`:
+  mostravano tre volte la stessa immagine. Ora c'è `foto_extra` (lista,
+  facoltativa) e `foto_di(scheda, i)` dà la i-esima con ricaduta sulla
+  principale; ogni banda porta la didascalia di cosa si guarda e il
+  credito della SUA licenza, che `valida_scheda` pretende su tutte.
+  Regola generale: quando un layout ripete un elemento, controllare che
+  ripeta la STRUTTURA e non il CONTENUTO.
+- **La decorazione non divide lo spazio col testo da leggere.** Il
+  numerone di copertina a 200px arrivava dentro il gancio e il titolo
+  passava sopra la sua ombra: ora è confinato nella fascia
+  dell'occhiello, con altezza fissa e overflow nascosto.
 - Personaggio: **Dinamo**, automa d'epoca (SVG in `genera_tavole.py`).
   NON è la spalla comica: è chi compila il catalogo. Chiude ogni scheda
   con un'**AVVERTENZA** in forma di etichetta da manuale d'uso, agganciata
