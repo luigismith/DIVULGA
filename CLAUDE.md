@@ -89,6 +89,62 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   del proprietario), con credito autore+licenza; fonti foto: Wikimedia
   Commons (API: `commons.wikimedia.org/w/api.php`, campi extmetadata).
 
+## Come si scrive (richiesta del proprietario, 13/09/2026: «più umani»)
+
+Il proprietario ha riletto le schede e ha detto che sembrano generate da
+un'AI. Aveva ragione. I segni c'erano tutti, e vanno riconosciuti prima
+di scrivere una riga:
+- la frasetta a effetto in chiusura di OGNI paragrafo («l'ospedale da
+  campo era il laboratorio», «il jazz cambia corrente»): una ogni tanto
+  è una voce, una per paragrafo è un tic;
+- le terne («archi, ottoni, un vetro rotto»; «jazz, soul e funk» tre
+  volte nella stessa scheda) e il «non è X: è Y» come ossatura di ogni
+  frase;
+- i due punti e la lineetta lunga come unica punteggiatura;
+- i superlativi vaghi: «mezza classifica pop», «metà dei dischi», «quasi
+  ogni sintetizzatore del mondo». Chi se ne intende o dice quali, o non
+  lo dice;
+- lo stesso fatto in gancio, sottotitolo, testo e aneddoto;
+- nessuno che parla: niente «io», niente gusto, niente dubbi, niente
+  lettore. Tutto è «significativo» e niente è vissuto;
+- i numeri in lettere («settantatré tasti», «milleduecento esemplari»):
+  chi maneggia gli strumenti scrive 73 e 1.200;
+- ogni «la_macchina» che comincia con la definizione da enciclopedia
+  («Il X è il campionatore che…»).
+
+Regole, da qui in avanti:
+1. C'è una persona che scrive, e le macchine le ha avute in mano. Può
+   dire «a me», «secondo me», «non l'ho mai capito». Almeno un'opinione
+   per scheda; un dubbio dove c'è (se le fonti non concordano su un anno
+   si scrive che non concordano: è vero, ed è la cosa più umana che ci
+   sia).
+2. Si parla al lettore: «se ne trovate uno», «provate a», «ascoltatelo
+   sapendo che».
+3. Le frasi hanno lunghezze diverse. Qualcuna è corta. Una può cominciare
+   con «E». Il paragrafo finisce su un fatto o su un'osservazione
+   semplice, NON su una morale né su un chiasmo.
+4. Al massimo una lineetta lunga per campo, meglio nessuna; i due punti
+   non più di uno per campo; il «non X: Y» una volta per scheda.
+5. Un fatto sta in un campo solo. Gancio, sottotitolo, testo e aneddoto
+   dicono cose diverse. L'aneddoto si racconta in ordine, con un
+   dettaglio piccolo, e si ferma quando finisce.
+6. Niente «leggendario», «iconico», «celebre», «rivoluzionario»,
+   «status symbol». Niente «mezza classifica». Se è vero si dice quale
+   disco; se non si sa, si tace.
+7. Numeri in cifre: 73 tasti, 8 bit, 1.200 esemplari, 30.000 dollari.
+8. Le opinioni non hanno bisogno di fonti; i fatti sì, sempre (regola 1
+   qui sotto). Riscrivere «umano» NON vuol dire inventare dettagli
+   sensoriali: le cose che «si sentono con le mani» si dicono solo se
+   stanno nelle fonti o nella foto.
+9. Le cose concrete valgono più delle categorie: «un dischetto da 5
+   pollici e un quarto» batte «supporto magnetico».
+Prova del nove: leggere il campo ad alta voce a un amico che suona. Se
+suona come la voce fuori campo di un documentario, si riscrive.
+I titoli fissi delle tavole seguono la stessa regola: «Cosa c'è dentro»,
+«Nei dischi», «Una storia» (erano «La tecnologia, semplice», «Dai
+laboratori ai dischi», «Per chiudere»: brochure). In didascalia la lista
+degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
+
 ## Regole non negoziabili
 
 1. Ogni fatto va verificato su **≥2 fonti indipendenti** prima di entrare
@@ -300,7 +356,8 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
    campionatori, effetti; includere il filone italiano: Farfisa, Elka
    Synthex, Crumar, Synket di Paolo Ketoff, Studio di Fonologia RAI…).
 3. Per ciascuno: verificare i fatti (≥2 fonti), trovare foto libera su
-   Commons (salvare autore/licenza), verificare handle da taggare,
-   scrivere i campi rispettando i limiti, `verificata: True`, validare,
-   generare le tavole e GUARDARLE, committare.
+   Commons (salvare autore/licenza, cercare anche pannello/interno per
+   `foto_extra`), verificare handle da taggare, scrivere i campi con la
+   voce di «Come si scrive» e sotto i limiti, `verificata: True`,
+   validare, generare le tavole e GUARDARLE, committare.
 4. Aggiornare la coda finché le schede verificate non pubblicate sono ≥14.

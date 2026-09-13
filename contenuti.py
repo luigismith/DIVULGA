@@ -1743,27 +1743,27 @@ SCHEDE = [
             ("CAMPIONAMENTO", "8 bit, 27,7 kHz"),
             ("VOCI", "8 voci, 8 parti MIDI"),
         ],
-        "gancio": "Registra un violino vero, lo intona su tutta la tastiera: l'orchestra finisce dentro una scatola",
-        "sottotitolo": "Il campionatore che negli anni '80 mise un'intera orchestra dentro 61 tasti, spesso senza che nessuno se ne accorgesse.",
-        "la_macchina": "L'Emulator II è il campionatore che portò suoni reali — archi, ottoni, un flauto giapponese, un vetro rotto — dentro una tastiera musicale, a un prezzo che uno studio professionale poteva permettersi. Si registrava un suono a 8 bit e lo si intonava automaticamente su tutti i tasti: bastava premere per risuonare quel violino o quel corno campionato. Con le sue librerie di suoni su floppy disk diventò lo strumento invisibile dietro decine di hit pop e colonne sonore della seconda metà degli anni '80, spesso senza che l'ascoltatore se ne accorgesse.",
+        "gancio": "Registri un violino una volta sola e lo suoni su 61 tasti. Nel 1984 pareva un trucco da prestigiatore",
+        "sottotitolo": "Il campionatore a 8 bit della E-mu: quello che ha messo un'orchestra su un dischetto da 5 pollici e un quarto.",
+        "la_macchina": "È una tastiera grigia da 61 tasti con due lettori di floppy sul fianco sinistro, e dentro non c'è nessun suono: li carichi tu, dai dischetti. E-mu li vendeva a librerie (archi, ottoni, un flauto giapponese, perfino un vetro rotto) e puoi registrare anche i tuoi, a 8 bit. Il campione poi va su tutta la tastiera da solo, più acuto a destra e più grave a sinistra, e più ti allontani dalla nota originale più si sente che è una registrazione tirata. A me piace proprio quello: gli archi dell'Emulator non suonano veri, suonano da Emulator. Costava molto meno di un Fairlight, e uno studio serio se lo poteva permettere.",
         "inventore_nome": "Dave Rossum e Scott Wedge",
-        "inventore": "E-mu Systems nacque nel 1971 a Santa Cruz, in California, per costruire sintetizzatori modulari su misura per altri musicisti. Fu la vista del Fairlight CMI e della Linn LM-1 al NAMM del 1979 a convincere i fondatori Dave Rossum e Scott Wedge che il campionamento digitale poteva costare molto meno dei 30.000 dollari del Fairlight australiano. Nel 1981 uscì il primo Emulator; tre anni dopo l'Emulator II ne perfezionò il suono aggiungendo i filtri analogici risonanti SSM2045, che restano la firma sonora della macchina.",
-        "come_funziona": "Il suono viene campionato a 8 bit con una frequenza di 27,7 kHz e salvato su floppy disk da 5 pollici e un quarto, poi distribuito automaticamente sui 61 tasti sensibili a velocity e aftertouch. A valle del campionamento agisce un filtro analogico risonante a 4 poli, 24 dB/ottava, costruito attorno al chip SSM2045: è lui a scaldare e modellare il suono altrimenti crudo del campione digitale. La macchina ha 8 voci di polifonia, 8 parti multitimbriche via MIDI e un sequencer interno a 8 tracce.",
+        "inventore": "Dave Rossum e Scott Wedge fondano la E-mu nel 1971 a Santa Cruz e per anni costruiscono sintetizzatori modulari su misura, pochi pezzi, per altri musicisti. Al NAMM del 1979 vedono il Fairlight CMI e la Linn LM-1 e fanno i conti: il Fairlight costa 30.000 dollari, la stessa cosa si può fare spendendo molto meno. Il primo Emulator esce nel 1981. Il II, nel 1984, aggiunge la cosa che secondo me lo salva dall'essere solo un Fairlight povero: i filtri analogici SSM2045, che addolciscono i campioni a 8 bit e li fanno suonare come se fossero passati da un synth.",
+        "come_funziona": "Il suono entra da un ingresso, viene tagliato in 27.700 fettine al secondo e ognuna viene scritta con un numero a 8 bit, cioè uno fra 256 valori. Sono pochi, e si sente: da lì viene il fruscio granuloso dei campioni. Il dischetto da 5 pollici e un quarto li conserva. Quando premi un tasto la macchina rilegge la registrazione a una velocità diversa per ogni nota, poi la passa in un filtro analogico, il chip SSM2045, a 4 poli, che toglie le frequenze alte in modo morbido e, se alzi la risonanza, si mette a cantare. Otto voci, quindi otto note alla volta; otto parti diverse via MIDI; un sequencer a 8 tracce.",
         "richiami": [
             ("FIG. 1", "Campionamento 8 bit, 27,7 kHz"),
             ("FIG. 2", "Filtro risonante SSM2045, 24 dB/oct"),
             ("FIG. 3", "61 tasti velocity + floppy 5¼\""),
         ],
         "chi_lusata": [
-            {"artista": "Pet Shop Boys", "nota": "«West End Girls» (1986): archi, tromba e cassa sono campioni Emulator I/II stratificati", "ig": "petshopboys"},
-            {"artista": "Peter Gabriel", "nota": "«Sledgehammer» (1986): lo shakuhachi sintetico dell'intro nasce da un campione E-mu Emulator II", "ig": None},
-            {"artista": "Sade", "nota": "«Love Is Stronger Than Pride»: stesso campione shakuhachi della libreria sonora Emulator II", "ig": None},
+            {"artista": "Pet Shop Boys", "nota": "«West End Girls» (1986): gli archi, la tromba e la cassa sono campioni Emulator, uno sopra l'altro", "ig": "petshopboys"},
+            {"artista": "Peter Gabriel", "nota": "Il flauto che apre «Sledgehammer» (1986) è il dischetto shakuhachi della libreria E-mu", "ig": None},
+            {"artista": "Sade", "nota": "«Love Is Stronger Than Pride»: stesso flauto, stesso dischetto", "ig": None},
         ],
         "menzioni_extra": [],
-        "aneddoto": "Il campione «Shakuhachi» della libreria sonora dell'Emulator II — un flauto giapponese registrato per uso generico — finì per aprire «Sledgehammer» di Peter Gabriel nel 1986 e ricomparve, identico, in brani di Enigma e in «Love Is Stronger Than Pride» di Sade: lo stesso suono, uscito dallo stesso floppy disk, girava contemporaneamente su mezza classifica pop senza che quasi nessuno lo riconoscesse come lo stesso campione.",
+        "aneddoto": "Nella libreria dell'Emulator II c'è un dischetto con un flauto giapponese, uno shakuhachi, registrato senza pensare a niente di preciso. Nel 1986 quel campione apre «Sledgehammer» di Peter Gabriel. Poi lo ritrovi in «Love Is Stronger Than Pride» di Sade, e negli Enigma. È proprio la stessa registrazione, uscita dallo stesso floppy, e per anni nessuno ci ha fatto caso: sentivi un flauto e pensavi a un flautista. Io l'ho scoperto tardi, e da quel giorno lo sento dappertutto.",
         "avvertenza": "Il filtro SSM2045 scalda qualsiasi campione digitale. Anche un vetro rotto, se glielo chiedete gentilmente, suonerà quasi analogico.",
         "da_ascoltare": {"brano": "Sledgehammer", "artista": "Peter Gabriel", "anno": "1986",
-                          "cosa": "Il flauto shakuhachi sintetico che apre il brano è un campione della libreria sonora dell'Emulator II."},
+                          "cosa": "Il flauto dell'intro. Ascoltatelo sapendo che è un dischetto di fabbrica: non torna più come prima."},
         "foto": {
             "file": "assets/foto/emulator/principale.jpg",
             "ritaglio": True,   # scontornata su bianco: si mostra intera
@@ -2713,7 +2713,8 @@ def componi_didascalia(scheda):
         nome = f"@{u['ig']}" if u.get("ig") else u["artista"]
         usi.append(f"{nome} ({u['nota']})")
     if usi:
-        righe.append("L'hanno resa leggenda: " + " · ".join(usi) + ".")
+        # «L'hanno resa leggenda» era una formula da copertina di rivista: si dice chi.
+        righe.append("Chi ci ha suonato: " + " · ".join(usi) + ".")
         righe.append("")
     for m in scheda.get("menzioni_extra", []):
         righe.append(m["riga"])

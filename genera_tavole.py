@@ -409,7 +409,7 @@ def slide_funzionamento(scheda):
 {_testata(scheda)}
 {_banda(scheda, 3, 420)}
 <div class="legenda">{voci}</div>
-{_intesta(4, "COME FUNZIONA", "La tecnologia, semplice")}
+{_intesta(4, "COME FUNZIONA", "Cosa c'è dentro")}
 <div class="testo autofit" data-min="22">{scheda['come_funziona']}</div>
 {_pager(scheda, 4)}
 """
@@ -465,7 +465,7 @@ def slide_artisti(scheda):
         banda = _banda(scheda, 4, min(480, avanzo), stile="margin-top:22px")
     corpo = f"""
 {_testata(scheda)}
-{_intesta(5, "CHI L'HA USATA", "Dai laboratori ai dischi")}
+{_intesta(5, "CHI L'HA USATA", "Nei dischi")}
 <div class="lista autofit" data-min="30">{righe}</div>
 {ascolto}
 {banda}
@@ -513,7 +513,7 @@ def slide_aneddoto(scheda):
 """
     corpo = f"""
 {_testata(scheda)}
-{_intesta(6, "L'ANEDDOTO", "Per chiudere")}
+{_intesta(6, "L'ANEDDOTO", "Una storia")}
 <div class="testo autofit" data-min="20">{scheda['aneddoto']}</div>
 <div class="avviso">
   {_automa(ARANCIO, BRUNO)}
