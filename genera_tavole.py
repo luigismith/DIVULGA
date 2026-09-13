@@ -61,6 +61,21 @@ def css_base():
 @font-face{{font-family:'PlexMono';src:url({FONTS}/IBMPlexMono-400.woff2) format('woff2');font-weight:400}}
 @font-face{{font-family:'PlexMono';src:url({FONTS}/IBMPlexMono-400i.woff2) format('woff2');font-weight:400;font-style:italic}}
 @font-face{{font-family:'PlexMono';src:url({FONTS}/IBMPlexMono-600.woff2) format('woff2');font-weight:600}}
+/* SCELTA TIPOGRAFICA (13/09/2026, richiesta dal proprietario: «usa coppie
+   di font compatibili»). Prima c'erano due sole facce e tutta la prosa
+   lunga stava in IBM Plex Mono a 28-30px: il monospazio e' una faccia da
+   DATI, e su otto righe di racconto stanca l'occhio e fa sembrare la
+   tavola un terminale invece di una pagina di catalogo.
+   Ora i ruoli sono tre:
+     Oswald      -> display: nome della macchina, titoli, valori
+     PlexSerif   -> testo corrente, tutta la prosa
+     PlexMono    -> solo dati: etichette, sigle, specifiche, fonti, crediti
+   Il serif e' della STESSA superfamiglia del mono: stesso scheletro,
+   stessa altezza-x, disegnati per stare insieme. La compatibilita' della
+   coppia e' una proprieta' del disegno, non un'opinione. */
+@font-face{{font-family:'PlexSerif';src:url({FONTS}/IBMPlexSerif-400.woff2) format('woff2');font-weight:400}}
+@font-face{{font-family:'PlexSerif';src:url({FONTS}/IBMPlexSerif-600.woff2) format('woff2');font-weight:600}}
+@font-face{{font-family:'PlexSerif';src:url({FONTS}/IBMPlexSerif-400i.woff2) format('woff2');font-weight:400;font-style:italic}}
 *{{margin:0;padding:0;box-sizing:border-box}}
 body{{width:1080px;height:1350px;overflow:hidden;background:{CREMA};color:{BRUNO};
   font-family:'Oswald';display:flex;flex-direction:column;position:relative}}
@@ -84,7 +99,10 @@ body{{width:1080px;height:1350px;overflow:hidden;background:{CREMA};color:{BRUNO
 .zoccolo{{flex:none;background:{ARANCIO};color:{BRUNO};padding:20px 56px;display:flex;align-items:center;justify-content:space-between}}
 .motto{{font-family:'PlexMono';font-weight:600;font-size:16px;letter-spacing:.12em}}
 .handle{{font-weight:700;font-size:22px;letter-spacing:.14em}}
-.credito{{position:absolute;right:10px;bottom:12px;font-family:'PlexMono';font-size:10.5px;color:rgba(244,233,210,.8);letter-spacing:.04em}}
+/* Il credito e' un obbligo di licenza, non una decorazione: su una foto
+   chiara il grigio all'80% spariva. Fondino scuro e testo pieno. */
+.credito{{position:absolute;right:8px;bottom:8px;font-family:'PlexMono';font-size:11px;
+  color:{CREMA};letter-spacing:.04em;background:rgba(20,14,9,.62);padding:4px 9px}}
 .autofit{{min-height:0}}
 """
 
@@ -128,8 +146,26 @@ def _pager(scheda, n):
     return f"""<div class="pager"><span class="qui">{scheda['strumento'].upper()}</span><span class="num">{n} / 6 →</span></div>"""
 
 
-def _foto_credito(scheda):
-    f = scheda["foto"]
+def foto_di(scheda, i=0):
+    """La i-esima foto della scheda: 0 e' la principale, 1.. sono le
+    «foto_extra». Se l'indice non esiste si ricade sulla principale.
+
+    LEZIONE IMPARATA (13/09/2026, segnalata dal proprietario: «ove
+    possibile piu' immagini dello strumento»). Le slide 2 e 3 una banda
+    fotografica ce l'avevano gia' — ma pescavano tutte da scheda["foto"],
+    cioe' mostravano TRE VOLTE LA STESSA IMMAGINE. Non mancavano le
+    fotografie: mancava la varieta', ed e' un difetto che si vede solo
+    scorrendo il carosello intero, non guardando una tavola alla volta.
+    REGOLA: quando un layout ripete un elemento, verificare che ripeta la
+    STRUTTURA e non il CONTENUTO."""
+    extra = scheda.get("foto_extra") or []
+    if i == 0 or i > len(extra):
+        return scheda["foto"]
+    return extra[i - 1]
+
+
+def _foto_credito(scheda, foto=None):
+    f = foto or scheda["foto"]
     return f"Foto: {f['autore']} · {f['licenza']} · {f['fonte']}"
 
 
@@ -143,7 +179,17 @@ def slide_copertina(scheda):
         for k, v in scheda["specifiche"]
     )
     css = f"""
-.ghost{{position:absolute;top:2px;right:40px;font-weight:700;font-size:200px;line-height:1;color:{CREMA2};z-index:0}}
+/* LEZIONE IMPARATA (13/09/2026). Il numerone decorativo stava a 200px
+   partendo dal bordo alto e arrivava fin dentro il gancio: su ogni
+   copertina le lettere del titolo passavano sopra la sua ombra e il
+   testo — la cosa piu' importante della tavola — perdeva contrasto.
+   Ora e' confinato nella fascia dell'occhiello (anno · luogo), che e'
+   corta e lascia libera tutta la destra, con altezza fissata e
+   overflow nascosto: non puo' piu' crescere dentro al titolo.
+   REGOLA: la decorazione non divide mai lo spazio col testo che deve
+   essere letto. Se litigano, si sposta la decorazione. */
+.ghost{{position:absolute;top:-14px;right:30px;font-weight:700;font-size:150px;
+  line-height:1;height:126px;overflow:hidden;color:{CREMA2};z-index:0;letter-spacing:-.02em}}
 /* LEZIONE IMPARATA (30/08/2026): la copertina non portava il nome dello
    strumento. Da nessuna parte. C'erano anno, luogo, gancio, sottotitolo,
    foto e specifiche — ma non «Yamaha DX7». In un catalogo e' il difetto
@@ -154,7 +200,7 @@ def slide_copertina(scheda):
 .nome-macchina{{flex:none;position:relative;z-index:1;font-weight:700;font-size:58px;
   line-height:1.02;text-transform:uppercase;letter-spacing:.01em;margin-top:10px;
   padding-bottom:14px;border-bottom:5px solid {ARANCIO}}}
-.titolone{{position:relative;z-index:1;font-size:70px;margin-top:18px}}
+.titolone{{position:relative;z-index:1;font-size:70px;margin-top:18px;text-wrap:balance}}
 .sottotitolo{{flex:none;position:relative;z-index:1;font-weight:500;font-size:29px;margin-top:12px;color:#6b5138;max-width:850px;line-height:1.3}}
 .fototel{{flex:none;position:relative;z-index:1;margin-top:30px;border-top:8px solid {BRUNO};border-bottom:8px solid {BRUNO};background:#111}}
 .fototel img{{display:block;width:100%;height:500px;object-fit:cover;object-position:{pos}}}
@@ -187,21 +233,32 @@ def slide_copertina(scheda):
     return _pagina(corpo, css)
 
 
-def _slide_testo(scheda, n, etichetta, titolo, testo, foto_alta=None):
+def _slide_testo(scheda, n, etichetta, titolo, testo, foto_alta=None, foto_i=0):
     """Layout comune delle slide interne: kicker, titolo, testo grande in
-    autofit, eventuale banda fotografica, pager."""
+    autofit, eventuale banda fotografica, pager.
+
+    `foto_i` sceglie QUALE foto mostrare: ogni slide ha la sua, cosi' il
+    carosello non ripete tre volte la stessa immagine."""
+    foto = foto_di(scheda, foto_i)
     css = f"""
 .titolone{{font-size:64px}}
-.testo{{flex:1 1 auto;font-family:'PlexMono';font-size:30px;line-height:1.62;margin-top:30px;
+.testo{{flex:1 1 auto;font-family:'PlexSerif';font-size:31px;line-height:1.55;margin-top:30px;
   overflow:hidden;max-width:940px}}
 .fotobanda{{flex:none;position:relative;margin:26px -56px 0;border-top:6px solid {BRUNO};background:#111}}
-.fotobanda img{{display:block;width:100%;height:{foto_alta or 0}px;object-fit:cover;object-position:{scheda["foto"].get("posizione", "center")}}}
+.fotobanda img{{display:block;width:100%;height:{foto_alta or 0}px;object-fit:cover;object-position:{foto.get("posizione", "center")}}}
+.didascalia{{position:absolute;left:56px;bottom:8px;background:{ARANCIO};color:{BRUNO};
+  font-family:'PlexMono';font-weight:600;font-size:13px;letter-spacing:.12em;padding:6px 12px}}
 """
     foto_html = ""
     if foto_alta:
-        foto_uri = (RADICE / scheda["foto"]["file"]).as_uri()
-        foto_html = f"""<div class="fotobanda"><img src="{foto_uri}">
-        <div class="credito">{_foto_credito(scheda)}</div></div>"""
+        foto_uri = (RADICE / foto["file"]).as_uri()
+        # La didascalia dice cosa si sta guardando: e' informazione, non
+        # decorazione. Senza, tre bande fotografiche diverse nello stesso
+        # carosello sembrano un errore invece di tre inquadrature scelte.
+        did = foto.get("didascalia")
+        did_html = f'<div class="didascalia">{did.upper()}</div>' if did else ""
+        foto_html = f"""<div class="fotobanda"><img src="{foto_uri}">{did_html}
+        <div class="credito">{_foto_credito(scheda, foto)}</div></div>"""
     corpo = f"""
 {_testata(scheda)}
 <div class="corpo">
@@ -216,11 +273,11 @@ def _slide_testo(scheda, n, etichetta, titolo, testo, foto_alta=None):
 
 
 def slide_macchina(scheda):
-    return _slide_testo(scheda, 2, "LA MACCHINA", "Che cos'è", scheda["la_macchina"], foto_alta=360)
+    return _slide_testo(scheda, 2, "LA MACCHINA", "Che cos'è", scheda["la_macchina"], foto_alta=360, foto_i=1)
 
 
 def slide_inventore(scheda):
-    return _slide_testo(scheda, 3, "CHI L'HA COSTRUITA", scheda["inventore_nome"], scheda["inventore"], foto_alta=300)
+    return _slide_testo(scheda, 3, "CHI L'HA COSTRUITA", scheda["inventore_nome"], scheda["inventore"], foto_alta=300, foto_i=2)
 
 
 def slide_funzionamento(scheda):
@@ -231,14 +288,29 @@ def slide_funzionamento(scheda):
     extra = ""
     if richiami:
         extra = f'<div class="richiami">{richiami}</div>'
+    # Su «come funziona» la foto giusta e' il dettaglio: il pannello, i
+    # comandi, il meccanismo. Compare solo se la scheda ha una terza foto
+    # — le altre restano come sono, senza buchi.
+    foto3 = foto_di(scheda, 3)
+    ha_terza = len(scheda.get("foto_extra") or []) >= 3
+    banda3 = ""
+    if ha_terza:
+        did3 = foto3.get("didascalia")
+        did3_html = f'<div class="didascalia">{did3.upper()}</div>' if did3 else ""
+        banda3 = (f'<div class="fotobanda"><img src="{(RADICE / foto3["file"]).as_uri()}">'
+                  f'{did3_html}<div class="credito">{_foto_credito(scheda, foto3)}</div></div>')
     css = f"""
 .titolone{{font-size:64px}}
-.testo{{flex:0 1 auto;font-family:'PlexMono';font-size:29px;line-height:1.6;margin-top:28px;overflow:hidden;max-width:940px}}
+.testo{{flex:0 1 auto;font-family:'PlexSerif';font-size:30px;line-height:1.55;margin-top:28px;overflow:hidden;max-width:940px}}
 .richiami{{flex:none;display:flex;border:2px solid {BRUNO};margin-top:34px}}
 .richiamo{{flex:1;text-align:center;padding:16px 10px;border-right:2px solid {BRUNO}}}
 .richiamo:last-child{{border-right:none}}
 .richiamo .fig{{font-family:'PlexMono';font-weight:600;font-size:14px;letter-spacing:.14em;color:{ARANCIO}}}
 .richiamo .txt{{font-weight:700;font-size:23px;letter-spacing:.06em;margin-top:5px;text-transform:uppercase}}
+.fotobanda{{flex:none;position:relative;margin:26px -56px 0;border-top:6px solid {BRUNO};background:#111}}
+.fotobanda img{{display:block;width:100%;height:300px;object-fit:cover;object-position:{foto3.get("posizione", "center")}}}
+.didascalia{{position:absolute;left:56px;bottom:8px;background:{ARANCIO};color:{BRUNO};
+  font-family:'PlexMono';font-weight:600;font-size:13px;letter-spacing:.12em;padding:6px 12px}}
 """
     corpo = f"""
 {_testata(scheda)}
@@ -247,6 +319,7 @@ def slide_funzionamento(scheda):
   <div class="titolone autofit" data-min="40" style="height:auto;max-height:160px">La tecnologia, semplice</div>
   <div class="testo autofit" data-min="21">{scheda['come_funziona']}</div>
   {extra}
+  {banda3}
   {_pager(scheda, 4)}
 </div>
 """
@@ -265,12 +338,12 @@ def slide_artisti(scheda):
   border-bottom:2px solid {BRUNO};padding:34px 0}}
 .artista:first-child{{border-top:2px solid {BRUNO}}}
 .chi{{font-weight:700;font-size:46px;text-transform:uppercase;letter-spacing:.02em;flex:none}}
-.cosa{{font-family:'PlexMono';font-size:22px;color:#6b5138;text-align:right;line-height:1.45}}
+.cosa{{font-family:'PlexSerif';font-size:23px;color:#6b5138;text-align:right;line-height:1.45}}
 .ascolto{{flex:none;border:2px solid {BRUNO};background:{CREMA2};padding:22px 26px;margin-top:26px}}
 .ascolto .et{{font-family:'PlexMono';font-weight:600;font-size:14px;letter-spacing:.18em;
   color:{ARANCIO};margin-bottom:10px}}
 .ascolto .brano{{font-weight:700;font-size:34px;line-height:1.15;margin-bottom:8px}}
-.ascolto .nota{{font-family:'PlexMono';font-size:21px;line-height:1.5;color:#5a4530}}
+.ascolto .nota{{font-family:'PlexSerif';font-size:22px;line-height:1.5;color:#5a4530}}
 """
     # Il riquadro sta qui e non sulla slide 6 per due motivi: e' la
     # continuazione naturale di «chi l'ha usata», e la slide 5 aveva un
@@ -316,7 +389,7 @@ def slide_aneddoto(scheda):
     fonti = "".join(f"<div>· {f['titolo']} — verificata {f['data']}</div>" for f in scheda["fonti"])
     css = f"""
 .titolone{{font-size:64px}}
-.testo{{flex:none;font-family:'PlexMono';font-size:28px;line-height:1.6;margin-top:26px;overflow:hidden;max-width:940px;max-height:330px}}
+.testo{{flex:none;font-family:'PlexSerif';font-size:29px;line-height:1.55;margin-top:26px;overflow:hidden;max-width:940px;max-height:330px}}
 .dinamo{{flex:none;display:flex;align-items:center;gap:26px;margin-top:34px;
   background:{CREMA2};border:2px solid {BRUNO};padding:24px 30px}}
 .dinamo svg{{width:120px;height:120px;flex:none}}

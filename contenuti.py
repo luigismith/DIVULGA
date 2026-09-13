@@ -1770,6 +1770,29 @@ SCHEDE = [
             "licenza": "CC BY-SA 2.0",
             "fonte": "Wikimedia Commons (originariamente Flickr)",
         },
+        # Tre inquadrature diverse invece della stessa foto ripetuta su
+        # copertina, slide 2 e slide 3 (richiesta del proprietario,
+        # 13/09/2026). Ognuna serve alla sua slide: lo strumento intero
+        # per «che cos'e'», i due lettori da 5 pollici e un quarto per
+        # chi l'ha costruita, la scheda di memoria per «come funziona» —
+        # che su un campionatore e' letteralmente il punto.
+        "foto_extra": [
+            {"file": "assets/foto/emulator/strumento.jpg",
+             "autore": "Mojosynths, ritocco di Pittigrilli",
+             "licenza": "pubblico dominio",
+             "fonte": "Wikimedia Commons",
+             "didascalia": "Il pannello"},
+            {"file": "assets/foto/emulator/dischi.jpg",
+             "autore": "John R. Southern",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "didascalia": "I due lettori da 5\u00bc pollici"},
+            {"file": "assets/foto/emulator/memoria.jpg",
+             "autore": "John R. Southern",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "didascalia": "La scheda di memoria"},
+        ],
         "fonti": [
             {"titolo": "«E-mu Emulator» — Wikipedia (EN)",
              "url": "https://en.wikipedia.org/wiki/E-mu_Emulator", "data": "2026-09-04"},
@@ -2745,6 +2768,11 @@ def valida_scheda(scheda):
             errori.append(f"fonte incompleta: {f}")
     if not scheda["foto"].get("autore") or not scheda["foto"].get("licenza"):
         errori.append("credito foto incompleto (autore/licenza obbligatori)")
+    # Ogni foto in piu' e' una licenza in piu' da rispettare: il credito
+    # e' obbligatorio su TUTTE, non solo sulla principale.
+    for i, f in enumerate(scheda.get("foto_extra") or [], start=1):
+        if not f.get("file") or not f.get("autore") or not f.get("licenza"):
+            errori.append(f"foto_extra #{i}: file/autore/licenza obbligatori")
     return errori
 
 
