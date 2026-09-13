@@ -307,7 +307,9 @@ def slide_funzionamento(scheda):
 .richiamo:last-child{{border-right:none}}
 .richiamo .fig{{font-family:'PlexMono';font-weight:600;font-size:14px;letter-spacing:.14em;color:{ARANCIO}}}
 .richiamo .txt{{font-weight:700;font-size:23px;letter-spacing:.06em;margin-top:5px;text-transform:uppercase}}
-.fotobanda{{flex:none;position:relative;margin:26px -56px 0;border-top:6px solid {BRUNO};background:#111}}
+/* margin-top:auto la incolla sopra il pager: senza, la banda restava a
+   meta' pagina e sotto avanzava una fascia di crema vuota. */
+.fotobanda{{flex:none;position:relative;margin:26px -56px 0;margin-top:auto;border-top:6px solid {BRUNO};background:#111}}
 .fotobanda img{{display:block;width:100%;height:300px;object-fit:cover;object-position:{foto3.get("posizione", "center")}}}
 .didascalia{{position:absolute;left:56px;bottom:8px;background:{ARANCIO};color:{BRUNO};
   font-family:'PlexMono';font-weight:600;font-size:13px;letter-spacing:.12em;padding:6px 12px}}
