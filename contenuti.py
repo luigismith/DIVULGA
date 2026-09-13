@@ -1824,25 +1824,25 @@ SCHEDE = [
             ("SINTESI", "Divisione di frequenza (TOS)"),
             ("VOCI", "49 tasti, polifonia totale"),
         ],
-        "gancio": "Niente oscillatori: solo un cristallo di quarzo e 49 tasti, per un'orchestra tascabile made in Italy",
-        "sottotitolo": "Il sintetizzatore di archi e ottoni che Nick Rhodes portò nei primi dischi dei Duran Duran.",
-        "la_macchina": "Lanciato nel 1979 dall'italiana Crumar, il Performer è una macchina polifonica ad archi e ottoni che non usa oscillatori individuali: un unico generatore digitale produce le note più acute, poi una catena di divisori le abbassa di ottava in ottava, così tutti i 49 tasti suonano insieme senza bisogno di intonare nulla. Due sezioni indipendenti — Strings (con chorus a BBD) e Brass (filtro e inviluppo propri) — si mescolano su 15 cursori, senza memorie. Economico e trasportabile, divenne uno degli strumenti simbolo dell'industria tastieristica marchigiana a fine anni '70.",
+        "gancio": "Costa poco, pesa poco, suona di plastica. E i Duran Duran ci hanno fatto i primi due dischi",
+        "sottotitolo": "Il synth di archi e ottoni della Crumar, anno 1979: 49 tasti, 15 cursori e neanche una memoria.",
+        "la_macchina": "Una tastiera di 49 tasti con due file di cursori sopra, da una parte gli ottoni, dall'altra gli archi. Dentro non ci sono oscillatori come in un synth normale. C'è un generatore digitale che fa le 12 note più acute e una catena di divisori che le porta giù di ottava in ottava, quindi puoi premere tutti i tasti che vuoi e suonano tutti. Gli archi passano da un chorus a BBD, gli ottoni da un filtro con il suo inviluppo, e i due si mescolano sui 15 cursori. Memorie: zero. Dicono tutti che suona di plastica. Sì. Ma è una plastica che nel 1979 costava molto meno degli altri e si portava in giro senza fatica.",
         "inventore_nome": "Crumar (Mario Crucianelli)",
-        "inventore": "Crumar nacque nel 1971 a Castelfidardo (Marche) da Mario Crucianelli, che aveva appena lasciato l'azienda di famiglia Elka dopo una spaccatura interna. L'azienda arrivò a contare 300 dipendenti tra i due laboratori di Castelfidardo, cuore storico della liuteria italiana per strumenti a tastiera. Prima del Performer, Crumar produceva pianoforti elettronici e string machine come Compac-piano e Compac-string; dopo, arrivarono il sintetizzatore DS-2 e, nel 1983, lo Spirit disegnato con Bob Moog.",
-        "come_funziona": "Il cuore del Performer è un generatore digitale (top octave synthesizer) che produce le dodici note dell'ottava più acuta come onde quadre; una catena di circuiti divisori le dimezza in cascata per ricavare le ottave inferiori. Ogni tasto pigiato attinge semplicemente a una frequenza già pronta: ecco perché lo strumento è sempre completamente polifonico, senza i limiti di voce tipici dei synth a oscillatori veri. La sezione Strings aggiunge un effetto ensemble a BBD, la Brass un filtro passa-basso con inviluppo attacco/decadimento.",
+        "inventore": "Mario Crucianelli viene dalla Elka, l'azienda di famiglia. Nel 1971 la lascia dopo una spaccatura in casa e fonda la Crumar a Castelfidardo, la città delle fisarmoniche. In pochi anni arriva a 300 dipendenti su due laboratori. Prima del Performer fa pianoforti elettronici e string machine, i Compac; dopo arrivano il DS-2 e, nel 1983, lo Spirit, disegnato insieme a Bob Moog. Il Performer sta in mezzo, e per me è quello che spiega meglio cosa sapeva fare quella fabbrica: prendere un'idea semplice e farla costare poco.",
+        "come_funziona": "Un chip genera le 12 note dell'ottava più alta come onde quadre. Sotto ci sono i divisori: ogni stadio dimezza la frequenza, e dimezzare vuol dire scendere di un'ottava esatta. Così tutte le note di tutte le ottave esistono già, sempre, e il tasto non fa altro che aprire il rubinetto di quella giusta. Per questo non c'è un limite di polifonia, ed è anche per questo che tutto ha lo stesso carattere un po' fermo, da organo. Gli archi lo nascondono con il chorus a BBD, che sfasa il segnale e lo fa ondeggiare; gli ottoni con un filtro passa-basso e un inviluppo di attacco e decadimento.",
         "richiami": [
             ("FIG. 1", "Generatore top-octave + divisori"),
             ("FIG. 2", "15 cursori, zero memorie"),
             ("FIG. 3", "Sezioni Strings e Brass separate"),
         ],
         "chi_lusata": [
-            {"artista": "Nick Rhodes (Duran Duran)", "nota": "protagonista degli archi nei primi due album, «Duran Duran» (1981) e «Rio» (1982), insieme a Jupiter-4 e Prophet-5", "ig": None},
+            {"artista": "Nick Rhodes (Duran Duran)", "nota": "Gli archi dei primi due album, «Duran Duran» (1981) e «Rio» (1982), accanto a Jupiter-4 e Prophet-5", "ig": None},
         ],
         "menzioni_extra": [
             {"ig": "crumar_instruments",
              "riga": "Il marchio Crumar è ancora attivo, oggi a Roncade (TV): lo trovate come @crumar_instruments."},
         ],
-        "aneddoto": "Nick Rhodes dei Duran Duran lo mise al centro del suono d'archi dei primi due album della band, «Duran Duran» (1981) e «Rio» (1982), affiancandolo a un Roland Jupiter-4 e a un Prophet-5. Nonostante questo, il Performer resta uno dei synth italiani più trascurati dai collezionisti, complice un suono spesso liquidato come «plasticoso» — eppure proprio quella plastica, unita al prezzo contenuto, lo rese uno degli strumenti più esportati della new wave dei primi anni '80.",
+        "aneddoto": "Nick Rhodes lo mette nei primi due dischi dei Duran Duran, «Duran Duran» del 1981 e «Rio» del 1982, e lo tiene accanto a un Jupiter-4 e a un Prophet-5 che costavano molto di più. Gli archi che sentite lì sono in buona parte suoi. Eppure il Performer è rimasto uno dei synth italiani che i collezionisti guardano meno, con la fama del suono «plasticoso». A me quella plastica piace, ed è anche il motivo per cui la macchina ha viaggiato tanto: costava poco, e si è ritrovata su parecchi dischi new wave dei primi anni Ottanta.",
         "avvertenza": "Questa macchina non ricorda nulla: il suono di oggi va riscritto a mano sui 15 cursori, ogni volta che la accendete.",
         "foto": {
             "file": "assets/foto/crumar/principale.jpg",
@@ -1878,27 +1878,27 @@ SCHEDE = [
             ("SINTESI", "DCO sottrattiva"),
             ("VOCI", "6 voci"),
         ],
-        "gancio": "Nato per essere il Juno economico, è diventato il polifonico analogico più clonato della storia",
-        "sottotitolo": "Il synth con cui Roland rese l'analogico stabile, accessibile e, per un difetto di fabbrica, leggendario.",
-        "la_macchina": "Il Juno-106 è un sintetizzatore polifonico a 6 voci uscito nel febbraio 1984, evoluzione del Juno-60 con l'aggiunta del MIDI e memoria raddoppiata a 128 patch. Ogni voce ha un solo oscillatore digitalmente controllato (DCO) più un filtro passa-basso risonante a 24 dB/ottava, e l'intero synth passa attraverso un chorus stereo che ne gonfia il suono sottile in una texture larga e brillante: è quel chorus, più di ogni altra cosa, ad aver definito il «suono Juno» del synth-pop.",
+        "gancio": "Nato come il Juno economico. Quarant'anni dopo lo clonano ancora",
+        "sottotitolo": "Sei voci analogiche, un chorus che fa quasi tutto il lavoro e un chip che prima o poi muore.",
+        "la_macchina": "Esce a febbraio del 1984 ed è il Juno-60 rifatto per costare meno: 6 voci, il MIDI, 128 memorie invece di 64. Ogni voce ha un oscillatore solo e un filtro passa-basso a 24 dB per ottava con la risonanza. Da solo suona sottile, quasi povero. Poi c'è il chorus stereo, con due profondità, e quando lo accendi il suono si allarga e diventa quella cosa lucida e piena che tutti chiamano «suono Juno». Lo dico sempre a chi ne compra uno: il Juno è il chorus. Il resto è un buon synth normale.",
         "inventore_nome": "Roland Corporation (progetto di squadra)",
-        "inventore": "Roland, fondata a Osaka nel 1972 da Ikutaro Kakehashi e oggi con sede a Hamamatsu, lanciò il primo Juno (Juno-6) nel 1982; il Juno-106 arrivò nel 1984 come terzo capitolo della serie. Nessun singolo progettista è accreditato pubblicamente per il Juno-106, a differenza di altre macchine Roland dell'epoca: fu un progetto di squadra interno, pensato per abbattere i costi del Juno-60 mantenendone il suono, grazie proprio ai DCO al posto dei più costosi oscillatori a voltaggio controllato (VCO).",
-        "come_funziona": "Il DCO non è digitale nel suono, solo nell'accordatura: un segnale di clock digitale, generato da un microcontrollore, comanda un transistor che scarica un condensatore a intervalli regolari, producendo un'onda a dente di sega analogica. Un convertitore digitale-analogico compensa il volume alle frequenze più alte. Il risultato: l'oscillatore resta sempre accordato, cosa che i VCO analogici dell'epoca non garantivano, pur mantenendo il timbro pieno dell'analogico puro.",
+        "inventore": "Non c'è un nome. Roland, fondata a Osaka nel 1972 da Ikutaro Kakehashi, non ha mai accreditato un progettista per il Juno-106, a differenza di altre sue macchine dell'epoca: fu un lavoro di squadra con un obiettivo preciso, tenere il suono del Juno-60 abbassando i costi. Il primo Juno, il 6, è del 1982; il 106 è il terzo della serie. La scelta che lo rese possibile fu il DCO, un oscillatore comandato da un clock digitale, molto più economico dei VCO analogici. Mi piace che sia una macchina senza padre. La spiega bene.",
+        "come_funziona": "Il DCO non è un oscillatore digitale. È analogico: un transistor scarica un condensatore e la rampa che ne esce è una vera onda a dente di sega. Digitale è solo il comando, cioè il clock che decide quando scaricare, generato da un microcontrollore. Per questo l'accordatura non va mai via, cosa che nel 1984 con i VCO non era affatto scontata. Un convertitore digitale-analogico rialza il volume delle note più acute, che altrimenti uscirebbero deboli. Dopo l'oscillatore, filtro e amplificatore stanno in un chip solo, l'80017A, uno per voce.",
         "richiami": [
             ("FIG. 1", "DCO: oscillatore a clock digitale"),
             ("FIG. 2", "Chorus stereo a BBD, due profondità"),
             ("FIG. 3", "Chip voce 80017A, uno per voce"),
         ],
         "chi_lusata": [
-            {"artista": "Chvrches", "nota": "gran parte del basso di «The Bones of What You Believe» (2013) è un Juno-106", "ig": None},
-            {"artista": "William Orbit", "nota": "tra i primi a usarlo pesantemente in studio già a fine anni '80", "ig": None},
-            {"artista": "Vince Clarke", "nota": "synth fisso del suo studio, insieme a Xpander, MKS-80 e Prophet VS", "ig": None},
+            {"artista": "Chvrches", "nota": "Quasi tutto il basso di «The Bones of What You Believe» (2013)", "ig": None},
+            {"artista": "William Orbit", "nota": "Ce l'aveva in studio già alla fine degli anni Ottanta, e si sente", "ig": None},
+            {"artista": "Vince Clarke", "nota": "In studio fisso, accanto a Xpander, MKS-80 e Prophet VS", "ig": None},
         ],
         "menzioni_extra": [
             {"ig": "rolandglobal",
              "riga": "Il produttore originale, Roland Corporation, è ancora @rolandglobal."},
         ],
-        "aneddoto": "Ogni voce del Juno-106 dipende da un chip custom Roland, il 80017A (VCF+VCA in un solo componente): non è più prodotto da decenni e ha un tasso di guasto talmente alto da essere quasi proverbiale tra i tecnici, tanto che oggi esistono cloni moderni pensati apposta per rimpiazzarlo. È probabilmente il motivo per cui, oggi, quasi ogni Juno-106 in circolazione ha già perso e recuperato almeno una voce.",
+        "aneddoto": "Quel chip, l'80017A, non lo fanno più da decenni e ha un tasso di guasto che fra i tecnici è quasi una barzelletta. Una voce se ne va, poi un'altra. Oggi esistono cloni moderni fatti apposta per sostituirlo, e se ne trovate uno usato è quasi certo che abbia già perso e recuperato almeno una voce. Il mio consiglio, prima di comprarlo: tenete premute sei note e contatele.",
         "avvertenza": "Ogni voce vive in un chip 80017A introvabile dagli anni '80. Quando muore una voce, è per sempre, finché non trovate un clone.",
         "foto": {
             "file": "assets/foto/juno106/principale.jpg",
@@ -1934,28 +1934,28 @@ SCHEDE = [
             ("SINTESI", "Sottrattiva, 3 moduli indipendenti"),
             ("VOCI", "3 (una tastiera per modulo)"),
         ],
-        "gancio": "Prima ancora del Moog da palco, a Roma un tecnico del suono ne aveva già costruito uno portatile",
-        "sottotitolo": "Tre tastierine, tre generatori, un'idea nata per l'Accademia Americana: tra i primi sintetizzatori pensati per il palco.",
-        "la_macchina": "Costruito da Paolo Ketoff a partire dal 1963 su commissione dell'Accademia Americana di Roma, il Synket è tra i primissimi sintetizzatori pensati per il concerto dal vivo, anni prima del Minimoog. È fatto di tre «sound-combiner» indipendenti — ciascuno con oscillatore a onda quadra, divisori di frequenza, filtri e modulatori — mescolati in un'unica uscita, pilotati da tre tastierine di due ottave, una per modulo. Ketoff ne costruì a mano solo una decina di esemplari in dodici anni, ognuno leggermente diverso dagli altri: oggi sono sparsi tra i musei di Roma, Parigi, Monaco, Baltimora e Milano.",
+        "gancio": "Roma, 1963: un tecnico del suono costruisce un synth da portare in scena. Il Moog da palco arriva dopo",
+        "sottotitolo": "Tre tastierine, tre generatori, una decina di esemplari fatti a mano da Paolo Ketoff per l'Accademia Americana.",
+        "la_macchina": "Tre moduli uguali, che Ketoff chiama sound-combiner, ognuno con un oscillatore a onda quadra, i suoi divisori, i filtri e i modulatori, e ognuno con la sua tastierina di due ottave. Tutto va in un'uscita sola. È uno strumento da concerto, fatto per stare su un palco, e siamo nel 1963, prima del Minimoog. Ketoff ne ha costruiti a mano una decina in dodici anni, uno diverso dall'altro. Oggi stanno nei musei, a Roma, Parigi, Monaco, Baltimora e Milano. La cosa che mi colpisce, guardandolo, è quanto è piccolo.",
         "inventore_nome": "Paolo Ketoff",
-        "inventore": "Paolo Ketoff (Roma, 1921-1996), discendente di esuli russi, si diplomò in tecnica del suono al Centro Sperimentale di Cinematografia nel 1940 e diresse gli studi di registrazione della RCA Italiana dal 1953 al 1968, lavorando tra l'altro alla colonna sonora candidata all'Oscar «55 giorni a Pechino» e a «L'Avventura» di Antonioni. Nel 1963 l'Accademia Americana di Roma gli chiese uno strumento elettronico che il compositore residente John Eaton potesse portare in scena come uno strumento tradizionale: nacque così il Synket, «Synthesizer-Ketoff».",
-        "come_funziona": "Ogni sound-combiner genera un'onda quadra la cui frequenza può essere divisa per 2, 3, 4, 5 o 8 tramite pulsanti, per ottenere armonici diversi; il segnale passa poi in tre filtri (40 Hz-20 kHz) modulati da tre oscillatori a bassa frequenza. Le tastierine sono sensibili al tocco e permettono di piegare l'intonazione muovendo il dito lateralmente sul tasto, come su un clavicordo; ogni singolo tasto può essere accordato a parte, così da poter suonare scale microtonali. L'elettronica ibrida, a stato solido e valvole, lavora con segnali fino a 30V picco-picco.",
+        "inventore": "Paolo Ketoff nasce a Roma nel 1921 da una famiglia di esuli russi. Si diploma in tecnica del suono al Centro Sperimentale nel 1940 e dal 1953 al 1968 dirige gli studi della RCA Italiana, dove passano anche «L'Avventura» di Antonioni e «55 giorni a Pechino», che prende una candidatura all'Oscar per la colonna sonora. Nel 1963 l'Accademia Americana gli chiede una cosa strana per l'epoca: uno strumento elettronico che il compositore residente, John Eaton, possa portare in scena come un pianoforte o un violino. Lui lo chiama Synket, Synthesizer-Ketoff. Muore nel 1996.",
+        "come_funziona": "Ogni modulo parte da un'onda quadra. Con dei pulsanti la dividi per 2, 3, 4, 5 o 8 e ottieni altre altezze, in rapporto armonico con la prima. Poi tre filtri, da 40 Hz a 20 kHz, mossi da tre oscillatori lenti. Le tastierine sentono il tocco e, se sposti il dito di lato sul tasto, l'intonazione si piega, come su un clavicordo. Ogni tasto si accorda per conto suo, quindi puoi costruirti scale che sul pianoforte non esistono. Dentro c'è un misto di valvole e transistor, con segnali fino a 30 volt picco-picco. Roba robusta.",
         "richiami": [
             ("FIG. 1", "3 sound-combiner indipendenti"),
             ("FIG. 2", "Tastiere a piegatura laterale"),
             ("FIG. 3", "Tasti accordabili singolarmente"),
         ],
         "chi_lusata": [
-            {"artista": "John Eaton", "nota": "oltre 1000 concerti col Synket tra il 1966 e il 1974; compose «Concert Piece for Synket and Orchestra», 1968", "ig": None},
-            {"artista": "John Cage", "nota": "Ketoff realizzò dal vivo le parti elettroniche dei suoi «Song Books» a Parigi, ottobre 1970", "ig": None},
-            {"artista": "Domenico Guaccero e il gruppo Nuova Consonanza", "nota": "tra i compositori italiani d'avanguardia che utilizzarono gli strumenti di Ketoff a Roma", "ig": None},
+            {"artista": "John Eaton", "nota": "Più di 1.000 concerti col Synket fra il 1966 e il 1974, e un «Concert Piece for Synket and Orchestra» nel 1968", "ig": None},
+            {"artista": "John Cage", "nota": "Le parti elettroniche dei «Song Books», Parigi, ottobre 1970: le fa Ketoff dal vivo", "ig": None},
+            {"artista": "Domenico Guaccero e il gruppo Nuova Consonanza", "nota": "Fra i romani d'avanguardia che usavano gli strumenti di Ketoff", "ig": None},
         ],
         "menzioni_extra": [],
-        "aneddoto": "Nell'aprile 1965, all'Accademia Americana di Roma, John Eaton eseguì al Synket i suoi «Songs for R.P.B.»: è generalmente considerata la prima esecuzione dal vivo mai data con un sintetizzatore elettronico, anni prima che i grandi synth modulari lasciassero gli studi di registrazione per il palco. Eaton diventò poi il concertista di riferimento dello strumento, portandolo in oltre mille concerti tra il 1966 e il 1974. Nel 1970 fu lo stesso Ketoff a realizzare dal vivo, a Parigi, le parti elettroniche dei «Song Books» di John Cage.",
+        "aneddoto": "Aprile 1965, Accademia Americana di Roma. John Eaton suona al Synket i suoi «Songs for R.P.B.», e per quanto se ne sa è la prima volta che un sintetizzatore viene suonato dal vivo davanti a un pubblico. I grandi modulari, in quegli anni, stavano ancora chiusi negli studi. Eaton diventa l'uomo del Synket, oltre 1.000 concerti fra il 1966 e il 1974. E nel 1970, a Parigi, è Ketoff in persona a fare dal vivo le parti elettroniche dei «Song Books» di John Cage.",
         "avvertenza": "Ogni tasto va accordato singolarmente prima dell'uso: scambiare due tastierine sposta anche le note.",
         "da_ascoltare": {"brano": "Songs for R.P.B.", "artista": "John Eaton (voce e Synket, con soprano)",
                           "anno": "1965",
-                          "cosa": "Prima esecuzione dal vivo mai documentata con un sintetizzatore elettronico, Accademia Americana di Roma, aprile 1965."},
+                          "cosa": "Aprile 1965, Roma: il primo concerto con un sintetizzatore di cui si abbia notizia. Una voce di soprano e il Synket, niente altro."},
         "foto": {
             "file": "assets/foto/synket/principale.jpg",
             "autore": "Dida Foto",
@@ -1990,27 +1990,27 @@ SCHEDE = [
             ("SINTESI", "FM (su licenza Yamaha) + campionamento"),
             ("PREZZO", "25.000-200.000 $"),
         ],
-        "gancio": "Costava quanto una casa, suonava come un'orchestra intera e Michael Jackson ne aveva uno a casa",
-        "sottotitolo": "Il primo sintetizzatore digitale in tempo reale: nato in un college del Vermont, finito nei salotti delle popstar più pagate del mondo.",
-        "la_macchina": "Il Synclavier è il primo strumento digitale in tempo reale mai messo in vendita: non un computer da programmare offline come i suoi predecessori accademici, ma una macchina che rispondeva subito ai tasti, con sintesi FM, poi campionamento a 16 bit e infine un vero registratore digitale multitraccia. Costava da 25.000 a oltre 200.000 dollari a seconda della configurazione: fu per anni lo strumento-status symbol degli studi di fascia altissima e delle popstar con budget da colonna sonora, prima che i sampler economici lo rendessero superfluo.",
+        "gancio": "Costava quanto una casa, e Michael Jackson ne aveva uno in casa",
+        "sottotitolo": "Il primo strumento digitale che rispondeva subito ai tasti. Nato in un college del Vermont, finito in mano a chi poteva spendere 200.000 dollari.",
+        "la_macchina": "Prima del Synclavier, per fare musica con un computer scrivevi le note e aspettavi che la macchina le calcolasse. Questo invece risponde subito, tasto premuto e suono fuori, ed è il primo del genere messo in vendita. Parte con la sintesi FM, poi aggiunge il campionamento a 16 bit e alla fine un registratore digitale multitraccia vero. Il prezzo andava da 25.000 a più di 200.000 dollari, e infatti lo trovavi negli studi più ricchi e a casa delle popstar. Quando i campionatori economici hanno cominciato a fare le stesse cose è sparito in fretta. A me resta simpatico proprio per quanto era esagerato.",
         "inventore_nome": "Sydney Alonso e Cameron Jones",
-        "inventore": "Il Synclavier nacque al Dartmouth College, in New Hampshire, dalla collaborazione tra il professore di elettronica musicale Jon Appleton e due programmatori, Sydney Alonso e Cameron Jones, che nel 1972 lavoravano al computer centrale del college per farlo suonare e allenare l'orecchio degli studenti. Alonso e Jones fondarono la New England Digital Corporation nel 1976 a Norwich, Vermont, e nel 1977-78 misero in vendita la prima Synclavier: circa 20 unità, vendute soprattutto a università. L'azienda chiuse nel 1993 dopo circa 1.600 sistemi prodotti.",
-        "come_funziona": "Il primo Synclavier genera il suono con sintesi FM, la stessa tecnologia resa poi celebre dal Yamaha DX7, prodotta su licenza dello stesso brevetto giapponese. Con il Synclavier II, dal 1980, si aggiunge il campionamento: fino a 16 bit e 100 kHz di frequenza, con dischi rigidi al posto del nastro per registrare e montare l'audio come dati digitali — anni prima che «registrazione su disco rigido» fosse un'espressione comune. La polifonia parte da 16 voci ed è arrivata, nelle configurazioni più costose, fino a 96.",
+        "inventore": "Nel 1972, al Dartmouth College nel New Hampshire, il professore Jon Appleton e due programmatori, Sydney Alonso e Cameron Jones, lavorano al computer centrale del campus per farlo suonare e per allenare l'orecchio degli studenti. Alonso e Jones fondano la New England Digital nel 1976, a Norwich, nel Vermont, e fra il 1977 e il 1978 vendono il primo Synclavier: circa 20 unità, quasi tutte a università. L'azienda chiude nel 1993, dopo circa 1.600 sistemi. Non tantissimi, se pensate a quanto se ne è parlato.",
+        "come_funziona": "Il primo Synclavier fa il suono con la sintesi FM, la stessa tecnica che qualche anno dopo il Yamaha DX7 porterà in tutte le case, prodotta su licenza dello stesso brevetto. Dal 1980, con il Synclavier II, arriva il campionamento: fino a 16 bit e 100 kHz, con i dischi rigidi al posto del nastro, così registri e tagli l'audio come dati, anni prima che la frase «registrare su hard disk» volesse dire qualcosa per qualcuno. La polifonia parte da 16 voci e nelle configurazioni più care arriva a 96.",
         "richiami": [
             ("FIG. 1", "Sintesi FM su licenza Yamaha"),
             ("FIG. 2", "Campionamento 16 bit, fino a 100 kHz"),
             ("FIG. 3", "Tastiera VPK velocity + pressione"),
         ],
         "chi_lusata": [
-            {"artista": "Michael Jackson", "nota": "il «gong» che apre «Beat It» (1983) riproduce nota per nota un demo di fabbrica del Synclavier II del 1981", "ig": "michaeljackson"},
-            {"artista": "Frank Zappa", "nota": "«Jazz from Hell» (1986), quasi interamente composto ed eseguito sul Synclavier: Grammy 1988 al Miglior Rock Instrumental", "ig": "zappa"},
-            {"artista": "Sting", "nota": "«The Dream of the Blue Turtles» (1985): il Synclavier II lo accompagnò in studio e in tour per gran parte degli anni '80", "ig": "theofficialsting"},
+            {"artista": "Michael Jackson", "nota": "Il «gong» di «Beat It» (1983) è un demo di fabbrica del Synclavier II del 1981, rifatto uguale", "ig": "michaeljackson"},
+            {"artista": "Frank Zappa", "nota": "«Jazz from Hell» (1986), quasi tutto scritto e suonato sul Synclavier: Grammy nel 1988", "ig": "zappa"},
+            {"artista": "Sting", "nota": "«The Dream of the Blue Turtles» (1985), e poi in tour per buona parte degli anni Ottanta", "ig": "theofficialsting"},
         ],
         "menzioni_extra": [],
-        "aneddoto": "L'apertura sintetica di «Beat It» — il celebre «gong» che introduce il pezzo — non è un suono originale: è la riproduzione nota per nota di un demo del Synclavier II inciso nel 1981 da Denny Jaeger su un disco promozionale distribuito da New England Digital. Michael Jackson lo aveva sentito e lo voleva identico; il tastierista Tom Bähler comprò un Synclavier, lo portò agli Westlake Studios e ricreò il suono partendo dal patch di fabbrica preimpostato, praticamente identico all'originale del demo.",
+        "aneddoto": "Il «gong» che apre «Beat It», nel 1983, non è un suono fatto per quel disco. È un demo del Synclavier II che Denny Jaeger aveva inciso nel 1981 per un disco promozionale della New England Digital. Michael Jackson lo sente e lo vuole così, identico. Il tastierista Tom Bähler compra un Synclavier, lo porta agli Westlake Studios e lo rifà partendo dal suono di fabbrica, che era già quasi quello. Quindi quel disco si apre con un preset. Non lo dico per sminuirlo, lo dico perché è andata così.",
         "avvertenza": "La sintesi FM è su licenza di un brevetto giapponese. Se ricorda un DX7 non è un caso: condividono il brevetto, non il conto in banca.",
         "da_ascoltare": {"brano": "Beat It", "artista": "Michael Jackson", "anno": "1983",
-                          "cosa": "L'intro sintetica è la riproduzione nota per nota di un demo di fabbrica del Synclavier II inciso nel 1981."},
+                          "cosa": "L'intro. È un demo di fabbrica del 1981 rifatto nota per nota. Riascoltatelo sapendolo."},
         "foto": {
             "file": "assets/foto/synclavier/principale.jpg",
             "autore": "John R. Southern",
@@ -2049,7 +2049,7 @@ SCHEDE = [
         ],
         "gancio": "Le pelli sono ricavate dagli scudi antisommossa. Non è una metafora",
         "sottotitolo": "Il primo kit elettronico che un batterista poteva suonare al posto della batteria, non accanto.",
-        "la_macchina": "Sei pastiglie esagonali collegate a un cervello a moduli: uno per la cassa, uno per il rullante, uno per ogni tom. Ogni modulo è un piccolo sintetizzatore con le sue manopole \u2014 rumore, tono, tempo di decadimento, click d'attacco \u2014 e non c'è nessun campione dentro: il suono si costruisce girando i comandi. Esce nella prima metà del 1981 e nel giro di due anni sta su metà dei dischi che passano alla radio.",
+        "la_macchina": "Sei pastiglie esagonali collegate a un cervello a moduli: uno per la cassa, uno per il rullante, uno per ogni tom. Ogni modulo è un piccolo sintetizzatore con le sue manopole (rumore, tono, tempo di decadimento, click d'attacco) e non c'è nessun campione dentro: il suono si costruisce girando i comandi. Esce nella prima metà del 1981 e in un paio d'anni quel tom che scende lo senti in radio di continuo.",
         "inventore_nome": "Dave Simmons",
         "inventore": "Simmons fonda la sua azienda nel 1978 a St Albans e porta la prima versione alla fiera musicale di Londra nel 1981. Non aveva solo pastiglie esagonali: al banchetto c'erano anche un kit a forma di cuore e uno a forma di pipistrello. L'esagono vinse perché era l'unica forma che si poteva affiancare senza lasciare buchi, e perché sembrava una cosa del futuro invece di una batteria mancata.",
         "come_funziona": "Sotto la superficie dura c'è un sensore che misura quanto forte la colpisci, e basta: non registra dove, non registra come. Quel singolo numero fa partire il modulo, che genera il suono da zero \u2014 un impulso di rumore per il rullante, un'oscillazione che scende di tono per il tom. È per questo che il tom della Simmons fa quel «pioum» che scivola verso il basso: non è un tom registrato, è un'onda a cui qualcuno ha detto di cadere.",
@@ -2065,7 +2065,7 @@ SCHEDE = [
             {"artista": "The Cars", "nota": "David Robinson fra i primi a metterla su disco in America", "ig": None},
         ],
         "menzioni_extra": [],
-        "aneddoto": "Le pastiglie erano fatte dello stesso policarbonato durissimo degli scudi che la polizia inglese usava in quegli anni. Robustissime: reggevano qualunque bacchettata. Il problema è che restituivano tutto il colpo al braccio di chi le suonava, e i batteristi cominciarono a lamentarsi di polsi e gomiti. Una batteria costruita per non rompersi mai, che rompeva chi la suonava.",
+        "aneddoto": "Le pastiglie erano fatte dello stesso policarbonato durissimo degli scudi che la polizia inglese usava in quegli anni. Robustissime: reggevano qualunque bacchettata. Il problema è che restituivano tutto il colpo al braccio di chi le suonava, e i batteristi hanno cominciato a lamentarsi di polsi e gomiti. Se ne trovate una, provatela con bacchette leggere e non fate una serata intera la prima volta.",
         "avvertenza": "La superficie non cede di un millimetro. Tutto quello che dai torna indietro, e a fine serata lo senti nei polsi.",
         "foto": {
             "file": "assets/foto/simmonssds5/principale.jpg",
@@ -2099,7 +2099,7 @@ SCHEDE = [
         ],
         "gancio": "Spegni il chorus e resta un organo mediocre. Quell'effetto \u00e8 met\u00e0 dello strumento",
         "sottotitolo": "Non imita gli archi: fabbrica un suono che gli assomiglia e che nessuna orchestra ha mai fatto.",
-        "la_macchina": "Dodici oscillatori, uno per ogni nota della scala, e una catena di divisori che li abbassa di ottava in ottava: cos\u00ec tutti i tasti suonano insieme, senza limiti di polifonia. Sei interruttori accendono le voci \u2014 violino, viola, tromba, corno, violoncello, contrabbasso \u2014 e si possono tenere premuti tutti insieme. Nasce nel 1974 dalla sezione archi di un organo da salotto, l'Eminent 310 Unique, e negli Stati Uniti la distribuisce ARP col proprio marchio.",
+        "la_macchina": "Dodici oscillatori, uno per ogni nota della scala, e una catena di divisori che li abbassa di ottava in ottava: così tutti i tasti suonano insieme, senza limiti di polifonia. Sei interruttori accendono le voci (violino, viola, tromba, corno, violoncello, contrabbasso) e si possono tenere premuti tutti insieme. Nasce nel 1974 dalla sezione archi di un organo da salotto, l'Eminent 310 Unique.",
         "inventore_nome": "Eminent BV",
         "inventore": "Eminent costruiva organi elettronici in Olanda, a Bodegraven. Nel 310 Unique del 1972 c'era una sezione «archi» che piaceva pi\u00f9 di tutto il resto dell'organo: la staccarono, le misero una tastiera intorno e la vendettero da sola. \u00c8 uno dei rari casi in cui uno strumento nasce non da un'invenzione ma da un pezzo di un'altra macchina che funzionava troppo bene per restare l\u00ec dentro.",
         "come_funziona": "Il trucco non sta negli oscillatori, che da soli darebbero un suono fermo e sottile. Sta dopo: tre linee di ritardo a «secchielli» \u2014 catene di condensatori che passano il segnale di mano in mano \u2014 pilotate da due oscillatori lenti che ne cambiano di continuo la velocit\u00e0. Il risultato \u00e8 la stessa nota sfasata tre volte, che batte contro se stessa: l'orecchio la sente come tanti strumenti leggermente scordati, cio\u00e8 come una sezione d'archi.",
@@ -2115,7 +2115,7 @@ SCHEDE = [
             {"artista": "Elton John", "nota": "Archi finti su dischi che potevano permettersi quelli veri", "ig": None},
         ],
         "menzioni_extra": [],
-        "aneddoto": "La Solina non \u00e8 nata come strumento: era una sezione dentro un organo da casa. Eminent la ritagli\u00f2 e la mise in vendita da sola, e la copia che arriv\u00f2 in America fu ribattezzata col marchio di un'altra azienda \u2014 ARP \u2014 che non l'aveva progettata. Met\u00e0 dei dischi degli anni Settanta che sembrano avere un'orchestra hanno dentro questa scatola olandese venduta sotto due nomi diversi.",
+        "aneddoto": "In America non la conoscevano come Solina. La distribuiva la ARP, quella degli Odyssey e dei 2600, e ci metteva sopra il proprio marchio: ARP String Ensemble. Dentro era la stessa macchina fatta a Bodegraven, in Olanda. Così un sacco di dischi degli anni Settanta che sembrano avere gli archi veri hanno dentro questa scatola olandese, con uno dei due nomi sopra. Io le riconosco dal chorus: una volta che lo hai sentito, non lo confondi più.",
         "avvertenza": "Il chorus non si spegne mai. Senza, restano dodici oscillatori fermi: l'effetto non abbellisce il suono, lo costruisce.",
         "foto": {
             "file": "assets/foto/solina/principale.jpg",
@@ -2151,7 +2151,7 @@ SCHEDE = [
         "sottotitolo": "Trenta tabelle da sessantaquattro onde l'una, e una manopola che ci cammina dentro.",
         "la_macchina": "Otto voci, sedici oscillatori digitali a 8 bit, e in memoria trenta «tavole d'onda»: ognuna \u00e8 una fila di 64 forme d'onda diverse, messe in ordine come i fotogrammi di un film. Il suono non sta in una forma sola, sta nel percorso che si fa attraverso la fila. Poi tutto esce da filtri passa-basso analogici da 24 dB per ottava, gli stessi che avrebbe un sintetizzatore tradizionale.",
         "inventore_nome": "Wolfgang Palm",
-        "inventore": "Palm fonda la PPG ad Amburgo nel 1975 e chiude nel 1987, in debito per una macchina che non fece mai in tempo a vendere. In mezzo ci sono dodici anni in cui inventa la sintesi a tavole d'onda: oggi \u00e8 dentro quasi ogni sintetizzatore digitale del mondo, di solito senza che nessuno ricordi da dove viene.",
+        "inventore": "Palm fonda la PPG ad Amburgo nel 1975 e la chiude nel 1987, indebitato per una macchina che non fece in tempo a vendere. In mezzo ci sono dodici anni in cui inventa la sintesi a tavole d'onda, che oggi trovate dentro un sacco di synth digitali, quasi sempre senza il suo nome accanto.",
         "come_funziona": "Prendi 64 onde leggermente diverse e mettile in fila. Se ne suoni una sola hai un timbro fermo; se una manopola o un inviluppo cammina lungo la fila, il timbro cambia mentre la nota suona, e cambia in modi che nessun filtro pu\u00f2 imitare \u2014 perch\u00e9 non sta togliendo armoniche, sta sostituendo l'onda. A 8 bit i numeri sono pochi e si sente: ogni onda porta con s\u00e9 una grana metallica.",
         "richiami": [
             ("FIG. 1", "30 tavole, 64 onde ciascuna"),
@@ -2161,7 +2161,7 @@ SCHEDE = [
         "chi_lusata": [
             {"artista": "David Bowie", "nota": "Fra i primi a portarlo su un disco grande", "ig": "davidbowie"},
             {"artista": "Depeche Mode", "nota": "Il timbro che si muove mentre la nota resta ferma", "ig": None},
-            {"artista": "Thomas Dolby", "nota": "Lo usa quando il digitale suonava ancora come una promessa", "ig": None},
+            {"artista": "Thomas Dolby", "nota": "Fra i primi a usarlo, nei primi anni Ottanta", "ig": None},
             {"artista": "Tangerine Dream", "nota": "Tavole d'onda al posto delle sequenze analogiche", "ig": None},
         ],
         "menzioni_extra": [],
@@ -2201,16 +2201,7 @@ SCHEDE = [
         ],
         "gancio": "Non inventò il campionamento: gli diede sedici pad da colpire con le dita",
         "sottotitolo": "Roger Linn disegna l'interfaccia, Akai costruisce l'elettronica: nasce la macchina che insegna all'hip hop a suonare con le mani.",
-        "la_macchina": (
-            "Otto anni dopo la sua prima drum machine, Roger Linn torna con "
-            "un'idea diversa: non più suoni disegnati, ma suoni registrati. "
-            "La MPC60 campiona a 12 bit e 40 kHz, li distribuisce su sedici "
-            "pad quadrati sensibili alla pressione — un dito, sedici livelli "
-            "di forza — e li mette in fila con un sequencer che arriva a "
-            "60.000 note. Linn disegna l'interfaccia in California, Akai "
-            "costruisce l'elettronica a Tokyo: esce nel dicembre 1988 a "
-            "5.000 dollari."
-        ),
+        "la_macchina": "Otto anni dopo la sua prima drum machine, Roger Linn torna con una macchina che campiona: 12 bit, 40 kHz, i suoni su sedici pad quadrati sensibili alla pressione (un dito, sedici livelli di forza) e un sequencer che tiene 60.000 note. Linn disegna l'interfaccia in California, Akai costruisce l'elettronica a Tokyo. Esce a dicembre del 1988 a 5.000 dollari.",
         "inventore_nome": "Roger Linn (con Akai)",
         "inventore": (
             "Linn aveva già inventato la LM-1 e la LinnDrum, le prime drum "
@@ -2245,14 +2236,7 @@ SCHEDE = [
             {"ig": "roger.linn",
              "riga": "Il suo disegnatore, Roger Linn, è ancora in attività: lo trovi come @roger.linn."},
         ],
-        "aneddoto": (
-            "Nel 1996 DJ Shadow pubblica «Endtroducing.....»: quasi tutto il "
-            "disco esce da un'unica MPC60 comprata usata su consiglio di un "
-            "altro DJ, senza tastiera né sintetizzatore. Solo dischi trovati "
-            "nei mercatini, spezzettati e rimessi in fila sedici pad alla "
-            "volta. Il campionatore nato per mettere un beat sotto un "
-            "rapper diventa lo strumento con cui si scrive un intero album."
-        ),
+        "aneddoto": "Nel 1996 DJ Shadow pubblica «Endtroducing.....»: quasi tutto il disco esce da un'unica MPC60 comprata usata su consiglio di un altro DJ, senza tastiera né sintetizzatore. Solo dischi trovati nei mercatini, spezzettati e rimessi in fila sedici pad alla volta. Provate a immaginare il lavoro: 13 secondi di memoria per volta, sedici pad e un album intero.",
         "avvertenza": "Il sequencer regge 60.000 note. I campioni no: appena 13 secondi di serie, 26 con l'espansione. Una sinfonia in coda, un rullante in memoria.",
         "da_ascoltare": {"brano": 'Endtroducing.....', "artista": 'DJ Shadow',
                           "anno": '1996',
@@ -2294,27 +2278,9 @@ SCHEDE = [
         ],
         "gancio": "Il primo synth che si ricordava i suoni: bastava un numero, non venti manopole",
         "sottotitolo": "Cinque voci analogiche pilotate da un piccolo cervello digitale: nasce la memoria patch, e da qui nascerà anche il MIDI.",
-        "la_macchina": (
-            "Fino al 1977 un sintetizzatore polifonico si programmava "
-            "girando decine di manopole, ogni volta da capo: nessuna "
-            "macchina ricordava un suono. Il Prophet-5 ne memorizza "
-            "quaranta, richiamabili premendo un numero. Dentro, cinque voci "
-            "analogiche identiche; sopra, un microprocessore che non genera "
-            "il suono ma registra la posizione di ogni manopola. Debutta al "
-            "NAMM di gennaio 1978, quasi 4.000 dollari, e raccoglie 400 "
-            "ordini nelle prime settimane."
-        ),
+        "la_macchina": "Fino al 1977 un sintetizzatore polifonico si programmava girando decine di manopole, ogni volta da capo: nessuna macchina ricordava un suono. Il Prophet-5 ne memorizza quaranta, e li richiami premendo un numero. Dentro, cinque voci analogiche identiche; sopra, un microprocessore che non genera il suono ma registra la posizione di ogni manopola. Debutta al NAMM di gennaio 1978. Per chi suonava dal vivo cambiava tutto, e si capisce ancora oggi quando ne accendi uno e il suono che avevi ieri è ancora lì.",
         "inventore_nome": "Dave Smith e John Bowen",
-        "inventore": (
-            "Dave Smith fonda la Sequential Circuits a San Jose, in "
-            "California, e disegna il Prophet-5 con John Bowen, che firma "
-            "anche la sezione Poly-Mod. Sarà lo stesso Smith, pochi anni "
-            "dopo, a mettere a punto con Ikutaro Kakehashi di Roland il "
-            "protocollo MIDI: il primo collegamento reale della storia "
-            "unisce un Prophet-600, erede diretto di questa macchina, a uno "
-            "Jupiter-6 Roland. La memoria digitale che salva un suono "
-            "analogico nasce qui."
-        ),
+        "inventore": "Dave Smith fonda la Sequential Circuits a San Jose, in California, e disegna il Prophet-5 con John Bowen, che firma anche la sezione Poly-Mod. Sarà lo stesso Smith, pochi anni dopo, a mettere a punto con Ikutaro Kakehashi di Roland il protocollo MIDI: il primo collegamento della storia unisce un Prophet-600, erede diretto di questa macchina, a uno Jupiter-6 Roland.",
         "come_funziona": (
             "Il microprocessore non tocca l'audio: legge la posizione di "
             "ogni manopola e la scrive in memoria, poi la richiama esatta "
@@ -2339,15 +2305,7 @@ SCHEDE = [
             {"ig": "sequential_llc",
              "riga": "L'azienda esiste ancora, oggi si chiama Sequential: la trovi come @sequential_llc."},
         ],
-        "aneddoto": (
-            "Le prime due revisioni del Prophet-5 si scordano da sole a "
-            "ogni concerto, per colpa degli stessi chip SSM che dovevano "
-            "renderlo stabile. Sequential non lo nasconde: sostituisce il "
-            "componente nella terza revisione, e il synth che aveva "
-            "inventato la memoria dei suoni impara solo dopo a tenerli "
-            "accordati. Ne furono costruiti circa 8.000, prima che la "
-            "produzione chiudesse a metà anni '80."
-        ),
+        "aneddoto": "Gennaio 1978, NAMM. Il Prophet-5 costa quasi 4.000 dollari e in poche settimane arrivano 400 ordini, che per un'azienda piccola come la Sequential sono un bel guaio oltre che una festa. Le prime due revisioni escono con i chip SSM che dicevamo, e chi suona dal vivo impara a riaccordare fra un pezzo e l'altro. La terza cambia chip e il problema sparisce. In tutto ne hanno fatti circa 8.000, fino a metà anni Ottanta. Se ne cercate uno, chiedete quale revisione. Non è pignoleria.",
         "avvertenza": "Le prime due revisioni si scordano con il calore: chip instabili. Solo la terza, con un chip diverso, resta accordata da sola.",
         "da_ascoltare": {"brano": "Let's Go", "artista": "The Cars",
                           "anno": "1979",
@@ -2389,26 +2347,9 @@ SCHEDE = [
         ],
         "gancio": "Non finge una batteria: la registra, e te la lascia accordare come un nastro",
         "sottotitolo": "Suoni veri di batteria dentro una macchina del 1980, con la stessa manopola che un tempo accelerava un registratore a bobine.",
-        "la_macchina": (
-            "Fino a quel momento le drum machine imitavano il suono di una "
-            "batteria con circuiti che oscillano. La DMX lo registra: "
-            "dentro ci sono ventiquattro campioni digitali a 8 bit di "
-            "rullante, cassa, piatti e percussioni vere, richiamabili con "
-            "volume e accordatura regolabili voce per voce. Esce nel 1980 a "
-            "quasi 2.900 dollari, disegnata da Marcus Ryle per l'azienda di "
-            "Tom Oberheim, e diventa in pochi anni la base ritmica di mezza "
-            "new wave e dei primi dischi hip hop."
-        ),
+        "la_macchina": "Fino a quel momento le drum machine imitavano il suono di una batteria con circuiti che oscillano. La DMX lo registra: dentro ci sono ventiquattro campioni digitali a 8 bit di rullante, cassa, piatti e percussioni vere, richiamabili con volume e accordatura regolabili voce per voce. Esce nel 1980 a quasi 2.900 dollari, disegnata da Marcus Ryle per l'azienda di Tom Oberheim, e in pochi anni la trovi sotto la new wave e sotto i primi dischi hip hop.",
         "inventore_nome": "Marcus Ryle (Oberheim)",
-        "inventore": (
-            "Tom Oberheim fonda la sua azienda a Los Angeles nel 1969, "
-            "costruendo prima moduli per altri synth e poi sintetizzatori "
-            "propri. Alla DMX lavora un giovane ingegnere, Marcus Ryle, "
-            "che la presenta insieme a Oberheim stesso al NAMM dei primi "
-            "anni '80. È una delle prime drum machine a sostituire gli "
-            "oscillatori con suoni campionati: da lì in avanti quasi ogni "
-            "macchina ritmica seguirà la stessa strada."
-        ),
+        "inventore": "Tom Oberheim fonda la sua azienda a Los Angeles nel 1969, costruendo prima moduli per altri synth e poi sintetizzatori propri. Alla DMX lavora un giovane ingegnere, Marcus Ryle, che la presenta insieme a Oberheim stesso al NAMM dei primi anni '80. È fra le prime drum machine a mettere dentro suoni registrati invece di oscillatori.",
         "come_funziona": (
             "Ogni voce ha una sua schedina con il campione già inciso: non "
             "un oscillatore che disegna un'onda, ma una piccola memoria che "
@@ -2432,16 +2373,7 @@ SCHEDE = [
             {"ig": "oberheim_electronics",
              "riga": "L'azienda di Tom Oberheim è tornata: oggi è @oberheim_electronics."},
         ],
-        "aneddoto": (
-            "Nel 1983 i New Order affidano alla DMX il ritmo di «Blue "
-            "Monday»: sedicesimi di cassa incalzanti e rullate di tom "
-            "programmate un colpo alla volta, senza un batterista in "
-            "studio. Lo stesso anno la usano anche i Run-D.M.C., unico "
-            "accompagnamento oltre alla voce e ai dischi scratchati su "
-            "«Sucker M.C.'s» — la disco e l'hip hop delle origini, nate a "
-            "un anno di distanza, si appoggiano alla stessa manciata di "
-            "campioni di batteria."
-        ),
+        "aneddoto": "Nel 1983 i New Order affidano alla DMX il ritmo di «Blue Monday»: sedicesimi di cassa incalzanti e rullate di tom programmate un colpo alla volta, senza un batterista in studio. Lo stesso anno la usano i Run-D.M.C. in «Sucker M.C.'s», dove oltre alla voce e ai dischi scratchati non c'è nient'altro.",
         "avvertenza": "Non ha un filtro per accordare i suoni: cambia la velocità con cui rilegge il campione, come un nastro. Più veloce è più acuto.",
         "da_ascoltare": {"brano": "Blue Monday", "artista": "New Order",
                           "anno": "1983",
@@ -2483,27 +2415,9 @@ SCHEDE = [
         ],
         "gancio": "Il primo effetto digitale in commercio: storpiava il tempo, non solo il suono",
         "sottotitolo": "Cambia l'intonazione senza toccare la velocità: una magia che nel 1975 nessun altro sapeva fare.",
-        "la_macchina": (
-            "Nel 1975 processare il suono in digitale è quasi impensabile "
-            "per il mercato: i convertitori costano una fortuna e li usano "
-            "solo i laboratori. L'H910 li mette in un rack da studio. Alza "
-            "o abbassa l'intonazione di un suono fino a un'ottava intera "
-            "senza cambiarne la velocità — la prima volta che succede fuori "
-            "da un laboratorio — con un ritardo rigenerativo che può anche "
-            "accumularsi su se stesso fino a esplodere. Costa 1.600 "
-            "dollari, e cambia il modo in cui si registra una batteria."
-        ),
+        "la_macchina": "Nel 1975 processare il suono in digitale è quasi impensabile per il mercato: i convertitori costano una fortuna e li usano solo i laboratori. L'H910 li mette in un rack da studio. Alza o abbassa l'intonazione di un suono fino a un'ottava intera senza cambiarne la velocità, la prima volta che succede fuori da un laboratorio, con un ritardo rigenerativo che può anche accumularsi su se stesso fino a esplodere. Costa 1.600 dollari. Nel 1975 era un prezzo da studio, non da musicista.",
         "inventore_nome": "Richard Factor e Tony Agnello (Eventide)",
-        "inventore": (
-            "Eventide nasce nel 1971 a Manhattan, fondata da Richard Factor "
-            "insieme a Stephen Katz e Orville Greene. È Factor ad assegnare "
-            "il progetto dell'H910 all'ingegnere Tony Agnello, che lo "
-            "costruisce nel 1974 e lo presenta a un'associazione di "
-            "ingegneri del suono l'anno dopo. Non è un'azienda di strumenti "
-            "musicali: fa apparecchiature per la radiotelevisione. L'H910 "
-            "nasce quasi per caso, e finisce nei rack di mezza discografia "
-            "mondiale."
-        ),
+        "inventore": "Eventide nasce nel 1971 a Manhattan, fondata da Richard Factor insieme a Stephen Katz e Orville Greene. È Factor ad assegnare il progetto dell'H910 all'ingegnere Tony Agnello, che lo costruisce nel 1974 e lo presenta a un'associazione di ingegneri del suono l'anno dopo. Non è un'azienda di strumenti musicali: fa apparecchiature per la radiotelevisione. L'H910 nasce quasi per caso.",
         "come_funziona": (
             "Dentro, due letture della stessa linea di ritardo digitale, "
             "incrociate per cambiare l'intonazione senza toccare la "
@@ -2528,16 +2442,7 @@ SCHEDE = [
             {"ig": "eventideaudio",
              "riga": "L'azienda esiste ancora e fa ancora effetti da studio: @eventideaudio."},
         ],
-        "aneddoto": (
-            "Nel 1977, in studio per «Low» di David Bowie, il produttore "
-            "Tony Visconti convince tutti a provare l'H910 sulla batteria "
-            "di Dennis Davis, rimandando l'uscita di nuovo dentro la "
-            "macchina: il rullante metallico e discendente di «Breaking "
-            "Glass» esce da lì. Tre anni dopo Tony Platt lo usa scordato di "
-            "proposito sotto il rullante vero di «Back in Black» degli "
-            "AC/DC — la stessa macchina, due dischi opposti, lo stesso "
-            "trucco."
-        ),
+        "aneddoto": "Nel 1977, in studio per «Low» di David Bowie, il produttore Tony Visconti convince tutti a provare l'H910 sulla batteria di Dennis Davis, rimandando l'uscita di nuovo dentro la macchina: il rullante metallico e discendente di «Breaking Glass» esce da lì. Tre anni dopo Tony Platt lo usa scordato di proposito sotto il rullante vero di «Back in Black» degli AC/DC. Due dischi che non c'entrano niente l'uno con l'altro, e in mezzo la stessa scatola.",
         "avvertenza": "Ogni cambio di intonazione lascia un vuoto di fase nel punto di incrocio: da questo difetto nasce la parola «glitch».",
         "da_ascoltare": {"brano": "Breaking Glass", "artista": "David Bowie",
                           "anno": "1977",
@@ -2626,11 +2531,11 @@ SCHEDE = [
             ("TASTI", "73 o 88"),
             ("VERSIONI", "Suitcase e Stage"),
         ],
-        "gancio": "Sotto ogni tasto un diapason zoppo: il pianoforte nato dai rottami dei bombardieri per curare i soldati",
-        "sottotitolo": "Il pianoforte elettrico che non imita il pianoforte: un suono a campana che dal 1965 attraversa jazz, soul e funk.",
-        "la_macchina": "Sembra un pianoforte da studio col coperchio di plastica, ma dentro non ci sono corde: ogni tasto fa battere un martelletto su una barretta d'acciaio accordata, che vibra davanti a un pickup magnetico come la corda di una chitarra elettrica. Il suono esce da un amplificatore, non da una cassa armonica, e per questo si piega con tremolo, phaser e wah come una chitarra. Dal 1965 la CBS lo vende in due forme: la Suitcase, con amplificatore e altoparlanti incorporati, e la Stage, senza, che pesa la met\u00e0. Settantatr\u00e9 o ottantotto tasti e un timbro a campana che dal jazz elettrico passa al soul e al funk.",
+        "gancio": "Sotto ogni tasto un diapason zoppo. Il pianoforte che Harold Rhodes ha cominciato in un ospedale militare",
+        "sottotitolo": "Una barra d'acciaio percossa davanti a un pickup: il pianoforte elettrico che non prova nemmeno a sembrare un pianoforte.",
+        "la_macchina": "Sembra un pianoforte da studio col coperchio di plastica, ma dentro non ci sono corde. Ogni tasto fa battere un martelletto su una barretta d'acciaio accordata, che vibra davanti a un pickup magnetico, come la corda di una chitarra elettrica. Il suono esce da un amplificatore e non da una cassa, e quindi lo tratti come una chitarra: tremolo, phaser, wah. Dal 1965 la CBS lo vende in due forme, la Suitcase con amplificatore e altoparlanti nel mobile sotto, e la Stage, senza, che pesa la metà. 73 o 88 tasti. Il timbro a campana lo riconoscete anche se non sapete come si chiama: è quello.",
         "inventore_nome": "Harold Rhodes",
-        "inventore": "Harold Rhodes insegnava pianoforte a Los Angeles. Nel 1942, in servizio nell'aviazione militare americana, invent\u00f2 un metodo per far suonare i soldati feriti negli ospedali e costru\u00ec per loro un piccolo strumento da tenere sulle ginocchia, fatto con i rottami degli aerei: le barre erano i tubi di alluminio di scarto dei bombardieri B-17. Dopo la guerra ne ricav\u00f2 un vero pianoforte elettrico, il Pre-Piano; nel 1959 si mise in societ\u00e0 con Leo Fender e, quando la CBS compr\u00f2 la Fender nel 1965, usc\u00ec il primo Fender Rhodes a settantatr\u00e9 tasti. Mor\u00ec nel 2000, dopo aver visto il marchio passare alla Roland.",
+        "inventore": "Harold Rhodes insegnava pianoforte a Los Angeles, e insegnare è la cosa che ha fatto per tutta la vita, anche quando costruiva strumenti. Dopo la guerra fa il suo primo pianoforte elettrico, il Pre-Piano (sull'anno le fonti non sono d'accordo: 1946 per alcune, 1948 per altre). Nel 1959 si mette in società con Leo Fender e insieme fanno il Piano Bass, 32 tasti, solo le note basse. Quando la CBS compra la Fender, nel 1965, esce il primo Fender Rhodes, con 73 tasti. Il marchio passa alla Roland nel 1987. Rhodes muore nel 2000.",
         "come_funziona": "Ogni nota \u00e8 un diapason asimmetrico, brevettato da Rhodes: una barretta sottile, il tine, e sopra una barra d'acciaio pi\u00f9 grossa, la tone bar. Il martelletto colpisce solo la barretta; la barra grossa entra in risonanza e allunga la vibrazione, che da sola si spegnerebbe in un attimo. Davanti alla punta della barretta sta un pickup elettromagnetico, lo stesso principio della chitarra elettrica: il metallo che vibra nel campo della bobina genera la corrente che va all'amplificatore. Niente corde e niente cassa armonica: staccato l'amplificatore, un Rhodes si sente appena.",
         "richiami": [
             ("FIG. 1", "Tine + tone bar: diapason asimmetrico"),
@@ -2638,14 +2543,14 @@ SCHEDE = [
             ("FIG. 3", "Suitcase con ampli, Stage senza"),
         ],
         "chi_lusata": [
-            {"artista": "Herbie Hancock", "nota": "Con Miles Davis in \u00abStuff\u00bb (1968): il Rhodes entra nel jazz e non ne esce pi\u00f9", "ig": "herbiehancock"},
+            {"artista": "Herbie Hancock", "nota": "Con Miles Davis in «Stuff» (1968), sull'album Miles in the Sky", "ig": "herbiehancock"},
             {"artista": "Ray Manzarek (The Doors)", "nota": "I Doors non avevano un bassista: le linee di basso le fa lui, con la sinistra, sul Piano Bass a 32 tasti", "ig": "thedoors"},
             {"artista": "Stevie Wonder", "nota": "L'intro di \u00abYou Are the Sunshine of My Life\u00bb (1972) \u00e8 un Rhodes che sale per toni interi", "ig": None},
         ],
         "menzioni_extra": [],
         "da_ascoltare": {"brano": "Stuff", "artista": "Miles Davis", "anno": "1968",
-                         "cosa": "Apre Miles in the Sky: il Rhodes di Herbie Hancock entra ufficialmente nei dischi di Miles Davis, e il jazz cambia corrente."},
-        "aneddoto": "Il Rhodes nasce in un ospedale militare. Nel 1942 Harold Rhodes, pianista e insegnante, presta servizio nell'aviazione americana e si inventa un modo per far suonare i soldati feriti stando a letto: un pianolino di due ottave e mezzo da tenere sulle ginocchia, costruito con quello che c'era, cio\u00e8 i tubi di alluminio di scarto dei bombardieri B-17 tagliati a misura per fare le barre. Ne furono fabbricati a migliaia. Ventitr\u00e9 anni dopo lo stesso principio, una barra di metallo percossa e amplificata, \u00e8 dentro il pianoforte elettrico che attraverser\u00e0 jazz, soul e funk: l'ospedale da campo era il laboratorio.",
+                         "cosa": "Apre Miles in the Sky. Il Rhodes è di Herbie Hancock: sentite come sta sotto la tromba senza coprirla mai."},
+        "aneddoto": "1942. Harold Rhodes è nell'aviazione militare americana e ha un compito strano: far suonare i soldati feriti, a letto, come terapia. Non esiste un pianoforte che stia su un letto, quindi ne costruisce uno, due ottave e mezzo, da tenere sulle ginocchia, con le barre ricavate dai tubi di alluminio di scarto dei bombardieri B-17. Lo chiamano Xylette. Quanti ne abbiano fatti non lo so dire: una fonte scrive più di 125.000, un'altra scrive «migliaia». Quello che è sicuro è che la barra di metallo percossa è la stessa idea che vent'anni dopo sta dentro il Rhodes.",
         "avvertenza": "Sotto ogni tasto c'\u00e8 un diapason zoppo: la gamba sottile fa la nota, quella grossa la fa durare. Non toglietene una per alleggerire.",
         "foto": {
             "file": "assets/foto/rhodes/principale.jpg",
@@ -2711,10 +2616,13 @@ def componi_didascalia(scheda):
     usi = []
     for u in scheda["chi_lusata"]:
         nome = f"@{u['ig']}" if u.get("ig") else u["artista"]
-        usi.append(f"{nome} ({u['nota']})")
+        # nome: nota, non nome (nota) — con «Nick Rhodes (Duran Duran)» le
+        # parentesi si raddoppiavano e la riga sembrava un modulo.
+        usi.append(f"{nome}: {u['nota']}")
     if usi:
         # «L'hanno resa leggenda» era una formula da copertina di rivista: si dice chi.
-        righe.append("Chi ci ha suonato: " + " · ".join(usi) + ".")
+        righe.append("Chi ci ha suonato:")
+        righe.extend(f"· {u}" for u in usi)
         righe.append("")
     for m in scheda.get("menzioni_extra", []):
         righe.append(m["riga"])
