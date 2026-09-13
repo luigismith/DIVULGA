@@ -1766,6 +1766,7 @@ SCHEDE = [
                           "cosa": "Il flauto shakuhachi sintetico che apre il brano è un campione della libreria sonora dell'Emulator II."},
         "foto": {
             "file": "assets/foto/emulator/principale.jpg",
+            "ritaglio": True,   # scontornata su bianco: si mostra intera
             "autore": "John R. Southern",
             "licenza": "CC BY-SA 2.0",
             "fonte": "Wikimedia Commons (originariamente Flickr)",
@@ -1777,7 +1778,7 @@ SCHEDE = [
         # chi l'ha costruita, la scheda di memoria per «come funziona» —
         # che su un campionatore e' letteralmente il punto.
         "foto_extra": [
-            {"file": "assets/foto/emulator/strumento.jpg",
+            {"file": "assets/foto/emulator/strumento.jpg", "ritaglio": True,
              "autore": "Mojosynths, ritocco di Pittigrilli",
              "licenza": "pubblico dominio",
              "fonte": "Wikimedia Commons",

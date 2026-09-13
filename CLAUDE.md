@@ -17,18 +17,50 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   fa sembrare la tavola un terminale. Serif e mono sono della stessa
   superfamiglia — stesso scheletro, stessa altezza-x — quindi la coppia è
   compatibile per costruzione, non per gusto.
+- **Impaginato «catalogo fotografico»** (13/09/2026, dopo che il
+  proprietario ha bocciato la prima revisione: «puoi fare sicuramente di
+  meglio»). La prima revisione aveva cambiato i font e messo foto diverse
+  negli stessi buchi: la struttura restava un documento — testata alta,
+  titolo, otto righe, foto graffettata in fondo. Regole dell'impaginato
+  attuale, da NON smontare a caso:
+  · la foto è a tutta larghezza, senza cornice, e cambia posto a ogni
+    tavola (copertina: sopra il nome; 2: sopra il testo; 3: sotto; 4:
+    sopra con la legenda dei FIG. incollata su fondo bruno; 5 e 6
+    tipografiche, che è il cambio di ritmo; la 5 riprende una foto in
+    fondo solo se la lista dei nomi è corta);
+  · `mix-blend-mode: multiply` su ogni foto: il bianco diventa crema e
+    le macchine scontornate (la maggioranza, su Commons) stanno sulla
+    carta invece che in un rettangolo bianco. Con `"ritaglio": True`
+    sulla foto si usa `contain` e la macchina si vede intera;
+  · copertina e storia: il riquadro foto prende lo spazio che avanza,
+    ma il ritaglio è limitato al 20% (`data-cap`): meglio un bordo di
+    crema che una macchina senza tastiera;
+  · numerone arancio di sezione, testata da 66px (era 117), testo
+    corrente a 34px serif: sul telefono un pixel della tavola vale un
+    terzo di pixel dello schermo, sotto i 30px non si legge;
+  · la CTA sulla tavola 6 è in Oswald a 44px con la freccia, sopra lo
+    zoccolo: chi arriva dal reel deve vederla senza cercarla.
+  Ogni ritocco al generatore si prova su TRE schede (una con `foto_extra`,
+  una senza, una col nome lungo) con `ELETTROFONI_TAVOLE_OUT=<cartella>`,
+  che scrive fuori da `docs/` e non tocca le tavole già pubblicate.
 - **Foto: una per slide, non una ripetuta.** Le slide 2 e 3 la banda
   fotografica ce l'avevano già, ma pescavano tutte da `scheda["foto"]`:
   mostravano tre volte la stessa immagine. Ora c'è `foto_extra` (lista,
   facoltativa) e `foto_di(scheda, i)` dà la i-esima con ricaduta sulla
   principale; ogni banda porta la didascalia di cosa si guarda e il
   credito della SUA licenza, che `valida_scheda` pretende su tutte.
+  Quando una scheda non ha foto extra, la principale torna dentro con un
+  ritaglio diverso per tavola (`RITAGLI`: zoom + punto di fuoco,
+  etichetta «DETTAGLIO»): non è una seconda foto, ma non è la stessa
+  immagine tre volte. Cercare comunque le foto extra: su Commons spesso
+  ci sono il pannello, l'interno, il retro.
   Regola generale: quando un layout ripete un elemento, controllare che
   ripeta la STRUTTURA e non il CONTENUTO.
 - **La decorazione non divide lo spazio col testo da leggere.** Il
   numerone di copertina a 200px arrivava dentro il gancio e il titolo
-  passava sopra la sua ombra: ora è confinato nella fascia
-  dell'occhiello, con altezza fissa e overflow nascosto.
+  passava sopra la sua ombra; il timbro «SCHEDA 023» sulla foto finiva
+  sopra la macchina. Tolti entrambi: il numero di scheda sta nella
+  testata e basta.
 - Personaggio: **Dinamo**, automa d'epoca (SVG in `genera_tavole.py`).
   NON è la spalla comica: è chi compila il catalogo. Chiude ogni scheda
   con un'**AVVERTENZA** in forma di etichetta da manuale d'uso, agganciata

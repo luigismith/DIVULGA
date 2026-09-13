@@ -81,7 +81,9 @@ body{{width:{L}px;height:{H}px}}
 .kicker{{font-size:24px;letter-spacing:.22em}}
 .grande{{flex:none;font-weight:700;text-transform:uppercase;line-height:1.02;
   font-size:104px;margin-top:26px}}
-.media{{flex:none;font-family:'PlexMono';font-size:40px;line-height:1.5;margin-top:34px}}
+/* Prosa in serif, come sulle tavole (tre ruoli tipografici, 13/09/2026):
+   il mono resta a etichette e dati. */
+.media{{flex:none;font-family:'PlexSerif';font-size:42px;line-height:1.45;margin-top:34px}}
 .pieno{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
 .velo{{position:absolute;inset:0;background:linear-gradient(180deg,
   rgba(56,41,29,.25) 0%, rgba(56,41,29,.55) 45%, rgba(56,41,29,.92) 100%)}}
@@ -97,7 +99,7 @@ body{{width:{L}px;height:{H}px}}
 .riquadro{{flex:none;border:4px solid {gt.BRUNO};background:{gt.CREMA2};padding:44px 48px}}
 .riquadro .et{{font-family:'PlexMono';font-weight:600;font-size:24px;letter-spacing:.2em;color:{gt.ARANCIO};margin-bottom:18px}}
 .riquadro .t{{font-weight:700;font-size:56px;line-height:1.1}}
-.riquadro .s{{font-family:'PlexMono';font-size:32px;line-height:1.45;margin-top:18px}}
+.riquadro .s{{font-family:'PlexSerif';font-size:34px;line-height:1.45;margin-top:18px}}
 .chiusa{{flex:none;margin-top:70px;text-align:center}}
 .chiusa .firma{{font-weight:700;font-size:64px;line-height:1.1;text-transform:uppercase}}
 .chiusa .cta{{font-family:'PlexMono';font-size:34px;margin-top:34px;color:{gt.ARANCIO}}}

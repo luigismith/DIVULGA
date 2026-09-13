@@ -10,11 +10,32 @@ Output: docs/tavole/<slug>/01.jpg ... 06.jpg  (docs/ è la radice di
 GitHub Pages: l'API di Instagram non accetta upload di file, scarica
 da un URL pubblico).
 
+IMPAGINATO (rifatto il 13/09/2026 dopo che il proprietario ha bocciato
+la prima revisione: «puoi fare sicuramente di meglio»). La prima
+revisione aveva cambiato i font e infilato foto diverse negli stessi
+buchi: la struttura restava quella di un documento — testata alta,
+titolo, otto righe di testo, una foto graffettata in fondo. Un carosello
+si sfoglia su un telefono a braccio teso, e lì lo strumento deve essere
+il protagonista. Ora:
+  - la foto è a tutta larghezza, senza cornice, e su ogni tavola sta in
+    una posizione diversa (copertina: sopra il nome; 2: sopra il testo;
+    3: sotto il testo; 4: sopra, con la legenda incollata; 5 e 6 sono
+    tipografiche, che è il cambio di ritmo);
+  - le foto sono fuse con la carta (`mix-blend-mode: multiply`): i
+    ritagli su fondo bianco, che su Commons sono la maggioranza, non
+    galleggiano più in un rettangolo bianco ma stanno sulla crema come
+    in un catalogo stampato;
+  - ogni sezione ha il suo numerone in arancio, la testata è un marchio
+    di 66px e non un'intestazione da 117;
+  - il testo corrente è a 32px (era 29-31): sul telefono un pixel della
+    tavola vale un terzo di pixel dello schermo.
+
 Uso:
     python genera_tavole.py            # genera le tavole di tutte le schede
     python genera_tavole.py minimoog   # solo una scheda
 """
 import os
+import struct
 import sys
 import pathlib
 
@@ -29,6 +50,7 @@ CREMA = "#f4e9d2"
 CREMA2 = "#e9d9b8"
 BRUNO = "#38291d"
 ARANCIO = "#d9702e"
+BRUNO2 = "#5a4530"   # prosa secondaria (note, didascalie lunghe)
 
 AUTOMA_SVG = """
 <svg viewBox="0 0 200 200" fill="none" stroke="{c}">
@@ -67,8 +89,8 @@ def css_base():
    DATI, e su otto righe di racconto stanca l'occhio e fa sembrare la
    tavola un terminale invece di una pagina di catalogo.
    Ora i ruoli sono tre:
-     Oswald      -> display: nome della macchina, titoli, valori
-     PlexSerif   -> testo corrente, tutta la prosa
+     Oswald      -> display: nome della macchina, titoli, numeroni, valori
+     PlexSerif   -> testo corrente, tutta la prosa (il gancio in corsivo)
      PlexMono    -> solo dati: etichette, sigle, specifiche, fonti, crediti
    Il serif e' della STESSA superfamiglia del mono: stesso scheletro,
    stessa altezza-x, disegnati per stare insieme. La compatibilita' della
@@ -79,38 +101,57 @@ def css_base():
 *{{margin:0;padding:0;box-sizing:border-box}}
 body{{width:1080px;height:1350px;overflow:hidden;background:{CREMA};color:{BRUNO};
   font-family:'Oswald';display:flex;flex-direction:column;position:relative}}
-.testata{{flex:none;background:{BRUNO};color:{CREMA};padding:26px 56px;display:flex;align-items:center;justify-content:space-between}}
-.blocco-logo{{display:flex;align-items:center;gap:20px}}
-.quadratino{{width:48px;height:48px;background:{ARANCIO};display:flex;align-items:center;justify-content:center;flex:none}}
-.quadratino svg{{width:34px;height:34px}}
-.nome{{font-weight:700;font-size:42px;letter-spacing:.12em;line-height:1}}
-.serie{{text-align:right;font-family:'PlexMono';font-size:14px;letter-spacing:.13em;line-height:1.8;color:{CREMA2}}}
-.strip{{flex:none;height:12px;background:{ARANCIO}}}
-.corpo{{flex:1;position:relative;display:flex;flex-direction:column;padding:44px 56px 0;min-height:0}}
-.kicker{{flex:none;display:flex;align-items:center;gap:16px;font-family:'PlexMono';font-weight:600;font-size:17px;letter-spacing:.2em;color:{ARANCIO}}}
-.kicker::after{{content:'';flex:1;height:2px;background:{BRUNO};opacity:.25}}
+/* La testata e' un marchio, non un'intestazione: 66px. Era 117 e su
+   sei tavole uguali pesava come la riga di un modulo. */
+.testata{{flex:none;height:66px;background:{BRUNO};color:{CREMA};padding:0 44px;
+  display:flex;align-items:center;justify-content:space-between}}
+.blocco-logo{{display:flex;align-items:center;gap:16px}}
+.quadratino{{width:38px;height:38px;background:{ARANCIO};display:flex;align-items:center;justify-content:center;flex:none}}
+.quadratino svg{{width:27px;height:27px}}
+.nome{{font-weight:700;font-size:30px;letter-spacing:.14em;line-height:1}}
+.serie{{text-align:right;font-family:'PlexMono';font-size:12px;letter-spacing:.14em;line-height:1.6;color:{CREMA2}}}
+.strip{{flex:none;height:6px;background:{ARANCIO}}}
+.corpo{{flex:1;position:relative;display:flex;flex-direction:column;min-height:0}}
+.kicker{{font-family:'PlexMono';font-weight:600;font-size:15px;letter-spacing:.24em;color:{ARANCIO}}}
+/* Intesta di sezione: numerone arancio + etichetta + titolo, su una riga
+   di base comune. E' l'unico ornamento delle tavole interne, e porta
+   informazione (a che punto del carosello sei). */
+.intesta{{flex:none;display:flex;align-items:flex-end;gap:24px;margin:28px 52px 0;
+  padding-bottom:16px;border-bottom:3px solid {BRUNO}}}
+.numerone{{flex:none;font-weight:700;font-size:104px;line-height:.78;color:{ARANCIO};letter-spacing:-.03em}}
+.intesta-testi{{flex:1;min-width:0;display:flex;flex-direction:column;gap:10px}}
 /* LEZIONE IMPARATA: un titolo dentro un contenitore flex viene compresso
    e l'autofit lo taglia — quindi flex:none sui titoli, sempre. */
-.titolone{{flex:none;font-weight:700;line-height:1.04;text-transform:uppercase;margin-top:14px}}
-.pager{{flex:none;margin-top:auto;display:flex;align-items:center;justify-content:space-between;
-  border-top:3px solid {BRUNO};padding:16px 0 22px;font-family:'PlexMono';font-weight:600;font-size:15px;letter-spacing:.16em}}
-.pager .num{{color:{ARANCIO}}}
-.pager .qui{{font-family:'Oswald';font-weight:700;font-size:24px;letter-spacing:.04em}}
-.zoccolo{{flex:none;background:{ARANCIO};color:{BRUNO};padding:20px 56px;display:flex;align-items:center;justify-content:space-between}}
-.motto{{font-family:'PlexMono';font-weight:600;font-size:16px;letter-spacing:.12em}}
-.handle{{font-weight:700;font-size:22px;letter-spacing:.14em}}
+.titolo,.titolone{{flex:none;font-weight:700;font-size:50px;line-height:1;text-transform:uppercase}}
+.testo{{font-family:'PlexSerif';font-size:34px;line-height:1.5;margin:22px 52px 0;overflow:hidden;min-height:0}}
+/* Foto a tutta larghezza. `multiply` fonde la foto con la carta: i
+   ritagli su fondo bianco (la maggioranza, su Commons) non galleggiano
+   piu' in un rettangolo bianco sulla crema. */
+.fotobanda{{flex:none;position:relative;overflow:hidden;background:{CREMA};display:flex;align-items:center;justify-content:center}}
+.fotobanda img{{display:block;width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}}
+.didascalia{{position:absolute;left:52px;bottom:16px;background:{ARANCIO};color:{BRUNO};
+  font-family:'PlexMono';font-weight:600;font-size:13px;letter-spacing:.14em;padding:7px 12px}}
 /* Il credito e' un obbligo di licenza, non una decorazione: su una foto
    chiara il grigio all'80% spariva. Fondino scuro e testo pieno. */
-.credito{{position:absolute;right:8px;bottom:8px;font-family:'PlexMono';font-size:11px;
-  color:{CREMA};letter-spacing:.04em;background:rgba(20,14,9,.62);padding:4px 9px}}
+.credito{{position:absolute;right:0;bottom:0;font-family:'PlexMono';font-size:11px;
+  color:{CREMA};letter-spacing:.04em;background:rgba(20,14,9,.66);padding:5px 10px}}
+.pager{{flex:none;margin:auto 52px 0;display:flex;align-items:center;justify-content:space-between;
+  border-top:3px solid {BRUNO};padding:14px 0 20px;font-family:'PlexMono';font-weight:600;font-size:14px;letter-spacing:.16em}}
+.pager .num{{color:{ARANCIO}}}
+.pager .qui{{font-family:'Oswald';font-weight:700;font-size:22px;letter-spacing:.04em}}
+.zoccolo{{flex:none;background:{ARANCIO};color:{BRUNO};padding:18px 52px;display:flex;align-items:center;justify-content:space-between}}
+.motto{{font-family:'PlexMono';font-weight:600;font-size:15px;letter-spacing:.12em}}
+.handle{{font-weight:700;font-size:22px;letter-spacing:.14em}}
 .autofit{{min-height:0}}
 """
 
 
 AUTOFIT_JS = """
 // Autofit: rimpicciolisce il carattere finché il testo entra nel suo
-// contenitore. Gira dopo il caricamento dei font.
-document.fonts.ready.then(() => {
+// contenitore. Gira dopo il caricamento dei font E delle immagini:
+// data-pronto su fonts.ready poteva scattare prima del decode della foto.
+Promise.all([document.fonts.ready,
+             ...Array.from(document.images).map(i => i.decode().catch(() => null))]).then(() => {
   for (const el of document.querySelectorAll('.autofit')) {
     let size = parseFloat(getComputedStyle(el).fontSize);
     const min = parseFloat(el.dataset.min || '18');
@@ -118,6 +159,18 @@ document.fonts.ready.then(() => {
       size -= 1;
       el.style.fontSize = size + 'px';
     }
+  }
+  // Riquadri adattivi (copertina, storia): la foto riempie lo spazio che
+  // resta, ma il ritaglio e' limitato a data-cap (1.25 = si perde al
+  // massimo il 20% del lato lungo). Oltre, meglio un bordo di crema che
+  // una macchina senza tastiera.
+  for (const box of document.querySelectorAll('.fotobanda[data-cap]')) {
+    const img = box.querySelector('img');
+    if (!img.naturalWidth) continue;
+    const asp = img.naturalWidth / img.naturalHeight;
+    const cap = parseFloat(box.dataset.cap);
+    const h = Math.min(box.clientHeight, box.clientWidth / asp * cap);
+    img.style.height = Math.round(h) + 'px';
   }
   document.body.dataset.pronto = '1';
 });
@@ -146,6 +199,56 @@ def _pager(scheda, n):
     return f"""<div class="pager"><span class="qui">{scheda['strumento'].upper()}</span><span class="num">{n} / 6 →</span></div>"""
 
 
+def _zoccolo():
+    return f"""<div class="zoccolo"><div class="motto">{contenuti.FIRMA}</div><div class="handle">@ELETTROFONI</div></div>"""
+
+
+def _intesta(n, etichetta, titolo, max_h=120, min_px=30):
+    return f"""<div class="intesta">
+    <div class="numerone">{n:02d}</div>
+    <div class="intesta-testi">
+      <div class="kicker">{etichetta}</div>
+      <div class="titolo autofit" data-min="{min_px}" style="height:auto;max-height:{max_h}px">{titolo}</div>
+    </div>
+  </div>"""
+
+
+# -------------------------------------------------------------- foto ---
+
+def _dimensioni(path):
+    """(larghezza, altezza) in pixel di un JPEG o PNG, leggendo solo
+    l'intestazione: niente Pillow, che nel container non c'e'."""
+    d = pathlib.Path(path).read_bytes()
+    if d[:8] == b"\x89PNG\r\n\x1a\n":
+        return struct.unpack(">II", d[16:24])
+    if d[:2] == b"\xff\xd8":
+        i = 2
+        while i + 9 < len(d):
+            if d[i] != 0xFF:
+                i += 1
+                continue
+            m = d[i + 1]
+            if m == 0xFF:
+                i += 1
+                continue
+            if m in (0xD8, 0x01) or 0xD0 <= m <= 0xD7:
+                i += 2
+                continue
+            lung = struct.unpack(">H", d[i + 2:i + 4])[0]
+            if m in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+                h, w = struct.unpack(">HH", d[i + 5:i + 9])
+                return w, h
+            i += 2 + lung
+    return None
+
+
+def _aspetto(foto):
+    dim = _dimensioni(RADICE / foto["file"])
+    if not dim or not dim[1]:
+        return 1.5
+    return dim[0] / dim[1]
+
+
 def foto_di(scheda, i=0):
     """La i-esima foto della scheda: 0 e' la principale, 1.. sono le
     «foto_extra». Se l'indice non esiste si ricade sulla principale.
@@ -164,188 +267,182 @@ def foto_di(scheda, i=0):
     return extra[i - 1]
 
 
+def _ripetuta(scheda, i):
+    """True se la slide i non ha una foto sua e ricade sulla principale."""
+    return i > 0 and i > len(scheda.get("foto_extra") or [])
+
+
+# Quando la scheda non ha foto extra, la principale torna sulle tavole
+# interne con un ritaglio diverso per tavola (ingrandimento + punto di
+# messa a fuoco): copertina = la macchina intera, dentro = i dettagli.
+# Non e' una seconda foto, ma non e' nemmeno la stessa immagine tre volte.
+# Chiave = indice della foto (1 = slide 2, 2 = slide 3, 3 = slide 4).
+RITAGLI = {
+    1: ("1.55", "30% 45%", "Dettaglio"),
+    2: ("1.55", "72% 55%", "Dettaglio"),
+    3: ("2.1", "50% 40%", "Dettaglio"),
+    4: ("1.4", "50% 62%", "Dettaglio"),
+}
+
+
 def _foto_credito(scheda, foto=None):
     f = foto or scheda["foto"]
     return f"Foto: {f['autore']} · {f['licenza']} · {f['fonte']}"
 
 
+def _banda(scheda, i, altezza=None, stile="", extra_html=""):
+    """Banda fotografica a tutta larghezza con la i-esima foto della
+    scheda, didascalia e credito della SUA licenza.
+
+    `altezza` in px; senza, il riquadro prende tutto lo spazio che resta
+    nella colonna (copertina, storia) e la foto lo riempie ritagliando al
+    massimo il 20% (`data-cap`, vedi AUTOFIT_JS): oltre, restano bordi di
+    crema piuttosto che perdere la macchina.
+
+    Foto con `ritaglio: True` (scontornate su fondo bianco, la maggioranza
+    su Commons): si mostrano INTERE (`contain`). Col `multiply` il bianco
+    diventa crema e la macchina sta sulla carta senza rettangolo."""
+    foto = foto_di(scheda, i)
+    uri = (RADICE / foto["file"]).as_uri()
+    pos = foto.get("posizione", "center")
+    did = foto.get("didascalia")
+    img_stile = f"object-position:{pos}"
+    box_attr = ""
+    if foto.get("ritaglio"):
+        img_stile += ";object-fit:contain"
+    elif altezza is None:
+        box_attr = ' data-cap="1.25"'
+    if _ripetuta(scheda, i) and i in RITAGLI:
+        zoom, origine, did = RITAGLI[i]
+        img_stile += f";transform:scale({zoom});transform-origin:{origine}"
+    box_stile = f"height:{altezza}px;" if altezza else "flex:1 1 auto;min-height:0;"
+    did_html = f'<div class="didascalia">{did.upper()}</div>' if did else ""
+    return (f'<div class="fotobanda"{box_attr} style="{box_stile}{stile}">'
+            f'<img src="{uri}" style="{img_stile}">{did_html}{extra_html}'
+            f'<div class="credito">{_foto_credito(scheda, foto)}</div></div>')
+
+
 # ------------------------------------------------------------- slides ---
 
 def slide_copertina(scheda):
-    foto_uri = (RADICE / scheda["foto"]["file"]).as_uri()
-    pos = scheda["foto"].get("posizione", "center")
     spec = "".join(
         f'<div class="spec"><div class="k">{k}</div><div class="v">{v}</div></div>'
         for k, v in scheda["specifiche"]
     )
     css = f"""
-/* LEZIONE IMPARATA (13/09/2026). Il numerone decorativo stava a 200px
-   partendo dal bordo alto e arrivava fin dentro il gancio: su ogni
-   copertina le lettere del titolo passavano sopra la sua ombra e il
-   testo — la cosa piu' importante della tavola — perdeva contrasto.
-   Ora e' confinato nella fascia dell'occhiello (anno · luogo), che e'
-   corta e lascia libera tutta la destra, con altezza fissata e
-   overflow nascosto: non puo' piu' crescere dentro al titolo.
-   REGOLA: la decorazione non divide mai lo spazio col testo che deve
-   essere letto. Se litigano, si sposta la decorazione. */
-.ghost{{position:absolute;top:-14px;right:30px;font-weight:700;font-size:150px;
-  line-height:1;height:126px;overflow:hidden;color:{CREMA2};z-index:0;letter-spacing:-.02em}}
+.blocco{{flex:none;display:flex;flex-direction:column;padding:24px 52px 26px}}
+.kicker{{flex:none}}
 /* LEZIONE IMPARATA (30/08/2026): la copertina non portava il nome dello
-   strumento. Da nessuna parte. C'erano anno, luogo, gancio, sottotitolo,
-   foto e specifiche — ma non «Yamaha DX7». In un catalogo e' il difetto
-   peggiore: nella griglia del profilo si vede solo la copertina, e chi
-   scorre non sa di che macchina si parla. Il gancio resta la cosa piu'
-   grande, perche' e' quello che ferma il pollice, ma il nome viene
-   PRIMA e si legge da lontano. */
-.nome-macchina{{flex:none;position:relative;z-index:1;font-weight:700;font-size:58px;
-  line-height:1.02;text-transform:uppercase;letter-spacing:.01em;margin-top:10px;
-  padding-bottom:14px;border-bottom:5px solid {ARANCIO}}}
-.titolone{{position:relative;z-index:1;font-size:70px;margin-top:18px;text-wrap:balance}}
-.sottotitolo{{flex:none;position:relative;z-index:1;font-weight:500;font-size:29px;margin-top:12px;color:#6b5138;max-width:850px;line-height:1.3}}
-.fototel{{flex:none;position:relative;z-index:1;margin-top:30px;border-top:8px solid {BRUNO};border-bottom:8px solid {BRUNO};background:#111}}
-.fototel img{{display:block;width:100%;height:500px;object-fit:cover;object-position:{pos}}}
-.etichetta-foto{{position:absolute;left:0;bottom:8px;background:{ARANCIO};color:{BRUNO};font-family:'PlexMono';font-weight:600;font-size:15px;letter-spacing:.12em;padding:9px 16px}}
-.specifiche{{flex:none;display:flex;margin-top:30px;border:2px solid {BRUNO}}}
-.spec{{flex:1;padding:16px 20px;border-right:2px solid {BRUNO}}}
-.spec:last-child{{border-right:none}}
-.spec .k{{font-family:'PlexMono';font-size:13px;letter-spacing:.16em;color:{ARANCIO};font-weight:600}}
-.spec .v{{font-weight:700;font-size:27px;text-transform:uppercase;margin-top:6px}}
-.corpo{{padding-bottom:0}}
+   strumento. Da nessuna parte. Nella griglia del profilo si vede solo la
+   copertina, e chi scorre non sa di che macchina si parla. Ora il nome
+   e' la cosa piu' grande della tavola dopo la foto; il gancio sta sotto,
+   in corsivo serif, come l'occhiello di una rivista. */
+.nome-macchina{{flex:none;font-weight:700;font-size:110px;line-height:.94;text-transform:uppercase;
+  letter-spacing:-.012em;margin-top:10px}}
+.gancio{{flex:none;font-family:'PlexSerif';font-style:italic;font-size:44px;line-height:1.28;margin-top:20px;max-width:980px}}
+.specifiche{{flex:none;margin-top:34px;display:flex;border-top:3px solid {BRUNO};border-bottom:3px solid {BRUNO};padding:14px 0}}
+.spec{{flex:1;padding:0 18px;border-left:2px solid {BRUNO}}}
+.spec:first-child{{padding-left:0;border-left:none}}
+.spec .k{{font-family:'PlexMono';font-weight:600;font-size:12px;letter-spacing:.18em;color:{ARANCIO}}}
+.spec .v{{font-weight:700;font-size:25px;line-height:1.15;text-transform:uppercase;margin-top:6px}}
 """
     corpo = f"""
 {_testata(scheda)}
-<div class="corpo">
-  <div class="ghost">{scheda['numero']:03d}</div>
+{_banda(scheda, 0)}
+<div class="blocco">
   <div class="kicker">{scheda['anno']} · {scheda['luogo'].upper()}</div>
-  <div class="nome-macchina autofit" data-min="34" style="height:auto;max-height:130px">{scheda['strumento']}</div>
-  <div class="titolone autofit" data-min="40" style="height:auto;max-height:240px">{scheda['gancio']}</div>
-  <div class="sottotitolo">{scheda['sottotitolo']}</div>
-  <div class="fototel">
-    <img src="{foto_uri}">
-    <div class="etichetta-foto">{scheda['strumento'].upper()} · DAL VERO</div>
-    <div class="credito">{_foto_credito(scheda)}</div>
-  </div>
+  <div class="nome-macchina autofit" data-min="56" style="height:auto;max-height:220px">{scheda['strumento']}</div>
+  <div class="gancio autofit" data-min="28" style="height:auto;max-height:180px">{scheda['gancio']}</div>
   <div class="specifiche">{spec}</div>
 </div>
-<div style="flex:1"></div>
-<div class="zoccolo"><div class="motto">{contenuti.FIRMA}</div><div class="handle">@ELETTROFONI</div></div>
-"""
-    return _pagina(corpo, css)
-
-
-def _slide_testo(scheda, n, etichetta, titolo, testo, foto_alta=None, foto_i=0):
-    """Layout comune delle slide interne: kicker, titolo, testo grande in
-    autofit, eventuale banda fotografica, pager.
-
-    `foto_i` sceglie QUALE foto mostrare: ogni slide ha la sua, cosi' il
-    carosello non ripete tre volte la stessa immagine."""
-    foto = foto_di(scheda, foto_i)
-    css = f"""
-.titolone{{font-size:64px}}
-.testo{{flex:1 1 auto;font-family:'PlexSerif';font-size:31px;line-height:1.55;margin-top:30px;
-  overflow:hidden;max-width:940px}}
-.fotobanda{{flex:none;position:relative;margin:26px -56px 0;border-top:6px solid {BRUNO};background:#111}}
-.fotobanda img{{display:block;width:100%;height:{foto_alta or 0}px;object-fit:cover;object-position:{foto.get("posizione", "center")}}}
-.didascalia{{position:absolute;left:56px;bottom:8px;background:{ARANCIO};color:{BRUNO};
-  font-family:'PlexMono';font-weight:600;font-size:13px;letter-spacing:.12em;padding:6px 12px}}
-"""
-    foto_html = ""
-    if foto_alta:
-        foto_uri = (RADICE / foto["file"]).as_uri()
-        # La didascalia dice cosa si sta guardando: e' informazione, non
-        # decorazione. Senza, tre bande fotografiche diverse nello stesso
-        # carosello sembrano un errore invece di tre inquadrature scelte.
-        did = foto.get("didascalia")
-        did_html = f'<div class="didascalia">{did.upper()}</div>' if did else ""
-        foto_html = f"""<div class="fotobanda"><img src="{foto_uri}">{did_html}
-        <div class="credito">{_foto_credito(scheda, foto)}</div></div>"""
-    corpo = f"""
-{_testata(scheda)}
-<div class="corpo">
-  <div class="kicker">{n:02d} · {etichetta}</div>
-  <div class="titolone autofit" data-min="40" style="height:auto;max-height:160px">{titolo}</div>
-  <div class="testo autofit" data-min="21">{testo}</div>
-  {foto_html}
-  {_pager(scheda, n)}
-</div>
+{_zoccolo()}
 """
     return _pagina(corpo, css)
 
 
 def slide_macchina(scheda):
-    return _slide_testo(scheda, 2, "LA MACCHINA", "Che cos'è", scheda["la_macchina"], foto_alta=360, foto_i=1)
+    css = ".testo{flex:1 1 auto}"
+    corpo = f"""
+{_testata(scheda)}
+{_banda(scheda, 1, 500)}
+{_intesta(2, "LA MACCHINA", "Che cos'è")}
+<div class="testo autofit" data-min="22">{scheda['la_macchina']}</div>
+{_pager(scheda, 2)}
+"""
+    return _pagina(corpo, css)
 
 
 def slide_inventore(scheda):
-    return _slide_testo(scheda, 3, "CHI L'HA COSTRUITA", scheda["inventore_nome"], scheda["inventore"], foto_alta=300, foto_i=2)
-
-
-def slide_funzionamento(scheda):
-    richiami = "".join(
-        f'<div class="richiamo"><div class="fig">{k}</div><div class="txt">{v}</div></div>'
-        for k, v in scheda.get("richiami", [])
-    )
-    extra = ""
-    if richiami:
-        extra = f'<div class="richiami">{richiami}</div>'
-    # Su «come funziona» la foto giusta e' il dettaglio: il pannello, i
-    # comandi, il meccanismo. Compare solo se la scheda ha una terza foto
-    # — le altre restano come sono, senza buchi.
-    foto3 = foto_di(scheda, 3)
-    ha_terza = len(scheda.get("foto_extra") or []) >= 3
-    banda3 = ""
-    if ha_terza:
-        did3 = foto3.get("didascalia")
-        did3_html = f'<div class="didascalia">{did3.upper()}</div>' if did3 else ""
-        banda3 = (f'<div class="fotobanda"><img src="{(RADICE / foto3["file"]).as_uri()}">'
-                  f'{did3_html}<div class="credito">{_foto_credito(scheda, foto3)}</div></div>')
-    css = f"""
-.titolone{{font-size:64px}}
-.testo{{flex:0 1 auto;font-family:'PlexSerif';font-size:30px;line-height:1.55;margin-top:28px;overflow:hidden;max-width:940px}}
-.richiami{{flex:none;display:flex;border:2px solid {BRUNO};margin-top:34px}}
-.richiamo{{flex:1;text-align:center;padding:16px 10px;border-right:2px solid {BRUNO}}}
-.richiamo:last-child{{border-right:none}}
-.richiamo .fig{{font-family:'PlexMono';font-weight:600;font-size:14px;letter-spacing:.14em;color:{ARANCIO}}}
-.richiamo .txt{{font-weight:700;font-size:23px;letter-spacing:.06em;margin-top:5px;text-transform:uppercase}}
-/* margin-top:auto la incolla sopra il pager: senza, la banda restava a
-   meta' pagina e sotto avanzava una fascia di crema vuota. */
-.fotobanda{{flex:none;position:relative;margin:26px -56px 0;margin-top:auto;border-top:6px solid {BRUNO};background:#111}}
-.fotobanda img{{display:block;width:100%;height:300px;object-fit:cover;object-position:{foto3.get("posizione", "center")}}}
-.didascalia{{position:absolute;left:56px;bottom:8px;background:{ARANCIO};color:{BRUNO};
-  font-family:'PlexMono';font-weight:600;font-size:13px;letter-spacing:.12em;padding:6px 12px}}
+    # Tavola specchiata rispetto alla 2: prima il testo, la foto in fondo.
+    # Due tavole uguali di fila si sfogliano senza vederle.
+    css = """
+.testo{flex:0 1 auto}
+.fotobanda{margin-top:auto}
+.pager{margin-top:0}
 """
     corpo = f"""
 {_testata(scheda)}
-<div class="corpo">
-  <div class="kicker">04 · COME FUNZIONA</div>
-  <div class="titolone autofit" data-min="40" style="height:auto;max-height:160px">La tecnologia, semplice</div>
-  <div class="testo autofit" data-min="21">{scheda['come_funziona']}</div>
-  {extra}
-  {banda3}
-  {_pager(scheda, 4)}
-</div>
+{_intesta(3, "CHI L'HA COSTRUITA", scheda['inventore_nome'])}
+<div class="testo autofit" data-min="22" style="margin-bottom:26px">{scheda['inventore']}</div>
+{_banda(scheda, 2, 470)}
+{_pager(scheda, 3)}
+"""
+    return _pagina(corpo, css)
+
+
+def slide_funzionamento(scheda):
+    # La legenda (i tre «FIG.») sta incollata sotto la foto, su fondo
+    # bruno: foto + didascalia tecnica, come la figura di un manuale.
+    voci = "".join(
+        f'<div class="voce"><div class="fig">{k}</div><div class="txt">{v}</div></div>'
+        for k, v in scheda.get("richiami", [])
+    )
+    css = f"""
+.legenda{{flex:none;display:flex;background:{BRUNO};color:{CREMA};padding:0 52px}}
+.voce{{flex:1;padding:16px 18px 18px;border-left:2px solid rgba(244,233,210,.22)}}
+.voce:first-child{{padding-left:0;border-left:none}}
+.voce .fig{{font-family:'PlexMono';font-weight:600;font-size:12px;letter-spacing:.2em;color:{ARANCIO}}}
+.voce .txt{{font-weight:500;font-size:22px;line-height:1.15;text-transform:uppercase;letter-spacing:.03em;margin-top:5px}}
+.testo{{flex:1 1 auto}}
+"""
+    corpo = f"""
+{_testata(scheda)}
+{_banda(scheda, 3, 420)}
+<div class="legenda">{voci}</div>
+{_intesta(4, "COME FUNZIONA", "La tecnologia, semplice")}
+<div class="testo autofit" data-min="22">{scheda['come_funziona']}</div>
+{_pager(scheda, 4)}
 """
     return _pagina(corpo, css)
 
 
 def slide_artisti(scheda):
     righe = "".join(
-        f"""<div class="artista"><div class="chi">{u['artista']}</div><div class="cosa">{u['nota']}</div></div>"""
-        for u in scheda["chi_lusata"]
+        f"""<div class="artista"><div class="idx">{i:02d}</div><div class="art">
+            <div class="chi">{u['artista']}</div><div class="cosa">{u['nota']}</div></div></div>"""
+        for i, u in enumerate(scheda["chi_lusata"], start=1)
     )
+    # Tutto in em sul contenitore: cosi' l'autofit, che tocca solo il
+    # font-size della .lista, riduce nomi, note e spazi insieme. Con le
+    # misure in px sui figli l'autofit girava a vuoto.
     css = f"""
-.titolone{{font-size:64px}}
-.lista{{flex:1 1 auto;margin-top:30px;overflow:hidden}}
-.artista{{display:flex;align-items:baseline;justify-content:space-between;gap:24px;
-  border-bottom:2px solid {BRUNO};padding:34px 0}}
-.artista:first-child{{border-top:2px solid {BRUNO}}}
-.chi{{font-weight:700;font-size:46px;text-transform:uppercase;letter-spacing:.02em;flex:none}}
-.cosa{{font-family:'PlexSerif';font-size:23px;color:#6b5138;text-align:right;line-height:1.45}}
-.ascolto{{flex:none;border:2px solid {BRUNO};background:{CREMA2};padding:22px 26px;margin-top:26px}}
-.ascolto .et{{font-family:'PlexMono';font-weight:600;font-size:14px;letter-spacing:.18em;
-  color:{ARANCIO};margin-bottom:10px}}
-.ascolto .brano{{font-weight:700;font-size:34px;line-height:1.15;margin-bottom:8px}}
-.ascolto .nota{{font-family:'PlexSerif';font-size:22px;line-height:1.5;color:#5a4530}}
+.lista{{flex:1 1 auto;min-height:0;margin:0 52px;display:flex;flex-direction:column;
+  justify-content:space-evenly;overflow:hidden;font-size:62px}}
+.artista{{display:flex;align-items:flex-start;gap:.5em;padding:.32em 0;border-bottom:2px solid {BRUNO}}}
+.artista:last-child{{border-bottom:none}}
+.idx{{flex:none;font-family:'PlexMono';font-weight:600;font-size:.27em;letter-spacing:.16em;color:{ARANCIO};padding-top:.55em}}
+.art{{flex:1;min-width:0}}
+.chi{{font-weight:700;font-size:1em;line-height:1;text-transform:uppercase;letter-spacing:.01em}}
+.cosa{{font-family:'PlexSerif';font-size:.43em;line-height:1.45;color:{BRUNO2};margin-top:.16em}}
+.ascolto{{flex:none;margin:22px 52px 0;display:flex;align-items:center;gap:26px;
+  border:3px solid {BRUNO};background:{CREMA2};padding:20px 26px}}
+.disco{{flex:none;width:96px;height:96px;border-radius:50%;position:relative;
+  background:repeating-radial-gradient(circle,{BRUNO} 0 3px,#4d3a2b 3px 5px)}}
+.disco::after{{content:'';position:absolute;inset:32px;border-radius:50%;background:{ARANCIO};
+  box-shadow:0 0 0 3px {BRUNO}}}
+.ascolto .et{{font-family:'PlexMono';font-weight:600;font-size:13px;letter-spacing:.22em;color:{ARANCIO}}}
+.ascolto .brano{{font-weight:700;font-size:32px;line-height:1.1;margin-top:6px}}
+.ascolto .nota{{font-family:'PlexSerif';font-size:22px;line-height:1.4;color:{BRUNO2};margin-top:6px}}
 """
     # Il riquadro sta qui e non sulla slide 6 per due motivi: e' la
     # continuazione naturale di «chi l'ha usata», e la slide 5 aveva un
@@ -353,18 +450,26 @@ def slide_artisti(scheda):
     a = scheda.get("da_ascoltare")
     ascolto = ""
     if a:
-        ascolto = (f'<div class="ascolto"><div class="et">DA ASCOLTARE</div>'
+        ascolto = (f'<div class="ascolto"><div class="disco"></div><div>'
+                   f'<div class="et">DA ASCOLTARE</div>'
                    f'<div class="brano">{a["artista"]}, «{a["brano"]}» ({a["anno"]})</div>'
-                   f'<div class="nota">{a["cosa"]}</div></div>')
+                   f'<div class="nota">{a["cosa"]}</div></div></div>')
+    # Con uno o due nomi (e' il caso di parecchie macchine italiane, che
+    # hanno un solo grande interprete documentato) la lista galleggiava
+    # in mezzo a mezza tavola vuota. Lo spazio che avanza lo prende una
+    # quarta foto: una riga ~210px per nome, il riquadro d'ascolto ~210.
+    n = len(scheda["chi_lusata"])
+    avanzo = 1350 - 72 - 28 - 116 - 64 - (212 if a else 0) - n * 210 - 30
+    banda = ""
+    if avanzo >= 220:
+        banda = _banda(scheda, 4, min(480, avanzo), stile="margin-top:22px")
     corpo = f"""
 {_testata(scheda)}
-<div class="corpo">
-  <div class="kicker">05 · CHI L'HA USATA</div>
-  <div class="titolone autofit" data-min="40" style="height:auto;max-height:160px">Dai laboratori ai dischi</div>
-  <div class="lista autofit" data-min="16">{righe}</div>
-  {ascolto}
-  {_pager(scheda, 5)}
-</div>
+{_intesta(5, "CHI L'HA USATA", "Dai laboratori ai dischi")}
+<div class="lista autofit" data-min="30">{righe}</div>
+{ascolto}
+{banda}
+{_pager(scheda, 5)}
 """
     return _pagina(corpo, css)
 
@@ -390,33 +495,33 @@ def _testo_chiusura(scheda):
 def slide_aneddoto(scheda):
     fonti = "".join(f"<div>· {f['titolo']} — verificata {f['data']}</div>" for f in scheda["fonti"])
     css = f"""
-.titolone{{font-size:64px}}
-.testo{{flex:none;font-family:'PlexSerif';font-size:29px;line-height:1.55;margin-top:26px;overflow:hidden;max-width:940px;max-height:330px}}
-.dinamo{{flex:none;display:flex;align-items:center;gap:26px;margin-top:34px;
-  background:{CREMA2};border:2px solid {BRUNO};padding:24px 30px}}
-.dinamo svg{{width:120px;height:120px;flex:none}}
-.balloon{{font-weight:500;font-size:30px;line-height:1.3}}
-.balloon .chi{{font-family:'PlexMono';font-weight:600;font-size:14px;letter-spacing:.18em;color:{ARANCIO};margin-bottom:8px}}
-.fonti{{flex:1 1 auto;font-family:'PlexMono';font-size:15px;line-height:1.7;color:#6b5138;margin-top:26px;overflow:hidden}}
-.fonti{{flex:none}}
-.cta{{flex:none;margin-top:auto;border-top:3px solid {ARANCIO};padding:16px 0 22px;
-  font-family:'PlexMono';font-weight:600;font-size:21px;line-height:1.4;color:{ARANCIO}}}
-.corpo{{padding-bottom:0}}
+.testo{{flex:none;max-height:420px}}
+/* L'avvertenza e' un'etichetta da manuale d'uso: bordo pieno, costa
+   arancio, l'automa che compila il catalogo. */
+.avviso{{flex:none;display:flex;align-items:center;gap:24px;margin:26px 52px 0;
+  background:{CREMA2};border:3px solid {BRUNO};border-left:16px solid {ARANCIO};padding:20px 26px 20px 22px}}
+.avviso svg{{width:104px;height:104px;flex:none}}
+.avviso .chi{{font-family:'PlexMono';font-weight:600;font-size:14px;letter-spacing:.22em;color:{ARANCIO};margin-bottom:8px}}
+.avviso .frase{{font-weight:500;font-size:31px;line-height:1.25}}
+.fonti{{flex:none;margin:auto 52px 0;padding-top:22px;font-family:'PlexMono';font-size:13px;line-height:1.6;color:#6b5138;overflow:hidden;max-height:150px}}
+.fonti b{{font-weight:600;letter-spacing:.18em}}
+/* La CTA e' la cosa che chi arriva dal reel deve vedere: grande, sopra
+   lo zoccolo, con la freccia che indica i commenti. */
+.cta{{flex:none;margin:22px 52px 0;display:flex;align-items:center;gap:24px;border-top:3px solid {ARANCIO};padding:20px 0 22px}}
+.cta .freccia{{flex:none;font-weight:700;font-size:64px;line-height:1;color:{ARANCIO}}}
+.cta .frase{{font-weight:700;font-size:44px;line-height:1.1;text-transform:uppercase}}
 """
     corpo = f"""
 {_testata(scheda)}
-<div class="corpo">
-  <div class="kicker">06 · L'ANEDDOTO</div>
-  <div class="titolone autofit" data-min="40" style="height:auto;max-height:160px">Per chiudere</div>
-  <div class="testo autofit" data-min="20">{scheda['aneddoto']}</div>
-  <div class="dinamo">
-    {_automa(ARANCIO, BRUNO)}
-    <div class="balloon"><div class="chi">{_etichetta_chiusura(scheda)}</div>{_testo_chiusura(scheda)}</div>
-  </div>
-  <div class="fonti autofit" data-min="11"><b>FONTI</b><br>{fonti}</div>
-  <div class="cta">{contenuti.cta(scheda)}</div>
+{_intesta(6, "L'ANEDDOTO", "Per chiudere")}
+<div class="testo autofit" data-min="20">{scheda['aneddoto']}</div>
+<div class="avviso">
+  {_automa(ARANCIO, BRUNO)}
+  <div><div class="chi">{_etichetta_chiusura(scheda)}</div><div class="frase">{_testo_chiusura(scheda)}</div></div>
 </div>
-<div class="zoccolo"><div class="motto">{contenuti.FIRMA}</div><div class="handle">@ELETTROFONI</div></div>
+<div class="fonti autofit" data-min="10"><b>FONTI</b><br>{fonti}</div>
+<div class="cta"><div class="freccia">↓</div><div class="frase autofit" data-min="26" style="height:auto;max-height:150px">{contenuti.cta(scheda)}</div></div>
+{_zoccolo()}
 """
     return _pagina(corpo, css)
 
@@ -425,48 +530,39 @@ def slide_aneddoto(scheda):
 
 def slide_storia(scheda):
     """Tavola verticale 1080x1920 per le Storie: stesso mondo visivo, ma
-    formato 9:16. La storia e' il megafono, il post e' la missione: se
+    formato 9:16. E' la riserva del reel (che di norma fa da storia): se
     fallisce non blocca niente (vedi pubblica.py)."""
-    foto_uri = (RADICE / scheda["foto"]["file"]).as_uri()
-    pos = scheda["foto"].get("posizione", "center")
     css = f"""
 body{{height:1920px}}
-.corpo{{padding:0 60px;justify-content:center;gap:0}}
-.kicker{{font-size:20px;letter-spacing:.22em}}
-.titolone{{font-size:82px;margin-top:20px}}
-.sottotitolo{{flex:none;font-weight:500;font-size:32px;margin-top:18px;color:#6b5138;line-height:1.32}}
-.fotostoria{{flex:none;position:relative;margin-top:46px;border:6px solid {BRUNO};background:#111}}
-.fotostoria img{{display:block;width:100%;height:640px;object-fit:cover;object-position:{pos}}}
-.etichetta-foto{{position:absolute;left:0;bottom:10px;background:{ARANCIO};color:{BRUNO};
-  font-family:'PlexMono';font-weight:600;font-size:18px;letter-spacing:.12em;padding:11px 20px}}
-.invito{{flex:none;margin-top:52px;text-align:center}}
-.invito .riga{{font-family:'PlexMono';font-weight:600;font-size:23px;letter-spacing:.15em;color:{ARANCIO}}}
-.invito .grande{{font-weight:700;font-size:54px;text-transform:uppercase;margin-top:14px;line-height:1.1}}
-.freccia{{font-size:60px;margin-top:18px;color:{ARANCIO}}}
-.testata{{padding:34px 60px}}
-.nome{{font-size:50px}}
-.zoccolo{{padding:26px 60px}}
-.motto{{font-size:19px}}
+.testata{{height:84px;padding:0 60px}}
+.nome{{font-size:38px}}
+.quadratino{{width:48px;height:48px}}
+.quadratino svg{{width:34px;height:34px}}
+.serie{{font-size:14px}}
+.blocco{{flex:none;display:flex;flex-direction:column;padding:34px 60px 44px}}
+.kicker{{flex:none;font-size:19px}}
+.nome-macchina{{flex:none;font-weight:700;font-size:126px;line-height:.94;text-transform:uppercase;letter-spacing:-.012em;margin-top:12px}}
+.gancio{{flex:none;font-family:'PlexSerif';font-style:italic;font-size:50px;line-height:1.28;margin-top:24px}}
+.sottotitolo{{flex:none;font-family:'PlexSerif';font-size:32px;line-height:1.45;color:{BRUNO2};margin-top:22px}}
+.invito{{flex:none;margin-top:44px;display:flex;align-items:center;gap:30px;border-top:3px solid {ARANCIO};padding-top:30px}}
+.invito .freccia{{flex:none;font-weight:700;font-size:96px;line-height:1;color:{ARANCIO}}}
+.invito .riga{{font-family:'PlexMono';font-weight:600;font-size:22px;letter-spacing:.2em;color:{ARANCIO}}}
+.invito .grande{{font-weight:700;font-size:58px;text-transform:uppercase;line-height:1.05;margin-top:8px}}
+.zoccolo{{padding:24px 60px}}
+.motto{{font-size:18px}}
 .handle{{font-size:27px}}
 """
     corpo = f"""
 {_testata(scheda)}
-<div class="corpo">
+{_banda(scheda, 0)}
+<div class="blocco">
   <div class="kicker">{scheda['anno']} · {scheda['luogo'].upper()}</div>
-  <div class="titolone autofit" data-min="48" style="height:auto;max-height:340px">{scheda['gancio']}</div>
+  <div class="nome-macchina autofit" data-min="60" style="height:auto;max-height:240px">{scheda['strumento']}</div>
+  <div class="gancio autofit" data-min="30" style="height:auto;max-height:260px">{scheda['gancio']}</div>
   <div class="sottotitolo">{scheda['sottotitolo']}</div>
-  <div class="fotostoria">
-    <img src="{foto_uri}">
-    <div class="etichetta-foto">SCHEDA {scheda['numero']:03d}</div>
-    <div class="credito">{_foto_credito(scheda)}</div>
-  </div>
-  <div class="invito">
-    <div class="riga">LA SCHEDA COMPLETA</div>
-    <div class="grande">nel profilo</div>
-    <div class="freccia">↓</div>
-  </div>
+  <div class="invito"><div class="freccia">↓</div><div><div class="riga">LA SCHEDA COMPLETA</div><div class="grande">nel profilo</div></div></div>
 </div>
-<div class="zoccolo"><div class="motto">{contenuti.FIRMA}</div><div class="handle">@ELETTROFONI</div></div>
+{_zoccolo()}
 """
     return _pagina(corpo, css)
 
@@ -477,8 +573,8 @@ SLIDES = [slide_copertina, slide_macchina, slide_inventore,
 
 # ------------------------------------------------------------- render ---
 
-def rendi_scheda(scheda, page):
-    out_dir = RADICE / "docs" / "tavole" / scheda["slug"]
+def rendi_scheda(scheda, page, out_dir=None):
+    out_dir = out_dir or (RADICE / "docs" / "tavole" / scheda["slug"])
     out_dir.mkdir(parents=True, exist_ok=True)
     for i, costruisci in enumerate(SLIDES, start=1):
         html = costruisci(scheda)
@@ -528,12 +624,17 @@ def main():
             print(f"[STOP] scheda '{s['slug']}' non valida: {errs}")
             raise SystemExit(1)
 
+    # ELETTROFONI_TAVOLE_OUT: cartella alternativa per le PROVE di layout,
+    # cosi' si puo' guardare una scheda gia' pubblicata senza toccare le
+    # tavole online (che devono restare uguali al post uscito).
+    out_base = os.environ.get("ELETTROFONI_TAVOLE_OUT")
     exe = os.environ.get("ELETTROFONI_CHROMIUM")  # override locale; in CI usa il chromium di Playwright
     with sync_playwright() as p:
         browser = p.chromium.launch(executable_path=exe, args=["--no-sandbox", "--force-color-profile=srgb"])
         page = browser.new_page(viewport={"width": 1080, "height": 1350})
         for s in schede:
-            rendi_scheda(s, page)
+            out = pathlib.Path(out_base) / s["slug"] if out_base else None
+            rendi_scheda(s, page, out)
         browser.close()
 
 
