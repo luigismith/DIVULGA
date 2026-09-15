@@ -2591,6 +2591,212 @@ SCHEDE = [
         "hashtags": ["#fenderrhodes", "#rhodespiano", "#haroldrhodes", "#pianoelettrico", "#anni70"],
         "verificata": True,
     },
+    {
+        "slug": "voxcontinental",
+        "numero": 37,
+        "serie": "GLI ORGANI",
+        "strumento": "Vox Continental",
+        "anno": "1962",
+        "luogo": "Dartford, Kent",
+        "costruttore": "Jennings Musical Industries (JMI)",
+        "specifiche": [
+            ("ANNO", "1962"),
+            ("COSTRUTTORE", "JMI"),
+            ("TASTI", "49, invertiti"),
+            ("REGISTRI", "6 drawbar"),
+        ],
+        "gancio": "I tasti bianchi sono neri e i neri sono bianchi: un organo pensato per essere riconosciuto anche spento",
+        "sottotitolo": "L'organo color arancio che i complessi beat portavano in tour perché pesava un terzo di un Hammond.",
+        "la_macchina": (
+            "È un organo transistorizzato, non elettromeccanico come "
+            "l'Hammond: niente ruote foniche, niente motore da spostare in "
+            "due. Il coperchio è arancio, sotto ci sono 49 tasti con i "
+            "colori scambiati, bianchi al posto dei neri, e sei drawbar "
+            "per mescolare le armoniche. Lo regge un treppiede cromato a Z "
+            "che si smonta in un minuto. Costava meno della metà di un "
+            "Hammond B-3 e pesava una frazione: per un gruppo che gira in "
+            "furgone, nel 1962, è la differenza fra portarselo dietro o "
+            "lasciarlo a casa."
+        ),
+        "inventore_nome": "Les Hills e Robert Whittaker",
+        "inventore": (
+            "La JMI di Tom Jennings vende amplificatori per chitarra, i "
+            "Vox AC30, e cerca un organo portatile da affiancarci. Il "
+            "progetto lo firmano due tecnici della casa, Les Hills e "
+            "Robert Whittaker: niente lampade come nell'Hammond, tutto a "
+            "transistor, così l'apparecchio sta su un treppiede invece "
+            "che su ruote. Lo presentano nell'agosto 1962, alla fiera del "
+            "Russell Hotel di Londra. Il prezzo di lancio è 225 ghinee, "
+            "sale a 250 l'anno dopo: la domanda supera quello che la "
+            "fabbrica di Dartford riesce a produrre."
+        ),
+        "come_funziona": (
+            "Dentro non ci sono ruote foniche ma dodici oscillatori a "
+            "transistor, uno per ogni nota della scala cromatica: "
+            "circuiti divisori li dimezzano ottava dopo ottava per "
+            "coprire tutta la tastiera. I sei drawbar davanti alle "
+            "ginocchia del tastierista aggiungono o tolgono armoniche, "
+            "come su un Hammond ma con la metà dei comandi. C'è un solo "
+            "interruttore per il vibrato, niente Leslie: il suono resta "
+            "secco, un po' nasale, e proprio per questo si sente sopra "
+            "due chitarre elettriche senza sforzo."
+        ),
+        "richiami": [
+            ("FIG. 1", "49 tasti a colori invertiti"),
+            ("FIG. 2", "6 drawbar"),
+            ("FIG. 3", "Oscillatori a transistor, uno per nota"),
+        ],
+        "chi_lusata": [
+            {"artista": "The Animals (Alan Price)", "nota": "Il riff che apre «The House of the Rising Sun», 1964", "ig": None},
+            {"artista": "Ray Manzarek (The Doors)", "nota": "L'intro di «Light My Fire», che riprende una invenzione di Bach", "ig": "thedoors"},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Light My Fire", "artista": "The Doors", "anno": "1967",
+                         "cosa": "L'assolo d'organo di Manzarek prima del testo: lui stesso ha raccontato di averlo preso da un'invenzione di Bach, suonata su un Continental."},
+        "aneddoto": (
+            "«The House of the Rising Sun» la incidono il 18 maggio 1964, "
+            "ai De Lane Lea Studios di Londra, in una sola ripresa: il "
+            "produttore Mickie Most dice che ci sono voluti 15 minuti. "
+            "Dura 4 minuti e 29 secondi, il doppio di un singolo pop del "
+            "periodo, e in casa discografica qualcuno storce il naso. "
+            "Most la fa uscire lo stesso, intera: il mercato ormai è "
+            "quello dei 45 giri a microsolco, dice, non serve più "
+            "tagliare. L'organo di Alan Price resta sotto la voce per "
+            "tutto il pezzo, a me sembra l'unico momento della canzone in "
+            "cui si respira."
+        ),
+        "avvertenza": "I tasti sono invertiti apposta, bianco al posto del nero: chi legge la tastiera a colpo d'occhio, su questa, sbaglia sempre la prima volta.",
+        "foto": {
+            "file": "assets/foto/voxcontinental/principale.jpg",
+            "autore": "Docrobbie",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        # Ordine = tavola: 2 lo strumento intero, 3 i drawbar da vicino,
+        # 4 l'interno sotto «come funziona».
+        "foto_extra": [
+            {"file": "assets/foto/voxcontinental/drawbars.jpg",
+             "autore": "Docrobbie", "licenza": "CC BY-SA 4.0", "fonte": "Wikimedia Commons",
+             "didascalia": "I sei drawbar: armoniche a sinistra, filtri a destra"},
+            {"file": "assets/foto/voxcontinental/interno.jpg",
+             "autore": "Starlingjon", "licenza": "Pubblico dominio", "fonte": "Wikimedia Commons",
+             "didascalia": "Dentro: gli oscillatori a transistor, uno per nota"},
+        ],
+        "fonti": [
+            {"titolo": "«Vox Continental» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Vox_Continental", "data": "2026-09-15"},
+            {"titolo": "«The Vox Continental portable transistor organ, early years, 1962-1964» — Jennings Organ Archive (voxac30.org.uk)",
+             "url": "https://www.voxac30.org.uk/vox_continental.html", "data": "2026-09-15"},
+            {"titolo": "«The House of the Rising Sun» — Wikipedia (EN), sessione di registrazione",
+             "url": "https://en.wikipedia.org/wiki/The_House_of_the_Rising_Sun", "data": "2026-09-15"},
+            {"titolo": "«Ray Manzarek on the Intro of Light My Fire» — NPR",
+             "url": "https://www.npr.org/2006/10/20/6353311/ray-manzarek-on-light-my-fire", "data": "2026-09-15"},
+        ],
+        "hashtags": ["#voxcontinental", "#organoelettrico", "#houseoftherisingsun", "#comboorgan", "#anni60"],
+        "verificata": True,
+    },
+    {
+        "slug": "phase90",
+        "numero": 38,
+        "serie": "GLI EFFETTI",
+        "strumento": "MXR Phase 90",
+        "anno": "1974",
+        "luogo": "Rochester, New York",
+        "costruttore": "MXR Innovations",
+        "specifiche": [
+            ("ANNO", "1974"),
+            ("COSTRUTTORE", "MXR Innovations"),
+            ("COMANDI", "1 manopola: Speed"),
+            ("CIRCUITO", "4 stadi in cascata"),
+        ],
+        "gancio": "Una scatola arancione con una sola manopola: il primo pedale che la MXR abbia mai venduto",
+        "sottotitolo": "Un phaser a quattro stadi in una scatola arancione: il primo pedale MXR, con una sola manopola per tutto il controllo.",
+        "la_macchina": (
+            "È un pedale phaser: sposta nel tempo una copia del segnale e "
+            "la rimescola con l'originale, creando due tacche nello "
+            "spettro che si spostano avanti e indietro, il suono che sale "
+            "e scende come un respiro. C'è un solo comando, la manopola "
+            "Speed, che decide quanto in fretta. La scatola è arancione, "
+            "il logo nelle prime versioni è scritto a mano, lo chiamano "
+            "'script logo', e nel 1977 diventa uno stampatello a blocchi. "
+            "È il primo pedale che l'azienda vende, e per anni tiene in "
+            "piedi il resto del catalogo."
+        ),
+        "inventore_nome": "Keith Barr",
+        "inventore": (
+            "Keith Barr è un tecnico quasi autodidatta di Rochester, New "
+            "York. Le fonti non concordano sull'anno: la Columbian, nel "
+            "necrologio del 2010, scrive che fonda MXR Innovations nel "
+            "1973 insieme a Michael Laiacona e Terry Sherwood; Wikipedia "
+            "mette il 1972, con Sherwood soltanto, e l'atto di "
+            "incorporazione porta la data 1974, lo stesso anno in cui "
+            "esce il Phase 90. Le prime schede dei pedali le incide lui "
+            "stesso, con la scritta «hand built by guitarists». Barr "
+            "muore nel 2010, a 60 anni."
+        ),
+        "come_funziona": (
+            "Il segnale passa per quattro stadi che lo sfasano di 90 "
+            "gradi ciascuno: in coppia creano due tacche nello spettro, "
+            "punti dove certe frequenze quasi spariscono. Un piccolo "
+            "oscillatore a bassa frequenza sposta quelle tacche avanti e "
+            "indietro, usando un transistor a effetto di campo come "
+            "resistenza variabile, non un potenziometro motorizzato ma "
+            "un componente che cambia valore da solo con la tensione. "
+            "Mescolato al segnale diretto, il risultato è quel suono che "
+            "ondeggia. La manopola Speed regola solo la velocità: niente "
+            "altro da girare."
+        ),
+        "richiami": [
+            ("FIG. 1", "4 stadi di sfasamento"),
+            ("FIG. 2", "Manopola Speed, unico comando"),
+            ("FIG. 3", "Logo a mano, poi a blocchi dal 1977"),
+        ],
+        "chi_lusata": [
+            {"artista": "Eddie Van Halen", "nota": "Lo sentì usare da Robin Trower a metà anni '70 e lo mise nell'assolo di «Eruption», 1978", "ig": "vanhalen"},
+            {"artista": "David Gilmour (Pink Floyd)", "nota": "Lo usa dal vivo nel tour di Dark Side of the Moon, 1974-75, e nelle registrazioni di Wish You Were Here", "ig": "pinkfloyd"},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Eruption", "artista": "Van Halen", "anno": "1978",
+                         "cosa": "Un minuto e 42 di assolo da solo: ascoltate come il phaser resta acceso sotto il tapping senza mai coprirlo."},
+        "aneddoto": (
+            "Nel 1984 la MXR chiude, i debiti sono troppi. Tre anni dopo "
+            "Jim Dunlop compra il marchio e rimette in produzione il "
+            "Phase 90 quasi tale e quale, stessa scatola arancione, "
+            "stessa manopola sola. La differenza vera è dentro, non "
+            "fuori: le prime versioni, col logo scritto a mano, montano "
+            "una resistenza da 24 kiloohm diversa da quella delle "
+            "versioni a blocchi del '77, e il suono cambia, più morbido "
+            "nel primo caso, più deciso nel secondo. A me piace di più il "
+            "logo a mano, quello delle origini, la versione che tutti "
+            "citano quando dicono «il vero Phase 90»."
+        ),
+        "avvertenza": "Il campo di oscillazione lo fissa un trimmer interno, non la manopola: se un esemplare suona storto, il problema è lì dentro, non sul pannello.",
+        "foto": {
+            "file": "assets/foto/phase90/principale.jpg",
+            "autore": "Roadside Guitars",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/phase90/evh.jpg",
+             "autore": "Art Bromage", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "La riedizione a firma Eddie Van Halen"},
+        ],
+        "fonti": [
+            {"titolo": "«MXR Phase 90» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/MXR_Phase_90", "data": "2026-09-15"},
+            {"titolo": "«MXR» — Wikipedia (EN), fondazione dell'azienda",
+             "url": "https://en.wikipedia.org/wiki/MXR", "data": "2026-09-15"},
+            {"titolo": "«Audio inventor Keith Barr, 60, dies in Hockinson» — The Columbian",
+             "url": "https://www.columbian.com/news/2010/sep/05/audio-inventor-keith-barr-60-dies-in-hockinson/", "data": "2026-09-15"},
+            {"titolo": "«Robert Keeley Dark Side review» — Gilmourish.com, uso live di David Gilmour",
+             "url": "https://www.gilmourish.com/?p=7285", "data": "2026-09-15"},
+            {"titolo": "«MXR Phase 90 Analysis» — ElectroSmash, schema del circuito",
+             "url": "https://electrosmash.mas-effects.com/mxr-phase90.html", "data": "2026-09-15"},
+        ],
+        "hashtags": ["#mxrphase90", "#pedaleeffetti", "#phaser", "#eddievanhalen", "#anni70"],
+        "verificata": True,
+    },
 ]
 
 
