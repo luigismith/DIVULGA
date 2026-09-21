@@ -340,6 +340,15 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   remux con `-use_editlist 0`); il budget video dell'account si esaurisce
   in ~12 container: UN tentativo, poi un'ora di attesa. Musica solo
   sintetizzata.
+- **Un rinnovo che non viene salvato non è un rinnovo** (21/09/2026). Il
+  token vive cifrato in `token.enc`; `token_ig.token_corrente()` lo
+  rinnova dopo 25 giorni e riscrive il file, ma solo `rinnova-token.yml`
+  (domenica 03:00 UTC) lo committava. Le run quotidiane rinnovavano in
+  memoria e buttavano via: due sere di fila «età 25 giorni: rinnovo…»,
+  «età 26 giorni: rinnovo…». Ora `scrivi_stato()` in `pubblica.py`
+  aggiunge `token.enc` allo stesso commit dello stato. Segnale da tenere
+  d'occhio nei log: se «rinnovo…» compare due giorni di seguito, il
+  salvataggio non funziona.
 - GitHub Pages: `docs/` su main, deploy via Actions (`configure-pages`
   con `enablement: true`). HEAD sulle immagini prima di chiamare l'API.
 - Download da Wikimedia/Flickr DAL CONTAINER: spesso rate-limitati

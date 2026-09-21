@@ -91,7 +91,15 @@ def leggi_stato():
 def scrivi_stato(stato, messaggio_commit):
     FILE_STATO.write_text(json.dumps(stato, indent=1, ensure_ascii=False) + "\n")
     # Il salvataggio dello stato è un commit: sopravvive alla morte della run.
-    subprocess.run(["git", "add", str(FILE_STATO)], check=True, cwd=RADICE)
+    # LEZIONE IMPARATA (21/09/2026): token_ig rinnova il token dopo 25 giorni
+    # e riscrive token.enc, ma solo rinnova-token.yml lo committava. Cosi'
+    # ogni run di pubblicazione e di reel rinnovava il token in memoria,
+    # lo usava, e lo BUTTAVA: il giorno dopo token.enc era ancora quello
+    # vecchio e si ricominciava («eta' 25 giorni: rinnovo…», poi «eta' 26
+    # giorni: rinnovo…»). Un rinnovo che non viene salvato non e' un
+    # rinnovo. Ora token.enc viaggia nello stesso commit dello stato: se
+    # non e' cambiato, git add non aggiunge niente.
+    subprocess.run(["git", "add", str(FILE_STATO), str(token_ig.FILE_TOKEN)], check=True, cwd=RADICE)
     diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=RADICE)
     if diff.returncode != 0:
         subprocess.run(["git", "commit", "-m", messaggio_commit], check=True, cwd=RADICE)
