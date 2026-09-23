@@ -3063,6 +3063,275 @@ SCHEDE = [
         "hashtags": ["#cs80", "#yamahacs80", "#vangelis", "#toto", "#sintetizzatore"],
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 45
+    {
+        "slug": "telharmonium",
+        "numero": 45,
+        "serie": "LE ORIGINI",
+        "strumento": "Telharmonium",
+        "anno": "1906",
+        "luogo": "Holyoke, Massachusetts",
+        "costruttore": "Thaddeus Cahill",
+        "specifiche": [
+            ("ANNO", "1906"),
+            ("PESO", "200 tonnellate"),
+            ("ALTERNATORI", "145"),
+            ("USCITA", "Cavi del telefono"),
+        ],
+        "gancio": "200 tonnellate di generatori in cantina, e la musica arriva a casa dal telefono. Siamo nel 1906",
+        "sottotitolo": "Thaddeus Cahill costru\u00ec un sintetizzatore grande come una fabbrica e ci vendette la musica in abbonamento.",
+        "la_macchina": "Un telaio d'acciaio lungo 18 metri, otto alberi che girano, 145 "
+            "alternatori che generano corrente alle frequenze delle note. Sopra "
+            "ci stanno due consolle con le tastiere e quasi 2.000 interruttori. "
+            "Altoparlanti non ce ne sono: il segnale entra nei cavi del telefono "
+            "e riemerge dall'altra parte dentro un corno di ottone, in un albergo "
+            "o in un ristorante che paga l'abbonamento. Per portarlo da Holyoke a "
+            "New York servirono 30 vagoni.",
+        "inventore_nome": "Thaddeus Cahill",
+        "inventore": "Cahill nasce in Iowa nel 1867 e deposita il brevetto nel 1897, "
+            "quando il telefono ha vent'anni e la radio non c'è ancora. L'idea "
+            "non era solo costruire lo strumento: era vendere la musica come si "
+            "vende la corrente, a contatore, dentro i fili che c'erano già. Ne "
+            "costruì tre. Il primo pesava 7 tonnellate ed era un prototipo per "
+            "trovare i soldi; il secondo è quello che andò a New York. La società "
+            "fallì nel 1914 e Cahill morì vent'anni dopo, a 66 anni.",
+        "come_funziona": "Ogni nota ha il suo alternatore: un rotore che gira dentro un campo "
+            "magnetico e produce corrente alternata alla frequenza giusta. Un la "
+            "a 440 hertz è un alternatore che fa 440 oscillazioni al secondo, e "
+            "basta. Per cambiare timbro si sommano più alternatori accordati "
+            "sugli armonici, dosandoli con dei trasformatori. È sintesi additiva, "
+            "la stessa che trent'anni dopo Hammond mette nelle ruote foniche "
+            "dell'organo. La corrente che esce è già segnale audio e va dritta "
+            "nel doppino.",
+        "richiami": [
+            ("FIG. 1", "145 alternatori, uno per nota"),
+            ("FIG. 2", "Armonici sommati: sintesi additiva"),
+            ("FIG. 3", "Uscita diretta sul doppino"),
+        ],
+        "chi_lusata": [
+            {"artista": "Mark Twain", "nota": "Lo ascolt\u00f2 nel dicembre 1906 e disse che avrebbe dovuto rimandare la propria morte", "ig": None},
+            {"artista": "Gli abbonati di New York", "nota": "Alberghi e ristoranti, con la musica che usciva da un corno di ottone appeso al soffitto", "ig": None},
+            {"artista": "Chi telefonava, senza volerlo", "nota": "Il segnale passava nelle linee vicine: la gente si trovava la musica dentro le proprie chiamate", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Dicembre 1906, Broadway all'altezza della 39esima strada. Mark Twain entra nella sala del Telharmonium, si siede vicino alla consolle e si fa suonare la marcia nuziale del Lohengrin. Poi dice una frase che il New York Times stampa il 23: il guaio di queste cose nuove e bellissime \u00e8 che si mettono di traverso ai tuoi programmi, e adesso non pu\u00f2 pi\u00f9 andarsene dal mondo finch\u00e9 non l'ha sentita ancora e ancora. Di quel suono non resta niente. Non esiste una sola registrazione del Telharmonium.",
+        "avvertenza": "Il suono esce dal doppino del telefono, non da un altoparlante. Se la linea \u00e8 quella sbagliata, il concerto lo sentono altri.",
+        "foto": {
+            "file": "assets/foto/telharmonium/principale.jpg",
+            "posizione": "center 45%",
+            "autore": "autore sconosciuto (1906)",
+            "licenza": "pubblico dominio",
+            "fonte": "Wikimedia Commons",
+        },
+        # Ordine = tavola: 2 la consolle, 3 il miscelatore di timbri,
+        # 4 la sala degli alternatori sotto \u00abcome funziona\u00bb.
+        "foto_extra": [
+            {"file": "assets/foto/telharmonium/consolle.png",
+             "autore": "Lazarnick", "licenza": "pubblico dominio", "fonte": "Wikimedia Commons",
+             "didascalia": "La consolle dei tasti"},
+            # Ritaglio alto: la banda e' larga e bassa, e centrata pescava
+            # le gambe dell'operaio e mezzo miscelatore. A 15% entrano la
+            # faccia e la cima della macchina, che e' il confronto di misura.
+            {"file": "assets/foto/telharmonium/miscelatore.png",
+             "posizione": "center 15%",
+             "autore": "Lazarnick", "licenza": "pubblico dominio", "fonte": "Wikimedia Commons",
+             "didascalia": "Il miscelatore dei timbri, e l'uomo che lo teneva acceso"},
+            {"file": "assets/foto/telharmonium/alternatori.png",
+             "autore": "Lazarnick", "licenza": "pubblico dominio", "fonte": "Wikimedia Commons",
+             "didascalia": "La sala degli alternatori"},
+        ],
+        "fonti": [
+            {"titolo": "\u00abTelharmonium\u00bb \u2014 Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Telharmonium", "data": "2026-09-23"},
+            {"titolo": "\u00abThaddeus Cahill\u00bb \u2014 Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Thaddeus_Cahill", "data": "2026-09-23"},
+            {"titolo": "\u00abThe Telharmonium\u00bb \u2014 120 Years of Electronic Music",
+             "url": "https://120years.net/the-telharmonium-thaddeus-cahill-usa-1897/", "data": "2026-09-23"},
+            {"titolo": "\u00abTwain and the Telephone\u00bb \u2014 The New York Times, 23/12/1906 (archivio twainquotes.com)",
+             "url": "http://www.twainquotes.com/19061223.html", "data": "2026-09-23"},
+        ],
+        "hashtags": ["#telharmonium", "#thaddeuscahill", "#marktwain", "#musicaelettronica", "#1906"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 46
+    {
+        "slug": "novachord",
+        "numero": 46,
+        "serie": "GLI ANTENATI",
+        "strumento": "Hammond Novachord",
+        "anno": "1939",
+        "luogo": "Chicago",
+        "costruttore": "Hammond Organ Company",
+        "specifiche": [
+            ("ANNO", "1939"),
+            ("VALVOLE", "163"),
+            ("POLIFONIA", "72 note"),
+            ("ESEMPLARI", "1.069"),
+        ],
+        "gancio": "Nel 1939 la Hammond mette in vendita un sintetizzatore polifonico da salotto. Non lo compra quasi nessuno",
+        "sottotitolo": "Un mobile di noce pieno di valvole, e una tastiera che suona tutte "
+            "le note insieme: il primo sintetizzatore polifonico di serie.",
+        "la_macchina": "Sembra un pianoforte da salotto: mobile di noce, gambe tornite, una "
+            "fila di manopole nere sopra la tastiera. Dentro ci sono le valvole, "
+            "e qui le fonti litigano. 163 per alcune, 169 per altre, e non ho "
+            "trovato nessuno che dica di averle contate. I tasti sono 72 e "
+            "suonano tutti insieme, senza nessun limite di polifonia. Pesa 230 "
+            "chili.",
+        "inventore_nome": "Laurens Hammond, John Hanert e C. N. Williams",
+        "inventore": "La Hammond aveva già l'organo a ruote foniche, uscito nel 1935, e "
+            "cercava qualcosa da vendere alle famiglie. Laurens Hammond lo "
+            "progetta con John Hanert e C. N. Williams, e il Novachord si sente "
+            "per la prima volta alla Fiera Mondiale di New York del 1939: Ferde "
+            "Grofè ci mette in piedi un'orchestra di quattro Novachord e un "
+            "organo Hammond, che suona tutti i giorni allo stand della Ford.",
+        "come_funziona": "Dodici oscillatori a valvole fanno le dodici note dell'ottava più "
+            "acuta. Sotto ci sono i divisori: ogni stadio dimezza la frequenza, e "
+            "dimezzare vuol dire scendere di un'ottava esatta. Cosi' tutte le "
+            "note sono sempre pronte senza pagare un oscillatore per tasto. È lo "
+            "stesso trucco che 35 anni dopo useranno le string machine come il "
+            "Crumar Performer. Il resto è già un sintetizzatore, con i filtri in "
+            "parallelo e un inviluppo che si sceglie con un commutatore a sette "
+            "posizioni.",
+        "richiami": [
+            ("FIG. 1", "12 oscillatori + divisori"),
+            ("FIG. 2", "163 valvole (o 169)"),
+            ("FIG. 3", "7 inviluppi a commutatore"),
+        ],
+        "chi_lusata": [
+            {"artista": "Max Steiner", "nota": "Il Novachord \u00e8 dentro la colonna sonora di \u00abVia col vento\u00bb (1939)", "ig": None},
+            {"artista": "Ferde Grof\u00e9", "nota": "Alla Fiera Mondiale del 1939 dirige un'orchestra di quattro Novachord", "ig": None},
+            {"artista": "Il cinema di paura americano", "nota": "\u00abRebecca\u00bb, \u00abIl mistero del falco\u00bb e poi \u00abAi confini della realt\u00e0\u00bb", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "La Hammond lo pensa per il salotto di casa, come il suo organo. Ma "
+            "un mobile pieno di valvole accese non resta accordato da solo, e chi "
+            "lo comprava doveva farlo rimettere a posto. Nel 1942 la produzione "
+            "si ferma per un motivo che con la musica non c'entra niente: le "
+            "valvole servono alla guerra. Dopo la guerra nessuno la riapre. In "
+            "tre anni ne erano uscite 1.069, o 1.096 — anche su questo le fonti "
+            "non vanno d'accordo. Oggi se ne conoscono meno di 200.",
+        "avvertenza": "Le valvole scaldano e l'accordatura se ne va. Accendetelo mezz'ora prima, e mettete in conto di ritoccarla a met\u00e0 serata.",
+        "foto": {
+            "file": "assets/foto/novachord/principale.jpg",
+            "autore": "Hollow Sun",
+            "licenza": "CC BY 3.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/novachord/oscillatori.jpg",
+             "autore": "Hollow Sun", "licenza": "CC BY 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "I dodici oscillatori master"},
+            {"file": "assets/foto/novachord/valvole.jpg",
+             "autore": "Hollow Sun", "licenza": "CC BY 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Dentro il Novachord"},
+            {"file": "assets/foto/novachord/divisori.jpg",
+             "autore": "Hollow Sun", "licenza": "CC BY 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "La fila dei divisori, valvola per valvola"},
+        ],
+        "fonti": [
+            {"titolo": "\u00abNovachord\u00bb \u2014 Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Novachord", "data": "2026-09-23"},
+            {"titolo": "\u00abThe Novachord\u00bb \u2014 120 Years of Electronic Music",
+             "url": "https://120years.net/the-novachordl-hammond-c-n-williamsusa1939/", "data": "2026-09-23"},
+            {"titolo": "\u00abNovachord: Hammond\u2019s Polyphonic Synthesizer\u00bb \u2014 GreatSynthesizers",
+             "url": "https://greatsynthesizers.com/en/general/novachord-hammonds-polyphonic-synthesizer-from-1938/", "data": "2026-09-23"},
+            {"titolo": "\u00abNovachord\u00bb \u2014 Soniccouture (scheda storica e colonne sonore)",
+             "url": "https://www.soniccouture.com/en/products/24-vintage/g21-novachord/", "data": "2026-09-23"},
+        ],
+        "hashtags": ["#novachord", "#hammond", "#1939", "#sintetizzatore", "#valvole"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 47
+    {
+        "slug": "clavinet",
+        "numero": 47,
+        "serie": "GLI ELETTROMECCANICI",
+        "strumento": "Hohner Clavinet D6",
+        "anno": "1971",
+        "luogo": "Trossingen, Germania",
+        "costruttore": "Hohner",
+        "specifiche": [
+            ("MODELLO D6", "1971"),
+            ("CORDE", "60, con martelletti"),
+            ("TASTI", "60 (fa1-mi6)"),
+            ("ESEMPLARI", "~38.000"),
+        ],
+        "gancio": "Sessanta corde pizzicate contro un'incudine. Da qui esce tutto il funky degli anni Settanta",
+        "sottotitolo": "Ernst Zacharias voleva rifare un clavicordo. Gli \u00e8 venuta fuori la tastiera pi\u00f9 ritmica mai costruita.",
+        "la_macchina": "Sotto i tasti c'è un'arpa di metallo con 60 corde d'acciaio in "
+            "diagonale. Premi un tasto e un tampone di gomma schiaccia la corda "
+            "contro un'incudine metallica: la corda si divide in due, la parte "
+            "che vibra passa davanti a due pickup magnetici, l'altra resta muta. "
+            "Finché tieni il tasto la corda suona; appena lo molli una treccia di "
+            "filato la smorza di colpo. Non c'è nessuna cassa. Il suono esiste "
+            "solo dopo l'amplificatore, e sei interruttori a bilanciere scelgono "
+            "il timbro e i pickup.",
+        "inventore_nome": "Ernst Zacharias",
+        "inventore": "Zacharias nasce nel 1924 a Neum\u00fcnster, studia ingegneria elettrica ed entra alla Hohner nel 1954. Prima del Clavinet aveva gi\u00e0 fatto il Cembalet e il Pianet, due tastiere a lamelle. Il primo prototipo, il Claviphon, \u00e8 del 1961 e nasce per rifare un clavicordo in versione moderna. Il problema era che Zacharias suonava pi\u00f9 forte di quanto il meccanismo reggesse: mise l'incudine fissa sotto la corda, e da quel cambio venne fuori uno strumento che il clavicordo non lo imita affatto.",
+        "come_funziona": "È una chitarra elettrica con la tastiera. La corda non viene "
+            "pizzicata ma schiacciata contro l'incudine, quindi il punto in cui "
+            "si accorcia è sempre lo stesso e l'attacco è secco uguale a ogni "
+            "nota. I pickup sono due, come su una chitarra, e con gli "
+            "interruttori si sceglie quale usare e con che fase. Invertendone uno "
+            "certe frequenze si annullano e il suono si assottiglia. La dinamica "
+            "c'è tutta, perché il volume dipende solo da quanto forte batti il "
+            "tasto.",
+        "richiami": [
+            # «Martelletto» era il termine del Rhodes, non del Clavinet:
+            # qui il tasto non batte, schiaccia. La legenda diceva una
+            # cosa e il testo accanto ne diceva un'altra.
+            ("FIG. 1", "60 corde, tampone e incudine"),
+            ("FIG. 2", "Due pickup, fase invertibile"),
+            ("FIG. 3", "Smorzatore di filato"),
+        ],
+        "chi_lusata": [
+            {"artista": "Stevie Wonder", "nota": "\u00abSuperstition\u00bb (1972), otto piste di Clavinet sovrapposte", "ig": None},
+            {"artista": "Herbie Hancock", "nota": "Tutto \u00abHead Hunters\u00bb (1973) sta in piedi su questo timbro", "ig": "herbiehancock"},
+            {"artista": "Billy Preston", "nota": "\u00abOuta-Space\u00bb (1972), dove il Clavinet fa da solista", "ig": None},
+            {"artista": "Bob Marley", "nota": "\u00abCould You Be Loved\u00bb (1980): lo stesso strumento, met\u00e0 velocit\u00e0", "ig": "bobmarley"},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Superstition", "artista": "Stevie Wonder", "anno": "1972",
+                         "cosa": "Togliete mentalmente batteria e fiati: quello che resta \u00e8 tutto Clavinet, registrato pi\u00f9 volte e impilato."},
+        "aneddoto": "Il disco che ha reso famoso il Clavinet non \u00e8 suonato col Clavinet famoso. \u00abSuperstition\u00bb esce nel 1972, quando il D6 \u00e8 gi\u00e0 in commercio da un anno, ma Stevie Wonder lo registr\u00f2 su un modello C, pi\u00f9 vecchio. Il D6 \u00e8 diventato lo standard dopo, e oggi chi cerca \u00abquel suono\u00bb compra quello. In vent'anni la Hohner ne ha fatti circa 38.000, contro i 250.000 Rhodes dello stesso periodo. Alla chiusura, nel 1982, l'attrezzatura per costruirli \u00e8 stata distrutta.",
+        "avvertenza": "La corda suona finch\u00e9 tenete gi\u00f9 il tasto e tace appena lo mollate. Il ritmo non lo fa il pezzo: lo fanno le vostre dita che si staccano.",
+        "foto": {
+            "file": "assets/foto/clavinet/targa.jpg",
+            "posizione": "center 25%",
+            "autore": "Marc Wathieu",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        # LEZIONE IMPARATA (23/09/2026): la prima foto della 2 era il
+        # Clavinet aperto sopra un Rhodes. Vera, e la didascalia lo diceva,
+        # ma nella banda la scritta piu' leggibile era «Rhodes»: su una
+        # scheda che parla di un'altra macchina l'occhio legge il marchio
+        # sbagliato. Buttata. E la foto del museo prometteva «i martelletti
+        # e la targa»: nella foto intera ci sono tutti e due, ai due
+        # estremi, e la banda ne mostrava solo i fili in mezzo. La
+        # didascalia si scrive su quello che entra nel RITAGLIO, non su
+        # quello che c'e' nel file.
+        "foto_extra": [
+            {"file": "assets/foto/clavinet/pannello.jpg",
+             "posizione": "center 36%",
+             "autore": "Henry Zbyszynski", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "I bilancieri del timbro, qui su un E7"},
+            {"file": "assets/foto/clavinet/museo.jpg",
+             "posizione": "center bottom",
+             "autore": "guiltyx", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Le leve dei tasti, viste da dentro il mobile"},
+        ],
+        "fonti": [
+            {"titolo": "\u00abClavinet\u00bb \u2014 Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Clavinet", "data": "2026-09-23"},
+            {"titolo": "\u00abErnst Zacharias & The Hohner Clavinet\u00bb \u2014 Sound On Sound",
+             "url": "https://www.soundonsound.com/people/ernst-zacharias-hohner-clavinet", "data": "2026-09-23"},
+            {"titolo": "\u00abThe Clavinet Chronicles\u00bb \u2014 Reverb News (sul modello usato in \u00abSuperstition\u00bb)",
+             "url": "https://reverb.com/news/history-of-the-clavinet", "data": "2026-09-23"},
+        ],
+        "hashtags": ["#clavinet", "#hohner", "#funk", "#steviewonder", "#anni70"],
+        "verificata": True,
+    },
 ]
 
 
@@ -3204,6 +3473,11 @@ def valida_scheda(scheda):
         errori.append(f"gancio {len(scheda['gancio'])} caratteri (max {MAX_GANCIO})")
     if not scheda.get("avvertenza") and not scheda.get("battuta_dinamo"):
         errori.append("manca la riga di chiusura (avvertenza)")
+    # Il timbro del reel non ha un ripiego silenzioso: o la macchina sta in
+    # VOCE_SCHEDA, o la scheda non passa. Vedi il commento in suoni.py.
+    import suoni  # solo libreria standard, nessun ciclo di import
+    if scheda["slug"] not in suoni.VOCE_SCHEDA:
+        errori.append("nessun timbro in suoni.VOCE_SCHEDA: il reel userebbe il ripiego")
     if len(scheda.get("battuta_dinamo", "")) > MAX_BATTUTA:
         errori.append(f"battuta {len(scheda['battuta_dinamo'])} caratteri (max {MAX_BATTUTA})")
     if len(scheda.get("avvertenza", "")) > MAX_AVVERTENZA:
