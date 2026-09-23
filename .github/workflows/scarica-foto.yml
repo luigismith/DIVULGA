@@ -34,5 +34,17 @@ jobs:
           git config user.name "elettrofoni-bot"
           git config user.email "actions@users.noreply.github.com"
           git add "${{ inputs.dest }}"
-          git diff --cached --quiet || git commit -m "foto: ${{ inputs.dest }}"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "foto: ${{ inputs.dest }}"
+          # LEZIONE IMPARATA (23/09/2026): con un push secco due scarichi
+          # lanciati insieme si scontrano e il secondo muore per
+          # non-fast-forward, quindi si potevano fare solo in fila. Lo
+          # stesso riallinea-e-riprova che sta in pubblica.yml permette di
+          # scaricare le foto di una scheda tutte insieme.
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            echo "push respinto, mi riallineo (tentativo $i)"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            sleep $((i * 3))
+          done
+          echo "push fallito dopo 5 tentativi"; exit 1
