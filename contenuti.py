@@ -3202,7 +3202,13 @@ SCHEDE = [
             {"artista": "Ferde Grof\u00e9", "nota": "Alla Fiera Mondiale del 1939 dirige un'orchestra di quattro Novachord", "ig": None},
             {"artista": "Il cinema di paura americano", "nota": "\u00abRebecca\u00bb, \u00abIl mistero del falco\u00bb e poi \u00abAi confini della realt\u00e0\u00bb", "ig": None},
         ],
-        "menzioni_extra": [],
+        "menzioni_extra": [
+            # Verificato il 23/09/2026: hammondorganco.com linka
+            # @officialhammondorgan nel piede di pagina, e il profilo si
+            # presenta come Hammond Organ USA.
+            {"ig": "officialhammondorgan",
+             "riga": "La Hammond esiste ancora e fa ancora organi: è @officialhammondorgan."},
+        ],
         "aneddoto": "La Hammond lo pensa per il salotto di casa, come il suo organo. Ma "
             "un mobile pieno di valvole accese non resta accordato da solo, e chi "
             "lo comprava doveva farlo rimettere a posto. Nel 1942 la produzione "
