@@ -50,11 +50,22 @@ def main(giorni=10):
     coda = [s for s in contenuti.SCHEDE if s["verificata"] and s["slug"] not in gia]
 
     oggi = dt.datetime.now(ROMA).date()
+    # LEZIONE IMPARATA (23/09/2026): la prima scheda della coda usciva
+    # «domani» per definizione (days=i+1). Ma prima delle 18 la giornata di
+    # oggi non ha ancora pubblicato, quindi la prima scheda esce OGGI, e
+    # questa lista diceva al proprietario di seguire un account entro
+    # domani mentre il tag partiva fra cinque ore. Una lista di preavviso
+    # che arriva tardi e' peggio di nessuna lista: sembra di essere a posto.
+    # Adesso la prima data si deduce dall'ultimo post, non si presume.
+    ultimo = max((dt.datetime.fromisoformat(p["quando"]).astimezone(ROMA).date()
+                  for p in stato["pubblicati"]), default=None)
+    primo = oggi + dt.timedelta(days=1) if ultimo == oggi else oggi
+
     # Un account si segue UNA volta sola, anche se lo taggano tre schede:
     # la lista utile e' quella senza doppioni, ordinata per quando serve.
     visti, elenco = set(), []
     for i, s in enumerate(coda[:giorni]):
-        quando = oggi + dt.timedelta(days=i + 1)
+        quando = primo + dt.timedelta(days=i)
         for h, chi in handle_di(s):
             if h in visti:
                 continue
@@ -64,7 +75,10 @@ def main(giorni=10):
     print("DA SEGUIRE PRIMA CHE ESCA LA SCHEDA CHE LI TAGGA")
     print("=" * 72)
     for quando, h, chi, strumento in elenco:
-        print(f"  {quando:%d/%m}  https://www.instagram.com/{h}/")
+        # «OGGI» e non una data: fra la scheda di oggi e quella di domani
+        # c'e' tutta la differenza che questa lista serve a segnalare.
+        etichetta = "OGGI " if quando == oggi else f"{quando:%d/%m}"
+        print(f"  {etichetta}  https://www.instagram.com/{h}/")
         print(f"         {chi} — scheda «{strumento}»")
     print("=" * 72)
     print(f"{len(elenco)} account da seguire, uno per riga, nessun doppione.")
