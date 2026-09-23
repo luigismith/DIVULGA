@@ -56,6 +56,17 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   ci sono il pannello, l'interno, il retro.
   Regola generale: quando un layout ripete un elemento, controllare che
   ripeta la STRUTTURA e non il CONTENUTO.
+  **E la didascalia si scrive su quello che entra nel RITAGLIO, non su
+  quello che c'è nel file.** Tre didascalie su tre schede nuove
+  raccontavano cose vere ma invisibili: «i martelletti e la targa» stavano
+  ai due estremi di una foto verticale e nella banda si vedevano solo i
+  fili in mezzo; il miscelatore del Telharmonium era tagliato a mezza
+  gamba. Si guarda la tavola generata, non il file sorgente. Stessa
+  faccenda col marchio sbagliato: una foto del Clavinet aperto sopra un
+  Rhodes è vera, ma nella banda la scritta più leggibile era «Rhodes», e
+  l'occhio legge il marchio prima della didascalia. Su una scheda, la
+  macchina più riconoscibile nella foto deve essere quella di cui si
+  parla.
 - **La decorazione non divide lo spazio col testo da leggere.** Il
   numerone di copertina a 200px arrivava dentro il gancio e il titolo
   passava sopra la sua ombra; il timbro «SCHEDA 023» sulla foto finiva
@@ -349,6 +360,18 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   aggiunge `token.enc` allo stesso commit dello stato. Segnale da tenere
   d'occhio nei log: se «rinnovo…» compare due giorni di seguito, il
   salvataggio non funziona.
+- **Un ripiego che non lascia traccia non è un ripiego, è una bugia che
+  funziona.** `suoni.VOCE_SCHEDA.get(slug, "sega")` copriva in silenzio le
+  schede senza timbro: erano 29 su 47, e per mesi i reel del Rhodes,
+  dell'Optigan, dello Speak & Spell e di altri 26 sono usciti tutti con lo
+  stesso dente di sega mentre qui sopra c'era scritto «il timbro della
+  famiglia di quella macchina». Nessun errore, nessun log, niente da
+  guardare. È il rovescio della regola 10: se una verifica non può dire di
+  no non è una verifica, e se un valore di ripiego non si vede da nessuna
+  parte non lo controllerà mai nessuno. Adesso `valida_scheda` rifiuta una
+  scheda che non ha un timbro suo. Prima di scrivere un `.get(x, default)`
+  chiedersi chi se ne accorgerà, e se la risposta è nessuno, farlo
+  diventare un errore.
 - GitHub Pages: `docs/` su main, deploy via Actions (`configure-pages`
   con `enablement: true`). HEAD sulle immagini prima di chiamare l'API.
 - Download da Wikimedia/Flickr DAL CONTAINER: spesso rate-limitati
