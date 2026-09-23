@@ -189,23 +189,74 @@ def voce_studio(f, n):
     return [s * e for s, e in zip(out, env)]
 
 
+def voce_corda(f, n):
+    """Clavinet e Rhodes: qualcosa di teso viene messo in moto e lasciato
+    morire, e un pickup lo ascolta. Corda pizzicata alla Karplus-Strong —
+    un soffio corto dentro una linea di ritardo lunga un periodo, e a ogni
+    giro il filo si smorza un po'. Nessuna delle altre voci lo faceva:
+    prima di oggi il reel del Rhodes suonava con un dente di sega."""
+    rnd = random.Random(int(f))
+    # arrotondo, non tronco: troncare accorcia sempre la linea e quindi
+    # alza sempre la nota, e su un motivo che salta di un'ottava lo
+    # scarto si sente come una stonatura.
+    lung = max(2, int(round(SR / f)))
+    linea = [rnd.random() * 2 - 1 for _ in range(lung)]
+    out, i = [], 0
+    for _ in range(n):
+        v = linea[i]
+        linea[i] = (v + linea[(i + 1) % lung]) * 0.5 * 0.996
+        out.append(v)
+        i = (i + 1) % lung
+    env = _adsr(n, 0.001, 0.35, 0.25, 0.25)
+    return [_sat(s * e * 1.3) for s, e in zip(out, env)]
+
+
 VOCI = {
     "sega": voce_sega, "acido": voce_acido, "fm": voce_fm, "organo": voce_organo,
     "nastro": voce_nastro, "onda": voce_onda, "giocattolo": voce_giocattolo,
-    "studio": voce_studio,
+    "studio": voce_studio, "corda": voce_corda,
 }
 
 # Quale timbro per quale macchina. Le percussioni non sono una voce a sé:
 # la 808 e la LM-1 hanno la batteria accesa e la voce tenuta bassa.
+# LEZIONE IMPARATA (23/09/2026): questa tabella aveva 18 voci su 47 schede,
+# e `VOCE_SCHEDA.get(slug, "sega")` copriva il buco in silenzio. Risultato:
+# il reel del Rhodes, quello dell'Optigan, quello dello Speak & Spell e altri
+# 26 uscivano tutti con lo stesso dente di sega, mentre CLAUDE.md prometteva
+# «il timbro della famiglia di quella macchina». Un ripiego che non si vede
+# non e' un ripiego, e' una bugia con l'aria di funzionare: adesso
+# valida_scheda rifiuta una scheda che non compare qui.
 VOCE_SCHEDA = {
-    "minimoog": "sega", "tr808": "sega", "theremin": "onda", "mellotron": "nastro",
-    "dx7": "fm", "fairlight": "fm", "tb303": "acido", "hammond": "organo",
-    "ondes": "onda", "arp2600": "sega", "vcs3": "studio", "farfisa": "organo",
-    "trautonium": "onda", "fonologia": "studio", "stylophone": "giocattolo",
-    "spaceecho": "sega", "ms20": "sega", "lm1": "sega",
+    # sottrattivi analogici
+    "minimoog": "sega", "arp2600": "sega", "ms20": "sega", "prophet5": "sega",
+    "juno106": "sega", "jupiter8": "sega", "cs80": "sega", "synthex": "sega",
+    "synket": "sega", "novachord": "sega", "spaceecho": "sega",
+    "tb303": "acido",
+    # digitali: FM, campionatori, tavole d'onda
+    "dx7": "fm", "fairlight": "fm", "synclavier": "fm", "emulator": "fm",
+    "ppgwave": "fm",
+    # divisori d'ottava: organi, string machine, ruote foniche
+    "hammond": "organo", "farfisa": "organo", "voxcontinental": "organo",
+    "solina": "organo", "crumar": "organo", "vp330": "organo",
+    "telharmonium": "organo", "univibe": "organo",
+    # nastro e dischi ottici
+    "mellotron": "nastro", "optigan": "nastro",
+    # una nota sola che scivola
+    "theremin": "onda", "ondes": "onda", "trautonium": "onda",
+    "ondioline": "onda", "buchlaeasel": "onda",
+    # elettromeccanici a corda o barretta
+    "rhodes": "corda", "clavinet": "corda",
+    # generatori di laboratorio e studio
+    "vcs3": "studio", "fonologia": "studio", "h910": "studio",
+    # elettronica da pochi soldi
+    "stylophone": "giocattolo", "speakspell": "giocattolo",
+    # ritmiche: la voce sta sotto, comanda la batteria (vedi CON_BATTERIA)
+    "tr808": "sega", "tr909": "sega", "tr606": "sega", "lm1": "sega",
+    "dmx": "sega", "simmonssds5": "sega", "mpc60": "sega", "sp1200": "sega",
 }
-CON_BATTERIA = {"tr808", "lm1", "tb303", "ms20", "spaceecho"}
-CON_ECO = {"spaceecho", "vcs3", "fonologia", "theremin"}
+CON_BATTERIA = {"tr808", "tr909", "tr606", "lm1", "dmx", "simmonssds5",
+                "mpc60", "sp1200", "tb303", "ms20", "spaceecho"}
+CON_ECO = {"spaceecho", "vcs3", "fonologia", "theremin", "h910"}
 
 
 # ------------------------------------------------------------ percussioni ---
