@@ -41,10 +41,14 @@ jobs:
           # non-fast-forward, quindi si potevano fare solo in fila. Lo
           # stesso riallinea-e-riprova che sta in pubblica.yml permette di
           # scaricare le foto di una scheda tutte insieme.
-          for i in 1 2 3 4 5; do
+          # Con DIECI run in parallelo cinque tentativi non sono bastati:
+          # uno si e' arreso mentre gli altri nove si passavano il ramo.
+          # Ora otto tentativi e un'attesa sfasata a caso, cosi' due run
+          # respinti insieme non tornano a bussare nello stesso istante.
+          for i in 1 2 3 4 5 6 7 8; do
             git push && exit 0
             echo "push respinto, mi riallineo (tentativo $i)"
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
-            sleep $((i * 3))
+            sleep $(( i * 3 + RANDOM % 5 ))
           done
-          echo "push fallito dopo 5 tentativi"; exit 1
+          echo "push fallito dopo 8 tentativi"; exit 1
