@@ -372,6 +372,17 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   scheda che non ha un timbro suo. Prima di scrivere un `.get(x, default)`
   chiedersi chi se ne accorgerà, e se la risposta è nessuno, farlo
   diventare un errore.
+- **Il checkout del container può essere vecchio, e CLAUDE.md con lui**
+  (24/09/2026). Alla ripresa di una sessione il repo si è ritrovato su un
+  commit di giorni prima, in clone superficiale (`--depth`): `git pull
+  --ff-only` rifiutava con «Not possible to fast-forward» e `merge-base`
+  non trovava antenati comuni, perché l'innesto del clone taglia la storia
+  condivisa. Sul remoto non mancava niente — il lavoro era tutto lì — ma
+  il file letto in memoria all'avvio era la versione vecchia di CLAUDE.md,
+  e quello non lo segnala nessuno: si lavora con le regole di ieri senza
+  accorgersene. Prima di scrivere qualsiasi cosa in una sessione ripresa:
+  `git fetch --unshallow origin <branch>` (se serve) e `git pull --ff-only`,
+  poi controllare che una regola aggiunta di recente sia ancora nel file.
 - GitHub Pages: `docs/` su main, deploy via Actions (`configure-pages`
   con `enablement: true`). HEAD sulle immagini prima di chiamare l'API.
 - Download da Wikimedia/Flickr DAL CONTAINER: spesso rate-limitati
