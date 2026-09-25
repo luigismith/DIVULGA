@@ -231,6 +231,7 @@ VOCE_SCHEDA = {
     "minimoog": "sega", "arp2600": "sega", "ms20": "sega", "prophet5": "sega",
     "juno106": "sega", "jupiter8": "sega", "cs80": "sega", "synthex": "sega",
     "synket": "sega", "novachord": "sega", "spaceecho": "sega",
+    "arpodyssey": "sega",
     "tb303": "acido",
     # digitali: FM, campionatori, tavole d'onda
     "dx7": "fm", "fairlight": "fm", "synclavier": "fm", "emulator": "fm",
