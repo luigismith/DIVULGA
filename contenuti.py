@@ -3406,6 +3406,229 @@ SCHEDE = [
         "hashtags": ["#arpodyssey", "#sintetizzatore", "#musicaelettronica", "#anni70", "#synth"],
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 49
+    {
+        "slug": "phase90",
+        "numero": 49,
+        "serie": "GLI EFFETTI",
+        "strumento": "MXR Phase 90",
+        "anno": "1974",
+        "luogo": "Rochester, New York",
+        "costruttore": "MXR Innovations",
+        "specifiche": [
+            ("ANNO", "1974"),
+            ("COSTRUTTORE", "MXR Innovations"),
+            ("COMANDI", "1 manopola: Speed"),
+            ("CIRCUITO", "4 stadi in cascata"),
+        ],
+        "gancio": "Una scatola arancione con una sola manopola: il primo pedale che la MXR abbia mai venduto",
+        "sottotitolo": "Un phaser a quattro stadi in una scatola arancione: il primo pedale MXR, con una sola manopola per tutto il controllo.",
+        "la_macchina": (
+            "È un pedale phaser: sposta nel tempo una copia del segnale e "
+            "la rimescola con l'originale, creando due tacche nello "
+            "spettro che si spostano avanti e indietro, il suono che sale "
+            "e scende come un respiro. C'è un solo comando, la manopola "
+            "Speed, che decide quanto in fretta. La scatola è arancione, "
+            "il logo nelle prime versioni è scritto a mano, lo chiamano "
+            "'script logo', e nel 1977 diventa uno stampatello a blocchi. "
+            "È il primo pedale che l'azienda vende, e per anni tiene in "
+            "piedi il resto del catalogo."
+        ),
+        "inventore_nome": "Keith Barr",
+        "inventore": (
+            "Keith Barr è un tecnico quasi autodidatta di Rochester, New "
+            "York. Le fonti non concordano sull'anno: la Columbian, nel "
+            "necrologio del 2010, scrive che fonda MXR Innovations nel "
+            "1973 insieme a Michael Laiacona e Terry Sherwood; Wikipedia "
+            "mette il 1972, con Sherwood soltanto, e l'atto di "
+            "incorporazione porta la data 1974, lo stesso anno in cui "
+            "esce il Phase 90. Le prime schede dei pedali le incide lui "
+            "stesso, con la scritta «hand built by guitarists». Barr "
+            "muore nel 2010, a 60 anni."
+        ),
+        "come_funziona": (
+            "Il segnale passa per quattro stadi che lo sfasano di 90 "
+            "gradi ciascuno: in coppia creano due tacche nello spettro, "
+            "punti dove certe frequenze quasi spariscono. Un piccolo "
+            "oscillatore a bassa frequenza sposta quelle tacche avanti e "
+            "indietro, usando un transistor a effetto di campo come "
+            "resistenza variabile, non un potenziometro motorizzato ma "
+            "un componente che cambia valore da solo con la tensione. "
+            "Mescolato al segnale diretto, il risultato è quel suono che "
+            "ondeggia. La manopola Speed regola solo la velocità: niente "
+            "altro da girare."
+        ),
+        "richiami": [
+            ("FIG. 1", "4 stadi di sfasamento"),
+            ("FIG. 2", "Manopola Speed, unico comando"),
+            ("FIG. 3", "Logo a mano, poi a blocchi dal 1977"),
+        ],
+        "chi_lusata": [
+            {"artista": "Eddie Van Halen", "nota": "Lo sentì usare da Robin Trower a metà anni '70 e lo mise nell'assolo di «Eruption», 1978", "ig": "vanhalen"},
+            {"artista": "David Gilmour (Pink Floyd)", "nota": "Lo usa dal vivo nel tour di Dark Side of the Moon, 1974-75, e nelle registrazioni di Wish You Were Here", "ig": "pinkfloyd"},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Eruption", "artista": "Van Halen", "anno": "1978",
+                         "cosa": "Un minuto e 42 di assolo da solo: ascoltate come il phaser resta acceso sotto il tapping senza mai coprirlo."},
+        "aneddoto": (
+            "Nel 1984 la MXR chiude, i debiti sono troppi. Tre anni dopo "
+            "Jim Dunlop compra il marchio e rimette in produzione il "
+            "Phase 90 quasi tale e quale, stessa scatola arancione, "
+            "stessa manopola sola. La differenza vera è dentro, non "
+            "fuori: le prime versioni, col logo scritto a mano, montano "
+            "una resistenza da 24 kiloohm diversa da quella delle "
+            "versioni a blocchi del '77, e il suono cambia, più morbido "
+            "nel primo caso, più deciso nel secondo. A me piace di più il "
+            "logo a mano, quello delle origini, la versione che tutti "
+            "citano quando dicono «il vero Phase 90»."
+        ),
+        "avvertenza": "Il campo di oscillazione lo fissa un trimmer interno, non la manopola: se un esemplare suona storto, il problema è lì dentro, non sul pannello.",
+        "foto": {
+            "file": "assets/foto/phase90/principale.jpg",
+            "autore": "Roadside Guitars",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/phase90/evh.jpg",
+             "autore": "Art Bromage", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "La riedizione a firma Eddie Van Halen"},
+        ],
+        "fonti": [
+            {"titolo": "«MXR Phase 90» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/MXR_Phase_90", "data": "2026-09-15"},
+            {"titolo": "«MXR» — Wikipedia (EN), fondazione dell'azienda",
+             "url": "https://en.wikipedia.org/wiki/MXR", "data": "2026-09-15"},
+            {"titolo": "«Audio inventor Keith Barr, 60, dies in Hockinson» — The Columbian",
+             "url": "https://www.columbian.com/news/2010/sep/05/audio-inventor-keith-barr-60-dies-in-hockinson/", "data": "2026-09-15"},
+            {"titolo": "«Robert Keeley Dark Side review» — Gilmourish.com, uso live di David Gilmour",
+             "url": "https://www.gilmourish.com/?p=7285", "data": "2026-09-15"},
+            {"titolo": "«MXR Phase 90 Analysis» — ElectroSmash, schema del circuito",
+             "url": "https://electrosmash.mas-effects.com/mxr-phase90.html", "data": "2026-09-15"},
+        ],
+        "hashtags": ["#mxrphase90", "#pedaleeffetti", "#phaser", "#eddievanhalen", "#anni70"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 50
+    {
+        "slug": "crumards2",
+        "numero": 50,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Crumar DS-2",
+        "anno": "1978",
+        "luogo": "Castelfidardo, Italia",
+        "costruttore": "Crumar",
+        "specifiche": [
+            ("ANNO", "1978"),
+            ("ORIGINE", "Castelfidardo"),
+            ("OSCILLATORI", "2 DCO digitali"),
+            ("COSTRUITI", "Circa 700"),
+        ],
+        "gancio": "Il primo sintetizzatore vero costruito nella capitale italiana della fisarmonica",
+        "sottotitolo": "Un ibrido analogico-digitale del 1978, tra oscillatori a gradini e una sezione d'archi da 44 note.",
+        "la_macchina": "Il DS-2 è un ibrido: sezione sintetizzatore monofonica con due DCO — oscillatori controllati digitalmente — accoppiata a una sezione poli/archi parafonica da 44 note, filtro passa-basso a 4 poli dal timbro alla Moog e due LFO, uno dei quali genera un'onda letteralmente 'a gradini'. Le due sezioni condividono la stessa modulazione. Ne furono costruiti circa 700 esemplari: oggi trovarne uno ancora funzionante è raro.",
+        "inventore_nome": "Mario Crucianelli",
+        "inventore": "Mario Crucianelli lascia la Elka di famiglia — fondata dal fratello Piero — dopo una diatriba familiare, e nel 1971 apre la Crumar a Castelfidardo insieme al socio F. Marchetti: il nome fonde i due cognomi. Castelfidardo è dal 1864 la capitale italiana della fisarmonica, da Paolo Soprani in poi. Nel 1978 la Crumar mette in produzione il DS-2, il suo primo sintetizzatore vero e proprio, dopo anni di organi e archi elettronici.",
+        "come_funziona": "Le due DCO risolvono il problema classico degli oscillatori analogici — la deriva d'accordatura — ma generano un'onda digitale scalettata, non una curva continua: è quella scalettatura a dare al DS-2 il timbro ruvido e spigoloso. La sezione poli ottiene i denti di sega dividendo onde quadre e filtrandole in passa-alto. Risultato: un suono a metà tra il digitale e l'analogico, che non assomiglia bene a nessuno dei due.",
+        "richiami": [
+            ("FIG. 1", "2 DCO: oscillatori a gradini"),
+            ("FIG. 2", "Poli/archi parafonico, 44 note"),
+            ("FIG. 3", "Filtro 4 poli, timbro alla Moog"),
+        ],
+        "chi_lusata": [
+            {"artista": "Sun Ra", "nota": "Lo suona dal vivo con l'Arkestra, uno dei tanti sintetizzatori italiani nella sua collezione", "ig": None},
+            {"artista": "Legowelt (Danny Wolfers)", "nota": "Lo tiene in studio e lo mostra in un tour girato per Future Music Magazine", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Crumar chiude la produzione di strumenti nel 1986: la fisarmonica aveva reso Castelfidardo la capitale italiana della tastiera, ma il synth digitale giapponese la spiazza in meno di dieci anni. Il DS-2 resta una nota a margine, meno di 700 esemplari, finché nel 2026 Cherry Audio lo rimette in commercio come plugin — e perfino chi lo recensisce ammette di non averne mai suonato uno vero.",
+        "avvertenza": "Le due DCO generano onde letteralmente a gradini, non curve: è la loro natura digitale, non un guasto di accordatura.",
+        "foto": {
+            "file": "assets/foto/crumards2/principale.jpg",
+            "autore": "PerfectCircuit",
+            "licenza": "CC0",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "Crumar DS-2 — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/crumar/ds-2", "data": "2026-09-04"},
+            {"titolo": "Say hello to the CRUMAR DS2 synthesizer, made in Italy — Legowelt.org",
+             "url": "https://legowelt.org/463-2/", "data": "2026-09-04"},
+            {"titolo": "Crumar — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Crumar", "data": "2026-09-04"},
+            {"titolo": "Crucianelli / Elka — Crumar — Fetishguitars.com",
+             "url": "https://www.fetishguitars.com/crucianelli/elka-crumar/", "data": "2026-09-04"},
+            {"titolo": "Crumar DS-2 | Cherry Audio (pagina prodotto, ~700 esemplari costruiti)",
+             "url": "https://cherryaudio.com/products/ds-2-synthesizer", "data": "2026-09-04"},
+            {"titolo": "MATRIXSYNTH: Sun Ra Plays the Crumar DS-2 Synthesizer",
+             "url": "https://www.matrixsynth.com/2023/03/sun-ra-plays-crumar-ds-2-synthesizer.html", "data": "2026-09-04"},
+        ],
+        "hashtags": ["#crumar", "#ds2", "#castelfidardo", "#sintetizzatore", "#musicaelettronica"],
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 51
+    {
+        "slug": "buchla",
+        "numero": 51,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Buchla 100 series (Music Box)",
+        "anno": "1965",
+        "luogo": "San Francisco, Stati Uniti",
+        "costruttore": "Don Buchla",
+        "specifiche": [
+            ("ANNO", "1965"),
+            ("ORIGINE", "San Francisco"),
+            ("COMANDO", "Piastre capacitive"),
+            ("MODULI", "Fino a 25"),
+        ],
+        "gancio": "Costruito per un centro di musica su nastro di San Francisco. Niente tastiera: solo piastre a contatto.",
+        "sottotitolo": "Piastre capacitive, sequencer analogico e filtri voltage-controlled: nasce la sintesi «West Coast».",
+        "la_macchina": "Il Buchla 100 series, o Music Box, è un sistema modulare senza tastiera: al posto dei tasti, piastre piatte a contatto capacitivo, ognuna accordabile a mano con un potenziometro — alcune ne portano due file, per due note diverse sotto lo stesso dito. Fino a 25 moduli in una cassa di legno: oscillatori e filtri voltage-controlled, un sequencer analogico, un generatore di rumore bianco. Fu installato nel 1965 al San Francisco Tape Music Center, il centro che Subotnick, Sender e Oliveros avevano fondato per lavorare sul nastro magnetico.",
+        "inventore_nome": "Don Buchla",
+        "inventore": "Don Buchla, fisico di formazione a Berkeley, comincia a montare i primi circuiti a controllo di tensione nel 1963. Nel 1965 consegna il sistema a Morton Subotnick e Ramon Sender, che lo avevano commissionato per il Tape Music Center: loro chiedono uno strumento per la sintesi dal vivo, lui rifiuta di copiare il pianoforte. Da qui nasce una scuola di progettazione — poi chiamata «West Coast» — diversa da quella di Robert Moog sulla costa opposta: niente tastiera, sequencer e casualità governata al posto delle note fisse.",
+        "come_funziona": "Ogni piastra, toccata, manda una tensione di controllo: decide l'altezza, non fa suonare una nota fissata a priori come un tasto di pianoforte. La stessa tensione può arrivare da un sequencer analogico, o da un generatore di valori casuali. Quella tensione pilota oscillatori e filtri voltage-controlled, fino a 24 dB per ottava: il risultato è un suono che si programma per processi, non per note scritte una a una.",
+        "richiami": [
+            ("FIG. 1", "Piastre capacitive"),
+            ("FIG. 2", "Sequencer analogico"),
+            ("FIG. 3", "Filtri voltage-controlled"),
+        ],
+        "chi_lusata": [
+            {"artista": "Morton Subotnick", "nota": "Compra il sistema nel 1966 e ci compone «Silver Apples of the Moon» (1967)", "ig": None},
+            {"artista": "Pauline Oliveros", "nota": "Lo usa nel 1966 per «Beautiful Soop», da direttrice del centro a Mills College", "ig": None},
+            {"artista": "Warner Jepson", "nota": "Nel 1969 ci registra «Buchla Christmas», canti natalizi per il MoMA di San Francisco", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": "Nel 1966 Subotnick compra il sistema e lo porta a New York, in uno studio di Bleecker Street: ci compone «Silver Apples of the Moon», primo disco elettronico commissionato da un'etichetta discografica, la Nonesuch. Lo stesso anno, a Oakland, Pauline Oliveros lo usa per «Beautiful Soop». Nel 1969 Warner Jepson lo trasforma in un disco di canti di Natale, «Buchla Christmas», registrato ai Mills College Electronic Music Studios per la festa di Natale del San Francisco Museum of Modern Art.",
+        "avvertenza": "Ogni piastra si accorda a mano con un potenziometro: due file danno due note diverse sotto lo stesso dito.",
+        "da_ascoltare": {
+            "brano": "Silver Apples of the Moon",
+            "artista": "Morton Subotnick",
+            "anno": "1967",
+            "cosa": "Primo disco elettronico commissionato da un'etichetta discografica, la Nonesuch: ogni suono nasce dal Buchla comprato da Subotnick per il suo studio newyorkese.",
+        },
+        "foto": {
+            "file": "assets/foto/buchla/principale.jpg",
+            "autore": "Ethan Hein",
+            "licenza": "CC BY 2.0",
+            "posizione": "85% 100%",
+            "fonte": "Wikimedia Commons",
+        },
+        "fonti": [
+            {"titolo": "«Don Buchla» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Don_Buchla", "data": "2026-09-04"},
+            {"titolo": "«The San Francisco Tape Music Center Was an Early Home to the Avant-Garde» — Bandcamp Daily",
+             "url": "https://daily.bandcamp.com/features/san-francisco-tape-music-center-history", "data": "2026-09-04"},
+            {"titolo": "«Silver Apples of the Moon (Morton Subotnick album)» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Silver_Apples_of_the_Moon_(Morton_Subotnick_album)", "data": "2026-09-04"},
+            {"titolo": "Note di copertina per «Alien Bog / Beautiful Soop» di Pauline Oliveros — DRAM (Discover Recordings, American Made)",
+             "url": "https://www.dramonline.org/albums/pauline-oliveros-alien-bog-beautiful-soop/notes", "data": "2026-09-04"},
+            {"titolo": "«Warner Jepson» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Warner_Jepson", "data": "2026-09-04"},
+            {"titolo": "«Buchla 100 Series» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/buchla/100-series", "data": "2026-09-04"},
+        ],
+        "hashtags": ["#buchla", "#donbuchla", "#sintetizzatore", "#storiadellamusica", "#musicaelettronica"],
+        "verificata": True,
+    },
 ]
 
 

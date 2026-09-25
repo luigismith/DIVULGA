@@ -231,7 +231,7 @@ VOCE_SCHEDA = {
     "minimoog": "sega", "arp2600": "sega", "ms20": "sega", "prophet5": "sega",
     "juno106": "sega", "jupiter8": "sega", "cs80": "sega", "synthex": "sega",
     "synket": "sega", "novachord": "sega", "spaceecho": "sega",
-    "arpodyssey": "sega",
+    "arpodyssey": "sega", "crumards2": "sega", "buchla": "sega",
     "tb303": "acido",
     # digitali: FM, campionatori, tavole d'onda
     "dx7": "fm", "fairlight": "fm", "synclavier": "fm", "emulator": "fm",
@@ -248,7 +248,7 @@ VOCE_SCHEDA = {
     # elettromeccanici a corda o barretta
     "rhodes": "corda", "clavinet": "corda",
     # generatori di laboratorio e studio
-    "vcs3": "studio", "fonologia": "studio", "h910": "studio",
+    "vcs3": "studio", "fonologia": "studio", "h910": "studio", "phase90": "studio",
     # elettronica da pochi soldi
     "stylophone": "giocattolo", "speakspell": "giocattolo",
     # ritmiche: la voce sta sotto, comanda la batteria (vedi CON_BATTERIA)
