@@ -290,6 +290,15 @@ def main():
         if commento:
             api("POST", f"{media_id}/comments", token, message=commento)
             print("[ok] primo commento con menzioni")
+        else:
+            # LEZIONE IMPARATA (26/09/2026): con l'Ondioline il log non ha
+            # scritto niente, perche' quella scheda non tagga nessuno e
+            # `commento` era None. Ma chi controlla il run cerca proprio la
+            # riga «primo commento con menzioni», e la sua assenza voleva
+            # dire due cose opposte: «non c'era nessuno da avvisare» e «il
+            # commento non e' partito». Un controllo che non sa distinguere
+            # le due non e' un controllo. Adesso il silenzio lo dice il log.
+            print("[ok] nessun commento: questa scheda non tagga nessuno")
     except Exception as e:
         segnala_errore(f"primo commento fallito per '{scheda['slug']}'",
                        f"Il post è pubblicato ({media_id}); solo il commento è fallito: {e}")
