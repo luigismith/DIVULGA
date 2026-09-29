@@ -181,6 +181,76 @@ def storie_cliccabili():
     print("=" * 68)
 
 
+def storia_vera():
+    """Pubblica UNA storia col parametro `link` e poi la rilegge.
+
+    LEZIONE IMPARATA (29/09/2026). La prova qui sopra non poteva dire di
+    no: l'API ha risposto 200 a tutti e otto i nomi, compresi
+    `swipe_up_url` e `cta` che non esistono da nessuna parte. Il Graph
+    accetta i parametri che non conosce e li butta via senza dirlo,
+    quindi un contenitore creato non dimostra niente. Vale la regola 10 —
+    se una verifica non puo' dire di no, non e' una verifica — e l'unico
+    modo di saperlo e' guardare una storia vera.
+
+    Non e' una storia sprecata: e' la copertina della scheda di oggi,
+    cioe' esattamente la «story di rilancio» che il publisher fa gia'
+    tutti i giorni. Se il link funziona l'abbiamo guadagnato, se non
+    funziona resta una storia normale.
+    """
+    token, _ = token_ig.token_corrente()
+    ok, r = prova("chi siamo", "GET", "me", token, fields="user_id,username")
+    if not ok:
+        return
+    ig_user = r.json().get("user_id") or r.json().get("id")
+
+    ok, r = prova("ultimo post", "GET", "me/media", token,
+                  fields="id,permalink,media_url,timestamp", limit=1)
+    if not ok or not r.json().get("data"):
+        print("Nessun post da cui prendere copertina e permalink: mi fermo.")
+        return
+    post = r.json()["data"][0]
+    permalink = post.get("permalink")
+    copertina = post.get("media_url")
+    print(f"\nStoria di prova sulla copertina di {permalink}\n")
+
+    c = prova("contenitore STORIES con link al post", "POST",
+              f"{ig_user}/media", token, media_type="STORIES",
+              image_url=copertina, link=permalink)[1]
+    if not c or c.status_code != 200:
+        return
+    cid = c.json()["id"]
+
+    import time
+    for _ in range(12):
+        ok, r = prova(f"stato del contenitore {cid}", "GET", cid, token,
+                      fields="status_code,status")
+        if ok and r.json().get("status_code") == "FINISHED":
+            break
+        time.sleep(5)
+
+    ok, r = prova("pubblico la storia", "POST", f"{ig_user}/media_publish",
+                  token, creation_id=cid)
+    if not ok:
+        return
+    sid = r.json()["id"]
+
+    # Rileggo tutto quello che l'API vuole dirmi di questa storia. Se il
+    # link fosse stato registrato da qualche parte, e' qui che si vede.
+    for campi in ("id,media_type,media_product_type,permalink,timestamp",
+                  "id,media_url,thumbnail_url", "id,caption"):
+        prova(f"rileggo la storia ({campi.split(',')[1]})", "GET", sid, token,
+              fields=campi)
+
+    print("=" * 68)
+    print("STORIA PUBBLICATA:", sid)
+    print("L'API non espone gli sticker, quindi da qui non si vede se il")
+    print("link c'e'. LO DECIDE UN'OCCHIATA DAL TELEFONO: apri la storia")
+    print("di @elettrofoni e guarda se in fondo c'e' lo sticker col link.")
+    print("Se non c'e', il link dall'API non si puo' fare e va scritto in")
+    print("CLAUDE.md accanto alla bio, fra le cose che l'API non consente.")
+    print("=" * 68)
+
+
 def main():
     token, _ = token_ig.token_corrente()
     print(f"Token in uso: {token_ig.redigi(token)}\n")
@@ -230,5 +300,7 @@ if __name__ == "__main__":
         profilo()
     elif "--storie" in sys.argv:
         storie_cliccabili()
+    elif "--storia-vera" in sys.argv:
+        storia_vera()
     else:
         main()

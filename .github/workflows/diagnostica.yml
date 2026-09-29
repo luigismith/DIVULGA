@@ -7,11 +7,11 @@ on:
   workflow_dispatch:
     inputs:
       modo:
-        description: 'profilo = bio/nome/link; storie = si puo fare una storia cliccabile?; completa = tutti i test'
+        description: 'profilo = bio/nome/link; storie = prova i parametri; storia-vera = PUBBLICA una storia col link, per guardarla; completa = tutto'
         required: false
         default: 'profilo'
         type: choice
-        options: ['profilo', 'storie', 'completa']
+        options: ['profilo', 'storie', 'storia-vera', 'completa']
 
 permissions:
   contents: read
@@ -32,5 +32,6 @@ jobs:
           case "${{ inputs.modo }}" in
             completa) python diagnostica_api.py ;;
             storie)   python diagnostica_api.py --storie ;;
+            storia-vera) python diagnostica_api.py --storia-vera ;;
             *)        python diagnostica_api.py --profilo ;;
           esac
