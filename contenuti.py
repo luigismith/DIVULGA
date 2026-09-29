@@ -3705,13 +3705,20 @@ SCHEDE = [
             "licenza": "CC BY-SA 4.0",
             "fonte": "Wikimedia Commons",
         },
+        # Tre foto extra e non due: con due, la banda della tavola 4 ricade
+        # su un ritaglio della copertina e quel ritaglio cadeva su un pezzo
+        # di muro. Guardata la tavola, non il file.
         "foto_extra": [
-            {"file": "assets/foto/wurlitzer200a/museo.jpg",
+            {"file": "assets/foto/wurlitzer200a/museo2.jpg",
+             "posizione": "center 30%",
              "autore": "doryfour", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Le due manopole sole, e la tastiera da 64 tasti"},
+             "didascalia": "Due manopole sole, e gli altoparlanti dietro la griglia"},
             {"file": "assets/foto/wurlitzer200a/dettaglio.jpg",
              "autore": "I99pema", "licenza": "CC BY-SA 4.0", "fonte": "Wikimedia Commons",
              "didascalia": "Coperchio chiuso: è una valigia, e pesa 25 chili"},
+            {"file": "assets/foto/wurlitzer200a/museo.jpg",
+             "autore": "doryfour", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "I 64 tasti, e il pedale che smorza"},
         ],
         "fonti": [
             {"titolo": "«Wurlitzer electronic piano» — Wikipedia (EN)",
