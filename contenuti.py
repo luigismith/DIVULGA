@@ -3628,6 +3628,187 @@ SCHEDE = [
         ],
         "hashtags": ["#buchla", "#donbuchla", "#sintetizzatore", "#storiadellamusica", "#musicaelettronica"],
         "verificata": True,
+    },{
+        "slug": "wurlitzer200a",
+        "numero": 52,
+        "serie": "GLI ELETTROMECCANICI",
+        "strumento": "Wurlitzer 200A",
+        "anno": "1968",
+        "luogo": "DeKalb, Illinois",
+        "costruttore": "Wurlitzer",
+        "specifiche": [
+            ("MODELLO 200", "1968"),
+            ("MODELLO 200A", "1974"),
+            ("TASTI", "64"),
+            ("PESO", "25 kg senza gambe"),
+        ],
+        "gancio": "Una lamella d'acciaio da 6 millimetri, colpita da un martelletto. Se la picchi forte, abbaia",
+        "sottotitolo": "Il piano elettrico che non ha corde e nemmeno i rebbi del Rhodes: dentro ha delle linguette, come un'armonica a bocca.",
+        "la_macchina": (
+            "Sembra una valigia nera su quattro gambe di metallo, con due manopole "
+            "sole e gli altoparlanti nel coperchio. Dentro non ci sono corde: ogni "
+            "tasto alza un martelletto che colpisce una lamella d'acciaio piatta, "
+            "lunga qualche centimetro. I tasti sono 64 e pesa 25 chili senza le "
+            "gambe, che è poi il motivo per cui esiste. Sul pannello c'è una "
+            "manopola scritta «vibrato» che vibrato non fa: muove il volume, non "
+            "l'altezza, quindi è un tremolo. L'etichetta è sbagliata da sempre e "
+            "nessuno l'ha mai corretta."
+        ),
+        "inventore_nome": "Benjamin Miessner",
+        "inventore": (
+            "Miessner era un ingegnere radio, e nel 1932 presenta un pianoforte a "
+            "coda con dentro un pickup elettrostatico: le corde ci sono ancora, "
+            "l'amplificatore le raccoglie. Poi negli anni Cinquanta gli viene "
+            "l'idea che cambia tutto. Via le corde, al loro posto delle lamelle "
+            "d'acciaio: una lamella non tira come una corda, quindi non serve un "
+            "telaio che regga le tonnellate, e lo strumento si può fare piccolo. "
+            "La Wurlitzer costruisce il primo nel 1954 e va avanti fino al 1983."
+        ),
+        "come_funziona": (
+            "La lamella sta a un capello di distanza da una placchetta di metallo, "
+            "e fra le due c'è una tensione di 170 volt. Quando la lamella vibra, la "
+            "distanza cambia, e cambiando cambia anche la carica: quella variazione "
+            "è il segnale. Non è una bobina come sul Rhodes o sulla chitarra "
+            "elettrica, è un condensatore che respira. Una cosa che a me nessuno "
+            "aveva spiegato: il timbro sporco delle note basse non è un difetto "
+            "dell'amplificatore, è la lamella che sotto un colpo forte si piega "
+            "troppo e distorce da sola."
+        ),
+        "richiami": [
+            ("FIG. 1", "64 lamelle d'acciaio, niente corde"),
+            ("FIG. 2", "Pickup elettrostatico a 170 V"),
+            ("FIG. 3", "Altoparlanti nel coperchio"),
+        ],
+        "chi_lusata": [
+            {"artista": "Ray Charles", "nota": "«What'd I Say» (1959), su un modello 120 più vecchio", "ig": None},
+            {"artista": "Joe Zawinul", "nota": "«Mercy, Mercy, Mercy» (1966), su un 140B", "ig": None},
+            {"artista": "Supertramp", "nota": "«Dreamer» e «The Logical Song»: quasi tutto il loro suono", "ig": None},
+            {"artista": "John Deacon", "nota": "«You're My Best Friend» dei Queen (1975), scritta su questo", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "You're My Best Friend", "artista": "Queen", "anno": "1975",
+                         "cosa": "Le note basse dell'introduzione sono tutta lamella: ascoltate come si sporcano quando il tasto viene giù forte."},
+        "aneddoto": (
+            "John Deacon voleva scrivere qualcosa con un Wurlitzer, ma il "
+            "pianista dei Queen era Freddie Mercury e Mercury non ne voleva "
+            "sapere. Le sue parole: mi sono rifiutato di suonare quel coso, "
+            "è metallico e orribile, perché usarlo quando hai un gran coda. "
+            "Allora Deacon se lo porta a casa e impara a suonare da solo. "
+            "Quello che gli esce mentre impara è «You're My Best Friend», che "
+            "scrive per sua moglie Veronica. Dal vivo la suonavano con Mercury "
+            "al pianoforte vero e Deacon al basso."
+        ),
+        "avvertenza": "Dentro ci sono 170 volt fra la lamella e la placchetta. Si accorda limando la lamella, e a strumento spento.",
+        "foto": {
+            "file": "assets/foto/wurlitzer200a/principale.jpg",
+            "autore": "I99pema",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/wurlitzer200a/museo.jpg",
+             "autore": "doryfour", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Le due manopole sole, e la tastiera da 64 tasti"},
+            {"file": "assets/foto/wurlitzer200a/dettaglio.jpg",
+             "autore": "I99pema", "licenza": "CC BY-SA 4.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Coperchio chiuso: è una valigia, e pesa 25 chili"},
+        ],
+        "fonti": [
+            {"titolo": "«Wurlitzer electronic piano» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Wurlitzer_electronic_piano", "data": "2026-09-29"},
+            {"titolo": "«Benjamin Miessner» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Benjamin_Miessner", "data": "2026-09-29"},
+            {"titolo": "«You're My Best Friend» — Wikipedia (EN), con le parole di Mercury e di Deacon",
+             "url": "https://en.wikipedia.org/wiki/You%27re_My_Best_Friend", "data": "2026-09-29"},
+            {"titolo": "«The Story Behind The Queen Song» — uDiscover Music",
+             "url": "https://www.udiscovermusic.com/stories/queen-youre-my-best-friend-song/", "data": "2026-09-29"},
+        ],
+        "hashtags": ["#wurlitzer", "#pianoelettrico", "#queen", "#supertramp", "#anni70"],
+        "verificata": True,
+    },
+    {
+        "slug": "rhythmace",
+        "numero": 53,
+        "serie": "LE DRUM MACHINE",
+        "strumento": "Ace Tone Rhythm Ace",
+        "anno": "1967",
+        "luogo": "Osaka, Giappone",
+        "costruttore": "Ace Electronic Industries",
+        "specifiche": [
+            ("PRIMO MODELLO", "FR-1, 1967"),
+            ("RITMI", "16 preselezionati"),
+            ("CIRCUITO", "Matrice a diodi"),
+            ("SUONI A MANO", "4 pulsanti"),
+        ],
+        "gancio": "Sedici ritmi in una scatola, nel 1967. È la nonna di tutte le Roland, e quasi nessuno sa come si chiama",
+        "sottotitolo": "Ikutaro Kakehashi la costruisce cinque anni prima di fondare la Roland, e la vende con tre marchi diversi.",
+        "la_macchina": (
+            "Una cassetta di legno e plastica con dieci tasti color panna, una fila "
+            "di nomi di ballo stampati sopra e quattro manopole. Si sceglie il "
+            "ritmo premendo un tasto, si preme START e quello va avanti da solo "
+            "finché non lo fermi. I suoni non sono registrati: cassa, rullante, "
+            "piatto e legnetti escono da circuiti che imitano il colpo, e ci sono "
+            "quattro pulsanti per suonarli a mano. Premendo due tasti di ritmo "
+            "insieme i pattern si sovrappongono, e le combinazioni diventano più "
+            "di cento."
+        ),
+        "inventore_nome": "Ikutaro Kakehashi",
+        "inventore": (
+            "Kakehashi ripara radio a Osaka e nel 1960 fonda la Ace Electronic "
+            "Industries. Nel 1964 porta al NAMM la R1, una scatola a transistor "
+            "che i ritmi non li aveva: li dovevi fare tu, a mano, e in America non "
+            "la volle nessuno. Allora ci mette dentro una matrice a diodi che "
+            "tiene in memoria i pattern, e nel 1967 esce la FR-1. Il brevetto lo "
+            "deposita con un nome che dice tutto: «Automatic Rhythm Performance "
+            "Device». Cinque anni dopo Kakehashi fonda la Roland."
+        ),
+        "come_funziona": (
+            "Una matrice a diodi è una griglia di fili: da una parte i passi del "
+            "tempo, dall'altra gli strumenti, e un diodo saldato in un incrocio "
+            "vuol dire «qui suona la cassa». Il pattern non è scritto da nessuna "
+            "parte, è la saldatura. Per questo i 16 ritmi sono 16 e non se ne "
+            "possono aggiungere: cambiarli vorrebbe dire rifare il circuito. La "
+            "programmazione, quella vera, arriva dieci anni dopo con la CR-78. "
+            "Qui si sceglie soltanto, e va benissimo così."
+        ),
+        "richiami": [
+            ("FIG. 1", "16 ritmi in una matrice a diodi"),
+            ("FIG. 2", "4 suoni: cassa, rullante, piatto, legnetti"),
+            ("FIG. 3", "Tre marchi, una sola macchina"),
+        ],
+        "chi_lusata": [
+            {"artista": "La Hammond Organ Company", "nota": "La comprava da Ace Tone e la montava dentro i propri organi", "ig": "officialhammondorgan"},
+            {"artista": "Chi la comprò come Multivox", "nota": "Negli Stati Uniti usciva col marchio della Peter Sorkin Music Company", "ig": None},
+            {"artista": "Chi la comprò come Bentley", "nota": "In Gran Bretagna era la Bentley Rhythm Ace, e da lì il nome del gruppo", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "La macchina della foto dice «Rhythm Ace» in grande e «Multivox» "
+            "accanto, ed è la stessa che in Inghilterra si chiamava Bentley. "
+            "Kakehashi costruiva, gli altri mettevano il nome. Trent'anni dopo due "
+            "ragazzi di Birmingham ne trovano una in un negozio dell'usato, gli "
+            "piace la scritta e ci battezzano il gruppo: Bentley Rhythm Ace. Il "
+            "nome di una drum machine giapponese venduta col marchio di un "
+            "negozio di pianoforti inglese."
+        ),
+        "avvertenza": "I ritmi sono saldati, non programmati. Se ne volete uno che non c'è, l'unico modo è premere due tasti insieme.",
+        "foto": {
+            "file": "assets/foto/rhythmace/principale.jpg",
+            "autore": "Alison Cassidy",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [],
+        "fonti": [
+            {"titolo": "«Drum machine» — Wikipedia (EN), sezione Ace Tone",
+             "url": "https://en.wikipedia.org/wiki/Drum_machine", "data": "2026-09-29"},
+            {"titolo": "«Ikutaro Kakehashi» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Ikutaro_Kakehashi", "data": "2026-09-29"},
+            {"titolo": "«The Rhythm Ace: Pioneering the Beat Revolution» — KR Sound",
+             "url": "https://kr-sound.com/the-ace-tone-rhythm-ace-pioneering-the-beat-revolution/", "data": "2026-09-29"},
+        ],
+        "hashtags": ["#rhythmace", "#acetone", "#drummachine", "#roland", "#anni60"],
+        "verificata": True,
     },
 ]
 

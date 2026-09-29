@@ -246,7 +246,7 @@ VOCE_SCHEDA = {
     "theremin": "onda", "ondes": "onda", "trautonium": "onda",
     "ondioline": "onda", "buchlaeasel": "onda",
     # elettromeccanici a corda o barretta
-    "rhodes": "corda", "clavinet": "corda",
+    "rhodes": "corda", "clavinet": "corda", "wurlitzer200a": "corda",
     # generatori di laboratorio e studio
     "vcs3": "studio", "fonologia": "studio", "h910": "studio", "phase90": "studio",
     # elettronica da pochi soldi
@@ -254,9 +254,10 @@ VOCE_SCHEDA = {
     # ritmiche: la voce sta sotto, comanda la batteria (vedi CON_BATTERIA)
     "tr808": "sega", "tr909": "sega", "tr606": "sega", "lm1": "sega",
     "dmx": "sega", "simmonssds5": "sega", "mpc60": "sega", "sp1200": "sega",
+    "rhythmace": "sega",
 }
 CON_BATTERIA = {"tr808", "tr909", "tr606", "lm1", "dmx", "simmonssds5",
-                "mpc60", "sp1200", "tb303", "ms20", "spaceecho"}
+                "mpc60", "sp1200", "rhythmace", "tb303", "ms20", "spaceecho"}
 CON_ECO = {"spaceecho", "vcs3", "fonologia", "theremin", "h910"}
 
 
