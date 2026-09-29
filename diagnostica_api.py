@@ -108,6 +108,79 @@ def profilo():
                 print(f"        -> {s.get('timestamp')}  media_type={tipo}  {nota}")
 
 
+def storie_cliccabili():
+    """Si puo' rendere cliccabile una storia dall'API? Chiediamolo.
+
+    Il proprietario ha chiesto (29/09/2026) che le storie riportino al
+    post. Su Instagram l'unico modo e' lo sticker con il link: lo
+    «swipe up» non esiste piu' dal 2021. La documentazione di Meta dice
+    che gli sticker non si pubblicano via API, ma la documentazione e'
+    gia' stata smentita una volta in questo progetto, quindi si prova.
+
+    Ogni tentativo crea al massimo un CONTENITORE, che non e' una storia:
+    se non lo si pubblica scade da solo e non appare a nessuno. Uso
+    `image_url` e non `video_url` apposta — i contenitori video consumano
+    il budget di elaborazione dell'account, quelli immagine no.
+
+    Quello che cerchiamo e' un 400 che NOMINI il parametro: e' la
+    risposta definitiva. Un 200 invece non basta a dire di si', perche'
+    l'API puo' accettare un parametro sconosciuto e buttarlo via: in quel
+    caso lo dice qui sotto e tocca pubblicarne una vera per guardarla.
+    """
+    token, _ = token_ig.token_corrente()
+    ok, r = prova("chi siamo", "GET", "me", token, fields="user_id,username")
+    if not ok:
+        return
+    ig_user = r.json().get("user_id") or r.json().get("id")
+    copertina = ("https://luigismith.github.io/DIVULGA/tavole/minimoog/01.jpg")
+
+    print("=" * 68)
+    print("STORIE CLICCABILI (qui ci aspettiamo dei rifiuti)")
+    print("=" * 68)
+    print("Contenitore di prova con foto, mai pubblicato. Cerco un 400 che")
+    print("nomini il parametro: quello e' un no definitivo.\n")
+
+    # I nomi che Meta ha usato o documentato nel tempo, piu' quelli che
+    # userebbe chiunque. Se l'API ne accetta uno, lo vediamo.
+    candidati = [
+        ("link", "https://www.instagram.com/elettrofoni/"),
+        ("link_url", "https://www.instagram.com/elettrofoni/"),
+        ("story_link", "https://www.instagram.com/elettrofoni/"),
+        ("link_sticker", "https://www.instagram.com/elettrofoni/"),
+        ("sticker", "link"),
+        ("cta", "https://www.instagram.com/elettrofoni/"),
+        ("swipe_up_url", "https://www.instagram.com/elettrofoni/"),
+        ("caption", "prova"),
+    ]
+    accettati = []
+    for nome, valore in candidati:
+        ok, r = prova(f"contenitore STORIES con «{nome}»", "POST",
+                      f"{ig_user}/media", token,
+                      media_type="STORIES", image_url=copertina,
+                      **{nome: valore})
+        if ok:
+            accettati.append(nome)
+
+    # user_tags e' l'unico che la documentazione dice supportato senza
+    # sticker: se funziona, una menzione al nostro stesso account rende
+    # la storia toccabile e porta al profilo. Non e' il post, ma e' un clic.
+    prova("contenitore STORIES con «user_tags» (menzione)", "POST",
+          f"{ig_user}/media", token, media_type="STORIES",
+          image_url=copertina,
+          user_tags=json.dumps([{"username": "elettrofoni"}]))
+
+    print("=" * 68)
+    if accettati:
+        print("ACCETTATI AL VOLO:", ", ".join(accettati))
+        print("ATTENZIONE: accettare non vuol dire fare. L'API puo' prendere")
+        print("un parametro sconosciuto e ignorarlo. Prima di scriverlo nel")
+        print("publisher va pubblicata UNA storia vera e guardata dal telefono.")
+    else:
+        print("Nessun parametro di link accettato: la storia cliccabile")
+        print("dall'API non si fa. Annotarlo in CLAUDE.md accanto alla bio.")
+    print("=" * 68)
+
+
 def main():
     token, _ = token_ig.token_corrente()
     print(f"Token in uso: {token_ig.redigi(token)}\n")
@@ -155,5 +228,7 @@ if __name__ == "__main__":
     import sys
     if "--profilo" in sys.argv:
         profilo()
+    elif "--storie" in sys.argv:
+        storie_cliccabili()
     else:
         main()
