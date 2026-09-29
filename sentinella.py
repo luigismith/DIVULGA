@@ -72,6 +72,11 @@ ROMA = zoneinfo.ZoneInfo("Europe/Rome")
 # legge il numero dal sorgente di pubblica.py senza importarlo.
 FINE_FINESTRA = 23
 
+# Regola 7 di CLAUDE.md: la coda non scende mai sotto 14 schede verificate
+# e non ancora pubblicate. Che questo numero resti allineato a quello
+# scritto in CLAUDE.md lo verifica `prova_sentinella.py`.
+MINIMO_CODA = 14
+
 
 def data_italiana(iso):
     """La data del post nel fuso in cui vive la pagina, non in UTC.
@@ -98,7 +103,7 @@ def giorno_da_controllare(adesso=None):
     return adesso.date() - dt.timedelta(days=1)
 
 
-def issue_gia_aperta(titolo):
+def issue_gia_aperta(titolo, etichetta="pubblicazione"):
     """Non ripetere lo stesso allarme: se la issue di quel giorno c'è già
     (passata rilanciata a mano, doppione del cron), si tace."""
     tok = os.environ.get("GITHUB_TOKEN")
@@ -109,7 +114,7 @@ def issue_gia_aperta(titolo):
         r = requests.get(
             f"https://api.github.com/repos/{repo}/issues",
             headers={"Authorization": f"Bearer {tok}"},
-            params={"state": "open", "labels": "pubblicazione", "per_page": 100},
+            params={"state": "open", "labels": etichetta, "per_page": 100},
             timeout=30,
         )
         r.raise_for_status()
@@ -120,7 +125,7 @@ def issue_gia_aperta(titolo):
         return False
 
 
-def apri_issue(titolo, corpo):
+def apri_issue(titolo, corpo, etichetta="pubblicazione"):
     tok = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
     if not (tok and repo):
@@ -129,7 +134,7 @@ def apri_issue(titolo, corpo):
     r = requests.post(
         f"https://api.github.com/repos/{repo}/issues",
         headers={"Authorization": f"Bearer {tok}"},
-        json={"title": titolo, "body": corpo, "labels": ["pubblicazione"]},
+        json={"title": titolo, "body": corpo, "labels": [etichetta]},
         timeout=30,
     )
     print(f"[issue] HTTP {r.status_code}")
@@ -151,7 +156,68 @@ def verdetto(pubblicati, giorno):
     return ((giorno - data_italiana(ultimo["quando"])).days, ultimo)
 
 
-def main():
+def coda_verificata(schede, pubblicati):
+    """Quante schede verificate non sono ancora uscite."""
+    gia = {p.get("slug") for p in pubblicati}
+    return [s["slug"] for s in schede
+            if s.get("verificata") and s["slug"] not in gia]
+
+
+def controlla_coda():
+    """LEZIONE IMPARATA (29/09/2026). La Routine di rifornimento e' partita
+    alle 07:08, ha riportato «SUCCEEDED» dopo 69 secondi e non ha scritto
+    una riga: stessa firma del 29/08, quando una sessione nuova senza
+    credenziali git aveva chiuso in 74 secondi dichiarando successo. La
+    coda e' scesa a 13, sotto il minimo della regola 7, e nessuno se ne
+    sarebbe accorto: quella Routine ha le notifiche spente e un rifornimento
+    che non rifornisce non lascia nessuna traccia.
+
+    Quindi la coda si sorveglia come si sorveglia la pubblicazione: non
+    guardando se il lavoro e' PARTITO, ma se il risultato C'E'. Vale qui
+    la stessa regola della sentinella: guarda lo stato, non i run.
+
+    Titolo fisso apposta, senza il numero: se la coda cala ancora la issue
+    resta una sola invece di moltiplicarsi ogni notte."""
+    try:
+        import contenuti          # nessun import pesante: vedi nota su FINE_FINESTRA
+    except Exception as e:
+        print(f"[warn] non ho potuto leggere le schede: {e}")
+        return False
+
+    stato = json.loads(FILE_STATO.read_text()) if FILE_STATO.exists() else {"pubblicati": []}
+    coda = coda_verificata(contenuti.SCHEDE, stato.get("pubblicati", []))
+    print(f"[coda] {len(coda)} schede verificate non pubblicate (minimo {MINIMO_CODA})")
+    if len(coda) >= MINIMO_CODA:
+        return False
+
+    titolo = "🟡 ELETTROFONI: la coda è scesa sotto il minimo"
+    if issue_gia_aperta(titolo, etichetta="coda"):
+        print("[ok] allarme coda già aperto: non ne apro un altro")
+        return True
+
+    apri_issue(
+        titolo,
+        f"Le schede verificate e non ancora pubblicate sono **{len(coda)}**, "
+        f"sotto il minimo di {MINIMO_CODA} della regola 7 di CLAUDE.md.\n\n"
+        f"Con un post al giorno restano {len(coda)} giorni di margine.\n\n"
+        "Da guardare **in quest'ordine**:\n"
+        "1. La Routine «ELETTROFONI — rifornimento schede (mar+ven)» è "
+        "partita? Se sì, **quanto è durata**: un rifornimento vero dura "
+        "venti minuti o più. Una passata di un minuto che dichiara "
+        "«SUCCEEDED» non ha fatto niente — è già successo il 29/08 e il "
+        "29/09/2026.\n"
+        "2. Ci sono commit di quella sessione su `contenuti.py`? Se non "
+        "ce ne sono, la sessione non è riuscita a lavorare e il problema "
+        "è lì, non nella coda.\n"
+        "3. Se serve, si rifornisce a mano seguendo la «Sessione di "
+        "rifornimento schede» in CLAUDE.md.\n",
+        etichetta="coda",
+    )
+    return True
+
+
+def controlla_pubblicazione():
+    """True se ha aperto (o trovato già aperto) un allarme."""
     adesso = dt.datetime.now(ROMA)
     giorno = giorno_da_controllare(adesso)
     stato = json.loads(FILE_STATO.read_text()) if FILE_STATO.exists() else {"pubblicati": []}
@@ -162,7 +228,7 @@ def main():
 
     if silenzio is not None and silenzio <= 0:
         print(f"[ok] il {giorno} è uscito «{ultimo['slug']}»: nessun allarme")
-        return
+        return False
 
     if ultimo:
         coda = (f"L'ultimo post è «{ultimo['slug']}» del "
@@ -175,7 +241,7 @@ def main():
     titolo = f"🔴 ELETTROFONI: il {giorno} non è uscito niente"
     if issue_gia_aperta(titolo):
         print("[ok] allarme già aperto per questo giorno: non ne apro un altro")
-        raise SystemExit(1)
+        return True
 
     apri_issue(
         titolo,
@@ -193,7 +259,19 @@ def main():
         "3. Se esiste ed è riuscito ma il post non c'è, il problema è "
         "sull'API di Instagram: NON rilanciare in loop, fermarsi e capire.\n",
     )
-    raise SystemExit(1)
+    return True
+
+
+def main():
+    """I due controlli girano SEMPRE tutti e due, poi si decide l'esito.
+
+    Se il primo uscisse con SystemExit, una giornata muta nasconderebbe
+    per sempre lo stato della coda — e sarebbero proprio i giorni in cui
+    qualcosa non gira come dovrebbe."""
+    muta = controlla_pubblicazione()
+    scarsa = controlla_coda()
+    if muta or scarsa:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

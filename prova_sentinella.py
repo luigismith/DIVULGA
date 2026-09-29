@@ -116,6 +116,34 @@ elif int(m.group(2)) != S.FINE_FINESTRA:
     errori.append(f"  FINE_FINESTRA={S.FINE_FINESTRA} ma pubblica.FINESTRA_ORE "
                   f"finisce alle {m.group(2)}: allineare le due")
 
+# ---------------------------------------------------------------- 7
+# MINIMO_CODA è una copia a mano della regola 7 di CLAUDE.md. Stessa
+# faccenda di FINE_FINESTRA: se il numero cambia da una parte sola,
+# l'allarme suona quando non deve o tace quando dovrebbe.
+regole = (RADICE / "CLAUDE.md").read_text(encoding="utf-8")
+m = re.search(r"non scende mai sotto \*\*(\d+) schede verificate\*\*", regole)
+if not m:
+    errori.append("  non trovo il minimo della coda in CLAUDE.md: la prova è cieca")
+elif int(m.group(1)) != S.MINIMO_CODA:
+    errori.append(f"  MINIMO_CODA={S.MINIMO_CODA} ma CLAUDE.md dice "
+                  f"{m.group(1)}: allineare i due")
+
+# ---------------------------------------------------------------- 8
+# Il conto della coda: si contano solo le schede verificate E non ancora
+# pubblicate. Una prova che non sa dire di no non serve, quindi ci sono
+# dentro tutti e tre i casi da escludere.
+SCHEDE_FINTE = [
+    {"slug": "uscita", "verificata": True},      # gia' pubblicata
+    {"slug": "pronta", "verificata": True},      # conta
+    {"slug": "altra", "verificata": True},       # conta
+    {"slug": "abbozzo", "verificata": False},    # non verificata: non conta
+]
+PUBBLICATI_FINTI = [{"slug": "uscita", "quando": DX7}]
+prova("il conto della coda salta le pubblicate e le non verificate",
+      ["pronta", "altra"], S.coda_verificata(SCHEDE_FINTE, PUBBLICATI_FINTI))
+prova("con tutto pubblicato la coda e' vuota",
+      [], S.coda_verificata(SCHEDE_FINTE[:1], PUBBLICATI_FINTI))
+
 if errori:
     print("PROVA FALLITA:")
     print("\n".join(errori))

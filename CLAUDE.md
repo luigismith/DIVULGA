@@ -360,6 +360,17 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   aggiunge `token.enc` allo stesso commit dello stato. Segnale da tenere
   d'occhio nei log: se «rinnovo…» compare due giorni di seguito, il
   salvataggio non funziona.
+- **Una Routine che dichiara «SUCCEEDED» non ha fatto il suo lavoro: ha
+  solo consegnato il messaggio** (29/09/2026). Il rifornimento di martedì
+  è partito alle 07:08, ha chiuso in 69 secondi e ha riportato successo
+  senza scrivere una riga; la coda è scesa a 13, sotto il minimo della
+  regola 7, e nessuno se ne sarebbe accorto — quella Routine ha le
+  notifiche spente. È la stessa firma del 29/08: sessione nuova, 74
+  secondi, «SUCCEEDED», niente fatto. **Il segnale è la durata**: un
+  rifornimento vero dura venti minuti o più (il 22/09 ne ha impiegati 25).
+  Adesso la coda la sorveglia `sentinella.py`, che guarda quante schede
+  verificate restano invece di guardare se la Routine è partita — stessa
+  regola della pubblicazione: si controlla il risultato, non il tentativo.
 - **Un ripiego che non lascia traccia non è un ripiego, è una bugia che
   funziona.** `suoni.VOCE_SCHEDA.get(slug, "sega")` copriva in silenzio le
   schede senza timbro: erano 29 su 47, e per mesi i reel del Rhodes,
