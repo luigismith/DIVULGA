@@ -284,6 +284,16 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
 - Un controllo troppo stretto mente invece di proteggere: il HEAD prima
   dell'API accettava solo `image/`, e con la storia video avrebbe
   ripiegato in silenzio sul JPEG per sempre. Ora accetta anche `video/`.
+- **Il Graph risponde 200 anche ai parametri che non esistono**
+  (29/09/2026). Cercando un modo di rendere cliccabile la storia ho
+  provato otto nomi sul contenitore STORIES — `link`, `link_sticker`,
+  `cta`, `swipe_up_url` e altri — e li ha accettati TUTTI con HTTP 200,
+  compresi quelli inventati da me. Il Graph prende quello che non conosce
+  e lo butta via senza dirlo. Quindi «l'API ha detto 200» non dimostra
+  mai che un parametro faccia qualcosa: e' la regola 10 al contrario, una
+  verifica che non puo' dire di no. L'unica prova e' pubblicare e
+  guardare il risultato. Vale per qualunque parametro nuovo, non solo per
+  gli sticker.
 - COSA L'API NON CONSENTE (verificato il 27/08/2026 con
   `diagnostica_api.py`): il profilo è in sola lettura. `POST /me` con
   `biography` risponde 400 «does not support this operation». Bio, nome,
