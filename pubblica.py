@@ -177,6 +177,37 @@ def attendi_container(cid, token, tentativi=10):
         time.sleep(6)
     raise RuntimeError(f"container {cid} mai FINISHED")
 
+def pubblica_quando_pronto(ig_user, token, creation_id, attese=(8, 20, 45)):
+    """`media_publish`, con la pazienza che il contenitore FINISHED non basta.
+
+    LEZIONE IMPARATA (01/10/2026). Il carosello dell'Uni-Vibe non e' uscito:
+    `attendi_container` aveva visto FINISHED, e un istante dopo
+    `media_publish` ha risposto 400 sottocodice 2207027, «The media is not
+    ready for publishing, please wait for a moment». Le due cose non si
+    contraddicono — il contenitore e' pronto, la pubblicazione ancora no —
+    ma il codice le trattava come la stessa.
+
+    Si riprova SOLO su quel sottocodice, tre volte, con attese crescenti.
+    Non e' un retry generico: qualunque altro errore vola subito, perche'
+    sui 400 veri riprovare peggiora le cose (regola 6: su errore API stop
+    e issue, mai retry in loop).
+    """
+    PRONTO_FRA_UN_ATTIMO = "2207027"
+    for n, attesa in enumerate(attese, start=1):
+        try:
+            return api("POST", f"{ig_user}/media_publish", token,
+                       creation_id=creation_id)
+        except RuntimeError as e:
+            if PRONTO_FRA_UN_ATTIMO not in str(e):
+                raise
+            print(f"[attesa] il media non e' ancora pubblicabile "
+                  f"(tentativo {n}): aspetto {attesa} s")
+            time.sleep(attesa)
+    # Ultimo tentativo: se fallisce ancora, l'errore esce come tutti gli
+    # altri e la run si ferma con la sua issue.
+    return api("POST", f"{ig_user}/media_publish", token,
+               creation_id=creation_id)
+
 
 # --------------------------------------------------------------- main ---
 
@@ -267,7 +298,7 @@ def main():
                         media_type="CAROUSEL", children=",".join(figli),
                         caption=contenuti.componi_didascalia(scheda))
         attendi_container(carosello["id"], token)
-        pubblicato = api("POST", f"{ig_user}/media_publish", token, creation_id=carosello["id"])
+        pubblicato = pubblica_quando_pronto(ig_user, token, carosello["id"])
         media_id = pubblicato["id"]
     except Exception as e:
         segnala_errore(f"pubblicazione fallita per '{scheda['slug']}'", str(e))
@@ -348,7 +379,7 @@ def main():
         # dell'account si esaurisce dopo una dozzina di container, e anche
         # i tentativi falliti lo consumano.
         attendi_container(c["id"], token, tentativi=tentativi)
-        s = api("POST", f"{ig_user}/media_publish", token, creation_id=c["id"])
+        s = pubblica_quando_pronto(ig_user, token, c["id"])
         print(f"[ok] storia pubblicata ({campo}): {s['id']}")
     except Exception as e:
         print(f"[warn] storia non pubblicata (non blocca il post): {e}")
