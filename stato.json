@@ -235,7 +235,10 @@
    "permalink": "https://www.instagram.com/p/Dd6upCvEa7N/"
   }
  ],
- "ultimo_errore": null,
+ "ultimo_errore": {
+  "quando": "2026-10-01T16:13:40.388188+00:00",
+  "titolo": "pubblicazione fallita per 'univibe'"
+ },
  "reel": [
   {
    "slug": "dx7",
