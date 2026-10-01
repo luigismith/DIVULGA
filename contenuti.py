@@ -3817,6 +3817,422 @@ SCHEDE = [
         "hashtags": ["#rhythmace", "#acetone", "#drummachine", "#roland", "#anni60"],
         "verificata": True,
     },
+    {
+        "slug": "oberheim4voice",
+        "numero": 54,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Oberheim Four Voice",
+        "anno": "1975",
+        "luogo": "Santa Monica, California",
+        "costruttore": "Oberheim Electronics",
+        "specifiche": [
+            ("MODULO SEM", "1974"),
+            ("QUATTRO VOCI", "1975"),
+            ("TASTI", "49"),
+            ("PREZZO", "4.295 $"),
+        ],
+        "gancio": "Quattro sintetizzatori monofonici in fila, e per la prima volta si può comprare un accordo",
+        "sottotitolo": "Il primo polifonico in vendita a chiunque: quattro moduli SEM, otto oscillatori e una tastiera che smista le note.",
+        "la_macchina": (
+            "Dentro non c'è un sintetizzatore polifonico. Ci sono quattro "
+            "sintetizzatori monofonici completi, uno accanto all'altro, ognuno "
+            "con i suoi due oscillatori, il suo filtro e i suoi due inviluppi. "
+            "La tastiera ha 49 tasti e un circuito che decide a quale dei quattro "
+            "mandare la nota appena premuta. Per avere lo stesso timbro su tutte "
+            "le voci bisogna regolare quattro pannelli identici a mano, manopola "
+            "per manopola, finché non sono uguali. Costava 4.295 dollari, che nel "
+            "1975 era un'automobile. A me quella fila di pannelli gemelli fa "
+            "ancora impressione. È forza bruta, e ha funzionato."
+        ),
+        "inventore_nome": "Tom Oberheim",
+        "inventore": (
+            "Nel 1961 legge su una rivista di elettronica un articolo di Harald "
+            "Bode: come si costruisce un modulatore ad anello che lavori sulle "
+            "frequenze che si sentono. Se lo costruisce e lo usa nel gruppo dove "
+            "suona. Poi glielo chiedono altri, e lo costruisce per loro; uno "
+            "finisce nella colonna sonora de «L'altra faccia del pianeta delle "
+            "scimmie», un altro va al trombettista Don Ellis. Nel 1969 apre la "
+            "ditta e per anni campa di pedali. Diventa anche il primo rivenditore "
+            "ARP della costa ovest e vende 2600 a Frank Zappa e a Leon Russell. "
+            "Il SEM lo presenta nel maggio del 1974."
+        ),
+        "come_funziona": (
+            "Il pezzo che conta non lo ha progettato lui. La tastiera a scansione "
+            "la prende in licenza dalla E-mu di Dave Rossum, che l'aveva brevettata "
+            "nel 1973: un circuito digitale guarda i tasti uno dopo l'altro, "
+            "centinaia di volte al secondo, e quando ne trova uno abbassato "
+            "assegna la nota al primo SEM libero. Tutto il resto, oscillatori e "
+            "filtri, resta analogico. Provate a immaginarlo come un centralino "
+            "telefonico con quattro linee. Se premete cinque tasti, il quinto non "
+            "ha dove andare e la nota più vecchia se ne va."
+        ),
+        "richiami": [
+            ("FIG. 1", "4 moduli SEM, uno per voce"),
+            ("FIG. 2", "Tastiera a scansione, 49 tasti"),
+            ("FIG. 3", "Programmer: 16 patch per voce"),
+        ],
+        "chi_lusata": [
+            {"artista": "Vangelis", "nota": "ne teneva uno al Nemo Studios negli anni di «Spiral» (1977)", "ig": None},
+            {"artista": "Herbie Hancock", "nota": "su «Monster» (1980) lavora con l'otto voci, cioè lo stesso in doppia misura", "ig": None},
+            {"artista": "808 State", "nota": "il quattro voci esposto all'Horniman Museum di Londra era loro", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Il prototipo numero 1 esiste ancora. Guardatelo da vicino: sui "
+            "pannelli dei SEM ci sono etichette rosse coi puntini in rilievo, "
+            "braille, perché quello strumento era di Stevie Wonder e le manopole "
+            "doveva poterle ritrovare da solo. Sul pannello nero sopra i tasti c'è "
+            "la firma di Tom Oberheim, fatta a pennarello argentato. Di tutte le "
+            "fotografie che ho guardato per questa scheda è quella che mi ha fatto "
+            "fermare. Non sembra un pezzo da museo, sembra un attrezzo che ha "
+            "lavorato, con la carta adesiva ingiallita agli angoli."
+        ),
+        "avvertenza": "Quattro voci sono quattro accordature. Si accorda SEM per SEM, con la macchina già calda, o l'accordo non è un accordo.",
+        "foto": {
+            "file": "assets/foto/oberheim4voice/principale.jpg",
+            "autore": "Robert Brook",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        # Tre foto extra: con meno, la banda della tavola 4 ricadrebbe su un
+        # ritaglio della copertina, che qui è scura e sotto vetro.
+        "foto_extra": [
+            {"file": "assets/foto/oberheim4voice/prototipo.jpg",
+             "autore": "Alison Cassidy", "licenza": "CC BY-SA 4.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il prototipo numero 1: le etichette rosse sui pannelli sono in braille"},
+            {"file": "assets/foto/oberheim4voice/sem.jpg",
+             "autore": "Kevin Spencer", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "I moduli SEM da vicino: uno per voce, ognuno un synth completo"},
+            {"file": "assets/foto/oberheim4voice/tastiera.jpg",
+             "autore": "Kevin Spencer", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Un otto voci a due manuali: lo stesso sistema, raddoppiato"},
+        ],
+        "fonti": [
+            {"titolo": "«Oberheim Polyphonic Synthesizer» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Oberheim_Polyphonic_Synthesizer", "data": "2026-10-01"},
+            {"titolo": "«Product History» — tomoberheim.com (sito del progettista)",
+             "url": "https://www.tomoberheim.com/historical-products", "data": "2026-10-01"},
+            {"titolo": "«Tom Oberheim» — Wikipedia (EN), su Bode, Don Ellis e la rivendita ARP",
+             "url": "https://en.wikipedia.org/wiki/Tom_Oberheim", "data": "2026-10-01"},
+            {"titolo": "«E-mu Systems» — Wikipedia (EN): tastiera a scansione brevettata nel 1973 e data in licenza a Oberheim",
+             "url": "https://en.wikipedia.org/wiki/E-mu_Systems", "data": "2026-10-01"},
+            {"titolo": "«Vangelis: Recording At Nemo Studios» — Sound On Sound (elenca l'Oberheim 4-Voice)",
+             "url": "https://www.soundonsound.com/people/vangelis-recording-nemo-studios", "data": "2026-10-01"},
+            {"titolo": "«Herbie Hancock's Electronic Instrument Glossary» — herbiehancock.com",
+             "url": "https://www.herbiehancock.com/2016/09/14/herbie-hancocks-electronic-instrument-glossary/", "data": "2026-10-01"},
+            {"titolo": "«File:Oberheim 4-voice prototype.jpg» — Wikimedia Commons, con la targhetta del museo nell'inquadratura",
+             "url": "https://commons.wikimedia.org/wiki/File:Oberheim_4-voice_prototype.jpg", "data": "2026-10-01"},
+        ],
+        "hashtags": ["#oberheim", "#sintetizzatore", "#polifonia", "#anni70", "#musicaelettronica"],
+        "verificata": True,
+    },
+    {
+        "slug": "korgm1",
+        "numero": 55,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Korg M1",
+        "anno": "1988",
+        "luogo": "Tokyo, Giappone",
+        "costruttore": "Korg",
+        "specifiche": [
+            ("USCITA", "1988"),
+            ("VOCI", "16"),
+            ("MEMORIA PCM", "4 MB"),
+            ("VENDUTI", "250.000"),
+        ],
+        "gancio": "Il sintetizzatore più venduto di sempre. E Korg non ha mai confermato quanti",
+        "sottotitolo": "Niente oscillatori, ma 86 forme d'onda registrate in 4 MB di memoria, due unità di effetti e un sequencer a 8 piste.",
+        "la_macchina": (
+            "Una tastiera nera da 61 tasti che a vederla non dice niente, e per "
+            "sette anni è stata in ogni sala prove d'Europa. Dentro ci sono 4 MB "
+            "di memoria con 86 forme d'onda registrate da strumenti veri, più 44 "
+            "suoni di batteria e percussione; sopra, un filtro e un inviluppo per "
+            "modellarle, due unità di effetti e un sequencer a 8 piste con la "
+            "pila tampone. Korg la chiama «music workstation», cioè scrivi il "
+            "pezzo, lo suoni e lo registri senza uscire dalla scatola. In "
+            "Inghilterra costava 1.499 sterline. Le voci sono 16 e vanno divise "
+            "fra tutte le piste."
+        ),
+        "inventore_nome": "Tsutomu Kato e Tadashi Osanai",
+        "inventore": (
+            "Kato aveva un locale notturno a Tokyo. Osanai era un fisarmonicista "
+            "laureato all'università di Tokyo e ci suonava tutte le sere, "
+            "accompagnandosi con una scatola ritmica americana, la Wurlitzer "
+            "Sideman, che non gli piaceva. Convinse Kato a mettere i soldi per "
+            "farne una migliore e nel 1963 uscì la Donca-Matic, chiamata così dal "
+            "verso che faceva. La ditta si chiamava Keio, dalle iniziali dei due "
+            "e dalla linea del treno lì accanto. Korg arriva nel 1967, da Keio più "
+            "organ, perché il prodotto nuovo era un organo."
+        ),
+        "come_funziona": (
+            "Il suono parte da un campione breve, qualche decina di millisecondi "
+            "di pianoforte vero o di un colpo di rullante, letto in ciclo e poi "
+            "passato in un filtro e in un inviluppo come su un synth analogico. "
+            "Korg la chiamava AI synthesis. La novità non era campionare, che "
+            "Fairlight ed Emulator facevano da anni, ma mettere nella stessa ROM "
+            "anche le percussioni e due riverberi decenti, così il pezzo intero "
+            "stava in una macchina sola. I campioni sono corti e gli attacchi "
+            "duri. È per quello che il pianoforte dell'M1 lo riconoscete in due "
+            "note."
+        ),
+        "richiami": [
+            ("FIG. 1", "4 MB di PCM, 86 forme d'onda"),
+            ("FIG. 2", "Sequencer a 8 piste"),
+            ("FIG. 3", "Feritoia PROG/SEQ DATA"),
+        ],
+        "chi_lusata": [
+            {"artista": "Robin S.", "nota": "«Show Me Love» (1990): quell'organo è il preset Organ 2, di fabbrica", "ig": None},
+            {"artista": "Madonna", "nota": "«Vogue» (1990), scritta con Shep Pettibone su suoni dell'M1", "ig": None},
+            {"artista": "Snap!", "nota": "«Rhythm Is a Dancer» (1992)", "ig": None},
+            {"artista": "Bon Iver", "nota": "«Beth/Rest» (2012): l'M1 scelto apposta perché suona di 1988", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Show Me Love", "artista": "Robin S.", "anno": "1990",
+                         "cosa": "Il giro d'organo non l'ha programmato nessuno: è un preset preso dalla memoria di fabbrica e suonato così com'era."},
+        "aneddoto": (
+            "Il numero che gira è 250.000 esemplari e lo trovate scritto "
+            "dappertutto. Sound On Sound è andato a chiederlo a Korg, e Korg non "
+            "l'ha confermato. Ha confermato un'altra cosa: che la macchina numero "
+            "100.000 è uscita dalla linea a novembre del 1990, due anni dopo "
+            "l'inizio. Fate il conto di quante ne uscivano al giorno. Il quarto "
+            "di milione io me lo tengo fra virgolette, ma il ritmo dei primi due "
+            "anni dice già abbastanza."
+        ),
+        "avvertenza": "Le voci sono 16 in tutto, divise fra le 8 piste. Con pianoforte e batteria insieme le note in più spariscono, e non è un guasto.",
+        "foto": {
+            "file": "assets/foto/korgm1/principale.jpg",
+            "autore": "deepsonic",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/korgm1/angolo.jpg",
+             "autore": "deepsonic", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il cursore del volume, i tasti e il bordo a gradini del pannello"},
+            {"file": "assets/foto/korgm1/cartuccia.jpg",
+             "autore": "deepsonic", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "La feritoia PROG/SEQ DATA: i suoni e le sequenze uscivano su cartuccia"},
+            {"file": "assets/foto/korgm1/manopole.jpg",
+             "autore": "deepsonic", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "PROG e COMBI: un suono solo, oppure otto impilati"},
+        ],
+        "fonti": [
+            {"titolo": "«Korg M1» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Korg_M1", "data": "2026-10-01"},
+            {"titolo": "«Korg M1 (Retrozone)» — Sound On Sound: i 250.000 non confermati, il numero di serie 100.000 a novembre 1990",
+             "url": "https://www.soundonsound.com/reviews/korg-m1-retrozone", "data": "2026-10-01"},
+            {"titolo": "«Korg» — Wikipedia (EN): Kato, Osanai, la Wurlitzer Sideman e la Donca-Matic",
+             "url": "https://en.wikipedia.org/wiki/Korg", "data": "2026-10-01"},
+            {"titolo": "«The legendary Korg M1 Organ 2 preset» — Gijs Verheijke, su «Show Me Love»",
+             "url": "https://gijs.substack.com/p/the-legendary-korg-m1-organ-2-preset", "data": "2026-10-01"},
+            {"titolo": "«How to make a classic house organ sound like Robin S.' Show Me Love» — MusicRadar",
+             "url": "https://www.musicradar.com/how-to/classic-house-organ-robin-s-show-me-love", "data": "2026-10-01"},
+        ],
+        "hashtags": ["#korg", "#m1", "#house", "#anni80", "#musicaelettronica"],
+        "verificata": True,
+    },
+    {
+        "slug": "sh101",
+        "numero": 56,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Roland SH-101",
+        "anno": "1982",
+        "luogo": "Osaka, Giappone",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("USCITA", "nov. 1982"),
+            ("FINE PRODUZIONE", "1986"),
+            ("TASTI", "32"),
+            ("PREZZO", "495 $"),
+        ],
+        "gancio": "Doveva essere la tastiera a tracolla dei ragazzi. È finita a fare i bassi della techno",
+        "sottotitolo": "Un oscillatore solo, 32 tasti, un sequencer da 100 passi e le pile dentro: Roland la vendeva per il palco.",
+        "la_macchina": (
+            "Grigia, leggera, coi cursori arancioni. Un oscillatore, un "
+            "sub-oscillatore che suona una e due ottave sotto, un generatore di "
+            "rumore e un mixer per dosarli; poi filtro, inviluppo, un LFO. Basta. "
+            "I tasti sono 32 e va a pile. Sotto ai cursori stanno il sequencer da "
+            "100 passi e l'arpeggiatore, coi tastini LOAD e PLAY. La facevano "
+            "grigia, rossa e blu, e c'erano una tracolla di pelle e una "
+            "impugnatura da infilare nel fianco. Memorie non ce ne sono: il suono "
+            "che avete sul pannello è l'unico che avete."
+        ),
+        "inventore_nome": "Roland, su un'idea sbagliata",
+        "inventore": (
+            "Non c'è un progettista accreditato, c'è una scommessa. Alla fine del "
+            "1982 Roland è convinta che il futuro sia il musicista che salta sul "
+            "palco con la tastiera appesa al collo, e le pubblicità dell'SH-101 "
+            "mettono ragazzi che saltano sopra la scritta «freedom for "
+            "expression». La scommessa la perde: chi aveva 500 dollari se li "
+            "teneva per un DX7, e nel 1986 la produzione chiude. Sette anni dopo "
+            "quelle stesse macchine stavano nei banchi dei pegni a 50 sterline e "
+            "se le compravano i ragazzi di Detroit e di Manchester."
+        ),
+        "come_funziona": (
+            "Il peso del suono non viene dal filtro, viene dal mixer. Le tre "
+            "sorgenti partono tutte dallo stesso oscillatore: dente di sega, "
+            "impulso e il sub, che prende la frequenza e la divide per due o per "
+            "quattro. Alzate il cursore del sub e la nota scende di corpo senza "
+            "perdere l'attacco. Il filtro è un passa-basso e, con la risonanza "
+            "tutta su, si mette a oscillare da solo. Il sequencer si riempie "
+            "premendo le note una alla volta, senza schermo e senza griglia, e "
+            "quando parte scoprite che cosa avete scritto."
+        ),
+        "richiami": [
+            ("FIG. 1", "1 oscillatore + sub a -1 e -2 ottave"),
+            ("FIG. 2", "Sequencer da 100 passi"),
+            ("FIG. 3", "Presa MODULATION GRIP"),
+        ],
+        "chi_lusata": [
+            {"artista": "A Guy Called Gerald", "nota": "«Voodoo Ray» (1988): l'SH-101 c'è in più di una traccia", "ig": None},
+            {"artista": "Juan Atkins", "nota": "a Detroit dal 1985, su «Off To Battle» e «Interference»", "ig": None},
+            {"artista": "Nightmares On Wax", "nota": "«Dextrous» (1989), figlio dichiarato di «Voodoo Ray»", "ig": "nightmaresonwax"},
+            {"artista": "The Prodigy", "nota": "fra le macchine arrivate al giro rave intorno al 1990", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Voodoo Ray", "artista": "A Guy Called Gerald", "anno": "1988",
+                         "cosa": "Ascoltate il basso: è una nota sola col sub tirato su, e tiene in piedi tutto il pezzo da sola."},
+        "aneddoto": (
+            "La pubblicità del 1982 la mostrava appesa al collo, con "
+            "l'impugnatura in mano come il manico di una chitarra. Quella parte "
+            "non ha mai attecchito. Quello che è rimasto è la presa in alto a "
+            "sinistra del pannello, dove l'impugnatura si infilava, con sopra "
+            "scritto MODULATION GRIP: su quasi tutte le macchine che trovate oggi "
+            "è vuota, e la plastica lì attorno è più chiara perché nessuno ci ha "
+            "mai messo le dita. L'accessorio che doveva salvare lo strumento è "
+            "l'unica cosa che di quello strumento è sparita."
+        ),
+        "avvertenza": "Le memorie non esistono. Prima di spegnere, la fotografia del pannello: è l'unico modo di ritrovare il suono di stasera.",
+        # La copertina e' la fotografia col rapporto piu' vicino al riquadro:
+        # quella frontale, piu' larga, veniva tagliata ai lati e si perdeva
+        # la sigla stampata sul pannello. Guardata la tavola, non il file.
+        "foto": {
+            "file": "assets/foto/sh101/principale.jpg",
+            # La tavola 4 non ha una foto sua e ricade su questa con un
+            # ingrandimento: centrata, il ritaglio cadeva sui tasti. Alzando
+            # il punto di messa a fuoco prende la fila dei cursori, che e'
+            # quello di cui parla il testo.
+            "posizione": "center 32%",
+            "autore": "eternal jamzzzz",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/sh101/pannello.jpg",
+             "autore": "909 bd (Wikipedia EN)", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "In alto a sinistra la presa MODULATION GRIP, quasi sempre vuota"},
+            {"file": "assets/foto/sh101/blu.jpg",
+             "posizione": "center 45%",
+             "autore": "byCharly", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "La versione blu, uno dei tre colori, suonata dal vivo"},
+        ],
+        "fonti": [
+            {"titolo": "«Roland SH-101» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_SH-101", "data": "2026-10-01"},
+            {"titolo": "«Instrumental Instruments: Roland SH-101» — Red Bull Music Academy Daily",
+             "url": "https://daily.redbullmusicacademy.com/2017/09/roland-sh101-instrumental-instruments/", "data": "2026-10-01"},
+            {"titolo": "«Roland SH101 (Retrozone)» — Sound On Sound",
+             "url": "https://www.soundonsound.com/reviews/roland-sh101-retrozone", "data": "2026-10-01"},
+        ],
+        "hashtags": ["#roland", "#sh101", "#techno", "#anni80", "#sintetizzatore"],
+        "verificata": True,
+    },
+    {
+        "slug": "vl1",
+        "numero": 57,
+        "serie": "I GIOCATTOLI",
+        "strumento": "Casio VL-Tone VL-1",
+        "anno": "1980 circa",
+        "luogo": "Tokyo, Giappone",
+        "costruttore": "Casio",
+        "specifiche": [
+            ("USCITA", "1979-82?"),
+            ("TASTI", "29"),
+            ("SUONI", "5 + ADSR"),
+            ("PREZZO", "69,95 $"),
+        ],
+        "gancio": "Una calcolatrice che suona. E con cinque suoni di plastica ci hanno fatto «Da Da Da»",
+        "sottotitolo": "29 tasti, un display a cristalli liquidi e una calcolatrice vera dentro: Casio la vendeva come giocattolo.",
+        "la_macchina": (
+            "Sta in una mano. A sinistra la griglia dell'altoparlante, al centro "
+            "il display e la scritta ELECTRONIC MUSICAL INSTRUMENT VL-1, poi due "
+            "ottave e mezzo di tastini. Sotto i tasti bianchi, stampati, ci sono "
+            "i numeri e i segni: premete CAL e diventa una calcolatrice, premete "
+            "MUSIC e torna uno strumento. I suoni sono cinque e i nomi stanno "
+            "sopra i due cursori, piano, violino, flauto, chitarra, fantasy. Sono "
+            "imitazioni pessime e lo sanno anche loro. Il sesto si chiama ADSR e "
+            "ve lo scrivete da soli."
+        ),
+        "inventore_nome": "I fratelli Kashio",
+        "inventore": (
+            "La Casio nasce nel 1946 a Tokyo e per trent'anni fa una cosa sola, "
+            "calcolatrici. Nel 1957 Toshio Kashio mette a punto la 14-A, la prima "
+            "calcolatrice compatta interamente elettrica, e la ditta cresce su "
+            "quella. Negli anni Settanta i chip da calcolatrice costano ormai "
+            "pochissimo e qualcuno in azienda fa la domanda giusta: se questo coso "
+            "sa contare, può anche contare le vibrazioni di una nota. Il VL-1 è "
+            "la risposta. Non esce dal reparto strumenti musicali, perché il "
+            "reparto strumenti musicali non c'era ancora."
+        ),
+        "come_funziona": (
+            "Si vede che il cuore è un chip da calcolatrice da come si programma "
+            "il sesto suono. Premete ADSR e dovete digitare otto cifre in fila: la "
+            "prima sceglie la forma d'onda, le altre l'attacco, il decadimento, il "
+            "livello e la durata del sostegno, il rilascio, il vibrato, il "
+            "tremolo. Un inviluppo che si scrive come un numero di telefono. Il "
+            "risultato quasi sempre suona peggio dei cinque preimpostati, però è "
+            "un ADSR vero, su una macchina da 69,95 dollari che la gente comprava "
+            "per i bambini."
+        ),
+        "richiami": [
+            ("FIG. 1", "Display a 8 caratteri"),
+            ("FIG. 2", "ADSR in 8 cifre"),
+            ("FIG. 3", "10 ritmi preimpostati"),
+        ],
+        "chi_lusata": [
+            {"artista": "Trio", "nota": "«Da Da Da» (1982): ritmo Rock-1 e voce Piano, come escono dalla scatola", "ig": None},
+            {"artista": "The Human League", "nota": "fra i primi a prenderla sul serio in studio", "ig": None},
+            {"artista": "Stevie Wonder", "nota": "citato fra chi l'ha usata dalla scheda del museo che la espone", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Da Da Da", "artista": "Trio", "anno": "1982",
+                         "cosa": "La batteria è il ritmo Rock-1 della macchinetta, lasciato girare dall'inizio alla fine; il motivetto è la voce Piano."},
+        "aneddoto": (
+            "Non si riesce a stabilire di che anno sia. Wikipedia dice 1981. "
+            "Vintage Synth Explorer dice giugno 1979. La didascalia su Commons "
+            "dice 1980. La targhetta del museo che la espone, sotto la vetrina, "
+            "dice «um 1982», cioè circa 1982. Quattro fonti, quattro anni. Succede "
+            "agli oggetti usciti come giocattoli: arrivano nei negozi senza "
+            "comunicati stampa e senza recensioni, e quando qualcuno si accorge "
+            "che contano sono passati dieci anni e la data se l'è persa per strada."
+        ),
+        "avvertenza": "Cinque suoni di fabbrica, il sesto in otto cifre. Sbagliatene una e non c'è un tasto per tornare indietro: si ribatte tutto.",
+        "foto": {
+            "file": "assets/foto/vl1/principale.jpg",
+            "autore": "Dontpanic",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/vl1/museo.jpg",
+             "posizione": "center 62%",
+             "autore": "Reinraum", "licenza": "pubblico dominio", "fonte": "Wikimedia Commons",
+             "didascalia": "In vetrina col manuale: «ELECTRONIC MUSICAL INSTRUMENT & CALCULATOR»"},
+        ],
+        "fonti": [
+            {"titolo": "«Casio VL-1» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Casio_VL-1", "data": "2026-10-01"},
+            {"titolo": "«Casio VL-Tone VL-1» — Vintage Synth Explorer (data: giugno 1979)",
+             "url": "https://www.vintagesynth.com/casio/vl-tone-vl-1", "data": "2026-10-01"},
+            {"titolo": "«Casio» — Wikipedia (EN): i fratelli Kashio e la calcolatrice 14-A del 1957",
+             "url": "https://en.wikipedia.org/wiki/Casio", "data": "2026-10-01"},
+            {"titolo": "«File:Casio VL-1 Inv Nr 81934.jpg» — Wikimedia Commons, con la targhetta «um 1982»",
+             "url": "https://commons.wikimedia.org/wiki/File:Casio_VL-1_Inv_Nr_81934.jpg", "data": "2026-10-01"},
+        ],
+        "hashtags": ["#casio", "#vltone", "#giocattoli", "#anni80", "#musicaelettronica"],
+        "verificata": True,
+    },
 ]
 
 

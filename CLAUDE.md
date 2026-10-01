@@ -407,11 +407,25 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
 - GitHub Pages: `docs/` su main, deploy via Actions (`configure-pages`
   con `enablement: true`). HEAD sulle immagini prima di chiamare l'API.
 - Download da Wikimedia/Flickr DAL CONTAINER: spesso rate-limitati
-  (429 robot-policy / 502). I thumbnail di Commons accettano solo
-  larghezze standard (1920px sì, 1600 no) e serve uno User-Agent con
-  contatto. Se il container è bloccato NON insistere: si usa il
-  workflow `scarica-foto.yml` (dispatch con url+dest), che scarica da
-  un runner GitHub con IP pulito e committa.
+  (429 robot-policy / 502). Serve uno User-Agent con contatto. Se il
+  container è bloccato NON insistere: si usa il workflow
+  `scarica-foto.yml` (dispatch con url+dest), che scarica da un runner
+  GitHub con IP pulito e committa.
+- **Il 429 di Wikimedia non è un blocco, è un cartello** (01/10/2026).
+  Su 16 foto, gli ORIGINALI hanno dato 429 praticamente tutti e i
+  thumbnail sono passati quasi tutti: il messaggio d'errore lo dice in
+  chiaro («instead use thumbnail images in sizes listed on…») e per due
+  volte ho letto «429» come «sono bloccato» invece che come «stai
+  chiedendo la cosa sbagliata». Le larghezze ammesse sono una lista
+  corta — **20, 40, 60, 120, 250, 330, 500, 960, 1280, 1920, 3840** — e
+  tutto il resto torna 400, non 429: ecco perché 1600, 1024 e 640
+  fallivano. Quindi: mai l'originale, sempre un thumbnail a una di
+  quelle larghezze (per un file da 750px di larghezza si scende a 500,
+  e se 500 è troppo poco per una banda la foto non si usa). Chi vuole
+  una larghezza qualsiasi la chiede all'API (`iiurlwidth`), che
+  arrotonda da sola e restituisce un `thumburl` valido.
+  Regola generale: un codice d'errore con dentro una spiegazione va
+  letto, non contato.
 
 ## Sessione di rifornimento schede (ricorrente)
 
