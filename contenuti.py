@@ -4233,6 +4233,483 @@ SCHEDE = [
         "hashtags": ["#casio", "#vltone", "#giocattoli", "#anni80", "#musicaelettronica"],
         "verificata": True,
     },
+    {
+        "slug": "lowrey",
+        "numero": 58,
+        "serie": "GLI ORGANI",
+        "strumento": "Lowrey DSO",
+        "anno": "1965",
+        "luogo": "Chicago, USA",
+        "costruttore": "Lowrey Organ Company",
+        "specifiche": [
+            ("PRIMO ORGANO", "1955"),
+            ("MODELLO DSO", "1965"),
+            ("MANUALI", "2 + pedaliera"),
+            ("GENERAZIONE", "valvole"),
+        ],
+        "gancio": "L'organo da salotto americano, e le otto note che aprono «Lucy in the Sky with Diamonds»",
+        "sottotitolo": "Lowrey costruiva organi per le case, non per i palchi, e non ha mai avuto una ruota fonica: tutto elettronico dal primo giorno.",
+        "la_macchina": (
+            "Un mobile di legno con due tastiere, la pedaliera sotto e il leggio "
+            "sopra, fatto per stare in un soggiorno americano. I registri sono "
+            "tabulatori bianchi e rossi a sinistra di ogni manuale, con sopra "
+            "scritto il nome dello strumento da imitare. Negli anni Sessanta e "
+            "Settanta Lowrey era il più grande costruttore di organi elettronici "
+            "del mondo, e li vendeva a gente che non sapeva suonare: c'era "
+            "l'accompagnamento automatico, e dal 1968 anche i ritmi. "
+            "All'esemplare in copertina qualcuno ha avvitato sotto la tastiera una "
+            "scatola di ritmi comprata a parte, che non è roba Lowrey."
+        ),
+        "inventore_nome": "Frederick Lowrey",
+        "inventore": (
+            "Lowrey era un industriale di Chicago, non un musicista. La ditta "
+            "parte da un'idea pratica: si attacca al pianoforte di casa un "
+            "aggeggio che gli aggiunge i registri d'organo su 60 note e lo lascia "
+            "pianoforte. Si chiama Organo, esce nel 1949 e serve a contendere a "
+            "Hammond il mercato del Solovox. Il primo organo vero arriva nel "
+            "1955, il Model S Berkshire. La differenza con Hammond sta alla "
+            "radice e non cambierà mai: in un Hammond il suono lo fanno delle "
+            "ruote dentate che girano davanti a delle calamite, in un Lowrey non "
+            "si muove niente."
+        ),
+        "come_funziona": (
+            "Oscillatori a valvola e divisori, e i tabulatori aprono filtri che "
+            "colorano quello che esce: flauto, oboe, clarinetto, arpa. Il punto è "
+            "che potete tenerne premuti quattro insieme. Nessuno dei quattro "
+            "somiglia davvero allo strumento che ha scritto sopra, e quattro "
+            "imitazioni mediocri sovrapposte danno un timbro che in natura non "
+            "esiste. Un organo da casa fa male il mestiere che dichiara, e "
+            "proprio per questo ne ha trovato un altro. Se ne provate uno, non "
+            "cercate il flauto: provate ad aprirne quattro a caso."
+        ),
+        "richiami": [
+            ("FIG. 1", "2 manuali e pedaliera"),
+            ("FIG. 2", "Tabulatori dei registri"),
+            ("FIG. 3", "Ritmi automatici, dal 1968"),
+        ],
+        "chi_lusata": [
+            {"artista": "Paul McCartney", "nota": "l'introduzione di «Lucy in the Sky with Diamonds» (1967)", "ig": None},
+            {"artista": "I Beatles", "nota": "e ancora un Lowrey su «Being for the Benefit of Mr. Kite!», stesso disco", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Lucy in the Sky with Diamonds", "artista": "The Beatles", "anno": "1967",
+                         "cosa": "Le prime otto note. Non è un clavicembalo: è un organo da salotto con quattro registri aperti tutti insieme."},
+        "aneddoto": (
+            "Il 1° marzo 1967 McCartney si mette al Lowrey che stava ad Abbey "
+            "Road e cerca il suono per l'attacco del pezzo. Non ne apre uno, ne "
+            "apre quattro: clavicembalo, vibrafono, carillon e chitarra. Quelle "
+            "otto note le riconoscono tutti e quasi nessuno sa che escono da un "
+            "mobile che si comprava a rate, con l'accompagnamento automatico "
+            "incluso e il leggio di legno sopra. Se ne trovate uno in un "
+            "mercatino, i tabulatori ci sono ancora e si chiamano ancora così."
+        ),
+        "avvertenza": "Dentro ci sono valvole e un alimentatore vecchio di sessant'anni. Un DSO rimasto in cantina non si accende e basta: prima i condensatori.",
+        "foto": {
+            "file": "assets/foto/lowrey/principale.jpg",
+            "autore": "Human-potato hybrid",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/lowrey/acceso.jpg",
+             "autore": "Brokephotography7D", "licenza": "CC BY-SA 4.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Un Lowrey Citation acceso: i tabulatori colorati sono i registri"},
+            {"file": "assets/foto/lowrey/c500.jpg",
+             "autore": "Emily Harrison", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Un modello del 1977: mobile, panca, pedaliera"},
+        ],
+        "fonti": [
+            {"titolo": "«Lowrey organ» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Lowrey_organ", "data": "2026-10-05"},
+            {"titolo": "«Lucy In The Sky With Diamonds» — The Beatles Bible: il Lowrey DSO-1 Heritage Deluxe e i quattro registri aperti insieme",
+             "url": "https://www.beatlesbible.com/songs/lucy-in-the-sky-with-diamonds/", "data": "2026-10-05"},
+            {"titolo": "«Lucy in the Sky with Diamonds» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Lucy_in_the_Sky_with_Diamonds", "data": "2026-10-05"},
+        ],
+        "hashtags": ["#lowrey", "#organo", "#beatles", "#anni60", "#musicaelettronica"],
+        "verificata": True,
+    },
+    {
+        "slug": "polymoog",
+        "numero": 59,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Moog Polymoog",
+        "anno": "1975",
+        "luogo": "Williamsville, New York",
+        "costruttore": "Moog Music",
+        "specifiche": [
+            ("SYNTHESIZER", "1975"),
+            ("KEYBOARD", "1978"),
+            ("TASTI", "71"),
+            ("FINE", "1980"),
+        ],
+        "gancio": "Una scheda elettronica per ogni tasto, 71 in tutto, dentro un mobile solo",
+        "sottotitolo": "Moog arriva alla polifonia per la strada degli organi da casa, dividendo un oscillatore unico, e poi ci mette una scheda per nota.",
+        "la_macchina": (
+            "71 tasti pesati e sensibili al tocco, un pannello di cursori e, "
+            "sotto il coperchio, file di schede verdi: una per ogni nota. Il "
+            "primo modello esce nel 1975 a 5.295 dollari con otto suoni di "
+            "fabbrica, dagli archi agli ottoni, e i cursori sopra per "
+            "spostarli. Nel 1978 arriva la versione Keyboard, 3.995 dollari e 14 "
+            "preset. La fama che si porta dietro non è per il suono ma per "
+            "l'affidabilità, e il motivo si capisce contando: 71 schede sono 71 "
+            "cose che si possono guastare."
+        ),
+        "inventore_nome": "Moog Music",
+        "inventore": (
+            "Nel 1975 il problema ce l'hanno tutti ed è uno solo, suonare un "
+            "accordo. Un oscillatore per voce costa, e cinque voci costano cinque "
+            "volte; nessuno ancora sa farne dieci a un prezzo di mercato. Moog "
+            "prende la strada che gli organi da salotto battevano da vent'anni, "
+            "cioè un oscillatore solo, altissimo, e una catena di divisori che da "
+            "lì ricava tutte le note della tastiera. Il pezzo che ci aggiunge sta "
+            "a valle. Non è un organo e non è un Minimoog moltiplicato per "
+            "cinque, è una terza cosa, e in catalogo non ce n'erano altre."
+        ),
+        "come_funziona": (
+            "Il generatore in cima fa le note più acute, i divisori le portano "
+            "giù di ottava in ottava. Fin qui è un organo. La differenza sono le "
+            "schede, una per tasto, ognuna col suo filtro, il suo inviluppo e il "
+            "suo controllo di ampiezza: ogni nota ha la sua catena e nessuna "
+            "ruba la voce a un'altra, come invece succede sui polifonici a voci "
+            "contate. Quello che perdete è la programmazione. I preset li potete "
+            "spostare con i cursori, ma un suono da zero su questa macchina non "
+            "lo costruite."
+        ),
+        "richiami": [
+            ("FIG. 1", "71 schede, una per tasto"),
+            ("FIG. 2", "8 preset, 14 sulla Keyboard"),
+            ("FIG. 3", "Tastiera sensibile al tocco"),
+        ],
+        "chi_lusata": [
+            {"artista": "Gary Numan", "nota": "«Cars» (1979) e tutto «The Pleasure Principle», col preset Vox Humana", "ig": None},
+            {"artista": "Prince", "nota": "fra chi ne ha avuto uno negli anni in cui erano nuovi", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Cars", "artista": "Gary Numan", "anno": "1979",
+                         "cosa": "Il tappeto che regge tutto il pezzo è un preset di fabbrica chiamato Vox Humana, premuto e basta."},
+        "aneddoto": (
+            "La versione Keyboard del 1978 aveva 14 preset coi nomi stampati "
+            "sopra, e uno si chiamava Vox Humana. Gary Numan ci ha costruito "
+            "sopra un disco intero nel 1979, dopo aver tolto la chitarra "
+            "elettrica da tutto quello che faceva. Non ha programmato niente, ha "
+            "premuto un pulsante. È una cosa che fa arrabbiare chi passa le sere "
+            "a costruirsi i suoni da zero, e secondo me è esattamente il motivo "
+            "per cui quel disco regge ancora: un timbro solo, riconoscibile, "
+            "usato senza vergogna per quaranta minuti."
+        ),
+        "avvertenza": "Le schede sono 71, una per nota. Quando un tasto tace non è la tastiera: è la sua scheda, e va sfilata e rimessa.",
+        # LEZIONE RIPETUTA (05/10/2026): la prima copertina era la fotografia di
+        # una vetrina — strumento dietro una grata e, davanti, la scatola di un
+        # controller MIDI moderno, che era la scritta piu' leggibile di tutta la
+        # tavola. Si guarda la tavola generata, non il file.
+        "foto": {
+            "file": "assets/foto/polymoog/fronte.jpg",
+            "autore": "Chris Sobczak",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/polymoog/280a.jpg",
+             "autore": "Automaton399", "licenza": "CC0", "fonte": "Wikimedia Commons",
+             "didascalia": "La versione Keyboard del 1978, quella coi 14 preset"},
+            {"file": "assets/foto/polymoog/schede.jpg",
+             "autore": "Automaton399", "licenza": "CC0", "fonte": "Wikimedia Commons",
+             "didascalia": "Dentro: le schede che fanno le voci, una per nota"},
+        ],
+        "fonti": [
+            {"titolo": "«Polymoog» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Polymoog", "data": "2026-10-05"},
+            {"titolo": "«The Pleasure Principle» — Wikipedia (EN): «Numan made liberal use of the Polymoog keyboard, particularly its distinctive Vox Humana preset»",
+             "url": "https://en.wikipedia.org/wiki/The_Pleasure_Principle_(Gary_Numan_album)", "data": "2026-10-05"},
+        ],
+        "hashtags": ["#moog", "#polymoog", "#garynuman", "#anni70", "#sintetizzatore"],
+        "verificata": True,
+    },
+    {
+        "slug": "wasp",
+        "numero": 60,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "EDP Wasp",
+        "anno": "1978",
+        "luogo": "Inghilterra",
+        "costruttore": "Electronic Dream Plant",
+        "specifiche": [
+            ("USCITA", "1978"),
+            ("PREZZO", "199 £"),
+            ("TASTIERA", "stampata, 2 ottave"),
+            ("FILTRO", "CMOS, 12 dB"),
+        ],
+        "gancio": "La tastiera è un adesivo. Sotto ci sono piastrine di rame, e tutto costava 199 sterline",
+        "sottotitolo": "Nero e giallo come l'insetto, con l'altoparlante dentro e le pile: due inglesi tagliano tutto quello che non è il suono.",
+        "la_macchina": (
+            "Una scatola di plastica nera e gialla, grande come un libro grosso. "
+            "Dove dovrebbe esserci la tastiera c'è un adesivo di vinile "
+            "serigrafato e sotto l'adesivo delle piastrine di rame piatte: si "
+            "suona toccando il disegno dei tasti, che sono due ottave. Dentro ci "
+            "stanno due oscillatori digitali, due inviluppi, un filtro "
+            "commutabile, un altoparlante da 4 pollici per 2 e il posto per sei "
+            "pile mezza torcia. Sul pannello, in basso a destra, c'è scritto "
+            "Electronic Dream Plant Limited, England."
+        ),
+        "inventore_nome": "Adrian Wagner e Chris Huggett",
+        "inventore": (
+            "Wagner faceva il musicista, Huggett progettava elettronica. Nel 1977 "
+            "aprono la ditta con 10.000 sterline prestate da un negozio di "
+            "strumenti di Londra e decidono una cosa sola, tagliare tutto quello "
+            "che non è il suono. Via la tastiera meccanica, via il mobile, via le "
+            "rifiniture. Huggett costruisce gli oscillatori con logica TTL, che è "
+            "roba da computer e non da sintetizzatori, e grazie a quella restano "
+            "accordati meglio di tanti analogici dell'epoca. È lo stesso uomo "
+            "che pochi anni dopo progetterà l'OSCar."
+        ),
+        "come_funziona": (
+            "Due oscillatori digitali e un filtro analogico fatto con chip CMOS, "
+            "cioè componenti logici messi a fare un mestiere per cui non erano "
+            "nati. Il filtro taglia 12 dB per ottava e si commuta fra passa-basso, "
+            "passa-banda e passa-alto; il passa-banda è quello che dà al Wasp il "
+            "suono stretto e nasale da cui lo riconoscete. Due prese DIN a 7 poli "
+            "sul fianco si chiamano LINK e servono a collegarne due fra loro, "
+            "anni prima che esistesse il MIDI. La tastiera stampata non ha né "
+            "dinamica né corsa: o tocchi o non tocchi."
+        ),
+        "richiami": [
+            ("FIG. 1", "Tastiera a piastrine di rame"),
+            ("FIG. 2", "2 oscillatori digitali"),
+            ("FIG. 3", "Prese LINK, prima del MIDI"),
+        ],
+        "chi_lusata": [
+            {"artista": "Robert Rental e Thomas Leer", "nota": "due Wasp per tastiere e percussioni su «The Bridge» (1979)", "ig": None},
+            {"artista": "Chris Carter", "nota": "dei Throbbing Gristle: ne comprò uno dopo aver sentito «The Bridge»", "ig": None},
+            {"artista": "Dave Stewart", "nota": "degli Eurythmics, registrava col microfono davanti all'altoparlante interno", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "The Bridge", "artista": "Robert Rental e Thomas Leer", "anno": "1979",
+                         "cosa": "Le tastiere e buona parte delle percussioni escono da due Wasp, non da una batteria elettronica."},
+        "aneddoto": (
+            "Gerald Casale dei Devo raccontava che col sudore delle dita il Wasp "
+            "si metteva a suonare da solo: le piastrine sotto l'adesivo leggono "
+            "il contatto, e il sudore è un contatto. La ditta non è durata molto "
+            "di più. Nel 1980 Electronic Dream Plant fallisce, schiacciata dai "
+            "debiti coi fornitori, e chiude nel 1982. Dell'ultimo modello, il "
+            "Wasp Deluxe con la tastiera vera, ne erano usciti circa 80. Wagner "
+            "prova ad andare avanti da solo con un marchio chiamato Wasp "
+            "Synthesizers e non arriva all'anno."
+        ),
+        "avvertenza": "La tastiera è un adesivo su piastrine di rame. Non si gratta e non si pulisce con l'alcol: sotto non c'è un contatto di ricambio.",
+        "foto": {
+            "file": "assets/foto/wasp/principale.jpg",
+            "autore": "R. Bartz",
+            "licenza": "CC BY-SA 2.5",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/wasp/pannello.jpg",
+             "autore": "Julian Fincham", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il pannello giallo su nero, e i tasti che sono solo disegnati"},
+            {"file": "assets/foto/wasp/deluxe.jpg",
+             "autore": "Julian Fincham", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il Wasp Deluxe, l'ultimo modello: qui la tastiera è vera"},
+        ],
+        "fonti": [
+            {"titolo": "«Electronic Dream Plant» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Electronic_Dream_Plant", "data": "2026-10-05"},
+            {"titolo": "«EDP Wasp» — Sound On Sound: altoparlante, pile, prese LINK e «The Bridge» di Rental e Leer",
+             "url": "https://www.soundonsound.com/reviews/edp-wasp", "data": "2026-10-05"},
+        ],
+        "hashtags": ["#wasp", "#edp", "#sintetizzatore", "#anni70", "#inghilterra"],
+        "verificata": True,
+    },
+    {
+        "slug": "cz101",
+        "numero": 61,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Casio CZ-101",
+        "anno": "1984",
+        "luogo": "Tokyo, Giappone",
+        "costruttore": "Casio",
+        "specifiche": [
+            ("USCITA", "nov. 1984"),
+            ("PREZZO", "495 $"),
+            ("VOCI", "8"),
+            ("PRODOTTI", "68.500"),
+        ],
+        "gancio": "Digitale, programmabile e a 495 dollari, mentre il DX7 ne costava quattro volte tanti",
+        "sottotitolo": "Tasti piccoli, sei pile torcia e una sintesi inventata in casa che Casio chiamava distorsione di fase.",
+        "la_macchina": (
+            "49 tasti piccoli, quattro ottave, e un pannello grigio pieno di "
+            "tastini color sabbia. Ha i perni per la tracolla e va a sei pile "
+            "torcia, quindi lo suonate dove vi pare. Le voci sono 8 con un "
+            "oscillatore ciascuna, 4 se ne usate due per voce. Sul pannello "
+            "leggete DCO, DCW e DCA scritti due volte, e sono le tre sezioni di "
+            "ogni linea: oscillatore, forma d'onda, ampiezza. Di filtro non c'è "
+            "traccia, e non è una dimenticanza."
+        ),
+        "inventore_nome": "Casio, un'altra volta",
+        "inventore": (
+            "Quattro anni dopo il VL-Tone la ditta delle calcolatrici si "
+            "ripresenta, e stavolta vuole lo scaffale accanto allo Yamaha DX7. "
+            "Il DX7 era digitale, costava quasi duemila dollari e lo sapevano "
+            "programmare in pochi; la sintesi FM che gli stava dentro era un "
+            "brevetto di Stanford, con la licenza da pagare. Casio si scrive un "
+            "metodo proprio, la distorsione di fase, che arriva a un suono "
+            "parente senza essere FM, e tiene il prezzo a un quarto. Non è "
+            "un'operazione da ingegneri romantici, è una mossa commerciale. Ha "
+            "funzionato."
+        ),
+        "come_funziona": (
+            "Si parte da una sinusoide, la forma d'onda più povera che ci sia. "
+            "Invece di cambiarne l'ampiezza si cambia la velocità con cui la si "
+            "percorre, rallentando in un punto del ciclo e correndo nell'altro. "
+            "Quello che esce ha gli spigoli dove prima era tondo, e gli spigoli "
+            "sono armoniche. Variando quanto si distorce la fase il timbro si "
+            "apre e si chiude, che è il mestiere del filtro su un analogico. Per "
+            "questo qui il filtro non c'è e la sezione che fa quel lavoro si "
+            "chiama DCW, cioè forma d'onda controllata digitalmente."
+        ),
+        "richiami": [
+            ("FIG. 1", "DCO, DCW, DCA per linea"),
+            ("FIG. 2", "8 voci, 4 con due oscillatori"),
+            ("FIG. 3", "6 pile torcia"),
+        ],
+        "chi_lusata": [
+            {"artista": "Vince Clarke", "nota": "degli Erasure: a un certo punto ne teneva quattro", "ig": None},
+            {"artista": "Eurythmics", "nota": "fra i primi a prenderlo sul serio in studio", "ig": None},
+            {"artista": "Salt-N-Pepa", "nota": "fra chi se lo è portato dentro un altro genere", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Nel novembre del 1984 il CZ-101 arriva nei negozi a 495 dollari. Il "
+            "DX7 ne costava quasi quattro volte e si programmava con un display a "
+            "una riga e una tabella di parametri che nemmeno i commessi sapevano "
+            "spiegare. Il Casio invece lo programmavano i ragazzi, perché costava "
+            "poco e perché andava a pile: te lo portavi in camera. Fino al 1988 "
+            "ne hanno fatti 68.500. A me la nomea di sintetizzatore dei poveri è "
+            "sempre sembrata ingiusta, e negli anni Novanta quel suono di organo "
+            "è tornato dentro migliaia di dischi da ballo senza che nessuno "
+            "chiedesse quanto fosse costata la macchina."
+        ),
+        "avvertenza": "Altoparlante non ce n'è. L'unica uscita è la presa delle cuffie, quindi senza cuffie o amplificatore non lo sentite suonare.",
+        "foto": {
+            "file": "assets/foto/cz101/principale.jpg",
+            "autore": "Neil Vance",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/cz101/retro.jpg",
+             "autore": "Clusternote", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Lo stesso strumento visto dall'altro verso"},
+            {"file": "assets/foto/cz101/angolo.jpg",
+             "autore": "Clusternote", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Di sbieco: i tasti piccoli si vedono solo da qui"},
+        ],
+        "fonti": [
+            {"titolo": "«Casio CZ synthesizers» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Casio_CZ_synthesizers", "data": "2026-10-05"},
+            {"titolo": "«Phase distortion synthesis» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Phase_distortion_synthesis", "data": "2026-10-05"},
+            {"titolo": "«Casio CZ-101: The Classic Synth That Went Head to Head With the DX7» — gearnews",
+             "url": "https://www.gearnews.com/casio-cz-101/", "data": "2026-10-05"},
+        ],
+        "hashtags": ["#casio", "#cz101", "#sintetizzatore", "#anni80", "#digitale"],
+        "verificata": True,
+    },
+    {
+        "slug": "elkarhapsody",
+        "numero": 62,
+        "serie": "GLI ORGANI",
+        "strumento": "Elka Rhapsody 490",
+        "anno": "1975 circa",
+        "luogo": "Italia",
+        "costruttore": "Elka",
+        "specifiche": [
+            ("PRODUZIONE", "1972-80?"),
+            ("TASTI", "49"),
+            ("SUONI", "2"),
+            ("COMANDI", "4"),
+        ],
+        "gancio": "Due pulsanti e due manopole. Non c'è nient'altro da toccare, e non serve",
+        "sottotitolo": "Una string machine italiana con quattro comandi in tutto: violoncello, archi, quanto dura la nota, quanto forte.",
+        "la_macchina": (
+            "Un parallelepipedo nero su gambe, 49 tasti, e a sinistra un "
+            "pannellino grande come una mano. Sopra ci sono due pulsanti, "
+            "VIOLONCELLO e STRINGS, e due manopole, SUSTAIN e VOLUME. Fine. "
+            "Niente filtro da aprire, niente inviluppo da regolare, niente "
+            "memorie da salvare. Si sceglie il registro basso o quello alto o "
+            "tutti e due, si decide quanto le note restano appese dopo che hai "
+            "tolto il dito, e si suona. La sorella maggiore, la 610, ha 61 tasti "
+            "e quattro suoni."
+        ),
+        "inventore_nome": "Elka",
+        "inventore": (
+            "Elka era un costruttore italiano di organi e strumenti elettronici, "
+            "e la Rhapsody è il prodotto con cui esce dai confini. In mezza "
+            "Europa non si chiamava nemmeno Rhapsody: fuori dall'Italia la "
+            "vendeva la tedesca Hohner col proprio marchio, bianca invece che "
+            "nera, e sopra c'era scritto StringVox. All'epoca lo facevano tutti e "
+            "serviva ad avere una rete di negozi senza costruirsela. Spiega anche "
+            "perché certe macchine di quegli anni sembrano due modelli diversi e "
+            "sono lo stesso identico strumento."
+        ),
+        "come_funziona": (
+            "Lavora come un organo, non come un sintetizzatore. In cima c'è un "
+            "oscillatore solo che fa le dodici note più acute, e una catena di "
+            "divisori le porta giù di ottava in ottava, quindi potete premere "
+            "tutti e 49 i tasti insieme e suonano tutti. Ogni tasto ha poi la sua "
+            "scheda, che gli dà forma e inviluppo, e il filtraggio cambia man "
+            "mano che si sale lungo la tastiera. Sopra a tutto c'è il coro, che "
+            "sdoppia il segnale e lo stona appena. È quello, più che le forme "
+            "d'onda, a far sembrare archi una cosa che archi non è."
+        ),
+        "richiami": [
+            ("FIG. 1", "Oscillatore unico e divisori"),
+            ("FIG. 2", "2 registri: violoncello e archi"),
+            ("FIG. 3", "4 comandi in tutto"),
+        ],
+        "chi_lusata": [
+            {"artista": "Christopher Franke", "nota": "dei Tangerine Dream: in concerto dal 1975 ai primi anni Ottanta", "ig": None},
+            {"artista": "Peter Baumann", "nota": "sempre Tangerine Dream, nel 1976 e nel 1977", "ig": None},
+            {"artista": "Klaus Schulze", "nota": "per un paio di tournée a metà anni Settanta", "ig": None},
+            {"artista": "Tony Banks", "nota": "dei Genesis", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Non si riesce a stabilire di che anno sia. Wikipedia dice che la "
+            "produzione comincia nel 1974. Il museo svizzero degli strumenti "
+            "elettronici, che ne ha una in vetrina, scrive 1972. Till Kopper, che "
+            "ripara queste macchine da decenni e tiene una delle schede tecniche "
+            "più consultate, scrive 1975. Tre fonti serie, tre anni diversi, e "
+            "nessun ufficio a cui telefonare per chiedere. Succede spesso con "
+            "l'elettronica musicale italiana di quegli anni, e ogni volta mi "
+            "dispiace: le macchine sono rimaste, la memoria di chi le ha fatte no."
+        ),
+        "avvertenza": "I comandi sono quattro e nessuno dei quattro è un filtro. Il timbro non si corregge, si prende: ascoltatela prima di comprarla.",
+        "foto": {
+            "file": "assets/foto/elkarhapsody/principale.jpg",
+            "autore": "Alison Cassidy",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/elkarhapsody/r610.jpg",
+             "autore": "Dominik Müller", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "La sorella maggiore, la 610, appoggiata su un Rhodes"},
+        ],
+        "fonti": [
+            {"titolo": "«Elka Rhapsody» — Wikipedia (EN): produzione 1974-1980, i due modelli e i loro registri",
+             "url": "https://en.wikipedia.org/wiki/Elka_Rhapsody", "data": "2026-10-05"},
+            {"titolo": "«Elka Rhapsody 490» — SMEM, museo svizzero degli strumenti elettronici: datazione 1972-1980 e il marchio Hohner StringVox",
+             "url": "https://www.smemmusic.ch/en/elka-rhapsody-490-analog-string-synthesizer", "data": "2026-10-05"},
+            {"titolo": "«ELKA Rhapsody 610» — Till Kopper: datazione 1975-1980, i divisori, e chi la usava dal vivo",
+             "url": "http://www.till-kopper.de/elka.html", "data": "2026-10-05"},
+        ],
+        "hashtags": ["#elka", "#stringmachine", "#italia", "#anni70", "#tangerinedream"],
+        "verificata": True,
+    },
 ]
 
 

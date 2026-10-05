@@ -232,15 +232,17 @@ VOCE_SCHEDA = {
     "juno106": "sega", "jupiter8": "sega", "cs80": "sega", "synthex": "sega",
     "synket": "sega", "novachord": "sega", "spaceecho": "sega",
     "arpodyssey": "sega", "crumards2": "sega", "buchla": "sega",
-    "oberheim4voice": "sega", "sh101": "sega",
+    "oberheim4voice": "sega", "sh101": "sega", "polymoog": "sega",
+    "wasp": "sega",
     "tb303": "acido",
     # digitali: FM, campionatori, tavole d'onda
     "dx7": "fm", "fairlight": "fm", "synclavier": "fm", "emulator": "fm",
-    "ppgwave": "fm", "korgm1": "fm",
+    "ppgwave": "fm", "korgm1": "fm", "cz101": "fm",
     # divisori d'ottava: organi, string machine, ruote foniche
     "hammond": "organo", "farfisa": "organo", "voxcontinental": "organo",
     "solina": "organo", "crumar": "organo", "vp330": "organo",
     "telharmonium": "organo", "univibe": "organo",
+    "lowrey": "organo", "elkarhapsody": "organo",
     # nastro e dischi ottici
     "mellotron": "nastro", "optigan": "nastro",
     # una nota sola che scivola
