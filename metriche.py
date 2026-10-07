@@ -160,8 +160,13 @@ def slug_per_media():
         if p.get("media_id"):
             mappa[p["media_id"]] = (p["slug"], "carosello")
     for r in stato.get("reel", []):
+        ruolo = "reel2" if r.get("formato", 1) == 2 else "reel"
         if r.get("media_id"):
-            mappa[r["media_id"]] = (r["slug"], "reel2" if r.get("formato", 1) == 2 else "reel")
+            mappa[r["media_id"]] = (r["slug"], ruolo)
+        elif r.get("permalink"):
+            # Voce aggiunta a mano senza media_id (07/10/2026, Novachord):
+            # la si riconosce dal permalink.
+            mappa[r["permalink"]] = (r["slug"], ruolo)
     return mappa
 
 
@@ -234,7 +239,7 @@ def main():
             continue
         metriche = METRICHE_REEL if tipo == "REELS" else METRICHE_FEED
         valori, rifiutate = insights_media(token, m["id"], metriche)
-        slug, ruolo = mappa.get(m["id"], (None, None))
+        slug, ruolo = mappa.get(m["id"]) or mappa.get(m.get("permalink"), (None, None))
         righe.append({
             "id": m["id"], "slug": slug, "ruolo": ruolo,
             "media_type": m.get("media_type"), "media_product_type": tipo,

@@ -103,7 +103,22 @@ def scrivi_stato(stato, messaggio_commit):
     diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=RADICE)
     if diff.returncode != 0:
         subprocess.run(["git", "commit", "-m", messaggio_commit], check=True, cwd=RADICE)
-        subprocess.run(["git", "push"], check=True, cwd=RADICE)
+        # LEZIONE IMPARATA (07/10/2026): qui il push era secco. Il reel del
+        # Novachord è uscito, col suo primo commento, e poi il run è morto
+        # su «git push» respinto, perché nello stesso minuto tredici
+        # download (scarica-foto.yml) committavano sullo stesso branch. Lo
+        # stato non aveva il reel: alla passata successiva la routine lo
+        # avrebbe visto «mancante» e PUBBLICATO DI NUOVO. Un salvataggio
+        # dello stato che può perdere la corsa con un altro commit non è un
+        # salvataggio. Stessa regola dei push nei workflow: ci si riallinea
+        # e si riprova, e si fallisce solo se proprio non si riesce.
+        for tentativo in range(1, 9):
+            if subprocess.run(["git", "push"], cwd=RADICE).returncode == 0:
+                return
+            print(f"[warn] push dello stato respinto, mi riallineo ({tentativo}/8)")
+            subprocess.run(["git", "pull", "--rebase", "--autostash"], cwd=RADICE)
+            time.sleep(3 * tentativo)
+        raise RuntimeError("push dello stato fallito dopo 8 tentativi")
 
 
 def segnala_errore(titolo, corpo):

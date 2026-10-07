@@ -483,6 +483,12 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   container è bloccato NON insistere: si usa il workflow
   `scarica-foto.yml` (dispatch con url+dest), che scarica da un runner
   GitHub con IP pulito e committa.
+- **Mai lanciare commit in raffica mentre può partire una pubblicazione**
+  (07/10/2026). Tredici `scarica-foto.yml` in parallelo hanno fatto
+  respingere il push dello stato a `pubblica_reel.py`: reel uscito, stato
+  senza la riga, e la passata dopo l'avrebbe ripubblicato. Ora
+  `scrivi_stato` si riallinea e riprova; ma i download in blocco si
+  lanciano lontano dalle 18:00 e dalle 19:30.
 - **Il 429 di Wikimedia non è un blocco, è un cartello** (01/10/2026).
   Su 16 foto, gli ORIGINALI hanno dato 429 praticamente tutti e i
   thumbnail sono passati quasi tutti: il messaggio d'errore lo dice in
