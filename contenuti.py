@@ -287,6 +287,12 @@ SCHEDE = [
             ("METÀ ANNI '80", "Finisce al pegno a meno di 100 $. In cameretta nascono house e techno."),
         ],
         "reel_cta": "Mandalo a chi fa i beat in cameretta",
+        "reel_audio": {
+            "file": "assets/audio/tr808/registrazione.ogg", "inizio": 33,
+            "autore": "Theofanis Siassios", "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+            "cosa": "una TR-808 vera che suona i suoi pattern",
+        },
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
     },
     {
@@ -383,6 +389,12 @@ SCHEDE = [
             ("«THE THING» · MOSCA 1945", "Nel Gran Sigillo regalato all'ambasciatore USA. Funziona 7 anni."),
         ],
         "reel_cta": "Mandalo a chi ama le storie di spie",
+        "reel_audio": {
+            "file": "assets/audio/theremin/registrazione.ogg", "inizio": 0,
+            "autore": "Fabio Pesce, caricata da Effebit", "licenza": "pubblico dominio",
+            "fonte": "Wikimedia Commons",
+            "cosa": "un theremin Moog Etherwave Pro, non uno di Termen, su una melodia di Bach",
+        },
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
     },
     {
@@ -770,6 +782,12 @@ SCHEDE = [
             ("«ACID TRACKS» · 1987", "DJ Pierre gira le manopole a pattern acceso. Spanky: «continua così»"),
         ],
         "reel_cta": "Mandalo a chi non ha mai letto un manuale",
+        "reel_audio": {
+            "file": "assets/audio/tb303/registrazione.ogg", "inizio": 8,
+            "autore": "I speak so quietly", "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "cosa": "una TB-303 vera",
+        },
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     {
@@ -1463,6 +1481,12 @@ SCHEDE = [
             ("11 LUGLIO 1969", "Esce 5 giorni prima che parta l'Apollo 11. Primo successo di Bowie"),
         ],
         "reel_cta": "Mandalo a chi sa «Space Oddity» a memoria",
+        "reel_audio": {
+            "file": "assets/audio/stylophone/registrazione.ogg", "inizio": 11,
+            "autore": "sisterray (Freesound)", "licenza": "CC0",
+            "fonte": "Wikimedia Commons",
+            "cosa": "uno Stylophone vero",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 16
@@ -2379,6 +2403,12 @@ SCHEDE = [
             ("PINK FLOYD, DAL 1975", "Richard Wright la usa come tappeto sotto la band."),
         ],
         "reel_cta": "Mandalo a chi giura che erano archi veri",
+        "reel_audio": {
+            "file": "assets/audio/solina/registrazione.ogg", "inizio": 69,
+            "autore": "MFbay", "licenza": "pubblico dominio",
+            "fonte": "Wikimedia Commons",
+            "cosa": "una ARP Solina, sezione violini con la modulazione",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 30
@@ -2894,6 +2924,12 @@ SCHEDE = [
             ("MILES DAVIS · 1968", "In «Stuff» lo suona Herbie Hancock, sotto la tromba senza coprirla."),
         ],
         "reel_cta": "Mandalo a chi ha un Rhodes in cantina",
+        "reel_audio": {
+            "file": "assets/audio/rhodes/registrazione.ogg", "inizio": 0,
+            "autore": "Fetz", "licenza": "pubblico dominio",
+            "fonte": "Wikimedia Commons",
+            "cosa": "un Rhodes Mark I in un amplificatore a valvole",
+        },
         "verificata": True,
     },
     # SCARTI del rifornimento del 22/09/2026 (verifica su 2 fonti non
@@ -2981,6 +3017,12 @@ SCHEDE = [
             ("1968 · 17 MINUTI", "Bushy scrive quello che sente: «In-A-Gadda-Da-Vida». E resta così."),
         ],
         "reel_cta": "Mandalo a chi storpia i titoli delle canzoni",
+        "reel_audio": {
+            "file": "assets/audio/voxcontinental/registrazione.ogg", "inizio": 23,
+            "autore": "Ritchie333", "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "cosa": "un Vox Continental vero",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 38
@@ -3177,6 +3219,12 @@ SCHEDE = [
             ("WOODSTOCK, 18/08/1969", "Lo tiene acceso per buona parte del set. Oggi è in un museo a Seattle."),
         ],
         "reel_cta": "Mandalo al chitarrista fissato con Hendrix",
+        "reel_audio": {
+            "file": "assets/audio/univibe/registrazione.ogg", "inizio": 7,
+            "autore": "Fret Junkies, estratto di Skimel", "licenza": "CC BY 3.0",
+            "fonte": "Wikimedia Commons",
+            "cosa": "una chitarra in un Uni-Vibe, velocità media, posizione chorus",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 41
@@ -4164,6 +4212,12 @@ SCHEDE = [
             ("SUL PALCO", "Dal vivo la suonano con Mercury al pianoforte vero e Deacon al basso."),
         ],
         "reel_cta": "Mandalo al tuo migliore amico",
+        "reel_audio": {
+            "file": "assets/audio/wurlitzer200a/registrazione.mp3", "inizio": 31,
+            "autore": "Ritchie333", "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "cosa": "un piano elettrico Wurlitzer della serie 200",
+        },
         "verificata": True,
     },
     {
@@ -4486,6 +4540,12 @@ SCHEDE = [
             ("NOVEMBRE 1990", "Dalla linea esce l'M1 numero 100.000. Erano passati 2 anni."),
         ],
         "reel_cta": "Mandalo a chi ha ballato «Show Me Love»",
+        "reel_audio": {
+            "file": "assets/audio/korgm1/registrazione.flac", "inizio": 10,
+            "autore": "Alex Almirall, ESMUC", "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "cosa": "un Korg M1 vero",
+        },
         "verificata": True,
     },
     {
@@ -4704,6 +4764,12 @@ SCHEDE = [
             ("TRIO · 1982", "«Da Da Da»: ritmo Rock-1 e voce Piano, come escono dalla scatola."),
         ],
         "reel_cta": "Mandalo a chi canta ancora «Da Da Da»",
+        "reel_audio": {
+            "file": "assets/audio/vl1/registrazione.ogg", "inizio": 1,
+            "autore": "Havelbaude", "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "cosa": "un Casio VL-1 col suo ritmo «rock 1»",
+        },
         "verificata": True,
     },
     {
@@ -4913,6 +4979,12 @@ SCHEDE = [
             ("GARY NUMAN · 1979", "Via la chitarra. Numan ci costruisce sopra «The Pleasure Principle»."),
         ],
         "reel_cta": "Mandalo a chi si costruisce i suoni da zero",
+        "reel_audio": {
+            "file": "assets/audio/polymoog/registrazione.ogg", "inizio": 1,
+            "autore": "Raymangold22", "licenza": "CC0",
+            "fonte": "Wikimedia Commons",
+            "cosa": "un Polymoog sul preset Vox Humana",
+        },
         "verificata": True,
     },
     {
@@ -5353,7 +5425,10 @@ def componi_didascalia_reel(scheda, menzioni=True):
     righe.append("Foto: " + "; ".join(crediti))
     a = scheda.get("reel_audio")
     if a:
-        righe.append(f"Audio: {a['autore']} ({a['licenza']}, {a['fonte']})")
+        # Si dice COSA suona, non solo chi l'ha registrato: il theremin
+        # della registrazione è un Moog Etherwave, non uno di Termen, e
+        # chi legge deve saperlo.
+        righe.append(f"Audio: {a['cosa']}. Registrazione di {a['autore']} ({a['licenza']}, {a['fonte']})")
     righe.append("")
     righe.append(FIRMA)
     righe.append("")

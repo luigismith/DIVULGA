@@ -148,6 +148,13 @@ Lezioni pratiche dal montaggio:
   `"nel_reel": False` sulla foto;
 - nel reel non c'è credito sullo schermo: TUTTE le foto mostrate
   (`foto_del_reel`) vanno accreditate nella didascalia del reel;
+- registrazioni vere (07/10/2026): 12 schede su 62 ne hanno una
+  (`reel_audio`), trovate da un agente su Commons e ricontrollate da un
+  secondo. Scartate apposta: Hammond (non dimostrabile che fosse un
+  B-3), TR-909 (fatta in FL Studio), Clavinet (licenza «copyrighted free
+  use», non libera), MS-20 (una scala con un secondo di silenzio ogni
+  tre: in un reel suona come audio rotto). In didascalia si dice COSA
+  suona: il theremin è un Moog Etherwave, non uno di Termen;
 - l'audio partiva con 0,25 s di dissolvenza e il basso in 0,4 s: muto
   proprio nei 3 secondi che contano. Il formato 2 usa `attacco=0.01`.
 Un cambio di regola sull'account non lo decide una sessione: si propone
