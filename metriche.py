@@ -32,10 +32,16 @@ CARTELLA = RADICE / "metriche"
 # nei primi 3 secondi. È la cosa che il formato 2 dei reel deve abbassare,
 # e la stessa che Instagram usa per decidere se mostrarlo ad altri: senza
 # questo numero il cambio di formato non si potrebbe giudicare.
+# follows e profile_visits NON ci sono: secondo il riferimento delle
+# insights esistono solo per FEED e STORY, e sui 45 reel l'API li ha
+# rifiutati tutte le volte (07/10/2026). Chiederli ogni settimana
+# produceva solo una riga di «rifiutate» da ignorare.
+# reels_skip_rate è «in development»: sui reel del formato 1 non ha dato
+# valori. Si tiene perché è il numero che il formato 2 deve abbassare; se
+# continua a non rispondere, il riassunto lo dice («None»), non lo nasconde.
 METRICHE_REEL = ["reach", "views", "likes", "comments", "shares", "saved",
                  "total_interactions", "ig_reels_avg_watch_time",
-                 "ig_reels_video_view_total_time", "reels_skip_rate",
-                 "follows", "profile_visits"]
+                 "ig_reels_video_view_total_time", "reels_skip_rate"]
 METRICHE_FEED = ["reach", "views", "likes", "comments", "shares", "saved",
                  "total_interactions", "follows", "profile_visits"]
 
@@ -205,9 +211,12 @@ def riassunto(dati):
         def med(k):
             v = sorted(x[k] for x in g if x.get(k) is not None)
             return v[len(v) // 2] if v else None
+        cond = [x["shares"] / x["reach"] for x in g if x.get("reach") and x.get("shares") is not None]
+        per100 = f"{100 * sum(cond) / len(cond):.2f}" if cond else "n.d."
         print(f"  {nome}: {len(g)} reel — copertura {med('reach')}, "
               f"visione_ms {med('ig_reels_avg_watch_time')}, "
-              f"abbandono<3s {med('reels_skip_rate')}, condivisioni {med('shares')}")
+              f"abbandono<3s {med('reels_skip_rate')}, condivisioni {med('shares')}, "
+              f"condivisioni per 100 raggiunti {per100}")
     if acc.get("rifiutate"):
         print("\nmetriche dell'account rifiutate dall'API:", ", ".join(acc["rifiutate"]))
 

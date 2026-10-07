@@ -329,9 +329,14 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   di 24 s — cioè doppio lavoro e due versioni della stessa cosa;
   `genera_storia_video.py` è stato rimosso. Il reel è già 720×1280 e
   24 s stanno dentro il minuto che le storie consentono. La colonna
-  sonora è **sintetizzata** da `suoni.py` (un motivo fisso col timbro
-  della famiglia di quella macchina) e deve stare DENTRO il file:
-  l'API non permette di agganciare la musica del catalogo Instagram.
+  sonora deve stare DENTRO il file. Dal 07/10/2026 è la registrazione
+  vera della macchina quando la scheda ne ha una libera (`reel_audio`),
+  altrimenti la sigla **sintetizzata** da `suoni.py` (e il log lo dice).
+  Musica del catalogo Instagram: con Instagram Login (il nostro) l'API
+  non la consente; dal 01/06/2026 l'Audio API la consente, ma SOLO con
+  Facebook Login e una Pagina collegata (solo Sound Collection e suoni
+  originali, non i brani in classifica). Non è un permesso da chiedere,
+  è un'altra autenticazione.
   Se il reel manca si ripiega sul `story.jpg` muto.
   La storia resta facoltativa per scelta — se fallisce si annota nel log
   e non si blocca niente (il post è la missione, la story il megafono).
@@ -420,8 +425,9 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
 - Reel: NON toccare le specifiche senza rileggerle nel prompt di avvio
   (720×1280, H.264 main, yuv420p, GOP chiuso, no B-frame, AAC 44.1k,
   remux con `-use_editlist 0`); il budget video dell'account si esaurisce
-  in ~12 container: UN tentativo, poi un'ora di attesa. Musica solo
-  sintetizzata.
+  in ~12 container: UN tentativo, poi un'ora di attesa. Audio: la
+  macchina vera (registrazione libera da Commons, accreditata in
+  didascalia) o la sigla sintetizzata; mai dischi, mai melodie protette.
 - **Un rinnovo che non viene salvato non è un rinnovo** (21/09/2026). Il
   token vive cifrato in `token.enc`; `token_ig.token_corrente()` lo
   rinnova dopo 25 giorni e riscrive il file, ma solo `rinnova-token.yml`
