@@ -153,9 +153,13 @@ Lezioni pratiche dal montaggio:
 Un cambio di regola sull'account non lo decide una sessione: si propone
 al proprietario con i numeri e decide lui. Il 07/10/2026 ha deciso
 `share_to_feed=true` (vedi «I reel entrano nella griglia» più sotto).
-Resta da decidere la cadenza dei rifacimenti (`reel.yml` con slug
-`--rifacimento` rifà nel formato 2 il reel di una scheda vecchia, senza
-nuovi tag; oggi parte solo a mano).
+Sempre il 07/10/2026 ha approvato i RIFACIMENTI: ogni giorno, nella
+passata delle 12:30 della routine dei reel, `reel.yml` con slug
+`--rifacimento` rifà nel formato 2 il reel della scheda più vecchia che
+non ce l'ha (costruito sul runner, messo su Pages, pubblicato senza nuovi
+tag: gli account erano già stati avvisati). La passata delle 19:30 resta
+per il reel della scheda nuova. Primo rifacimento, di prova e verificato
+fino al permalink: Minimoog, 07/10/2026.
 
 ## Come si scrive (richiesta del proprietario, 13/09/2026: «più umani»)
 
@@ -234,7 +238,8 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
    l'AI. Cross-post Facebook: spento.
 5. Il token non si stampa MAI (usare `token_ig.redigi`). Le password le
    digita solo il proprietario.
-6. Max 2 post/giorno, distanziati ≥6h, e **solo fra le 16 e le 23 italiane**
+6. Max 2 post/giorno (i CAROSELLI e il loro reel; il rifacimento delle
+   12:30 è il terzo, approvato dal proprietario il 07/10/2026), distanziati ≥6h, e **solo fra le 16 e le 23 italiane**
    (`FINESTRA_ORE` in `pubblica.py`). Più di un post al giorno va bene —
    serve a recuperare una giornata saltata — la raffica no. Fuori
    finestra non si pubblica: la scheda resta in coda. Su errore API:
