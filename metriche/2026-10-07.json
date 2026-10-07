@@ -1,0 +1,2366 @@
+{
+ "raccolta": "2026-10-07T12:19:07.476040+00:00",
+ "account": {
+  "profilo": {
+   "username": "elettrofoni",
+   "followers_count": 41,
+   "follows_count": 155,
+   "media_count": 45,
+   "id": "28376552508698630"
+  },
+  "follower_al_giorno": [],
+  "reach": [
+   {
+    "name": "reach",
+    "period": "day",
+    "title": "Accounts reached",
+    "description": "The number of unique accounts that have seen your content, at least once, including in ads. Content includes posts, stories, reels, videos and live videos. Reach is different from impressions, which may include multiple views of your content by the same accounts. This metric is estimated and in development.",
+    "total_value": {
+     "value": 837,
+     "breakdowns": [
+      {
+       "dimension_keys": [
+        "media_product_type"
+       ],
+       "results": [
+        {
+         "dimension_values": [
+          "CAROUSEL_CONTAINER"
+         ],
+         "value": 55
+        },
+        {
+         "dimension_values": [
+          "REEL"
+         ],
+         "value": 800
+        },
+        {
+         "dimension_values": [
+          "STORY"
+         ],
+         "value": 24
+        }
+       ]
+      }
+     ]
+    },
+    "id": "17841438218103156/insights/reach/day"
+   }
+  ],
+  "views": [
+   {
+    "name": "views",
+    "period": "day",
+    "title": "Views",
+    "description": "The number of times your content was played or displayed. Content includes reels, posts, stories.",
+    "total_value": {
+     "value": 2229,
+     "breakdowns": [
+      {
+       "dimension_keys": [
+        "media_product_type"
+       ],
+       "results": [
+        {
+         "dimension_values": [
+          "REEL"
+         ],
+         "value": 1088
+        },
+        {
+         "dimension_values": [
+          "STORY"
+         ],
+         "value": 527
+        },
+        {
+         "dimension_values": [
+          "CAROUSEL_CONTAINER"
+         ],
+         "value": 614
+        }
+       ]
+      }
+     ]
+    },
+    "id": "17841438218103156/insights/views/day"
+   }
+  ],
+  "total_interactions": [
+   {
+    "name": "total_interactions",
+    "period": "day",
+    "title": "Content interactions",
+    "description": "The total number of post interactions, story interactions, reels interactions, video interactions and live video interactions, including any interactions on boosted content.",
+    "total_value": {
+     "value": 144,
+     "breakdowns": [
+      {
+       "dimension_keys": [
+        "media_product_type"
+       ],
+       "results": [
+        {
+         "dimension_values": [
+          "POST"
+         ],
+         "value": 72
+        },
+        {
+         "dimension_values": [
+          "REEL"
+         ],
+         "value": 44
+        },
+        {
+         "dimension_values": [
+          "STORY"
+         ],
+         "value": 28
+        }
+       ]
+      }
+     ]
+    },
+    "id": "17841438218103156/insights/total_interactions/day"
+   }
+  ],
+  "accounts_engaged": [
+   {
+    "name": "accounts_engaged",
+    "period": "day",
+    "title": "Accounts engaged",
+    "description": "The number of accounts that have interacted with your content, including in ads. Content includes posts, stories, reels, videos and live videos. Interactions can include actions such as likes, saves, comments, shares or replies. These metrics are estimated and in development.",
+    "total_value": {
+     "value": 26
+    },
+    "id": "17841438218103156/insights/accounts_engaged/day"
+   }
+  ],
+  "profile_links_taps": [
+   {
+    "name": "profile_links_taps",
+    "period": "day",
+    "title": "Profile links taps",
+    "description": "The number of taps on your business address, call button, email button and text button.",
+    "total_value": {
+     "value": 0
+    },
+    "id": "17841438218103156/insights/profile_links_taps/day"
+   }
+  ],
+  "demografia_country": [],
+  "demografia_city": [],
+  "demografia_age": [],
+  "demografia_gender": [],
+  "rifiutate": {}
+ },
+ "media": [
+  {
+   "id": "18217245724359267",
+   "slug": "telharmonium",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-10-06T17:37:58+0000",
+   "permalink": "https://www.instagram.com/reel/DeKVlS6iIOA/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 10,
+    "views": 11,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 1651,
+    "ig_reels_video_view_total_time": 16518
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18118367206881129",
+   "slug": "telharmonium",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-06T16:04:13+0000",
+   "permalink": "https://www.instagram.com/p/DeKK43UEYzG/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 3,
+    "views": 10,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18142236361594094",
+   "slug": "cs80",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-10-05T17:37:50+0000",
+   "permalink": "https://www.instagram.com/reel/DeHwxVQiiyw/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 29,
+    "views": 31,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 1966,
+    "ig_reels_video_view_total_time": 55071
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "17876642100567104",
+   "slug": "cs80",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-05T16:04:43+0000",
+   "permalink": "https://www.instagram.com/p/DeHmJtuFPT9/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 6,
+    "views": 17,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "17910292449538787",
+   "slug": "vp330",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-10-04T17:37:25+0000",
+   "permalink": "https://www.instagram.com/reel/DeFL8GfCJTy/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 43,
+    "views": 45,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 3688,
+    "ig_reels_video_view_total_time": 158606
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18356185285218587",
+   "slug": "vp330",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-04T16:03:37+0000",
+   "permalink": "https://www.instagram.com/p/DeFBOvOlQ7X/",
+   "like_count": 2,
+   "comments_count": 0,
+   "insights": {
+    "reach": 12,
+    "views": 19,
+    "likes": 2,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 3,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18086383916694835",
+   "slug": "speakspell",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-10-03T17:37:46+0000",
+   "permalink": "https://www.instagram.com/reel/DeCnLdSAGc9/",
+   "like_count": 2,
+   "comments_count": 0,
+   "insights": {
+    "reach": 108,
+    "views": 121,
+    "likes": 2,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 3,
+    "ig_reels_avg_watch_time": 4701,
+    "ig_reels_video_view_total_time": 517155
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18192973351393786",
+   "slug": "speakspell",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-03T16:04:16+0000",
+   "permalink": "https://www.instagram.com/p/DeCchWdm6XV/",
+   "like_count": 2,
+   "comments_count": 0,
+   "insights": {
+    "reach": 17,
+    "views": 34,
+    "likes": 2,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 3,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18122036431903929",
+   "slug": "jupiter8",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-10-02T17:37:34+0000",
+   "permalink": "https://www.instagram.com/reel/DeACX5hjCXF/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 17,
+    "views": 17,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 2937,
+    "ig_reels_video_view_total_time": 49943
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18011989622955663",
+   "slug": "jupiter8",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-02T16:04:17+0000",
+   "permalink": "https://www.instagram.com/p/Dd_3ucuIJbQ/",
+   "like_count": 2,
+   "comments_count": 0,
+   "insights": {
+    "reach": 6,
+    "views": 12,
+    "likes": 2,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18120450104475140",
+   "slug": "univibe",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-10-01T17:37:47+0000",
+   "permalink": "https://www.instagram.com/reel/Dd9dlVSAFVj/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 22,
+    "views": 22,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 2228,
+    "ig_reels_video_view_total_time": 49019
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18352932715175999",
+   "slug": "univibe",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-10-01T16:26:54+0000",
+   "permalink": "https://www.instagram.com/p/Dd9VgfGFvir/",
+   "like_count": 2,
+   "comments_count": 0,
+   "insights": {
+    "reach": 6,
+    "views": 10,
+    "likes": 2,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18127528126697178",
+   "slug": "sp1200",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-30T17:37:52+0000",
+   "permalink": "https://www.instagram.com/reel/Dd64znDASFv/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 67,
+    "views": 78,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 5078,
+    "ig_reels_video_view_total_time": 340250
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18059093495547470",
+   "slug": "sp1200",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-30T16:08:43+0000",
+   "permalink": "https://www.instagram.com/p/Dd6upCvEa7N/",
+   "like_count": 3,
+   "comments_count": 2,
+   "insights": {
+    "reach": 12,
+    "views": 21,
+    "likes": 3,
+    "comments": 2,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 5,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "17993747510841484",
+   "slug": "tr606",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-29T17:37:44+0000",
+   "permalink": "https://www.instagram.com/reel/Dd4T_n5jKIp/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 16,
+    "views": 20,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 4199,
+    "ig_reels_video_view_total_time": 71383
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18114499972817369",
+   "slug": "tr606",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-29T16:04:01+0000",
+   "permalink": "https://www.instagram.com/p/Dd4JTLPEWXL/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 7,
+    "views": 22,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18245269597313453",
+   "slug": "voxcontinental",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-28T17:37:35+0000",
+   "permalink": "https://www.instagram.com/reel/Dd1vL4xiY-Q/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 11,
+    "views": 13,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 2059,
+    "ig_reels_video_view_total_time": 24714
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18020792420868681",
+   "slug": "voxcontinental",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-28T16:04:20+0000",
+   "permalink": "https://www.instagram.com/p/Dd1kixZlGJ0/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 3,
+    "views": 7,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18144941956588675",
+   "slug": "rhodes",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-27T17:37:43+0000",
+   "permalink": "https://www.instagram.com/reel/DdzKbbpDpO1/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 14,
+    "views": 14,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 2521,
+    "ig_reels_video_view_total_time": 35294
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18377046943236014",
+   "slug": "rhodes",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-27T16:03:50+0000",
+   "permalink": "https://www.instagram.com/p/Ddy_sHqiYy0/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 6,
+    "views": 18,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18124693663856329",
+   "slug": "ondioline",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-26T17:37:40+0000",
+   "permalink": "https://www.instagram.com/reel/DdwlmiXFeIK/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 4,
+    "views": 5,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 9916,
+    "ig_reels_video_view_total_time": 49583
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18095048177387165",
+   "slug": "ondioline",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-26T16:03:53+0000",
+   "permalink": "https://www.instagram.com/p/Ddwa6Uwmg6B/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 6,
+    "views": 14,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18090786086477497",
+   "slug": "h910",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-25T17:38:18+0000",
+   "permalink": "https://www.instagram.com/reel/DduA4MHCg9-/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 116,
+    "views": 122,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 3103,
+    "ig_reels_video_view_total_time": 363107
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18127524898829403",
+   "slug": "h910",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-25T16:04:24+0000",
+   "permalink": "https://www.instagram.com/p/Ddt2KaTkcHM/",
+   "like_count": 3,
+   "comments_count": 1,
+   "insights": {
+    "reach": 8,
+    "views": 17,
+    "likes": 3,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18094706864445288",
+   "slug": "dmx",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-24T17:37:40+0000",
+   "permalink": "https://www.instagram.com/reel/DdrcA-jgfd7/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 17,
+    "views": 22,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 4021,
+    "ig_reels_video_view_total_time": 68366
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18123109354924703",
+   "slug": "dmx",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-24T16:04:17+0000",
+   "permalink": "https://www.instagram.com/p/DdrRW4xlMPY/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 8,
+    "views": 20,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18092696726402341",
+   "slug": "prophet5",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-23T17:38:10+0000",
+   "permalink": "https://www.instagram.com/reel/Ddo3RaDglLf/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 42,
+    "views": 49,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 2463,
+    "ig_reels_video_view_total_time": 108411
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18561642370078786",
+   "slug": "prophet5",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-23T16:05:11+0000",
+   "permalink": "https://www.instagram.com/p/DdosrWSm6a2/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 7,
+    "views": 15,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18067852247761881",
+   "slug": "mpc60",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-22T17:38:19+0000",
+   "permalink": "https://www.instagram.com/reel/DdmSgAFEmGH/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 26,
+    "views": 28,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 2895,
+    "ig_reels_video_view_total_time": 75281
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "17981309718096369",
+   "slug": "mpc60",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-22T16:03:33+0000",
+   "permalink": "https://www.instagram.com/p/DdmHrvwFI8I/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 3,
+    "views": 8,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18114997834785066",
+   "slug": "ppgwave",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-21T17:39:49+0000",
+   "permalink": "https://www.instagram.com/reel/Ddjt4JzkSVj/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 39,
+    "views": 41,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 3517,
+    "ig_reels_video_view_total_time": 137192
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18021097841714412",
+   "slug": "ppgwave",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-21T16:04:12+0000",
+   "permalink": "https://www.instagram.com/p/Ddji9mIGw8U/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 7,
+    "views": 13,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18125581492853012",
+   "slug": "solina",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-20T17:40:18+0000",
+   "permalink": "https://www.instagram.com/reel/DdhJIowkUzH/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 32,
+    "views": 35,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 3815,
+    "ig_reels_video_view_total_time": 118276
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18630962482055666",
+   "slug": "solina",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-20T16:03:30+0000",
+   "permalink": "https://www.instagram.com/p/Ddg-FkVFZG1/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 10,
+    "views": 19,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 3,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18436667188176747",
+   "slug": "simmonssds5",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-19T17:40:05+0000",
+   "permalink": "https://www.instagram.com/reel/DdekVmmD3Ot/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 32,
+    "views": 37,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 2134,
+    "ig_reels_video_view_total_time": 68319
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "17891391450611422",
+   "slug": "simmonssds5",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-19T16:04:40+0000",
+   "permalink": "https://www.instagram.com/p/DdeZbLqke_w/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 8,
+    "views": 13,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18136422949554192",
+   "slug": "synclavier",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-18T17:40:31+0000",
+   "permalink": "https://www.instagram.com/reel/Ddb_kRnCBo6/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 28,
+    "views": 32,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 3721,
+    "ig_reels_video_view_total_time": 104200
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18137438413625957",
+   "slug": "synclavier",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-18T16:03:58+0000",
+   "permalink": "https://www.instagram.com/p/Ddb0jP8G3Eh/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 7,
+    "views": 19,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18089005004655959",
+   "slug": "synket",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-17T17:40:09+0000",
+   "permalink": "https://www.instagram.com/reel/DdZauliCmKF/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 24,
+    "views": 27,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 5975,
+    "ig_reels_video_view_total_time": 143419
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18147052027480995",
+   "slug": "synket",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-17T16:03:33+0000",
+   "permalink": "https://www.instagram.com/p/DdZPtSQnGC8/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 8,
+    "views": 14,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "17916601287443733",
+   "slug": "juno106",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-16T17:39:20+0000",
+   "permalink": "https://www.instagram.com/reel/DdW12P4jf1D/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 13,
+    "views": 15,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 3459,
+    "ig_reels_video_view_total_time": 44968
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18106763270227006",
+   "slug": "juno106",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-16T16:04:11+0000",
+   "permalink": "https://www.instagram.com/p/DdWq_HClTP7/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 11,
+    "views": 29,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18130662763667269",
+   "slug": "crumar",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-15T17:39:53+0000",
+   "permalink": "https://www.instagram.com/reel/DdURHhfgLa6/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 10,
+    "views": 12,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 2592,
+    "ig_reels_video_view_total_time": 25921
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18148518046552618",
+   "slug": "crumar",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-15T16:03:32+0000",
+   "permalink": "https://www.instagram.com/p/DdUGH_Rks8X/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 9,
+    "views": 19,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 3,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18090152177369621",
+   "slug": "emulator",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-14T17:40:39+0000",
+   "permalink": "https://www.instagram.com/reel/DdRsZ-TDF8j/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 6,
+    "views": 9,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 8984,
+    "ig_reels_video_view_total_time": 53907
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18182045689420428",
+   "slug": "emulator",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-14T16:03:34+0000",
+   "permalink": "https://www.instagram.com/p/DdRhUxkFYbZ/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 12,
+    "views": 32,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 3,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18209990668362051",
+   "slug": "optigan",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-13T18:07:43+0000",
+   "permalink": "https://www.instagram.com/reel/DdPKtVNjkab/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 14,
+    "views": 17,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 3646,
+    "ig_reels_video_view_total_time": 51051
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "17971401009136355",
+   "slug": "optigan",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-13T16:03:52+0000",
+   "permalink": "https://www.instagram.com/p/DdO8kPglDXQ/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 11,
+    "views": 21,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18104835491185246",
+   "slug": "tr909",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-12T17:39:55+0000",
+   "permalink": "https://www.instagram.com/reel/DdMiu4YjRGD/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 122,
+    "views": 130,
+    "likes": 1,
+    "comments": 1,
+    "shares": 3,
+    "saved": 0,
+    "total_interactions": 5,
+    "ig_reels_avg_watch_time": 4733,
+    "ig_reels_video_view_total_time": 567993
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18106118255183063",
+   "slug": "tr909",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-12T16:03:59+0000",
+   "permalink": "https://www.instagram.com/p/DdMXyGcEefq/",
+   "like_count": 3,
+   "comments_count": 1,
+   "insights": {
+    "reach": 13,
+    "views": 24,
+    "likes": 3,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "follows": 0,
+    "profile_visits": 1
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18102037961460136",
+   "slug": "synthex",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-11T17:39:57+0000",
+   "permalink": "https://www.instagram.com/reel/DdJ97p9CNe_/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 8,
+    "views": 12,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 8883,
+    "ig_reels_video_view_total_time": 79954
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18054360020802666",
+   "slug": "synthex",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-11T16:03:14+0000",
+   "permalink": "https://www.instagram.com/p/DdJy6TOkhTf/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 12,
+    "views": 21,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 1,
+    "total_interactions": 4,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "17979692169094816",
+   "slug": "buchlaeasel",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-10T17:39:39+0000",
+   "permalink": "https://www.instagram.com/reel/DdHZHWlgGcD/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 8,
+    "views": 15,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 18202,
+    "ig_reels_video_view_total_time": 182024
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18122973880681235",
+   "slug": "buchlaeasel",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-10T16:03:57+0000",
+   "permalink": "https://www.instagram.com/p/DdHOL2rEaRI/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 11,
+    "views": 24,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 3,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "17910173226286311",
+   "slug": "lm1",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-09T17:40:20+0000",
+   "permalink": "https://www.instagram.com/reel/DdE0ZZjFSG_/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 21,
+    "views": 22,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 1865,
+    "ig_reels_video_view_total_time": 41049
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18460368523184602",
+   "slug": "lm1",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-09T16:04:48+0000",
+   "permalink": "https://www.instagram.com/p/DdEpfZCGyVS/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 14,
+    "views": 20,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 3,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18060959207782082",
+   "slug": "ms20",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-08T17:40:04+0000",
+   "permalink": "https://www.instagram.com/reel/DdCPkcSjLp8/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 14,
+    "views": 15,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 5130,
+    "ig_reels_video_view_total_time": 66691
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "17959334628214903",
+   "slug": "ms20",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-08T16:04:35+0000",
+   "permalink": "https://www.instagram.com/p/DdCErkLIF4W/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 23,
+    "views": 31,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18101038004005910",
+   "slug": "spaceecho",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-07T17:39:54+0000",
+   "permalink": "https://www.instagram.com/reel/Dc_qwQ7GDTI/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 77,
+    "views": 82,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 5645,
+    "ig_reels_video_view_total_time": 440330
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "17865677661663178",
+   "slug": "spaceecho",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-07T16:28:49+0000",
+   "permalink": "https://www.instagram.com/p/Dc_ippdlgub/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 15,
+    "views": 34,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "follows": 0,
+    "profile_visits": 2
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18103601198218529",
+   "slug": "stylophone",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-06T17:39:38+0000",
+   "permalink": "https://www.instagram.com/reel/Dc9F7o6AEjr/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 37,
+    "views": 38,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 1772,
+    "ig_reels_video_view_total_time": 65596
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18147600949530288",
+   "slug": "stylophone",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-06T16:03:36+0000",
+   "permalink": "https://www.instagram.com/p/Dc86-AdoFGT/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 9,
+    "views": 16,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18097092647153268",
+   "slug": "fonologia",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-06T10:39:11+0000",
+   "permalink": "https://www.instagram.com/reel/Dc8V0-lj0Oj/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 6,
+    "views": 5,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 4148,
+    "ig_reels_video_view_total_time": 24888
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18066802715729592",
+   "slug": "trautonium",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-05T17:39:47+0000",
+   "permalink": "https://www.instagram.com/reel/Dc6hJ46ADYr/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 9,
+    "views": 11,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 3962,
+    "ig_reels_video_view_total_time": 35663
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18103151522258348",
+   "slug": "fonologia",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-05T16:03:33+0000",
+   "permalink": "https://www.instagram.com/p/Dc6WKvAFN3X/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 6,
+    "views": 16,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18489476368100378",
+   "slug": "farfisa",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-05T10:39:11+0000",
+   "permalink": "https://www.instagram.com/reel/Dc5xBQtCJsg/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 13,
+    "views": 18,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 3546,
+    "ig_reels_video_view_total_time": 49655
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18157767544501410",
+   "slug": "vcs3",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-04T17:39:46+0000",
+   "permalink": "https://www.instagram.com/reel/Dc38V9SAud4/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 13,
+    "views": 15,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 3011,
+    "ig_reels_video_view_total_time": 39153
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18131676703644959",
+   "slug": "trautonium",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-04T16:04:03+0000",
+   "permalink": "https://www.instagram.com/p/Dc3xbnflZu3/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 11,
+    "views": 23,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "17964109479175254",
+   "slug": "arp2600",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-04T10:45:07+0000",
+   "permalink": "https://www.instagram.com/reel/Dc3M5SXDV-m/",
+   "like_count": 0,
+   "comments_count": 1,
+   "insights": {
+    "reach": 13,
+    "views": 15,
+    "likes": 0,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 3484,
+    "ig_reels_video_view_total_time": 52271
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18336800086260175",
+   "slug": "ondes",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-03T17:39:12+0000",
+   "permalink": "https://www.instagram.com/reel/Dc1XfzADJrr/",
+   "like_count": 3,
+   "comments_count": 0,
+   "insights": {
+    "reach": 71,
+    "views": 76,
+    "likes": 3,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "ig_reels_avg_watch_time": 2240,
+    "ig_reels_video_view_total_time": 170285
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18102353591216308",
+   "slug": "farfisa",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-03T16:03:17+0000",
+   "permalink": "https://www.instagram.com/p/Dc1MjF7G-kH/",
+   "like_count": 2,
+   "comments_count": 2,
+   "insights": {
+    "reach": 15,
+    "views": 25,
+    "likes": 2,
+    "comments": 2,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 5,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18018810905872474",
+   "slug": "hammond",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-03T10:39:05+0000",
+   "permalink": "https://www.instagram.com/reel/Dc0nasOiCnH/",
+   "like_count": 2,
+   "comments_count": 0,
+   "insights": {
+    "reach": 9,
+    "views": 9,
+    "likes": 2,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 3,
+    "ig_reels_avg_watch_time": 5158,
+    "ig_reels_video_view_total_time": 56740
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18205254154368505",
+   "slug": "tb303",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-02T17:39:45+0000",
+   "permalink": "https://www.instagram.com/reel/Dcyywzwj_jd/",
+   "like_count": 3,
+   "comments_count": 0,
+   "insights": {
+    "reach": 39,
+    "views": 43,
+    "likes": 3,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 3,
+    "ig_reels_avg_watch_time": 4366,
+    "ig_reels_video_view_total_time": 179025
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18126990055804771",
+   "slug": "vcs3",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-02T16:05:37+0000",
+   "permalink": "https://www.instagram.com/p/DcyoBXWmxex/",
+   "like_count": 3,
+   "comments_count": 1,
+   "insights": {
+    "reach": 11,
+    "views": 22,
+    "likes": 3,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18125946424794218",
+   "slug": "fairlight",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-02T10:39:27+0000",
+   "permalink": "https://www.instagram.com/reel/DcyCqn6FCqL/",
+   "like_count": 4,
+   "comments_count": 0,
+   "insights": {
+    "reach": 26,
+    "views": 33,
+    "likes": 4,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "ig_reels_avg_watch_time": 6463,
+    "ig_reels_video_view_total_time": 180990
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18081133667701284",
+   "slug": "mellotron",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-01T17:38:50+0000",
+   "permalink": "https://www.instagram.com/reel/DcwN3YDF85r/",
+   "like_count": 0,
+   "comments_count": 0,
+   "insights": {
+    "reach": 26,
+    "views": 35,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 0,
+    "ig_reels_avg_watch_time": 3697,
+    "ig_reels_video_view_total_time": 107232
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18112248085804992",
+   "slug": "arp2600",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-09-01T16:03:27+0000",
+   "permalink": "https://www.instagram.com/p/DcwC-dJGrUH/",
+   "like_count": 3,
+   "comments_count": 1,
+   "insights": {
+    "reach": 16,
+    "views": 37,
+    "likes": 3,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 5,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18619590469021215",
+   "slug": "theremin",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-09-01T10:39:29+0000",
+   "permalink": "https://www.instagram.com/reel/Dcvd4B7D-XL/",
+   "like_count": 2,
+   "comments_count": 0,
+   "insights": {
+    "reach": 134,
+    "views": 163,
+    "likes": 2,
+    "comments": 0,
+    "shares": 1,
+    "saved": 0,
+    "total_interactions": 5,
+    "ig_reels_avg_watch_time": 4199,
+    "ig_reels_video_view_total_time": 629962
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18135817312536006",
+   "slug": "tr808",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-08-31T17:41:26+0000",
+   "permalink": "https://www.instagram.com/reel/DctpXpVjITu/",
+   "like_count": 1,
+   "comments_count": 0,
+   "insights": {
+    "reach": 17,
+    "views": 20,
+    "likes": 1,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 1,
+    "ig_reels_avg_watch_time": 4897,
+    "ig_reels_video_view_total_time": 88146
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "17956854297207759",
+   "slug": "ondes",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-08-31T16:03:50+0000",
+   "permalink": "https://www.instagram.com/p/DcteOW2G184/",
+   "like_count": 3,
+   "comments_count": 1,
+   "insights": {
+    "reach": 11,
+    "views": 30,
+    "likes": 3,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "17950230954266727",
+   "slug": "minimoog",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-08-31T15:12:38+0000",
+   "permalink": "https://www.instagram.com/reel/DctYVVrgh2V/",
+   "like_count": 2,
+   "comments_count": 0,
+   "insights": {
+    "reach": 48,
+    "views": 52,
+    "likes": 2,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 3937,
+    "ig_reels_video_view_total_time": 196863
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18098066453529845",
+   "slug": "hammond",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-08-30T16:02:55+0000",
+   "permalink": "https://www.instagram.com/p/Dcq5U0alqsC/",
+   "like_count": 4,
+   "comments_count": 1,
+   "insights": {
+    "reach": 19,
+    "views": 40,
+    "likes": 4,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 7,
+    "follows": 0,
+    "profile_visits": 1
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18187854736400786",
+   "slug": "tb303",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-08-30T09:27:00+0000",
+   "permalink": "https://www.instagram.com/p/DcqMBM3lhp2/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 18,
+    "views": 38,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18166514032460014",
+   "slug": "fairlight",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-08-29T16:19:33+0000",
+   "permalink": "https://www.instagram.com/p/DcoWb7YFIYU/",
+   "like_count": 1,
+   "comments_count": 1,
+   "insights": {
+    "reach": 12,
+    "views": 28,
+    "likes": 1,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 2,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18101581832208817",
+   "slug": "dx7",
+   "ruolo": "reel",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-08-29T13:03:41+0000",
+   "permalink": "https://www.instagram.com/reel/Dcn__Qjjsos/",
+   "like_count": 3,
+   "comments_count": 0,
+   "insights": {
+    "reach": 48,
+    "views": 54,
+    "likes": 3,
+    "comments": 0,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "ig_reels_avg_watch_time": 4380,
+    "ig_reels_video_view_total_time": 236571
+   },
+   "rifiutate": [
+    "follows",
+    "profile_visits"
+   ]
+  },
+  {
+   "id": "18131312359641248",
+   "slug": "dx7",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-08-28T19:52:50+0000",
+   "permalink": "https://www.instagram.com/p/DcmKDJMCRup/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 13,
+    "views": 27,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 4,
+    "follows": 0,
+    "profile_visits": 1
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18016153424733520",
+   "slug": "mellotron",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-08-28T01:05:57+0000",
+   "permalink": "https://www.instagram.com/p/DckJFiIm0dm/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 15,
+    "views": 37,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 5,
+    "follows": 0,
+    "profile_visits": 1
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18153091267505786",
+   "slug": "theremin",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-08-27T16:49:22+0000",
+   "permalink": "https://www.instagram.com/p/DcjQQgAiTH1/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 8,
+    "views": 26,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 6,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "17964371901158857",
+   "slug": "tr808",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-08-26T16:45:11+0000",
+   "permalink": "https://www.instagram.com/p/Dcgq_EiICSh/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 16,
+    "views": 41,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 5,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  },
+  {
+   "id": "18109674947326717",
+   "slug": "minimoog",
+   "ruolo": "carosello",
+   "media_type": "CAROUSEL_ALBUM",
+   "media_product_type": "FEED",
+   "timestamp": "2026-08-26T08:54:46+0000",
+   "permalink": "https://www.instagram.com/p/Dcf1KLjm4mJ/",
+   "like_count": 2,
+   "comments_count": 1,
+   "insights": {
+    "reach": 15,
+    "views": 42,
+    "likes": 2,
+    "comments": 1,
+    "shares": 0,
+    "saved": 0,
+    "total_interactions": 5,
+    "follows": 0,
+    "profile_visits": 0
+   },
+   "rifiutate": []
+  }
+ ]
+}
