@@ -234,9 +234,14 @@ def battute(scheda):
     righe = scheda.get("reel_battute")
     if not righe:
         raise ValueError(f"la scheda '{scheda['slug']}' non ha reel_battute")
-    tag = f'<div class="tag">{scheda["strumento"]}<small>{scheda["anno"]}</small></div>'
+    from html import escape
+    tag = (f'<div class="tag">{escape(scheda["strumento"], quote=False)}'
+           f'<small>{escape(scheda["anno"], quote=False)}</small></div>')
     out = []
     for i, (kick, testo) in enumerate(righe):
+        # «R&B», «Speak & Spell», «Vol. 1 & 2»: il testo va nell'HTML, e
+        # una & non scappata è una scommessa sul parser.
+        kick, testo = escape(kick, quote=False), escape(testo, quote=False)
         # Senza punto finale, tutte uguali: un pannello con la frase che
         # finisce col punto e il successivo senza sembrano due tipografie.
         if testo.endswith(".") and not testo.endswith(".."):
@@ -248,7 +253,7 @@ def battute(scheda):
     # quando il reel ricomincia non c'è uno stacco.
     out.append({"foto": 0, "moto": MOTI[0],
                 "html": f'<div class="pannello"><div class="kick">ELETTROFONI · N. {scheda["numero"]:03d}</div>'
-                        f'<div class="hook">{scheda["reel_cta"]}</div>'
+                        f'<div class="hook">{escape(scheda["reel_cta"], quote=False)}</div>'
                         f'<span class="handle">@ELETTROFONI</span></div>{tag}'})
     return out
 

@@ -80,7 +80,7 @@ REEL_BATTUTE = 5
 # non blocca i controlli (bloccherebbe il post del giorno); il suo reel
 # semplicemente non si costruisce, e lo dice nel log. Si mette a True nel
 # commit che inserisce le battute, e da lì non si spegne più.
-REEL_OBBLIGATORIE = False
+REEL_OBBLIGATORIE = True
 MAX_REEL_GANCIO = 60
 MAX_REEL_BATTUTA = 75
 MAX_REEL_KICK = 28
@@ -181,6 +181,14 @@ SCHEDE = [
              "data": "2026-08-25"},
         ],
         "hashtags": ["#minimoog", "#sintetizzatore", "#musicaelettronica", "#synth", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 001", "Bob Moog prestò un prototipo a Sun Ra. Mai restituito."),
+            ("AUTUNNO 1969", "Bill Hemsath monta il primo prototipo in pausa pranzo, con scarti."),
+            ("1970 · SUN RA", "Sun Ra lo suona su «My Brother the Wind», prima che sia in vendita."),
+            ("BOB MOOG", "All'inizio era scettico. Il Minimoog salverà la sua azienda."),
+            ("FINO AL 1981", "Circa 12.000 esemplari. E oggi il Model D è ancora a listino."),
+        ],
+        "reel_cta": "Mandalo a chi non restituisce mai niente",
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
     },
     {
@@ -271,6 +279,14 @@ SCHEDE = [
              "data": "2026-08-25"},
         ],
         "hashtags": ["#tr808", "#drummachine", "#musicaelettronica", "#hiphop", "#roland"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 002", "La TR-808 morì quando finirono i transistor difettosi."),
+            ("1980 · ROLAND", "Kikumoto la progetta con circuiti, senza campioni. Listino 1.195 $."),
+            ("TRANSISTOR 2SC828", "Rullante, clap, piatti: fruscio da transistor scartati, presi apposta."),
+            ("1983 · 12.000 UNITÀ", "Fabbriche senza più difetti, Roland senza ricambi: produzione chiusa."),
+            ("METÀ ANNI '80", "Finisce al pegno a meno di 100 $. In cameretta nascono house e techno."),
+        ],
+        "reel_cta": "Mandalo a chi fa i beat in cameretta",
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
     },
     {
@@ -359,6 +375,14 @@ SCHEDE = [
              "data": "2026-08-25"},
         ],
         "hashtags": ["#theremin", "#musicaelettronica", "#storiadellamusica", "#synth", "#leontheremin"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 003", "L'inventore del theremin costruì anche una cimice."),
+            ("PIETROGRADO, 1920", "Lev Termen si accorge che la sua mano, senza toccare, cambia il suono."),
+            ("1922 · CREMLINO", "Secondo il suo racconto, Lenin ci suonò un'aria di Glinka."),
+            ("1938", "Torna in URSS e lo arrestano. Kolyma, poi un laboratorio-prigione."),
+            ("«THE THING» · MOSCA 1945", "Nel Gran Sigillo regalato all'ambasciatore USA. Funziona 7 anni."),
+        ],
+        "reel_cta": "Mandalo a chi ama le storie di spie",
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
     },
     {
@@ -446,6 +470,14 @@ SCHEDE = [
              "data": "2026-08-25"},
         ],
         "hashtags": ["#mellotron", "#beatles", "#storiadellamusica", "#rockprogressivo", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 004", "Collaudava Mellotron. Poi fondò i Moody Blues."),
+            ("BIRMINGHAM, 1963", "Sotto ogni tasto, un nastro registrato. Dopo circa 8 secondi finisce."),
+            ("MIKE PINDER · 18 MESI", "Passa 18 mesi a collaudarli nella fabbrica dei fratelli Bradley."),
+            ("UN MELLOTRON USATO", "Poi ne compra uno usato. Nessuno conosce la macchina meglio di lui."),
+            ("MOODY BLUES · 1967", "Ci costruisce «Nights in White Satin»."),
+        ],
+        "reel_cta": "Mandalo a chi ama «Nights in White Satin»",
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
     },
     {
@@ -536,6 +568,14 @@ SCHEDE = [
              "data": "2026-08-25"},
         ],
         "hashtags": ["#dx7", "#yamaha", "#synth", "#musicaelettronica", "#anni80"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 005", "Un solo preset suonava nel 40% delle hit n.1 del 1986"),
+            ("1983 · 1.995 DOLLARI", "Yamaha lancia il DX7. Costa la metà di un Jupiter-8"),
+            ("BRIAN ENO", "«Ce l'hanno tutti. Nessuno lo sa programmare»"),
+            ("PRESET N. 11", "È E.PIANO 1, il piano elettrico di fabbrica. Nelle n.1 R&B, il 61%"),
+            ("«TAKE ON ME» · 1985", "E il basso degli a-ha? Preset BASS 1, uscito così dalla fabbrica"),
+        ],
+        "reel_cta": "Mandalo a chi canta «Take On Me» in macchina",
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
     },
     {
@@ -625,6 +665,14 @@ SCHEDE = [
              "data": "2026-08-25"},
         ],
         "hashtags": ["#fairlight", "#sampling", "#campionatore", "#musicaelettronica", "#anni80"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 006", "Herbie Hancock campionò le voci di bambini e le suonò"),
+            ("SYDNEY · 1979", "Il Fairlight CMI: un computer australiano con la penna ottica"),
+            ("8 BIT · 73 TASTI", "Registri un suono vero, un cane o un vaso rotto, e lo suoni sui tasti"),
+            ("1983 · SESAME STREET", "Le voci dei bambini diventano note, davanti a loro"),
+            ("UNA DI QUELLE VOCI", "Era Tatyana Ali, futura star di «Willy, il principe di Bel-Air»"),
+        ],
+        "reel_cta": "Mandalo a chi sa a memoria la sigla di Willy",
         "verificata": True,   # verifica 2026-08-25; foto SMEM scaricata via workflow scarica-foto
     },
     {
@@ -714,6 +762,14 @@ SCHEDE = [
              "data": "2026-08-26"},
         ],
         "hashtags": ["#tb303", "#acidhouse", "#roland", "#musicaelettronica", "#synth"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 007", "Nessuno sapeva programmarla. Così nacque l'acid house"),
+            ("1981 · 395 $", "Roland vende la TB-303 come basso per chi prova senza bassista"),
+            ("1984 · FUORI PRODUZIONE", "Non somiglia a nessun basso. Finisce nei banchi dei pegni di Chicago"),
+            ("40 O 200 DOLLARI", "Spanky dei Phuture la compra usata. Sul prezzo non concordano"),
+            ("«ACID TRACKS» · 1987", "DJ Pierre gira le manopole a pattern acceso. Spanky: «continua così»"),
+        ],
+        "reel_cta": "Mandalo a chi non ha mai letto un manuale",
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     {
@@ -808,6 +864,14 @@ SCHEDE = [
              "data": "2026-08-26"},
         ],
         "hashtags": ["#hammond", "#organo", "#b3", "#storiadellamusica", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 008", "Inventò l'organo Hammond e non sapeva suonare una nota"),
+            ("CHICAGO · 1935", "Laurens Hammond faceva orologi elettrici. L'organo ne usa il motore"),
+            ("W.L. LAHEY · CONTABILE", "I suoni li giudicava il contabile della ditta, organista diplomato"),
+            ("1940 · DON LESLIE", "Ascolta al telefono l'altoparlante rotante di Leslie. Dice no"),
+            ("NON SERVÌ A NIENTE", "Vieta ai negozi di venderlo. I musicisti li vorranno insieme lo stesso"),
+        ],
+        "reel_cta": "Mandalo a chi dice «io non so suonare»",
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     {
@@ -897,6 +961,14 @@ SCHEDE = [
              "data": "2026-08-26"},
         ],
         "hashtags": ["#ondesmartenot", "#musicaelettronica", "#messiaen", "#radiohead", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 009", "Quel suono in «Ghostbusters» non è un theremin"),
+            ("GRANDE GUERRA", "Il radiotelegrafista Martenot ama i battimenti delle valvole radio"),
+            ("PARIGI · 20 APRILE 1928", "Ci lavora 10 anni. Poi li porta all'Opéra, e il solista è lui"),
+            ("TASTIERA + ANELLO", "Le Ondes Martenot: un anello al dito e glissandi che sembrano una voce"),
+            ("1949 → 1984", "Messiaen la vuole in «Turangalîla». Elmer Bernstein, in «Ghostbusters»"),
+        ],
+        "reel_cta": "Mandalo a chi giura che è un theremin",
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     {
@@ -987,6 +1059,14 @@ SCHEDE = [
              "data": "2026-08-26"},
         ],
         "hashtags": ["#arp2600", "#synth", "#starwars", "#musicaelettronica", "#r2d2"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 010", "Metà della voce di R2-D2 è un essere umano"),
+            ("1977 · BEN BURTT", "Ben Burtt deve dare una voce a un robot che non parla"),
+            ("LISTINO 2.600 $", "Prende un ARP 2600, una valigia con gli altoparlanti dentro"),
+            ("METÀ CIRCUITO", "Al synth mescola la propria voce. Per metà elettronico, per metà umano"),
+            ("IL PIANTO DI R2-D2", "Ci mette 6 mesi. Ne esce un pianto acuto che riconoscono tutti"),
+        ],
+        "reel_cta": "Mandalo a chi sa fare la voce di R2-D2",
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     {
@@ -1074,6 +1154,14 @@ SCHEDE = [
              "data": "2026-08-26"},
         ],
         "hashtags": ["#vcs3", "#ems", "#battiato", "#synth", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 011", "Vendette la tiara della moglie per un computer"),
+            ("PUTNEY, LONDRA", "Zinovieff, figlio di aristocratici russi, ha un capanno in giardino"),
+            ("4.000 STERLINE", "La tiara diventa un computer. Il primo in una casa privata, diceva lui"),
+            ("1969 · EMS", "Il VCS3 nasce in un capanno sul Tamigi. Scatola di legno, 330 sterline"),
+            ("1972 · FRANCO BATTIATO", "Battiato va fino a Londra a prenderlo. Ci incide «Fetus»"),
+        ],
+        "reel_cta": "Mandalo a chi ha tutti i dischi di Battiato",
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     {
@@ -1165,6 +1253,14 @@ SCHEDE = [
              "data": "2026-08-26"},
         ],
         "hashtags": ["#farfisa", "#organo", "#madeinitaly", "#storiadellamusica", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 012", "Un numero uno soul del 1966 ha un organo di Ancona"),
+            ("PERCY SLEDGE · 1966", "«When a Man Loves a Woman». L'intro la credono tutti un Hammond"),
+            ("SPOONER OLDHAM ALL'ORGANO", "È un Farfisa rosso. Del booster dirà: «suonava come mille calabroni»"),
+            ("CAMERANO, ANCONA", "FAbbriche Riunite FISArmoniche: 3 fabbriche fuse insieme nel 1946"),
+            ("OGGI", "Il marchio Farfisa sopravvive. Sui citofoni"),
+        ],
+        "reel_cta": "Mandalo a chi ha un citofono Farfisa",
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     # NOTA EDITORIALE (27/08/2026, scheda "stylophone"): la faccia della
@@ -1232,6 +1328,14 @@ SCHEDE = [
              "data": "2026-08-27"},
         ],
         "hashtags": ["#trautonium", "#oskarsala", "#hitchcock", "#storiadellamusica", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 013", "Gli uccelli di Hitchcock non sono uccelli"),
+            ("TRAUTWEIN, BERLINO 1930", "Il Trautonium non ha tasti. Si preme un filo teso su una barra"),
+            ("OSKAR SALA", "Allievo di Hindemith, studia fisica per capirlo. Ci passerà 70 anni"),
+            ("ALFRED HITCHCOCK", "Da giovane lo sente alla radio tedesca. Se lo ricorda per 30 anni"),
+            ("«GLI UCCELLI», 1963", "Ogni stridio è Oskar Sala al Mixtur-Trautonium, con Remi Gassmann"),
+        ],
+        "reel_cta": "Mandalo a chi non dorme dopo «Gli uccelli»",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 14
@@ -1289,6 +1393,14 @@ SCHEDE = [
              "url": "https://www.ilpost.it/2012/09/05/john-cage-mike-bongiorno-lascia-o-raddoppia/", "data": "2026-08-27"},
         ],
         "hashtags": ["#studiodifonologia", "#lucianoberio", "#johncage", "#milano", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 014", "John Cage da Mike Bongiorno, come esperto di funghi"),
+            ("MILANO, 1955", "Lo Studio di Fonologia: lo vogliono Berio e Maderna, la RAI paga"),
+            ("NOVEMBRE 1958", "Berio invita John Cage, che ci monta «Fontana Mix»"),
+            ("1959", "Intanto va a «Lascia o raddoppia?»: 5 puntate fra gennaio e febbraio"),
+            ("IN PRIMA SERATA", "Fra una domanda e l'altra suona i suoi pezzi. Vince 5 milioni di lire"),
+        ],
+        "reel_cta": "Mandalo a chi va per funghi",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 15
@@ -1343,6 +1455,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/Space_Oddity", "data": "2026-08-27"},
         ],
         "hashtags": ["#stylophone", "#davidbowie", "#spaceoddity", "#storiadellamusica", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 015", "C'è un giocattolo per bambini dentro «Space Oddity»"),
+            ("BRIAN JARVIS, 1967", "Ripara il pianoforte giocattolo della nipote e gli viene un'idea"),
+            ("DUBREQ, LONDRA, 1968", "Lo Stylophone: tasti di rame stampato, e si suona con un pennino"),
+            ("DAVID BOWIE", "Ci compone la melodia di «Space Oddity». E lo suona anche sul disco"),
+            ("11 LUGLIO 1969", "Esce 5 giorni prima che parta l'Apollo 11. Primo successo di Bowie"),
+        ],
+        "reel_cta": "Mandalo a chi sa «Space Oddity» a memoria",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 16
@@ -1398,6 +1518,14 @@ SCHEDE = [
              "url": "https://www.attackmagazine.com/technique/hardware-focus/roland-space-echo/", "data": "2026-08-27"},
         ],
         "hashtags": ["#spaceecho", "#roland", "#dub", "#kingtubby", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 016", "Il dub è nato spingendo questa scatola oltre il limite"),
+            ("IKUTARO KAKEHASHI", "Le eco a nastro morivano presto: il nastro, tirato, si consumava"),
+            ("OSAKA, 1974", "Nel Roland Space Echo il nastro gira sciolto, senza bobine. E dura"),
+            ("OLTRE METÀ CORSA", "Alzate il ritorno e l'eco si rimangia se stessa, fino a fischiare"),
+            ("KING TUBBY · LEE PERRY", "Nel mix alzavano il ritorno finché ululava, poi lo riabbassavano"),
+        ],
+        "reel_cta": "Mandalo a chi mette l'eco su tutto",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 17
@@ -1462,6 +1590,14 @@ SCHEDE = [
              "url": "https://www.korg.com/us/products/synthesizers/ms_20mini/", "data": "2026-08-27"},
         ],
         "hashtags": ["#korgms20", "#korg", "#sintetizzatore", "#storiadellamusica", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 017", "Fatto per le scuole. Ci è nato «Da Funk» dei Daft Punk"),
+            ("TOKYO · 1978", "Fumio Mieda vuole i cavetti dei modulari su un synth da studente"),
+            ("INGRESSO ESP", "Canti nel microfono e il Korg MS-20 suona le tue note. Anche stonate"),
+            ("NEGOZI DELL'USATO", "Passa di moda e finisce nell'usato. Lì lo compra chi inventa la techno"),
+            ("DAFT PUNK · 1995", "Il lead sporco e saturo di «Da Funk»? È un Korg MS-20"),
+        ],
+        "reel_cta": "Mandalo a chi ha consumato «Da Funk»",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 18
@@ -1517,6 +1653,14 @@ SCHEDE = [
              "url": "https://reverb.com/news/roger-linn-on-drum-samples-prince-and-unlocking-virtuosity-in-electronic-music", "data": "2026-08-27"},
         ],
         "hashtags": ["#linnlm1", "#drummachine", "#prince", "#anni80", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 018", "«When Doves Cry» di Prince non ha un piatto. Perché?"),
+            ("LOS ANGELES · 1980", "Roger Linn campiona i colpi dell'amico batterista Art Wood, uno a uno"),
+            ("5.000 DOLLARI", "La Linn LM-1 costa come un'auto. E la memoria, nel 1980, una fortuna"),
+            ("8 BIT · 28 KHZ", "Cassa e rullante ci stanno. Un crash ha la coda lunga, occupa troppo"),
+            ("PRINCE · 1984", "Prince la accorda più bassa. E nel disco il crash non arriva mai"),
+        ],
+        "reel_cta": "Mandalo al tuo amico batterista",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 19
@@ -1573,6 +1717,14 @@ SCHEDE = [
              "url": "https://www.sfgate.com/music/article/Don-Buchla-inventor-of-electronic-music-9235035.php", "data": "2026-09-04"},
         ],
         "hashtags": ["#buchla", "#musicaelettronica", "#synth", "#sintetizzatore", "#modularsynth"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 019", "Cercò un synth così per anni. Era il primo prototipo"),
+            ("BERKELEY · 1973", "Don Buchla chiude uno studio intero in una valigetta: il Music Easel"),
+            ("NIENTE TASTI", "«Una tastiera è dittatoriale», disse. Qui ci sono piastre sensibili"),
+            ("IL PRIMO PROTOTIPO", "È Alessandro Cortini. «Quando l'ho trovato ho pianto», racconta"),
+            ("«FORSE» · 2013", "In un mese ci suona «Forse Vol. 1 & 2», dal vivo, senza sovraincisioni"),
+        ],
+        "reel_cta": "Mandalo a chi ha pianto per uno strumento",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 20
@@ -1630,6 +1782,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/Elka_Synthex", "data": "2026-09-04"},
         ],
         "hashtags": ["#elkasynthex", "#sintetizzatore", "#madeinitaly", "#synth", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 020", "Fatto a Castelfidardo. L'ultimo era per Stevie Wonder"),
+            ("UN PROGETTO IN PROPRIO", "Mario Maggi lo progetta in proprio. Galanti/GEM e Crumar dicono di no"),
+            ("ELKA · CASTELFIDARDO", "Arriva alla Elka grazie a un amico che lì doveva riparare un organo"),
+            ("DOPO NOTTI INSONNI", "Lo chiama Synthex: corto, con la X in fondo. Pensa ai fumetti di Tex"),
+            ("«SKELETONS» · 1987", "L'ultimo Synthex, su misura per Stevie Wonder: il basso di «Skeletons»"),
+        ],
+        "reel_cta": "Mandalo a chi è di Castelfidardo",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 21
@@ -1686,6 +1846,14 @@ SCHEDE = [
              "url": "https://articles.roland.com/can-you-feel-it-mr-fingers/", "data": "2026-09-04"},
         ],
         "hashtags": ["#tr909", "#roland", "#drummachine", "#techno", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 021", "Qui dentro suonano i piatti jazz di un tecnico Roland"),
+            ("1983 · 1.195 DOLLARI", "Roland TR-909: cassa e rullante sono sintesi. I piatti no"),
+            ("ATSUSHI HOSHIAI", "Porta in ufficio i suoi piatti, un Paiste sopra e uno Zildjian sotto"),
+            ("DI NOTTE, PER SETTIMANE", "Sposta i microfoni fino al punto giusto. Poi li campiona a 6 bit"),
+            ("FLOP: 10.000 PEZZI", "Roland la ritira dopo un anno. Da usata, farà techno e house"),
+        ],
+        "reel_cta": "Mandalo al tuo amico batterista jazz",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 22
@@ -1743,6 +1911,14 @@ SCHEDE = [
              "url": "https://paul-pearson.blogspot.com/2014/03/song-of-day-3142014-steve-hackett.html", "data": "2026-09-04"},
         ],
         "hashtags": ["#optigan", "#mattel", "#organoelettronico", "#vintagesynth", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 022", "Il suono di un giocattolo Mattel è in «Twin Peaks»"),
+            ("27 GENNAIO 1971", "Mattel presenta l'Optigan, un organo da salotto per famiglie"),
+            ("57 PISTE OTTICHE", "Suona registrazioni vere su un disco, lette con la luce come al cinema"),
+            ("1980 · WESSEX STUDIOS", "Steve Hackett lo registra in un bagno, col disco «Big Band Beat»"),
+            ("DAVID LYNCH", "Lynch campiona lo stesso disco. Nel 2017 è in «Twin Peaks: The Return»"),
+        ],
+        "reel_cta": "Mandalo a chi ha visto tutto «Twin Peaks»",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 23
@@ -1824,6 +2000,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/E-mu_Systems", "data": "2026-09-04"},
         ],
         "hashtags": ["#emu", "#emulator", "#campionatore", "#sampler", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 023", "Il flauto di «Sledgehammer» è un dischetto di fabbrica"),
+            ("1984 · SANTA CRUZ", "Dentro l'E-mu Emulator II non c'è un suono. Li carichi da floppy"),
+            ("UN FLAUTO GIAPPONESE", "Fra archi e ottoni, nella libreria E-mu c'è anche uno shakuhachi"),
+            ("1986 · PETER GABRIEL", "Apre «Sledgehammer». Senti un flauto e pensi a un flautista"),
+            ("STESSO DISCHETTO", "Lo ritrovi in «Love Is Stronger Than Pride» di Sade. E negli Enigma"),
+        ],
+        "reel_cta": "Mandalo a chi canta «Sledgehammer» in auto",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 24
@@ -1878,6 +2062,14 @@ SCHEDE = [
              "url": "https://www.polynominal.com/m/crumar-performer.htm", "data": "2026-09-04"},
         ],
         "hashtags": ["#crumar", "#sintetizzatore", "#stringmachine", "#madeinitaly", "#synth"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 024", "Gli archi dei primi Duran Duran? Molti da Castelfidardo"),
+            ("CASTELFIDARDO, 1971", "Mario Crucianelli lascia l'Elka di famiglia e fonda la Crumar"),
+            ("1979 · 49 TASTI", "Esce il Crumar Performer: archi e ottoni, 15 cursori, zero memorie"),
+            ("SUONA DI PLASTICA", "Lo dicono tutti. Però costa molto meno degli altri, e pesa poco"),
+            ("NICK RHODES", "Lo usa su «Duran Duran» e «Rio», vicino a un Prophet-5 molto più caro"),
+        ],
+        "reel_cta": "Mandalo a chi aveva il poster dei Duran Duran",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 25
@@ -1934,6 +2126,14 @@ SCHEDE = [
              "url": "https://stereogum.com/2236734/chvrches-debut-album-the-bones-of-what-you-believe-turns-10/interviews/footnotes-interview", "data": "2026-09-04"},
         ],
         "hashtags": ["#juno106", "#roland", "#sintetizzatore", "#synth", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 025", "Ha 6 voci. Prima di comprarlo, contatele."),
+            ("FEBBRAIO 1984", "Roland Juno-106: il Juno-60 rifatto per costare meno."),
+            ("CHIP 80017A", "Ogni voce vive in un chip suo. Non lo fanno più da decenni."),
+            ("TASSO DI GUASTO", "Fra i tecnici è quasi una barzelletta. Muore una voce, poi un'altra."),
+            ("SE NE TROVATE UNO USATO", "Quasi di sicuro ha già perso e ritrovato almeno una voce."),
+        ],
+        "reel_cta": "Mandalo a chi sta per comprare un Juno-106",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 26
@@ -1990,6 +2190,14 @@ SCHEDE = [
              "url": "https://120years.net/the-syn-ket-or-synthesiser-ketoff-paolo-ketoff-john-eaton-italy-1963/", "data": "2026-09-04"},
         ],
         "hashtags": ["#synket", "#paoloketoff", "#sintetizzatore", "#storiadellamusica", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 026", "Il primo concerto con un synth? Forse è stato a Roma."),
+            ("ROMA, 1963", "Paolo Ketoff, tecnico del suono, costruisce il Synket."),
+            ("ACCADEMIA AMERICANA", "È per John Eaton, da portare in scena come un violino."),
+            ("APRILE 1965", "Eaton lo suona dal vivo. I grandi modulari stavano chiusi negli studi."),
+            ("1966-1974", "Poi Eaton, col Synket, fa più di 1.000 concerti."),
+        ],
+        "reel_cta": "Mandalo a chi porta i synth sul palco",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 27
@@ -2047,6 +2255,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/Beat_It", "data": "2026-09-04"},
         ],
         "hashtags": ["#synclavier", "#newenglanddigital", "#sintesifm", "#musicaelettronica", "#synth"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 027", "Il gong di «Beat It» nasce da un preset di fabbrica."),
+            ("1981 · DISCO PROMOZIONALE", "È un demo che Denny Jaeger incide per il Synclavier II."),
+            ("MICHAEL JACKSON", "Jackson lo sente e lo vuole così, identico."),
+            ("TOM BÄHLER", "Il tastierista compra un Synclavier e lo porta in studio."),
+            ("WESTLAKE STUDIOS", "Lo rifà partendo dal suono di fabbrica, che era già quasi quello."),
+        ],
+        "reel_cta": "Mandalo a chi dice che i preset sono da pigri",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 28
@@ -2097,6 +2313,14 @@ SCHEDE = [
              "url": "https://wearethemutants.com/2017/04/12/sds-v-drum-synthesizer-1981/", "data": "2026-09-09"},
         ],
         "hashtags": ["#simmons", "#drummachine", "#anni80", "#batteriaelettronica", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 028", "Pelli dello stesso materiale degli scudi antisommossa."),
+            ("INGHILTERRA, 1981", "Simmons SDS-V: 6 pastiglie esagonali al posto della batteria."),
+            ("POLICARBONATO", "Reggono qualunque bacchettata. Non cedono di un millimetro."),
+            ("IL PROBLEMA", "Il colpo torna tutto nel braccio. I batteristi si lamentano dei polsi."),
+            ("IN UN PAIO D'ANNI", "Quel tom che scende lo senti in radio di continuo."),
+        ],
+        "reel_cta": "Mandalo a un batterista che picchia forte",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 29
@@ -2147,6 +2371,14 @@ SCHEDE = [
              "url": "https://artsandculture.google.com/story/solina-string-ensemble-series-2-and-series-42/ZAVBDLMPNTX_zQ", "data": "2026-09-10"},
         ],
         "hashtags": ["#solina", "#eminent", "#arp", "#anni70", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 029", "Archi nei Pink Floyd? Un pezzo di organo da salotto"),
+            ("BODEGRAVEN, OLANDA", "Eminent fa organi. Nel 310 Unique del 1972 c'è una sezione archi."),
+            ("1974", "Piace più del resto dell'organo. La staccano e nasce la Solina."),
+            ("IL TRUCCO È IL CHORUS", "La stessa nota, sfasata 3 volte. L'orecchio sente una sezione d'archi."),
+            ("PINK FLOYD, DAL 1975", "Richard Wright la usa come tappeto sotto la band."),
+        ],
+        "reel_cta": "Mandalo a chi giura che erano archi veri",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 30
@@ -2199,6 +2431,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/Palm_Products_GmbH", "data": "2026-09-10"},
         ],
         "hashtags": ["#ppgwave", "#wavetable", "#wolfgangpalm", "#anni80", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 030", "La sua idea sta in tanti synth. Il suo nome quasi mai"),
+            ("AMBURGO, 1975", "Wolfgang Palm fonda la PPG. Lì inventa la sintesi a tavole d'onda."),
+            ("1982", "Nel PPG Wave 64 onde stanno in fila, come i fotogrammi di un film."),
+            ("8 BIT", "Nel 1982 di più non si poteva permettere. Ne esce una grana ruvida."),
+            ("1987", "Palm chiude la PPG in debito, per una macchina che non vende in tempo."),
+        ],
+        "reel_cta": "Mandalo a chi suona con le tavole d'onda",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 31
@@ -2276,6 +2516,14 @@ SCHEDE = [
              "url": "https://www.vintagesynth.com/akai/mpc60", "data": "2026-09-11"},
         ],
         "hashtags": ["#mpc60", "#akai", "#campionatore", "#hiphop", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 031", "Un album intero, con 13 secondi di memoria per volta"),
+            ("1988 · 5.000 DOLLARI", "Roger Linn disegna i comandi, Akai fa l'elettronica a Tokyo."),
+            ("16 PAD", "La MPC60 si suona con le dita. I pad sentono quanto forte premi."),
+            ("DJ SHADOW", "Ne compra una usata, su consiglio di un altro DJ."),
+            ("«ENDTRODUCING.....», 1996", "Niente tastiere, niente synth. Dischi dei mercatini, tagliati sui pad."),
+        ],
+        "reel_cta": "Mandalo a chi compra dischi ai mercatini",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 32
@@ -2345,6 +2593,14 @@ SCHEDE = [
              "url": "https://www.vintagesynth.com/sequential-circuits/prophet-5", "data": "2026-09-11"},
         ],
         "hashtags": ["#prophet5", "#sequentialcircuits", "#synth", "#musicaelettronica", "#anni70"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 032", "Fino al 1977 nessun synth polifonico ricordava un suono"),
+            ("SAN JOSE, CALIFORNIA", "Dave Smith e John Bowen disegnano il Prophet-5 alla Sequential."),
+            ("NAMM, GENNAIO 1978", "Tiene 40 suoni in memoria. Li richiami premendo un numero."),
+            ("QUASI 4.000 DOLLARI", "400 ordini in poche settimane. Per un'azienda piccola, un bel guaio."),
+            ("POCHI ANNI DOPO", "Primo collegamento MIDI: un Prophet-600, suo erede, e uno Jupiter-6."),
+        ],
+        "reel_cta": "Mandalo a chi non salva mai i suoi preset",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 33
@@ -2413,6 +2669,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/Sucker_M.C.%27s", "data": "2026-09-11"},
         ],
         "hashtags": ["#oberheimdmx", "#drummachine", "#newwave", "#hiphop", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 033", "«Blue Monday»: in studio non c'era nessun batterista"),
+            ("NEW ORDER · 1983", "Cassa a sedicesimi e rullate di tom, programmate un colpo alla volta."),
+            ("OBERHEIM DMX", "Il ritmo è di una Oberheim DMX, uscita nel 1980 a quasi 2.900 dollari."),
+            ("24 CAMPIONI · 8 BIT", "Le drum machine di prima la batteria la imitavano. Questa la registra."),
+            ("RUN-D.M.C. · 1983", "Lo stesso anno, in «Sucker M.C.'s» ci sono voce, scratch e lei. Basta."),
+        ],
+        "reel_cta": "Mandalo a chi balla ancora «Blue Monday»",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 34
@@ -2482,6 +2746,14 @@ SCHEDE = [
              "data": "2026-09-11"},
         ],
         "hashtags": ["#eventide", "#h910", "#harmonizer", "#davidbowie", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 034", "La parola «glitch» è nata dentro questa scatola"),
+            ("EVENTIDE · MANHATTAN", "Eventide non fa strumenti: fa apparecchi per la radio e la TV."),
+            ("1975 · 1.600 DOLLARI", "L'H910 sposta la nota fino a un'ottava senza toccare la velocità."),
+            ("IL DIFETTO", "Dove le due letture si scambiano resta un vuoto. Quello è il glitch."),
+            ("DAVID BOWIE · 1977", "Il rullante che scende di tono in «Breaking Glass» viene da lì."),
+        ],
+        "reel_cta": "Mandalo a chi ha consumato «Low» di Bowie",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 35
@@ -2531,6 +2803,14 @@ SCHEDE = [
              "url": "https://daily.redbullmusicacademy.com/2017/07/gotye-ondioline-interview/", "data": "2026-09-11"},
         ],
         "hashtags": ["#ondioline", "#georgesjenny", "#jeanjacquesperrey", "#anni50", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 035", "L'ha cominciata in sanatorio, malato di tubercolosi"),
+            ("GEORGES JENNY · ANNI '30", "Jenny vuole ciò che fanno le Ondes Martenot, a un prezzo da famiglia."),
+            ("ONDIOLINE · 1947", "Esce l'Ondioline. Tasti su molle, da spingere di lato come una corda."),
+            ("RADIO FRANCESE · 1949", "Uno studente di medicina sente Jenny alla radio. E va a cercarlo."),
+            ("JEAN-JACQUES PERREY", "È Jean-Jacques Perrey. Ci passerà sopra 20 anni, unico vero virtuoso."),
+        ],
+        "reel_cta": "Mandalo a un violinista che odia le tastiere",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 36
@@ -2606,6 +2886,14 @@ SCHEDE = [
              "url": "https://pianowithjonny.com/piano-lessons/play-you-are-the-sunshine-of-my-life/", "data": "2026-09-13"},
         ],
         "hashtags": ["#fenderrhodes", "#rhodespiano", "#haroldrhodes", "#pianoelettrico", "#anni70"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 036", "Un pianoforte per soldati feriti, coi tubi dei B-17"),
+            ("AVIAZIONE USA · 1942", "Harold Rhodes deve far suonare i feriti a letto, come terapia."),
+            ("XYLETTE", "Lo chiamano Xylette: 2 ottave e mezzo, da tenere sulle ginocchia."),
+            ("1965 · FENDER RHODES", "L'idea della barra percossa finisce dentro il Fender Rhodes."),
+            ("MILES DAVIS · 1968", "In «Stuff» lo suona Herbie Hancock, sotto la tromba senza coprirla."),
+        ],
+        "reel_cta": "Mandalo a chi ha un Rhodes in cantina",
         "verificata": True,
     },
     # SCARTI del rifornimento del 22/09/2026 (verifica su 2 fonti non
@@ -2685,6 +2973,14 @@ SCHEDE = [
              "url": "https://reverb.com/p/vox-continental", "data": "2026-09-22"},
         ],
         "hashtags": ["#voxcontinental", "#organoelettronico", "#anni60", "#ironbutterfly", "#theanimals"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 037", "Quasi 4 litri di vino e un titolo capito male"),
+            ("FINE ANNI '60", "Doug Ingle degli Iron Butterfly si siede al suo Vox Continental."),
+            ("UN GALLONE DI VINO", "Ha bevuto. Scrive una canzone e la chiama «In the Garden of Eden»."),
+            ("RON BUSHY, BATTERIA", "La canta al batterista perché se la segni. Ma la voce è impastata."),
+            ("1968 · 17 MINUTI", "Bushy scrive quello che sente: «In-A-Gadda-Da-Vida». E resta così."),
+        ],
+        "reel_cta": "Mandalo a chi storpia i titoli delle canzoni",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 38
@@ -2741,6 +3037,14 @@ SCHEDE = [
              "url": "https://www.perfectcircuit.com/signal/roland-tr606", "data": "2026-09-22"},
         ],
         "hashtags": ["#tr606", "#drumatix", "#rolandtr606", "#drummachine", "#analogico"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 038", "Fatto per chi suona da solo, finito nei dischi goth"),
+            ("HAMAMATSU, 1981", "Roland lancia il TR-606 insieme al TB-303, con un cavo per collegarli."),
+            ("7 SUONI ANALOGICI", "Un chitarrista senza band: il 303 fa il basso, il 606 la batteria."),
+            ("1984", "Troppo scomodo, suoni troppo finti. Fuori produzione e svenduto."),
+            ("SISTERS OF MERCY, 1985", "Lo mettono al centro del loro goth in «First and Last and Always»."),
+        ],
+        "reel_cta": "Mandalo al chitarrista che suona da solo",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 39
@@ -2799,6 +3103,14 @@ SCHEDE = [
              "url": "https://musicorigins.org/item/hip-hop-and-the-e-mu-sp1200/", "data": "2026-09-22"},
         ],
         "hashtags": ["#sp1200", "#emu", "#campionatore", "#hiphop", "#daverossum"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 039", "Ha 10 secondi di memoria e vale più di un sampler nuovo"),
+            ("SANTA CRUZ, 1987", "Dave Rossum di E-mu fa l'SP-1200 per chi non può pagarsi un Emulator."),
+            ("4 BANCHI DA 2,5 SECONDI", "12 bit e 26,04 kHz, molto meno di un CD. È lì il carattere."),
+            ("PUBLIC ENEMY, 1988", "Il Bomb Squad ci costruisce i collage di rumore dei Public Enemy."),
+            ("1997", "Chip del filtro esauriti, E-mu smette. Da lì l'usato sale di prezzo."),
+        ],
+        "reel_cta": "Mandalo a chi campiona ancora dai dischi",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 40
@@ -2857,6 +3169,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/Bridge_of_Sighs_(Robin_Trower_album)", "data": "2026-09-22"},
         ],
         "hashtags": ["#univibe", "#jimihendrix", "#robintrower", "#pedaleeffetti", "#chitarra"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 040", "Il pedale che vedete era ai piedi di Jimi Hendrix"),
+            ("FUMIO MIEDA, METÀ ANNI '60", "Si dice che imitasse un Leslie. Mieda parla di Radio Mosca, di notte."),
+            ("UNI-VIBE, 1968", "Dentro non gira niente: una lampadina e 4 fotoresistenze."),
+            ("SECONDA METÀ DEL 1969", "Hendrix compra l'Uni-Vibe meno di un anno prima di morire."),
+            ("WOODSTOCK, 18/08/1969", "Lo tiene acceso per buona parte del set. Oggi è in un museo a Seattle."),
+        ],
+        "reel_cta": "Mandalo al chitarrista fissato con Hendrix",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 41
@@ -2914,6 +3234,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/I_Want_to_Break_Free", "data": "2026-09-22"},
         ],
         "hashtags": ["#jupiter8", "#rolandjupiter8", "#sintetizzatore", "#duranduran", "#queen"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 041", "Per anni i fan dei Duran Duran hanno sbagliato synth"),
+            ("1982 · DURAN DURAN", "L'arpeggio di «Hungry Like the Wolf». Per molti era un Jupiter-4."),
+            ("STESSO ANNO · «RIO»", "«Rio» usa di sicuro un Jupiter-4, e in un mix i due si confondono."),
+            ("NICK RHODES", "Anni dopo lo dice Nick Rhodes in persona. Era un Jupiter-8."),
+            ("DAL VIVO", "E sul palco, comunque, i Duran Duran se li portavano tutti e due."),
+        ],
+        "reel_cta": "Mandalo a chi giurava che era un Jupiter-4",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 42
@@ -2965,6 +3293,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/Speak_%26_Spell_(album)", "data": "2026-09-22"},
         ],
         "hashtags": ["#speakandspell", "#texasinstruments", "#grilloparlante", "#giocattolielettronici", "#sintesivocale"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 042", "E.T. vuole telefonare casa. Gli serve questo giocattolo"),
+            ("TEXAS INSTRUMENTS · 1976", "Deve provare che una voce sintetica sta su un chip solo, il TMS5100."),
+            ("GIUGNO 1978", "Debutta come Speak & Spell, un dizionario che parla. Dai 7 anni in su."),
+            ("IN ITALIA", "Da noi si chiama Grillo Parlante. Come quello di Pinocchio."),
+            ("1982 · SPIELBERG", "Lo dà a Elliott, modificato, per costruire il comunicatore di «E.T.»."),
+        ],
+        "reel_cta": "Mandalo a chi aveva il Grillo Parlante",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 43
@@ -3018,6 +3354,14 @@ SCHEDE = [
              "url": "https://greatsynthesizers.com/en/review/roland-vp-330-figurehead-of-the-vocoder-hype/", "data": "2026-09-22"},
         ],
         "hashtags": ["#vp330", "#vocoder", "#rolandvp330", "#lauraanderson", "#vocesintetica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 043", "«Levitating» di Dua Lipa si apre con un synth del 1979"),
+            ("ROLAND · 1979", "Il Roland VP-330 costa 2.695 dollari e resta in listino un anno solo."),
+            ("1984 · STEVIE WONDER", "L'ultima strofa di «I Just Called to Say I Love You» passa da qui."),
+            ("2020 · IL PRODUTTORE KOZ", "Koz se ne compra uno. Non sa ancora cosa farci."),
+            ("SEZIONE HUMAN VOICE", "Ensemble acceso, portamento premuto. Ed è l'intro di «Levitating»."),
+        ],
+        "reel_cta": "Mandalo a chi ha «Levitating» in playlist",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 44
@@ -3078,6 +3422,14 @@ SCHEDE = [
              "url": "https://www.musicradar.com/music-tech/analogue-synths/this-is-the-real-deal-gbp400k-yamaha-cs-80-claimed-to-have-belonged-to-vangelis-goes-up-for-sale-on-reverb", "data": "2026-09-22"},
         ],
         "hashtags": ["#cs80", "#yamahacs80", "#vangelis", "#toto", "#sintetizzatore"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 044", "Il fiato che apre «Africa» dei Toto non è un ottone"),
+            ("YAMAHA · 1976", "È uno Yamaha CS-80. Costa 6.900 dollari e il pubblico è tiepido."),
+            ("TOTO · STEVE PORCARO", "Porcaro lo fa sentire a David Paich perché ci scriva un pezzo."),
+            ("1982 · MICHAEL JACKSON", "Anche gli accordi di «Billie Jean». Una sola ripresa, su un CS-80."),
+            ("2024 · REVERB", "Uno in vendita a oltre 400.000 sterline. Forse era di Vangelis."),
+        ],
+        "reel_cta": "Mandalo a chi canta «Africa» al karaoke",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 45
@@ -3168,6 +3520,14 @@ SCHEDE = [
              "url": "http://www.twainquotes.com/19061223.html", "data": "2026-09-23"},
         ],
         "hashtags": ["#telharmonium", "#thaddeuscahill", "#marktwain", "#musicaelettronica", "#1906"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 045", "Per questa musica Mark Twain voleva rimandare la morte."),
+            ("NEW YORK, DICEMBRE 1906", "Usciva dal Telharmonium di Thaddeus Cahill. Pesava 200 tonnellate."),
+            ("NIENTE ALTOPARLANTI", "Alberghi e ristoranti abbonati la ricevevano dai cavi del telefono."),
+            ("LINEE VICINE", "Il segnale sconfinava, e c'era chi la sentiva dentro le telefonate."),
+            ("1914", "Nel 1914 la società fallì. Non ne esiste una sola registrazione."),
+        ],
+        "reel_cta": "Mandalo a chi ascolta musica in abbonamento",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 46
@@ -3262,6 +3622,14 @@ SCHEDE = [
              "url": "https://www.soniccouture.com/en/products/24-vintage/g21-novachord/", "data": "2026-09-23"},
         ],
         "hashtags": ["#novachord", "#hammond", "#1939", "#sintetizzatore", "#valvole"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 046", "Dentro «Via col vento» c'è un sintetizzatore del 1939."),
+            ("CHICAGO, 1939", "È l'Hammond Novachord: 72 tasti, e suonano tutti insieme."),
+            ("MOBILE DI NOCE", "La Hammond lo pensa per il salotto di casa. Pesa 230 chili."),
+            ("1942", "Nel 1942 la produzione si ferma: le valvole servono alla guerra."),
+            ("IN 3 ANNI", "Ne erano usciti 1.069, o 1.096. Oggi se ne conoscono meno di 200."),
+        ],
+        "reel_cta": "Mandalo a chi sa a memoria «Via col vento»",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 47
@@ -3353,6 +3721,14 @@ SCHEDE = [
              "url": "https://reverb.com/news/history-of-the-clavinet", "data": "2026-09-23"},
         ],
         "hashtags": ["#clavinet", "#hohner", "#funk", "#steviewonder", "#anni70"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 047", "«Superstition» non è suonata sul Clavinet che cercate."),
+            ("1961 · ERNST ZACHARIAS", "Alla Hohner, Ernst Zacharias vuole rifare un clavicordo moderno."),
+            ("L'INCUDINE", "Zacharias suona troppo forte per la meccanica, e ci mette un'incudine."),
+            ("TROSSINGEN, 1971", "Esce il Clavinet D6. Oggi chi cerca quel suono compra quello."),
+            ("1972", "Ma Stevie Wonder incide «Superstition» su un modello C, più vecchio."),
+        ],
+        "reel_cta": "Mandalo a chi ha comprato un Clavinet D6",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 48
@@ -3421,6 +3797,14 @@ SCHEDE = [
              "url": "https://www.instagram.com/arpsynthesizer/", "data": "2026-09-25"},
         ],
         "hashtags": ["#arpodyssey", "#sintetizzatore", "#musicaelettronica", "#anni70", "#synth"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 048", "Con questo synth ARP vendette più di Moog. Non bastò."),
+            ("LEXINGTON, 1969", "Alan R. Pearlman fonda ARP mettendoci 100.000 dollari suoi."),
+            ("1972 · DAVID FRIEND", "David Friend progetta l'ARP Odyssey: suona 2 note, né una né tante."),
+            ("1973-1974", "Herbie Hancock lo suona su «Head Hunters», i Kraftwerk su «Autobahn»."),
+            ("13 MAGGIO 1981", "Poi arrivano synth più economici, e ARP dichiara fallimento."),
+        ],
+        "reel_cta": "Mandalo a chi giura solo sul Minimoog",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 49
@@ -3524,6 +3908,14 @@ SCHEDE = [
              "url": "https://electrosmash.mas-effects.com/mxr-phase90.html", "data": "2026-09-15"},
         ],
         "hashtags": ["#mxrphase90", "#pedaleeffetti", "#phaser", "#eddievanhalen", "#anni70"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 049", "Una manopola sola. E Van Halen lo mise in «Eruption»."),
+            ("ROCHESTER, 1974", "Il Phase 90 è il primo pedale che la MXR mette in vendita."),
+            ("KEITH BARR", "Le prime schede le incide lui. C'è scritto «hand built by guitarists»."),
+            ("METÀ ANNI '70", "Eddie Van Halen lo sente usare da Robin Trower."),
+            ("1978", "In «Eruption» resta acceso sotto il tapping e non lo copre mai."),
+        ],
+        "reel_cta": "Mandalo a chi ha provato a rifare «Eruption»",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 50
@@ -3580,6 +3972,14 @@ SCHEDE = [
              "url": "https://www.matrixsynth.com/2023/03/sun-ra-plays-crumar-ds-2-synthesizer.html", "data": "2026-09-04"},
         ],
         "hashtags": ["#crumar", "#ds2", "#castelfidardo", "#sintetizzatore", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 050", "Sun Ra suonava un synth della città delle fisarmoniche."),
+            ("CASTELFIDARDO, 1971", "Mario Crucianelli litiga in famiglia, lascia la Elka e apre la Crumar."),
+            ("1978", "Dopo anni di organi e archi, il primo synth vero: il Crumar DS-2."),
+            ("2 OSCILLATORI DIGITALI", "Fanno onde a gradini, non curve. Per questo suona ruvido e spigoloso."),
+            ("CIRCA 700 ESEMPLARI", "Ne escono circa 700. Sun Ra lo porta sul palco con l'Arkestra."),
+        ],
+        "reel_cta": "Mandalo a chi ha una fisarmonica in soffitta",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 51
@@ -3644,6 +4044,14 @@ SCHEDE = [
              "url": "https://www.vintagesynth.com/buchla/100-series", "data": "2026-09-04"},
         ],
         "hashtags": ["#buchla", "#donbuchla", "#sintetizzatore", "#storiadellamusica", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 051", "Don Buchla si rifiutò di copiare il pianoforte."),
+            ("SAN FRANCISCO, 1965", "Lo consegna a Subotnick e Sender, che volevano la sintesi dal vivo."),
+            ("NIENTE TASTI", "Al posto dei tasti, il Buchla ha piastre a contatto, accordate a mano."),
+            ("NEW YORK, 1967", "Subotnick ci compone «Silver Apples of the Moon», per la Nonesuch."),
+            ("1969", "E Warner Jepson ci registra dei canti di Natale: «Buchla Christmas»."),
+        ],
+        "reel_cta": "Mandalo a chi ha un modulare pieno di cavi",
         "verificata": True,
     },{
         "slug": "wurlitzer200a",
@@ -3748,6 +4156,14 @@ SCHEDE = [
              "url": "https://www.udiscovermusic.com/stories/queen-youre-my-best-friend-song/", "data": "2026-09-29"},
         ],
         "hashtags": ["#wurlitzer", "#pianoelettrico", "#queen", "#supertramp", "#anni70"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 052", "Freddie Mercury non lo voleva: «metallico e orribile»."),
+            ("25 KG SENZA GAMBE", "Il Wurlitzer non ha corde: dentro, martelletti e lamelle d'acciaio."),
+            ("QUEEN", "John Deacon invece se lo porta a casa e impara a suonarlo da solo."),
+            ("1975", "Mentre impara gli esce «You're My Best Friend». È per sua moglie."),
+            ("SUL PALCO", "Dal vivo la suonano con Mercury al pianoforte vero e Deacon al basso."),
+        ],
+        "reel_cta": "Mandalo al tuo migliore amico",
         "verificata": True,
     },
     {
@@ -3832,6 +4248,14 @@ SCHEDE = [
              "url": "https://kr-sound.com/the-ace-tone-rhythm-ace-pioneering-the-beat-revolution/", "data": "2026-09-29"},
         ],
         "hashtags": ["#rhythmace", "#acetone", "#drummachine", "#roland", "#anni60"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 053", "5 anni prima della Roland, il suo fondatore fece questa"),
+            ("OSAKA, 1960", "Ikutaro Kakehashi ripara radio e fonda la Ace Electronic Industries."),
+            ("NAMM, 1964", "Porta in America una scatola ritmica senza ritmi. Nessuno la vuole."),
+            ("1967", "Ci salda dentro 16 ritmi. In Inghilterra è la Bentley Rhythm Ace."),
+            ("30 ANNI DOPO", "Due ragazzi di Birmingham ne trovano una. Ci battezzano il gruppo."),
+        ],
+        "reel_cta": "Mandalo a chi giura solo sulle Roland",
         "verificata": True,
     },
     {
@@ -3941,6 +4365,14 @@ SCHEDE = [
              "url": "https://commons.wikimedia.org/wiki/File:Oberheim_4-voice_prototype.jpg", "data": "2026-10-01"},
         ],
         "hashtags": ["#oberheim", "#sintetizzatore", "#polifonia", "#anni70", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 054", "Il prototipo numero 1 ha le etichette in braille"),
+            ("MAGGIO 1974", "Tom Oberheim presenta il SEM. Un synth completo, una nota per volta."),
+            ("1975", "Ne mette 4 in fila, e per la prima volta un accordo si può comprare."),
+            ("4.295 DOLLARI", "Si chiama Oberheim Four Voice e costa quanto un'automobile."),
+            ("IL NUMERO 1", "Era di Stevie Wonder. Le manopole doveva ritrovarle da solo."),
+        ],
+        "reel_cta": "Mandalo a chi venderebbe l'auto per un synth",
         "verificata": True,
     },
     {
@@ -4046,6 +4478,14 @@ SCHEDE = [
              "url": "https://www.musicradar.com/how-to/classic-house-organ-robin-s-show-me-love", "data": "2026-10-01"},
         ],
         "hashtags": ["#korg", "#m1", "#house", "#anni80", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 055", "L'organo di «Show Me Love» non l'ha programmato nessuno"),
+            ("TOKYO, 1988", "Esce il Korg M1, con 86 forme d'onda registrate da strumenti veri."),
+            ("ROBIN S., 1990", "Quell'organo è il preset Organ 2 di fabbrica, suonato così com'era."),
+            ("MADONNA, 1990", "«Vogue» la scrive con Shep Pettibone, sui suoni dell'M1."),
+            ("NOVEMBRE 1990", "Dalla linea esce l'M1 numero 100.000. Erano passati 2 anni."),
+        ],
+        "reel_cta": "Mandalo a chi ha ballato «Show Me Love»",
         "verificata": True,
     },
     {
@@ -4152,6 +4592,14 @@ SCHEDE = [
              "url": "https://www.soundonsound.com/reviews/roland-sh101-retrozone", "data": "2026-10-01"},
         ],
         "hashtags": ["#roland", "#sh101", "#techno", "#anni80", "#sintetizzatore"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 056", "Nata per il palco, finita a fare i bassi della techno"),
+            ("NOVEMBRE 1982", "Roland SH-101: 32 tasti, le pile, la tracolla di pelle."),
+            ("1986", "Chi ha 500 dollari se li tiene per un DX7. La produzione chiude."),
+            ("50 STERLINE", "Al banco dei pegni la prendono i ragazzi di Detroit e di Manchester."),
+            ("A GUY CALLED GERALD, 1988", "«Voodoo Ray»: il basso è una nota sola, col sub tirato su."),
+        ],
+        "reel_cta": "Mandalo a chi suona la tastiera a tracolla",
         "verificata": True,
     },
     {
@@ -4248,6 +4696,14 @@ SCHEDE = [
              "url": "https://commons.wikimedia.org/wiki/File:Casio_VL-1_Inv_Nr_81934.jpg", "data": "2026-10-01"},
         ],
         "hashtags": ["#casio", "#vltone", "#giocattoli", "#anni80", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 057", "Una calcolatrice da 69,95 dollari ha fatto «Da Da Da»"),
+            ("TOKYO · DAL 1946", "Casio per 30 anni fa calcolatrici e basta. Poi prova a farle suonare."),
+            ("29 TASTI · 5 SUONI", "Il VL-1: premi CAL e fa i conti, premi MUSIC e suona."),
+            ("1979? 1980? 1981? 1982?", "Era un giocattolo e la data si è persa: 4 fonti, 4 anni diversi."),
+            ("TRIO · 1982", "«Da Da Da»: ritmo Rock-1 e voce Piano, come escono dalla scatola."),
+        ],
+        "reel_cta": "Mandalo a chi canta ancora «Da Da Da»",
         "verificata": True,
     },
     {
@@ -4344,6 +4800,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/Lucy_in_the_Sky_with_Diamonds", "data": "2026-10-05"},
         ],
         "hashtags": ["#lowrey", "#organo", "#beatles", "#anni60", "#musicaelettronica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 058", "Quel clavicembalo dei Beatles era un organo da salotto"),
+            ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
+            ("LOWREY DSO · CHICAGO", "Il Lowrey si comprava a rate, accompagnamento automatico incluso."),
+            ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
+            ("LE PRIME 8 NOTE", "4 imitazioni mediocri sommate: un timbro che in natura non esiste."),
+        ],
+        "reel_cta": "Mandalo a chi pensava fosse un clavicembalo",
         "verificata": True,
     },
     {
@@ -4441,6 +4905,14 @@ SCHEDE = [
              "url": "https://en.wikipedia.org/wiki/The_Pleasure_Principle_(Gary_Numan_album)", "data": "2026-10-05"},
         ],
         "hashtags": ["#moog", "#polymoog", "#garynuman", "#anni70", "#sintetizzatore"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 059", "Il tappeto di «Cars» è un preset premuto e basta"),
+            ("1975 · 5.295 DOLLARI", "Suonare un accordo è il problema di tutti. Moog risponde col Polymoog."),
+            ("71 TASTI, 71 SCHEDE", "Una scheda per ogni tasto: 71 cose che si possono guastare."),
+            ("1978 · 14 PRESET", "La versione Keyboard ha 14 preset coi nomi stampati. Uno è Vox Humana."),
+            ("GARY NUMAN · 1979", "Via la chitarra. Numan ci costruisce sopra «The Pleasure Principle»."),
+        ],
+        "reel_cta": "Mandalo a chi si costruisce i suoni da zero",
         "verificata": True,
     },
     {
@@ -4536,6 +5008,14 @@ SCHEDE = [
              "url": "https://www.soundonsound.com/reviews/edp-wasp", "data": "2026-10-05"},
         ],
         "hashtags": ["#wasp", "#edp", "#sintetizzatore", "#anni70", "#inghilterra"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 060", "Col sudore delle dita suonava da solo, diceva Casale"),
+            ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
+            ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
+            ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
+            ("ELECTRONIC DREAM PLANT", "Anche la ditta dura poco: nel 1980 fallisce, schiacciata dai debiti."),
+        ],
+        "reel_cta": "Mandalo a chi suona con le mani sudate",
         "verificata": True,
     },
     {
@@ -4635,6 +5115,14 @@ SCHEDE = [
              "url": "https://www.gearnews.com/casio-cz-101/", "data": "2026-10-05"},
         ],
         "hashtags": ["#casio", "#cz101", "#sintetizzatore", "#anni80", "#digitale"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 061", "Quelli delle calcolatrici contro il DX7 di Yamaha"),
+            ("NOVEMBRE 1984", "Il Casio CZ-101 costa 495 dollari. Il DX7 quasi 2.000."),
+            ("BREVETTO DI STANFORD", "La FM era brevettata a Stanford. Casio inventa la distorsione di fase."),
+            ("68.500 ESEMPLARI", "Va a 6 pile torcia, e i ragazzi se lo portano in camera."),
+            ("VINCE CLARKE · ERASURE", "Synth dei poveri, dicevano. Vince Clarke degli Erasure ne teneva 4."),
+        ],
+        "reel_cta": "Mandalo a chi lo chiama synth dei poveri",
         "verificata": True,
     },
     {
@@ -4728,6 +5216,14 @@ SCHEDE = [
              "url": "http://www.till-kopper.de/elka.html", "data": "2026-10-05"},
         ],
         "hashtags": ["#elka", "#stringmachine", "#italia", "#anni70", "#tangerinedream"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 062", "1972, 1974 o 1975? Non si sa nemmeno quando è nata"),
+            ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
+            ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
+            ("HOHNER STRINGVOX", "All'estero la vendeva la tedesca Hohner, bianca e col nome StringVox."),
+            ("TANGERINE DREAM · GENESIS", "Ci hanno suonato i Tangerine Dream e Tony Banks dei Genesis."),
+        ],
+        "reel_cta": "Mandalo a chi ascolta i Tangerine Dream",
         "verificata": True,
     },
 ]
