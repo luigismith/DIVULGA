@@ -1,0 +1,43 @@
+# ELETTROFONI — i numeri della pagina, salvati nel repo.
+# Solo letture dall'API. Ogni lunedi' una fotografia (cosi' si vede la
+# crescita settimana per settimana) e a mano quando serve.
+name: Metriche
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  metriche:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests cryptography
+      - name: Raccogli le metriche
+        env:
+          STATE_KEY: ${{ secrets.STATE_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python metriche.py
+      - name: Salva nel repo
+        run: |
+          git config user.name "elettrofoni-bot"
+          git config user.email "actions@users.noreply.github.com"
+          # token.enc viaggia insieme: se token_ig l'ha rinnovato, un rinnovo
+          # non salvato non e' un rinnovo (vedi scrivi_stato in pubblica.py).
+          git add metriche/ token.enc
+          git diff --cached --quiet && exit 0
+          git commit -m "metriche: fotografia del $(date -u +%F)"
+          for i in 1 2 3 4 5 6 7 8; do
+            git push && exit 0
+            echo "push respinto, mi riallineo (tentativo $i)"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            sleep $(( i * 3 + RANDOM % 5 ))
+          done
+          echo "push fallito dopo 8 tentativi"; exit 1
