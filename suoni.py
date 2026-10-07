@@ -309,11 +309,17 @@ def _eco(campioni, ritardo_s=0.375, ritorno=0.42):
 
 # ------------------------------------------------------------------ mix ---
 
-def genera(scheda, percorso_wav, durata=None):
+def genera(scheda, percorso_wav, durata=None, attacco=0.25):
     """Scrive il WAV della sigla nel timbro della macchina della scheda.
 
     `durata` serve al reel, che è più lungo di una storia: la sigla si
-    allunga ripetendo il motivo, non cambiando musica."""
+    allunga ripetendo il motivo, non cambiando musica.
+
+    `attacco` è la dissolvenza in entrata, in secondi. LEZIONE IMPARATA
+    (07/10/2026): un quarto di secondo di silenzio che sale, più il basso
+    che arrivava in 0,4 secondi, volevano dire che il reel partiva muto
+    proprio nei 3 secondi in cui Instagram misura chi scorre via. Il reel
+    del formato 2 chiede 0,01: il suono c'è dal primo fotogramma."""
     slug = scheda["slug"] if isinstance(scheda, dict) else str(scheda)
     voce = VOCI[VOCE_SCHEDA.get(slug, "sega")]
     secondi = float(durata or DURATA)
@@ -335,7 +341,7 @@ def genera(scheda, percorso_wav, durata=None):
     # basso fisso sotto, per non lasciare il vuoto
     for i in range(n_tot):
         t = i / SR
-        mix[i] += 0.16 * math.sin(2 * math.pi * (BASE / 2) * t) * min(1.0, i / (SR * 0.4))
+        mix[i] += 0.16 * math.sin(2 * math.pi * (BASE / 2) * t) * min(1.0, i / (SR * max(attacco, 0.01) * 1.6))
 
     if slug in CON_BATTERIA:
         for i, s in enumerate(_batteria(n_tot, passo)):
@@ -344,10 +350,12 @@ def genera(scheda, percorso_wav, durata=None):
         mix = _eco(mix)
 
     # dissolvenze e normalizzazione: mai clip, mai partenze secche
-    dis = int(SR * 0.25)
+    dis = max(1, int(SR * attacco))
     for i in range(dis):
         mix[i] *= i / dis
-        mix[n_tot - 1 - i] *= i / dis
+    coda = int(SR * 0.25)
+    for i in range(coda):
+        mix[n_tot - 1 - i] *= i / coda
     # LEZIONE IMPARATA (28/08/2026): normalizzare sul picco non basta.
     # La voce «acido» della TB-303, schiacciata dal filtro risonante,
     # usciva a -2,4 dB di media contro i -11 di tutte le altre: stesso

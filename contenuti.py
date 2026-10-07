@@ -69,6 +69,17 @@ MAX_AVVERTENZA = 150      # riga di chiusura in forma di avvertenza, slide 6
 MAX_ASCOLTO = 180         # riga «da ascoltare», in fondo alla slide 5
 MAX_TESTO_SLIDE = 620     # testo corrente di ogni slide interna
 
+# Il reel del formato 2 (07/10/2026, vedi genera_reel.py): 5 battute da
+# 2,6 secondi, una frase per battuta su un pannello che non deve coprire
+# la macchina. In 2,6 secondi si leggono una dozzina di parole: i limiti
+# stanno lì. La prima battuta è il gancio e si legge mentre il pollice
+# decide se scorrere: è la più corta.
+REEL_BATTUTE = 5
+MAX_REEL_GANCIO = 60
+MAX_REEL_BATTUTA = 75
+MAX_REEL_KICK = 28
+MAX_REEL_CTA = 50
+
 SCHEDE = [
     {
         "slug": "minimoog",
@@ -4601,7 +4612,10 @@ SCHEDE = [
         "foto_extra": [
             {"file": "assets/foto/cz101/retro.jpg",
              "autore": "Clusternote", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Lo stesso strumento visto dall'altro verso"},
+             "didascalia": "Lo stesso strumento visto dall'altro verso",
+            # Sulla tavola regge grazie alla didascalia; nel reel, che non
+            # ne ha, il marchio capovolto sembra un errore di montaggio.
+            "nel_reel": False},
             {"file": "assets/foto/cz101/angolo.jpg",
              "autore": "Clusternote", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
              "didascalia": "Di sbieco: i tasti piccoli si vedono solo da qui"},
@@ -4782,6 +4796,62 @@ def componi_didascalia(scheda):
     return "\n".join(righe)
 
 
+def foto_del_reel(scheda):
+    """Le foto che il reel mostra, nell'ordine: la principale e le extra
+    che non chiedono una didascalia per essere capite (nel_reel=False).
+    Sta qui e non in genera_reel.py perché anche la didascalia del reel
+    deve saperlo: ogni foto mostrata va accreditata."""
+    return [scheda["foto"]] + [f for f in (scheda.get("foto_extra") or [])
+                               if f.get("nel_reel", True)]
+
+
+def componi_didascalia_reel(scheda, menzioni=True):
+    """La didascalia del reel. NON è quella del carosello.
+
+    LEZIONE IMPARATA (07/10/2026). Il reel usciva con la didascalia del
+    carosello: prima riga «MINIMOOG MODEL D · 1970», poi il gancio, poi
+    600 caratteri di «la macchina». Sotto un reel se ne vedono due righe,
+    e chi non ci segue legge quelle o niente: il nome e l'anno non sono
+    una ragione per fermarsi. Adesso la prima riga è la prima battuta,
+    cioè la stessa frase che sta sullo schermo nel primo fotogramma, e
+    sotto c'è la storia del reel per chi vuole rileggerla con calma.
+    La CTA è quella del reel (mandarlo a qualcuno), non quella del
+    carosello: per chi non ci segue gli invii pesano più dei commenti
+    (Mosseri, 21/01/2025)."""
+    b = scheda["reel_battute"]
+    righe = [b[0][1], ""]
+    righe.append(" ".join(t for _, t in b[1:]))
+    righe.append("")
+    righe.append(f"{scheda['strumento']} · {scheda['anno']}. La scheda completa, "
+                 "con le fonti, è nel profilo: @elettrofoni")
+    righe.append("")
+    usi = [f"@{u['ig']}" if (u.get("ig") and menzioni) else u["artista"]
+           for u in scheda["chi_lusata"]]
+    if usi:
+        righe.append("Chi ci ha suonato: " + ", ".join(usi))
+        righe.append("")
+    righe.append(scheda["reel_cta"] + ".")
+    righe.append("")
+    if scheda["fonti"]:
+        righe.append("Fonti: " + " · ".join(f["titolo"] for f in scheda["fonti"]))
+    # Ogni foto che passa nel reel è una licenza da rispettare, e nel reel
+    # non c'è un credito sullo schermo: sta tutto qui.
+    crediti = []
+    for f in foto_del_reel(scheda):
+        c = f"{f['autore']} ({f['licenza']}, {f['fonte']})"
+        if c not in crediti:
+            crediti.append(c)
+    righe.append("Foto: " + "; ".join(crediti))
+    a = scheda.get("reel_audio")
+    if a:
+        righe.append(f"Audio: {a['autore']} ({a['licenza']}, {a['fonte']})")
+    righe.append("")
+    righe.append(FIRMA)
+    righe.append("")
+    righe.append(" ".join(scheda["hashtags"]))
+    return "\n".join(righe)
+
+
 def alt_slide(scheda, n):
     """Testo alternativo di ogni slide del carosello.
 
@@ -4856,6 +4926,37 @@ def valida_scheda(scheda):
     import suoni  # solo libreria standard, nessun ciclo di import
     if scheda["slug"] not in suoni.VOCE_SCHEDA:
         errori.append("nessun timbro in suoni.VOCE_SCHEDA: il reel userebbe il ripiego")
+    # Il reel (formato 2). Niente testo di riserva: una scheda senza le
+    # sue battute non ha un reel, e qui lo si scopre scrivendo.
+    rb = scheda.get("reel_battute") or []
+    if len(rb) != REEL_BATTUTE:
+        errori.append(f"reel_battute: {len(rb)} battute (ne servono {REEL_BATTUTE})")
+    for i, coppia in enumerate(rb, start=1):
+        if len(coppia) != 2:
+            errori.append(f"reel_battute #{i}: serve (kick, testo)"); continue
+        kick, testo = coppia
+        lim = MAX_REEL_GANCIO if i == 1 else MAX_REEL_BATTUTA
+        if len(testo) > lim:
+            errori.append(f"reel_battute #{i}: {len(testo)} caratteri (max {lim})")
+        if len(kick) > MAX_REEL_KICK:
+            errori.append(f"reel_battute #{i} kick: {len(kick)} caratteri (max {MAX_REEL_KICK})")
+    if not scheda.get("reel_cta"):
+        errori.append("manca reel_cta")
+    elif len(scheda["reel_cta"]) > MAX_REEL_CTA:
+        errori.append(f"reel_cta {len(scheda['reel_cta'])} caratteri (max {MAX_REEL_CTA})")
+    a = scheda.get("reel_audio")
+    if a:
+        mancanti = [k for k in ("file", "autore", "licenza", "fonte", "cosa") if not a.get(k)]
+        if mancanti:
+            errori.append(f"reel_audio incompleto, mancano: {mancanti}")
+        else:
+            import pathlib
+            if not (pathlib.Path(__file__).resolve().parent / a["file"]).exists():
+                errori.append(f"reel_audio: file assente {a['file']}")
+    if rb and scheda.get("reel_cta"):
+        n = _len_utf16(componi_didascalia_reel(scheda))
+        if n > MAX_DIDASCALIA_UTF16:
+            errori.append(f"didascalia del reel {n} unità UTF-16 (max {MAX_DIDASCALIA_UTF16})")
     if len(scheda.get("battuta_dinamo", "")) > MAX_BATTUTA:
         errori.append(f"battuta {len(scheda['battuta_dinamo'])} caratteri (max {MAX_BATTUTA})")
     if len(scheda.get("avvertenza", "")) > MAX_AVVERTENZA:

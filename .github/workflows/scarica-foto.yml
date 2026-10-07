@@ -1,4 +1,4 @@
-# ELETTROFONI — scarica una foto libera e la committa nel repo.
+# ELETTROFONI — scarica una foto (o una registrazione) libera e la committa nel repo.
 # Serve quando il container di sviluppo è rate-limitato da Wikimedia/Flickr:
 # i runner GitHub hanno IP puliti. Solo lancio manuale (maintainer).
 name: Scarica foto
@@ -30,7 +30,9 @@ jobs:
             -o "${{ inputs.dest }}" "${{ inputs.url }}"
           FILETYPE=$(file -b --mime-type "${{ inputs.dest }}")
           echo "Scaricato: $(stat -c%s "${{ inputs.dest }}") byte, tipo $FILETYPE"
-          case "$FILETYPE" in image/*) ;; *) echo "NON è un'immagine: mi fermo"; exit 1;; esac
+          # Dal 07/10/2026 anche le registrazioni vere per i reel (Commons
+          # le serve come Ogg/FLAC/WAV/MP3): stessa via, stesso controllo.
+          case "$FILETYPE" in image/*|audio/*|application/ogg|video/ogg) ;; *) echo "NON è un'immagine né un audio ($FILETYPE): mi fermo"; exit 1;; esac
           git config user.name "elettrofoni-bot"
           git config user.email "actions@users.noreply.github.com"
           git add "${{ inputs.dest }}"

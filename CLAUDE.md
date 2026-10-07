@@ -86,7 +86,14 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 - Firma fissa ovunque: **LE MACCHINE NON SUONANO DA SOLE. QUASI MAI.**
 - Formato: carosello 6 slide (copertina / la macchina / chi l'ha
   costruita / come funziona / chi l'ha usata / aneddoto+fonti).
-- **Una CTA sola per scheda**, a rotazione fra tre forme (`CTA_FORME` in
+- **Reel «formato 2»** (dal 07/10/2026, vedi la sezione «I numeri» qui
+  sotto): 5 battute da 2,6 s (`reel_battute`, coppie kick/testo) + la
+  chiusura con `reel_cta`, 15,6 s in tutto, file `reel2.mp4`. La prima
+  battuta è il fatto più sorprendente della scheda e sta sullo schermo
+  dal fotogramma 0. Ogni battuta è un fatto che sta GIÀ nella scheda
+  (stessa regola delle due fonti: le battute non aggiungono fatti, li
+  condensano). `valida_scheda` rifiuta una scheda senza battute.
+- **Una CTA sola per scheda e per formato**, a rotazione fra tre forme (`CTA_FORME` in
   `contenuti.py`, scelta sul numero della scheda quindi sempre identica in
   didascalia, tavola e reel): tagga chi l'ha suonata / quale macchina
   vuoi nella prossima / qual è la prima che hai riconosciuto in un disco.
@@ -95,10 +102,61 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   obbligano a scegliere, e chi legge non ne fa nessuna. Niente domande
   del tipo «la prossima: A o B?», che pure funzionerebbero meglio —
   didascalia e tavola sono permanenti e il giorno dopo sarebbero false.
+  Dal 07/10/2026 il REEL ha la sua (`reel_cta`, «Mandalo a…»): il reel
+  lo vede chi non ci segue, e per lui il gesto che conta è l'invio, non
+  il commento. Carosello e tavole tengono `cta(scheda)`.
 - Cadenza: OGNI GIORNO alle 18 italiane (dal 26/08/2026).
 - **La foto reale dello strumento è obbligatoria in ogni scheda** (regola
   del proprietario), con credito autore+licenza; fonti foto: Wikimedia
   Commons (API: `commons.wikimedia.org/w/api.php`, campi extmetadata).
+
+## I numeri (07/10/2026: «i numeri non salgono»)
+
+Il proprietario ha chiesto la strategia per crescere, anche a costo di
+cambiare regole decise prima. Prima di cambiare qualcosa si è misurato:
+`metriche.py` (lunedì mattina, `metriche.yml`) scrive in `metriche/` la
+fotografia di ogni contenuto. La prima, del 07/10/2026, diceva:
+- 41 follower dopo 45 schede. Copertura mediana: reel 22, caroselli 11.
+  I caroselli li vede quasi solo chi già ci segue; i reel sono l'unica
+  porta verso chi non ci conosce.
+- **Tempo medio di visione dei reel: 4 secondi su 28.** Cioè la gente
+  se ne andava alla prima dissolvenza in nero. Condivisioni: 4 in tutto
+  su 45 reel. Il problema non erano le schede, era il montaggio.
+- Il reel del formato 1 aveva tutto quello che Instagram dichiara di
+  penalizzare: primo fotogramma nero (Instagram stima proprio chi scorre
+  via entro 3 secondi), sei scene su sette di solo testo («reels that
+  are majority text» sono mostrati meno, about.instagram.com, 2023), il
+  gancio piccolo e in basso, sotto l'interfaccia.
+Da qui il formato 2 (`genera_reel.py`, commento in testa): foto che si
+muove sempre e riempie lo schermo, testo su un pannello che ne copre
+meno di un terzo e sta nella zona libera dall'interfaccia, niente nero,
+battute brevi in ordine di racconto, chiusura che chiede di MANDARE il
+reel a qualcuno (per chi non ci segue gli invii contano più di like e
+commenti: Mosseri, 21/01/2025). Didascalia del reel propria
+(`componi_didascalia_reel`): la prima riga è la prima battuta, perché
+sotto un reel se ne leggono due.
+**Regola: una modifica al reel si giudica sui numeri di `metriche/`
+(tempo di visione, `reels_skip_rate`, condivisioni per copertura),
+confrontando formato 1 e formato 2 a parità di settimane, non a occhio.**
+Lezioni pratiche dal montaggio:
+- il ritaglio della foto nel reel usa `posizione` della scheda: il
+  prototipo ritagliava al centro e al theremin tagliava la testa;
+- ffmpeg (la 6.1 dei runner) ignora il tag EXIF di rotazione, Chromium
+  no: due foto uscivano dritte sulle tavole e coricate nel reel;
+- una foto che regge solo con la sua didascalia (il CZ-101 visto da
+  dietro, col marchio capovolto) nel reel sembra un errore:
+  `"nel_reel": False` sulla foto;
+- nel reel non c'è credito sullo schermo: TUTTE le foto mostrate
+  (`foto_del_reel`) vanno accreditate nella didascalia del reel;
+- l'audio partiva con 0,25 s di dissolvenza e il basso in 0,4 s: muto
+  proprio nei 3 secondi che contano. Il formato 2 usa `attacco=0.01`.
+Decisioni lasciate al proprietario (un cambio di regola sull'account
+non lo decide una sessione): `share_to_feed` dei reel (oggi false, la
+griglia resta il catalogo — ma la documentazione Meta dice che con false
+il reel non entra MAI nei feed, nemmeno in quello dei follower), e la
+cadenza dei rifacimenti (`reel.yml` con slug `--rifacimento` rifà nel
+formato 2 il reel di una scheda vecchia, senza nuovi tag; oggi parte
+solo a mano).
 
 ## Come si scrive (richiesta del proprietario, 13/09/2026: «più umani»)
 
@@ -341,7 +399,9 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   caroselli li vedono quasi solo i follower: servono per la griglia,
   l'archivio e Google. Se un giorno bisogna scegliere cosa salvare, il
   reel viene prima.
-- Reel: `genera_reel.py` costruisce e VERIFICA il file (`--prossima` per
+- Reel (aggiornato al formato 2, 07/10/2026: 6 battute da 2,6 s,
+  15,6 s, file `reel2.mp4`; la descrizione qui sotto delle «sette scene»
+  è il formato 1, storia): `genera_reel.py` costruisce e VERIFICA il file (`--prossima` per
   la scheda del giorno, generata dentro `pubblica.yml` insieme alle
   tavole, cosi' e' gia' online su Pages); `pubblica_reel.py` ne pubblica
   UNO, a comando, e senza slug sceglie la scheda piu' vecchia che non ha
@@ -436,6 +496,11 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
 3. Per ciascuno: verificare i fatti (≥2 fonti), trovare foto libera su
    Commons (salvare autore/licenza, cercare anche pannello/interno per
    `foto_extra`), verificare handle da taggare, scrivere i campi con la
-   voce di «Come si scrive» e sotto i limiti, `verificata: True`,
-   validare, generare le tavole e GUARDARLE, committare.
+   voce di «Come si scrive» e sotto i limiti, scrivere le 5
+   `reel_battute` (la prima è il fatto più sorprendente della scheda, le
+   altre lo raccontano in ordine; solo fatti già nella scheda) e la
+   `reel_cta` («Mandalo a…»), cercare su Commons una registrazione
+   libera della macchina VERA per `reel_audio` (non un'emulazione, non
+   una pronuncia), `verificata: True`, validare, generare tavole e reel
+   e GUARDARLI, committare.
 4. Aggiornare la coda finché le schede verificate non pubblicate sono ≥14.

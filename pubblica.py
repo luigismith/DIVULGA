@@ -367,11 +367,17 @@ def main():
     try:
         base = f"{BASE_PAGES}/tavole/{scheda['slug']}"
         campo, valore, tentativi = "image_url", f"{base}/story.jpg", 10
-        try:
-            verifica_immagini_online([f"{base}/reel.mp4"])
-            campo, valore, tentativi = "video_url", f"{base}/reel.mp4", 25
-        except Exception as e:
-            print(f"[warn] reel.mp4 non raggiungibile, ripiego sul JPEG: {e}")
+        # Dal 07/10/2026 il reel è il formato 2 (reel2.mp4, 15 secondi).
+        # Il ripiego si scrive nel log, così si vede quando scatta.
+        for video in ("reel2.mp4", "reel.mp4"):
+            try:
+                verifica_immagini_online([f"{base}/{video}"])
+                campo, valore, tentativi = "video_url", f"{base}/{video}", 25
+                break
+            except Exception as e:
+                print(f"[warn] {video} non raggiungibile: {e}")
+        if campo == "image_url":
+            print("[warn] nessun video per la storia: ripiego sul JPEG muto")
             verifica_immagini_online([valore])
         c = api("POST", f"{ig_user}/media", token,
                 media_type="STORIES", **{campo: valore})

@@ -22,8 +22,17 @@ import pubblica as P
 import token_ig
 
 
-def gia_pubblicati(stato):
-    return {r["slug"] for r in stato.get("reel", [])}
+import genera_reel
+
+# I reel usciti prima del 07/10/2026 non hanno il campo «formato»: sono
+# tutti del formato 1 (sette scene di testo, 28 secondi).
+FORMATO = 2
+
+
+def gia_pubblicati(stato, formato=None):
+    """Gli slug che hanno già un reel; con `formato`, solo di quel formato."""
+    return {r["slug"] for r in stato.get("reel", [])
+            if formato is None or r.get("formato", 1) == formato}
 
 
 def main(slug):
@@ -34,15 +43,23 @@ def main(slug):
     stato = P.leggi_stato()
 
     # Idempotenza: come per i post, sta nello stato, non nell'API.
-    if slug in gia_pubblicati(stato):
-        print(f"[stop] il reel di '{slug}' risulta già pubblicato: non lo rifaccio.")
+    if slug in gia_pubblicati(stato, FORMATO):
+        print(f"[stop] il reel di '{slug}' (formato {FORMATO}) risulta già pubblicato: non lo rifaccio.")
         return 0
     # Un reel ha senso solo per una scheda già uscita nel feed.
     if slug not in {p["slug"] for p in stato["pubblicati"]}:
         print(f"[stop] la scheda '{slug}' non è ancora stata pubblicata come post.")
         return 1
+    # RIFACIMENTO: una scheda che ha già il reel del formato 1 può averne
+    # uno nuovo nel formato 2 (altre frasi, altre foto, altro ritmo: un
+    # video diverso, non lo stesso ripubblicato). Succede SOLO se lo si
+    # chiede per nome o con --rifacimento: la cadenza dei rifacimenti è
+    # una decisione del proprietario, non di questo file.
+    rifacimento = slug in gia_pubblicati(stato)
+    if rifacimento:
+        print(f"[reel] '{slug}' ha già un reel del formato 1: questo è il rifacimento")
 
-    url = f"{P.BASE_PAGES}/tavole/{slug}/reel.mp4"
+    url = f"{P.BASE_PAGES}/tavole/{slug}/{genera_reel.NOME_FILE}"
     P.verifica_immagini_online([url])          # HEAD: accetta anche video/
 
     token, _ = token_ig.token_corrente()
@@ -50,7 +67,11 @@ def main(slug):
     ig_user = me.get("user_id") or me.get("id")
     print(f"[api] account: @{me.get('username')} — token {token_ig.redigi(token)}")
 
-    didascalia = contenuti.componi_didascalia(scheda)
+    # Nei rifacimenti niente @: gli account taggati sono già stati avvisati
+    # dal carosello e dal primo reel. Una terza notifica per la stessa
+    # scheda, da una pagina piccola, è il profilo di un bot (stessa
+    # ragione per cui non si sono recuperati i commenti dei reel vecchi).
+    didascalia = contenuti.componi_didascalia_reel(scheda, menzioni=not rifacimento)
     try:
         # share_to_feed=false: il reel NON entra nella griglia del profilo
         # (regola del proprietario, 04/09/2026). Resta dove conta — nella
@@ -93,8 +114,10 @@ def main(slug):
     # Come nel carosello, il commento non e' critico: se fallisce il reel
     # resta pubblicato e si segnala soltanto.
     try:
-        commento = contenuti.primo_commento(scheda)
-        if commento:
+        commento = None if rifacimento else contenuti.primo_commento(scheda)
+        if rifacimento:
+            print("[ok] nessun commento: rifacimento, gli account sono già stati avvisati")
+        elif commento:
             P.api("POST", f"{media_id}/comments", token, message=commento)
             print("[ok] primo commento con menzioni")
         else:
@@ -112,6 +135,7 @@ def main(slug):
 
     stato.setdefault("reel", []).append({
         "slug": slug,
+        "formato": FORMATO,
         "quando": dt.datetime.now(dt.timezone.utc).isoformat(),
         "media_id": media_id,
         "permalink": v.get("permalink"),
@@ -120,11 +144,10 @@ def main(slug):
     return 0
 
 
-def prossimo_reel():
+def prossimo_reel(stato=None):
     """La scheda piu' vecchia gia' uscita nel feed che non ha ancora avuto
-    il suo reel. Si parte dalle vecchie apposta: hanno gia' esaurito la
-    loro spinta nel feed, e il reel gliene da' una seconda."""
-    stato = P.leggi_stato()
+    nessun reel (di norma quella di ieri sera)."""
+    stato = stato or P.leggi_stato()
     fatti = gia_pubblicati(stato)
     for p in stato["pubblicati"]:
         if p["slug"] not in fatti:
@@ -132,8 +155,34 @@ def prossimo_reel():
     return None
 
 
+def prossimo_rifacimento(stato=None):
+    """La scheda piu' vecchia che ha solo il reel del formato 1."""
+    stato = stato or P.leggi_stato()
+    nuovi = gia_pubblicati(stato, FORMATO)
+    for p in stato["pubblicati"]:
+        if p["slug"] not in nuovi:
+            return p["slug"]
+    return None
+
+
 if __name__ == "__main__":
     slug = sys.argv[1] if len(sys.argv) > 1 else "--prossimo"
+    if slug == "--quale":
+        # Per reel.yml: dice quale scheda toccherebbe, senza pubblicare.
+        modo = sys.argv[2] if len(sys.argv) > 2 else "--prossimo"
+        if modo == "--rifacimento":
+            print(prossimo_rifacimento() or "")
+        elif modo == "--prossimo":
+            print(prossimo_reel() or "")
+        else:
+            print(modo)
+        raise SystemExit(0)
+    if slug == "--rifacimento":
+        slug = prossimo_rifacimento()
+        if slug is None:
+            print("[stop] tutte le schede pubblicate hanno gia' il reel del formato 2.")
+            raise SystemExit(0)
+        print(f"[reel] rifacimento scelto in automatico: {slug}")
     if slug == "--prossimo":
         slug = prossimo_reel()
         if slug is None:

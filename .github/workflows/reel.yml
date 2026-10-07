@@ -4,13 +4,18 @@
 # per questo non c'e' nessun cron qui e non c'e' nessun retry. Si lancia
 # a mano, si guarda il risultato, e se e' andata male si aspetta un'ora
 # prima di riprovare.
+#
+# Dal 07/10/2026 il reel e' il «formato 2» (genera_reel.py, reel2.mp4).
+# Per la scheda del giorno il file lo costruisce gia' pubblica.yml; per
+# un rifacimento (una scheda vecchia che ha solo il reel del formato 1)
+# lo si costruisce qui, lo si mette su Pages e solo dopo si pubblica.
 name: Pubblica reel
 
 on:
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Slug della scheda; vuoto = la piu vecchia senza reel'
+        description: 'Slug della scheda; vuoto = la piu vecchia senza reel; --rifacimento = la piu vecchia senza reel del formato 2'
         required: false
         default: ''
         type: string
@@ -22,6 +27,8 @@ concurrency:
 permissions:
   contents: write
   issues: write
+  pages: write
+  id-token: write
 
 jobs:
   reel:
@@ -37,9 +44,66 @@ jobs:
         run: |
           git config user.name "elettrofoni-bot"
           git config user.email "actions@users.noreply.github.com"
+
+      - name: Quale scheda
+        id: quale
+        env:
+          STATE_KEY: ${{ secrets.STATE_KEY }}
+        run: |
+          # Niente pipe: se lo script fallisce, il passo deve fallire con
+          # lui (con `| tail -1` uno slug vuoto sembrava «niente da fare»).
+          SLUG=$(python pubblica_reel.py --quale "${{ inputs.slug || '--prossimo' }}")
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+          echo "scheda: '${SLUG}'"
+          if [ -n "$SLUG" ] && [ ! -f "docs/tavole/$SLUG/reel2.mp4" ]; then
+            echo "costruire=1" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Solo se il file manca. Qui ffmpeg NON e' facoltativo: senza il
+      # video non c'e' niente da pubblicare, e il passo deve poter fallire
+      # davvero (niente pipe, regola imparata il 28/08/2026).
+      - name: Costruisci il reel del formato 2
+        if: steps.quale.outputs.costruire == '1'
+        timeout-minutes: 15
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffmpeg -version
+          python -m playwright install --with-deps chromium
+          SLUG="${{ steps.quale.outputs.slug }}"
+          python genera_reel.py "$SLUG"
+          # Il reel del formato 1 e' gia' su Instagram e non lo usa piu'
+          # nessuno: si toglie, cosi' docs/ (cioe' Pages, che ha un tetto
+          # di 1 GB) non cresce di un reel per ogni rifacimento.
+          git rm -q --ignore-unmatch "docs/tavole/$SLUG/reel.mp4"
+          git add "docs/tavole/$SLUG/reel2.mp4"
+          git commit -m "reel: formato 2 per $SLUG"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "push respinto, mi riallineo (tentativo $i)"
+            sleep $(( i * 3 + RANDOM % 5 ))
+          done
+          echo "push fallito"; exit 1
+
+      # Il video deve essere online PRIMA di chiamare l'API (Instagram lo
+      # scarica da un URL pubblico). Stesso schema di pubblica.yml.
+      - name: Configura Pages
+        if: steps.quale.outputs.costruire == '1'
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.quale.outputs.costruire == '1'
+        with:
+          path: docs
+      - name: Deploy Pages
+        if: steps.quale.outputs.costruire == '1'
+        uses: actions/deploy-pages@v4
+
       - name: Pubblica il reel
+        if: steps.quale.outputs.slug != ''
         env:
           STATE_KEY: ${{ secrets.STATE_KEY }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python pubblica_reel.py "${{ inputs.slug || '--prossimo' }}"
+        run: python pubblica_reel.py "${{ steps.quale.outputs.slug }}"

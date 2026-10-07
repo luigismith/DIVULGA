@@ -28,9 +28,14 @@ GRAPH = token_ig.GRAPH
 RADICE = pathlib.Path(__file__).resolve().parent
 CARTELLA = RADICE / "metriche"
 
+# reels_skip_rate (07/10/2026): la quota di visualizzazioni abbandonate
+# nei primi 3 secondi. È la cosa che il formato 2 dei reel deve abbassare,
+# e la stessa che Instagram usa per decidere se mostrarlo ad altri: senza
+# questo numero il cambio di formato non si potrebbe giudicare.
 METRICHE_REEL = ["reach", "views", "likes", "comments", "shares", "saved",
                  "total_interactions", "ig_reels_avg_watch_time",
-                 "ig_reels_video_view_total_time", "follows", "profile_visits"]
+                 "ig_reels_video_view_total_time", "reels_skip_rate",
+                 "follows", "profile_visits"]
 METRICHE_FEED = ["reach", "views", "likes", "comments", "shares", "saved",
                  "total_interactions", "follows", "profile_visits"]
 
@@ -139,7 +144,10 @@ def insights_account(token):
 
 
 def slug_per_media():
-    """media_id -> (slug, 'carosello'|'reel') da stato.json."""
+    """media_id -> (slug, 'carosello'|'reel'|'reel2') da stato.json.
+    'reel2' è il formato 2 (dal 07/10/2026): tenerli separati è tutto il
+    punto, perché il confronto fra i due formati decide se il cambio ha
+    funzionato."""
     stato = json.loads((RADICE / "stato.json").read_text())
     mappa = {}
     for p in stato.get("pubblicati", []):
@@ -147,7 +155,7 @@ def slug_per_media():
             mappa[p["media_id"]] = (p["slug"], "carosello")
     for r in stato.get("reel", []):
         if r.get("media_id"):
-            mappa[r["media_id"]] = (r["slug"], "reel")
+            mappa[r["media_id"]] = (r["slug"], "reel2" if r.get("formato", 1) == 2 else "reel")
     return mappa
 
 
@@ -188,6 +196,18 @@ def riassunto(dati):
             i = m["insights"]
             print(f"    {str(m.get('slug')):16} reach={i.get('reach')} views={i.get('views')} "
                   f"cond={i.get('shares')} salv={i.get('saved')}")
+    # Il confronto che conta: formato 1 contro formato 2, stesse metriche.
+    print("\nREEL PER FORMATO (mediane):")
+    for ruolo, nome in (("reel", "formato 1"), ("reel2", "formato 2")):
+        g = [m["insights"] for m in dati["media"] if m.get("ruolo") == ruolo]
+        if not g:
+            print(f"  {nome}: nessun reel"); continue
+        def med(k):
+            v = sorted(x[k] for x in g if x.get(k) is not None)
+            return v[len(v) // 2] if v else None
+        print(f"  {nome}: {len(g)} reel — copertura {med('reach')}, "
+              f"visione_ms {med('ig_reels_avg_watch_time')}, "
+              f"abbandono<3s {med('reels_skip_rate')}, condivisioni {med('shares')}")
     if acc.get("rifiutate"):
         print("\nmetriche dell'account rifiutate dall'API:", ", ".join(acc["rifiutate"]))
 
