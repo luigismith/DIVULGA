@@ -75,6 +75,12 @@ MAX_TESTO_SLIDE = 620     # testo corrente di ogni slide interna
 # stanno lì. La prima battuta è il gancio e si legge mentre il pollice
 # decide se scorrere: è la più corta.
 REEL_BATTUTE = 5
+# Interruttore di passaggio (07/10/2026): le battute delle 62 schede sono
+# in verifica. Finché non sono inserite tutte, una scheda senza battute
+# non blocca i controlli (bloccherebbe il post del giorno); il suo reel
+# semplicemente non si costruisce, e lo dice nel log. Si mette a True nel
+# commit che inserisce le battute, e da lì non si spegne più.
+REEL_OBBLIGATORIE = False
 MAX_REEL_GANCIO = 60
 MAX_REEL_BATTUTA = 75
 MAX_REEL_KICK = 28
@@ -4936,7 +4942,7 @@ def valida_scheda(scheda):
     # Il reel (formato 2). Niente testo di riserva: una scheda senza le
     # sue battute non ha un reel, e qui lo si scopre scrivendo.
     rb = scheda.get("reel_battute") or []
-    if len(rb) != REEL_BATTUTE:
+    if (rb or REEL_OBBLIGATORIE) and len(rb) != REEL_BATTUTE:
         errori.append(f"reel_battute: {len(rb)} battute (ne servono {REEL_BATTUTE})")
     for i, coppia in enumerate(rb, start=1):
         if len(coppia) != 2:
@@ -4948,7 +4954,8 @@ def valida_scheda(scheda):
         if len(kick) > MAX_REEL_KICK:
             errori.append(f"reel_battute #{i} kick: {len(kick)} caratteri (max {MAX_REEL_KICK})")
     if not scheda.get("reel_cta"):
-        errori.append("manca reel_cta")
+        if rb or REEL_OBBLIGATORIE:
+            errori.append("manca reel_cta")
     elif len(scheda["reel_cta"]) > MAX_REEL_CTA:
         errori.append(f"reel_cta {len(scheda['reel_cta'])} caratteri (max {MAX_REEL_CTA})")
     a = scheda.get("reel_audio")
