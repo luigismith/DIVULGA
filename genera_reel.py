@@ -237,6 +237,10 @@ def battute(scheda):
     tag = f'<div class="tag">{scheda["strumento"]}<small>{scheda["anno"]}</small></div>'
     out = []
     for i, (kick, testo) in enumerate(righe):
+        # Senza punto finale, tutte uguali: un pannello con la frase che
+        # finisce col punto e il successivo senza sembrano due tipografie.
+        if testo.endswith(".") and not testo.endswith(".."):
+            testo = testo[:-1]
         out.append({"foto": i, "moto": MOTI[i % len(MOTI)],
                     "html": f'<div class="pannello"><div class="kick">{kick}</div>'
                             f'<div class="hook">{testo}</div></div>{tag}'})

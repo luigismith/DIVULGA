@@ -4819,8 +4819,15 @@ def componi_didascalia_reel(scheda, menzioni=True):
     carosello: per chi non ci segue gli invii pesano più dei commenti
     (Mosseri, 21/01/2025)."""
     b = scheda["reel_battute"]
-    righe = [b[0][1], ""]
-    righe.append(" ".join(t for _, t in b[1:]))
+
+    def frase(t):
+        # Sullo schermo le battute non hanno il punto finale (sono righe
+        # da leggere al volo); in didascalia si leggono di fila e senza
+        # punto si attaccherebbero l'una all'altra.
+        t = t.strip()
+        return t if t[-1] in ".!?…" else t + "."
+    righe = [frase(b[0][1]), ""]
+    righe.append(" ".join(frase(t) for _, t in b[1:]))
     righe.append("")
     righe.append(f"{scheda['strumento']} · {scheda['anno']}. La scheda completa, "
                  "con le fonti, è nel profilo: @elettrofoni")
