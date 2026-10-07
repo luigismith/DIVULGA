@@ -73,18 +73,22 @@ def main(slug):
     # ragione per cui non si sono recuperati i commenti dei reel vecchi).
     didascalia = contenuti.componi_didascalia_reel(scheda, menzioni=not rifacimento)
     try:
-        # share_to_feed=false: il reel NON entra nella griglia del profilo
-        # (regola del proprietario, 04/09/2026). Resta dove conta — nella
-        # scheda Reel e nei feed di chi non ci segue, che e' da dove arriva
-        # tutta la sua copertura — ma la griglia resta il catalogo: solo
-        # caroselli, sei tavole l'uno, in ordine di scheda. Chi apre il
-        # profilo deve vedere un catalogo, non un misto.
+        # share_to_feed=TRUE — decisione del proprietario del 07/10/2026
+        # («share_to_feed true, i reel vanno anche nella griglia»), che
+        # sostituisce la regola del 04/09/2026 (false, griglia = solo
+        # caroselli).
+        # Perché: la documentazione Meta dice che con false il reel può
+        # apparire SOLO nella scheda Reel, quindi mai nel feed dei follower
+        # (dove arrivano i primi «mi piace») e mai fra i reel suggeriti nel
+        # feed di chi non ci segue. Dopo il 04/09 la copertura mediana dei
+        # reel era scesa da 39 a 17 (anche i caroselli erano calati, da 15
+        # a 8: non è tutta colpa di questo parametro, ma nessun numero
+        # diceva che aiutasse).
         # NOTA: si decide alla creazione del container e non si cambia
-        # dopo. I dieci reel usciti prima di questa riga sono gia' nella
-        # griglia e l'API non li puo' togliere: si fa a mano dall'app.
+        # dopo. I reel usciti col false restano fuori dalla griglia.
         c = P.api("POST", f"{ig_user}/media", token,
                   media_type="REELS", video_url=url, caption=didascalia,
-                  share_to_feed="false")
+                  share_to_feed="true")
         # I video ci mettono molto più delle immagini. Questa NON è una
         # riprova su errore: è l'attesa del normale ciclo di vita del
         # container. Se torna ERROR ci si ferma subito.

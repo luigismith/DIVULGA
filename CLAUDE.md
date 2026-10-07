@@ -150,13 +150,12 @@ Lezioni pratiche dal montaggio:
   (`foto_del_reel`) vanno accreditate nella didascalia del reel;
 - l'audio partiva con 0,25 s di dissolvenza e il basso in 0,4 s: muto
   proprio nei 3 secondi che contano. Il formato 2 usa `attacco=0.01`.
-Decisioni lasciate al proprietario (un cambio di regola sull'account
-non lo decide una sessione): `share_to_feed` dei reel (oggi false, la
-griglia resta il catalogo — ma la documentazione Meta dice che con false
-il reel non entra MAI nei feed, nemmeno in quello dei follower), e la
-cadenza dei rifacimenti (`reel.yml` con slug `--rifacimento` rifà nel
-formato 2 il reel di una scheda vecchia, senza nuovi tag; oggi parte
-solo a mano).
+Un cambio di regola sull'account non lo decide una sessione: si propone
+al proprietario con i numeri e decide lui. Il 07/10/2026 ha deciso
+`share_to_feed=true` (vedi «I reel entrano nella griglia» più sotto).
+Resta da decidere la cadenza dei rifacimenti (`reel.yml` con slug
+`--rifacimento` rifà nel formato 2 il reel di una scheda vecchia, senza
+nuovi tag; oggi parte solo a mano).
 
 ## Come si scrive (richiesta del proprietario, 13/09/2026: «più umani»)
 
@@ -380,13 +379,15 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   due righe — quindi la notifica all'account taggato non è mai partita.
   La regola 3 diceva già «menzioni in didascalia E nel primo commento»:
   era scritta, e valeva per metà del codice.
-- **I reel non entrano nella griglia** (regola del proprietario,
-  04/09/2026): `share_to_feed="false"` in `pubblica_reel.py`. La griglia
-  è il catalogo — solo caroselli, in ordine di scheda — e il reel vive
-  dove gli serve, cioè nella scheda Reel e nei feed di chi non ci segue.
-  Si decide alla creazione del container e non si cambia dopo: i dieci
-  reel usciti prima del 04/09 restano nella griglia e l'API non li può
-  togliere, si fa a mano dall'app.
+- **I reel entrano nella griglia e nei feed** (decisione del proprietario,
+  07/10/2026: «share_to_feed true, i reel vanno anche nella griglia»).
+  Sostituisce la regola del 04/09/2026, che li teneva fuori per lasciare
+  la griglia ai soli caroselli. Motivo: secondo la documentazione Meta,
+  con `share_to_feed="false"` il reel compare SOLO nella scheda Reel, mai
+  nei feed (né dei follower né fra i suggeriti), e dopo il 04/09 la
+  copertura mediana dei reel era passata da 39 a 17. Si decide alla
+  creazione del container: i reel usciti fra il 04/09 e il 07/10 restano
+  fuori dalla griglia.
 - **Non si recuperano i commenti sui reel vecchi.** I dieci reel usciti
   senza il primo commento taggavano 19 account già avvisati dal primo
   commento del CAROSELLO della stessa scheda: rimediare adesso vorrebbe
