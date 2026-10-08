@@ -563,6 +563,13 @@
    "media_id": null,
    "permalink": "https://www.instagram.com/reel/DeM6Um0icCL/",
    "nota": "aggiunto a mano: il reel è uscito (log del run 37660379942) ma il push dello stato è stato respinto; media_id non stampato dal log, si ricava dal permalink in metriche.py"
+  },
+  {
+   "slug": "tr808",
+   "formato": 2,
+   "quando": "2026-10-08T10:39:56.843369+00:00",
+   "media_id": "17927610216421884",
+   "permalink": "https://www.instagram.com/reel/DeOvVFMjBn7/"
   }
  ]
 }
