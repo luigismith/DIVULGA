@@ -365,6 +365,26 @@ def main():
         segnala_errore(f"verifica post-pubblicazione fallita per '{scheda['slug']}'", str(e))
         sys.exit(1)
 
+    # I FOLLOWER, OGNI GIORNO. LEZIONE IMPARATA (12/10/2026): il proprietario
+    # ha chiesto «quanti follower ha veramente?» e io ho risposto 41, il
+    # numero della fotografia del 07/10. Erano 109. La raccolta settimanale
+    # (metriche.yml, cron del lunedì) quel lunedì non era partita affatto, e
+    # nessuno se n'era accorto: il nulla, di nuovo. Questo run invece parte
+    # ogni giorno (tre inneschi), quindi il numero lo legge lui e lo scrive
+    # nello stato: una chiamata in più, mai bloccante.
+    try:
+        prof = api("GET", "me", token, fields="followers_count,media_count")
+        stato = leggi_stato()
+        oggi = dt.datetime.now(ROMA).date().isoformat()
+        serie = [x for x in stato.get("follower", []) if x.get("giorno") != oggi]
+        serie.append({"giorno": oggi, "follower": prof.get("followers_count"),
+                      "contenuti": prof.get("media_count")})
+        stato["follower"] = serie[-400:]
+        scrivi_stato(stato, f"stato: follower {prof.get('followers_count')}")
+        print(f"[ok] follower oggi: {prof.get('followers_count')}")
+    except Exception as e:
+        print(f"[warn] follower non letti (non blocca): {e}")
+
     # Rilancio come STORIA. È facoltativa PER SCELTA: il post è la missione,
     # la storia il megafono. Se fallisce si annota e si tira dritto — non
     # vale la pena far fallire una run (e allarmare il proprietario) per un

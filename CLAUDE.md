@@ -168,6 +168,21 @@ tag: gli account erano già stati avvisati). La passata delle 19:30 resta
 per il reel della scheda nuova. Primo rifacimento, di prova e verificato
 fino al permalink: Minimoog, 07/10/2026.
 
+**Risultato al 12/10/2026** (`metriche/2026-10-12.json`, mediane):
+formato 1, 45 reel: copertura 32, visione 4,0 s, abbandono nei primi 3 s
+76%, 0 condivisioni. Formato 2, 10 reel: copertura **1.074**, visione
+**8,4 s**, abbandono **50%**, 3 condivisioni. Follower da 41 a **109**
+(+21 il 09/10). Il DX7 rifatto 2.333 account raggiunti, il TR-808 con
+la registrazione vera 24 condivisioni.
+**Il monitoraggio non dipende da un cron solo** (12/10/2026): il cron
+del lunedì di `metriche.yml` non era partito e il proprietario ha
+scoperto prima di me che i follower erano 109 e non 41. Ora:
+`pubblica.py` legge i follower a ogni pubblicazione e li scrive in
+`stato.json` (`follower`, serie giornaliera); `metriche.yml` gira ogni
+giorno; la rete delle 18:20 controlla che ci sia la fotografia di oggi
+e, se manca, la lancia. Prima di citare un numero sulla pagina, si legge
+il dato di OGGI, non quello dell'ultima volta.
+
 ## Fuori catalogo (`speciali.py`, dal 12/10/2026)
 
 Il proprietario ha chiesto di promuovere Cirmolo (luigismith.github.io/
