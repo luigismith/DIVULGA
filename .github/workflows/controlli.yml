@@ -21,3 +21,5 @@ jobs:
         run: python -m py_compile contenuti.py genera_tavole.py genera_archivio.py pubblica.py token_ig.py verifica_setup.py
       - name: Validazione schede
         run: python contenuti.py
+      - name: Validazione fuori catalogo
+        run: python speciali.py

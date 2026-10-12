@@ -36,7 +36,16 @@ def gia_pubblicati(stato, formato=None):
 
 
 def main(slug):
+    import speciali
     scheda = next((s for s in contenuti.SCHEDE if s["slug"] == slug), None)
+    # Un contenuto fuori catalogo (speciali.py) non è una scheda: non ha un
+    # carosello da cui dipendere, ha la sua didascalia e non tagga nessuno.
+    speciale = speciali.trova(slug) if scheda is None else None
+    if speciale is not None:
+        errori = speciali.valida(speciale)
+        if errori:
+            print(f"[stop] fuori catalogo '{slug}' non valido: {errori}"); return 1
+        scheda = speciale
     if scheda is None:
         print(f"[stop] nessuna scheda '{slug}'"); return 1
 
@@ -47,7 +56,7 @@ def main(slug):
         print(f"[stop] il reel di '{slug}' (formato {FORMATO}) risulta già pubblicato: non lo rifaccio.")
         return 0
     # Un reel ha senso solo per una scheda già uscita nel feed.
-    if slug not in {p["slug"] for p in stato["pubblicati"]}:
+    if speciale is None and slug not in {p["slug"] for p in stato["pubblicati"]}:
         print(f"[stop] la scheda '{slug}' non è ancora stata pubblicata come post.")
         return 1
     # RIFACIMENTO: una scheda che ha già il reel del formato 1 può averne
@@ -71,7 +80,8 @@ def main(slug):
     # dal carosello e dal primo reel. Una terza notifica per la stessa
     # scheda, da una pagina piccola, è il profilo di un bot (stessa
     # ragione per cui non si sono recuperati i commenti dei reel vecchi).
-    didascalia = contenuti.componi_didascalia_reel(scheda, menzioni=not rifacimento)
+    didascalia = (speciale["didascalia"] if speciale is not None
+                  else contenuti.componi_didascalia_reel(scheda, menzioni=not rifacimento))
     try:
         # share_to_feed=TRUE — decisione del proprietario del 07/10/2026
         # («share_to_feed true, i reel vanno anche nella griglia»), che
@@ -118,8 +128,10 @@ def main(slug):
     # Come nel carosello, il commento non e' critico: se fallisce il reel
     # resta pubblicato e si segnala soltanto.
     try:
-        commento = None if rifacimento else contenuti.primo_commento(scheda)
-        if rifacimento:
+        commento = None if (rifacimento or speciale) else contenuti.primo_commento(scheda)
+        if speciale is not None:
+            print("[ok] nessun commento: contenuto fuori catalogo, non tagga nessuno")
+        elif rifacimento:
             print("[ok] nessun commento: rifacimento, gli account sono già stati avvisati")
         elif commento:
             P.api("POST", f"{media_id}/comments", token, message=commento)
@@ -140,6 +152,7 @@ def main(slug):
     stato.setdefault("reel", []).append({
         "slug": slug,
         "formato": FORMATO,
+        **({"fuori_catalogo": True} if speciale is not None else {}),
         "quando": dt.datetime.now(dt.timezone.utc).isoformat(),
         "media_id": media_id,
         "permalink": v.get("permalink"),

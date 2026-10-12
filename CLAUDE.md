@@ -168,6 +168,27 @@ tag: gli account erano già stati avvisati). La passata delle 19:30 resta
 per il reel della scheda nuova. Primo rifacimento, di prova e verificato
 fino al permalink: Minimoog, 07/10/2026.
 
+## Fuori catalogo (`speciali.py`, dal 12/10/2026)
+
+Il proprietario ha chiesto di promuovere Cirmolo (luigismith.github.io/
+cirmolo), il suo sistema musicale per la Miyoo Flip. Regole, perché un
+catalogo che diventa vetrina smette di essere seguito:
+- UN reel per progetto, nella passata delle 12:30 del giorno in
+  `quando` (al posto del rifacimento, che slitta di un giorno). Niente
+  campagne, niente ripetizioni, niente caroselli promozionali: il reel va
+  anche a chi non ci segue e, con `share_to_feed=true`, sta in griglia.
+- Si dichiara: «fuori catalogo» e «roba nostra». I fatti storici che ci
+  entrano (l'Omnichord nel reel di Cirmolo) hanno due fonti, scritte
+  accanto alle battute.
+- Non tagga nessuno e non entra nel confronto formato 1 / formato 2 delle
+  metriche (ruolo «speciale» in `metriche.py`).
+- Su una schermata solo zoom centrato (`reel_moti`): la panoramica
+  laterale tagliava le scritte dell'interfaccia.
+- Licenza di Cirmolo: CC BY-NC 4.0 (eredità di spruceOS), quindi in
+  didascalia «gratuito, codice su GitHub», non «open source».
+Il link cliccabile può metterlo solo il proprietario: bio (l'API non la
+tocca) e sticker link nella storia (l'API non lo supporta).
+
 ## Come si scrive (richiesta del proprietario, 13/09/2026: «più umani»)
 
 Il proprietario ha riletto le schede e ha detto che sembrano generate da

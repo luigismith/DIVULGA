@@ -246,13 +246,20 @@ def battute(scheda):
         # finisce col punto e il successivo senza sembrano due tipografie.
         if testo.endswith(".") and not testo.endswith(".."):
             testo = testo[:-1]
-        out.append({"foto": i, "moto": MOTI[i % len(MOTI)],
+        # `reel_moti` (facoltativo): su una schermata, dove i bordi sono
+        # testo, la panoramica laterale taglia le scritte («Si3» diventava
+        # «i3» nel reel di Cirmolo). Lì si usa solo lo zoom centrato.
+        moti = scheda.get("reel_moti") or MOTI
+        out.append({"foto": i, "moto": moti[i % len(moti)],
                     "html": f'<div class="pannello"><div class="kick">{kick}</div>'
                             f'<div class="hook">{testo}</div></div>{tag}'})
+    # Un contenuto fuori catalogo (speciali.py) non ha un numero di scheda:
+    # la chiusura dice dove trovarlo.
+    chiusura = scheda.get("reel_kick_chiusura") or f'ELETTROFONI · N. {scheda["numero"]:03d}'
     # Chiusura: stessa foto e stesso movimento della prima battuta, così
     # quando il reel ricomincia non c'è uno stacco.
     out.append({"foto": 0, "moto": MOTI[0],
-                "html": f'<div class="pannello"><div class="kick">ELETTROFONI · N. {scheda["numero"]:03d}</div>'
+                "html": f'<div class="pannello"><div class="kick">{escape(chiusura, quote=False)}</div>'
                         f'<div class="hook">{escape(scheda["reel_cta"], quote=False)}</div>'
                         f'<span class="handle">@ELETTROFONI</span></div>{tag}'})
     return out
@@ -450,7 +457,8 @@ if __name__ == "__main__":
             print("[reel] nessuna scheda in coda: niente da costruire")
             raise SystemExit(0)
         slug = prossima["slug"]
-    scheda = next((s for s in contenuti.SCHEDE if s["slug"] == slug), None)
+    import speciali
+    scheda = next((s for s in contenuti.SCHEDE if s["slug"] == slug), None) or speciali.trova(slug)
     if scheda is None:
         print(f"nessuna scheda '{slug}'"); raise SystemExit(1)
     out = costruisci(scheda, cartella)

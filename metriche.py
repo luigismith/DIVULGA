@@ -160,7 +160,10 @@ def slug_per_media():
         if p.get("media_id"):
             mappa[p["media_id"]] = (p["slug"], "carosello")
     for r in stato.get("reel", []):
-        ruolo = "reel2" if r.get("formato", 1) == 2 else "reel"
+        # I fuori catalogo (speciali.py) stanno a parte: un reel promozionale
+        # nel confronto fra formato 1 e formato 2 falserebbe il confronto.
+        ruolo = ("speciale" if r.get("fuori_catalogo")
+                 else "reel2" if r.get("formato", 1) == 2 else "reel")
         if r.get("media_id"):
             mappa[r["media_id"]] = (r["slug"], ruolo)
         elif r.get("permalink"):
