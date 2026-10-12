@@ -119,8 +119,13 @@ jobs:
         timeout-minutes: 6
         continue-on-error: true
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
+          # LEZIONE IMPARATA (12/10/2026): con apt-get il rifacimento del
+          # Fairlight e' morto a 15 minuti senza dire dove. I mirror di
+          # Ubuntu ogni tanto si piantano (era gia' successo il 07/09).
+          # ffmpeg statico da pip: niente apt, e lo stesso binario (7.x)
+          # con cui il formato 2 e' stato provato in locale.
+          pip install -q imageio-ffmpeg
+          sudo ln -sf "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
           ffmpeg -version    # niente pipe: deve poter fallire davvero
 
       - name: Genera le tavole della prossima scheda e l'archivio

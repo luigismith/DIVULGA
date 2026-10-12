@@ -490,6 +490,13 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   container è bloccato NON insistere: si usa il workflow
   `scarica-foto.yml` (dispatch con url+dest), che scarica da un runner
   GitHub con IP pulito e committa.
+- **ffmpeg non si installa con apt** (12/10/2026). Il rifacimento del
+  Fairlight è morto a 15 minuti dentro un passo unico (apt + Chromium +
+  montaggio) senza dire dove: i mirror Ubuntu si piantano ogni tanto.
+  Ora ffmpeg arriva da pip (`imageio-ffmpeg`, binario statico, lo stesso
+  delle prove in locale) e in `reel.yml` installazione, Chromium e
+  montaggio sono tre passi col loro tetto. Il fallimento è avvenuto
+  PRIMA dell'API: niente pubblicato, budget video intatto.
 - **Mai lanciare commit in raffica mentre può partire una pubblicazione**
   (07/10/2026). Tredici `scarica-foto.yml` in parallelo hanno fatto
   respingere il push dello stato a `pubblica_reel.py`: reel uscito, stato

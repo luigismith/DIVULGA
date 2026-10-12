@@ -62,14 +62,29 @@ jobs:
       # Solo se il file manca. Qui ffmpeg NON e' facoltativo: senza il
       # video non c'e' niente da pubblicare, e il passo deve poter fallire
       # davvero (niente pipe, regola imparata il 28/08/2026).
+      # Tre passi separati, ognuno col suo tetto: se uno si pianta, il log
+      # dice quale (il 12/10/2026 un passo unico e' morto a 15 minuti senza
+      # dire dove).
+      - name: ffmpeg
+        if: steps.quale.outputs.costruire == '1'
+        timeout-minutes: 4
+        run: |
+          # LEZIONE IMPARATA (12/10/2026): con apt-get il rifacimento del
+          # Fairlight e' morto a 15 minuti senza dire dove. I mirror di
+          # Ubuntu ogni tanto si piantano (era gia' successo il 07/09).
+          # ffmpeg statico da pip: niente apt, e lo stesso binario (7.x)
+          # con cui il formato 2 e' stato provato in locale.
+          pip install -q imageio-ffmpeg
+          sudo ln -sf "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+          ffmpeg -version    # niente pipe: deve poter fallire davvero
+      - name: Chromium
+        if: steps.quale.outputs.costruire == '1'
+        timeout-minutes: 10
+        run: python -m playwright install --with-deps chromium
       - name: Costruisci il reel del formato 2
         if: steps.quale.outputs.costruire == '1'
-        timeout-minutes: 15
+        timeout-minutes: 8
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
-          ffmpeg -version
-          python -m playwright install --with-deps chromium
           SLUG="${{ steps.quale.outputs.slug }}"
           python genera_reel.py "$SLUG"
           # Il reel del formato 1 e' gia' su Instagram e non lo usa piu'
