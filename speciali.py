@@ -25,7 +25,7 @@ già scritta, che per un contenuto fuori catalogo non si compone dai campi.
 SPECIALI = [
     {
         "slug": "cirmolo",
-        "quando": "2026-10-13",          # passata delle 12:30 di quel giorno
+        "quando": "2026-10-12",          # anticipato: «pubblicalo subito» (proprietario, 12/10)
         "numero": 0,                     # non è una scheda: niente numero
         "strumento": "Cirmolo",
         "anno": "2026",
@@ -59,6 +59,14 @@ SPECIALI = [
         # Schermate: bordi pieni di testo, quindi solo zoom centrato.
         "reel_moti": ("avanti",),
         "reel_kick_chiusura": "CIRMOLO · LINK NEL PROFILO",
+        # Solo marchi che c'entrano (la console su cui gira, la tastiera per
+        # cui è pensato OpenOrc), handle presi dai loro siti ufficiali il
+        # 12/10/2026: lomiyoo.com → instagram.com/lomiyoo (lomiyoo.com è il
+        # sito di supporto ufficiale Miyoo: Notebookcheck, r/MiyooMini);
+        # akaipro.com → instagram.com/akai_pro. NON Anbernic, AYN, Powkiddy:
+        # Cirmolo sulle loro console non gira, e un tag a chi non c'entra è
+        # spam (regola 3).
+        "menzioni": ["lomiyoo", "akai_pro"],
         "didascalia": (
             "Abbiamo messo uno studio musicale in una console.\n\n"
             "Fuori catalogo, per una volta, e roba nostra. Cirmolo è un sistema "
@@ -71,6 +79,8 @@ SPECIALI = [
             "È gratuito e il codice è su GitHub (fork di spruceOS, licenza CC BY-NC "
             "4.0). È in sviluppo e provato solo sulla Miyoo Flip: si installa a "
             "proprio rischio.\n\n"
+            "Fatto per la Miyoo Flip di @lomiyoo; OpenOrc è pensato per la "
+            "MPK mini IV di @akai_pro.\n\n"
             "Link nel profilo · luigismith.github.io/cirmolo\n\n"
             "Mandalo a chi ha una Miyoo Flip.\n\n"
             "Fonti sull'Omnichord: Wikipedia (EN) · MusicRadar · Perfect Circuit\n\n"

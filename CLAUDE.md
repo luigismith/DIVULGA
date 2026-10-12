@@ -195,8 +195,13 @@ catalogo che diventa vetrina smette di essere seguito:
 - Si dichiara: «fuori catalogo» e «roba nostra». I fatti storici che ci
   entrano (l'Omnichord nel reel di Cirmolo) hanno due fonti, scritte
   accanto alle battute.
-- Non tagga nessuno e non entra nel confronto formato 1 / formato 2 delle
-  metriche (ruolo «speciale» in `metriche.py`).
+- Tagga solo i marchi che c'entrano davvero, con handle preso dal loro
+  sito ufficiale (`menzioni`, in didascalia e nel primo commento). Per
+  Cirmolo: @lomiyoo (la console) e @akai_pro (la tastiera di OpenOrc).
+  Il proprietario aveva chiesto «tutte le pagine degli handheld»: Anbernic,
+  AYN e Powkiddy sono rimasti fuori perché Cirmolo sulle loro console non
+  gira, e un tag a chi non c'entra è spam. Non entra nel confronto
+  formato 1 / formato 2 delle metriche (ruolo «speciale»).
 - Su una schermata solo zoom centrato (`reel_moti`): la panoramica
   laterale tagliava le scritte dell'interfaccia.
 - Licenza di Cirmolo: CC BY-NC 4.0 (eredità di spruceOS), quindi in

@@ -128,8 +128,13 @@ def main(slug):
     # Come nel carosello, il commento non e' critico: se fallisce il reel
     # resta pubblicato e si segnala soltanto.
     try:
-        commento = None if (rifacimento or speciale) else contenuti.primo_commento(scheda)
         if speciale is not None:
+            # Regola 3: menzioni in didascalia E nel primo commento, anche qui.
+            tags = " ".join(f"@{h}" for h in speciale.get("menzioni", []))
+            commento = f"In questo reel: {tags}" if tags else None
+        else:
+            commento = None if rifacimento else contenuti.primo_commento(scheda)
+        if speciale is not None and not commento:
             print("[ok] nessun commento: contenuto fuori catalogo, non tagga nessuno")
         elif rifacimento:
             print("[ok] nessun commento: rifacimento, gli account sono già stati avvisati")
