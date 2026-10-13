@@ -11,6 +11,11 @@ sessione di presidio (una Routine la apre ogni giorno).
 Uso:
     python commenti.py            # elenca i commenti nuovi
     python commenti.py --segna    # li marca come visti (commit su commenti.json)
+    python commenti.py --tutti    # anche quelli già visti (per rileggere)
+    python commenti.py --post 40  # quanti post guardare (default 12)
+
+Gira anche da `commenti.yml` (lancio manuale, sola lettura): il token
+sta solo nei secrets, quindi da una sessione si leggono così.
 """
 import datetime as dt
 import json
@@ -34,6 +39,10 @@ def leggi():
 
 def main():
     segna = "--segna" in sys.argv
+    tutti = "--tutti" in sys.argv
+    quanti = MAX_POST_DA_CONTROLLARE
+    if "--post" in sys.argv:
+        quanti = int(sys.argv[sys.argv.index("--post") + 1])
     dati = leggi()
     visti = set(dati["visti"])
 
@@ -42,8 +51,8 @@ def main():
     mio_nome = me.get("username")
 
     media = api("GET", "me/media", token,
-                fields="id,permalink,comments_count",
-                limit=MAX_POST_DA_CONTROLLARE).get("data", [])
+                fields="id,permalink,comments_count,media_product_type",
+                limit=quanti).get("data", [])
 
     nuovi = []
     for m in media:
@@ -57,14 +66,14 @@ def main():
             if c.get("username") == mio_nome:
                 visti.add(c["id"])
                 continue
-            if c["id"] not in visti:
-                c["post"] = m["permalink"]
+            if tutti or c["id"] not in visti:
+                c["post"] = f'{m["permalink"]} ({m.get("media_product_type", "?")})'
                 nuovi.append(c)
 
     if not nuovi:
         print("[presidio] nessun commento nuovo.")
     else:
-        print(f"[presidio] {len(nuovi)} commenti nuovi:\n")
+        print(f"[presidio] {len(nuovi)} commenti{'' if tutti else ' nuovi'}:\n")
         for c in nuovi:
             print(f"  @{c.get('username')} — {c.get('timestamp')}")
             print(f"  «{c.get('text')}»")
