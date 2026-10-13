@@ -5298,6 +5298,299 @@ SCHEDE = [
         "reel_cta": "Mandalo a chi ascolta i Tangerine Dream",
         "verificata": True,
     },
+    {
+        "slug": "taurus",
+        "numero": 63,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Moog Taurus",
+        "anno": "1975",
+        "luogo": "Stati Uniti",
+        "costruttore": "Moog Music",
+        "specifiche": [
+            ("PRODUZIONE", "1975-81"),
+            ("PEDALI", "13"),
+            ("OSCILLATORI", "2"),
+            ("FILTRO", "24 dB/ott."),
+        ],
+        "gancio": "Un sintetizzatore senza tastiera. Si suona con i piedi, e doveva essere solo un pezzo di un sistema più grande",
+        "sottotitolo": "13 pedali di legno e plastica, due slider da muovere con la scarpa e una sola nota alla volta.",
+        "la_macchina": (
+            "Una pedaliera con sopra un pannello nero. I pedali sono 13, "
+            "cioè le note di un'ottava più una. A sinistra lo slider LOUDNESS, "
+            "a destra FILTER: li spostate col piede mentre suonate. Sul "
+            "pannello 7 pulsanti, quattro per scegliere il suono (VARIABLE, "
+            "TAURUS, TUBA, BASS, e uno è quello che programmate voi) e tre "
+            "che si chiamano GLIDE, DECAY e OCTAVE. Dentro, due oscillatori e "
+            "un filtro da 24 dB per ottava. Una nota sola per volta, quindi "
+            "niente accordi."
+        ),
+        "inventore_nome": "Moog Music",
+        "inventore": (
+            "La Taurus doveva essere il terzo pezzo di un sistema chiamato "
+            "Constellation, con altre due macchine a tastiera, Apollo e Lyra. "
+            "Il sistema non è mai uscito. Secondo Wikipedia ne è stata usata una "
+            "versione su Brain Salad Surgery di Emerson, Lake & Palmer, nel "
+            "1973. L'Apollo diventa poi la Polymoog, che sta in un'altra scheda, "
+            "e la pedaliera esce da sola, con un nome da toro. Anche sull'anno "
+            "le fonti non vanno d'accordo: 1975 per quasi tutte, 1976 per una."
+        ),
+        "come_funziona": (
+            "Ogni pedale chiude un contatto e manda una tensione diversa, e "
+            "quella tensione dice agli oscillatori quale nota fare. Non c'è "
+            "niente di digitale. I due oscillatori fanno onde diverse a seconda "
+            "della fonte: Vintage Synth Explorer scrive quadra e dente di "
+            "sega, Wikipedia un solo dente di sega distorto, e io non so dire "
+            "chi ha ragione. Poi c'è il filtro, con taglio, contorno e "
+            "risonanza, e un amplificatore controllato in tensione che decide "
+            "il volume."
+        ),
+        "richiami": [
+            ("FIG. 1", "13 pedali, 2 oscillatori"),
+            ("FIG. 2", "LOUDNESS e FILTER sotto il piede"),
+            ("FIG. 3", "Taurus III del 2010, con display"),
+        ],
+        "chi_lusata": [
+            {"artista": "Mike Rutherford", "nota": "dei Genesis: ha messo da parte le sue vecchie pedaliere Dewtron", "ig": None},
+            {"artista": "Geddy Lee", "nota": "dei Rush, fra i nomi che le fonti fanno per primi", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "La Taurus I esce di produzione nel 1981 e la sostituisce la II, con "
+            "18 pedali invece di 13 e in più un'onda a impulso. Poi il silenzio "
+            "per quasi trent'anni. Nel 2010 Moog rimette in produzione la III, "
+            "e il suo capo dice che la farà solo se ne arrivano 250 ordini. "
+            "Arrivano, e ne escono in tutto 1.000, con 52 memorie e un display "
+            "che sulla vecchia nemmeno si immaginava. Chi ne ha una della prima "
+            "serie, secondo me, la tenga dove si vede."
+        ),
+        "avvertenza": "Una nota alla volta, e due slider da muovere con la scarpa. Se pensavate di suonarci un accordo, cercate un altro strumento.",
+        "foto": {
+            "file": "assets/foto/taurus/principale.jpg",
+            "autore": "glacial23",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/taurus/pedali3.jpg",
+             "autore": "glacial23", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "La Taurus III del 2010: più comandi, e sopra un display"},
+        ],
+        "fonti": [
+            {"titolo": "«Moog Taurus» — Wikipedia (EN): modelli, pedali, oscillatori, Constellation, la serie del 2010",
+             "url": "https://en.wikipedia.org/wiki/Moog_Taurus", "data": "2026-10-13"},
+            {"titolo": "«Moog Taurus I» — Vintage Synth Explorer: 13 pedali, 2 oscillatori, filtro, slider, memorie",
+             "url": "https://www.vintagesynth.com/moog/taurus-i", "data": "2026-10-13"},
+            {"titolo": "«Moog Model 205A Taurus Bass Pedal Synthesizer» — SMEM, museo svizzero degli strumenti elettronici",
+             "url": "https://www.smemmusic.ch/fr/node/1972", "data": "2026-10-13"},
+        ],
+        "hashtags": ["#moog", "#taurus", "#sintetizzatore", "#anni70", "#genesis"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 063", "Un sintetizzatore senza tastiera: si suona coi piedi"),
+            ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
+            ("IL SISTEMA MAI USCITO", "Era il terzo pezzo del Constellation, che non è mai uscito."),
+            ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
+            ("GENESIS · RUSH", "Ci hanno suonato Mike Rutherford dei Genesis e Geddy Lee dei Rush."),
+        ],
+        "reel_cta": "Mandalo a chi suona il basso coi piedi",
+        "verificata": True,
+    },
+    {
+        "slug": "echoplex",
+        "numero": 64,
+        "serie": "GLI EFFETTI",
+        "strumento": "Maestro Echoplex",
+        "anno": "1959",
+        "luogo": "Stati Uniti",
+        "costruttore": "Market Electronics, per Maestro",
+        "specifiche": [
+            ("PRIMA SERIE", "1959"),
+            ("PRIMI VENDUTI", "500"),
+            ("EP-3", "1970-91"),
+            ("TESTINA", "scorrevole"),
+        ],
+        "gancio": "Un anello di nastro e una testina che scorre. L'eco si regola spostando un pezzo di metallo",
+        "sottotitolo": "L'inventore non amava il modello che è rimasto in catalogo più a lungo, e lasciò la ditta.",
+        "la_macchina": (
+            "Una scatola nera con un coperchio che si alza. Sotto, un nastro "
+            "chiuso a cerchio e due ruote di plastica bianca. Sul pannello "
+            "ECHO REPEATS, quante volte l'eco si ripete, e un cursore che va da "
+            "SHORT a LONG, cioè da eco corta a eco lunga. Due prese per i "
+            "pedali, una per il playback e una per accendere e spegnere l'eco. "
+            "Il primo modello è a valvole; l'EP-3 del 1970 è a transistor."
+        ),
+        "inventore_nome": "Mike Battle",
+        "inventore": (
+            "Mike Battle lavorava alla Goodyear di Akron, Ohio, e vendeva un "
+            "registratore con due testine. Don Dixon, un chitarrista che "
+            "provava a fare l'eco col nastro, gli telefona per quello. Il "
+            "primo prototipo è fatto con pezzi di un volano e di un motorino "
+            "da ventilatore, in una scatola di latta: «piuttosto grezzo, ma "
+            "funziona bene». Battle voleva una testina che si spostasse. Nel 1959, "
+            "racconta, i primi 500 esemplari vanno alla Chicago Musical "
+            "Instruments, che li vende col marchio Maestro. La Market "
+            "Electronics di Cleveland ne compra il brevetto nel 1962 per "
+            "Wikipedia e nel 1964 per Battle: le date non tornano."
+        ),
+        "come_funziona": (
+            "Il nastro è un anello e gira sempre. Una testina registra quello "
+            "che suonate, un'altra, più avanti, lo rilegge qualche istante "
+            "dopo, ed ecco l'eco. Il ritardo dipende da quanto sono lontane le "
+            "due testine e da quanto è veloce il nastro. Qui il nastro va sempre "
+            "alla stessa velocità e si sposta la testina, quindi cambiare tempo "
+            "non cambia l'intonazione. Per fare ripetere l'eco, parte del suono "
+            "riletto torna alla testina che registra e rifà il giro."
+        ),
+        "richiami": [
+            ("FIG. 1", "Nastro in anello, due ruote"),
+            ("FIG. 2", "Cursore ECHO DELAY: da corta a lunga"),
+            ("FIG. 3", "Manopola ECHO REPEATS"),
+        ],
+        "chi_lusata": [
+            {"artista": "Jimmy Page", "nota": "dei Led Zeppelin: l'eco corta, quasi un rimbalzo, sulle chitarre soliste", "ig": None},
+            {"artista": "Brian May", "nota": "dei Queen: a quanto si legge ne ha modificati, per le armonie di «Brighton Rock»", "ig": None},
+            {"artista": "Eddie Van Halen", "nota": "con l'EP-3", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Nel 1970 Market Electronics chiede a Battle un Echoplex a "
+            "transistor, e lui lo costruisce: è l'EP-3. Poi lo dice chiaro: "
+            "quella direzione non gli piaceva, e lasciò la ditta. Preferiva le "
+            "valvole, perché secondo i musicisti scaldano di più il suono. "
+            "L'EP-3 invece resta in produzione fino al 1991, più di qualsiasi "
+            "altro modello. Quale dei due suoni meglio non so dirlo. Se ne "
+            "trovate uno a valvole e uno a transistor, provateli uno dopo "
+            "l'altro."
+        ),
+        "avvertenza": "Il tempo dell'eco sta su un cursore che sposta davvero una testina. Guardate che scorra, prima di comprarlo.",
+        "foto": {
+            "file": "assets/foto/echoplex/principale.jpg",
+            "autore": "evan p. cordes",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/echoplex/ep4.jpg",
+             "autore": "Drunem2010", "licenza": "CC BY 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il cursore ECHO DELAY e le manopole, visti dall'alto",
+             "ritaglio": True},
+        ],
+        "fonti": [
+            {"titolo": "«Echoplex» — Wikipedia (EN): Battle, Market Electronics, Maestro, i modelli EP-2, EP-3, EP-4",
+             "url": "https://en.wikipedia.org/wiki/Echoplex", "data": "2026-10-13"},
+            {"titolo": "«Mike Battle» — Looper's Delight: i primi 500 del 1959, il brevetto, il registratore dell'amico, EP-3",
+             "url": "https://loopersdelight.com/musings/Mike_Battle/Mike_Battle.html", "data": "2026-10-13"},
+            {"titolo": "«Echoplex, Part I: Pre-Echoplex Days» — Vintage Guitar: Dixon, Battle, Market Electronics",
+             "url": "https://www.vintageguitar.com/1950/echoplex-part-i-pre-echoplex-days", "data": "2026-10-13"},
+        ],
+        "hashtags": ["#echoplex", "#maestro", "#eco", "#chitarra", "#anni60"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 064", "Un anello di nastro e una testina che scorre"),
+            ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
+            ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
+            ("EP-3, 1970", "Battle non amava il transistor e lasciò la ditta."),
+            ("RESTA IN CATALOGO", "Quell'EP-3 si fa fino al 1991. Più di ogni altro modello."),
+        ],
+        "reel_cta": "Mandalo a un chitarrista che ama l'eco",
+        "verificata": True,
+    },
+    {
+        "slug": "leslie",
+        "numero": 65,
+        "serie": "GLI EFFETTI",
+        "strumento": "Leslie",
+        "anno": "1941",
+        "luogo": "Pasadena, California",
+        "costruttore": "Electro Music",
+        "specifiche": [
+            ("PRIMO MODELLO", "1941"),
+            ("ROTORI", "2"),
+            ("GIRI LENTI", "40-50 al min."),
+            ("GIRI VELOCI", "340-400 al min."),
+        ],
+        "gancio": "Hammond lo ascoltò al telefono e disse di no. Don Leslie se lo costruì in garage e lo vendette lo stesso",
+        "sottotitolo": "Un armadio di legno con dentro una tromba e un tamburo che girano, per rendere meno piatto l'organo.",
+        "la_macchina": (
+            "Un armadio di legno con le persiane davanti. Dentro, in basso, c'è l'altoparlante dei bassi "
+            "con un tamburo che gli gira intorno; in alto un driver per gli "
+            "acuti con una tromba che gira anch'essa. Due velocità, che "
+            "chiamano CHORALE e TREMOLO. Il modello più diffuso è il 122, "
+            "poi c'è il 147, che funziona con più organi, e il 145, "
+            "che è lo stesso in un mobile da 33 pollici."
+        ),
+        "inventore_nome": "Don Leslie",
+        "inventore": (
+            "Donald Leslie era un tecnico radio di Los Angeles, nato nel 1911 a "
+            "Danville, Illinois. Nel 1937 compra un organo Hammond e in una "
+            "stanza piccola lo trova spento, acuto e fermo. Costruisce un prototipo, e "
+            "nel 1940 lo fa sentire a Hammond in un negozio di Los Angeles, "
+            "con Laurens Hammond che ascolta per telefono da Chicago. Hammond "
+            "ne vendeva già uno suo e non apprezzò l'effetto. Nel 1941 Leslie "
+            "fonda la Electro Music a Pasadena e chiama l'aggeggio Vibratone "
+            "30A. Lo costruisce in garage."
+        ),
+        "come_funziona": (
+            "L'altoparlante sta fermo e gira la tromba che gli sta davanti: "
+            "il suono parte ora in una direzione e ora in un'altra, e chi "
+            "ascolta sente il timbro ondeggiare e l'intonazione, per effetto "
+            "Doppler, oscillare un poco. A velocità lenta la tromba fa circa "
+            "50 giri al minuto e il tamburo 40, a velocità alta 400 e 340. "
+            "Quella lenta si chiama CHORALE, quella veloce TREMOLO."
+        ),
+        "richiami": [
+            ("FIG. 1", "Cassa con le persiane"),
+            ("FIG. 2", "Tromba e tamburo che girano"),
+            ("FIG. 3", "Due velocità: CHORALE e TREMOLO"),
+        ],
+        "chi_lusata": [
+            {"artista": "Jimmy Smith", "nota": "organista jazz, uno dei nomi che le fonti fanno per primi", "ig": None},
+            {"artista": "Beatles", "nota": "su «Tomorrow Never Knows», 1966, dove ci passa la voce di Lennon", "ig": None},
+            {"artista": "Richard Wright", "nota": "dei Pink Floyd, tastierista", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Hammond cambia l'interfaccia degli altoparlanti sui suoi organi "
+            "per renderli a prova di Leslie. Leslie ci mette poco ad "
+            "aggirare il problema. Eppure, dice Wikipedia, degli organi "
+            "Hammond lui non aveva stima: li avrebbe chiamati «quei "
+            "maledetti aggeggi». Nel 1965 vende la ditta alla CBS. Hammond "
+            "compra il nome Leslie nel 1980, o negli anni intorno: le fonti "
+            "non coincidono. Mi piace la storia di un uomo che ha fatto "
+            "la fortuna di un organo che non sopportava."
+        ),
+        "avvertenza": "Tromba e tamburo girano a velocità diverse, 400 e 340 giri al minuto sul veloce. Controllate che si muovano tutti e due, prima di pagarlo.",
+        "foto": {
+            "file": "assets/foto/leslie/rockfield.jpg",
+            "autore": "Steve Knight",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/leslie/acrilico.jpg",
+             "autore": "Hustvedt", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Un mobile trasparente: in primo piano l'altoparlante dei bassi, intorno i meccanismi"},
+        ],
+        "fonti": [
+            {"titolo": "«Leslie speaker» — Wikipedia (EN): modelli, velocità, Hammond, CBS, chi lo ha usato",
+             "url": "https://en.wikipedia.org/wiki/Leslie_speaker", "data": "2026-10-13"},
+            {"titolo": "«Donald Leslie» — Wikipedia (EN): 1911, la dimostrazione del 1940, Electro Music, 48 brevetti",
+             "url": "https://en.wikipedia.org/wiki/Donald_Leslie", "data": "2026-10-13"},
+            {"titolo": "«Don Leslie» — Procol Harum, necrologio del 2004: Hammond, Electro Music, CBS 1965, 48 brevetti, Hammond e il 1980",
+             "url": "https://procolharum.com/99/leslie_obit.htm", "data": "2026-10-13"},
+        ],
+        "hashtags": ["#leslie", "#hammond", "#organo", "#effetti", "#donleslie"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 065", "Hammond lo ascoltò al telefono e disse di no"),
+            ("DON LESLIE", "Nel 1940 fa sentire il prototipo. Hammond non apprezza l'effetto."),
+            ("1941", "Fonda la Electro Music a Pasadena e lo costruisce in garage."),
+            ("TROMBA E TAMBURO", "Dentro girano una tromba e un tamburo, fino a 400 giri al minuto."),
+            ("1966", "I Beatles ci passano la voce di Lennon in «Tomorrow Never Knows»."),
+        ],
+        "reel_cta": "Mandalo a chi suona l'organo",
+        "verificata": True,
+    },
 ]
 
 

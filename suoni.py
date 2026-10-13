@@ -233,7 +233,8 @@ VOCE_SCHEDA = {
     "synket": "sega", "novachord": "sega", "spaceecho": "sega",
     "arpodyssey": "sega", "crumards2": "sega", "buchla": "sega",
     "oberheim4voice": "sega", "sh101": "sega", "polymoog": "sega",
-    "wasp": "sega",
+    "wasp": "sega", "taurus": "sega",
+    "echoplex": "studio", "leslie": "organo",
     "tb303": "acido",
     # digitali: FM, campionatori, tavole d'onda
     "dx7": "fm", "fairlight": "fm", "synclavier": "fm", "emulator": "fm",
