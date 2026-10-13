@@ -87,8 +87,15 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 - Formato: carosello 6 slide (copertina / la macchina / chi l'ha
   costruita / come funziona / chi l'ha usata / aneddoto+fonti).
 - **Reel «formato 2»** (dal 07/10/2026, vedi la sezione «I numeri» qui
-  sotto): 5 battute da 2,6 s (`reel_battute`, coppie kick/testo) + la
-  chiusura con `reel_cta`, 15,6 s in tutto, file `reel2.mp4`. La prima
+  sotto): 5 battute (`reel_battute`, coppie kick/testo) + la chiusura con
+  `reel_cta`, file `reel2.mp4`. **Ogni battuta dura quanto serve a
+  leggerla** (dal 13/10/2026, `durata_battuta` in `genera_reel.py`: 0,5 s
+  + il testo a 17 caratteri al secondo, fra 2,6 e 5 s; 20-25 s in tutto).
+  Prima erano 2,6 s fissi, 15,6 s in tutto: la battuta mediana è di 64
+  caratteri, cioè 25 caratteri al secondo contro i 15-17 dei sottotitoli,
+  e nei commenti la gente ha scritto che le slide erano troppo veloci. Il
+  conto si poteva fare prima di pubblicarne 13. Nel file di stato i reel
+  nuovi hanno `"ritmo": "lettura"` e `metriche.py` li confronta a parte. La prima
   battuta è il fatto più sorprendente della scheda e sta sullo schermo
   dal fotogramma 0. Ogni battuta è un fatto che sta GIÀ nella scheda
   (stessa regola delle due fonti: le battute non aggiungono fatti, li
@@ -416,7 +423,13 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   dall'app. Non è un permesso mancante: l'endpoint non esiste per
   nessuno. Non riproporlo come se fosse un problema di scope.
 - Commenti: `commenti.py` elenca quelli mai visti; `commenti.rispondi()`
-  pubblica una risposta. NON si risponde con template automatici: le
+  pubblica una risposta. **ATTENZIONE (13/10/2026): non ha mai letto un
+  commento.** L'API dà `comments_count` giusto (fino a 5 su un post) ma
+  `/comments` torna SEMPRE `data: []`, anche sui commenti che abbiamo
+  scritto noi; `commenti.json` non è mai stato creato. È la stessa
+  famiglia del 200 ai parametri inesistenti: una risposta vuota sembra
+  «nessun commento». I commenti li ha letti il proprietario dall'app.
+  Diagnosi: `commenti.yml` con `grezzo` stampa la risposta così com'è. NON si risponde con template automatici: le
   risposte le scrive la sessione di presidio, che ha letto il commento.
 - Un titolo dentro un flex viene compresso e l'autofit lo taglia:
   `flex:none` sui titoli (già nel CSS base).

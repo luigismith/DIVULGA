@@ -157,6 +157,10 @@ def main(slug):
     stato.setdefault("reel", []).append({
         "slug": slug,
         "formato": FORMATO,
+        # Dal 13/10/2026 le battute durano quanto serve a leggerle (i
+        # commenti dicevano «troppo veloci»): `metriche.py` li tiene
+        # separati dai reel a 2,6 s fissi per poterli confrontare.
+        "ritmo": genera_reel.RITMO,
         **({"fuori_catalogo": True} if speciale is not None else {}),
         "quando": dt.datetime.now(dt.timezone.utc).isoformat(),
         "media_id": media_id,

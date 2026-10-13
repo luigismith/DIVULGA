@@ -162,7 +162,10 @@ def slug_per_media():
     for r in stato.get("reel", []):
         # I fuori catalogo (speciali.py) stanno a parte: un reel promozionale
         # nel confronto fra formato 1 e formato 2 falserebbe il confronto.
+        # «reel2l»: formato 2 col ritmo di lettura (dal 13/10/2026, battute
+        # lunghe quanto serve a leggerle invece di 2,6 s fissi).
         ruolo = ("speciale" if r.get("fuori_catalogo")
+                 else "reel2l" if r.get("formato", 1) == 2 and r.get("ritmo") == "lettura"
                  else "reel2" if r.get("formato", 1) == 2 else "reel")
         if r.get("media_id"):
             mappa[r["media_id"]] = (r["slug"], ruolo)
@@ -212,7 +215,8 @@ def riassunto(dati):
                   f"cond={i.get('shares')} salv={i.get('saved')}")
     # Il confronto che conta: formato 1 contro formato 2, stesse metriche.
     print("\nREEL PER FORMATO (mediane):")
-    for ruolo, nome in (("reel", "formato 1"), ("reel2", "formato 2")):
+    for ruolo, nome in (("reel", "formato 1"), ("reel2", "formato 2"),
+                        ("reel2l", "formato 2, ritmo di lettura")):
         g = [m["insights"] for m in dati["media"] if m.get("ruolo") == ruolo]
         if not g:
             print(f"  {nome}: nessun reel"); continue

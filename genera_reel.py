@@ -23,9 +23,10 @@ Il formato 2 è l'opposto, punto per punto:
   · la foto riempie lo schermo; il testo sta in un pannello bruno che ne
     copre meno di un terzo, nella zona che l'interfaccia di Instagram non
     copre (sopra i 420px in basso, lontano dalla colonna dei bottoni);
-  · 5 battute da 2,6 secondi che raccontano UNA storia in ordine, poi la
-    chiamata a MANDARLO a qualcuno (gli invii pesano più di tutto per chi
-    non ci segue: Mosseri, 21/01/2025), 15,6 secondi in tutto;
+  · 5 battute che raccontano UNA storia in ordine, poi la chiamata a
+    MANDARLO a qualcuno (gli invii pesano più di tutto per chi non ci
+    segue: Mosseri, 21/01/2025); ogni battuta resta quanto serve a
+    leggerla (vedi `durata_battuta`), 20-25 secondi in tutto;
   · stacchi netti fra le battute, e l'ultima torna sulla prima
     inquadratura, così il giro ricomincia senza un salto.
 
@@ -56,7 +57,22 @@ RADICE = pathlib.Path(__file__).resolve().parent
 L, H = 1080, 1920          # come si disegna
 LARG, ALT = 720, 1280      # come si esporta
 FPS = 30
-SEC_BATTUTA = 2.6
+# QUANTO RESTA UNA BATTUTA (13/10/2026). Fino a qui erano 2,6 secondi
+# fissi, e nei commenti la gente ha scritto che le slide erano troppo
+# veloci. Aveva ragione, ed era un conto da fare prima: la battuta
+# mediana è di 64 caratteri, cioè 25 caratteri al secondo, mentre i
+# sottotitoli si tengono fra 15 e 17 (17 è il tetto per gli adulti delle
+# linee guida Netflix). Chi non fa in tempo a leggere non capisce il
+# reel, e un reel che non si capisce non si manda a nessuno.
+# Ora: mezzo secondo per accorgersi dello stacco, più il testo a 17
+# caratteri al secondo; mai meno di 2,6 (le battute corte restano
+# svelte) e mai più di 5 (oltre, la foto ferma annoia).
+# Si giudica sui numeri (`metriche.py`, ruolo «reel2l»), non a occhio.
+RITMO = "lettura"
+CARATTERI_AL_SECONDO = 17
+SEC_REAZIONE = 0.5
+SEC_MIN, SEC_MAX = 2.6, 5.0
+SEC_CHIUSURA_MIN = 3.0     # la chiusura ha anche l'handle da leggere
 # Le zone che l'interfaccia di Instagram copre su un reel: in alto
 # l'intestazione «Reel» e la fotocamera, in basso nome, didascalia e
 # audio, a destra la colonna dei bottoni. Il testo vive fra le due.
@@ -251,6 +267,7 @@ def battute(scheda):
         # «i3» nel reel di Cirmolo). Lì si usa solo lo zoom centrato.
         moti = scheda.get("reel_moti") or MOTI
         out.append({"foto": i, "moto": moti[i % len(moti)],
+                    "sec": durata_battuta(testo),
                     "html": f'<div class="pannello"><div class="kick">{kick}</div>'
                             f'<div class="hook">{testo}</div></div>{tag}'})
     # Un contenuto fuori catalogo (speciali.py) non ha un numero di scheda:
@@ -259,10 +276,16 @@ def battute(scheda):
     # Chiusura: stessa foto e stesso movimento della prima battuta, così
     # quando il reel ricomincia non c'è uno stacco.
     out.append({"foto": 0, "moto": MOTI[0],
+                "sec": durata_battuta(scheda["reel_cta"], SEC_CHIUSURA_MIN),
                 "html": f'<div class="pannello"><div class="kick">{escape(chiusura, quote=False)}</div>'
                         f'<div class="hook">{escape(scheda["reel_cta"], quote=False)}</div>'
                         f'<span class="handle">@ELETTROFONI</span></div>{tag}'})
     return out
+
+
+def durata_battuta(testo, minimo=SEC_MIN):
+    """Secondi sullo schermo per un testo (vedi il commento a RITMO)."""
+    return min(SEC_MAX, max(minimo, SEC_REAZIONE + len(testo) / CARATTERI_AL_SECONDO))
 
 
 # ------------------------------------------------------------ montaggio ---
@@ -370,9 +393,11 @@ def costruisci(scheda, cartella=None):
         b.close()
 
     ff = _ff()
-    n = int(SEC_BATTUTA * FPS)
     clip = []
+    durata = 0.0
     for i, bt in enumerate(sequenza):
+        n = round(bt["sec"] * FPS)
+        durata += n / FPS
         f = foto[bt["foto"] % len(foto)]
         c = lavoro / f"c{i}.mp4"
         _esegui([ff, "-y", "-loglevel", "error",
@@ -392,7 +417,8 @@ def costruisci(scheda, cartella=None):
     _esegui([ff, "-y", "-loglevel", "error", "-f", "concat", "-safe", "0",
              "-i", str(elenco), "-c", "copy", str(muto)])
 
-    durata = SEC_BATTUTA * len(clip)
+    print(f"[reel] ritmo «{RITMO}»: " + " + ".join(f"{b['sec']:.1f}" for b in sequenza)
+          + f" = {durata:.1f} s")
     wav = lavoro / "musica.wav"
     _audio(scheda, wav, durata, ff)
 
