@@ -56,10 +56,16 @@ def main():
 
     nuovi = []
     for m in media:
-        if not m.get("comments_count"):
+        # Con --tutti non ci si fida di comments_count: il 13/10/2026 lo
+        # script diceva «nessun commento» mentre il proprietario li leggeva
+        # nell'app. Si chiedono sempre, e si stampa cosa risponde l'API.
+        if not tutti and not m.get("comments_count"):
             continue
         commenti = api("GET", f"{m['id']}/comments", token,
                        fields="id,text,username,timestamp,like_count").get("data", [])
+        if tutti:
+            print(f"  · {m.get('permalink')} {m.get('media_product_type')}: "
+                  f"comments_count={m.get('comments_count')}, letti={len(commenti)}")
         for c in commenti:
             # I nostri stessi commenti (la menzione automatica) non sono
             # da presidiare: sono roba nostra.
