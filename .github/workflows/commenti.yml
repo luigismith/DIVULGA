@@ -11,6 +11,11 @@ on:
         required: false
         default: '30'
         type: string
+      grezzo:
+        description: 'Stampa la risposta grezza dell API (diagnosi)'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -27,4 +32,4 @@ jobs:
       - env:
           STATE_KEY: ${{ secrets.STATE_KEY }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-        run: python commenti.py --tutti --post "${{ inputs.post }}"
+        run: python commenti.py --tutti --post "${{ inputs.post }}" ${{ inputs.grezzo && '--grezzo' || '' }}

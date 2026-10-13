@@ -54,6 +54,25 @@ def main():
                 fields="id,permalink,comments_count,media_product_type",
                 limit=quanti).get("data", [])
 
+    if "--grezzo" in sys.argv:
+        # Diagnosi (13/10/2026): comments_count > 0 ma /comments vuoto su
+        # tutti i post, compresi i nostri primi commenti. Si stampa la
+        # risposta dell'API così com'è, su tre forme della stessa domanda.
+        for m in [m for m in media if m.get("comments_count")][:3]:
+            print("==", m["permalink"])
+            for desc, perc, par in (
+                ("edge senza campi", f"{m['id']}/comments", {}),
+                ("edge con campi", f"{m['id']}/comments",
+                 {"fields": "id,text,username,timestamp"}),
+                ("campo annidato", m["id"],
+                 {"fields": "comments_count,comments{id,text,username,timestamp}"}),
+            ):
+                try:
+                    print(f"  {desc}: {json.dumps(api('GET', perc, token, **par))[:600]}")
+                except Exception as e:
+                    print(f"  {desc}: ERRORE {str(e)[:400]}")
+        return
+
     nuovi = []
     for m in media:
         # Con --tutti non ci si fida di comments_count: il 13/10/2026 lo
