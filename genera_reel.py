@@ -272,7 +272,10 @@ def battute(scheda):
                             f'<div class="hook">{testo}</div></div>{tag}'})
     # Un contenuto fuori catalogo (speciali.py) non ha un numero di scheda:
     # la chiusura dice dove trovarlo.
-    chiusura = scheda.get("reel_kick_chiusura") or f'ELETTROFONI · N. {scheda["numero"]:03d}'
+    # Dal 15/10/2026 la chiusura dice dove sta il resto: chi arriva in
+    # fondo è proprio chi vuole saperne di più, e il numero di scheda a
+    # lui non diceva niente.
+    chiusura = scheda.get("reel_kick_chiusura") or "6 SLIDE E FONTI SUL PROFILO"
     # Chiusura: stessa foto e stesso movimento della prima battuta, così
     # quando il reel ricomincia non c'è uno stacco.
     out.append({"foto": 0, "moto": MOTI[0],

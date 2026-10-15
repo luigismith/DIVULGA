@@ -5693,11 +5693,17 @@ def componi_didascalia_reel(scheda, menzioni=True):
         # punto si attaccherebbero l'una all'altra.
         t = t.strip()
         return t if t[-1] in ".!?…" else t + "."
-    righe = [frase(b[0][1]), ""]
+    # La seconda riga dice dove sta il resto (15/10/2026, il proprietario:
+    # «se qualcuno vuole sapere qualcosa di più, come fa?»). Un link
+    # cliccabile verso il carosello l'API non lo permette (non nelle
+    # didascalie, non nelle storie: vedi CLAUDE.md, 29/09/2026); una
+    # menzione sì, ed è cliccabile anche nell'anteprima di due righe sotto
+    # il reel. Prima questa indicazione stava alla quarta riga, cioè dopo
+    # «…altro», dove non la leggeva nessuno.
+    righe = [frase(b[0][1]),
+             f"Le 6 slide con tutta la storia e le fonti: @elettrofoni, "
+             f"il post «{scheda['strumento']}».", ""]
     righe.append(" ".join(frase(t) for _, t in b[1:]))
-    righe.append("")
-    righe.append(f"{scheda['strumento']} · {scheda['anno']}. La scheda completa, "
-                 "con le fonti, è nel profilo: @elettrofoni")
     righe.append("")
     usi = [f"@{u['ig']}" if (u.get("ig") and menzioni) else u["artista"]
            for u in scheda["chi_lusata"]]

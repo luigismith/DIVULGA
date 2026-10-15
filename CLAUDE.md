@@ -416,6 +416,17 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   verifica che non puo' dire di no. L'unica prova e' pubblicare e
   guardare il risultato. Vale per qualunque parametro nuovo, non solo per
   gli sticker.
+- **Dal reel al carosello** (15/10/2026, il proprietario: «se qualcuno
+  vuole sapere qualcosa di più, come fa?»). Un link cliccabile al post
+  non si può mettere da qui: nelle didascalie i link non sono cliccabili
+  per nessuno, e lo sticker link delle storie l'API non lo ha (vedi
+  sopra, 29/09). Quello che si fa in automatico: seconda riga della
+  didascalia del reel «Le 6 slide…: @elettrofoni, il post «X»» (la
+  menzione è cliccabile anche nell'anteprima) e la chiusura del video
+  dice «6 SLIDE E FONTI SUL PROFILO». Il link vero può metterlo solo il
+  proprietario dall'app: condividere il carosello nella storia (il post
+  diventa toccabile) e l'archivio `luigismith.github.io/DIVULGA/` fra i
+  link della bio (ogni scheda ha la sua pagina con slide e testo).
 - COSA L'API NON CONSENTE (verificato il 27/08/2026 con
   `diagnostica_api.py`): il profilo è in sola lettura. `POST /me` con
   `biography` risponde 400 «does not support this operation». Bio, nome,
