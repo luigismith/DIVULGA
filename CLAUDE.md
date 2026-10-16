@@ -109,6 +109,14 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   «invece», «allora», «anche», «quindi» né usa una cosa mai detta («le
   due letture») se il riferimento non sta nella battuta subito prima o
   nel suo kick. Controllate tutte le 65 schede: corrette H910 e CS-80.
+  **Un tempo solo, il presente, e la macchina si nomina** (16/10/2026,
+  commento sul Buchla: «un minimo di sintassi, altro che sintesi»). La
+  battuta 1 era al passato remoto («Don Buchla si rifiutò…») e la 2 al
+  presente con un «Lo consegna» che non si riferiva a niente: il synth
+  non era mai stato nominato. Era così in 10 schede; corrette le 3 che
+  devono ancora uscire (VCS3, Buchla Easel, Leslie). Regola: tutte le
+  battute al presente; la prima volta la macchina e le persone si
+  chiamano per nome, mai «lo», «ci», «lui» senza un nome prima.
 - **Una CTA sola per scheda e per formato**, a rotazione fra tre forme (`CTA_FORME` in
   `contenuti.py`, scelta sul numero della scheda quindi sempre identica in
   didascalia, tavola e reel): tagga chi l'ha suonata / quale macchina
@@ -449,6 +457,11 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   foto profilo e link in bio li può cambiare SOLO il proprietario
   dall'app. Non è un permesso mancante: l'endpoint non esiste per
   nessuno. Non riproporlo come se fosse un problema di scope.
+- **Direct** (16/10/2026): `direct.py` / `direct.yml` li legge (sola
+  lettura). Come per i commenti, si risponde solo col via del proprietario.
+- **Risposte ai commenti**: si scrivono in `risposte.json` SOLO dopo il via
+  del proprietario e le pubblica `rispondi.yml` (una ogni 2 minuti; le voci
+  fatte si segnano, un secondo lancio non risponde due volte).
 - Commenti: `commenti.py` elenca quelli mai visti; `commenti.rispondi()`
   pubblica una risposta. **ATTENZIONE (13/10/2026): non ha mai letto un
   commento.** L'API dà `comments_count` giusto (fino a 5 su un post) ma
