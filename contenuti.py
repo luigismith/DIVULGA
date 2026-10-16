@@ -1085,6 +1085,14 @@ SCHEDE = [
             ("IL PIANTO DI R2-D2", "Ci mette 6 mesi. Ne esce un pianto acuto che riconoscono tutti"),
         ],
         "reel_cta": "Mandalo a chi sa fare la voce di R2-D2",
+        # Registrazione della macchina vera (16/10/2026): licenza libera,
+        # verificata sulla pagina Freesound (descrizione + licenza).
+        "reel_audio": {
+            "file": "assets/audio/arp2600/registrazione.mp3", "inizio": 0,
+            "autore": "jonopodmore", "licenza": "CC BY 4.0",
+            "fonte": "freesound.org/s/70145",
+            "cosa": "un ARP 2600 vero: i 3 oscillatori su una scala esatonale, il filtro mosso a mano",
+        },
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     {
@@ -1180,6 +1188,15 @@ SCHEDE = [
             ("1972 · FRANCO BATTIATO", "Battiato va fino a Londra a prenderlo. Ci incide «Fetus»"),
         ],
         "reel_cta": "Mandalo a chi ha tutti i dischi di Battiato",
+        # Registrazione della macchina vera (16/10/2026): licenza libera,
+        # verificata sulla pagina Freesound. Il file è un estratto di 60 s
+        # (da 2:00) dei 23 minuti originali, per non appesantire il repo.
+        "reel_audio": {
+            "file": "assets/audio/vcs3/registrazione.mp3", "inizio": 5,
+            "autore": "missionariojose", "licenza": "CC BY 4.0",
+            "fonte": "freesound.org/s/205611",
+            "cosa": "un VCS3 vero, quello dell'Università di Bangor, su una delle patch del suo manuale",
+        },
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     {
@@ -1943,6 +1960,14 @@ SCHEDE = [
             ("DAVID LYNCH", "Lynch campiona lo stesso disco. Nel 2017 è in «Twin Peaks: The Return»"),
         ],
         "reel_cta": "Mandalo a chi ha visto tutto «Twin Peaks»",
+        # Registrazione della macchina vera (16/10/2026): licenza libera,
+        # verificata sulla pagina Freesound (descrizione + licenza).
+        "reel_audio": {
+            "file": "assets/audio/optigan/registrazione.mp3", "inizio": 0,
+            "autore": "Make Noise", "licenza": "CC0 1.0",
+            "fonte": "freesound.org/s/522914",
+            "cosa": "pattern di batteria letti dai dischi ottici di un Optigan vero",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 23
@@ -2158,6 +2183,14 @@ SCHEDE = [
             ("SE NE TROVATE UNO USATO", "Quasi di sicuro ha già perso e ritrovato almeno una voce."),
         ],
         "reel_cta": "Mandalo a chi sta per comprare un Juno-106",
+        # Registrazione della macchina vera (16/10/2026): licenza libera,
+        # verificata sulla pagina Freesound (descrizione + licenza).
+        "reel_audio": {
+            "file": "assets/audio/juno106/registrazione.mp3", "inizio": 225,
+            "autore": "missionariojose", "licenza": "CC BY 4.0",
+            "fonte": "freesound.org/s/219360",
+            "cosa": "uno Juno-106 vero in un'improvvisazione registrata diretta",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 26
@@ -3349,6 +3382,14 @@ SCHEDE = [
             ("1982 · SPIELBERG", "Lo dà a Elliott, modificato, per costruire il comunicatore di «E.T.»."),
         ],
         "reel_cta": "Mandalo a chi aveva il Grillo Parlante",
+        # Registrazione della macchina vera (16/10/2026): licenza libera,
+        # verificata sulla pagina Freesound (descrizione + licenza).
+        "reel_audio": {
+            "file": "assets/audio/speakspell/registrazione.mp3", "inizio": 0,
+            "autore": "deaf02", "licenza": "CC0 1.0",
+            "fonte": "freesound.org/s/563030",
+            "cosa": "uno Speak & Spell vero che recita l'alfabeto",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 43
@@ -4660,6 +4701,14 @@ SCHEDE = [
             ("A GUY CALLED GERALD, 1988", "«Voodoo Ray»: il basso è una nota sola, col sub tirato su."),
         ],
         "reel_cta": "Mandalo a chi suona la tastiera a tracolla",
+        # Registrazione della macchina vera (16/10/2026): licenza libera,
+        # verificata sulla pagina Freesound (descrizione + licenza).
+        "reel_audio": {
+            "file": "assets/audio/sh101/registrazione.mp3", "inizio": 0,
+            "autore": "druidbloke", "licenza": "CC0 1.0",
+            "fonte": "freesound.org/s/167115",
+            "cosa": "un SH-101 vero che suona una linea di basso acid",
+        },
         "verificata": True,
     },
     {
@@ -5589,6 +5638,14 @@ SCHEDE = [
             ("1966", "I Beatles ci passano la voce di Lennon in «Tomorrow Never Knows»."),
         ],
         "reel_cta": "Mandalo a chi suona l'organo",
+        # Registrazione della macchina vera (16/10/2026): licenza libera,
+        # verificata sulla pagina Freesound (descrizione + licenza).
+        "reel_audio": {
+            "file": "assets/audio/leslie/registrazione.mp3", "inizio": 2,
+            "autore": "MrAuralization", "licenza": "CC BY 4.0",
+            "fonte": "freesound.org/s/158628",
+            "cosa": "un organo Hammond serie H che suona attraverso un cabinet Leslie vero",
+        },
         "verificata": True,
     },
     {
