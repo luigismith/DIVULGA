@@ -28,6 +28,10 @@
    "file": "tavole/hammond/reel2.jpg",
    "firma": "a3e84269c49ea6c0-1"
   },
+  "korgm1": {
+   "file": "tavole/korgm1/reel2.jpg",
+   "firma": "ef1c9e8ba830dc2f-1"
+  },
   "mellotron": {
    "file": "tavole/mellotron/reel2.jpg",
    "firma": "70b2cc7c43639264-1"
@@ -433,6 +437,26 @@
     ]
    },
    "firma": "8ebc35eac1978ab5-320-640-1280-1"
+  },
+  "korgm1": {
+   "1280": "foto/korgm1-1280.jpg",
+   "320": "foto/korgm1-320.jpg",
+   "640": "foto/korgm1-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     583
+    ],
+    "320": [
+     320,
+     146
+    ],
+    "640": [
+     640,
+     292
+    ]
+   },
+   "firma": "00b4c38f5c5e724d-320-640-1280-1"
   },
   "lm1": {
    "1280": "foto/lm1-1280.jpg",
@@ -1165,6 +1189,11 @@
    "file": "suoni/juno106.mp3",
    "firma": "2f1cf15e10d54d3b-225-45-1",
    "secondi": 45
+  },
+  "korgm1": {
+   "file": "suoni/korgm1.mp3",
+   "firma": "c741b2105bfd4871-10-45-1",
+   "secondi": 22.3
   },
   "optigan": {
    "file": "suoni/optigan.mp3",
