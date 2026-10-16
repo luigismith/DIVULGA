@@ -1188,6 +1188,15 @@ SCHEDE = [
             ("1972 · FRANCO BATTIATO", "Battiato va fino a Londra a prenderlo. Ci incide «Fetus»"),
         ],
         "reel_cta": "Mandalo a chi ha tutti i dischi di Battiato",
+        # Registrazione della macchina vera (16/10/2026): licenza libera,
+        # verificata sulla pagina Freesound. Il file è un estratto di 60 s
+        # (da 2:00) dei 23 minuti originali, per non appesantire il repo.
+        "reel_audio": {
+            "file": "assets/audio/vcs3/registrazione.mp3", "inizio": 5,
+            "autore": "missionariojose", "licenza": "CC BY 4.0",
+            "fonte": "freesound.org/s/205611",
+            "cosa": "un VCS3 vero, quello dell'Università di Bangor, su una delle patch del suo manuale",
+        },
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     {
