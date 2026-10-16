@@ -463,6 +463,12 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   causa più probabile è l'app Meta in modalità Sviluppo, che si sistema
   SOLO dal pannello sviluppatori col login del proprietario. Pronte per
   il passaggio a Live: `docs/privacy.html` e `docs/cancellazione-dati.html`.
+  **RISOLTO il 16/10/2026:** il proprietario ha pubblicato l'app
+  («Elettrofoni publisher», da «In fase di sviluppo» a Live) e i
+  commenti si leggono tutti, testo e autore (il nome sta in
+  `from{username}`, non in `username`). In modalità Sviluppo il Graph
+  restituisce `data: []` senza errore: un'altra verifica che non può
+  dire di no.
   **I commenti si leggono OGNI GIORNO** (proprietario, 16/10/2026: «leggi
   sempre i commenti e valutiamo insieme i feedback e troviamo
   soluzioni»): lo fa la rete delle 18:20, punto 3. Finché l'API li dà
