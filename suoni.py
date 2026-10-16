@@ -233,7 +233,7 @@ VOCE_SCHEDA = {
     "synket": "sega", "novachord": "sega", "spaceecho": "sega",
     "arpodyssey": "sega", "crumards2": "sega", "buchla": "sega",
     "oberheim4voice": "sega", "sh101": "sega", "polymoog": "sega",
-    "wasp": "sega", "taurus": "sega",
+    "wasp": "sega", "taurus": "sega", "poly800": "sega",
     "echoplex": "studio", "leslie": "organo",
     "tb303": "acido",
     # digitali: FM, campionatori, tavole d'onda
@@ -250,11 +250,11 @@ VOCE_SCHEDA = {
     "theremin": "onda", "ondes": "onda", "trautonium": "onda",
     "ondioline": "onda", "buchlaeasel": "onda",
     # elettromeccanici a corda o barretta
-    "rhodes": "corda", "clavinet": "corda", "wurlitzer200a": "corda",
+    "rhodes": "corda", "clavinet": "corda", "pianet": "corda", "wurlitzer200a": "corda",
     # generatori di laboratorio e studio
     "vcs3": "studio", "fonologia": "studio", "h910": "studio", "phase90": "studio",
     # elettronica da pochi soldi
-    "stylophone": "giocattolo", "speakspell": "giocattolo", "vl1": "giocattolo",
+    "stylophone": "giocattolo", "omnichord": "giocattolo", "speakspell": "giocattolo", "vl1": "giocattolo",
     # ritmiche: la voce sta sotto, comanda la batteria (vedi CON_BATTERIA)
     "tr808": "sega", "tr909": "sega", "tr606": "sega", "lm1": "sega",
     "dmx": "sega", "simmonssds5": "sega", "mpc60": "sega", "sp1200": "sega",

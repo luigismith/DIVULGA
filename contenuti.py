@@ -5591,6 +5591,283 @@ SCHEDE = [
         "reel_cta": "Mandalo a chi suona l'organo",
         "verificata": True,
     },
+    {
+        "slug": "poly800",
+        "numero": 66,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Korg Poly-800",
+        "anno": "1983",
+        "luogo": "Giappone",
+        "costruttore": "Korg",
+        "specifiche": [
+            ("LANCIO", "1983"),
+            ("PREZZO", "795 $"),
+            ("VOCI", "8 (o 4)"),
+            ("TASTI", "49"),
+        ],
+        "gancio": "Costava 795 dollari e andava a pile. Atkins, May e Saunderson, i tre del techno di Detroit, ne avevano uno",
+        "sottotitolo": "Otto voci programmabili sotto gli 800 dollari, e un solo filtro per tutte.",
+        "la_macchina": (
+            "49 tasti senza dinamica, 64 programmi in memoria e un sequencer da 256 passi. "
+            "Va a pile e ha i ganci per la tracolla, quindi si può suonare "
+            "in piedi come una tastiera da collo. Ha un joystick per modulare. "
+            "Le voci sono 8, ma ogni voce ha due oscillatori: se li accendete "
+            "tutti e due, il suono si fa più pieno e le voci scendono a 4. "
+            "I programmi si salvano su cassetta."
+        ),
+        "inventore_nome": "Korg",
+        "inventore": (
+            "Lo presenta Korg nel 1983. Il nome di chi l'ha disegnato non l'ho "
+            "trovato in nessuna fonte, e non ne invento uno. Nel 1984 esce l'EX-800, la stessa "
+            "elettronica senza tastiera, da montare in un rack. Nel 1986 il "
+            "Poly-800 II: al posto del chorus un delay digitale, e finalmente "
+            "i messaggi SysEx per scambiare i suoni col computer."
+        ),
+        "come_funziona": (
+            "Gli oscillatori sono digitali (DCO) e fanno dente di sega e "
+            "onda quadra, con del rumore bianco da mescolare. Ogni oscillatore ha "
+            "un inviluppo a 6 stadi: Attack, Decay, Break Point, Slope, Sustain, "
+            "Release. Il filtro passa-basso risonante però è uno solo, "
+            "condiviso da tutte le voci. Per questo lo chiamano paraphonic e non "
+            "polifonico fino in fondo."
+        ),
+        "richiami": [
+            ("FIG. 1", "Tastiera da 49 tasti e joystick"),
+            ("FIG. 2", "Pannello con i 64 programmi"),
+            ("FIG. 3", "Ganci per la tracolla"),
+        ],
+        "chi_lusata": [
+            {"artista": "Juan Atkins", "nota": "uno dei tre di Belleville, Detroit: ne aveva uno in studio", "ig": None},
+            {"artista": "Derrick May", "nota": "ce l'ha nelle liste degli strumenti prima del 1990", "ig": None},
+            {"artista": "Kevin Saunderson", "nota": "ce l'aveva intorno al 1988, quando nasce Inner City", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Il prezzo dipende da chi lo racconta. 795 dollari per Wikipedia, "
+            "«meno di 800» nella pubblicità Korg su Musician nel 1984, 575 "
+            "sterline per l'Inghilterra. Anche gli anni non tornano: 1983-1987 "
+            "da una parte, 1984-1986 dall'altra. Sul filtro unico invece "
+            "tutti sono d'accordo: The Mix lo chiama un difetto grosso, "
+            "da string machine. Nel 1994 la stessa rivista lo dava usato "
+            "a 100-130 sterline, con il voto più alto al rapporto qualità-prezzo."
+        ),
+        "avvertenza": "Con i due oscillatori accesi le voci scendono da 8 a 4. Contate quanti tasti suonate insieme, prima di dire che è un otto voci.",
+        "foto": {
+            "file": "assets/foto/poly800/ii.jpg",
+            "autore": "rico blanco",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons (un Poly-800 II, la versione del 1986)",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/poly800/controls.jpg",
+             "autore": "rico blanco", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il pannello: joystick, tasti dei programmi e sequencer (un Poly-800 II)"},
+        ],
+        "fonti": [
+            {"titolo": "«Korg Poly-800» — Wikipedia (EN): 1983, 795 $, 8 voci, DCO, filtro unico, 64 programmi, EX-800 e Poly-800 II",
+             "url": "https://en.wikipedia.org/wiki/Korg_Poly-800", "data": "2026-10-16"},
+            {"titolo": "«Total Recall: Korg Poly-800» — The Mix, settembre 1994: 575 sterline, filtro unico, 4 voci in doppio, elenco di chi l'ha usato",
+             "url": "https://www.muzines.co.uk/articles/total-recall/8184", "data": "2026-10-16"},
+            {"titolo": "«Korg Poly-800 Polyphonic Synthesizer» — SMEM (museo): i tre di Belleville, tecnologia e prezzo",
+             "url": "https://www.smemmusic.ch/fr/node/1219", "data": "2026-10-16"},
+        ],
+        "hashtags": ["#korg", "#poly800", "#sintetizzatori", "#techno", "#detroit"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 066", "Costava 795 dollari e andava a pile"),
+            ("KORG · 1983", "8 voci programmabili, 49 tasti e i ganci per la tracolla."),
+            ("IL TRUCCO", "Ogni voce ha due oscillatori: accesi tutti e due, le voci scendono a 4."),
+            ("IL DIFETTO", "Un filtro solo, condiviso da tutte le voci."),
+            ("DETROIT", "Atkins, May e Saunderson, i tre del techno, ne avevano uno in studio."),
+        ],
+        "reel_cta": "Mandalo a chi suona in piedi",
+        "verificata": True,
+    },
+    {
+        "slug": "pianet",
+        "numero": 67,
+        "serie": "GLI ELETTROMECCANICI",
+        "strumento": "Hohner Pianet",
+        "anno": "1962",
+        "luogo": "Trossingen, Germania",
+        "costruttore": "Hohner",
+        "specifiche": [
+            ("PRIMO MODELLO", "1962"),
+            ("TASTI", "61"),
+            ("SUONO", "ance d'acciaio"),
+            ("PROGETTISTA", "E. Zacharias"),
+        ],
+        "gancio": "Dentro ci sono delle lamelle d'acciaio e dei cuscinetti che si appiccicano. Con l'età i cuscinetti si sfaldano",
+        "sottotitolo": "Il pianoforte elettrico a lamelle di «She's Not There» degli Zombies.",
+        "la_macchina": (
+            "Il Pianet è un pianoforte elettrico a lamelle. Ogni tasto alza "
+            "un cuscinetto da sopra una lamella d'acciaio accordata, la "
+            "lamella vibra e un pickup porta la vibrazione all'amplificatore. "
+            "Senza amplificatore non lo sentite. I tasti sono 61, da Fa a Fa. "
+            "Ci sono una decina di versioni (C, L, N, il Combo, T, M…) e fra l'una "
+            "e l'altra cambiano i cuscinetti, le lamelle e il pickup."
+        ),
+        "inventore_nome": "Ernst Zacharias",
+        "inventore": (
+            "Lo disegna Ernst Zacharias, ingegnere tedesco, che alla Hohner di "
+            "Trossingen lavora dal 1954 e che prima aveva fatto il Cembalet. Il "
+            "Pianet è un parente stretto del Cembalet, che era pensato per le "
+            "case. Dopo, Zacharias disegnerà anche il "
+            "Clavinet, che è arrivato nel 1964. Le date del Pianet non sono "
+            "uguali ovunque: Wikipedia dà 1962-1983 per l'intera famiglia, "
+            "altre fonti parlano di fine anni '50 per il Cembalet."
+        ),
+        "come_funziona": (
+            "Fino al 1977 la lamella è d'acciaio inox lavorato, il pickup è "
+            "capacitivo e il cuscinetto è di pelle. Dopo il 1977, secondo "
+            "Wikipedia, le lamelle sono d'acciaio arrotolato, il pickup è "
+            "elettromagnetico e il cuscinetto è di gomma siliconica. Quello "
+            "di pelle con la schiuma sotto invecchia e smette di funzionare: "
+            "molti Pianet degli anni '60 sono rimasti muti finché non si è "
+            "tornati a produrre i ricambi."
+        ),
+        "richiami": [
+            ("FIG. 1", "Tastiera da 61 tasti"),
+            ("FIG. 2", "Lamella accordata sotto ogni tasto"),
+            ("FIG. 3", "Cuscinetto che si stacca dalla lamella"),
+        ],
+        "chi_lusata": [
+            {"artista": "The Zombies", "nota": "Rod Argent su «She's Not There», 1964", "ig": None},
+            {"artista": "Beatles", "nota": "su «I Am the Walrus», 1967", "ig": None},
+            {"artista": "Bryan Ferry", "nota": "nei primi dischi dei Roxy Music, per esempio «Editions of You»", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Il Pianet T, quello del 1977, non ha bisogno di corrente: il pickup "
+            "elettromagnetico si arrangia con la vibrazione delle lamelle. E le sue ventose di plastica, per Wikipedia, "
+            "sono state brevettate dalla NASA. Questa non l'ho trovata "
+            "in nessun'altra parte, quindi prendetela come una cosa da "
+            "verificare. Quello che dicono tutti è che a un certo punto "
+            "il Pianet è sparito dai cataloghi e il Clavinet gli è passato "
+            "davanti."
+        ),
+        "avvertenza": "Il cuscinetto di pelle del Pianet N si sfalda con gli anni. Prima di comprarne uno, premete ogni tasto e controllate che la lamella suoni.",
+        "foto": {
+            "file": "assets/foto/pianet/pianet.jpg",
+            "autore": "Formication (derivato: Vonvon)",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/pianet/combo.jpg",
+             "autore": "Docrobbie", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "ritaglio": True,
+             "didascalia": "Un Combo Pianet, prodotto dal 1972, non restaurato"},
+        ],
+        "fonti": [
+            {"titolo": "«Hohner Pianet» — Wikipedia (EN): Zacharias, modelli, lamelle e cuscinetti, chi lo ha usato",
+             "url": "https://en.wikipedia.org/wiki/Hohner_Pianet", "data": "2026-10-16"},
+            {"titolo": "«Clavinet» — Wikipedia (EN): Ernst Zacharias, Hohner dal 1954, Cembalet e Pianet",
+             "url": "https://en.wikipedia.org/wiki/Clavinet", "data": "2026-10-16"},
+            {"titolo": "«She's Not There» — Wikipedia (EN): Rod Argent suona un Hohner Pianet, sessione del 22 giugno 1964",
+             "url": "https://en.wikipedia.org/wiki/She%27s_Not_There", "data": "2026-10-16"},
+        ],
+        "hashtags": ["#hohner", "#pianet", "#pianoelettrico", "#zombies", "#anni60"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 067", "I suoi cuscinetti si appiccicano alle lamelle"),
+            ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
+            ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
+            ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
+            ("1964", "Rod Argent lo suona su «She's Not There» degli Zombies."),
+        ],
+        "reel_cta": "Mandalo a un tastierista da lamelle",
+        "verificata": True,
+    },
+    {
+        "slug": "omnichord",
+        "numero": 68,
+        "serie": "I GIOCATTOLI",
+        "strumento": "Suzuki Omnichord",
+        "anno": "1981",
+        "luogo": "Giappone",
+        "costruttore": "Suzuki",
+        "specifiche": [
+            ("PRIMO MODELLO", "OM-27, 1981"),
+            ("ACCORDI", "27"),
+            ("SUONI", "1: arpa"),
+            ("FINE", "1996"),
+        ],
+        "gancio": "Si suona con un dito e le note sono sempre intonate. Eno e Lanois ci hanno fatto «Deep Blue Day»",
+        "sottotitolo": "Un'autoarpa elettronica per chi non ha mai suonato.",
+        "la_macchina": (
+            "Un corpo marrone lucido a forma di paletta. A "
+            "sinistra i tasti per gli accordi, al centro una piastra a "
+            "strisce da accarezzare con le dita, a destra l'altoparlante. "
+            "Si sceglie l'accordo, si striscia il dito e le note escono "
+            "arpeggiate. In più c'è un ritmo preimpostato e un basso "
+            "automatico. L'OM-27 ha 27 accordi e un solo suono, l'arpa."
+        ),
+        "inventore_nome": "Suzuki",
+        "inventore": (
+            "La Suzuki è un'azienda giapponese di famiglia che faceva armoniche "
+            "dal 1953. Nel 1981 presenta l'Omnichord insieme al Portachord, "
+            "e lo pensa per chi non ha mai suonato e si spaventa davanti a una "
+            "tastiera. Nessuna delle fonti che ho trovato dice chi l'ha "
+            "disegnato, quindi non lo dico. Nel 1984 escono OM-36 e OM-84, con "
+            "più accordi. L'ultimo, l'OM-300, esce intorno al 1996."
+        ),
+        "come_funziona": (
+            "La piastra è elettronica, non ci sono corde: tocchi una striscia e "
+            "senti una nota dell'accordo scelto, sempre intonata. Non puoi "
+            "sbagliare nota, puoi sbagliare accordo. I primi modelli sono "
+            "analogici, dicono le fonti, fino al 1989."
+        ),
+        "richiami": [
+            ("FIG. 1", "Tasti degli accordi: maggiore, minore e settima"),
+            ("FIG. 2", "Piastra da strisciare"),
+            ("FIG. 3", "Rhythm e altoparlante"),
+        ],
+        "chi_lusata": [
+            {"artista": "Eurythmics", "nota": "il suono d'arpa in «Love Is a Stranger» (1982, ma una fonte dice 1983)", "ig": None},
+            {"artista": "Brian Eno e Daniel Lanois", "nota": "«Deep Blue Day» dall'album «Apollo» (1983)", "ig": None},
+            {"artista": "Daniel Lanois", "nota": "anche su «Trip Through Your Wires» degli U2 (1987)", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Dave Stewart, che ne prese uno in Giappone, lo descrive come un "
+            "incrocio fra un giocattolo e uno strumento. Sulla data di «Love Is a Stranger» le "
+            "fonti non si mettono d'accordo, 1982 per Wikipedia e 1983 per "
+            "un'altra. Nel 1985 Tiny Tim ha scritto sulla copertina di un "
+            "suo singolo che era il primo disco suonato tutto con "
+            "l'Omnichord. A me piace che, per chi non sa suonare, la prima "
+            "regola sia: non puoi sbagliare nota."
+        ),
+        "avvertenza": "L'OM-27 ha 27 accordi e un solo suono, l'arpa. Se la vostra versione ne ha 36 o 84, non è un OM-27.",
+        "foto": {
+            "file": "assets/foto/omnichord/om27.jpg",
+            "autore": "tico_24",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/omnichord/interno.jpg",
+             "autore": "dana_dane", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Aperto: la scheda, l'altoparlante e la piastra staccata"},
+        ],
+        "fonti": [
+            {"titolo": "«Omnichord» — Wikipedia (EN): Suzuki 1981, OM-27, modelli, Eurythmics, Eno e Lanois, Tiny Tim",
+             "url": "https://en.wikipedia.org/wiki/Omnichord", "data": "2026-10-16"},
+            {"titolo": "«Suzuki Omnichord history» — Perfect Circuit: 1981, OM-27 con 27 accordi e un solo suono, Eurythmics, Lanois",
+             "url": "https://www.perfectcircuit.com/signal/suzuki-omnichord-history", "data": "2026-10-16"},
+        ],
+        "hashtags": ["#omnichord", "#suzuki", "#anni80", "#brianeno", "#synthpop"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 068", "Si suona con un dito. E le note sono sempre intonate."),
+            ("SUZUKI · 1981", "Un'autoarpa elettronica per chi non ha mai suonato."),
+            ("COME SI SUONA", "Scegli un accordo e striscia il dito sulla piastra."),
+            ("IL LIMITE", "L'OM-27 ha 27 accordi e un solo suono: l'arpa."),
+            ("1983", "Eno e Lanois lo usano in «Deep Blue Day», dall'album «Apollo»."),
+        ],
+        "reel_cta": "Mandalo a chi non sa suonare",
+        "verificata": True,
+    },
 ]
 
 
