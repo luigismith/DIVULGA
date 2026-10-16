@@ -502,7 +502,18 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
     Organization + WebSite sulla home. Mai VideoObject per il reel (Google
     pretende campi che non abbiamo e lo segnalerebbe), mai Product;
   · Search Console è verificata dal 27/08 (`VERIFICA_GOOGLE`, sitemap
-    dichiarata): non va riattivata.
+    dichiarata): non va riattivata;
+  · l'indirizzo resta `/DIVULGA` (16/10/2026: il proprietario aveva
+    chiesto `/elettrofoni`, poi, sentite le due strade, «lasciamo così
+    per adesso»). Se ci si torna: rinominare il repo NON reindirizza un
+    sito di progetto, quindi si rompono i link già su Google e gli
+    indirizzi di privacy e cancellazione dati dell'app Meta, che senza
+    quelle pagine può bloccare l'app e con lei le pubblicazioni. Un
+    dominio proprio (elettrofoni.it era libero) evita il problema: i
+    vecchi indirizzi github.io dovrebbero rimandare al dominio, cosa da
+    provare il giorno che si fa. È anche l'unico modo di avere il nome
+    del sito su Google, che non lo mostra per le sottocartelle. Decide
+    lui, e fino ad allora non si tocca.
   Ogni ritocco si guarda con Playwright su computer E telefono (390 px),
   controllando che la larghezza della pagina non superi lo schermo.
 - Commenti: `commenti.py` elenca quelli mai visti; `commenti.rispondi()`
