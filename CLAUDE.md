@@ -462,6 +462,49 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
 - **Risposte ai commenti**: si scrivono in `risposte.json` SOLO dopo il via
   del proprietario e le pubblica `rispondi.yml` (una ogni 2 minuti; le voci
   fatte si segnano, un secondo lancio non risponde due volte).
+- **Le didascalie dei post già usciti non si cambiano dall'API**
+  (16/10/2026). Provato sul Minimoog con `didascalia.yml` (`--prova`
+  rimanda la didascalia identica): `POST /{media-id}` con `caption`
+  risponde 400 «The parameter comment_enabled is required», cioè quel
+  POST accetta solo l'interruttore dei commenti. Didascalia invariata. Le
+  correzioni a un post uscito le fa il proprietario dall'app; la sessione
+  può preparargli il testo da incollare. Non riproporlo come permesso
+  mancante: è come la bio.
+- **Hashtag a schema fisso** (16/10/2026, approvato dal proprietario con
+  il giro SEO), cinque e sempre in quest'ordine: la macchina (#korgm1), la
+  marca (#korg), la categoria in italiano (#sintetizzatore, #organo,
+  #pianoelettrico…), l'artista più noto fra quelli che stanno GIÀ nella
+  scheda (#madonna), #storiadellamusica. Un artista che nella scheda non
+  c'è non entra negli hashtag, come non entra nelle battute.
+- **Il sito** (`genera_archivio.py`, rifatto il 16/10/2026 su richiesta
+  del proprietario: «puoi farlo più bello?» e «se possiamo mettere anche
+  i suoni reali sul sito sarebbe fico»). La più nuova in cima, le schede
+  riconoscibili dalla FOTO della macchina e non dalla tavola, ricerca
+  (legge anche gli artisti) e filtri per `serie`, fascia «Il suono vero»
+  con tutte le registrazioni, e ogni scheda col suo lettore, il reel,
+  le 6 tavole, le fonti, la precedente/successiva e la stessa famiglia.
+  Regole:
+  · foto per il web con Pillow (`docs/foto/<slug>-320|640|1280.jpg`), NON
+    con ffmpeg: ffmpeg ignora la rotazione EXIF e il browser no;
+  · suoni: estratto della `reel_audio` da `inizio`, al massimo 45 s, a
+    -16 LUFS come i reel (`docs/suoni/<slug>.mp3`); il credito porta
+    autore, licenza, link alla pagina della registrazione e «estratto,
+    volume normalizzato». Per questo `reel_audio` ora vuole anche `url`
+    (pagina Commons o Freesound) e `valida_scheda` lo pretende;
+  · copertina del video = primo fotogramma del reel (`reel2.jpg`), non
+    `story.jpg`, che dice «tocca il nome in alto»;
+  · foto, suoni e copertine si fanno UNA volta: `docs/media.json` tiene
+    l'impronta dell'originale e li rifà solo se cambia. Se manca Pillow o
+    ffmpeg la pagina esce lo stesso col ripiego, e il log lo dice;
+  · link fra le pagine tutti relativi: se cambia l'indirizzo si toccano
+    `BASE` qui e `BASE_PAGES` in `pubblica.py`, nient'altro;
+  · dati strutturati: Article + BreadcrumbList sulle schede,
+    Organization + WebSite sulla home. Mai VideoObject per il reel (Google
+    pretende campi che non abbiamo e lo segnalerebbe), mai Product;
+  · Search Console è verificata dal 27/08 (`VERIFICA_GOOGLE`, sitemap
+    dichiarata): non va riattivata.
+  Ogni ritocco si guarda con Playwright su computer E telefono (390 px),
+  controllando che la larghezza della pagina non superi lo schermo.
 - Commenti: `commenti.py` elenca quelli mai visti; `commenti.rispondi()`
   pubblica una risposta. **ATTENZIONE (13/10/2026): non ha mai letto un
   commento.** L'API dà `comments_count` giusto (fino a 5 su un post) ma

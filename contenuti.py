@@ -291,6 +291,7 @@ SCHEDE = [
             "file": "assets/audio/tr808/registrazione.ogg", "inizio": 33,
             "autore": "Theofanis Siassios", "licenza": "CC BY-SA 3.0",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:808patterns_01.ogg",
             "cosa": "una TR-808 vera che suona i suoi pattern",
         },
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
@@ -393,6 +394,7 @@ SCHEDE = [
             "file": "assets/audio/theremin/registrazione.ogg", "inizio": 0,
             "autore": "Fabio Pesce, caricata da Effebit", "licenza": "pubblico dominio",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Epro_theremin_middle_bach.ogg",
             "cosa": "un theremin Moog Etherwave Pro, non uno di Termen, su una melodia di Bach",
         },
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
@@ -786,6 +788,7 @@ SCHEDE = [
             "file": "assets/audio/tb303/registrazione.ogg", "inizio": 8,
             "autore": "I speak so quietly", "licenza": "CC BY-SA 4.0",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:The_Sound_of_Roland_TB-303_for_Wikipedia.ogg",
             "cosa": "una TB-303 vera",
         },
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
@@ -1091,6 +1094,7 @@ SCHEDE = [
             "file": "assets/audio/arp2600/registrazione.mp3", "inizio": 0,
             "autore": "jonopodmore", "licenza": "CC BY 4.0",
             "fonte": "freesound.org/s/70145",
+            "url": "https://freesound.org/s/70145/",
             "cosa": "un ARP 2600 vero: i 3 oscillatori su una scala esatonale, il filtro mosso a mano",
         },
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
@@ -1195,6 +1199,7 @@ SCHEDE = [
             "file": "assets/audio/vcs3/registrazione.mp3", "inizio": 5,
             "autore": "missionariojose", "licenza": "CC BY 4.0",
             "fonte": "freesound.org/s/205611",
+            "url": "https://freesound.org/s/205611/",
             "cosa": "un VCS3 vero, quello dell'Università di Bangor, su una delle patch del suo manuale",
         },
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
@@ -1502,6 +1507,7 @@ SCHEDE = [
             "file": "assets/audio/stylophone/registrazione.ogg", "inizio": 11,
             "autore": "sisterray (Freesound)", "licenza": "CC0",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Notes_on_a_stylophone.ogg",
             "cosa": "uno Stylophone vero",
         },
         "verificata": True,
@@ -1966,6 +1972,7 @@ SCHEDE = [
             "file": "assets/audio/optigan/registrazione.mp3", "inizio": 0,
             "autore": "Make Noise", "licenza": "CC0 1.0",
             "fonte": "freesound.org/s/522914",
+            "url": "https://freesound.org/s/522914/",
             "cosa": "pattern di batteria letti dai dischi ottici di un Optigan vero",
         },
         "verificata": True,
@@ -2189,6 +2196,7 @@ SCHEDE = [
             "file": "assets/audio/juno106/registrazione.mp3", "inizio": 225,
             "autore": "missionariojose", "licenza": "CC BY 4.0",
             "fonte": "freesound.org/s/219360",
+            "url": "https://freesound.org/s/219360/",
             "cosa": "uno Juno-106 vero in un'improvvisazione registrata diretta",
         },
         "verificata": True,
@@ -2440,6 +2448,7 @@ SCHEDE = [
             "file": "assets/audio/solina/registrazione.ogg", "inizio": 69,
             "autore": "MFbay", "licenza": "pubblico dominio",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:ARP-Solina_Violin_modulated_Akkord.ogg",
             "cosa": "una ARP Solina, sezione violini con la modulazione",
         },
         "verificata": True,
@@ -2961,6 +2970,7 @@ SCHEDE = [
             "file": "assets/audio/rhodes/registrazione.ogg", "inizio": 0,
             "autore": "Fetz", "licenza": "pubblico dominio",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Rhodes_Mark_I_Tubeamp.ogg",
             "cosa": "un Rhodes Mark I in un amplificatore a valvole",
         },
         "verificata": True,
@@ -3054,6 +3064,7 @@ SCHEDE = [
             "file": "assets/audio/voxcontinental/registrazione.ogg", "inizio": 23,
             "autore": "Ritchie333", "licenza": "CC BY-SA 4.0",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Vox_Continental.ogg",
             "cosa": "un Vox Continental vero",
         },
         "verificata": True,
@@ -3256,6 +3267,7 @@ SCHEDE = [
             "file": "assets/audio/univibe/registrazione.ogg", "inizio": 7,
             "autore": "Fret Junkies, estratto di Skimel", "licenza": "CC BY 3.0",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Univibe_medium_speed,_chorus_setting_(classic_sound).ogg",
             "cosa": "una chitarra in un Uni-Vibe, velocità media, posizione chorus",
         },
         "verificata": True,
@@ -3388,6 +3400,7 @@ SCHEDE = [
             "file": "assets/audio/speakspell/registrazione.mp3", "inizio": 0,
             "autore": "deaf02", "licenza": "CC0 1.0",
             "fonte": "freesound.org/s/563030",
+            "url": "https://freesound.org/s/563030/",
             "cosa": "uno Speak & Spell vero che recita l'alfabeto",
         },
         "verificata": True,
@@ -4257,6 +4270,7 @@ SCHEDE = [
             "file": "assets/audio/wurlitzer200a/registrazione.mp3", "inizio": 31,
             "autore": "Ritchie333", "licenza": "CC BY-SA 4.0",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Wurlitzer_EP200.mp3",
             "cosa": "un piano elettrico Wurlitzer della serie 200",
         },
         "verificata": True,
@@ -4585,6 +4599,7 @@ SCHEDE = [
             "file": "assets/audio/korgm1/registrazione.flac", "inizio": 10,
             "autore": "Alex Almirall, ESMUC", "licenza": "CC BY-SA 4.0",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:KorgM1_Sonology_Esmuc.flac",
             "cosa": "un Korg M1 vero",
         },
         "verificata": True,
@@ -4707,6 +4722,7 @@ SCHEDE = [
             "file": "assets/audio/sh101/registrazione.mp3", "inizio": 0,
             "autore": "druidbloke", "licenza": "CC0 1.0",
             "fonte": "freesound.org/s/167115",
+            "url": "https://freesound.org/s/167115/",
             "cosa": "un SH-101 vero che suona una linea di basso acid",
         },
         "verificata": True,
@@ -4817,6 +4833,7 @@ SCHEDE = [
             "file": "assets/audio/vl1/registrazione.ogg", "inizio": 1,
             "autore": "Havelbaude", "licenza": "CC BY-SA 4.0",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Casio_vl1_rock1.ogg",
             "cosa": "un Casio VL-1 col suo ritmo «rock 1»",
         },
         "verificata": True,
@@ -5032,6 +5049,7 @@ SCHEDE = [
             "file": "assets/audio/polymoog/registrazione.ogg", "inizio": 1,
             "autore": "Raymangold22", "licenza": "CC0",
             "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Vox_Humana_Polymoog.ogg",
             "cosa": "un Polymoog sul preset Vox Humana",
         },
         "verificata": True,
@@ -5644,6 +5662,7 @@ SCHEDE = [
             "file": "assets/audio/leslie/registrazione.mp3", "inizio": 2,
             "autore": "MrAuralization", "licenza": "CC BY 4.0",
             "fonte": "freesound.org/s/158628",
+            "url": "https://freesound.org/s/158628/",
             "cosa": "un organo Hammond serie H che suona attraverso un cabinet Leslie vero",
         },
         "verificata": True,
@@ -6164,9 +6183,14 @@ def valida_scheda(scheda):
         errori.append(f"reel_cta {len(scheda['reel_cta'])} caratteri (max {MAX_REEL_CTA})")
     a = scheda.get("reel_audio")
     if a:
-        mancanti = [k for k in ("file", "autore", "licenza", "fonte", "cosa") if not a.get(k)]
+        # «url» e' la pagina della registrazione (Commons o Freesound): dal
+        # 16/10/2026 il suono va anche sul sito, e li' il credito di una
+        # licenza CC vuole il link all'opera, non solo «Wikimedia Commons».
+        mancanti = [k for k in ("file", "autore", "licenza", "fonte", "url", "cosa") if not a.get(k)]
         if mancanti:
             errori.append(f"reel_audio incompleto, mancano: {mancanti}")
+        elif not a["url"].startswith("https://"):
+            errori.append(f"reel_audio: url non valido {a['url']}")
         else:
             import pathlib
             if not (pathlib.Path(__file__).resolve().parent / a["file"]).exists():

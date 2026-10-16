@@ -1,0 +1,1226 @@
+{
+ "copertine": {
+  "arpodyssey": {
+   "file": "tavole/arpodyssey/reel2.jpg",
+   "firma": "5cf92cf3cf42300b-1"
+  },
+  "buchla": {
+   "file": "tavole/buchla/reel2.jpg",
+   "firma": "059bf42229726952-1"
+  },
+  "clavinet": {
+   "file": "tavole/clavinet/reel2.jpg",
+   "firma": "37976ba26abd15e5-1"
+  },
+  "crumards2": {
+   "file": "tavole/crumards2/reel2.jpg",
+   "firma": "17e51c9679c0cfe4-1"
+  },
+  "dx7": {
+   "file": "tavole/dx7/reel2.jpg",
+   "firma": "a3d7f50563ded981-1"
+  },
+  "fairlight": {
+   "file": "tavole/fairlight/reel2.jpg",
+   "firma": "55d3fc848ff4cd3f-1"
+  },
+  "hammond": {
+   "file": "tavole/hammond/reel2.jpg",
+   "firma": "a3e84269c49ea6c0-1"
+  },
+  "mellotron": {
+   "file": "tavole/mellotron/reel2.jpg",
+   "firma": "70b2cc7c43639264-1"
+  },
+  "minimoog": {
+   "file": "tavole/minimoog/reel2.jpg",
+   "firma": "1e11c9a187aaa135-1"
+  },
+  "novachord": {
+   "file": "tavole/novachord/reel2.jpg",
+   "firma": "1d76739ca36b6adf-1"
+  },
+  "oberheim4voice": {
+   "file": "tavole/oberheim4voice/reel2.jpg",
+   "firma": "84df21b03ed9bffb-1"
+  },
+  "phase90": {
+   "file": "tavole/phase90/reel2.jpg",
+   "firma": "edc32dccf3460ee0-1"
+  },
+  "rhythmace": {
+   "file": "tavole/rhythmace/reel2.jpg",
+   "firma": "761fcfdbcaf3e23a-1"
+  },
+  "tb303": {
+   "file": "tavole/tb303/reel2.jpg",
+   "firma": "975dff053a1440f9-1"
+  },
+  "theremin": {
+   "file": "tavole/theremin/reel2.jpg",
+   "firma": "9bc1b561c872f589-1"
+  },
+  "tr808": {
+   "file": "tavole/tr808/reel2.jpg",
+   "firma": "74592dc0a10cb942-1"
+  },
+  "wurlitzer200a": {
+   "file": "tavole/wurlitzer200a/reel2.jpg",
+   "firma": "b471fc6f5f24ae2e-1"
+  }
+ },
+ "foto": {
+  "arp2600": {
+   "1280": "foto/arp2600-1280.jpg",
+   "320": "foto/arp2600-320.jpg",
+   "640": "foto/arp2600-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     853
+    ],
+    "320": [
+     320,
+     213
+    ],
+    "640": [
+     640,
+     427
+    ]
+   },
+   "firma": "f5e3127559bbb78d-320-640-1280-1"
+  },
+  "arpodyssey": {
+   "1280": "foto/arpodyssey-1280.jpg",
+   "320": "foto/arpodyssey-320.jpg",
+   "640": "foto/arpodyssey-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     963
+    ],
+    "320": [
+     320,
+     241
+    ],
+    "640": [
+     640,
+     481
+    ]
+   },
+   "firma": "8b98e8c02021a4f4-320-640-1280-1"
+  },
+  "buchla": {
+   "1280": "foto/buchla-1280.jpg",
+   "320": "foto/buchla-320.jpg",
+   "640": "foto/buchla-640.jpg",
+   "dimensioni": {
+    "1280": [
+     578,
+     579
+    ],
+    "320": [
+     320,
+     321
+    ],
+    "640": [
+     578,
+     579
+    ]
+   },
+   "firma": "da5d2868505971d9-320-640-1280-1"
+  },
+  "buchlaeasel": {
+   "1280": "foto/buchlaeasel-1280.jpg",
+   "320": "foto/buchlaeasel-320.jpg",
+   "640": "foto/buchlaeasel-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1000,
+     768
+    ],
+    "320": [
+     320,
+     246
+    ],
+    "640": [
+     640,
+     492
+    ]
+   },
+   "firma": "15caeb7bcc11f4d4-320-640-1280-1"
+  },
+  "clavinet": {
+   "1280": "foto/clavinet-1280.jpg",
+   "320": "foto/clavinet-320.jpg",
+   "640": "foto/clavinet-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     1912
+    ],
+    "320": [
+     320,
+     478
+    ],
+    "640": [
+     640,
+     956
+    ]
+   },
+   "firma": "3a909e523262eda6-320-640-1280-1"
+  },
+  "crumar": {
+   "1280": "foto/crumar-1280.jpg",
+   "320": "foto/crumar-320.jpg",
+   "640": "foto/crumar-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     853
+    ],
+    "320": [
+     320,
+     213
+    ],
+    "640": [
+     640,
+     427
+    ]
+   },
+   "firma": "8f765554d588d236-320-640-1280-1"
+  },
+  "crumards2": {
+   "1280": "foto/crumards2-1280.jpg",
+   "320": "foto/crumards2-320.jpg",
+   "640": "foto/crumards2-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     824
+    ],
+    "320": [
+     320,
+     206
+    ],
+    "640": [
+     640,
+     412
+    ]
+   },
+   "firma": "57f05a4266ec8742-320-640-1280-1"
+  },
+  "cs80": {
+   "1280": "foto/cs80-1280.jpg",
+   "320": "foto/cs80-320.jpg",
+   "640": "foto/cs80-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     652
+    ],
+    "320": [
+     320,
+     163
+    ],
+    "640": [
+     640,
+     326
+    ]
+   },
+   "firma": "9cb308dcdf5f5c36-320-640-1280-1"
+  },
+  "dmx": {
+   "1280": "foto/dmx-1280.jpg",
+   "320": "foto/dmx-320.jpg",
+   "640": "foto/dmx-640.jpg",
+   "dimensioni": {
+    "1280": [
+     392,
+     240
+    ],
+    "320": [
+     320,
+     196
+    ],
+    "640": [
+     392,
+     240
+    ]
+   },
+   "firma": "1da46a2a893a273b-320-640-1280-1"
+  },
+  "dx7": {
+   "1280": "foto/dx7-1280.jpg",
+   "320": "foto/dx7-320.jpg",
+   "640": "foto/dx7-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     1367
+    ],
+    "320": [
+     320,
+     342
+    ],
+    "640": [
+     640,
+     684
+    ]
+   },
+   "firma": "3c7a3789294b60db-320-640-1280-1"
+  },
+  "emulator": {
+   "1280": "foto/emulator-1280.jpg",
+   "320": "foto/emulator-320.jpg",
+   "640": "foto/emulator-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     599
+    ],
+    "320": [
+     320,
+     150
+    ],
+    "640": [
+     640,
+     300
+    ]
+   },
+   "firma": "eaec90df38a5c8e8-320-640-1280-1"
+  },
+  "fairlight": {
+   "1280": "foto/fairlight-1280.jpg",
+   "320": "foto/fairlight-320.jpg",
+   "640": "foto/fairlight-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "a9b6c7ed5665866e-320-640-1280-1"
+  },
+  "farfisa": {
+   "1280": "foto/farfisa-1280.jpg",
+   "320": "foto/farfisa-320.jpg",
+   "640": "foto/farfisa-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     853
+    ],
+    "320": [
+     320,
+     213
+    ],
+    "640": [
+     640,
+     427
+    ]
+   },
+   "firma": "2e2441cb67700aa6-320-640-1280-1"
+  },
+  "fonologia": {
+   "1280": "foto/fonologia-1280.jpg",
+   "320": "foto/fonologia-320.jpg",
+   "640": "foto/fonologia-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     784
+    ],
+    "320": [
+     320,
+     196
+    ],
+    "640": [
+     640,
+     392
+    ]
+   },
+   "firma": "9390bf54f8a34582-320-640-1280-1"
+  },
+  "h910": {
+   "1280": "foto/h910-1280.jpg",
+   "320": "foto/h910-320.jpg",
+   "640": "foto/h910-640.jpg",
+   "dimensioni": {
+    "1280": [
+     823,
+     171
+    ],
+    "320": [
+     320,
+     66
+    ],
+    "640": [
+     640,
+     133
+    ]
+   },
+   "firma": "a4b5e1543ba89f58-320-640-1280-1"
+  },
+  "hammond": {
+   "1280": "foto/hammond-1280.jpg",
+   "320": "foto/hammond-320.jpg",
+   "640": "foto/hammond-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "18ca44ccd1f7850f-320-640-1280-1"
+  },
+  "juno106": {
+   "1280": "foto/juno106-1280.jpg",
+   "320": "foto/juno106-320.jpg",
+   "640": "foto/juno106-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1252,
+     400
+    ],
+    "320": [
+     320,
+     102
+    ],
+    "640": [
+     640,
+     204
+    ]
+   },
+   "firma": "9770d1c8f850753e-320-640-1280-1"
+  },
+  "jupiter8": {
+   "1280": "foto/jupiter8-1280.jpg",
+   "320": "foto/jupiter8-320.jpg",
+   "640": "foto/jupiter8-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     553
+    ],
+    "320": [
+     320,
+     138
+    ],
+    "640": [
+     640,
+     276
+    ]
+   },
+   "firma": "8ebc35eac1978ab5-320-640-1280-1"
+  },
+  "lm1": {
+   "1280": "foto/lm1-1280.jpg",
+   "320": "foto/lm1-320.jpg",
+   "640": "foto/lm1-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     897
+    ],
+    "320": [
+     320,
+     224
+    ],
+    "640": [
+     640,
+     449
+    ]
+   },
+   "firma": "8ffd822de267e869-320-640-1280-1"
+  },
+  "mellotron": {
+   "1280": "foto/mellotron-1280.jpg",
+   "320": "foto/mellotron-320.jpg",
+   "640": "foto/mellotron-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     853
+    ],
+    "320": [
+     320,
+     213
+    ],
+    "640": [
+     640,
+     427
+    ]
+   },
+   "firma": "da2bce5d1811fb78-320-640-1280-1"
+  },
+  "minimoog": {
+   "1280": "foto/minimoog-1280.jpg",
+   "320": "foto/minimoog-320.jpg",
+   "640": "foto/minimoog-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1024,
+     683
+    ],
+    "320": [
+     320,
+     213
+    ],
+    "640": [
+     640,
+     427
+    ]
+   },
+   "firma": "d9dee4e8d66520de-320-640-1280-1"
+  },
+  "mpc60": {
+   "1280": "foto/mpc60-1280.jpg",
+   "320": "foto/mpc60-320.jpg",
+   "640": "foto/mpc60-640.jpg",
+   "dimensioni": {
+    "1280": [
+     450,
+     419
+    ],
+    "320": [
+     320,
+     298
+    ],
+    "640": [
+     450,
+     419
+    ]
+   },
+   "firma": "9bdd242ce0f4c63f-320-640-1280-1"
+  },
+  "ms20": {
+   "1280": "foto/ms20-1280.jpg",
+   "320": "foto/ms20-320.jpg",
+   "640": "foto/ms20-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     861
+    ],
+    "320": [
+     320,
+     215
+    ],
+    "640": [
+     640,
+     430
+    ]
+   },
+   "firma": "9ca361299e562b38-320-640-1280-1"
+  },
+  "novachord": {
+   "1280": "foto/novachord-1280.jpg",
+   "320": "foto/novachord-320.jpg",
+   "640": "foto/novachord-640.jpg",
+   "dimensioni": {
+    "1280": [
+     700,
+     549
+    ],
+    "320": [
+     320,
+     251
+    ],
+    "640": [
+     640,
+     502
+    ]
+   },
+   "firma": "ddd11e363afeff61-320-640-1280-1"
+  },
+  "oberheim4voice": {
+   "1280": "foto/oberheim4voice-1280.jpg",
+   "320": "foto/oberheim4voice-320.jpg",
+   "640": "foto/oberheim4voice-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "f9faa3733e2985bb-320-640-1280-1"
+  },
+  "ondes": {
+   "1280": "foto/ondes-1280.jpg",
+   "320": "foto/ondes-320.jpg",
+   "640": "foto/ondes-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "226335f53cda6757-320-640-1280-1"
+  },
+  "ondioline": {
+   "1280": "foto/ondioline-1280.jpg",
+   "320": "foto/ondioline-320.jpg",
+   "640": "foto/ondioline-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     1280
+    ],
+    "320": [
+     320,
+     320
+    ],
+    "640": [
+     640,
+     640
+    ]
+   },
+   "firma": "608211cadabba058-320-640-1280-1"
+  },
+  "optigan": {
+   "1280": "foto/optigan-1280.jpg",
+   "320": "foto/optigan-320.jpg",
+   "640": "foto/optigan-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     720
+    ],
+    "320": [
+     320,
+     180
+    ],
+    "640": [
+     640,
+     360
+    ]
+   },
+   "firma": "21cd78af7142858d-320-640-1280-1"
+  },
+  "phase90": {
+   "1280": "foto/phase90-1280.jpg",
+   "320": "foto/phase90-320.jpg",
+   "640": "foto/phase90-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     1707
+    ],
+    "320": [
+     320,
+     427
+    ],
+    "640": [
+     640,
+     853
+    ]
+   },
+   "firma": "18033cb6ca3e709c-320-640-1280-1"
+  },
+  "ppgwave": {
+   "1280": "foto/ppgwave-1280.jpg",
+   "320": "foto/ppgwave-320.jpg",
+   "640": "foto/ppgwave-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "6410841d942c3eeb-320-640-1280-1"
+  },
+  "prophet5": {
+   "1280": "foto/prophet5-1280.jpg",
+   "320": "foto/prophet5-320.jpg",
+   "640": "foto/prophet5-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     632
+    ],
+    "320": [
+     320,
+     158
+    ],
+    "640": [
+     640,
+     316
+    ]
+   },
+   "firma": "3f20adc0c676698b-320-640-1280-1"
+  },
+  "rhodes": {
+   "1280": "foto/rhodes-1280.jpg",
+   "320": "foto/rhodes-320.jpg",
+   "640": "foto/rhodes-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "9f5d2c1168c17b62-320-640-1280-1"
+  },
+  "rhythmace": {
+   "1280": "foto/rhythmace-1280.jpg",
+   "320": "foto/rhythmace-320.jpg",
+   "640": "foto/rhythmace-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     839
+    ],
+    "320": [
+     320,
+     210
+    ],
+    "640": [
+     640,
+     419
+    ]
+   },
+   "firma": "9f8e3f41f489adb6-320-640-1280-1"
+  },
+  "simmonssds5": {
+   "1280": "foto/simmonssds5-1280.jpg",
+   "320": "foto/simmonssds5-320.jpg",
+   "640": "foto/simmonssds5-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1024,
+     683
+    ],
+    "320": [
+     320,
+     213
+    ],
+    "640": [
+     640,
+     427
+    ]
+   },
+   "firma": "8eaa5ea6e0a5a00a-320-640-1280-1"
+  },
+  "solina": {
+   "1280": "foto/solina-1280.jpg",
+   "320": "foto/solina-320.jpg",
+   "640": "foto/solina-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1046,
+     400
+    ],
+    "320": [
+     320,
+     122
+    ],
+    "640": [
+     640,
+     245
+    ]
+   },
+   "firma": "7277c50ed76dde0c-320-640-1280-1"
+  },
+  "sp1200": {
+   "1280": "foto/sp1200-1280.jpg",
+   "320": "foto/sp1200-320.jpg",
+   "640": "foto/sp1200-640.jpg",
+   "dimensioni": {
+    "1280": [
+     400,
+     319
+    ],
+    "320": [
+     320,
+     255
+    ],
+    "640": [
+     400,
+     319
+    ]
+   },
+   "firma": "c893494dccae10dc-320-640-1280-1"
+  },
+  "spaceecho": {
+   "1280": "foto/spaceecho-1280.jpg",
+   "320": "foto/spaceecho-320.jpg",
+   "640": "foto/spaceecho-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "e5e760b824a5454e-320-640-1280-1"
+  },
+  "speakspell": {
+   "1280": "foto/speakspell-1280.jpg",
+   "320": "foto/speakspell-320.jpg",
+   "640": "foto/speakspell-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     1707
+    ],
+    "320": [
+     320,
+     427
+    ],
+    "640": [
+     640,
+     853
+    ]
+   },
+   "firma": "93613c7707eef214-320-640-1280-1"
+  },
+  "stylophone": {
+   "1280": "foto/stylophone-1280.jpg",
+   "320": "foto/stylophone-320.jpg",
+   "640": "foto/stylophone-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     803
+    ],
+    "320": [
+     320,
+     201
+    ],
+    "640": [
+     640,
+     402
+    ]
+   },
+   "firma": "21a331b55dd735e7-320-640-1280-1"
+  },
+  "synclavier": {
+   "1280": "foto/synclavier-1280.jpg",
+   "320": "foto/synclavier-320.jpg",
+   "640": "foto/synclavier-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "23a0d130c36c22ab-320-640-1280-1"
+  },
+  "synket": {
+   "1280": "foto/synket-1280.jpg",
+   "320": "foto/synket-320.jpg",
+   "640": "foto/synket-640.jpg",
+   "dimensioni": {
+    "1280": [
+     961,
+     620
+    ],
+    "320": [
+     320,
+     206
+    ],
+    "640": [
+     640,
+     413
+    ]
+   },
+   "firma": "2aa1a4ce0f980bbd-320-640-1280-1"
+  },
+  "synthex": {
+   "1280": "foto/synthex-1280.jpg",
+   "320": "foto/synthex-320.jpg",
+   "640": "foto/synthex-640.jpg",
+   "dimensioni": {
+    "1280": [
+     450,
+     202
+    ],
+    "320": [
+     320,
+     144
+    ],
+    "640": [
+     450,
+     202
+    ]
+   },
+   "firma": "e857edeb8c82f5a4-320-640-1280-1"
+  },
+  "tb303": {
+   "1280": "foto/tb303-1280.jpg",
+   "320": "foto/tb303-320.jpg",
+   "640": "foto/tb303-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     853
+    ],
+    "320": [
+     320,
+     213
+    ],
+    "640": [
+     640,
+     427
+    ]
+   },
+   "firma": "3d84752bcf20dd80-320-640-1280-1"
+  },
+  "telharmonium": {
+   "1280": "foto/telharmonium-1280.jpg",
+   "320": "foto/telharmonium-320.jpg",
+   "640": "foto/telharmonium-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     841
+    ],
+    "320": [
+     320,
+     210
+    ],
+    "640": [
+     640,
+     421
+    ]
+   },
+   "firma": "bdd7a9e2590b3526-320-640-1280-1"
+  },
+  "theremin": {
+   "1280": "foto/theremin-1280.jpg",
+   "320": "foto/theremin-320.jpg",
+   "640": "foto/theremin-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     1283
+    ],
+    "320": [
+     320,
+     321
+    ],
+    "640": [
+     640,
+     641
+    ]
+   },
+   "firma": "19b06418be90d595-320-640-1280-1"
+  },
+  "tr606": {
+   "1280": "foto/tr606-1280.jpg",
+   "320": "foto/tr606-320.jpg",
+   "640": "foto/tr606-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1123,
+     556
+    ],
+    "320": [
+     320,
+     158
+    ],
+    "640": [
+     640,
+     317
+    ]
+   },
+   "firma": "d9bc6448f485072f-320-640-1280-1"
+  },
+  "tr808": {
+   "1280": "foto/tr808-1280.jpg",
+   "320": "foto/tr808-320.jpg",
+   "640": "foto/tr808-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     747
+    ],
+    "320": [
+     320,
+     187
+    ],
+    "640": [
+     640,
+     374
+    ]
+   },
+   "firma": "7702dcaa74dfd606-320-640-1280-1"
+  },
+  "tr909": {
+   "1280": "foto/tr909-1280.jpg",
+   "320": "foto/tr909-320.jpg",
+   "640": "foto/tr909-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     756
+    ],
+    "320": [
+     320,
+     189
+    ],
+    "640": [
+     640,
+     378
+    ]
+   },
+   "firma": "0c726540c956374d-320-640-1280-1"
+  },
+  "trautonium": {
+   "1280": "foto/trautonium-1280.jpg",
+   "320": "foto/trautonium-320.jpg",
+   "640": "foto/trautonium-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     1611
+    ],
+    "320": [
+     320,
+     403
+    ],
+    "640": [
+     640,
+     805
+    ]
+   },
+   "firma": "8dccf202963739fd-320-640-1280-1"
+  },
+  "univibe": {
+   "1280": "foto/univibe-1280.jpg",
+   "320": "foto/univibe-320.jpg",
+   "640": "foto/univibe-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "f2d46244f0166df3-320-640-1280-1"
+  },
+  "vcs3": {
+   "1280": "foto/vcs3-1280.jpg",
+   "320": "foto/vcs3-320.jpg",
+   "640": "foto/vcs3-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     1280
+    ],
+    "320": [
+     320,
+     320
+    ],
+    "640": [
+     640,
+     640
+    ]
+   },
+   "firma": "0070f1b7638905c4-320-640-1280-1"
+  },
+  "voxcontinental": {
+   "1280": "foto/voxcontinental-1280.jpg",
+   "320": "foto/voxcontinental-320.jpg",
+   "640": "foto/voxcontinental-640.jpg",
+   "dimensioni": {
+    "1280": [
+     640,
+     656
+    ],
+    "320": [
+     320,
+     328
+    ],
+    "640": [
+     640,
+     656
+    ]
+   },
+   "firma": "fc341a97747d603e-320-640-1280-1"
+  },
+  "vp330": {
+   "1280": "foto/vp330-1280.jpg",
+   "320": "foto/vp330-320.jpg",
+   "640": "foto/vp330-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "f43062f3818589d7-320-640-1280-1"
+  },
+  "wurlitzer200a": {
+   "1280": "foto/wurlitzer200a-1280.jpg",
+   "320": "foto/wurlitzer200a-320.jpg",
+   "640": "foto/wurlitzer200a-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     904
+    ],
+    "320": [
+     320,
+     226
+    ],
+    "640": [
+     640,
+     452
+    ]
+   },
+   "firma": "f8fb5ed215caba54-320-640-1280-1"
+  }
+ },
+ "suoni": {
+  "arp2600": {
+   "file": "suoni/arp2600.mp3",
+   "firma": "e0dd51a83e99d434-0-45-1",
+   "secondi": 41.5
+  },
+  "juno106": {
+   "file": "suoni/juno106.mp3",
+   "firma": "2f1cf15e10d54d3b-225-45-1",
+   "secondi": 45
+  },
+  "optigan": {
+   "file": "suoni/optigan.mp3",
+   "firma": "e2e85e9e7a36bd27-0-45-1",
+   "secondi": 34.1
+  },
+  "rhodes": {
+   "file": "suoni/rhodes.mp3",
+   "firma": "8e05abf586b48adf-0-45-1",
+   "secondi": 8.6
+  },
+  "solina": {
+   "file": "suoni/solina.mp3",
+   "firma": "9d152e2aae4b4712-69-45-1",
+   "secondi": 32.4
+  },
+  "speakspell": {
+   "file": "suoni/speakspell.mp3",
+   "firma": "26762a534868e6da-0-45-1",
+   "secondi": 24.9
+  },
+  "stylophone": {
+   "file": "suoni/stylophone.mp3",
+   "firma": "0a988070ec3e5b67-11-45-1",
+   "secondi": 23.1
+  },
+  "tb303": {
+   "file": "suoni/tb303.mp3",
+   "firma": "1aa9bf193955c739-8-45-1",
+   "secondi": 45
+  },
+  "theremin": {
+   "file": "suoni/theremin.mp3",
+   "firma": "0ed0a66639d1d057-0-45-1",
+   "secondi": 14.2
+  },
+  "tr808": {
+   "file": "suoni/tr808.mp3",
+   "firma": "37c184e906ed9086-33-45-1",
+   "secondi": 20.5
+  },
+  "univibe": {
+   "file": "suoni/univibe.mp3",
+   "firma": "42363bf329d25d2e-7-45-1",
+   "secondi": 15.6
+  },
+  "vcs3": {
+   "file": "suoni/vcs3.mp3",
+   "firma": "4fbe971f1d770a1f-5-45-1",
+   "secondi": 45
+  },
+  "voxcontinental": {
+   "file": "suoni/voxcontinental.mp3",
+   "firma": "590567d8a8539729-23-45-1",
+   "secondi": 17.8
+  },
+  "wurlitzer200a": {
+   "file": "suoni/wurlitzer200a.mp3",
+   "firma": "e3e043b90d4a006a-31-45-1",
+   "secondi": 21.1
+  }
+ }
+}
