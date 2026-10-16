@@ -71,6 +71,23 @@ def main():
                     print(f"  {desc}: {json.dumps(api('GET', perc, token, **par))[:600]}")
                 except Exception as e:
                     print(f"  {desc}: ERRORE {str(e)[:400]}")
+        # 16/10/2026: le stesse domande con la versione esplicita (senza
+        # versione il Graph usa la più vecchia ancora attiva) e i permessi
+        # del token, per capire se manca uno scope o se è la modalità app.
+        conte = [m for m in media if m.get("comments_count")]
+        if conte:
+            mid = conte[0]["id"]
+            for v in ("v21.0", "v22.0", "v23.0", "v24.0"):
+                try:
+                    r = api("GET", f"{v}/{mid}/comments", token, fields="id,text,username")
+                    print(f"  {v}/comments: {json.dumps(r)[:300]}")
+                except Exception as e:
+                    print(f"  {v}/comments: ERRORE {str(e)[:300]}")
+        for perc in ("me/permissions", "v23.0/me/permissions"):
+            try:
+                print(f"  {perc}: {json.dumps(api('GET', perc, token))[:600]}")
+            except Exception as e:
+                print(f"  {perc}: ERRORE {str(e)[:300]}")
         return
 
     nuovi = []
