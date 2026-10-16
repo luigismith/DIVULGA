@@ -531,7 +531,17 @@ def slide_aneddoto(scheda):
 def slide_storia(scheda):
     """Tavola verticale 1080x1920 per le Storie: stesso mondo visivo, ma
     formato 9:16. E' la riserva del reel (che di norma fa da storia): se
-    fallisce non blocca niente (vedi pubblica.py)."""
+    fallisce non blocca niente (vedi pubblica.py).
+
+    DAL 16/10/2026 è anche la seconda storia del giorno, al posto della
+    copertina 4:5: Instagram la allargava a tutto schermo e tagliava i
+    lati (il proprietario: «le storie vengono tagliate ai lati»).
+    ZONE COPERTE dall'interfaccia delle storie: in alto barra di
+    avanzamento e nome (~200 px su 1920), in basso il campo «Invia
+    messaggio» (~250 px). Lì sotto non va niente da leggere: c'è una
+    fascia bruna vuota. E siccome un link cliccabile l'API non lo
+    permette, l'invito indica l'unica cosa cliccabile della storia: il
+    nome dell'account in alto, che porta al profilo."""
     css = f"""
 body{{height:1920px}}
 .testata{{height:84px;padding:0 60px}}
@@ -551,6 +561,7 @@ body{{height:1920px}}
 .zoccolo{{padding:24px 60px}}
 .motto{{font-size:18px}}
 .handle{{font-size:27px}}
+.riparo{{flex:none;height:250px;background:{BRUNO}}}
 """
     corpo = f"""
 {_testata(scheda)}
@@ -560,9 +571,10 @@ body{{height:1920px}}
   <div class="nome-macchina autofit" data-min="60" style="height:auto;max-height:240px">{scheda['strumento']}</div>
   <div class="gancio autofit" data-min="30" style="height:auto;max-height:260px">{scheda['gancio']}</div>
   <div class="sottotitolo">{scheda['sottotitolo']}</div>
-  <div class="invito"><div class="freccia">↓</div><div><div class="riga">LA SCHEDA COMPLETA</div><div class="grande">nel profilo</div></div></div>
+  <div class="invito"><div class="freccia">↑</div><div><div class="riga">LE 6 SLIDE · TOCCA IL NOME IN ALTO</div><div class="grande">è il post di oggi</div></div></div>
 </div>
 {_zoccolo()}
+<div class="riparo"></div>
 """
     return _pagina(corpo, css)
 

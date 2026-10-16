@@ -425,15 +425,20 @@ def main():
     except Exception as e:
         print(f"[warn] storia non pubblicata (non blocca il post): {e}")
 
-    # Story di rilancio: la copertina ripubblicata come storia, per dare al
-    # post il doppio di occasioni di essere visto. Questa resta un'IMMAGINE
+    # Story di rilancio: la tavola verticale (story.jpg, 1080x1920) come
+    # storia, per dare al post il doppio di occasioni di essere visto.
+    # LEZIONE IMPARATA (16/10/2026): qui si pubblicava la COPERTINA del
+    # carosello, che è 4:5; Instagram la allarga a tutto schermo e taglia
+    # i lati, nome della macchina compreso. Per una storia si usa solo
+    # roba 9:16. Questa resta un'IMMAGINE
     # apposta: ogni video consuma il budget di elaborazione dell'account, e
     # due video al giorno per la stessa scheda non li vale. È facoltativa PER SCELTA:
     # se fallisce si annota nel log e basta — niente issue, niente retry —
     # perché il post è la missione, la story solo il megafono.
     try:
         st = api("POST", f"{ig_user}/media", token,
-                 media_type="STORIES", image_url=urls[0])
+                 media_type="STORIES",
+                 image_url=f"{BASE_PAGES}/tavole/{scheda['slug']}/story.jpg")
         attendi_container(st["id"], token)
         api("POST", f"{ig_user}/media_publish", token, creation_id=st["id"])
         print("[ok] story di rilancio pubblicata")

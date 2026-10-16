@@ -427,6 +427,13 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   proprietario dall'app: condividere il carosello nella storia (il post
   diventa toccabile) e l'archivio `luigismith.github.io/DIVULGA/` fra i
   link della bio (ogni scheda ha la sua pagina con slide e testo).
+- **Nelle storie solo roba 9:16** (16/10/2026, il proprietario: «le
+  storie vengono tagliate ai lati»). La seconda storia del giorno era la
+  copertina del carosello, 4:5: Instagram la allarga e taglia i lati,
+  nome della macchina compreso. Ora è `story.jpg` (1080x1920), con le
+  zone coperte dall'interfaccia lasciate vuote (in alto il nome, in
+  basso 250 px bruni sotto «Invia messaggio») e l'invito che indica
+  l'unica cosa cliccabile: il nome dell'account in alto.
 - COSA L'API NON CONSENTE (verificato il 27/08/2026 con
   `diagnostica_api.py`): il profilo è in sola lettura. `POST /me` con
   `biography` risponde 400 «does not support this operation». Bio, nome,
