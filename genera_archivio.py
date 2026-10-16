@@ -120,33 +120,36 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
 .bottone.pieno:hover{background:var(--arancio);border-color:var(--arancio);color:var(--bruno)}
 
 /* home: apertura */
-.intro{padding-top:44px;padding-bottom:40px}
-.intro h1{font-family:var(--display);font-weight:700;font-size:clamp(44px,9vw,104px);line-height:.95;
-  text-transform:uppercase;margin-top:14px}
-.intro .lead{font-size:clamp(18px,2.1vw,21px);line-height:1.55;max-width:56ch;margin-top:22px;color:var(--bruno2)}
-.contatori{display:grid;grid-template-columns:repeat(2,1fr);margin-top:32px;border-top:2px solid var(--bruno);border-bottom:2px solid var(--bruno)}
-.contatori div{display:flex;flex-direction:column-reverse;padding:14px 16px 14px 0}
-.contatori dd{font-family:var(--display);font-weight:700;font-size:clamp(28px,4vw,42px);line-height:1}
-.contatori dt{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--bruno2);margin-top:6px}
-@media(min-width:700px){.contatori{grid-template-columns:repeat(4,1fr)}}
+/* La home apre sul CATALOGO, non su una macchina (16/10/2026, il
+   proprietario: «sembra che si parli solo dello strumento dell'ultimo
+   post» e «non è indispensabile che sia tutto su una sola pagina»).
+   Prima c'erano l'ultima scheda a tutta larghezza e i 14 suoni: sul
+   telefono tre schermate prima di vedere le altre macchine. Ora
+   apertura corta, una riga che porta alla pagina dei suoni, e subito la
+   griglia; la più nuova è la prima carta, col bollino. */
+.intro{padding-top:32px;padding-bottom:22px}
+.intro h1{font-family:var(--display);font-weight:700;font-size:clamp(40px,6vw,70px);line-height:.95;
+  text-transform:uppercase;margin-top:12px;text-wrap:wrap}
+.intro .lead{font-size:clamp(17px,2vw,20px);line-height:1.5;max-width:62ch;margin-top:16px;color:var(--bruno2)}
+.cifre{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:20px;padding:10px 0;border-top:2px solid var(--bruno);
+  border-bottom:2px solid var(--bruno);font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--bruno2)}
+.cifre b{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:0;color:var(--bruno);margin-right:6px}
+.verso-suoni{display:flex;align-items:center;gap:14px;text-decoration:none;background:var(--bruno);color:var(--crema);
+  padding:14px 16px}
+.verso-suoni .tondo{flex:none;width:44px;height:44px;border-radius:50%;background:var(--arancio);display:grid;place-items:center}
+.verso-suoni .tondo svg{width:18px;height:18px;fill:var(--bruno)}
+.verso-suoni .riga{flex:1;line-height:1.35}
+.verso-suoni b{font-family:var(--display);font-weight:600;font-size:20px;text-transform:uppercase;letter-spacing:.02em;display:block}
+.verso-suoni small{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:#cdb894}
+.verso-suoni i{font-style:normal;font-family:var(--display);font-size:22px;color:var(--arancio)}
+.verso-suoni:hover b{color:var(--arancio)}
+@media(max-width:559px){.verso-suoni .nomi{display:none}}
+.archivio .testa-sezione h2.kicker{font-family:var(--mono);font-weight:600;font-size:12.5px;letter-spacing:.16em;line-height:1.4;margin:0}
 
-/* home: l'ultima scheda */
-.ultima{padding-bottom:56px}
-.ultima-griglia{display:grid;border:2px solid var(--bruno);background:var(--carta)}
-.ultima-foto{display:block;background:var(--crema);border-bottom:2px solid var(--bruno);aspect-ratio:4/3;overflow:hidden}
-.ultima-foto img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
-.ultima-testo{padding:24px 18px 28px}
-.ultima h2{font-family:var(--display);font-weight:700;font-size:clamp(38px,6vw,66px);line-height:.98;
-  text-transform:uppercase;margin-top:10px}
-.ultima h2 a{text-decoration:none}
+/* gancio e sottotitolo (testa delle schede) */
 .gancio{font-family:var(--display);font-weight:500;font-size:clamp(21px,2.4vw,27px);line-height:1.22;margin-top:14px}
 .sottotitolo{color:var(--bruno2);margin-top:12px;max-width:52ch}
-@media(min-width:900px){
-  .ultima-griglia{grid-template-columns:1.15fr 1fr}
-  .ultima-foto{aspect-ratio:auto;border-bottom:none;border-right:2px solid var(--bruno);min-height:470px}
-  .ultima-testo{padding:40px;display:flex;flex-direction:column;justify-content:center}
-}
-
 /* lettore del suono vero */
 .lettore{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:center;background:var(--bruno);
   color:var(--crema);padding:16px 18px;margin-top:22px}
@@ -177,12 +180,10 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
 .credito-suono a{color:var(--ruggine)}
 
 /* home: la fascia dei suoni */
-.suoni{background:var(--bruno);color:var(--crema);padding:56px 0 60px}
+.suoni{background:var(--bruno);color:var(--crema);padding:44px 0 60px;min-height:60vh}
 .suoni .kicker{color:var(--arancio)}
-.suoni h2{font-family:var(--display);font-weight:700;font-size:clamp(36px,5vw,58px);text-transform:uppercase;line-height:1;margin-top:10px}
+.suoni h1,.suoni h2{font-family:var(--display);font-weight:700;font-size:clamp(36px,5vw,58px);text-transform:uppercase;line-height:1;margin-top:10px}
 .suoni .lead{color:#e3d2b0;max-width:60ch;margin-top:14px}
-.scorri{display:none;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#cdb894;margin-top:18px}
-@media(max-width:699px){.scorri{display:block}}
 .dischi{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:30px}
 .disco{display:grid;grid-template-columns:64px 1fr;gap:10px 14px;align-items:center;padding:14px;
   border:1px solid rgba(244,233,210,.25);background:rgba(244,233,210,.04)}
@@ -197,12 +198,10 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
 .lettore.mini .play svg{width:18px;height:18px}
 .disco-credito{grid-column:1/-1;font-family:var(--mono);font-size:11px;color:#b9a382;line-height:1.45}
 .disco-credito a{color:#ecdab4}
-@media(max-width:699px){.dischi{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:84%;
-  overflow-x:auto;scroll-snap-type:x mandatory;margin-left:-16px;margin-right:-16px;padding:0 16px 10px;scroll-padding:0 16px}
-  .disco{scroll-snap-align:start}}
+
 
 /* home: archivio */
-.archivio{padding-top:56px;padding-bottom:64px}
+.archivio{padding-top:30px;padding-bottom:64px}
 .testa-sezione{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 20px;
   border-bottom:2px solid var(--bruno);padding-bottom:14px}
 .testa-sezione h2{font-family:var(--display);font-weight:700;font-size:clamp(36px,5vw,58px);
@@ -223,7 +222,9 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
 .card{display:flex;flex-direction:column;text-decoration:none;border:2px solid var(--bruno);background:var(--carta);
   transition:transform .15s ease,box-shadow .15s ease}
 .card:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--arancio)}
-.card-foto{display:block;aspect-ratio:4/3;background:var(--crema);border-bottom:2px solid var(--bruno);overflow:hidden}
+.card-foto{display:block;position:relative;aspect-ratio:4/3;background:var(--crema);border-bottom:2px solid var(--bruno);overflow:hidden}
+.bollino{position:absolute;top:0;left:0;z-index:1;background:var(--arancio);color:var(--bruno);font-family:var(--mono);
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:5px 9px}
 .card-foto img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
 img.intera{object-fit:contain!important;padding:8px}
 .card-testo{display:flex;flex-direction:column;gap:6px;padding:14px 16px 16px;flex:1}
@@ -611,7 +612,7 @@ def _testata(prefisso):
     casa = prefisso or "./"
     return f"""<header class="testata"><div class="contenitore">
 <a class="marchio" href="{casa}"><span class="q">{AUTOMA}</span><span><b>ELETTROFONI</b><small>Catalogo delle macchine sonore</small></span></a>
-<nav aria-label="Menu"><a href="{casa}#archivio">Le schede</a><a href="{casa}#suoni">Il suono vero</a><a href="{INSTAGRAM}" rel="noopener">Instagram ↗</a></nav>
+<nav aria-label="Menu"><a href="{casa}#archivio">Le schede</a><a href="{casa}suoni/">Il suono vero</a><a href="{INSTAGRAM}" rel="noopener">Instagram ↗</a></nav>
 </div></header><div class="filetto"></div>"""
 
 
@@ -689,7 +690,7 @@ def _credito_suono(a, suono, breve=False):
             f'estratto di {round(suono["secondi"])} s, volume normalizzato')
 
 
-def _card(s, foto, suono, prefisso, sizes):
+def _card(s, foto, suono, prefisso, sizes, *, nuova=False, lazy=True):
     testo = " ".join([s["strumento"], s["costruttore"], str(s["anno"]), s["luogo"],
                       s["inventore_nome"], s["serie"]]
                      + [u["artista"] for u in s["chi_lusata"]])
@@ -697,7 +698,7 @@ def _card(s, foto, suono, prefisso, sizes):
     if suono:
         piede += '<span class="ha-suono">♪ Suono vero</span>'
     return f"""<a class="card" href="{prefisso}tavole/{s['slug']}/" data-serie="{_serie_id(s['serie'])}" data-suono="{1 if suono else 0}" data-testo="{e(_senza_accenti(testo))}">
-<span class="card-foto">{_img(s, foto, prefisso, sizes, box=4 / 3)}</span>
+<span class="card-foto">{'<span class="bollino">Ultima uscita</span>' if nuova else ''}{_img(s, foto, prefisso, sizes, lazy=lazy, priorita=nuova, box=4 / 3)}</span>
 <span class="card-testo"><span class="card-meta"><span>N. {s['numero']:03d}</span><span>{e(str(s['anno']))}</span></span>
 <span class="card-nome">{_nome(s['strumento'])}</span>
 <span class="card-gancio">{e(s['gancio'])}</span>
@@ -910,55 +911,18 @@ def _home(uscite, media, reel_link):
     intro = f"""<section class="intro contenitore">
 <p class="kicker">Elettrofoni · l'archivio delle schede</p>
 <h1>Catalogo delle macchine sonore</h1>
-<p class="lead">Sintetizzatori, drum machine, organi, campionatori, effetti. Per ognuna c'è chi l'ha costruita, cosa c'è dentro, chi ci ha suonato e una storia, con le fonti in fondo. Dove esiste una registrazione libera della macchina vera, la potete ascoltare.</p>
-<dl class="contatori">
-<div><dt>schede uscite</dt><dd>{len(uscite)}</dd></div>
-<div><dt>col suono vero</dt><dd>{len(con_suono)}</dd></div>
-<div><dt>gli anni</dt><dd>{min(anni) if anni else ''}–{max(anni) if anni else ''}</dd></div>
-<div><dt>famiglie</dt><dd>{len(famiglie)}</dd></div>
-</dl>
+<p class="lead">Sintetizzatori, drum machine, organi, campionatori, effetti. Per ognuna c'è chi l'ha costruita, cosa c'è dentro, chi ci ha suonato e una storia, con le fonti in fondo.</p>
+<p class="cifre"><span><b>{len(uscite)}</b>schede</span><span><b>{min(anni) if anni else ''}–{max(anni) if anni else ''}</b>gli anni</span><span><b>{len(famiglie)}</b>famiglie</span><span><b>{len(con_suono)}</b>col suono vero</span></p>
 </section>"""
 
-    ultima = ""
-    if recenti:
-        p, s = recenti[0]
-        suono = media["suoni"].get(s["slug"])
-        lettore = ""
-        if suono:
-            lettore = (_lettore(s, suono, "")
-                       + f'<p class="credito-suono">{_credito_suono(s["reel_audio"], suono)}</p>')
-        bottoni = [f'<a class="bottone pieno" href="tavole/{s["slug"]}/">Leggi la scheda →</a>']
-        if p.get("permalink"):
-            bottoni.append(f'<a class="bottone" href="{e(p["permalink"])}" rel="noopener">Il post su Instagram ↗</a>')
-        ultima = f"""<section class="ultima contenitore" aria-labelledby="ultima-nome">
-<div class="ultima-griglia">
-<a class="ultima-foto" href="tavole/{s['slug']}/" tabindex="-1" aria-hidden="true">{_img(s, media['foto'].get(s['slug']), '', '(min-width: 900px) 620px, 100vw', lazy=False, priorita=True, box=4 / 3)}</a>
-<div class="ultima-testo">
-<p class="kicker">L'ultima uscita · scheda {s['numero']:03d} · {e(str(s['anno']))}</p>
-<h2 id="ultima-nome"><a href="tavole/{s['slug']}/">{_nome(s['strumento'])}</a></h2>
-<p class="gancio">{e(s['gancio'])}</p>
-<p class="sottotitolo">{e(s['sottotitolo'])}</p>
-{lettore}
-<p class="bottoni">{''.join(bottoni)}</p>
-</div></div></section>"""
-
-    suoni = ""
+    # Una riga sola verso la pagina dei suoni: i nomi delle prime tre
+    # dicono cosa c'è dietro meglio di «ascolta».
+    verso = ""
     if con_suono:
-        dischi = []
-        for _, s in con_suono:
-            suono = media["suoni"][s["slug"]]
-            dischi.append(f"""<li class="disco">
-<a class="disco-foto" href="tavole/{s['slug']}/" tabindex="-1" aria-hidden="true">{_img(s, media['foto'].get(s['slug']), '', '64px')}</a>
-<div><a class="disco-nome" href="tavole/{s['slug']}/">{_nome(s['strumento'])}</a><span class="disco-meta">{e(str(s['anno']))} · {e(_serie_breve(s['serie']))}</span></div>
-{_lettore(s, suono, '', mini=True)}
-<p class="disco-credito">{_credito_suono(s['reel_audio'], suono, breve=True)}</p>
-</li>""")
-        suoni = f"""<section class="suoni" id="suoni"><div class="contenitore">
-<p class="kicker">Da sentire</p>
-<h2>Il suono vero</h2>
-<p class="lead">Registrazioni libere delle macchine vere, da Wikimedia Commons e da Freesound. Niente dischi, solo la macchina, a volume pareggiato: si può passare dall'una all'altra senza toccare la manopola.</p>
-<p class="scorri" aria-hidden="true">Scorrete di lato →</p><ul class="dischi">{''.join(dischi)}</ul>
-</div></section>"""
+        nomi = ", ".join(e(s["strumento"]) for _, s in con_suono[:3])
+        verso = f"""<div class="contenitore"><a class="verso-suoni" href="suoni/">
+<span class="tondo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+<span class="riga"><b>Il suono vero</b><small>{len(con_suono)} macchine registrate davvero<span class="nomi">: {nomi}…</span></small></span><i aria-hidden="true">→</i></a></div>"""
 
     chips = [f'<button class="chip" type="button" data-filtro="tutte" aria-pressed="true">Tutte<span>{len(uscite)}</span></button>']
     if con_suono:
@@ -967,10 +931,11 @@ def _home(uscite, media, reel_link):
         chips.append(f'<button class="chip" type="button" data-filtro="{_serie_id(serie)}" aria-pressed="false">'
                      f'{e(_serie_breve(serie))}<span>{n}</span></button>')
     carte = "".join(_card(s, media["foto"].get(s["slug"]), media["suoni"].get(s["slug"]), "",
-                          "(min-width: 1180px) 270px, (min-width: 560px) 45vw, 50vw")
-                    for _, s in recenti)
+                          "(min-width: 1180px) 270px, (min-width: 560px) 45vw, 50vw",
+                          nuova=(n == 0), lazy=(n >= 4))
+                    for n, (_, s) in enumerate(recenti))
     archivio = f"""<section class="archivio contenitore" id="archivio">
-<div class="testa-sezione"><div><p class="kicker">Archivio</p><h2>Tutte le schede</h2></div><p class="conta" id="conta" aria-live="polite">{len(uscite)} schede</p></div>
+<div class="testa-sezione"><div><h2 class="kicker">Tutte le schede · la più nuova per prima</h2></div><p class="conta" id="conta" aria-live="polite">{len(uscite)} schede</p></div>
 <div class="strumenti" id="strumenti" hidden>
 <input id="cerca" class="cerca" type="search" placeholder="Cerca: Moog, 1982, Kraftwerk…" aria-label="Cerca una macchina, un costruttore o un artista" autocomplete="off">
 <div class="chips" role="group" aria-label="Famiglie">{''.join(chips)}</div>
@@ -980,7 +945,7 @@ def _home(uscite, media, reel_link):
 </section>"""
 
     vuoto = '<p class="contenitore nessuna">Le prime schede stanno arrivando.</p>' if not uscite else ""
-    corpo = f"{_testata('')}<main>{intro}{vuoto}{ultima}{suoni}{archivio}</main>{_piede('')}"
+    corpo = f"{_testata('')}<main>{intro}{vuoto}{verso}{archivio}</main>{_piede('')}"
     ld = {"@context": "https://schema.org", "@graph": [
         _org(),
         {"@type": "WebSite", "@id": f"{BASE}/#sito", "name": "Elettrofoni",
@@ -995,7 +960,35 @@ def _home(uscite, media, reel_link):
                 "come funzionano e chi li ha suonati, con il suono vero dove c'è. "
                 "Una scheda al giorno, con fonti verificate.",
                 canonical=f"{BASE}/", prefisso="", og_image=og_idx, verifica=True, ld=ld,
-                script=(JS_LETTORE if con_suono else "") + JS_ARCHIVIO),
+                script=JS_ARCHIVIO),
+        encoding="utf-8")
+    _pagina_suoni(con_suono, media)
+
+
+def _pagina_suoni(con_suono, media):
+    """La pagina «Il suono vero»: tutte le registrazioni, la più nuova per prima."""
+    pre = "../"
+    dischi = []
+    for _, s in con_suono:
+        suono = media["suoni"][s["slug"]]
+        dischi.append(f"""<li class="disco">
+<a class="disco-foto" href="{pre}tavole/{s['slug']}/" tabindex="-1" aria-hidden="true">{_img(s, media['foto'].get(s['slug']), pre, '64px')}</a>
+<div><a class="disco-nome" href="{pre}tavole/{s['slug']}/">{_nome(s['strumento'])}</a><span class="disco-meta">{e(str(s['anno']))} · {e(_serie_breve(s['serie']))}</span></div>
+{_lettore(s, suono, pre, mini=True)}
+<p class="disco-credito">{_credito_suono(s['reel_audio'], suono, breve=True)}</p>
+</li>""")
+    corpo = f"""{_testata(pre)}<main class="suoni"><div class="contenitore">
+<p class="kicker">Da sentire</p>
+<h1>Il suono vero</h1>
+<p class="lead">Registrazioni libere delle macchine vere, da Wikimedia Commons e da Freesound. Niente dischi, solo la macchina, a volume pareggiato: si può passare dall'una all'altra senza toccare la manopola. Il nome porta alla scheda.</p>
+<ul class="dischi">{''.join(dischi)}</ul>
+</div></main>{_piede(pre)}"""
+    (DOCS / "suoni").mkdir(exist_ok=True)
+    (DOCS / "suoni" / "index.html").write_text(
+        _pagina("Il suono vero: le registrazioni delle macchine | Elettrofoni", corpo,
+                f"{len(con_suono)} registrazioni libere di sintetizzatori, drum machine e organi veri: "
+                + ", ".join(s["strumento"] for _, s in con_suono[:5]) + " e gli altri.",
+                canonical=f"{BASE}/suoni/", prefisso=pre, script=JS_LETTORE),
         encoding="utf-8")
 
 
@@ -1072,7 +1065,7 @@ def main():
     # ripassata è alla cieca. La home porta la data dell'ultimo post,
     # ogni scheda la propria data di pubblicazione.
     ultimo = max((q["quando"][:10] for q in stato["pubblicati"]), default=None)
-    voci = [(f"{BASE}/", ultimo, "daily")]
+    voci = [(f"{BASE}/", ultimo, "daily"), (f"{BASE}/suoni/", ultimo, "weekly")]
     voci += [(f"{BASE}/tavole/{q['slug']}/", q["quando"][:10], "monthly")
              for q, _ in uscite]
     righe_sm = "".join(

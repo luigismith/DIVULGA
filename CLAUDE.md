@@ -478,11 +478,18 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   c'è non entra negli hashtag, come non entra nelle battute.
 - **Il sito** (`genera_archivio.py`, rifatto il 16/10/2026 su richiesta
   del proprietario: «puoi farlo più bello?» e «se possiamo mettere anche
-  i suoni reali sul sito sarebbe fico»). La più nuova in cima, le schede
-  riconoscibili dalla FOTO della macchina e non dalla tavola, ricerca
-  (legge anche gli artisti) e filtri per `serie`, fascia «Il suono vero»
-  con tutte le registrazioni, e ogni scheda col suo lettore, il reel,
-  le 6 tavole, le fonti, la precedente/successiva e la stessa famiglia.
+  i suoni reali sul sito sarebbe fico»). La home è il CATALOGO: apertura
+  corta e subito la griglia, la più nuova per prima col bollino «Ultima
+  uscita». La prima versione apriva con l'ultima scheda a tutta pagina e
+  i 14 suoni sotto, e il proprietario: «sembra che si parli solo dello
+  strumento dell'ultimo post» (sul telefono, tre schermate prima della
+  seconda macchina), e «non è indispensabile che sia tutto su una sola
+  pagina». Quindi i suoni stanno in `suoni/` (pagina sua, nel menu e in
+  una riga sopra la griglia). Schede riconoscibili dalla FOTO della
+  macchina e non dalla tavola, ricerca (legge anche gli artisti) e filtri
+  per `serie`; ogni scheda col suo lettore, il reel, le 6 tavole, le
+  fonti, la precedente/successiva e la stessa famiglia. Regola: la prima
+  schermata della home deve far vedere PIÙ macchine, non una.
   Regole:
   · foto per il web con Pillow (`docs/foto/<slug>-320|640|1280.jpg`), NON
     con ffmpeg: ffmpeg ignora la rotazione EXIF e il browser no;
