@@ -98,11 +98,14 @@ def main():
         if not tutti and not m.get("comments_count"):
             continue
         commenti = api("GET", f"{m['id']}/comments", token,
-                       fields="id,text,username,timestamp,like_count").get("data", [])
+                       fields="id,text,username,from{id,username},timestamp,like_count").get("data", [])
         if tutti:
             print(f"  · {m.get('permalink')} {m.get('media_product_type')}: "
                   f"comments_count={m.get('comments_count')}, letti={len(commenti)}")
         for c in commenti:
+            # Con Instagram Login il nome sta in «from», non in «username»
+            # (16/10/2026: la prima lettura vera usciva tutta «@None»).
+            c["username"] = c.get("username") or (c.get("from") or {}).get("username")
             # I nostri stessi commenti (la menzione automatica) non sono
             # da presidiare: sono roba nostra.
             if c.get("username") == mio_nome:
