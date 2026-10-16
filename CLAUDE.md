@@ -457,6 +457,12 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   famiglia del 200 ai parametri inesistenti: una risposta vuota sembra
   «nessun commento». I commenti li ha letti il proprietario dall'app.
   Diagnosi: `commenti.yml` con `grezzo` stampa la risposta così com'è.
+  Provato il 16/10: vuoto anche con le versioni v21-v24 esplicite, e il
+  token non espone i permessi (`me/permissions` non esiste su
+  graph.instagram.com). Pubblicare commenti funziona, leggerli no: la
+  causa più probabile è l'app Meta in modalità Sviluppo, che si sistema
+  SOLO dal pannello sviluppatori col login del proprietario. Pronte per
+  il passaggio a Live: `docs/privacy.html` e `docs/cancellazione-dati.html`.
   **I commenti si leggono OGNI GIORNO** (proprietario, 16/10/2026: «leggi
   sempre i commenti e valutiamo insieme i feedback e troviamo
   soluzioni»): lo fa la rete delle 18:20, punto 3. Finché l'API li dà
