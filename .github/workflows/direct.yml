@@ -1,0 +1,28 @@
+# ELETTROFONI — legge i messaggi diretti (lancio manuale, sola lettura).
+name: Leggi direct
+
+on:
+  workflow_dispatch:
+    inputs:
+      quante:
+        description: 'Quante conversazioni'
+        required: false
+        default: '20'
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  direct:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests cryptography
+      - env:
+          STATE_KEY: ${{ secrets.STATE_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python direct.py "${{ inputs.quante }}"
