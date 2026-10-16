@@ -100,6 +100,15 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   dal fotogramma 0. Ogni battuta è un fatto che sta GIÀ nella scheda
   (stessa regola delle due fonti: le battute non aggiungono fatti, li
   condensano). `valida_scheda` rifiuta una scheda senza battute.
+  **Le battute sono una storia di seguito** (16/10/2026, commento sul
+  Wurlitzer: «è spiegata male»). Lì la battuta 1 diceva che Mercury non
+  lo voleva, la 2 parlava di lamelle, la 3 ripartiva con «Deacon
+  *invece*…»: l'«invece» puntava a due schermate prima e chi guardava
+  aveva perso il filo. Quindi: niente battute tecniche in mezzo a una
+  storia (vanno prima o dopo), e una battuta non comincia con
+  «invece», «allora», «anche», «quindi» né usa una cosa mai detta («le
+  due letture») se il riferimento non sta nella battuta subito prima o
+  nel suo kick. Controllate tutte le 65 schede: corrette H910 e CS-80.
 - **Una CTA sola per scheda e per formato**, a rotazione fra tre forme (`CTA_FORME` in
   `contenuti.py`, scelta sul numero della scheda quindi sempre identica in
   didascalia, tavola e reel): tagga chi l'ha suonata / quale macchina
