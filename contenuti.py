@@ -6248,4 +6248,18 @@ if __name__ == "__main__":
             problemi = True
     verificate = sum(1 for s in SCHEDE if s["verificata"])
     print(f"\nSchede totali: {len(SCHEDE)} — verificate e pubblicabili: {verificate}")
+    # Dopo il 1988 (decisione del proprietario, 16/10/2026: «fino a oggi,
+    # Auto-Tune sì, una su quattro va bene»). Fino a quel giorno nessuna
+    # delle 68 schede era posteriore al 1988, senza che nessuno l'avesse
+    # deciso: il rifornimento pescava sempre dagli stessi classici. Qui si
+    # conta, così chi rifornisce vede la quota invece di ricordarsela.
+    import json, re
+    from pathlib import Path
+    f = Path(__file__).with_name("stato.json")
+    usciti = {q["slug"] for q in json.loads(f.read_text())["pubblicati"]} if f.exists() else set()
+    coda = [s for s in SCHEDE if s["verificata"] and s["slug"] not in usciti]
+    recenti = [s["strumento"] for s in coda
+               if (m := re.search(r"\d{4}", str(s["anno"]))) and int(m.group()) > 1988]
+    print(f"In coda: {len(coda)} — dopo il 1988: {len(recenti)} (obiettivo: almeno 1 su 4)"
+          + (f" — {', '.join(recenti)}" if recenti else ""))
     raise SystemExit(1 if problemi else 0)

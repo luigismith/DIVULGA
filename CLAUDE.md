@@ -699,6 +699,22 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
 2. Scegliere strumenti nuovi (varietà: synth, drum machine, organi,
    campionatori, effetti; includere il filone italiano: Farfisa, Elka
    Synthex, Crumar, Synket di Paolo Ketoff, Studio di Fonologia RAI…).
+   **Almeno una scheda nuova su quattro è posteriore al 1988, fino a
+   oggi** (decisione del proprietario, 16/10/2026: «fino a oggi,
+   Auto-Tune sì, una su quattro va bene»). Fino a quel giorno le 68
+   schede scritte si fermavano tutte al 1988 (Akai MPC60, Korg M1) e
+   nessuno l'aveva deciso: il rifornimento ripescava sempre dal canone
+   dei classici, e lo stile anni '70 è grafico, non un limite d'epoca.
+   `python contenuti.py` stampa la quota della coda. Idee da verificare:
+   Korg Wavestation, Roland JD-800, Clavia Nord Lead, Eurorack (Doepfer
+   A-100), Roland MC-303, Auto-Tune, Elektron Machinedrum, Teenage
+   Engineering OP-1, Korg Volca. Il software entra se ha un suono
+   riconoscibile (Auto-Tune sì; un'altra applicazione si chiede prima al
+   proprietario). Più ci si avvicina a oggi, più la scheda rischia di
+   sembrare una recensione: niente prezzi di listino attuali, niente
+   «da avere», e una storia con fonti e un disco come per le altre.
+   I marchi recenti sono spesso su Instagram: tag solo se verificati
+   (regola 3), e il proprietario li segue prima.
 3. Per ciascuno: verificare i fatti (≥2 fonti), trovare foto libera su
    Commons (salvare autore/licenza, cercare anche pannello/interno per
    `foto_extra`), verificare handle da taggare, scrivere i campi con la
