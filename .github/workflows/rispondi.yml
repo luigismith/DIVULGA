@@ -1,0 +1,31 @@
+# ELETTROFONI — pubblica le risposte ai commenti approvate dal proprietario
+# (risposte.json). Solo lancio manuale: le risposte non partono mai da sole.
+name: Rispondi ai commenti
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: pubblicazione        # mai insieme al post o al reel
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  rispondi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests cryptography
+      - run: |
+          git config user.name "elettrofoni-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - env:
+          STATE_KEY: ${{ secrets.STATE_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python rispondi.py
