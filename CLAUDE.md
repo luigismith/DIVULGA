@@ -440,7 +440,14 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   scritto noi; `commenti.json` non è mai stato creato. È la stessa
   famiglia del 200 ai parametri inesistenti: una risposta vuota sembra
   «nessun commento». I commenti li ha letti il proprietario dall'app.
-  Diagnosi: `commenti.yml` con `grezzo` stampa la risposta così com'è. NON si risponde con template automatici: le
+  Diagnosi: `commenti.yml` con `grezzo` stampa la risposta così com'è.
+  **I commenti si leggono OGNI GIORNO** (proprietario, 16/10/2026: «leggi
+  sempre i commenti e valutiamo insieme i feedback e troviamo
+  soluzioni»): lo fa la rete delle 18:20, punto 3. Finché l'API li dà
+  vuoti, si confronta `insights.comments` fra le metriche di oggi e di
+  ieri e si dice al proprietario DOVE sono arrivati. Le soluzioni si
+  propongono e si decidono con lui: niente cambi da soli, niente
+  risposte senza il suo via. NON si risponde con template automatici: le
   risposte le scrive la sessione di presidio, che ha letto il commento.
 - Un titolo dentro un flex viene compresso e l'autofit lo taglia:
   `flex:none` sui titoli (già nel CSS base).
