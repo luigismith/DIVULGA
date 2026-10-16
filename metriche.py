@@ -145,6 +145,29 @@ def insights_account(token):
         else:
             rifiutate[f"demografia_{rottura}"] = str(c)[:200]
 
+    # CHI CI VEDE, non solo chi ci segue (16/10/2026, il proprietario:
+    # «puoi vedere la provenienza degli iscritti e dei visitatori?»).
+    # Raggiunti e coinvolti del mese, per paese/città/età/genere; e la
+    # copertura divisa fra follower e non follower, che per una pagina che
+    # cresce coi reel è il numero che conta. Da dove arrivano dentro
+    # Instagram (Esplora, scheda Reel, home) l'API non lo dà: si vede solo
+    # nell'app.
+    for metrica in ("reached_audience_demographics", "engaged_audience_demographics"):
+        for rottura in ("country", "city", "age", "gender"):
+            s, c = _get("me/insights", token, metric=metrica, period="lifetime",
+                        timeframe="this_month", metric_type="total_value", breakdown=rottura)
+            chiave = f"{metrica.split('_')[0]}_{rottura}"
+            if s == 200:
+                out[chiave] = c.get("data", [])
+            else:
+                rifiutate[chiave] = str(c)[:200]
+    s, c = _get("me/insights", token, metric="reach", period="day", metric_type="total_value",
+                since=da, until=a, breakdown="follow_type")
+    if s == 200:
+        out["reach_follow_type"] = c.get("data", [])
+    else:
+        rifiutate["reach_follow_type"] = str(c)[:200]
+
     out["rifiutate"] = rifiutate
     return out
 
