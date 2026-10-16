@@ -4604,9 +4604,120 @@ SCHEDE = [
         },
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 56
+    # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
+    # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
+    # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
+    # perché a fonte singola: prezzo di lancio, anno dell'ATR-1 (solo Sound
+    # On Sound), «un milione di moltiplicazioni ridotte a quattro», il
+    # produttore pagato 60.000 dollari, l'esempio di Eiffel 65 (era un
+    # harmonizer MIDI, non Auto-Tune), Radiohead (solo The Wire).
+    # Controverso e quindi taciuto: chi volle la velocità zero (Hildebrand
+    # «per gioco» secondo Priceonomics, il marketing secondo Ironic Sans).
+    # Nessuna registrazione libera dimostrabile di Auto-Tune VERO su
+    # Commons o Freesound: il reel usa la sigla.
+    {
+        "slug": "autotune",
+        "numero": 56,
+        "serie": "GLI EFFETTI",
+        "strumento": "Antares Auto-Tune",
+        "anno": "1997",
+        "luogo": "Scotts Valley, California",
+        "costruttore": "Antares Audio Technologies",
+        "specifiche": [
+            ("ANNO", "1997"),
+            ("COSTRUTTORE", "Antares"),
+            ("PRINCIPIO", "Autocorrelazione"),
+            ("FORMATO", "Plug-in per Pro Tools"),
+        ],
+        "gancio": "L'ha inventato un ingegnere che cercava il petrolio nei dati sismici",
+        "sottotitolo": "Doveva aggiustare le stonature senza farsi sentire. Lo conosciamo tutti per la volta che si è fatto sentire.",
+        "la_macchina": "Nel 1997 Auto-Tune è un programma, un plug-in per Pro Tools. Ascolta una voce, capisce che nota sta cantando e la sposta sulla più vicina della scala che gli avete indicato. Se la nota è già giusta la lascia stare. Prima, per avere una voce intonata, in studio si registravano decine di prese e si montavano i pezzi buoni. Da qui in poi si può tenere la prima, che spesso è la migliore. Secondo me è la macchina più odiata di tutto il catalogo, e anche quella che si sente di più alla radio.",
+        "inventore_nome": "Andy Hildebrand",
+        "inventore": "Harold «Andy» Hildebrand da ragazzo suona il flauto da professionista, poi nel 1976 prende un dottorato in ingegneria elettrica all'Università dell'Illinois. Va alla Exxon a leggere i dati sismici, cioè a capire dove trivellare, e per farlo usa l'autocorrelazione, una formula che trova il punto in cui un segnale si ripete. Verso i 40 anni smette con il petrolio e nel 1989 va a studiare composizione alla Rice di Houston. Nel 1990 fonda Jupiter Systems, che diventerà Antares. Il primo prodotto è un campionatore software, Infinity.",
+        "come_funziona": "La voce è un'onda che si ripete, e il tempo di una ripetizione è la nota. Auto-Tune lo misura con la stessa autocorrelazione dei dati sismici, lo confronta con la nota giusta e ricampiona l'onda quel tanto che basta. Si pensava che quel calcolo fosse troppo pesante per farlo mentre uno canta: Hildebrand ne ha tagliato quasi tutto. Poi c'è una manopola, Retune Speed, che decide quanto in fretta la nota viene spinta al suo posto. Lenta, non la sentite. A zero la nota salta di colpo da un gradino all'altro senza scivolare, e la voce diventa un robot.",
+        "richiami": [
+            ("FIG. 1", "Trova la nota (autocorrelazione)"),
+            ("FIG. 2", "La sposta sulla scala scelta"),
+            ("FIG. 3", "Retune Speed a zero: il robot"),
+        ],
+        "chi_lusata": [
+            {"artista": "Cher", "nota": "«Believe» (1998), da cui il nome «Cher effect»", "ig": None},
+            {"artista": "T-Pain", "nota": "«Rappa Ternt Sanga» (2005), e da lì il suo marchio", "ig": "tpain"},
+            {"artista": "Kanye West", "nota": "«808s & Heartbreak» (2008), quasi tutto cantato così", "ig": None},
+            {"artista": "Daft Punk", "nota": "la voce di Romanthony in «One More Time» (2000)", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "autotune",
+             "riga": "Antares lo vende ancora, e il suo account si chiama come lui: @autotune."},
+        ],
+        "aneddoto": "A metà anni '90, a pranzo durante il NAMM, Hildebrand chiede agli amici cosa ci sarebbe ancora da inventare. Una donna risponde scherzando: una scatola che mi faccia cantare intonata. Nel 1998 Mark Taylor e Brian Rawling producono «Believe» di Cher e sulla sua voce mettono la Retune Speed a zero. La casa discografica vuole togliere quell'effetto, e Cher risponde che si cambia solo passando sul suo cadavere. A Sound On Sound, nel 1999, i produttori raccontano che è un pedale, un DigiTech Talker. Il disco va al primo posto nel Regno Unito e in America.",
+        "avvertenza": "Retune Speed a zero non corregge la voce: la trasforma. L'inventore pensava che nessuno sano di mente l'avrebbe girata fin lì.",
+        "da_ascoltare": {"brano": "Believe", "artista": "Cher",
+                          "anno": "1998",
+                          "cosa": "Nelle strofe la voce salta da una nota all'altra senza scivolare. È Auto-Tune con la Retune Speed a zero."},
+        "foto": {
+            "file": "assets/foto/autotune/principale.jpg",
+            "autore": "Georges Seguin (Okki), ritagliata",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un Antares AVP-1 in un rack da concerto: Auto-Tune sta qui dentro",
+        },
+        # Non esiste un'altra foto libera di hardware Antares: questa è un
+        # ritaglio verticale della stessa, sul logo e sul display, che nel
+        # reel riempie lo schermo invece di stare in una fascia.
+        "foto_extra": [
+            {"file": "assets/foto/autotune/display.jpg",
+             "autore": "Georges Seguin (Okki), ritagliata", "licenza": "CC BY-SA 3.0",
+             "fonte": "Wikimedia Commons", "posizione": "center",
+             "didascalia": "Il display dell'AVP-1, «antares vocal producer»"},
+        ],
+        "fonti": [
+            {"titolo": "«Instrumental Instruments: Auto-Tune» — RBMA Daily, 2017",
+             "url": "https://daily.redbullmusicacademy.com/2017/09/instrumental-instruments-auto-tune", "data": "2026-10-16"},
+            {"titolo": "«The Inventor of Auto-Tune» — Priceonomics",
+             "url": "https://priceonomics.com/the-inventor-of-auto-tune/", "data": "2026-10-16"},
+            {"titolo": "«Auto-Tune: Why Pop Music Sounds Perfect» — Time, 2009",
+             "url": "https://time.com/archive/6687593/auto-tune-why-pop-music-sounds-perfect/", "data": "2026-10-16"},
+            {"titolo": "Hildebrand fra gli ex studenti — ECE Illinois, 2016",
+             "url": "https://ece.illinois.edu/news/alumni-news/field-report/4430", "data": "2026-10-16"},
+            {"titolo": "«From Rocks to Rock» — AAPG Explorer, 2012",
+             "url": "https://www.aapg.org/news-and-media/details/explorer/articleid/2104/from-rocks-to-rock-his-ideas-sound-good", "data": "2026-10-16"},
+            {"titolo": "Il Grammy tecnico 2023 a Hildebrand — Grammy.com",
+             "url": "https://www.grammy.com/news/dr-andy-hildebrand-honored-recording-academy-special-merit-award", "data": "2026-10-16"},
+            {"titolo": "«1997 Antares Auto-Tune» — Mix",
+             "url": "https://www.mixonline.com/technology/1997-antares-auto-tune-383728", "data": "2026-10-16"},
+            {"titolo": "Brevetto US 5.973.252 — Google Patents",
+             "url": "https://patents.google.com/patent/US5973252A/en", "data": "2026-10-16"},
+            {"titolo": "«Recording Cher's 'Believe'» — Sound On Sound, febbraio 1999",
+             "url": "https://www.soundonsound.com/techniques/recording-cher-believe", "data": "2026-10-16"},
+            {"titolo": "«Antares Auto-tune» — Sound On Sound, agosto 2000",
+             "url": "https://www.soundonsound.com/reviews/antares-auto-tune", "data": "2026-10-16"},
+            {"titolo": "«Believe» e il ritorno di Cher — Mental Floss",
+             "url": "https://www.mentalfloss.com/posts/cher-believe-1990s-music-comeback", "data": "2026-10-16"},
+            {"titolo": "«Believe» 25 anni dopo — NPR, 2023",
+             "url": "https://www.cfpublic.org/2023-10-19/25-years-ago-cher-released-a-song-that-would-change-the-sound-of-pop-music", "data": "2026-10-16"},
+            {"titolo": "«808s & Heartbreak» — Spin, 2008",
+             "url": "https://www.spinmagazine.com/2008/11/album-review-kanye-wests-808s-and-heartbreak/", "data": "2026-10-16"},
+            {"titolo": "«Antares AVP-1» — Sound On Sound, 2002",
+             "url": "https://www.soundonsound.com/reviews/antares-avp1", "data": "2026-10-16"},
+            {"titolo": "«Discovery» 20 anni dopo — Grammy.com",
+             "url": "https://grammy.com/news/record-daft-punk-discovery-album-20-year-anniversary", "data": "2026-10-16"},
+        ],
+        "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 056", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
+            ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
+            ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
+            ("CHER · 1998", "In «Believe» la correzione è a zero: la voce salta di nota in nota."),
+        ],
+        "reel_cta": "Mandalo a chi giura di non usare l'autotune",
+        "verificata": True,
+    },
     {
         "slug": "sh101",
-        "numero": 56,
+        "numero": 57,
         "serie": "I SINTETIZZATORI",
         "strumento": "Roland SH-101",
         "anno": "1982",
@@ -4709,7 +4820,7 @@ SCHEDE = [
         ],
         "hashtags": ["#sh101", "#roland", "#sintetizzatore", "#theprodigy", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 056", "Nata per il palco, finita nel basso di «Voodoo Ray»"),
+            ("ELETTROFONI · N. 057", "Nata per il palco, finita nel basso di «Voodoo Ray»"),
             ("NOVEMBRE 1982", "Roland SH-101: 32 tasti, le pile, la tracolla di pelle."),
             ("1986", "Chi ha 500 dollari se li tiene per un DX7. La produzione chiude."),
             ("50 STERLINE", "Al banco dei pegni la prendono i ragazzi di Detroit e di Manchester."),
@@ -4729,7 +4840,7 @@ SCHEDE = [
     },
     {
         "slug": "vl1",
-        "numero": 57,
+        "numero": 58,
         "serie": "I GIOCATTOLI",
         "strumento": "Casio VL-Tone VL-1",
         "anno": "1980 circa",
@@ -4822,7 +4933,7 @@ SCHEDE = [
         ],
         "hashtags": ["#casiovl1", "#casio", "#sintetizzatore", "#steviewonder", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 057", "Una calcolatrice da 69,95 dollari ha fatto «Da Da Da»"),
+            ("ELETTROFONI · N. 058", "Una calcolatrice da 69,95 dollari ha fatto «Da Da Da»"),
             ("TOKYO · DAL 1946", "Casio per 30 anni fa calcolatrici e basta. Poi prova a farle suonare."),
             ("29 TASTI · 5 SUONI", "Il VL-1: premi CAL e fa i conti, premi MUSIC e suona."),
             ("1979? 1980? 1981? 1982?", "È un giocattolo e la data si è persa: 4 fonti, 4 anni diversi."),
@@ -4840,7 +4951,7 @@ SCHEDE = [
     },
     {
         "slug": "lowrey",
-        "numero": 58,
+        "numero": 59,
         "serie": "GLI ORGANI",
         "strumento": "Lowrey DSO",
         "anno": "1965",
@@ -4933,7 +5044,7 @@ SCHEDE = [
         ],
         "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 058", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ELETTROFONI · N. 059", "Quel clavicembalo dei Beatles è un organo da salotto"),
             ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
             ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
             ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
@@ -4944,7 +5055,7 @@ SCHEDE = [
     },
     {
         "slug": "polymoog",
-        "numero": 59,
+        "numero": 60,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Polymoog",
         "anno": "1975",
@@ -5038,7 +5149,7 @@ SCHEDE = [
         ],
         "hashtags": ["#polymoog", "#moog", "#sintetizzatore", "#prince", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 059", "Il tappeto di «Cars» di Gary Numan? Un preset e basta"),
+            ("ELETTROFONI · N. 060", "Il tappeto di «Cars» di Gary Numan? Un preset e basta"),
             ("1975 · 5.295 DOLLARI", "Suonare un accordo è il problema di tutti. Moog risponde col Polymoog."),
             ("71 TASTI, 71 SCHEDE", "Una scheda per ogni tasto: 71 cose che si possono guastare."),
             ("1978 · 14 PRESET", "La versione Keyboard ha 14 preset coi nomi stampati. Uno è Vox Humana."),
@@ -5056,7 +5167,7 @@ SCHEDE = [
     },
     {
         "slug": "wasp",
-        "numero": 60,
+        "numero": 61,
         "serie": "I SINTETIZZATORI",
         "strumento": "EDP Wasp",
         "anno": "1978",
@@ -5148,7 +5259,7 @@ SCHEDE = [
         ],
         "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 060", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("ELETTROFONI · N. 061", "Casale dei Devo: col sudore delle dita suona da solo"),
             ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
             ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
@@ -5159,7 +5270,7 @@ SCHEDE = [
     },
     {
         "slug": "cz101",
-        "numero": 61,
+        "numero": 62,
         "serie": "I SINTETIZZATORI",
         "strumento": "Casio CZ-101",
         "anno": "1984",
@@ -5255,7 +5366,7 @@ SCHEDE = [
         ],
         "hashtags": ["#cz101", "#casio", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 061", "Quelli delle calcolatrici contro il DX7 di Yamaha"),
+            ("ELETTROFONI · N. 062", "Quelli delle calcolatrici contro il DX7 di Yamaha"),
             ("NOVEMBRE 1984", "Il Casio CZ-101 costa 495 dollari. Il DX7 quasi 2.000."),
             ("BREVETTO DI STANFORD", "La FM è un brevetto di Stanford. Casio inventa la distorsione di fase."),
             ("68.500 ESEMPLARI", "Va a 6 pile torcia, e i ragazzi se lo portano in camera."),
@@ -5266,7 +5377,7 @@ SCHEDE = [
     },
     {
         "slug": "elkarhapsody",
-        "numero": 62,
+        "numero": 63,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -5356,7 +5467,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 062", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 063", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -5367,7 +5478,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 63,
+        "numero": 64,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -5453,7 +5564,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 063", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 064", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -5464,7 +5575,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 64,
+        "numero": 65,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -5553,7 +5664,7 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 064", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 065", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
@@ -5564,7 +5675,7 @@ SCHEDE = [
     },
     {
         "slug": "leslie",
-        "numero": 65,
+        "numero": 66,
         "serie": "GLI EFFETTI",
         "strumento": "Leslie",
         "anno": "1941",
@@ -5649,7 +5760,7 @@ SCHEDE = [
         ],
         "hashtags": ["#lesliespeaker", "#leslie", "#organo", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 065", "Hammond sente il Leslie al telefono e dice di no"),
+            ("ELETTROFONI · N. 066", "Hammond sente il Leslie al telefono e dice di no"),
             ("DON LESLIE", "Nel 1940 Don Leslie fa sentire il prototipo. A Hammond non piace."),
             ("1941", "Leslie fonda la Electro Music a Pasadena e lo costruisce in garage."),
             ("TROMBA E TAMBURO", "Dentro girano una tromba e un tamburo, fino a 400 giri al minuto."),
@@ -5669,7 +5780,7 @@ SCHEDE = [
     },
     {
         "slug": "poly800",
-        "numero": 66,
+        "numero": 67,
         "serie": "I SINTETIZZATORI",
         "strumento": "Korg Poly-800",
         "anno": "1983",
@@ -5750,7 +5861,7 @@ SCHEDE = [
         ],
         "hashtags": ["#poly800", "#korg", "#sintetizzatore", "#derrickmay", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 066", "Va a pile, e ce l'hanno i tre della techno di Detroit"),
+            ("ELETTROFONI · N. 067", "Va a pile, e ce l'hanno i tre della techno di Detroit"),
             ("KORG · 1983", "8 voci programmabili, 49 tasti e i ganci per la tracolla."),
             ("IL TRUCCO", "Ogni voce ha due oscillatori: accesi tutti e due, le voci scendono a 4."),
             ("IL DIFETTO", "Un filtro solo, condiviso da tutte le voci."),
@@ -5761,7 +5872,7 @@ SCHEDE = [
     },
     {
         "slug": "pianet",
-        "numero": 67,
+        "numero": 68,
         "serie": "GLI ELETTROMECCANICI",
         "strumento": "Hohner Pianet",
         "anno": "1962",
@@ -5846,7 +5957,7 @@ SCHEDE = [
         ],
         "hashtags": ["#pianet", "#hohner", "#pianoelettrico", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 067", "«She's Not There» degli Zombies: un Pianet da casa"),
+            ("ELETTROFONI · N. 068", "«She's Not There» degli Zombies: un Pianet da casa"),
             ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
             ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
@@ -5857,7 +5968,7 @@ SCHEDE = [
     },
     {
         "slug": "omnichord",
-        "numero": 68,
+        "numero": 69,
         "serie": "I GIOCATTOLI",
         "strumento": "Suzuki Omnichord",
         "anno": "1981",
@@ -5935,7 +6046,7 @@ SCHEDE = [
         ],
         "hashtags": ["#omnichord", "#suzuki", "#strumentielettronici", "#brianeno", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 068", "Basta un dito, e Brian Eno ci fa «Deep Blue Day»"),
+            ("ELETTROFONI · N. 069", "Basta un dito, e Brian Eno ci fa «Deep Blue Day»"),
             ("SUZUKI · 1981", "Un'autoarpa elettronica per chi non ha mai suonato."),
             ("COME SI SUONA", "Scegli un accordo e striscia il dito sulla piastra."),
             ("IL LIMITE", "L'OM-27 ha 27 accordi e un solo suono: l'arpa."),

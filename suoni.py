@@ -253,6 +253,7 @@ VOCE_SCHEDA = {
     "rhodes": "corda", "clavinet": "corda", "pianet": "corda", "wurlitzer200a": "corda",
     # generatori di laboratorio e studio
     "vcs3": "studio", "fonologia": "studio", "h910": "studio", "phase90": "studio",
+    "autotune": "studio",
     # elettronica da pochi soldi
     "stylophone": "giocattolo", "omnichord": "giocattolo", "speakspell": "giocattolo", "vl1": "giocattolo",
     # ritmiche: la voce sta sotto, comanda la batteria (vedi CON_BATTERIA)
