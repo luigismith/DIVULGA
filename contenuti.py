@@ -189,6 +189,16 @@ SCHEDE = [
             ("FINO AL 1981", "Circa 12.000 esemplari. E oggi il Model D è ancora a listino."),
         ],
         "reel_cta": "Mandalo a chi non restituisce mai niente",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # estratto 0:02-0:33 dell'assolo; dopo 0:45 la pagina annuncia una citazione dei Led Zeppelin, quindi ci si ferma prima.
+        "reel_audio": {
+            "file": "assets/audio/minimoog/registrazione.mp3", "inizio": 0,
+            "autore": "Analogist", "licenza": "CC0 1.0",
+            "fonte": "freesound.org/s/449816",
+            "url": "https://freesound.org/s/449816/",
+            "cosa": "un Minimoog Model D del 1977, non la riedizione: un assolo improvvisato con l'eco",
+        },
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
     },
     {
@@ -5056,325 +5066,9 @@ SCHEDE = [
         },
         "verificata": True,
     },
-    # ---------------------------------------------------------------- 60
-    # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
-    # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
-    # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
-    # perché a fonte singola: prezzo di lancio, anno dell'ATR-1 (solo Sound
-    # On Sound), «un milione di moltiplicazioni ridotte a quattro», il
-    # produttore pagato 60.000 dollari, l'esempio di Eiffel 65 (era un
-    # harmonizer MIDI, non Auto-Tune), Radiohead (solo The Wire).
-    # Controverso e quindi taciuto: chi volle la velocità zero (Hildebrand
-    # «per gioco» secondo Priceonomics, il marketing secondo Ironic Sans).
-    # Nessuna registrazione libera dimostrabile di Auto-Tune VERO su
-    # Commons o Freesound: il reel usa la sigla.
-    {
-        "slug": "autotune",
-        "numero": 60,
-        "serie": "GLI EFFETTI",
-        "strumento": "Antares Auto-Tune",
-        "anno": "1997",
-        "luogo": "Scotts Valley, California",
-        "costruttore": "Antares Audio Technologies",
-        "specifiche": [
-            ("ANNO", "1997"),
-            ("COSTRUTTORE", "Antares"),
-            ("PRINCIPIO", "Autocorrelazione"),
-            ("FORMATO", "Plug-in per Pro Tools"),
-        ],
-        "gancio": "L'ha inventato un ingegnere che cercava il petrolio nei dati sismici",
-        "sottotitolo": "Doveva aggiustare le stonature senza farsi sentire. Lo conosciamo tutti per la volta che si è fatto sentire.",
-        "la_macchina": "Nel 1997 Auto-Tune è un programma, un plug-in per Pro Tools. Ascolta una voce, capisce che nota sta cantando e la sposta sulla più vicina della scala che gli avete indicato. Se la nota è già giusta la lascia stare. Prima, per avere una voce intonata, in studio si registravano decine di prese e si montavano i pezzi buoni. Da qui in poi si può tenere la prima, che spesso è la migliore. Secondo me è la macchina più odiata di tutto il catalogo, e anche quella che si sente di più alla radio.",
-        "inventore_nome": "Andy Hildebrand",
-        "inventore": "Harold «Andy» Hildebrand da ragazzo suona il flauto da professionista, poi nel 1976 prende un dottorato in ingegneria elettrica all'Università dell'Illinois. Va alla Exxon a leggere i dati sismici, cioè a capire dove trivellare, e per farlo usa l'autocorrelazione, una formula che trova il punto in cui un segnale si ripete. Verso i 40 anni smette con il petrolio e nel 1989 va a studiare composizione alla Rice di Houston. Nel 1990 fonda Jupiter Systems, che diventerà Antares. Il primo prodotto è un campionatore software, Infinity.",
-        "come_funziona": "La voce è un'onda che si ripete, e il tempo di una ripetizione è la nota. Auto-Tune lo misura con la stessa autocorrelazione dei dati sismici, lo confronta con la nota giusta e ricampiona l'onda quel tanto che basta. Si pensava che quel calcolo fosse troppo pesante per farlo mentre uno canta: Hildebrand ne ha tagliato quasi tutto. Poi c'è una manopola, Retune Speed, che decide quanto in fretta la nota viene spinta al suo posto. Lenta, non la sentite. A zero la nota salta di colpo da un gradino all'altro senza scivolare, e la voce diventa un robot.",
-        "richiami": [
-            ("FIG. 1", "Trova la nota (autocorrelazione)"),
-            ("FIG. 2", "La sposta sulla scala scelta"),
-            ("FIG. 3", "Retune Speed a zero: il robot"),
-        ],
-        "chi_lusata": [
-            {"artista": "Cher", "nota": "«Believe» (1998), da cui il nome «Cher effect»", "ig": None},
-            {"artista": "T-Pain", "nota": "«Rappa Ternt Sanga» (2005), e da lì il suo marchio", "ig": "tpain"},
-            {"artista": "Kanye West", "nota": "«808s & Heartbreak» (2008), quasi tutto cantato così", "ig": None},
-            {"artista": "Daft Punk", "nota": "la voce di Romanthony in «One More Time» (2000)", "ig": None},
-        ],
-        "menzioni_extra": [
-            {"ig": "autotune",
-             "riga": "Antares lo vende ancora, e il suo account si chiama come lui: @autotune."},
-        ],
-        "aneddoto": "A metà anni '90, a pranzo durante il NAMM, Hildebrand chiede agli amici cosa ci sarebbe ancora da inventare. Una donna risponde scherzando: una scatola che mi faccia cantare intonata. Nel 1998 Mark Taylor e Brian Rawling producono «Believe» di Cher e sulla sua voce mettono la Retune Speed a zero. La casa discografica vuole togliere quell'effetto, e Cher risponde che si cambia solo passando sul suo cadavere. A Sound On Sound, nel 1999, i produttori raccontano che è un pedale, un DigiTech Talker. Il disco va al primo posto nel Regno Unito e in America.",
-        "avvertenza": "Retune Speed a zero non corregge la voce: la trasforma. L'inventore pensava che nessuno sano di mente l'avrebbe girata fin lì.",
-        "da_ascoltare": {"brano": "Believe", "artista": "Cher",
-                          "anno": "1998",
-                          "cosa": "Nelle strofe la voce salta da una nota all'altra senza scivolare. È Auto-Tune con la Retune Speed a zero."},
-        "foto": {
-            "file": "assets/foto/autotune/principale.jpg",
-            "autore": "Georges Seguin (Okki), ritagliata",
-            "licenza": "CC BY-SA 3.0",
-            "fonte": "Wikimedia Commons",
-            "didascalia": "Un Antares AVP-1 in un rack da concerto: Auto-Tune sta qui dentro",
-        },
-        # Non esiste un'altra foto libera di hardware Antares: questa è un
-        # ritaglio verticale della stessa, sul logo e sul display, che nel
-        # reel riempie lo schermo invece di stare in una fascia.
-        "foto_extra": [
-            {"file": "assets/foto/autotune/display.jpg",
-             "autore": "Georges Seguin (Okki), ritagliata", "licenza": "CC BY-SA 3.0",
-             "fonte": "Wikimedia Commons", "posizione": "center",
-             "didascalia": "Il display dell'AVP-1, «antares vocal producer»"},
-        ],
-        "fonti": [
-            {"titolo": "«Instrumental Instruments: Auto-Tune» — RBMA Daily, 2017",
-             "url": "https://daily.redbullmusicacademy.com/2017/09/instrumental-instruments-auto-tune", "data": "2026-10-16"},
-            {"titolo": "«The Inventor of Auto-Tune» — Priceonomics",
-             "url": "https://priceonomics.com/the-inventor-of-auto-tune/", "data": "2026-10-16"},
-            {"titolo": "«Auto-Tune: Why Pop Music Sounds Perfect» — Time, 2009",
-             "url": "https://time.com/archive/6687593/auto-tune-why-pop-music-sounds-perfect/", "data": "2026-10-16"},
-            {"titolo": "Hildebrand fra gli ex studenti — ECE Illinois, 2016",
-             "url": "https://ece.illinois.edu/news/alumni-news/field-report/4430", "data": "2026-10-16"},
-            {"titolo": "«From Rocks to Rock» — AAPG Explorer, 2012",
-             "url": "https://www.aapg.org/news-and-media/details/explorer/articleid/2104/from-rocks-to-rock-his-ideas-sound-good", "data": "2026-10-16"},
-            {"titolo": "Il Grammy tecnico 2023 a Hildebrand — Grammy.com",
-             "url": "https://www.grammy.com/news/dr-andy-hildebrand-honored-recording-academy-special-merit-award", "data": "2026-10-16"},
-            {"titolo": "Brevetto US 5.973.252 — Google Patents",
-             "url": "https://patents.google.com/patent/US5973252A/en", "data": "2026-10-16"},
-            {"titolo": "«Recording Cher's 'Believe'» — Sound On Sound, febbraio 1999",
-             "url": "https://www.soundonsound.com/techniques/recording-cher-believe", "data": "2026-10-16"},
-            {"titolo": "«Antares Auto-tune» — Sound On Sound, agosto 2000",
-             "url": "https://www.soundonsound.com/reviews/antares-auto-tune", "data": "2026-10-16"},
-            {"titolo": "«Believe» e il ritorno di Cher — Mental Floss",
-             "url": "https://www.mentalfloss.com/posts/cher-believe-1990s-music-comeback", "data": "2026-10-16"},
-            {"titolo": "«Believe» 25 anni dopo — NPR, 2023",
-             "url": "https://www.cfpublic.org/2023-10-19/25-years-ago-cher-released-a-song-that-would-change-the-sound-of-pop-music", "data": "2026-10-16"},
-            {"titolo": "«808s & Heartbreak» — Spin, 2008",
-             "url": "https://www.spinmagazine.com/2008/11/album-review-kanye-wests-808s-and-heartbreak/", "data": "2026-10-16"},
-            {"titolo": "«Antares AVP-1» — Sound On Sound, 2002",
-             "url": "https://www.soundonsound.com/reviews/antares-avp1", "data": "2026-10-16"},
-            {"titolo": "«Discovery» 20 anni dopo — Grammy.com",
-             "url": "https://grammy.com/news/record-daft-punk-discovery-album-20-year-anniversary", "data": "2026-10-16"},
-        ],
-        "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 060", "La voce robot di Cher nasce da chi cercava il petrolio"),
-            ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
-            ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
-            ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
-            ("CHER · 1998", "In «Believe» la correzione è a zero: la voce salta di nota in nota."),
-        ],
-        "reel_cta": "Mandalo a chi giura di non usare l'autotune",
-        "verificata": True,
-    },
-    {
-        "slug": "lowrey",
-        "numero": 61,
-        "serie": "GLI ORGANI",
-        "strumento": "Lowrey DSO",
-        "anno": "1965",
-        "luogo": "Chicago, USA",
-        "costruttore": "Lowrey Organ Company",
-        "specifiche": [
-            ("PRIMO ORGANO", "1955"),
-            ("MODELLO DSO", "1965"),
-            ("MANUALI", "2 + pedaliera"),
-            ("GENERAZIONE", "valvole"),
-        ],
-        "gancio": "L'organo da salotto americano, e le otto note che aprono «Lucy in the Sky with Diamonds»",
-        "sottotitolo": "Lowrey costruiva organi per le case, non per i palchi, e non ha mai avuto una ruota fonica: tutto elettronico dal primo giorno.",
-        "la_macchina": (
-            "Un mobile di legno con due tastiere, la pedaliera sotto e il leggio "
-            "sopra, fatto per stare in un soggiorno americano. I registri sono "
-            "tabulatori bianchi e rossi a sinistra di ogni manuale, con sopra "
-            "scritto il nome dello strumento da imitare. Negli anni Sessanta e "
-            "Settanta Lowrey era il più grande costruttore di organi elettronici "
-            "del mondo, e li vendeva a gente che non sapeva suonare: c'era "
-            "l'accompagnamento automatico, e dal 1968 anche i ritmi. "
-            "All'esemplare in copertina qualcuno ha avvitato sotto la tastiera una "
-            "scatola di ritmi comprata a parte, che non è roba Lowrey."
-        ),
-        "inventore_nome": "Frederick Lowrey",
-        "inventore": (
-            "Lowrey era un industriale di Chicago, non un musicista. La ditta "
-            "parte da un'idea pratica: si attacca al pianoforte di casa un "
-            "aggeggio che gli aggiunge i registri d'organo su 60 note e lo lascia "
-            "pianoforte. Si chiama Organo, esce nel 1949 e serve a contendere a "
-            "Hammond il mercato del Solovox. Il primo organo vero arriva nel "
-            "1955, il Model S Berkshire. La differenza con Hammond sta alla "
-            "radice e non cambierà mai: in un Hammond il suono lo fanno delle "
-            "ruote dentate che girano davanti a delle calamite, in un Lowrey non "
-            "si muove niente."
-        ),
-        "come_funziona": (
-            "Oscillatori a valvola e divisori, e i tabulatori aprono filtri che "
-            "colorano quello che esce: flauto, oboe, clarinetto, arpa. Il punto è "
-            "che potete tenerne premuti quattro insieme. Nessuno dei quattro "
-            "somiglia davvero allo strumento che ha scritto sopra, e quattro "
-            "imitazioni mediocri sovrapposte danno un timbro che in natura non "
-            "esiste. Un organo da casa fa male il mestiere che dichiara, e "
-            "proprio per questo ne ha trovato un altro. Se ne provate uno, non "
-            "cercate il flauto: provate ad aprirne quattro a caso."
-        ),
-        "richiami": [
-            ("FIG. 1", "2 manuali e pedaliera"),
-            ("FIG. 2", "Tabulatori dei registri"),
-            ("FIG. 3", "Ritmi automatici, dal 1968"),
-        ],
-        "chi_lusata": [
-            {"artista": "Paul McCartney", "nota": "l'introduzione di «Lucy in the Sky with Diamonds» (1967)", "ig": None},
-            {"artista": "I Beatles", "nota": "e ancora un Lowrey su «Being for the Benefit of Mr. Kite!», stesso disco", "ig": None},
-        ],
-        "menzioni_extra": [],
-        "da_ascoltare": {"brano": "Lucy in the Sky with Diamonds", "artista": "The Beatles", "anno": "1967",
-                         "cosa": "Le prime otto note. Non è un clavicembalo: è un organo da salotto con quattro registri aperti tutti insieme."},
-        "aneddoto": (
-            "Il 1° marzo 1967 McCartney si mette al Lowrey che stava ad Abbey "
-            "Road e cerca il suono per l'attacco del pezzo. Non ne apre uno, ne "
-            "apre quattro: clavicembalo, vibrafono, carillon e chitarra. Quelle "
-            "otto note le riconoscono tutti e quasi nessuno sa che escono da un "
-            "mobile che si comprava a rate, con l'accompagnamento automatico "
-            "incluso e il leggio di legno sopra. Se ne trovate uno in un "
-            "mercatino, i tabulatori ci sono ancora e si chiamano ancora così."
-        ),
-        "avvertenza": "Dentro ci sono valvole e un alimentatore vecchio di sessant'anni. Un DSO rimasto in cantina non si accende e basta: prima i condensatori.",
-        "foto": {
-            "file": "assets/foto/lowrey/principale.jpg",
-            "autore": "Human-potato hybrid",
-            "licenza": "CC BY-SA 4.0",
-            "fonte": "Wikimedia Commons",
-        },
-        "foto_extra": [
-            {"file": "assets/foto/lowrey/acceso.jpg",
-             "autore": "Brokephotography7D", "licenza": "CC BY-SA 4.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Un Lowrey Citation acceso: i tabulatori colorati sono i registri"},
-            {"file": "assets/foto/lowrey/c500.jpg",
-             "autore": "Emily Harrison", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Un modello del 1977: mobile, panca, pedaliera"},
-        ],
-        "fonti": [
-            {"titolo": "«Lowrey organ» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Lowrey_organ", "data": "2026-10-05"},
-            {"titolo": "«Lucy In The Sky With Diamonds» — The Beatles Bible: il Lowrey DSO-1 Heritage Deluxe e i quattro registri aperti insieme",
-             "url": "https://www.beatlesbible.com/songs/lucy-in-the-sky-with-diamonds/", "data": "2026-10-05"},
-            {"titolo": "«Lucy in the Sky with Diamonds» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Lucy_in_the_Sky_with_Diamonds", "data": "2026-10-05"},
-        ],
-        "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 061", "Quel clavicembalo dei Beatles è un organo da salotto"),
-            ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
-            ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
-            ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
-            ("LE PRIME 8 NOTE", "4 imitazioni mediocri sommate: un timbro che in natura non esiste."),
-        ],
-        "reel_cta": "Mandalo a chi pensava fosse un clavicembalo",
-        "verificata": True,
-    },
-    {
-        "slug": "wasp",
-        "numero": 62,
-        "serie": "I SINTETIZZATORI",
-        "strumento": "EDP Wasp",
-        "anno": "1978",
-        "luogo": "Inghilterra",
-        "costruttore": "Electronic Dream Plant",
-        "specifiche": [
-            ("USCITA", "1978"),
-            ("PREZZO", "199 £"),
-            ("TASTIERA", "stampata, 2 ottave"),
-            ("FILTRO", "CMOS, 12 dB"),
-        ],
-        "gancio": "La tastiera è un adesivo. Sotto ci sono piastrine di rame, e tutto costava 199 sterline",
-        "sottotitolo": "Nero e giallo come l'insetto, con l'altoparlante dentro e le pile: due inglesi tagliano tutto quello che non è il suono.",
-        "la_macchina": (
-            "Una scatola di plastica nera e gialla, grande come un libro grosso. "
-            "Dove dovrebbe esserci la tastiera c'è un adesivo di vinile "
-            "serigrafato e sotto l'adesivo delle piastrine di rame piatte: si "
-            "suona toccando il disegno dei tasti, che sono due ottave. Dentro ci "
-            "stanno due oscillatori digitali, due inviluppi, un filtro "
-            "commutabile, un altoparlante da 4 pollici per 2 e il posto per sei "
-            "pile mezza torcia. Sul pannello, in basso a destra, c'è scritto "
-            "Electronic Dream Plant Limited, England."
-        ),
-        "inventore_nome": "Adrian Wagner e Chris Huggett",
-        "inventore": (
-            "Wagner faceva il musicista, Huggett progettava elettronica. Nel 1977 "
-            "aprono la ditta con 10.000 sterline prestate da un negozio di "
-            "strumenti di Londra e decidono una cosa sola, tagliare tutto quello "
-            "che non è il suono. Via la tastiera meccanica, via il mobile, via le "
-            "rifiniture. Huggett costruisce gli oscillatori con logica TTL, che è "
-            "roba da computer e non da sintetizzatori, e grazie a quella restano "
-            "accordati meglio di tanti analogici dell'epoca. È lo stesso uomo "
-            "che pochi anni dopo progetterà l'OSCar."
-        ),
-        "come_funziona": (
-            "Due oscillatori digitali e un filtro analogico fatto con chip CMOS, "
-            "cioè componenti logici messi a fare un mestiere per cui non erano "
-            "nati. Il filtro taglia 12 dB per ottava e si commuta fra passa-basso, "
-            "passa-banda e passa-alto; il passa-banda è quello che dà al Wasp il "
-            "suono stretto e nasale da cui lo riconoscete. Due prese DIN a 7 poli "
-            "sul fianco si chiamano LINK e servono a collegarne due fra loro, "
-            "anni prima che esistesse il MIDI. La tastiera stampata non ha né "
-            "dinamica né corsa: o tocchi o non tocchi."
-        ),
-        "richiami": [
-            ("FIG. 1", "Tastiera a piastrine di rame"),
-            ("FIG. 2", "2 oscillatori digitali"),
-            ("FIG. 3", "Prese LINK, prima del MIDI"),
-        ],
-        "chi_lusata": [
-            {"artista": "Robert Rental e Thomas Leer", "nota": "due Wasp per tastiere e percussioni su «The Bridge» (1979)", "ig": None},
-            {"artista": "Chris Carter", "nota": "dei Throbbing Gristle: ne comprò uno dopo aver sentito «The Bridge»", "ig": None},
-            {"artista": "Dave Stewart", "nota": "degli Eurythmics, registrava col microfono davanti all'altoparlante interno", "ig": None},
-        ],
-        "menzioni_extra": [],
-        "da_ascoltare": {"brano": "The Bridge", "artista": "Robert Rental e Thomas Leer", "anno": "1979",
-                         "cosa": "Le tastiere e buona parte delle percussioni escono da due Wasp, non da una batteria elettronica."},
-        "aneddoto": (
-            "Gerald Casale dei Devo raccontava che col sudore delle dita il Wasp "
-            "si metteva a suonare da solo: le piastrine sotto l'adesivo leggono "
-            "il contatto, e il sudore è un contatto. La ditta non è durata molto "
-            "di più. Nel 1980 Electronic Dream Plant fallisce, schiacciata dai "
-            "debiti coi fornitori, e chiude nel 1982. Dell'ultimo modello, il "
-            "Wasp Deluxe con la tastiera vera, ne erano usciti circa 80. Wagner "
-            "prova ad andare avanti da solo con un marchio chiamato Wasp "
-            "Synthesizers e non arriva all'anno."
-        ),
-        "avvertenza": "La tastiera è un adesivo su piastrine di rame. Non si gratta e non si pulisce con l'alcol: sotto non c'è un contatto di ricambio.",
-        "foto": {
-            "file": "assets/foto/wasp/principale.jpg",
-            "autore": "R. Bartz",
-            "licenza": "CC BY-SA 2.5",
-            "fonte": "Wikimedia Commons",
-            "ritaglio": True,
-        },
-        "foto_extra": [
-            {"file": "assets/foto/wasp/pannello.jpg",
-             "autore": "Julian Fincham", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Il pannello giallo su nero, e i tasti che sono solo disegnati"},
-            {"file": "assets/foto/wasp/deluxe.jpg",
-             "autore": "Julian Fincham", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Il Wasp Deluxe, l'ultimo modello: qui la tastiera è vera"},
-        ],
-        "fonti": [
-            {"titolo": "«Electronic Dream Plant» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Electronic_Dream_Plant", "data": "2026-10-05"},
-            {"titolo": "«EDP Wasp» — Sound On Sound: altoparlante, pile, prese LINK e «The Bridge» di Rental e Leer",
-             "url": "https://www.soundonsound.com/reviews/edp-wasp", "data": "2026-10-05"},
-        ],
-        "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 062", "Casale dei Devo: col sudore delle dita suona da solo"),
-            ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
-            ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
-            ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
-            ("ELECTRONIC DREAM PLANT", "Anche la ditta dura poco: nel 1980 fallisce, schiacciata dai debiti."),
-        ],
-        "reel_cta": "Mandalo a chi suona con le mani sudate",
-        "verificata": True,
-    },
     {
         "slug": "cz101",
-        "numero": 63,
+        "numero": 60,
         "serie": "I SINTETIZZATORI",
         "strumento": "Casio CZ-101",
         "anno": "1984",
@@ -5470,18 +5164,545 @@ SCHEDE = [
         ],
         "hashtags": ["#cz101", "#casio", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 063", "Quelli delle calcolatrici contro il DX7 di Yamaha"),
+            ("ELETTROFONI · N. 060", "Quelli delle calcolatrici contro il DX7 di Yamaha"),
             ("NOVEMBRE 1984", "Il Casio CZ-101 costa 495 dollari. Il DX7 quasi 2.000."),
             ("BREVETTO DI STANFORD", "La FM è un brevetto di Stanford. Casio inventa la distorsione di fase."),
             ("68.500 ESEMPLARI", "Va a 6 pile torcia, e i ragazzi se lo portano in camera."),
             ("VINCE CLARKE · ERASURE", "Synth dei poveri, dicono. Vince Clarke degli Erasure ne tiene 4."),
         ],
         "reel_cta": "Mandalo a chi lo chiama synth dei poveri",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # è un suono di rumori, non un preset: «A Casio CZ-101, abused to produce interesting sounding sounds and noises».
+        "reel_audio": {
+            "file": "assets/audio/cz101/registrazione.mp3", "inizio": 0,
+            "autore": "altemark", "licenza": "CC BY 4.0",
+            "fonte": "freesound.org/s/43342",
+            "url": "https://freesound.org/s/43342/",
+            "cosa": "un Casio CZ-101 vero, spinto a fare rumori: un drone digitale modulato",
+        },
+        "verificata": True,
+    },
+    {
+        "slug": "poly800",
+        "numero": 61,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Korg Poly-800",
+        "anno": "1983",
+        "luogo": "Giappone",
+        "costruttore": "Korg",
+        "specifiche": [
+            ("LANCIO", "1983"),
+            ("PREZZO", "795 $"),
+            ("VOCI", "8 (o 4)"),
+            ("TASTI", "49"),
+        ],
+        "gancio": "Costava 795 dollari e andava a pile. Atkins, May e Saunderson, i tre del techno di Detroit, ne avevano uno",
+        "sottotitolo": "Otto voci programmabili sotto gli 800 dollari, e un solo filtro per tutte.",
+        "la_macchina": (
+            "49 tasti senza dinamica, 64 programmi in memoria e un sequencer da 256 passi. "
+            "Va a pile e ha i ganci per la tracolla, quindi si può suonare "
+            "in piedi come una tastiera da collo. Ha un joystick per modulare. "
+            "Le voci sono 8, ma ogni voce ha due oscillatori: se li accendete "
+            "tutti e due, il suono si fa più pieno e le voci scendono a 4. "
+            "I programmi si salvano su cassetta."
+        ),
+        "inventore_nome": "Korg",
+        "inventore": (
+            "Lo presenta Korg nel 1983. Il nome di chi l'ha disegnato non l'ho "
+            "trovato in nessuna fonte, e non ne invento uno. Nel 1984 esce l'EX-800, la stessa "
+            "elettronica senza tastiera, da montare in un rack. Nel 1986 il "
+            "Poly-800 II: al posto del chorus un delay digitale, e finalmente "
+            "i messaggi SysEx per scambiare i suoni col computer."
+        ),
+        "come_funziona": (
+            "Gli oscillatori sono digitali (DCO) e fanno dente di sega e "
+            "onda quadra, con del rumore bianco da mescolare. Ogni oscillatore ha "
+            "un inviluppo a 6 stadi: Attack, Decay, Break Point, Slope, Sustain, "
+            "Release. Il filtro passa-basso risonante però è uno solo, "
+            "condiviso da tutte le voci. Per questo lo chiamano paraphonic e non "
+            "polifonico fino in fondo."
+        ),
+        "richiami": [
+            ("FIG. 1", "Tastiera da 49 tasti e joystick"),
+            ("FIG. 2", "Pannello con i 64 programmi"),
+            ("FIG. 3", "Ganci per la tracolla"),
+        ],
+        "chi_lusata": [
+            {"artista": "Juan Atkins", "nota": "uno dei tre di Belleville, Detroit: ne aveva uno in studio", "ig": None},
+            {"artista": "Derrick May", "nota": "ce l'ha nelle liste degli strumenti prima del 1990", "ig": None},
+            {"artista": "Kevin Saunderson", "nota": "ce l'aveva intorno al 1988, quando nasce Inner City", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Il prezzo dipende da chi lo racconta. 795 dollari per Wikipedia, "
+            "«meno di 800» nella pubblicità Korg su Musician nel 1984, 575 "
+            "sterline per l'Inghilterra. Anche gli anni non tornano: 1983-1987 "
+            "da una parte, 1984-1986 dall'altra. Sul filtro unico invece "
+            "tutti sono d'accordo: The Mix lo chiama un difetto grosso, "
+            "da string machine. Nel 1994 la stessa rivista lo dava usato "
+            "a 100-130 sterline, con il voto più alto al rapporto qualità-prezzo."
+        ),
+        "avvertenza": "Con i due oscillatori accesi le voci scendono da 8 a 4. Contate quanti tasti suonate insieme, prima di dire che è un otto voci.",
+        "foto": {
+            "file": "assets/foto/poly800/ii.jpg",
+            "autore": "rico blanco",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons (un Poly-800 II, la versione del 1986)",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/poly800/controls.jpg",
+             "autore": "rico blanco", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il pannello: joystick, tasti dei programmi e sequencer (un Poly-800 II)"},
+        ],
+        "fonti": [
+            {"titolo": "«Korg Poly-800» — Wikipedia (EN): 1983, 795 $, 8 voci, DCO, filtro unico, 64 programmi, EX-800 e Poly-800 II",
+             "url": "https://en.wikipedia.org/wiki/Korg_Poly-800", "data": "2026-10-16"},
+            {"titolo": "«Total Recall: Korg Poly-800» — The Mix, settembre 1994: 575 sterline, filtro unico, 4 voci in doppio, elenco di chi l'ha usato",
+             "url": "https://www.muzines.co.uk/articles/total-recall/8184", "data": "2026-10-16"},
+            {"titolo": "«Korg Poly-800 Polyphonic Synthesizer» — SMEM (museo): i tre di Belleville, tecnologia e prezzo",
+             "url": "https://www.smemmusic.ch/fr/node/1219", "data": "2026-10-16"},
+        ],
+        "hashtags": ["#poly800", "#korg", "#sintetizzatore", "#derrickmay", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 061", "Va a pile, e ce l'hanno i tre della techno di Detroit"),
+            ("KORG · 1983", "8 voci programmabili, 49 tasti e i ganci per la tracolla."),
+            ("IL TRUCCO", "Ogni voce ha due oscillatori: accesi tutti e due, le voci scendono a 4."),
+            ("IL DIFETTO", "Un filtro solo, condiviso da tutte le voci."),
+            ("DETROIT", "Juan Atkins, Derrick May e Kevin Saunderson: uno a testa, in studio."),
+        ],
+        "reel_cta": "Mandalo a chi suona in piedi",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # estratto 0:01-0:35; la pagina: «the synth is unmodified and the audio has not been altered».
+        "reel_audio": {
+            "file": "assets/audio/poly800/registrazione.mp3", "inizio": 0,
+            "autore": "Ryan Scott (ry ry of tokyo)", "licenza": "pubblico dominio",
+            "fonte": "archive.org",
+            "url": "https://archive.org/details/KorgPoly800WallBreakerBassDemoByRyRyOfTokyo",
+            "cosa": "un Korg Poly-800 MKI non modificato: un basso con un suono programmato dall'autore",
+        },
+        "verificata": True,
+    },
+    {
+        "slug": "omnichord",
+        "numero": 62,
+        "serie": "I GIOCATTOLI",
+        "strumento": "Suzuki Omnichord",
+        "anno": "1981",
+        "luogo": "Giappone",
+        "costruttore": "Suzuki",
+        "specifiche": [
+            ("PRIMO MODELLO", "OM-27, 1981"),
+            ("ACCORDI", "27"),
+            ("SUONI", "1: arpa"),
+            ("FINE", "1996"),
+        ],
+        "gancio": "Si suona con un dito e le note sono sempre intonate. Eno e Lanois ci hanno fatto «Deep Blue Day»",
+        "sottotitolo": "Un'autoarpa elettronica per chi non ha mai suonato.",
+        "la_macchina": (
+            "Un corpo marrone lucido a forma di paletta. A "
+            "sinistra i tasti per gli accordi, al centro una piastra a "
+            "strisce da accarezzare con le dita, a destra l'altoparlante. "
+            "Si sceglie l'accordo, si striscia il dito e le note escono "
+            "arpeggiate. In più c'è un ritmo preimpostato e un basso "
+            "automatico. L'OM-27 ha 27 accordi e un solo suono, l'arpa."
+        ),
+        "inventore_nome": "Suzuki",
+        "inventore": (
+            "La Suzuki è un'azienda giapponese di famiglia che faceva armoniche "
+            "dal 1953. Nel 1981 presenta l'Omnichord insieme al Portachord, "
+            "e lo pensa per chi non ha mai suonato e si spaventa davanti a una "
+            "tastiera. Nessuna delle fonti che ho trovato dice chi l'ha "
+            "disegnato, quindi non lo dico. Nel 1984 escono OM-36 e OM-84, con "
+            "più accordi. L'ultimo, l'OM-300, esce intorno al 1996."
+        ),
+        "come_funziona": (
+            "La piastra è elettronica, non ci sono corde: tocchi una striscia e "
+            "senti una nota dell'accordo scelto, sempre intonata. Non puoi "
+            "sbagliare nota, puoi sbagliare accordo. I primi modelli sono "
+            "analogici, dicono le fonti, fino al 1989."
+        ),
+        "richiami": [
+            ("FIG. 1", "Tasti degli accordi: maggiore, minore e settima"),
+            ("FIG. 2", "Piastra da strisciare"),
+            ("FIG. 3", "Rhythm e altoparlante"),
+        ],
+        "chi_lusata": [
+            {"artista": "Eurythmics", "nota": "il suono d'arpa in «Love Is a Stranger» (1982, ma una fonte dice 1983)", "ig": None},
+            {"artista": "Brian Eno e Daniel Lanois", "nota": "«Deep Blue Day» dall'album «Apollo» (1983)", "ig": None},
+            {"artista": "Daniel Lanois", "nota": "anche su «Trip Through Your Wires» degli U2 (1987)", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Dave Stewart, che ne prese uno in Giappone, lo descrive come un "
+            "incrocio fra un giocattolo e uno strumento. Sulla data di «Love Is a Stranger» le "
+            "fonti non si mettono d'accordo, 1982 per Wikipedia e 1983 per "
+            "un'altra. Nel 1985 Tiny Tim ha scritto sulla copertina di un "
+            "suo singolo che era il primo disco suonato tutto con "
+            "l'Omnichord. A me piace che, per chi non sa suonare, la prima "
+            "regola sia: non puoi sbagliare nota."
+        ),
+        "avvertenza": "L'OM-27 ha 27 accordi e un solo suono, l'arpa. Se la vostra versione ne ha 36 o 84, non è un OM-27.",
+        "foto": {
+            "file": "assets/foto/omnichord/om27.jpg",
+            "autore": "tico_24",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/omnichord/interno.jpg",
+             "autore": "dana_dane", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Aperto: la scheda, l'altoparlante e la piastra staccata"},
+        ],
+        "fonti": [
+            {"titolo": "«Omnichord» — Wikipedia (EN): Suzuki 1981, OM-27, modelli, Eurythmics, Eno e Lanois, Tiny Tim",
+             "url": "https://en.wikipedia.org/wiki/Omnichord", "data": "2026-10-16"},
+            {"titolo": "«Suzuki Omnichord history» — Perfect Circuit: 1981, OM-27 con 27 accordi e un solo suono, Eurythmics, Lanois",
+             "url": "https://www.perfectcircuit.com/signal/suzuki-omnichord-history", "data": "2026-10-16"},
+        ],
+        "hashtags": ["#omnichord", "#suzuki", "#strumentielettronici", "#brianeno", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 062", "Basta un dito, e Brian Eno ci fa «Deep Blue Day»"),
+            ("SUZUKI · 1981", "Un'autoarpa elettronica per chi non ha mai suonato."),
+            ("COME SI SUONA", "Scegli un accordo e striscia il dito sulla piastra."),
+            ("IL LIMITE", "L'OM-27 ha 27 accordi e un solo suono: l'arpa."),
+            ("1983", "Eno e Lanois lo usano in «Deep Blue Day», dall'album «Apollo»."),
+        ],
+        "reel_cta": "Mandalo a chi non sa suonare",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # estratto 0:00-0:16; è un OM-36, non il primo modello, e la didascalia lo dice.
+        "reel_audio": {
+            "file": "assets/audio/omnichord/registrazione.mp3", "inizio": 0,
+            "autore": "InDimension", "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Omnichord_Strummed_Sonic_Strings.ogg",
+            "cosa": "un Omnichord OM-36, modello successivo all'OM-27 del 1981: le Sonic Strings strisciate sulla piastra",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 63
+    # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
+    # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
+    # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
+    # perché a fonte singola: prezzo di lancio, anno dell'ATR-1 (solo Sound
+    # On Sound), «un milione di moltiplicazioni ridotte a quattro», il
+    # produttore pagato 60.000 dollari, l'esempio di Eiffel 65 (era un
+    # harmonizer MIDI, non Auto-Tune), Radiohead (solo The Wire).
+    # Controverso e quindi taciuto: chi volle la velocità zero (Hildebrand
+    # «per gioco» secondo Priceonomics, il marketing secondo Ironic Sans).
+    # Nessuna registrazione libera dimostrabile di Auto-Tune VERO su
+    # Commons o Freesound: il reel usa la sigla.
+    {
+        "slug": "autotune",
+        "numero": 63,
+        "serie": "GLI EFFETTI",
+        "strumento": "Antares Auto-Tune",
+        "anno": "1997",
+        "luogo": "Scotts Valley, California",
+        "costruttore": "Antares Audio Technologies",
+        "specifiche": [
+            ("ANNO", "1997"),
+            ("COSTRUTTORE", "Antares"),
+            ("PRINCIPIO", "Autocorrelazione"),
+            ("FORMATO", "Plug-in per Pro Tools"),
+        ],
+        "gancio": "L'ha inventato un ingegnere che cercava il petrolio nei dati sismici",
+        "sottotitolo": "Doveva aggiustare le stonature senza farsi sentire. Lo conosciamo tutti per la volta che si è fatto sentire.",
+        "la_macchina": "Nel 1997 Auto-Tune è un programma, un plug-in per Pro Tools. Ascolta una voce, capisce che nota sta cantando e la sposta sulla più vicina della scala che gli avete indicato. Se la nota è già giusta la lascia stare. Prima, per avere una voce intonata, in studio si registravano decine di prese e si montavano i pezzi buoni. Da qui in poi si può tenere la prima, che spesso è la migliore. Secondo me è la macchina più odiata di tutto il catalogo, e anche quella che si sente di più alla radio.",
+        "inventore_nome": "Andy Hildebrand",
+        "inventore": "Harold «Andy» Hildebrand da ragazzo suona il flauto da professionista, poi nel 1976 prende un dottorato in ingegneria elettrica all'Università dell'Illinois. Va alla Exxon a leggere i dati sismici, cioè a capire dove trivellare, e per farlo usa l'autocorrelazione, una formula che trova il punto in cui un segnale si ripete. Verso i 40 anni smette con il petrolio e nel 1989 va a studiare composizione alla Rice di Houston. Nel 1990 fonda Jupiter Systems, che diventerà Antares. Il primo prodotto è un campionatore software, Infinity.",
+        "come_funziona": "La voce è un'onda che si ripete, e il tempo di una ripetizione è la nota. Auto-Tune lo misura con la stessa autocorrelazione dei dati sismici, lo confronta con la nota giusta e ricampiona l'onda quel tanto che basta. Si pensava che quel calcolo fosse troppo pesante per farlo mentre uno canta: Hildebrand ne ha tagliato quasi tutto. Poi c'è una manopola, Retune Speed, che decide quanto in fretta la nota viene spinta al suo posto. Lenta, non la sentite. A zero la nota salta di colpo da un gradino all'altro senza scivolare, e la voce diventa un robot.",
+        "richiami": [
+            ("FIG. 1", "Trova la nota (autocorrelazione)"),
+            ("FIG. 2", "La sposta sulla scala scelta"),
+            ("FIG. 3", "Retune Speed a zero: il robot"),
+        ],
+        "chi_lusata": [
+            {"artista": "Cher", "nota": "«Believe» (1998), da cui il nome «Cher effect»", "ig": None},
+            {"artista": "T-Pain", "nota": "«Rappa Ternt Sanga» (2005), e da lì il suo marchio", "ig": "tpain"},
+            {"artista": "Kanye West", "nota": "«808s & Heartbreak» (2008), quasi tutto cantato così", "ig": None},
+            {"artista": "Daft Punk", "nota": "la voce di Romanthony in «One More Time» (2000)", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "autotune",
+             "riga": "Antares lo vende ancora, e il suo account si chiama come lui: @autotune."},
+        ],
+        "aneddoto": "A metà anni '90, a pranzo durante il NAMM, Hildebrand chiede agli amici cosa ci sarebbe ancora da inventare. Una donna risponde scherzando: una scatola che mi faccia cantare intonata. Nel 1998 Mark Taylor e Brian Rawling producono «Believe» di Cher e sulla sua voce mettono la Retune Speed a zero. La casa discografica vuole togliere quell'effetto, e Cher risponde che si cambia solo passando sul suo cadavere. A Sound On Sound, nel 1999, i produttori raccontano che è un pedale, un DigiTech Talker. Il disco va al primo posto nel Regno Unito e in America.",
+        "avvertenza": "Retune Speed a zero non corregge la voce: la trasforma. L'inventore pensava che nessuno sano di mente l'avrebbe girata fin lì.",
+        "da_ascoltare": {"brano": "Believe", "artista": "Cher",
+                          "anno": "1998",
+                          "cosa": "Nelle strofe la voce salta da una nota all'altra senza scivolare. È Auto-Tune con la Retune Speed a zero."},
+        "foto": {
+            "file": "assets/foto/autotune/principale.jpg",
+            "autore": "Georges Seguin (Okki), ritagliata",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un Antares AVP-1 in un rack da concerto: Auto-Tune sta qui dentro",
+        },
+        # Non esiste un'altra foto libera di hardware Antares: questa è un
+        # ritaglio verticale della stessa, sul logo e sul display, che nel
+        # reel riempie lo schermo invece di stare in una fascia.
+        "foto_extra": [
+            {"file": "assets/foto/autotune/display.jpg",
+             "autore": "Georges Seguin (Okki), ritagliata", "licenza": "CC BY-SA 3.0",
+             "fonte": "Wikimedia Commons", "posizione": "center",
+             "didascalia": "Il display dell'AVP-1, «antares vocal producer»"},
+        ],
+        "fonti": [
+            {"titolo": "«Instrumental Instruments: Auto-Tune» — RBMA Daily, 2017",
+             "url": "https://daily.redbullmusicacademy.com/2017/09/instrumental-instruments-auto-tune", "data": "2026-10-16"},
+            {"titolo": "«The Inventor of Auto-Tune» — Priceonomics",
+             "url": "https://priceonomics.com/the-inventor-of-auto-tune/", "data": "2026-10-16"},
+            {"titolo": "«Auto-Tune: Why Pop Music Sounds Perfect» — Time, 2009",
+             "url": "https://time.com/archive/6687593/auto-tune-why-pop-music-sounds-perfect/", "data": "2026-10-16"},
+            {"titolo": "Hildebrand fra gli ex studenti — ECE Illinois, 2016",
+             "url": "https://ece.illinois.edu/news/alumni-news/field-report/4430", "data": "2026-10-16"},
+            {"titolo": "«From Rocks to Rock» — AAPG Explorer, 2012",
+             "url": "https://www.aapg.org/news-and-media/details/explorer/articleid/2104/from-rocks-to-rock-his-ideas-sound-good", "data": "2026-10-16"},
+            {"titolo": "Il Grammy tecnico 2023 a Hildebrand — Grammy.com",
+             "url": "https://www.grammy.com/news/dr-andy-hildebrand-honored-recording-academy-special-merit-award", "data": "2026-10-16"},
+            {"titolo": "Brevetto US 5.973.252 — Google Patents",
+             "url": "https://patents.google.com/patent/US5973252A/en", "data": "2026-10-16"},
+            {"titolo": "«Recording Cher's 'Believe'» — Sound On Sound, febbraio 1999",
+             "url": "https://www.soundonsound.com/techniques/recording-cher-believe", "data": "2026-10-16"},
+            {"titolo": "«Antares Auto-tune» — Sound On Sound, agosto 2000",
+             "url": "https://www.soundonsound.com/reviews/antares-auto-tune", "data": "2026-10-16"},
+            {"titolo": "«Believe» e il ritorno di Cher — Mental Floss",
+             "url": "https://www.mentalfloss.com/posts/cher-believe-1990s-music-comeback", "data": "2026-10-16"},
+            {"titolo": "«Believe» 25 anni dopo — NPR, 2023",
+             "url": "https://www.cfpublic.org/2023-10-19/25-years-ago-cher-released-a-song-that-would-change-the-sound-of-pop-music", "data": "2026-10-16"},
+            {"titolo": "«808s & Heartbreak» — Spin, 2008",
+             "url": "https://www.spinmagazine.com/2008/11/album-review-kanye-wests-808s-and-heartbreak/", "data": "2026-10-16"},
+            {"titolo": "«Antares AVP-1» — Sound On Sound, 2002",
+             "url": "https://www.soundonsound.com/reviews/antares-avp1", "data": "2026-10-16"},
+            {"titolo": "«Discovery» 20 anni dopo — Grammy.com",
+             "url": "https://grammy.com/news/record-daft-punk-discovery-album-20-year-anniversary", "data": "2026-10-16"},
+        ],
+        "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 063", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
+            ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
+            ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
+            ("CHER · 1998", "In «Believe» la correzione è a zero: la voce salta di nota in nota."),
+        ],
+        "reel_cta": "Mandalo a chi giura di non usare l'autotune",
+        "verificata": True,
+    },
+    {
+        "slug": "lowrey",
+        "numero": 64,
+        "serie": "GLI ORGANI",
+        "strumento": "Lowrey DSO",
+        "anno": "1965",
+        "luogo": "Chicago, USA",
+        "costruttore": "Lowrey Organ Company",
+        "specifiche": [
+            ("PRIMO ORGANO", "1955"),
+            ("MODELLO DSO", "1965"),
+            ("MANUALI", "2 + pedaliera"),
+            ("GENERAZIONE", "valvole"),
+        ],
+        "gancio": "L'organo da salotto americano, e le otto note che aprono «Lucy in the Sky with Diamonds»",
+        "sottotitolo": "Lowrey costruiva organi per le case, non per i palchi, e non ha mai avuto una ruota fonica: tutto elettronico dal primo giorno.",
+        "la_macchina": (
+            "Un mobile di legno con due tastiere, la pedaliera sotto e il leggio "
+            "sopra, fatto per stare in un soggiorno americano. I registri sono "
+            "tabulatori bianchi e rossi a sinistra di ogni manuale, con sopra "
+            "scritto il nome dello strumento da imitare. Negli anni Sessanta e "
+            "Settanta Lowrey era il più grande costruttore di organi elettronici "
+            "del mondo, e li vendeva a gente che non sapeva suonare: c'era "
+            "l'accompagnamento automatico, e dal 1968 anche i ritmi. "
+            "All'esemplare in copertina qualcuno ha avvitato sotto la tastiera una "
+            "scatola di ritmi comprata a parte, che non è roba Lowrey."
+        ),
+        "inventore_nome": "Frederick Lowrey",
+        "inventore": (
+            "Lowrey era un industriale di Chicago, non un musicista. La ditta "
+            "parte da un'idea pratica: si attacca al pianoforte di casa un "
+            "aggeggio che gli aggiunge i registri d'organo su 60 note e lo lascia "
+            "pianoforte. Si chiama Organo, esce nel 1949 e serve a contendere a "
+            "Hammond il mercato del Solovox. Il primo organo vero arriva nel "
+            "1955, il Model S Berkshire. La differenza con Hammond sta alla "
+            "radice e non cambierà mai: in un Hammond il suono lo fanno delle "
+            "ruote dentate che girano davanti a delle calamite, in un Lowrey non "
+            "si muove niente."
+        ),
+        "come_funziona": (
+            "Oscillatori a valvola e divisori, e i tabulatori aprono filtri che "
+            "colorano quello che esce: flauto, oboe, clarinetto, arpa. Il punto è "
+            "che potete tenerne premuti quattro insieme. Nessuno dei quattro "
+            "somiglia davvero allo strumento che ha scritto sopra, e quattro "
+            "imitazioni mediocri sovrapposte danno un timbro che in natura non "
+            "esiste. Un organo da casa fa male il mestiere che dichiara, e "
+            "proprio per questo ne ha trovato un altro. Se ne provate uno, non "
+            "cercate il flauto: provate ad aprirne quattro a caso."
+        ),
+        "richiami": [
+            ("FIG. 1", "2 manuali e pedaliera"),
+            ("FIG. 2", "Tabulatori dei registri"),
+            ("FIG. 3", "Ritmi automatici, dal 1968"),
+        ],
+        "chi_lusata": [
+            {"artista": "Paul McCartney", "nota": "l'introduzione di «Lucy in the Sky with Diamonds» (1967)", "ig": None},
+            {"artista": "I Beatles", "nota": "e ancora un Lowrey su «Being for the Benefit of Mr. Kite!», stesso disco", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Lucy in the Sky with Diamonds", "artista": "The Beatles", "anno": "1967",
+                         "cosa": "Le prime otto note. Non è un clavicembalo: è un organo da salotto con quattro registri aperti tutti insieme."},
+        "aneddoto": (
+            "Il 1° marzo 1967 McCartney si mette al Lowrey che stava ad Abbey "
+            "Road e cerca il suono per l'attacco del pezzo. Non ne apre uno, ne "
+            "apre quattro: clavicembalo, vibrafono, carillon e chitarra. Quelle "
+            "otto note le riconoscono tutti e quasi nessuno sa che escono da un "
+            "mobile che si comprava a rate, con l'accompagnamento automatico "
+            "incluso e il leggio di legno sopra. Se ne trovate uno in un "
+            "mercatino, i tabulatori ci sono ancora e si chiamano ancora così."
+        ),
+        "avvertenza": "Dentro ci sono valvole e un alimentatore vecchio di sessant'anni. Un DSO rimasto in cantina non si accende e basta: prima i condensatori.",
+        "foto": {
+            "file": "assets/foto/lowrey/principale.jpg",
+            "autore": "Human-potato hybrid",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/lowrey/acceso.jpg",
+             "autore": "Brokephotography7D", "licenza": "CC BY-SA 4.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Un Lowrey Citation acceso: i tabulatori colorati sono i registri"},
+            {"file": "assets/foto/lowrey/c500.jpg",
+             "autore": "Emily Harrison", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Un modello del 1977: mobile, panca, pedaliera"},
+        ],
+        "fonti": [
+            {"titolo": "«Lowrey organ» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Lowrey_organ", "data": "2026-10-05"},
+            {"titolo": "«Lucy In The Sky With Diamonds» — The Beatles Bible: il Lowrey DSO-1 Heritage Deluxe e i quattro registri aperti insieme",
+             "url": "https://www.beatlesbible.com/songs/lucy-in-the-sky-with-diamonds/", "data": "2026-10-05"},
+            {"titolo": "«Lucy in the Sky with Diamonds» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Lucy_in_the_Sky_with_Diamonds", "data": "2026-10-05"},
+        ],
+        "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 064", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
+            ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
+            ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
+            ("LE PRIME 8 NOTE", "4 imitazioni mediocri sommate: un timbro che in natura non esiste."),
+        ],
+        "reel_cta": "Mandalo a chi pensava fosse un clavicembalo",
+        "verificata": True,
+    },
+    {
+        "slug": "wasp",
+        "numero": 65,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "EDP Wasp",
+        "anno": "1978",
+        "luogo": "Inghilterra",
+        "costruttore": "Electronic Dream Plant",
+        "specifiche": [
+            ("USCITA", "1978"),
+            ("PREZZO", "199 £"),
+            ("TASTIERA", "stampata, 2 ottave"),
+            ("FILTRO", "CMOS, 12 dB"),
+        ],
+        "gancio": "La tastiera è un adesivo. Sotto ci sono piastrine di rame, e tutto costava 199 sterline",
+        "sottotitolo": "Nero e giallo come l'insetto, con l'altoparlante dentro e le pile: due inglesi tagliano tutto quello che non è il suono.",
+        "la_macchina": (
+            "Una scatola di plastica nera e gialla, grande come un libro grosso. "
+            "Dove dovrebbe esserci la tastiera c'è un adesivo di vinile "
+            "serigrafato e sotto l'adesivo delle piastrine di rame piatte: si "
+            "suona toccando il disegno dei tasti, che sono due ottave. Dentro ci "
+            "stanno due oscillatori digitali, due inviluppi, un filtro "
+            "commutabile, un altoparlante da 4 pollici per 2 e il posto per sei "
+            "pile mezza torcia. Sul pannello, in basso a destra, c'è scritto "
+            "Electronic Dream Plant Limited, England."
+        ),
+        "inventore_nome": "Adrian Wagner e Chris Huggett",
+        "inventore": (
+            "Wagner faceva il musicista, Huggett progettava elettronica. Nel 1977 "
+            "aprono la ditta con 10.000 sterline prestate da un negozio di "
+            "strumenti di Londra e decidono una cosa sola, tagliare tutto quello "
+            "che non è il suono. Via la tastiera meccanica, via il mobile, via le "
+            "rifiniture. Huggett costruisce gli oscillatori con logica TTL, che è "
+            "roba da computer e non da sintetizzatori, e grazie a quella restano "
+            "accordati meglio di tanti analogici dell'epoca. È lo stesso uomo "
+            "che pochi anni dopo progetterà l'OSCar."
+        ),
+        "come_funziona": (
+            "Due oscillatori digitali e un filtro analogico fatto con chip CMOS, "
+            "cioè componenti logici messi a fare un mestiere per cui non erano "
+            "nati. Il filtro taglia 12 dB per ottava e si commuta fra passa-basso, "
+            "passa-banda e passa-alto; il passa-banda è quello che dà al Wasp il "
+            "suono stretto e nasale da cui lo riconoscete. Due prese DIN a 7 poli "
+            "sul fianco si chiamano LINK e servono a collegarne due fra loro, "
+            "anni prima che esistesse il MIDI. La tastiera stampata non ha né "
+            "dinamica né corsa: o tocchi o non tocchi."
+        ),
+        "richiami": [
+            ("FIG. 1", "Tastiera a piastrine di rame"),
+            ("FIG. 2", "2 oscillatori digitali"),
+            ("FIG. 3", "Prese LINK, prima del MIDI"),
+        ],
+        "chi_lusata": [
+            {"artista": "Robert Rental e Thomas Leer", "nota": "due Wasp per tastiere e percussioni su «The Bridge» (1979)", "ig": None},
+            {"artista": "Chris Carter", "nota": "dei Throbbing Gristle: ne comprò uno dopo aver sentito «The Bridge»", "ig": None},
+            {"artista": "Dave Stewart", "nota": "degli Eurythmics, registrava col microfono davanti all'altoparlante interno", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "The Bridge", "artista": "Robert Rental e Thomas Leer", "anno": "1979",
+                         "cosa": "Le tastiere e buona parte delle percussioni escono da due Wasp, non da una batteria elettronica."},
+        "aneddoto": (
+            "Gerald Casale dei Devo raccontava che col sudore delle dita il Wasp "
+            "si metteva a suonare da solo: le piastrine sotto l'adesivo leggono "
+            "il contatto, e il sudore è un contatto. La ditta non è durata molto "
+            "di più. Nel 1980 Electronic Dream Plant fallisce, schiacciata dai "
+            "debiti coi fornitori, e chiude nel 1982. Dell'ultimo modello, il "
+            "Wasp Deluxe con la tastiera vera, ne erano usciti circa 80. Wagner "
+            "prova ad andare avanti da solo con un marchio chiamato Wasp "
+            "Synthesizers e non arriva all'anno."
+        ),
+        "avvertenza": "La tastiera è un adesivo su piastrine di rame. Non si gratta e non si pulisce con l'alcol: sotto non c'è un contatto di ricambio.",
+        "foto": {
+            "file": "assets/foto/wasp/principale.jpg",
+            "autore": "R. Bartz",
+            "licenza": "CC BY-SA 2.5",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/wasp/pannello.jpg",
+             "autore": "Julian Fincham", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il pannello giallo su nero, e i tasti che sono solo disegnati"},
+            {"file": "assets/foto/wasp/deluxe.jpg",
+             "autore": "Julian Fincham", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il Wasp Deluxe, l'ultimo modello: qui la tastiera è vera"},
+        ],
+        "fonti": [
+            {"titolo": "«Electronic Dream Plant» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Electronic_Dream_Plant", "data": "2026-10-05"},
+            {"titolo": "«EDP Wasp» — Sound On Sound: altoparlante, pile, prese LINK e «The Bridge» di Rental e Leer",
+             "url": "https://www.soundonsound.com/reviews/edp-wasp", "data": "2026-10-05"},
+        ],
+        "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 065", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
+            ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
+            ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
+            ("ELECTRONIC DREAM PLANT", "Anche la ditta dura poco: nel 1980 fallisce, schiacciata dai debiti."),
+        ],
+        "reel_cta": "Mandalo a chi suona con le mani sudate",
         "verificata": True,
     },
     {
         "slug": "elkarhapsody",
-        "numero": 64,
+        "numero": 66,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -5571,7 +5792,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 064", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 066", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -5582,7 +5803,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 65,
+        "numero": 67,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -5668,7 +5889,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 065", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 067", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -5679,7 +5900,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 66,
+        "numero": 68,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -5768,7 +5989,7 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 066", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 068", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
@@ -5778,100 +5999,8 @@ SCHEDE = [
         "verificata": True,
     },
     {
-        "slug": "poly800",
-        "numero": 67,
-        "serie": "I SINTETIZZATORI",
-        "strumento": "Korg Poly-800",
-        "anno": "1983",
-        "luogo": "Giappone",
-        "costruttore": "Korg",
-        "specifiche": [
-            ("LANCIO", "1983"),
-            ("PREZZO", "795 $"),
-            ("VOCI", "8 (o 4)"),
-            ("TASTI", "49"),
-        ],
-        "gancio": "Costava 795 dollari e andava a pile. Atkins, May e Saunderson, i tre del techno di Detroit, ne avevano uno",
-        "sottotitolo": "Otto voci programmabili sotto gli 800 dollari, e un solo filtro per tutte.",
-        "la_macchina": (
-            "49 tasti senza dinamica, 64 programmi in memoria e un sequencer da 256 passi. "
-            "Va a pile e ha i ganci per la tracolla, quindi si può suonare "
-            "in piedi come una tastiera da collo. Ha un joystick per modulare. "
-            "Le voci sono 8, ma ogni voce ha due oscillatori: se li accendete "
-            "tutti e due, il suono si fa più pieno e le voci scendono a 4. "
-            "I programmi si salvano su cassetta."
-        ),
-        "inventore_nome": "Korg",
-        "inventore": (
-            "Lo presenta Korg nel 1983. Il nome di chi l'ha disegnato non l'ho "
-            "trovato in nessuna fonte, e non ne invento uno. Nel 1984 esce l'EX-800, la stessa "
-            "elettronica senza tastiera, da montare in un rack. Nel 1986 il "
-            "Poly-800 II: al posto del chorus un delay digitale, e finalmente "
-            "i messaggi SysEx per scambiare i suoni col computer."
-        ),
-        "come_funziona": (
-            "Gli oscillatori sono digitali (DCO) e fanno dente di sega e "
-            "onda quadra, con del rumore bianco da mescolare. Ogni oscillatore ha "
-            "un inviluppo a 6 stadi: Attack, Decay, Break Point, Slope, Sustain, "
-            "Release. Il filtro passa-basso risonante però è uno solo, "
-            "condiviso da tutte le voci. Per questo lo chiamano paraphonic e non "
-            "polifonico fino in fondo."
-        ),
-        "richiami": [
-            ("FIG. 1", "Tastiera da 49 tasti e joystick"),
-            ("FIG. 2", "Pannello con i 64 programmi"),
-            ("FIG. 3", "Ganci per la tracolla"),
-        ],
-        "chi_lusata": [
-            {"artista": "Juan Atkins", "nota": "uno dei tre di Belleville, Detroit: ne aveva uno in studio", "ig": None},
-            {"artista": "Derrick May", "nota": "ce l'ha nelle liste degli strumenti prima del 1990", "ig": None},
-            {"artista": "Kevin Saunderson", "nota": "ce l'aveva intorno al 1988, quando nasce Inner City", "ig": None},
-        ],
-        "menzioni_extra": [],
-        "aneddoto": (
-            "Il prezzo dipende da chi lo racconta. 795 dollari per Wikipedia, "
-            "«meno di 800» nella pubblicità Korg su Musician nel 1984, 575 "
-            "sterline per l'Inghilterra. Anche gli anni non tornano: 1983-1987 "
-            "da una parte, 1984-1986 dall'altra. Sul filtro unico invece "
-            "tutti sono d'accordo: The Mix lo chiama un difetto grosso, "
-            "da string machine. Nel 1994 la stessa rivista lo dava usato "
-            "a 100-130 sterline, con il voto più alto al rapporto qualità-prezzo."
-        ),
-        "avvertenza": "Con i due oscillatori accesi le voci scendono da 8 a 4. Contate quanti tasti suonate insieme, prima di dire che è un otto voci.",
-        "foto": {
-            "file": "assets/foto/poly800/ii.jpg",
-            "autore": "rico blanco",
-            "licenza": "CC BY-SA 2.0",
-            "fonte": "Wikimedia Commons (un Poly-800 II, la versione del 1986)",
-            "ritaglio": True,
-        },
-        "foto_extra": [
-            {"file": "assets/foto/poly800/controls.jpg",
-             "autore": "rico blanco", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Il pannello: joystick, tasti dei programmi e sequencer (un Poly-800 II)"},
-        ],
-        "fonti": [
-            {"titolo": "«Korg Poly-800» — Wikipedia (EN): 1983, 795 $, 8 voci, DCO, filtro unico, 64 programmi, EX-800 e Poly-800 II",
-             "url": "https://en.wikipedia.org/wiki/Korg_Poly-800", "data": "2026-10-16"},
-            {"titolo": "«Total Recall: Korg Poly-800» — The Mix, settembre 1994: 575 sterline, filtro unico, 4 voci in doppio, elenco di chi l'ha usato",
-             "url": "https://www.muzines.co.uk/articles/total-recall/8184", "data": "2026-10-16"},
-            {"titolo": "«Korg Poly-800 Polyphonic Synthesizer» — SMEM (museo): i tre di Belleville, tecnologia e prezzo",
-             "url": "https://www.smemmusic.ch/fr/node/1219", "data": "2026-10-16"},
-        ],
-        "hashtags": ["#poly800", "#korg", "#sintetizzatore", "#derrickmay", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 067", "Va a pile, e ce l'hanno i tre della techno di Detroit"),
-            ("KORG · 1983", "8 voci programmabili, 49 tasti e i ganci per la tracolla."),
-            ("IL TRUCCO", "Ogni voce ha due oscillatori: accesi tutti e due, le voci scendono a 4."),
-            ("IL DIFETTO", "Un filtro solo, condiviso da tutte le voci."),
-            ("DETROIT", "Juan Atkins, Derrick May e Kevin Saunderson: uno a testa, in studio."),
-        ],
-        "reel_cta": "Mandalo a chi suona in piedi",
-        "verificata": True,
-    },
-    {
         "slug": "pianet",
-        "numero": 68,
+        "numero": 69,
         "serie": "GLI ELETTROMECCANICI",
         "strumento": "Hohner Pianet",
         "anno": "1962",
@@ -5956,102 +6085,13 @@ SCHEDE = [
         ],
         "hashtags": ["#pianet", "#hohner", "#pianoelettrico", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 068", "«She's Not There» degli Zombies: un Pianet da casa"),
+            ("ELETTROFONI · N. 069", "«She's Not There» degli Zombies: un Pianet da casa"),
             ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
             ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
             ("1964", "Rod Argent lo suona su «She's Not There» degli Zombies."),
         ],
         "reel_cta": "Mandalo a un tastierista da lamelle",
-        "verificata": True,
-    },
-    {
-        "slug": "omnichord",
-        "numero": 69,
-        "serie": "I GIOCATTOLI",
-        "strumento": "Suzuki Omnichord",
-        "anno": "1981",
-        "luogo": "Giappone",
-        "costruttore": "Suzuki",
-        "specifiche": [
-            ("PRIMO MODELLO", "OM-27, 1981"),
-            ("ACCORDI", "27"),
-            ("SUONI", "1: arpa"),
-            ("FINE", "1996"),
-        ],
-        "gancio": "Si suona con un dito e le note sono sempre intonate. Eno e Lanois ci hanno fatto «Deep Blue Day»",
-        "sottotitolo": "Un'autoarpa elettronica per chi non ha mai suonato.",
-        "la_macchina": (
-            "Un corpo marrone lucido a forma di paletta. A "
-            "sinistra i tasti per gli accordi, al centro una piastra a "
-            "strisce da accarezzare con le dita, a destra l'altoparlante. "
-            "Si sceglie l'accordo, si striscia il dito e le note escono "
-            "arpeggiate. In più c'è un ritmo preimpostato e un basso "
-            "automatico. L'OM-27 ha 27 accordi e un solo suono, l'arpa."
-        ),
-        "inventore_nome": "Suzuki",
-        "inventore": (
-            "La Suzuki è un'azienda giapponese di famiglia che faceva armoniche "
-            "dal 1953. Nel 1981 presenta l'Omnichord insieme al Portachord, "
-            "e lo pensa per chi non ha mai suonato e si spaventa davanti a una "
-            "tastiera. Nessuna delle fonti che ho trovato dice chi l'ha "
-            "disegnato, quindi non lo dico. Nel 1984 escono OM-36 e OM-84, con "
-            "più accordi. L'ultimo, l'OM-300, esce intorno al 1996."
-        ),
-        "come_funziona": (
-            "La piastra è elettronica, non ci sono corde: tocchi una striscia e "
-            "senti una nota dell'accordo scelto, sempre intonata. Non puoi "
-            "sbagliare nota, puoi sbagliare accordo. I primi modelli sono "
-            "analogici, dicono le fonti, fino al 1989."
-        ),
-        "richiami": [
-            ("FIG. 1", "Tasti degli accordi: maggiore, minore e settima"),
-            ("FIG. 2", "Piastra da strisciare"),
-            ("FIG. 3", "Rhythm e altoparlante"),
-        ],
-        "chi_lusata": [
-            {"artista": "Eurythmics", "nota": "il suono d'arpa in «Love Is a Stranger» (1982, ma una fonte dice 1983)", "ig": None},
-            {"artista": "Brian Eno e Daniel Lanois", "nota": "«Deep Blue Day» dall'album «Apollo» (1983)", "ig": None},
-            {"artista": "Daniel Lanois", "nota": "anche su «Trip Through Your Wires» degli U2 (1987)", "ig": None},
-        ],
-        "menzioni_extra": [],
-        "aneddoto": (
-            "Dave Stewart, che ne prese uno in Giappone, lo descrive come un "
-            "incrocio fra un giocattolo e uno strumento. Sulla data di «Love Is a Stranger» le "
-            "fonti non si mettono d'accordo, 1982 per Wikipedia e 1983 per "
-            "un'altra. Nel 1985 Tiny Tim ha scritto sulla copertina di un "
-            "suo singolo che era il primo disco suonato tutto con "
-            "l'Omnichord. A me piace che, per chi non sa suonare, la prima "
-            "regola sia: non puoi sbagliare nota."
-        ),
-        "avvertenza": "L'OM-27 ha 27 accordi e un solo suono, l'arpa. Se la vostra versione ne ha 36 o 84, non è un OM-27.",
-        "foto": {
-            "file": "assets/foto/omnichord/om27.jpg",
-            "autore": "tico_24",
-            "licenza": "CC BY 2.0",
-            "fonte": "Wikimedia Commons",
-            "ritaglio": True,
-        },
-        "foto_extra": [
-            {"file": "assets/foto/omnichord/interno.jpg",
-             "autore": "dana_dane", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Aperto: la scheda, l'altoparlante e la piastra staccata"},
-        ],
-        "fonti": [
-            {"titolo": "«Omnichord» — Wikipedia (EN): Suzuki 1981, OM-27, modelli, Eurythmics, Eno e Lanois, Tiny Tim",
-             "url": "https://en.wikipedia.org/wiki/Omnichord", "data": "2026-10-16"},
-            {"titolo": "«Suzuki Omnichord history» — Perfect Circuit: 1981, OM-27 con 27 accordi e un solo suono, Eurythmics, Lanois",
-             "url": "https://www.perfectcircuit.com/signal/suzuki-omnichord-history", "data": "2026-10-16"},
-        ],
-        "hashtags": ["#omnichord", "#suzuki", "#strumentielettronici", "#brianeno", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 069", "Basta un dito, e Brian Eno ci fa «Deep Blue Day»"),
-            ("SUZUKI · 1981", "Un'autoarpa elettronica per chi non ha mai suonato."),
-            ("COME SI SUONA", "Scegli un accordo e striscia il dito sulla piastra."),
-            ("IL LIMITE", "L'OM-27 ha 27 accordi e un solo suono: l'arpa."),
-            ("1983", "Eno e Lanois lo usano in «Deep Blue Day», dall'album «Apollo»."),
-        ],
-        "reel_cta": "Mandalo a chi non sa suonare",
         "verificata": True,
     },
 ]
