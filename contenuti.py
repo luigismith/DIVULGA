@@ -697,6 +697,16 @@ SCHEDE = [
             ("UNA DI QUELLE VOCI", "Era Tatyana Ali, futura star di «Willy, il principe di Bel-Air»"),
         ],
         "reel_cta": "Mandalo a chi sa a memoria la sigla di Willy",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # la pagina: «Recorded with a Fairlight IIX ... essentially an 8-Bit Fairlight Sample». Riff originale.
+        "reel_audio": {
+            "file": "assets/audio/fairlight/registrazione.mp3", "inizio": 0,
+            "autore": "amackenzie (chitarra: Ajax)", "licenza": "CC BY 3.0",
+            "fonte": "freesound.org/s/150428",
+            "url": "https://freesound.org/s/150428/",
+            "cosa": "un Fairlight IIx che fa il suo mestiere: una chitarra acustica campionata a 8 bit e risuonata",
+        },
         "verificata": True,   # verifica 2026-08-25; foto SMEM scaricata via workflow scarica-foto
     },
     {
@@ -1655,6 +1665,16 @@ SCHEDE = [
             ("DAFT PUNK · 1995", "Il lead sporco e saturo di «Da Funk»? È un Korg MS-20"),
         ],
         "reel_cta": "Mandalo a chi ha consumato «Da Funk»",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # caricata nel 2008, prima delle riedizioni (mini 2013, FS 2014). Estratto 0:30-1:15. Non è la scala scartata il 07/10.
+        "reel_audio": {
+            "file": "assets/audio/ms20/registrazione.mp3", "inizio": 0,
+            "autore": "dajs", "licenza": "CC0 1.0",
+            "fonte": "freesound.org/s/51733",
+            "url": "https://freesound.org/s/51733/",
+            "cosa": "un Korg MS-20 originale: il rumore bianco nell'ESP che fa partire note a caso, con phaser e riverbero",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 18
@@ -3917,6 +3937,16 @@ SCHEDE = [
             ("13 MAGGIO 1981", "Poi arrivano synth più economici, e ARP dichiara fallimento."),
         ],
         "reel_cta": "Mandalo a chi giura solo sul Minimoog",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # estratto 1:30-2:10 di un'improvvisazione di 11 minuti; la pagina: «using a 1972 ARP Odyssey synthesizer».
+        "reel_audio": {
+            "file": "assets/audio/arpodyssey/registrazione.mp3", "inizio": 0,
+            "autore": "Jeff Archer", "licenza": "CC BY 3.0",
+            "fonte": "archive.org",
+            "url": "https://archive.org/details/ARPOdysseyImprovSundayNov.202016",
+            "cosa": "un ARP Odyssey del 1972: un'improvvisazione dal vivo con un delay stereo",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 49
