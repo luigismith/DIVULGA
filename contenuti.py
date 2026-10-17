@@ -502,6 +502,16 @@ SCHEDE = [
             ("MOODY BLUES · 1967", "Ci costruisce «Nights in White Satin»."),
         ],
         "reel_cta": "Mandalo a chi ama «Nights in White Satin»",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # l'unica registrazione libera dimostrabile: «played on a Mellotron M400». Estratto 0:02-0:17.
+        "reel_audio": {
+            "file": "assets/audio/mellotron/registrazione.mp3", "inizio": 0,
+            "autore": "Analogist", "licenza": "CC0 1.0",
+            "fonte": "freesound.org/s/449908",
+            "url": "https://freesound.org/s/449908/",
+            "cosa": "un Mellotron M400 che suona un nastro di effetti: i bip spaziali, non gli archi",
+        },
         "verificata": True,   # verifica completata il 2026-08-25 (vedi fonti)
     },
     {
@@ -913,6 +923,16 @@ SCHEDE = [
             ("NON SERVÌ A NIENTE", "Vieta ai negozi di venderlo. I musicisti li vorranno insieme lo stesso"),
         ],
         "reel_cta": "Mandalo a chi dice «io non so suonare»",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # è la stessa registrazione della scheda del Leslie (lì conta la cassa, qui l'organo). Pagina: «Hammond Tonewheel H-series Organ with Leslie cabinet».
+        "reel_audio": {
+            "file": "assets/audio/hammond/registrazione.mp3", "inizio": 0,
+            "autore": "MrAuralization", "licenza": "CC BY 4.0",
+            "fonte": "freesound.org/s/158628",
+            "url": "https://freesound.org/s/158628/",
+            "cosa": "un organo Hammond serie H a ruote foniche, col Leslie: un giro gospel",
+        },
         "verificata": True,   # verifica completata il 2026-08-26 (vedi fonti)
     },
     {
@@ -1931,6 +1951,16 @@ SCHEDE = [
             ("FLOP: 10.000 PEZZI", "Roland la ritira dopo un anno. Da usata, farà techno e house"),
         ],
         "reel_cta": "Mandalo al tuo amico batterista jazz",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # NON è «909 house pattern.ogg», scartata il 07/10 perché fatta in FL Studio. Pagina: «fait à la TR-909». Estratto 0:06-0:46.
+        "reel_audio": {
+            "file": "assets/audio/tr909/registrazione.mp3", "inizio": 0,
+            "autore": "Sylvain87", "licenza": "CC BY 1.0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:TR-909.ogg",
+            "cosa": "una Roland TR-909 vera: un pattern house con qualche variazione suonata dal vivo",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 22
@@ -3494,6 +3524,16 @@ SCHEDE = [
             ("SEZIONE HUMAN VOICE", "Ensemble acceso, portamento premuto. Ed è l'intro di «Levitating»."),
         ],
         "reel_cta": "Mandalo a chi ha «Levitating» in playlist",
+        # Registrazione della macchina vera (17/10/2026, regola del proprietario:
+        # il suono vero in ogni uscita). Licenza verificata sulla pagina;
+        # la pagina registra il coro nota per nota; qui due note (una quinta sopra) unite in dissolvenza.
+        "reel_audio": {
+            "file": "assets/audio/vp330/registrazione.mp3", "inizio": 0,
+            "autore": "Elektrik_Musik", "licenza": "CC0 1.0",
+            "fonte": "freesound.org/s/170493",
+            "url": "https://freesound.org/s/170493/",
+            "cosa": "un Roland VP-330 vero: il coro femminile, due note tenute",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 44

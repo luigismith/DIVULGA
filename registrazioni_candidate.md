@@ -53,3 +53,20 @@ Easel, Oberheim Four Voice, Synclavier, Emulator, Lowrey, EDP Wasp, Elka
 Rhapsody, Moog Taurus (solo Sampling+), Echoplex (solo Sampling+), Hohner
 Pianet (solo note singole di un Pianet T), Auto-Tune. DX7: solo suoni
 poco riconoscibili (freesound 90059, 721535).
+
+## Piste ancora aperte per schede già uscite (17/10/2026)
+
+- Clavinet: https://commons.wikimedia.org/wiki/File:Clavinet_D6_with_4_fuzz_pedals.webm
+  (Benjamin Dehli, CC BY 3.0 da YouTube, verificata dal bot; un Clavinet D6
+  passato in 4 fuzz, suono distorto). È un video: `scarica-foto.yml` non
+  l'ha scaricato (controlla il tipo del file), va preso in altro modo.
+- Video YouTube che la ricerca ha visto marcati CC BY, da verificare sulla
+  pagina prima di usarli: Ondes Martenot (jQJcckNzYoo, classe del CNSMDP;
+  G2qCfgED7IY), Mellotron (vfXlngDWEJw), Mixtur-Trautonium (_AmmEHjGaz4,
+  con parlato), RE-201 (swDquI_vR6A), SP-1200 (Msqs7RsFeao), MPC60
+  (CGbQ3wZEIa8), TR-606 (JpuCNDZ4bAM), Ondioline (DIp4JXk5NWs), Rhythm
+  Ace FR-2 (FKzHh8ZZD20), Phase 90 (kHJRWwCemCQ), Hammond M-101
+  (UqS29bPc3YM). Scartato 7wp636I_vIA (ondes): la descrizione dice NC.
+- Hammond Model A (1935): https://commons.wikimedia.org/wiki/File:Hammond_Organ_-_Model_A_Medley.ogg
+  (CC BY 3.0, OTRS) è un medley: prima di usarlo va capito quali brani
+  sono, per escludere melodie protette.
