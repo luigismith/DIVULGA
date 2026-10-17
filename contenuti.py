@@ -4155,7 +4155,8 @@ SCHEDE = [
         ],
         "reel_cta": "Mandalo a chi ha un modulare pieno di cavi",
         "verificata": True,
-    },{
+    },
+    {
         "slug": "wurlitzer200a",
         "numero": 52,
         "serie": "GLI ELETTROMECCANICI",
@@ -4604,120 +4605,9 @@ SCHEDE = [
         },
         "verificata": True,
     },
-    # ---------------------------------------------------------------- 56
-    # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
-    # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
-    # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
-    # perché a fonte singola: prezzo di lancio, anno dell'ATR-1 (solo Sound
-    # On Sound), «un milione di moltiplicazioni ridotte a quattro», il
-    # produttore pagato 60.000 dollari, l'esempio di Eiffel 65 (era un
-    # harmonizer MIDI, non Auto-Tune), Radiohead (solo The Wire).
-    # Controverso e quindi taciuto: chi volle la velocità zero (Hildebrand
-    # «per gioco» secondo Priceonomics, il marketing secondo Ironic Sans).
-    # Nessuna registrazione libera dimostrabile di Auto-Tune VERO su
-    # Commons o Freesound: il reel usa la sigla.
-    {
-        "slug": "autotune",
-        "numero": 56,
-        "serie": "GLI EFFETTI",
-        "strumento": "Antares Auto-Tune",
-        "anno": "1997",
-        "luogo": "Scotts Valley, California",
-        "costruttore": "Antares Audio Technologies",
-        "specifiche": [
-            ("ANNO", "1997"),
-            ("COSTRUTTORE", "Antares"),
-            ("PRINCIPIO", "Autocorrelazione"),
-            ("FORMATO", "Plug-in per Pro Tools"),
-        ],
-        "gancio": "L'ha inventato un ingegnere che cercava il petrolio nei dati sismici",
-        "sottotitolo": "Doveva aggiustare le stonature senza farsi sentire. Lo conosciamo tutti per la volta che si è fatto sentire.",
-        "la_macchina": "Nel 1997 Auto-Tune è un programma, un plug-in per Pro Tools. Ascolta una voce, capisce che nota sta cantando e la sposta sulla più vicina della scala che gli avete indicato. Se la nota è già giusta la lascia stare. Prima, per avere una voce intonata, in studio si registravano decine di prese e si montavano i pezzi buoni. Da qui in poi si può tenere la prima, che spesso è la migliore. Secondo me è la macchina più odiata di tutto il catalogo, e anche quella che si sente di più alla radio.",
-        "inventore_nome": "Andy Hildebrand",
-        "inventore": "Harold «Andy» Hildebrand da ragazzo suona il flauto da professionista, poi nel 1976 prende un dottorato in ingegneria elettrica all'Università dell'Illinois. Va alla Exxon a leggere i dati sismici, cioè a capire dove trivellare, e per farlo usa l'autocorrelazione, una formula che trova il punto in cui un segnale si ripete. Verso i 40 anni smette con il petrolio e nel 1989 va a studiare composizione alla Rice di Houston. Nel 1990 fonda Jupiter Systems, che diventerà Antares. Il primo prodotto è un campionatore software, Infinity.",
-        "come_funziona": "La voce è un'onda che si ripete, e il tempo di una ripetizione è la nota. Auto-Tune lo misura con la stessa autocorrelazione dei dati sismici, lo confronta con la nota giusta e ricampiona l'onda quel tanto che basta. Si pensava che quel calcolo fosse troppo pesante per farlo mentre uno canta: Hildebrand ne ha tagliato quasi tutto. Poi c'è una manopola, Retune Speed, che decide quanto in fretta la nota viene spinta al suo posto. Lenta, non la sentite. A zero la nota salta di colpo da un gradino all'altro senza scivolare, e la voce diventa un robot.",
-        "richiami": [
-            ("FIG. 1", "Trova la nota (autocorrelazione)"),
-            ("FIG. 2", "La sposta sulla scala scelta"),
-            ("FIG. 3", "Retune Speed a zero: il robot"),
-        ],
-        "chi_lusata": [
-            {"artista": "Cher", "nota": "«Believe» (1998), da cui il nome «Cher effect»", "ig": None},
-            {"artista": "T-Pain", "nota": "«Rappa Ternt Sanga» (2005), e da lì il suo marchio", "ig": "tpain"},
-            {"artista": "Kanye West", "nota": "«808s & Heartbreak» (2008), quasi tutto cantato così", "ig": None},
-            {"artista": "Daft Punk", "nota": "la voce di Romanthony in «One More Time» (2000)", "ig": None},
-        ],
-        "menzioni_extra": [
-            {"ig": "autotune",
-             "riga": "Antares lo vende ancora, e il suo account si chiama come lui: @autotune."},
-        ],
-        "aneddoto": "A metà anni '90, a pranzo durante il NAMM, Hildebrand chiede agli amici cosa ci sarebbe ancora da inventare. Una donna risponde scherzando: una scatola che mi faccia cantare intonata. Nel 1998 Mark Taylor e Brian Rawling producono «Believe» di Cher e sulla sua voce mettono la Retune Speed a zero. La casa discografica vuole togliere quell'effetto, e Cher risponde che si cambia solo passando sul suo cadavere. A Sound On Sound, nel 1999, i produttori raccontano che è un pedale, un DigiTech Talker. Il disco va al primo posto nel Regno Unito e in America.",
-        "avvertenza": "Retune Speed a zero non corregge la voce: la trasforma. L'inventore pensava che nessuno sano di mente l'avrebbe girata fin lì.",
-        "da_ascoltare": {"brano": "Believe", "artista": "Cher",
-                          "anno": "1998",
-                          "cosa": "Nelle strofe la voce salta da una nota all'altra senza scivolare. È Auto-Tune con la Retune Speed a zero."},
-        "foto": {
-            "file": "assets/foto/autotune/principale.jpg",
-            "autore": "Georges Seguin (Okki), ritagliata",
-            "licenza": "CC BY-SA 3.0",
-            "fonte": "Wikimedia Commons",
-            "didascalia": "Un Antares AVP-1 in un rack da concerto: Auto-Tune sta qui dentro",
-        },
-        # Non esiste un'altra foto libera di hardware Antares: questa è un
-        # ritaglio verticale della stessa, sul logo e sul display, che nel
-        # reel riempie lo schermo invece di stare in una fascia.
-        "foto_extra": [
-            {"file": "assets/foto/autotune/display.jpg",
-             "autore": "Georges Seguin (Okki), ritagliata", "licenza": "CC BY-SA 3.0",
-             "fonte": "Wikimedia Commons", "posizione": "center",
-             "didascalia": "Il display dell'AVP-1, «antares vocal producer»"},
-        ],
-        "fonti": [
-            {"titolo": "«Instrumental Instruments: Auto-Tune» — RBMA Daily, 2017",
-             "url": "https://daily.redbullmusicacademy.com/2017/09/instrumental-instruments-auto-tune", "data": "2026-10-16"},
-            {"titolo": "«The Inventor of Auto-Tune» — Priceonomics",
-             "url": "https://priceonomics.com/the-inventor-of-auto-tune/", "data": "2026-10-16"},
-            {"titolo": "«Auto-Tune: Why Pop Music Sounds Perfect» — Time, 2009",
-             "url": "https://time.com/archive/6687593/auto-tune-why-pop-music-sounds-perfect/", "data": "2026-10-16"},
-            {"titolo": "Hildebrand fra gli ex studenti — ECE Illinois, 2016",
-             "url": "https://ece.illinois.edu/news/alumni-news/field-report/4430", "data": "2026-10-16"},
-            {"titolo": "«From Rocks to Rock» — AAPG Explorer, 2012",
-             "url": "https://www.aapg.org/news-and-media/details/explorer/articleid/2104/from-rocks-to-rock-his-ideas-sound-good", "data": "2026-10-16"},
-            {"titolo": "Il Grammy tecnico 2023 a Hildebrand — Grammy.com",
-             "url": "https://www.grammy.com/news/dr-andy-hildebrand-honored-recording-academy-special-merit-award", "data": "2026-10-16"},
-            {"titolo": "«1997 Antares Auto-Tune» — Mix",
-             "url": "https://www.mixonline.com/technology/1997-antares-auto-tune-383728", "data": "2026-10-16"},
-            {"titolo": "Brevetto US 5.973.252 — Google Patents",
-             "url": "https://patents.google.com/patent/US5973252A/en", "data": "2026-10-16"},
-            {"titolo": "«Recording Cher's 'Believe'» — Sound On Sound, febbraio 1999",
-             "url": "https://www.soundonsound.com/techniques/recording-cher-believe", "data": "2026-10-16"},
-            {"titolo": "«Antares Auto-tune» — Sound On Sound, agosto 2000",
-             "url": "https://www.soundonsound.com/reviews/antares-auto-tune", "data": "2026-10-16"},
-            {"titolo": "«Believe» e il ritorno di Cher — Mental Floss",
-             "url": "https://www.mentalfloss.com/posts/cher-believe-1990s-music-comeback", "data": "2026-10-16"},
-            {"titolo": "«Believe» 25 anni dopo — NPR, 2023",
-             "url": "https://www.cfpublic.org/2023-10-19/25-years-ago-cher-released-a-song-that-would-change-the-sound-of-pop-music", "data": "2026-10-16"},
-            {"titolo": "«808s & Heartbreak» — Spin, 2008",
-             "url": "https://www.spinmagazine.com/2008/11/album-review-kanye-wests-808s-and-heartbreak/", "data": "2026-10-16"},
-            {"titolo": "«Antares AVP-1» — Sound On Sound, 2002",
-             "url": "https://www.soundonsound.com/reviews/antares-avp1", "data": "2026-10-16"},
-            {"titolo": "«Discovery» 20 anni dopo — Grammy.com",
-             "url": "https://grammy.com/news/record-daft-punk-discovery-album-20-year-anniversary", "data": "2026-10-16"},
-        ],
-        "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 056", "La voce robot di Cher nasce da chi cercava il petrolio"),
-            ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
-            ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
-            ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
-            ("CHER · 1998", "In «Believe» la correzione è a zero: la voce salta di nota in nota."),
-        ],
-        "reel_cta": "Mandalo a chi giura di non usare l'autotune",
-        "verificata": True,
-    },
     {
         "slug": "sh101",
-        "numero": 57,
+        "numero": 56,
         "serie": "I SINTETIZZATORI",
         "strumento": "Roland SH-101",
         "anno": "1982",
@@ -4820,7 +4710,7 @@ SCHEDE = [
         ],
         "hashtags": ["#sh101", "#roland", "#sintetizzatore", "#theprodigy", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 057", "Nata per il palco, finita nel basso di «Voodoo Ray»"),
+            ("ELETTROFONI · N. 056", "Nata per il palco, finita nel basso di «Voodoo Ray»"),
             ("NOVEMBRE 1982", "Roland SH-101: 32 tasti, le pile, la tracolla di pelle."),
             ("1986", "Chi ha 500 dollari se li tiene per un DX7. La produzione chiude."),
             ("50 STERLINE", "Al banco dei pegni la prendono i ragazzi di Detroit e di Manchester."),
@@ -4840,7 +4730,7 @@ SCHEDE = [
     },
     {
         "slug": "vl1",
-        "numero": 58,
+        "numero": 57,
         "serie": "I GIOCATTOLI",
         "strumento": "Casio VL-Tone VL-1",
         "anno": "1980 circa",
@@ -4933,7 +4823,7 @@ SCHEDE = [
         ],
         "hashtags": ["#casiovl1", "#casio", "#sintetizzatore", "#steviewonder", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 058", "Una calcolatrice da 69,95 dollari ha fatto «Da Da Da»"),
+            ("ELETTROFONI · N. 057", "Una calcolatrice da 69,95 dollari ha fatto «Da Da Da»"),
             ("TOKYO · DAL 1946", "Casio per 30 anni fa calcolatrici e basta. Poi prova a farle suonare."),
             ("29 TASTI · 5 SUONI", "Il VL-1: premi CAL e fa i conti, premi MUSIC e suona."),
             ("1979? 1980? 1981? 1982?", "È un giocattolo e la data si è persa: 4 fonti, 4 anni diversi."),
@@ -4950,112 +4840,8 @@ SCHEDE = [
         "verificata": True,
     },
     {
-        "slug": "lowrey",
-        "numero": 59,
-        "serie": "GLI ORGANI",
-        "strumento": "Lowrey DSO",
-        "anno": "1965",
-        "luogo": "Chicago, USA",
-        "costruttore": "Lowrey Organ Company",
-        "specifiche": [
-            ("PRIMO ORGANO", "1955"),
-            ("MODELLO DSO", "1965"),
-            ("MANUALI", "2 + pedaliera"),
-            ("GENERAZIONE", "valvole"),
-        ],
-        "gancio": "L'organo da salotto americano, e le otto note che aprono «Lucy in the Sky with Diamonds»",
-        "sottotitolo": "Lowrey costruiva organi per le case, non per i palchi, e non ha mai avuto una ruota fonica: tutto elettronico dal primo giorno.",
-        "la_macchina": (
-            "Un mobile di legno con due tastiere, la pedaliera sotto e il leggio "
-            "sopra, fatto per stare in un soggiorno americano. I registri sono "
-            "tabulatori bianchi e rossi a sinistra di ogni manuale, con sopra "
-            "scritto il nome dello strumento da imitare. Negli anni Sessanta e "
-            "Settanta Lowrey era il più grande costruttore di organi elettronici "
-            "del mondo, e li vendeva a gente che non sapeva suonare: c'era "
-            "l'accompagnamento automatico, e dal 1968 anche i ritmi. "
-            "All'esemplare in copertina qualcuno ha avvitato sotto la tastiera una "
-            "scatola di ritmi comprata a parte, che non è roba Lowrey."
-        ),
-        "inventore_nome": "Frederick Lowrey",
-        "inventore": (
-            "Lowrey era un industriale di Chicago, non un musicista. La ditta "
-            "parte da un'idea pratica: si attacca al pianoforte di casa un "
-            "aggeggio che gli aggiunge i registri d'organo su 60 note e lo lascia "
-            "pianoforte. Si chiama Organo, esce nel 1949 e serve a contendere a "
-            "Hammond il mercato del Solovox. Il primo organo vero arriva nel "
-            "1955, il Model S Berkshire. La differenza con Hammond sta alla "
-            "radice e non cambierà mai: in un Hammond il suono lo fanno delle "
-            "ruote dentate che girano davanti a delle calamite, in un Lowrey non "
-            "si muove niente."
-        ),
-        "come_funziona": (
-            "Oscillatori a valvola e divisori, e i tabulatori aprono filtri che "
-            "colorano quello che esce: flauto, oboe, clarinetto, arpa. Il punto è "
-            "che potete tenerne premuti quattro insieme. Nessuno dei quattro "
-            "somiglia davvero allo strumento che ha scritto sopra, e quattro "
-            "imitazioni mediocri sovrapposte danno un timbro che in natura non "
-            "esiste. Un organo da casa fa male il mestiere che dichiara, e "
-            "proprio per questo ne ha trovato un altro. Se ne provate uno, non "
-            "cercate il flauto: provate ad aprirne quattro a caso."
-        ),
-        "richiami": [
-            ("FIG. 1", "2 manuali e pedaliera"),
-            ("FIG. 2", "Tabulatori dei registri"),
-            ("FIG. 3", "Ritmi automatici, dal 1968"),
-        ],
-        "chi_lusata": [
-            {"artista": "Paul McCartney", "nota": "l'introduzione di «Lucy in the Sky with Diamonds» (1967)", "ig": None},
-            {"artista": "I Beatles", "nota": "e ancora un Lowrey su «Being for the Benefit of Mr. Kite!», stesso disco", "ig": None},
-        ],
-        "menzioni_extra": [],
-        "da_ascoltare": {"brano": "Lucy in the Sky with Diamonds", "artista": "The Beatles", "anno": "1967",
-                         "cosa": "Le prime otto note. Non è un clavicembalo: è un organo da salotto con quattro registri aperti tutti insieme."},
-        "aneddoto": (
-            "Il 1° marzo 1967 McCartney si mette al Lowrey che stava ad Abbey "
-            "Road e cerca il suono per l'attacco del pezzo. Non ne apre uno, ne "
-            "apre quattro: clavicembalo, vibrafono, carillon e chitarra. Quelle "
-            "otto note le riconoscono tutti e quasi nessuno sa che escono da un "
-            "mobile che si comprava a rate, con l'accompagnamento automatico "
-            "incluso e il leggio di legno sopra. Se ne trovate uno in un "
-            "mercatino, i tabulatori ci sono ancora e si chiamano ancora così."
-        ),
-        "avvertenza": "Dentro ci sono valvole e un alimentatore vecchio di sessant'anni. Un DSO rimasto in cantina non si accende e basta: prima i condensatori.",
-        "foto": {
-            "file": "assets/foto/lowrey/principale.jpg",
-            "autore": "Human-potato hybrid",
-            "licenza": "CC BY-SA 4.0",
-            "fonte": "Wikimedia Commons",
-        },
-        "foto_extra": [
-            {"file": "assets/foto/lowrey/acceso.jpg",
-             "autore": "Brokephotography7D", "licenza": "CC BY-SA 4.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Un Lowrey Citation acceso: i tabulatori colorati sono i registri"},
-            {"file": "assets/foto/lowrey/c500.jpg",
-             "autore": "Emily Harrison", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Un modello del 1977: mobile, panca, pedaliera"},
-        ],
-        "fonti": [
-            {"titolo": "«Lowrey organ» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Lowrey_organ", "data": "2026-10-05"},
-            {"titolo": "«Lucy In The Sky With Diamonds» — The Beatles Bible: il Lowrey DSO-1 Heritage Deluxe e i quattro registri aperti insieme",
-             "url": "https://www.beatlesbible.com/songs/lucy-in-the-sky-with-diamonds/", "data": "2026-10-05"},
-            {"titolo": "«Lucy in the Sky with Diamonds» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Lucy_in_the_Sky_with_Diamonds", "data": "2026-10-05"},
-        ],
-        "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 059", "Quel clavicembalo dei Beatles è un organo da salotto"),
-            ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
-            ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
-            ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
-            ("LE PRIME 8 NOTE", "4 imitazioni mediocri sommate: un timbro che in natura non esiste."),
-        ],
-        "reel_cta": "Mandalo a chi pensava fosse un clavicembalo",
-        "verificata": True,
-    },
-    {
         "slug": "polymoog",
-        "numero": 60,
+        "numero": 58,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Polymoog",
         "anno": "1975",
@@ -5149,7 +4935,7 @@ SCHEDE = [
         ],
         "hashtags": ["#polymoog", "#moog", "#sintetizzatore", "#prince", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 060", "Il tappeto di «Cars» di Gary Numan? Un preset e basta"),
+            ("ELETTROFONI · N. 058", "Il tappeto di «Cars» di Gary Numan? Un preset e basta"),
             ("1975 · 5.295 DOLLARI", "Suonare un accordo è il problema di tutti. Moog risponde col Polymoog."),
             ("71 TASTI, 71 SCHEDE", "Una scheda per ogni tasto: 71 cose che si possono guastare."),
             ("1978 · 14 PRESET", "La versione Keyboard ha 14 preset coi nomi stampati. Uno è Vox Humana."),
@@ -5166,8 +4952,326 @@ SCHEDE = [
         "verificata": True,
     },
     {
-        "slug": "wasp",
+        "slug": "leslie",
+        "numero": 59,
+        "serie": "GLI EFFETTI",
+        "strumento": "Leslie",
+        "anno": "1941",
+        "luogo": "Pasadena, California",
+        "costruttore": "Electro Music",
+        "specifiche": [
+            ("PRIMO MODELLO", "1941"),
+            ("ROTORI", "2"),
+            ("GIRI LENTI", "40-50 al min."),
+            ("GIRI VELOCI", "340-400 al min."),
+        ],
+        "gancio": "Hammond lo ascoltò al telefono e disse di no. Don Leslie se lo costruì in garage e lo vendette lo stesso",
+        "sottotitolo": "Un armadio di legno con dentro una tromba e un tamburo che girano, per rendere meno piatto l'organo.",
+        "la_macchina": (
+            "Un armadio di legno con le persiane davanti. Dentro, in basso, c'è l'altoparlante dei bassi "
+            "con un tamburo che gli gira intorno; in alto un driver per gli "
+            "acuti con una tromba che gira anch'essa. Due velocità, che "
+            "chiamano CHORALE e TREMOLO. Il modello più diffuso è il 122, "
+            "poi c'è il 147, che funziona con più organi, e il 145, "
+            "che è lo stesso in un mobile da 33 pollici."
+        ),
+        "inventore_nome": "Don Leslie",
+        "inventore": (
+            "Donald Leslie era un tecnico radio di Los Angeles, nato nel 1911 a "
+            "Danville, Illinois. Nel 1937 compra un organo Hammond e in una "
+            "stanza piccola lo trova spento, acuto e fermo. Costruisce un prototipo, e "
+            "nel 1940 lo fa sentire a Hammond in un negozio di Los Angeles, "
+            "con Laurens Hammond che ascolta per telefono da Chicago. Hammond "
+            "ne vendeva già uno suo e non apprezzò l'effetto. Nel 1941 Leslie "
+            "fonda la Electro Music a Pasadena e chiama l'aggeggio Vibratone "
+            "30A. Lo costruisce in garage."
+        ),
+        "come_funziona": (
+            "L'altoparlante sta fermo e gira la tromba che gli sta davanti: "
+            "il suono parte ora in una direzione e ora in un'altra, e chi "
+            "ascolta sente il timbro ondeggiare e l'intonazione, per effetto "
+            "Doppler, oscillare un poco. A velocità lenta la tromba fa circa "
+            "50 giri al minuto e il tamburo 40, a velocità alta 400 e 340. "
+            "Quella lenta si chiama CHORALE, quella veloce TREMOLO."
+        ),
+        "richiami": [
+            ("FIG. 1", "Cassa con le persiane"),
+            ("FIG. 2", "Tromba e tamburo che girano"),
+            ("FIG. 3", "Due velocità: CHORALE e TREMOLO"),
+        ],
+        "chi_lusata": [
+            {"artista": "Jimmy Smith", "nota": "organista jazz, uno dei nomi che le fonti fanno per primi", "ig": None},
+            {"artista": "Beatles", "nota": "su «Tomorrow Never Knows», 1966, dove ci passa la voce di Lennon", "ig": None},
+            {"artista": "Richard Wright", "nota": "dei Pink Floyd, tastierista", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Hammond cambia l'interfaccia degli altoparlanti sui suoi organi "
+            "per renderli a prova di Leslie. Leslie ci mette poco ad "
+            "aggirare il problema. Eppure, dice Wikipedia, degli organi "
+            "Hammond lui non aveva stima: li avrebbe chiamati «quei "
+            "maledetti aggeggi». Nel 1965 vende la ditta alla CBS. Hammond "
+            "compra il nome Leslie nel 1980, o negli anni intorno: le fonti "
+            "non coincidono. Mi piace la storia di un uomo che ha fatto "
+            "la fortuna di un organo che non sopportava."
+        ),
+        "avvertenza": "Tromba e tamburo girano a velocità diverse, 400 e 340 giri al minuto sul veloce. Controllate che si muovano tutti e due, prima di pagarlo.",
+        "foto": {
+            "file": "assets/foto/leslie/rockfield.jpg",
+            "autore": "Steve Knight",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+        },
+        "foto_extra": [
+            {"file": "assets/foto/leslie/acrilico.jpg",
+             "autore": "Hustvedt", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Un mobile trasparente: in primo piano l'altoparlante dei bassi, intorno i meccanismi"},
+        ],
+        "fonti": [
+            {"titolo": "«Leslie speaker» — Wikipedia (EN): modelli, velocità, Hammond, CBS, chi lo ha usato",
+             "url": "https://en.wikipedia.org/wiki/Leslie_speaker", "data": "2026-10-13"},
+            {"titolo": "«Donald Leslie» — Wikipedia (EN): 1911, la dimostrazione del 1940, Electro Music, 48 brevetti",
+             "url": "https://en.wikipedia.org/wiki/Donald_Leslie", "data": "2026-10-13"},
+            {"titolo": "«Don Leslie» — Procol Harum, necrologio del 2004: Hammond, Electro Music, CBS 1965, 48 brevetti, Hammond e il 1980",
+             "url": "https://procolharum.com/99/leslie_obit.htm", "data": "2026-10-13"},
+        ],
+        "hashtags": ["#lesliespeaker", "#leslie", "#organo", "#beatles", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 059", "Hammond sente il Leslie al telefono e dice di no"),
+            ("DON LESLIE", "Nel 1940 Don Leslie fa sentire il prototipo. A Hammond non piace."),
+            ("1941", "Leslie fonda la Electro Music a Pasadena e lo costruisce in garage."),
+            ("TROMBA E TAMBURO", "Dentro girano una tromba e un tamburo, fino a 400 giri al minuto."),
+            ("1966", "I Beatles ci passano la voce di Lennon in «Tomorrow Never Knows»."),
+        ],
+        "reel_cta": "Mandalo a chi suona l'organo",
+        # Registrazione della macchina vera (16/10/2026): licenza libera,
+        # verificata sulla pagina Freesound (descrizione + licenza).
+        "reel_audio": {
+            "file": "assets/audio/leslie/registrazione.mp3", "inizio": 2,
+            "autore": "MrAuralization", "licenza": "CC BY 4.0",
+            "fonte": "freesound.org/s/158628",
+            "url": "https://freesound.org/s/158628/",
+            "cosa": "un organo Hammond serie H che suona attraverso un cabinet Leslie vero",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 60
+    # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
+    # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
+    # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
+    # perché a fonte singola: prezzo di lancio, anno dell'ATR-1 (solo Sound
+    # On Sound), «un milione di moltiplicazioni ridotte a quattro», il
+    # produttore pagato 60.000 dollari, l'esempio di Eiffel 65 (era un
+    # harmonizer MIDI, non Auto-Tune), Radiohead (solo The Wire).
+    # Controverso e quindi taciuto: chi volle la velocità zero (Hildebrand
+    # «per gioco» secondo Priceonomics, il marketing secondo Ironic Sans).
+    # Nessuna registrazione libera dimostrabile di Auto-Tune VERO su
+    # Commons o Freesound: il reel usa la sigla.
+    {
+        "slug": "autotune",
+        "numero": 60,
+        "serie": "GLI EFFETTI",
+        "strumento": "Antares Auto-Tune",
+        "anno": "1997",
+        "luogo": "Scotts Valley, California",
+        "costruttore": "Antares Audio Technologies",
+        "specifiche": [
+            ("ANNO", "1997"),
+            ("COSTRUTTORE", "Antares"),
+            ("PRINCIPIO", "Autocorrelazione"),
+            ("FORMATO", "Plug-in per Pro Tools"),
+        ],
+        "gancio": "L'ha inventato un ingegnere che cercava il petrolio nei dati sismici",
+        "sottotitolo": "Doveva aggiustare le stonature senza farsi sentire. Lo conosciamo tutti per la volta che si è fatto sentire.",
+        "la_macchina": "Nel 1997 Auto-Tune è un programma, un plug-in per Pro Tools. Ascolta una voce, capisce che nota sta cantando e la sposta sulla più vicina della scala che gli avete indicato. Se la nota è già giusta la lascia stare. Prima, per avere una voce intonata, in studio si registravano decine di prese e si montavano i pezzi buoni. Da qui in poi si può tenere la prima, che spesso è la migliore. Secondo me è la macchina più odiata di tutto il catalogo, e anche quella che si sente di più alla radio.",
+        "inventore_nome": "Andy Hildebrand",
+        "inventore": "Harold «Andy» Hildebrand da ragazzo suona il flauto da professionista, poi nel 1976 prende un dottorato in ingegneria elettrica all'Università dell'Illinois. Va alla Exxon a leggere i dati sismici, cioè a capire dove trivellare, e per farlo usa l'autocorrelazione, una formula che trova il punto in cui un segnale si ripete. Verso i 40 anni smette con il petrolio e nel 1989 va a studiare composizione alla Rice di Houston. Nel 1990 fonda Jupiter Systems, che diventerà Antares. Il primo prodotto è un campionatore software, Infinity.",
+        "come_funziona": "La voce è un'onda che si ripete, e il tempo di una ripetizione è la nota. Auto-Tune lo misura con la stessa autocorrelazione dei dati sismici, lo confronta con la nota giusta e ricampiona l'onda quel tanto che basta. Si pensava che quel calcolo fosse troppo pesante per farlo mentre uno canta: Hildebrand ne ha tagliato quasi tutto. Poi c'è una manopola, Retune Speed, che decide quanto in fretta la nota viene spinta al suo posto. Lenta, non la sentite. A zero la nota salta di colpo da un gradino all'altro senza scivolare, e la voce diventa un robot.",
+        "richiami": [
+            ("FIG. 1", "Trova la nota (autocorrelazione)"),
+            ("FIG. 2", "La sposta sulla scala scelta"),
+            ("FIG. 3", "Retune Speed a zero: il robot"),
+        ],
+        "chi_lusata": [
+            {"artista": "Cher", "nota": "«Believe» (1998), da cui il nome «Cher effect»", "ig": None},
+            {"artista": "T-Pain", "nota": "«Rappa Ternt Sanga» (2005), e da lì il suo marchio", "ig": "tpain"},
+            {"artista": "Kanye West", "nota": "«808s & Heartbreak» (2008), quasi tutto cantato così", "ig": None},
+            {"artista": "Daft Punk", "nota": "la voce di Romanthony in «One More Time» (2000)", "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "autotune",
+             "riga": "Antares lo vende ancora, e il suo account si chiama come lui: @autotune."},
+        ],
+        "aneddoto": "A metà anni '90, a pranzo durante il NAMM, Hildebrand chiede agli amici cosa ci sarebbe ancora da inventare. Una donna risponde scherzando: una scatola che mi faccia cantare intonata. Nel 1998 Mark Taylor e Brian Rawling producono «Believe» di Cher e sulla sua voce mettono la Retune Speed a zero. La casa discografica vuole togliere quell'effetto, e Cher risponde che si cambia solo passando sul suo cadavere. A Sound On Sound, nel 1999, i produttori raccontano che è un pedale, un DigiTech Talker. Il disco va al primo posto nel Regno Unito e in America.",
+        "avvertenza": "Retune Speed a zero non corregge la voce: la trasforma. L'inventore pensava che nessuno sano di mente l'avrebbe girata fin lì.",
+        "da_ascoltare": {"brano": "Believe", "artista": "Cher",
+                          "anno": "1998",
+                          "cosa": "Nelle strofe la voce salta da una nota all'altra senza scivolare. È Auto-Tune con la Retune Speed a zero."},
+        "foto": {
+            "file": "assets/foto/autotune/principale.jpg",
+            "autore": "Georges Seguin (Okki), ritagliata",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un Antares AVP-1 in un rack da concerto: Auto-Tune sta qui dentro",
+        },
+        # Non esiste un'altra foto libera di hardware Antares: questa è un
+        # ritaglio verticale della stessa, sul logo e sul display, che nel
+        # reel riempie lo schermo invece di stare in una fascia.
+        "foto_extra": [
+            {"file": "assets/foto/autotune/display.jpg",
+             "autore": "Georges Seguin (Okki), ritagliata", "licenza": "CC BY-SA 3.0",
+             "fonte": "Wikimedia Commons", "posizione": "center",
+             "didascalia": "Il display dell'AVP-1, «antares vocal producer»"},
+        ],
+        "fonti": [
+            {"titolo": "«Instrumental Instruments: Auto-Tune» — RBMA Daily, 2017",
+             "url": "https://daily.redbullmusicacademy.com/2017/09/instrumental-instruments-auto-tune", "data": "2026-10-16"},
+            {"titolo": "«The Inventor of Auto-Tune» — Priceonomics",
+             "url": "https://priceonomics.com/the-inventor-of-auto-tune/", "data": "2026-10-16"},
+            {"titolo": "«Auto-Tune: Why Pop Music Sounds Perfect» — Time, 2009",
+             "url": "https://time.com/archive/6687593/auto-tune-why-pop-music-sounds-perfect/", "data": "2026-10-16"},
+            {"titolo": "Hildebrand fra gli ex studenti — ECE Illinois, 2016",
+             "url": "https://ece.illinois.edu/news/alumni-news/field-report/4430", "data": "2026-10-16"},
+            {"titolo": "«From Rocks to Rock» — AAPG Explorer, 2012",
+             "url": "https://www.aapg.org/news-and-media/details/explorer/articleid/2104/from-rocks-to-rock-his-ideas-sound-good", "data": "2026-10-16"},
+            {"titolo": "Il Grammy tecnico 2023 a Hildebrand — Grammy.com",
+             "url": "https://www.grammy.com/news/dr-andy-hildebrand-honored-recording-academy-special-merit-award", "data": "2026-10-16"},
+            {"titolo": "Brevetto US 5.973.252 — Google Patents",
+             "url": "https://patents.google.com/patent/US5973252A/en", "data": "2026-10-16"},
+            {"titolo": "«Recording Cher's 'Believe'» — Sound On Sound, febbraio 1999",
+             "url": "https://www.soundonsound.com/techniques/recording-cher-believe", "data": "2026-10-16"},
+            {"titolo": "«Antares Auto-tune» — Sound On Sound, agosto 2000",
+             "url": "https://www.soundonsound.com/reviews/antares-auto-tune", "data": "2026-10-16"},
+            {"titolo": "«Believe» e il ritorno di Cher — Mental Floss",
+             "url": "https://www.mentalfloss.com/posts/cher-believe-1990s-music-comeback", "data": "2026-10-16"},
+            {"titolo": "«Believe» 25 anni dopo — NPR, 2023",
+             "url": "https://www.cfpublic.org/2023-10-19/25-years-ago-cher-released-a-song-that-would-change-the-sound-of-pop-music", "data": "2026-10-16"},
+            {"titolo": "«808s & Heartbreak» — Spin, 2008",
+             "url": "https://www.spinmagazine.com/2008/11/album-review-kanye-wests-808s-and-heartbreak/", "data": "2026-10-16"},
+            {"titolo": "«Antares AVP-1» — Sound On Sound, 2002",
+             "url": "https://www.soundonsound.com/reviews/antares-avp1", "data": "2026-10-16"},
+            {"titolo": "«Discovery» 20 anni dopo — Grammy.com",
+             "url": "https://grammy.com/news/record-daft-punk-discovery-album-20-year-anniversary", "data": "2026-10-16"},
+        ],
+        "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 060", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
+            ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
+            ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
+            ("CHER · 1998", "In «Believe» la correzione è a zero: la voce salta di nota in nota."),
+        ],
+        "reel_cta": "Mandalo a chi giura di non usare l'autotune",
+        "verificata": True,
+    },
+    {
+        "slug": "lowrey",
         "numero": 61,
+        "serie": "GLI ORGANI",
+        "strumento": "Lowrey DSO",
+        "anno": "1965",
+        "luogo": "Chicago, USA",
+        "costruttore": "Lowrey Organ Company",
+        "specifiche": [
+            ("PRIMO ORGANO", "1955"),
+            ("MODELLO DSO", "1965"),
+            ("MANUALI", "2 + pedaliera"),
+            ("GENERAZIONE", "valvole"),
+        ],
+        "gancio": "L'organo da salotto americano, e le otto note che aprono «Lucy in the Sky with Diamonds»",
+        "sottotitolo": "Lowrey costruiva organi per le case, non per i palchi, e non ha mai avuto una ruota fonica: tutto elettronico dal primo giorno.",
+        "la_macchina": (
+            "Un mobile di legno con due tastiere, la pedaliera sotto e il leggio "
+            "sopra, fatto per stare in un soggiorno americano. I registri sono "
+            "tabulatori bianchi e rossi a sinistra di ogni manuale, con sopra "
+            "scritto il nome dello strumento da imitare. Negli anni Sessanta e "
+            "Settanta Lowrey era il più grande costruttore di organi elettronici "
+            "del mondo, e li vendeva a gente che non sapeva suonare: c'era "
+            "l'accompagnamento automatico, e dal 1968 anche i ritmi. "
+            "All'esemplare in copertina qualcuno ha avvitato sotto la tastiera una "
+            "scatola di ritmi comprata a parte, che non è roba Lowrey."
+        ),
+        "inventore_nome": "Frederick Lowrey",
+        "inventore": (
+            "Lowrey era un industriale di Chicago, non un musicista. La ditta "
+            "parte da un'idea pratica: si attacca al pianoforte di casa un "
+            "aggeggio che gli aggiunge i registri d'organo su 60 note e lo lascia "
+            "pianoforte. Si chiama Organo, esce nel 1949 e serve a contendere a "
+            "Hammond il mercato del Solovox. Il primo organo vero arriva nel "
+            "1955, il Model S Berkshire. La differenza con Hammond sta alla "
+            "radice e non cambierà mai: in un Hammond il suono lo fanno delle "
+            "ruote dentate che girano davanti a delle calamite, in un Lowrey non "
+            "si muove niente."
+        ),
+        "come_funziona": (
+            "Oscillatori a valvola e divisori, e i tabulatori aprono filtri che "
+            "colorano quello che esce: flauto, oboe, clarinetto, arpa. Il punto è "
+            "che potete tenerne premuti quattro insieme. Nessuno dei quattro "
+            "somiglia davvero allo strumento che ha scritto sopra, e quattro "
+            "imitazioni mediocri sovrapposte danno un timbro che in natura non "
+            "esiste. Un organo da casa fa male il mestiere che dichiara, e "
+            "proprio per questo ne ha trovato un altro. Se ne provate uno, non "
+            "cercate il flauto: provate ad aprirne quattro a caso."
+        ),
+        "richiami": [
+            ("FIG. 1", "2 manuali e pedaliera"),
+            ("FIG. 2", "Tabulatori dei registri"),
+            ("FIG. 3", "Ritmi automatici, dal 1968"),
+        ],
+        "chi_lusata": [
+            {"artista": "Paul McCartney", "nota": "l'introduzione di «Lucy in the Sky with Diamonds» (1967)", "ig": None},
+            {"artista": "I Beatles", "nota": "e ancora un Lowrey su «Being for the Benefit of Mr. Kite!», stesso disco", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Lucy in the Sky with Diamonds", "artista": "The Beatles", "anno": "1967",
+                         "cosa": "Le prime otto note. Non è un clavicembalo: è un organo da salotto con quattro registri aperti tutti insieme."},
+        "aneddoto": (
+            "Il 1° marzo 1967 McCartney si mette al Lowrey che stava ad Abbey "
+            "Road e cerca il suono per l'attacco del pezzo. Non ne apre uno, ne "
+            "apre quattro: clavicembalo, vibrafono, carillon e chitarra. Quelle "
+            "otto note le riconoscono tutti e quasi nessuno sa che escono da un "
+            "mobile che si comprava a rate, con l'accompagnamento automatico "
+            "incluso e il leggio di legno sopra. Se ne trovate uno in un "
+            "mercatino, i tabulatori ci sono ancora e si chiamano ancora così."
+        ),
+        "avvertenza": "Dentro ci sono valvole e un alimentatore vecchio di sessant'anni. Un DSO rimasto in cantina non si accende e basta: prima i condensatori.",
+        "foto": {
+            "file": "assets/foto/lowrey/principale.jpg",
+            "autore": "Human-potato hybrid",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/lowrey/acceso.jpg",
+             "autore": "Brokephotography7D", "licenza": "CC BY-SA 4.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Un Lowrey Citation acceso: i tabulatori colorati sono i registri"},
+            {"file": "assets/foto/lowrey/c500.jpg",
+             "autore": "Emily Harrison", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Un modello del 1977: mobile, panca, pedaliera"},
+        ],
+        "fonti": [
+            {"titolo": "«Lowrey organ» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Lowrey_organ", "data": "2026-10-05"},
+            {"titolo": "«Lucy In The Sky With Diamonds» — The Beatles Bible: il Lowrey DSO-1 Heritage Deluxe e i quattro registri aperti insieme",
+             "url": "https://www.beatlesbible.com/songs/lucy-in-the-sky-with-diamonds/", "data": "2026-10-05"},
+            {"titolo": "«Lucy in the Sky with Diamonds» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Lucy_in_the_Sky_with_Diamonds", "data": "2026-10-05"},
+        ],
+        "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 061", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
+            ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
+            ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
+            ("LE PRIME 8 NOTE", "4 imitazioni mediocri sommate: un timbro che in natura non esiste."),
+        ],
+        "reel_cta": "Mandalo a chi pensava fosse un clavicembalo",
+        "verificata": True,
+    },
+    {
+        "slug": "wasp",
+        "numero": 62,
         "serie": "I SINTETIZZATORI",
         "strumento": "EDP Wasp",
         "anno": "1978",
@@ -5259,7 +5363,7 @@ SCHEDE = [
         ],
         "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 061", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("ELETTROFONI · N. 062", "Casale dei Devo: col sudore delle dita suona da solo"),
             ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
             ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
@@ -5270,7 +5374,7 @@ SCHEDE = [
     },
     {
         "slug": "cz101",
-        "numero": 62,
+        "numero": 63,
         "serie": "I SINTETIZZATORI",
         "strumento": "Casio CZ-101",
         "anno": "1984",
@@ -5366,7 +5470,7 @@ SCHEDE = [
         ],
         "hashtags": ["#cz101", "#casio", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 062", "Quelli delle calcolatrici contro il DX7 di Yamaha"),
+            ("ELETTROFONI · N. 063", "Quelli delle calcolatrici contro il DX7 di Yamaha"),
             ("NOVEMBRE 1984", "Il Casio CZ-101 costa 495 dollari. Il DX7 quasi 2.000."),
             ("BREVETTO DI STANFORD", "La FM è un brevetto di Stanford. Casio inventa la distorsione di fase."),
             ("68.500 ESEMPLARI", "Va a 6 pile torcia, e i ragazzi se lo portano in camera."),
@@ -5377,7 +5481,7 @@ SCHEDE = [
     },
     {
         "slug": "elkarhapsody",
-        "numero": 63,
+        "numero": 64,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -5467,7 +5571,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 063", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 064", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -5478,7 +5582,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 64,
+        "numero": 65,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -5564,7 +5668,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 064", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 065", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -5575,7 +5679,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 65,
+        "numero": 66,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -5664,118 +5768,13 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 065", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 066", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
             ("RESTA IN CATALOGO", "Quell'EP-3 si fa fino al 1991. Più di ogni altro modello."),
         ],
         "reel_cta": "Mandalo a un chitarrista che ama l'eco",
-        "verificata": True,
-    },
-    {
-        "slug": "leslie",
-        "numero": 66,
-        "serie": "GLI EFFETTI",
-        "strumento": "Leslie",
-        "anno": "1941",
-        "luogo": "Pasadena, California",
-        "costruttore": "Electro Music",
-        "specifiche": [
-            ("PRIMO MODELLO", "1941"),
-            ("ROTORI", "2"),
-            ("GIRI LENTI", "40-50 al min."),
-            ("GIRI VELOCI", "340-400 al min."),
-        ],
-        "gancio": "Hammond lo ascoltò al telefono e disse di no. Don Leslie se lo costruì in garage e lo vendette lo stesso",
-        "sottotitolo": "Un armadio di legno con dentro una tromba e un tamburo che girano, per rendere meno piatto l'organo.",
-        "la_macchina": (
-            "Un armadio di legno con le persiane davanti. Dentro, in basso, c'è l'altoparlante dei bassi "
-            "con un tamburo che gli gira intorno; in alto un driver per gli "
-            "acuti con una tromba che gira anch'essa. Due velocità, che "
-            "chiamano CHORALE e TREMOLO. Il modello più diffuso è il 122, "
-            "poi c'è il 147, che funziona con più organi, e il 145, "
-            "che è lo stesso in un mobile da 33 pollici."
-        ),
-        "inventore_nome": "Don Leslie",
-        "inventore": (
-            "Donald Leslie era un tecnico radio di Los Angeles, nato nel 1911 a "
-            "Danville, Illinois. Nel 1937 compra un organo Hammond e in una "
-            "stanza piccola lo trova spento, acuto e fermo. Costruisce un prototipo, e "
-            "nel 1940 lo fa sentire a Hammond in un negozio di Los Angeles, "
-            "con Laurens Hammond che ascolta per telefono da Chicago. Hammond "
-            "ne vendeva già uno suo e non apprezzò l'effetto. Nel 1941 Leslie "
-            "fonda la Electro Music a Pasadena e chiama l'aggeggio Vibratone "
-            "30A. Lo costruisce in garage."
-        ),
-        "come_funziona": (
-            "L'altoparlante sta fermo e gira la tromba che gli sta davanti: "
-            "il suono parte ora in una direzione e ora in un'altra, e chi "
-            "ascolta sente il timbro ondeggiare e l'intonazione, per effetto "
-            "Doppler, oscillare un poco. A velocità lenta la tromba fa circa "
-            "50 giri al minuto e il tamburo 40, a velocità alta 400 e 340. "
-            "Quella lenta si chiama CHORALE, quella veloce TREMOLO."
-        ),
-        "richiami": [
-            ("FIG. 1", "Cassa con le persiane"),
-            ("FIG. 2", "Tromba e tamburo che girano"),
-            ("FIG. 3", "Due velocità: CHORALE e TREMOLO"),
-        ],
-        "chi_lusata": [
-            {"artista": "Jimmy Smith", "nota": "organista jazz, uno dei nomi che le fonti fanno per primi", "ig": None},
-            {"artista": "Beatles", "nota": "su «Tomorrow Never Knows», 1966, dove ci passa la voce di Lennon", "ig": None},
-            {"artista": "Richard Wright", "nota": "dei Pink Floyd, tastierista", "ig": None},
-        ],
-        "menzioni_extra": [],
-        "aneddoto": (
-            "Hammond cambia l'interfaccia degli altoparlanti sui suoi organi "
-            "per renderli a prova di Leslie. Leslie ci mette poco ad "
-            "aggirare il problema. Eppure, dice Wikipedia, degli organi "
-            "Hammond lui non aveva stima: li avrebbe chiamati «quei "
-            "maledetti aggeggi». Nel 1965 vende la ditta alla CBS. Hammond "
-            "compra il nome Leslie nel 1980, o negli anni intorno: le fonti "
-            "non coincidono. Mi piace la storia di un uomo che ha fatto "
-            "la fortuna di un organo che non sopportava."
-        ),
-        "avvertenza": "Tromba e tamburo girano a velocità diverse, 400 e 340 giri al minuto sul veloce. Controllate che si muovano tutti e due, prima di pagarlo.",
-        "foto": {
-            "file": "assets/foto/leslie/rockfield.jpg",
-            "autore": "Steve Knight",
-            "licenza": "CC BY 2.0",
-            "fonte": "Wikimedia Commons",
-            "ritaglio": True,
-        },
-        "foto_extra": [
-            {"file": "assets/foto/leslie/acrilico.jpg",
-             "autore": "Hustvedt", "licenza": "CC BY-SA 3.0", "fonte": "Wikimedia Commons",
-             "didascalia": "Un mobile trasparente: in primo piano l'altoparlante dei bassi, intorno i meccanismi"},
-        ],
-        "fonti": [
-            {"titolo": "«Leslie speaker» — Wikipedia (EN): modelli, velocità, Hammond, CBS, chi lo ha usato",
-             "url": "https://en.wikipedia.org/wiki/Leslie_speaker", "data": "2026-10-13"},
-            {"titolo": "«Donald Leslie» — Wikipedia (EN): 1911, la dimostrazione del 1940, Electro Music, 48 brevetti",
-             "url": "https://en.wikipedia.org/wiki/Donald_Leslie", "data": "2026-10-13"},
-            {"titolo": "«Don Leslie» — Procol Harum, necrologio del 2004: Hammond, Electro Music, CBS 1965, 48 brevetti, Hammond e il 1980",
-             "url": "https://procolharum.com/99/leslie_obit.htm", "data": "2026-10-13"},
-        ],
-        "hashtags": ["#lesliespeaker", "#leslie", "#organo", "#beatles", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 066", "Hammond sente il Leslie al telefono e dice di no"),
-            ("DON LESLIE", "Nel 1940 Don Leslie fa sentire il prototipo. A Hammond non piace."),
-            ("1941", "Leslie fonda la Electro Music a Pasadena e lo costruisce in garage."),
-            ("TROMBA E TAMBURO", "Dentro girano una tromba e un tamburo, fino a 400 giri al minuto."),
-            ("1966", "I Beatles ci passano la voce di Lennon in «Tomorrow Never Knows»."),
-        ],
-        "reel_cta": "Mandalo a chi suona l'organo",
-        # Registrazione della macchina vera (16/10/2026): licenza libera,
-        # verificata sulla pagina Freesound (descrizione + licenza).
-        "reel_audio": {
-            "file": "assets/audio/leslie/registrazione.mp3", "inizio": 2,
-            "autore": "MrAuralization", "licenza": "CC BY 4.0",
-            "fonte": "freesound.org/s/158628",
-            "url": "https://freesound.org/s/158628/",
-            "cosa": "un organo Hammond serie H che suona attraverso un cabinet Leslie vero",
-        },
         "verificata": True,
     },
     {
@@ -6371,6 +6370,17 @@ if __name__ == "__main__":
     coda = [s for s in SCHEDE if s["verificata"] and s["slug"] not in usciti]
     recenti = [s["strumento"] for s in coda
                if (m := re.search(r"\d{4}", str(s["anno"]))) and int(m.group()) > 1988]
+    # Il suono vero (proprietario, 17/10/2026: «voglio che ci sia in ogni
+    # prossimo post/storia/reel»): quante uscite sono coperte prima che
+    # tocchi a una scheda senza registrazione.
+    pronte = 0
+    for s in coda:
+        if not s.get("reel_audio"):
+            break
+        pronte += 1
+    print(f"Col suono vero: {sum(1 for s in coda if s.get('reel_audio'))} su {len(coda)} in coda"
+          f" — le prossime {pronte} uscite sono coperte"
+          + ("" if pronte == len(coda) else f", poi tocca a {coda[pronte]['slug']} che non ce l'ha"))
     print(f"In coda: {len(coda)} — dopo il 1988: {len(recenti)} (obiettivo: almeno 1 su 4)"
           + (f" — {', '.join(recenti)}" if recenti else ""))
     raise SystemExit(1 if problemi else 0)

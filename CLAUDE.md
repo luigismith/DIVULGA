@@ -130,6 +130,17 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   lo vede chi non ci segue, e per lui il gesto che conta è l'invio, non
   il commento. Carosello e tavole tengono `cta(scheda)`.
 - Cadenza: OGNI GIORNO alle 18 italiane (dal 26/08/2026).
+- **Il suono vero della macchina in ogni uscita** (regola del
+  proprietario, 17/10/2026: «Dobbiamo lavorare meglio sul suono reale
+  dello strumento. Voglio che ci sia in ogni prossimo post/storia/reel. È
+  la cosa più figa poter ascoltare lo strumento raccontato»). Quel giorno
+  lo avevano 15 schede uscite su 55 e 4 in coda su 14. Quindi: una scheda
+  nuova entra in coda SOLO con la sua `reel_audio` (registrazione libera
+  della macchina vera); `riordina_coda.py --scrivi` mette avanti quelle
+  che ce l'hanno e rinumera numero e kick del reel; `python contenuti.py`
+  dice quante uscite sono coperte; `pubblica.py` avvisa nel log se ne
+  esce una senza. Sulle schede vecchie il suono arriva col sito (che lo
+  prende da `reel_audio` da solo) e coi rifacimenti delle 12:30.
 - **La foto reale dello strumento è obbligatoria in ogni scheda** (regola
   del proprietario), con credito autore+licenza; fonti foto: Wikimedia
   Commons (API: `commons.wikimedia.org/w/api.php`, campi extmetadata).
@@ -723,6 +734,8 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
    altre lo raccontano in ordine; solo fatti già nella scheda) e la
    `reel_cta` («Mandalo a…»), cercare su Commons una registrazione
    libera della macchina VERA per `reel_audio` (non un'emulazione, non
-   una pronuncia), `verificata: True`, validare, generare tavole e reel
-   e GUARDARLI, committare.
+   una pronuncia). **Senza registrazione libera la scheda non entra in
+   coda** (regola del 17/10/2026, sopra): meglio partire dalle
+   registrazioni che esistono e scegliere la macchina dopo. `verificata:
+   True`, validare, generare tavole e reel e GUARDARLI, committare.
 4. Aggiornare la coda finché le schede verificate non pubblicate sono ≥14.

@@ -282,6 +282,15 @@ def main():
         segnala_errore(f"scheda '{scheda['slug']}' non valida", "\n".join(errs))
         sys.exit(1)
 
+    # Regola del proprietario (17/10/2026): «il suono reale dello strumento
+    # in ogni prossimo post/storia/reel». riordina_coda.py mette avanti le
+    # schede che ce l'hanno; se ne esce una senza, non si blocca la
+    # giornata (il silenzio è il danno peggiore), ma lo si dice forte.
+    if not scheda.get("reel_audio"):
+        print(f"[avviso] '{scheda['slug']}' esce SENZA registrazione vera: "
+              "reel e storia avranno la sigla. Trovare una registrazione o "
+              "rimandarla con riordina_coda.py.")
+
     slide_dir = RADICE / "docs" / "tavole" / scheda["slug"]
     files = sorted(slide_dir.glob("[0-9][0-9].jpg"))
     if len(files) != 6:
