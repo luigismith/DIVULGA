@@ -736,6 +736,7 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
    libera della macchina VERA per `reel_audio` (non un'emulazione, non
    una pronuncia). **Senza registrazione libera la scheda non entra in
    coda** (regola del 17/10/2026, sopra): meglio partire dalle
-   registrazioni che esistono e scegliere la macchina dopo. `verificata:
+   registrazioni che esistono (`registrazioni_candidate.md` ne ha 20 già
+   trovate) e scegliere la macchina dopo. `verificata:
    True`, validare, generare tavole e reel e GUARDARLI, committare.
 4. Aggiornare la coda finché le schede verificate non pubblicate sono ≥14.
