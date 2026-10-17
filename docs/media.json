@@ -64,6 +64,10 @@
    "file": "tavole/rhythmace/reel2.jpg",
    "firma": "761fcfdbcaf3e23a-1"
   },
+  "sh101": {
+   "file": "tavole/sh101/reel2.jpg",
+   "firma": "9f08c18d99e42677-1"
+  },
   "tb303": {
    "file": "tavole/tb303/reel2.jpg",
    "firma": "975dff053a1440f9-1"
@@ -762,6 +766,26 @@
    },
    "firma": "9f8e3f41f489adb6-320-640-1280-1"
   },
+  "sh101": {
+   "1280": "foto/sh101-1280.jpg",
+   "320": "foto/sh101-320.jpg",
+   "640": "foto/sh101-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "84e21d6b7f423ec8-320-640-1280-1"
+  },
   "simmonssds5": {
    "1280": "foto/simmonssds5-1280.jpg",
    "320": "foto/simmonssds5-320.jpg",
@@ -1238,6 +1262,11 @@
    "file": "suoni/rhodes.mp3",
    "firma": "8e05abf586b48adf-0-45-1",
    "secondi": 8.6
+  },
+  "sh101": {
+   "file": "suoni/sh101.mp3",
+   "firma": "6c161efb6a4a0c02-0-45-1",
+   "secondi": 39.0
   },
   "solina": {
    "file": "suoni/solina.mp3",
