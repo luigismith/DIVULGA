@@ -1185,6 +1185,21 @@
    "firma": "e0dd51a83e99d434-0-45-1",
    "secondi": 41.5
   },
+  "arpodyssey": {
+   "file": "suoni/arpodyssey.mp3",
+   "firma": "cffe206e00442593-0-45-1",
+   "secondi": 40.0
+  },
+  "fairlight": {
+   "file": "suoni/fairlight.mp3",
+   "firma": "42bc7fff49e08678-0-45-1",
+   "secondi": 13.0
+  },
+  "hammond": {
+   "file": "suoni/hammond.mp3",
+   "firma": "4fe136ec7be862ec-0-45-1",
+   "secondi": 23.0
+  },
   "juno106": {
    "file": "suoni/juno106.mp3",
    "firma": "2f1cf15e10d54d3b-225-45-1",
@@ -1194,6 +1209,21 @@
    "file": "suoni/korgm1.mp3",
    "firma": "c741b2105bfd4871-10-45-1",
    "secondi": 22.3
+  },
+  "mellotron": {
+   "file": "suoni/mellotron.mp3",
+   "firma": "7bfdc1abd844c0c0-0-45-1",
+   "secondi": 14.6
+  },
+  "minimoog": {
+   "file": "suoni/minimoog.mp3",
+   "firma": "ae650e916fe0d963-0-45-1",
+   "secondi": 31.0
+  },
+  "ms20": {
+   "file": "suoni/ms20.mp3",
+   "firma": "e31eb05c8340cc51-0-45-1",
+   "secondi": 45
   },
   "optigan": {
    "file": "suoni/optigan.mp3",
@@ -1235,6 +1265,11 @@
    "firma": "37c184e906ed9086-33-45-1",
    "secondi": 20.5
   },
+  "tr909": {
+   "file": "suoni/tr909.mp3",
+   "firma": "bccc00e3a650cd1e-0-45-1",
+   "secondi": 40.0
+  },
   "univibe": {
    "file": "suoni/univibe.mp3",
    "firma": "42363bf329d25d2e-7-45-1",
@@ -1249,6 +1284,11 @@
    "file": "suoni/voxcontinental.mp3",
    "firma": "590567d8a8539729-23-45-1",
    "secondi": 17.8
+  },
+  "vp330": {
+   "file": "suoni/vp330.mp3",
+   "firma": "640194f69224fe89-0-45-1",
+   "secondi": 19.5
   },
   "wurlitzer200a": {
    "file": "suoni/wurlitzer200a.mp3",
