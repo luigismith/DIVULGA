@@ -60,6 +60,10 @@
    "file": "tavole/phase90/reel2.jpg",
    "firma": "edc32dccf3460ee0-1"
   },
+  "polymoog": {
+   "file": "tavole/polymoog/reel2.jpg",
+   "firma": "8f9beef1416aa799-1"
+  },
   "rhythmace": {
    "file": "tavole/rhythmace/reel2.jpg",
    "firma": "761fcfdbcaf3e23a-1"
@@ -698,6 +702,26 @@
    },
    "firma": "18033cb6ca3e709c-320-640-1280-1"
   },
+  "polymoog": {
+   "1280": "foto/polymoog-1280.jpg",
+   "320": "foto/polymoog-320.jpg",
+   "640": "foto/polymoog-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     608
+    ],
+    "320": [
+     320,
+     152
+    ],
+    "640": [
+     640,
+     304
+    ]
+   },
+   "firma": "da801f761ad07c55-320-640-1280-1"
+  },
   "ppgwave": {
    "1280": "foto/ppgwave-1280.jpg",
    "320": "foto/ppgwave-320.jpg",
@@ -1289,6 +1313,11 @@
    "file": "suoni/optigan.mp3",
    "firma": "e2e85e9e7a36bd27-0-45-1",
    "secondi": 34.1
+  },
+  "polymoog": {
+   "file": "suoni/polymoog.mp3",
+   "firma": "dcdcdec39a739a1e-1-45-1",
+   "secondi": 45
   },
   "rhodes": {
    "file": "suoni/rhodes.mp3",
