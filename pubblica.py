@@ -40,6 +40,7 @@ FILE_STATO = RADICE / "stato.json"
 GRAPH = token_ig.GRAPH
 
 MAX_POST_AL_GIORNO = 2
+SLIDE_MIN, SLIDE_MAX = 6, 10   # carosello: sezioni fisse / tetto dell'API
 DISTANZA_MINIMA_ORE = 6
 
 # Il fuso in cui vive la pagina. I conteggi "di oggi" si fanno QUI, non in
@@ -293,10 +294,15 @@ def main():
 
     slide_dir = RADICE / "docs" / "tavole" / scheda["slug"]
     files = sorted(slide_dir.glob("[0-9][0-9].jpg"))
-    if len(files) != 6:
+    # QUANTE SLIDE (decisione del proprietario, 20/10/2026): «Minimo 6,
+    # Max 10». Sei sono le sezioni fisse di ogni scheda; dieci è il tetto
+    # dell'API per un carosello (immagini e video insieme). Le slide in
+    # più si aggiungono solo se la scheda ha il materiale (per ora il
+    # suono, vedi sotto), mai per fare numero.
+    if not SLIDE_MIN <= len(files) <= SLIDE_MAX:
         segnala_errore(f"tavole mancanti per '{scheda['slug']}'",
-                       f"attese 6 slide in {slide_dir}, trovate {len(files)}. "
-                       "Eseguire genera_tavole.py prima del publish.")
+                       f"attese da {SLIDE_MIN} a {SLIDE_MAX} slide in {slide_dir}, "
+                       f"trovate {len(files)}. Eseguire genera_tavole.py prima del publish.")
         sys.exit(1)
 
     token, _ = token_ig.token_corrente()
@@ -327,7 +333,10 @@ def main():
         # il log lo dice. UN SOLO TENTATIVO: è un container video, e il
         # budget di elaborazione dell'account lo consumano anche i
         # fallimenti.
-        if scheda.get("reel_audio"):
+        if scheda.get("reel_audio") and len(figli) >= SLIDE_MAX:
+            print(f"[warn] slide del suono NON inclusa: già {len(figli)} tavole, "
+                  f"il tetto è {SLIDE_MAX}")
+        elif scheda.get("reel_audio"):
             video = slide_dir / "suono.mp4"
             url_v = f"{BASE_PAGES}/tavole/{scheda['slug']}/suono.mp4"
             try:
@@ -338,7 +347,7 @@ def main():
                         video_url=url_v, is_carousel_item="true")
                 attendi_container(c["id"], token, tentativi=25)
                 figli.append(c["id"])
-                print("[ok] slide del suono pronta (7 elementi)")
+                print(f"[ok] slide del suono pronta ({len(figli)} elementi)")
             except Exception as e:
                 print(f"[warn] slide del suono NON inclusa, il carosello esce "
                       f"con 6 tavole: {e}")

@@ -93,11 +93,13 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   s) e `pubblica.py` lo mette in fondo al carosello. Facoltativa come la
   storia: se manca o il container fallisce, escono le sei tavole e il
   log lo dice; dopo la pubblicazione il log conta gli elementi VERI del
-  carosello (`/children`). Il proprietario ha proposto anche un numero
-  di slide variabile («min 4, max 12»): l'API ne accetta al massimo 10,
-  e le altre slide facoltative (foto da vicino, un disco) si aggiungono
-  solo dopo aver visto i numeri di questa. Il 6 non va più scritto nei
-  testi («le slide e le fonti sul profilo»).
+  carosello (`/children`). **Quante slide: da 6 a 10** (decisione del
+  proprietario, 20/10/2026, «Minimo 6 Max 10»; `SLIDE_MIN`/`SLIDE_MAX`
+  in `pubblica.py`): 6 sono le sezioni fisse, 10 è il tetto dell'API.
+  Una slide in più entra solo se la scheda ha il materiale, mai per fare
+  numero; le prossime candidate (foto da vicino, un disco) si aggiungono
+  dopo aver visto i numeri di quella del suono. Il 6 non va più scritto
+  nei testi («le slide e le fonti sul profilo»).
 - **Reel «formato 2»** (dal 07/10/2026, vedi la sezione «I numeri» qui
   sotto): 5 battute (`reel_battute`, coppie kick/testo) + la chiusura con
   `reel_cta`, file `reel2.mp4`. **Ogni battuta dura quanto serve a
