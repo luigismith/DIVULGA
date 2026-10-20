@@ -58,10 +58,15 @@ def _frase(testo):
 
 def slide_suono(scheda):
     a = scheda["reel_audio"]
+    # La foto alta quanto le serve per stare intera a tutta larghezza
+    # (fra 360 e 560 px): con un riquadro elastico una tastiera larga
+    # restava in mezzo a due fasce di crema vuote, col credito staccato
+    # sotto. Lo spazio che avanza lo prende l'oscilloscopio.
+    altezza_foto = max(360, min(560, round(L / gt._aspetto(scheda["foto"]))))
     css = f"""
 .ascolta{{flex:none;margin:22px 52px 0;display:flex;align-items:center;justify-content:space-between;
   font-family:'PlexMono';font-weight:600;font-size:15px;letter-spacing:.22em;color:{gt.ARANCIO}}}
-.osc{{flex:none;position:relative;height:{OSC_H}px;margin:10px 52px 0;background:{gt.BRUNO};
+.osc{{flex:1 1 auto;min-height:{OSC_H}px;position:relative;margin:10px 52px 0;background:{gt.BRUNO};
   border-left:16px solid {gt.ARANCIO}}}
 /* Linea dello zero: il primo fotogramma (quello che Instagram mostra
    prima del tocco) non è un rettangolo vuoto ma uno strumento acceso. */
@@ -73,7 +78,7 @@ def slide_suono(scheda):
     corpo = f"""
 {gt._testata(scheda)}
 {gt._intesta(7, "DA SENTIRE", "Il suono vero")}
-{gt._banda(scheda, 0, stile="margin-top:22px")}
+{gt._banda(scheda, 0, altezza_foto, stile="margin-top:22px")}
 <div class="ascolta"><span>▶ ALZATE IL VOLUME</span><span>{scheda['strumento'].upper()} · REGISTRAZIONE VERA</span></div>
 <div class="osc" id="osc"></div>
 <div class="cosa autofit" data-min="20">{_frase(a['cosa'])}</div>
@@ -148,7 +153,8 @@ def costruisci(scheda, cartella=None):
     n = round(durata * FPS)
     filtro = (
         f"color=c=0x{bruno}:s={w}x{h}:r={FPS}:d={durata:.2f}[o0];"
-        f"[1:a]showwaves=s={w}x{h - 12}:mode=cline:rate={FPS}:colors=0x{arancio}:scale=sqrt,"
+        f"[1:a]aformat=channel_layouts=mono,"
+        f"showwaves=s={w}x{h - 12}:mode=cline:rate={FPS}:colors=0x{arancio}:scale=sqrt:draw=full,"
         f"format=rgba[onda];"
         f"color=c=0x{arancio}:s={w}x6:r={FPS}:d={durata:.2f}[barra];"
         f"[o0][onda]overlay=0:0:shortest=1[o1];"
