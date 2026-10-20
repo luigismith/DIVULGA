@@ -36,6 +36,10 @@
    "file": "tavole/korgm1/reel2.jpg",
    "firma": "ef1c9e8ba830dc2f-1"
   },
+  "leslie": {
+   "file": "tavole/leslie/reel2.jpg",
+   "firma": "9dfbec0f694b7231-1"
+  },
   "mellotron": {
    "file": "tavole/mellotron/reel2.jpg",
    "firma": "70b2cc7c43639264-1"
@@ -485,6 +489,26 @@
     ]
    },
    "firma": "00b4c38f5c5e724d-320-640-1280-1"
+  },
+  "leslie": {
+   "1280": "foto/leslie-1280.jpg",
+   "320": "foto/leslie-320.jpg",
+   "640": "foto/leslie-640.jpg",
+   "dimensioni": {
+    "1280": [
+     960,
+     588
+    ],
+    "320": [
+     320,
+     196
+    ],
+    "640": [
+     640,
+     392
+    ]
+   },
+   "firma": "0d8a75c2fe281ccd-320-640-1280-1"
   },
   "lm1": {
    "1280": "foto/lm1-1280.jpg",
@@ -1297,6 +1321,11 @@
    "file": "suoni/korgm1.mp3",
    "firma": "c741b2105bfd4871-10-45-1",
    "secondi": 22.3
+  },
+  "leslie": {
+   "file": "suoni/leslie.mp3",
+   "firma": "44067bbf1a9706d3-2-45-1",
+   "secondi": 21.5
   },
   "mellotron": {
    "file": "suoni/mellotron.mp3",
