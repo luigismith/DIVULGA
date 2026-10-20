@@ -13,20 +13,14 @@ da qui. ★ = dopo il 1988.
 | Macchina | Pagina | Autore | Licenza | Durata | Cosa si sente / note |
 |---|---|---|---|---|---|
 | Roland CR-78 (1978) | https://commons.wikimedia.org/wiki/File:Cr78.ogg | Ianmacm | PD | 22 s | Rhumba con effetto metallico; alternativa `CR-78_Presets_Rock-1A_-_Disco-2B.ogg` (Wexstun, CC BY-SA 3.0, 105 s) |
-| Roland D-50 (1987) | https://commons.wikimedia.org/wiki/File:D-50_Pizzagogo_-_Patch.wav | W. B. Jaeger | CC0 | 14 s | preset Pizzagogo (Enya, «Orinoco Flow»); alt. https://freesound.org/s/437313/ (agerven, CC0) |
-| Polivoks (1982) | https://freesound.org/s/148940/ | odo-ada | CC0 | 235 s | demo dal vivo del progettista Vladimir Kuzmin (2002); ascoltare: registrazione d'ambiente |
 | ★ Doepfer A-100 / Eurorack (1995) | https://freesound.org/s/850655/ | DaríoFrsnd | CC0 | 571 s | improvvisazione su modulare Doepfer |
-| Sintetizzatore ANS (1958) | https://commons.wikimedia.org/wiki/File:The_ANS_Synthesizer_playing_doodles_(live).ogg | octopusvision | CC BY-SA 3.0 (VRTS) | 172 s | demo dal vivo, 2009 |
 | Casio MT-40 (1981) | https://commons.wikimedia.org/wiki/File:Casio_MT-40_Drumpattern.mp3 | Maximilian Schönherr | CC BY-SA 4.0 | 19 s | solo ritmo (il basso di «Sleng Teng» qui non c'è) |
 | ★ Korg Volca Keys (2013) | https://commons.wikimedia.org/wiki/File:Korg_Volca_Keys_-_Loop_demo_with_live_effects.flac | Attosaur | CC BY-SA 4.0 | 115 s | senza elaborazioni |
-| ★ Clavia Nord Lead 2 (1997) | https://freesound.org/s/60282/ | KatHakaku | CC0 | 99 s | stessa sequenza, impostazioni diverse |
 | ★ Korg Monotron (2010) | https://commons.wikimedia.org/wiki/File:Monotron_Delay_Demonstration.ogg | Schminnte | CC BY-SA 4.0 | 58 s | sweep, LFO, filtro, delay |
 | ★ Roland JV-1080 (1994) | https://commons.wikimedia.org/wiki/File:JV-1080_raggertronic.ogg | Raymangold22 | CC0 | 113 s | preset di fabbrica |
 | ★ Korg microKORG (2002) | https://freesound.org/s/489517/ | nthnh | CC0 | 1.290 s | campioni ambient, da tagliare |
 | Cry Baby wah (1966; qui GCB95) | https://commons.wikimedia.org/wiki/File:Wahwah_crybaby_GCB95_-_clean_sound_(various_techniques).ogg | Skimel | CC BY-SA 4.0 | 22 s | wah vero, ampli simulato |
 | Farfisa Syntorchestra (anni '70) | https://commons.wikimedia.org/wiki/File:Syntorchestra_Demo.wav | Jupiter80 | PD | 16 s | filone italiano |
-| Roland MC-202 (1983) | https://commons.wikimedia.org/wiki/File:Mc202example.ogg | Sven Buresch | PD | 295 s | sequencer interno, senza effetti |
-| ★ Roland JD-800 (1991) | https://freesound.org/s/534782/ | XHALE303 | CC0 | 17 s | archi; alt. https://freesound.org/s/802134/ (Krivo_ok, CC BY 4.0) |
 | ★ Pocket Operator PO-12 (2015) | https://freesound.org/s/674345/ | incidentalnoise | CC0 | 12 s | loop ritmico |
 | ★ Ensoniq VFX (1989) | https://freesound.org/s/449222/ | parabolix | CC0 | 87 s | pad a transwave; 3,8 s di silenzio in coda |
 | E-mu Drumulator (1983) | https://commons.wikimedia.org/wiki/File:Drumulator_Beispiel1.ogg | Andreas Gortan | CC BY-SA 4.0 | 17 s | pattern |
@@ -53,6 +47,12 @@ Easel, Oberheim Four Voice, Synclavier, Emulator, Lowrey, EDP Wasp, Elka
 Rhapsody, Moog Taurus (solo Sampling+), Echoplex (solo Sampling+), Hohner
 Pianet (solo note singole di un Pianet T), Auto-Tune. DX7: solo suoni
 poco riconoscibili (freesound 90059, 721535).
+
+Entrate in catalogo il 20/10/2026: D-50 (registrazione Freesound 437313 di
+agerven, D-50 vero suonato dalla sua tastiera: la Pizzagogo di Commons non
+dice se è la macchina o il plug-in), Polivoks, ANS, Nord Lead, MC-202,
+JD-800 (Freesound 58 di fectoper, del 2005, prima di ogni JD-800 software:
+le due della lista non lo dimostravano).
 
 ## Piste ancora aperte per schede già uscite (17/10/2026)
 

@@ -254,6 +254,9 @@ VOCE_SCHEDA = {
     # generatori di laboratorio e studio
     "vcs3": "studio", "fonologia": "studio", "h910": "studio", "phase90": "studio",
     "autotune": "studio",
+    # rifornimento del 20/10/2026
+    "ans": "onda", "polivoks": "sega", "nordlead": "sega", "mc202": "acido",
+    "d50": "fm", "jd800": "fm",
     # elettronica da pochi soldi
     "stylophone": "giocattolo", "omnichord": "giocattolo", "speakspell": "giocattolo", "vl1": "giocattolo",
     # ritmiche: la voce sta sotto, comanda la batteria (vedi CON_BATTERIA)

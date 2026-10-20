@@ -5454,7 +5454,1478 @@ SCHEDE = [
         },
         "verificata": True,
     },
-    # ---------------------------------------------------------------- 63
+    # SCARTATI perché a fonte singola (o controversi):
+    # - Murzin rifiuta il grado di generale nel 1967 (solo Snob).
+    # - Premio Stalin per i congegni di puntamento (solo TechInsider; non trovato
+    #   negli elenchi).
+    # - costruito nell'appartamento in coabitazione (kommunalka) (solo Snob).
+    # - Boris Jankovskij che gli dice che allo Stato non conviene (solo Snob; per
+    #   120years Jankovskij e Garbuzov gli danno invece spazio al Conservatorio).
+    # - il prototipo troppo grande per casa, quindi al museo di Skrjabin (solo Snob).
+    # - Stanislav Krejči che salva l'ANS dalla rottamazione convincendo
+    #   l'università (solo Wikipedia e i suoi cloni, es. Monoskop).
+    # - Krejči compone disegnando a mano libera (solo il testo di Krejči).
+    # - titoli dei pezzi di Schnittke («Potok»), Gubajdulina («Vivente - non
+    #   vivente») e Denisov («Il canto degli uccelli») e gli anni 1968-1970
+    #   (solo Krejči).
+    # - Artem'ev: «impressione sconvolgente» al primo incontro con l'ANS (solo Snob).
+    # - suoni di delfini sintetizzati per la Marina, studi sulla voce nei canali
+    #   spaziali (solo TechInsider).
+    # - dimensioni 180x160x120 cm e anno 1963 del secondo esemplare (solo
+    #   TechInsider; altre fonti non danno l'anno).
+    # - esposto a Londra e Parigi nel 1958 (solo 120years; TechInsider dice
+    #   genericamente «esposizioni internazionali»).
+    # - non si può portare al piano di sopra per il peso (solo Electronic Sound).
+    # - il prototipo distrutto «poco dopo Solaris» (solo Under the Radar).
+    # - la melodia di Bach rifatta sull'ANS (solo The Quietus; EEFB parla di
+    #   Bach «alterato» senza dire con cosa).
+    # - ESCLUSO apposta: «Stalker». Lo citano RBMA e Snob, ma EEFB scrive che per
+    #   «Stalker» (1979) Artem'ev passa al Synthi 100: le fonti non concordano e
+    #   la scheda tace.
+    # - Alva Noto, «For 2» (2010), brano registrato dal vivo sull'ANS (solo Wikipedia).
+    # - registrazione del 2009: il disegno è di Svetlana Bogatyr' (solo
+    #   Synthtopia, in traduzione automatica) — per questo «cosa» dice
+    #   «scarabocchi», come la pagina Commons.
+    {
+        "slug": "ans",
+        "numero": 63,
+        "serie": "LE ORIGINI",
+        "strumento": "Sintetizzatore ANS",
+        "anno": "1958",
+        "luogo": "Mosca, URSS",
+        "costruttore": "Evgenij Murzin",
+        "specifiche": [
+            ("PROTOTIPO", "1958"),
+            ("TONI PURI", "720"),
+            ("PASSO", "1/6 di semitono"),
+            ("SPARTITO", "Vetro e mastice"),
+        ],
+        "gancio": "Si suona grattando il nero da una lastra di vetro. Ne esiste uno solo, a Mosca",
+        "sottotitolo": "Le tre lettere sono le iniziali di Aleksandr Nikolaevič Skrjabin, il compositore che sognava una musica fatta anche di luce.",
+        "la_macchina": (
+            "Non ha una tastiera da suonare. Davanti c'è un telaio con una lastra "
+            "di vetro coperta di mastice nero, e la musica si scrive grattandolo "
+            "via. Dove togliete il nero passa la luce, e dove passa la luce c'è un "
+            "suono. In verticale si legge l'altezza, in orizzontale il tempo, più "
+            "o meno come su un pentagramma. Il mastice non asciuga mai, così uno "
+            "sbaglio si cancella spalmandoci sopra altro nero. A me sembra l'unico "
+            "strumento del catalogo che si suona più con gli occhi che con le "
+            "mani, e non sono sicuro che sia un difetto."
+        ),
+        "inventore_nome": "Evgenij Murzin",
+        "inventore": (
+            "Murzin nasce a Samara nel 1914 e di mestiere fa l'ingegnere militare. "
+            "Durante la guerra progetta apparecchi per il tiro contraereo, dopo "
+            "sistemi di difesa aerea. La musica è la sua passione privata, e "
+            "Skrjabin la sua fissa. L'idea gli viene dal cinema sonoro, che scrive "
+            "il suono sulla pellicola come una striscia di luce e lo rilegge con "
+            "una fotocellula. Sull'anno le fonti non concordano, chi dice 1937, "
+            "chi 1938, chi 1939. Poi la guerra lo ferma. Ci lavora quasi vent'anni "
+            "nel tempo libero, senza aspettare un rublo dallo Stato, e il "
+            "prototipo è pronto nel 1958. Muore nel 1970."
+        ),
+        "come_funziona": (
+            "Il suono parte da 5 dischi di vetro che girano. Su ognuno Murzin ha "
+            "stampato 144 piste, con un procedimento inventato da lui, e ogni "
+            "pista attraversata dalla luce dà un tono puro: 720 in tutto, a un "
+            "sesto di semitono l'uno dall'altro, su 10 ottave. Quella luce arriva "
+            "dietro la lastra. Dove il mastice è grattato passa, e 20 fotocellule "
+            "la trasformano in corrente, ciascuna col suo filtro e il suo volume. "
+            "La lastra scorre a motore o a mano, anche fino a fermarsi, e la "
+            "velocità cambia la durata senza toccare l'intonazione. Provate a "
+            "immaginare un graffio verticale. Accende tutte le note insieme, ed "
+            "esce un fruscio."
+        ),
+        "richiami": [
+            ("FIG. 1", "Lastra di vetro e mastice nero"),
+            ("FIG. 2", "5 dischi, 720 toni puri"),
+            ("FIG. 3", "20 fotocellule, 20 filtri"),
+        ],
+        "chi_lusata": [
+            {"artista": "Eduard Artem'ev", "nota": "«Solaris» (1972) e «Lo specchio» (1975) di Andrej Tarkovskij", "ig": None},
+            {"artista": "Stanislav Krejči", "nota": "nel laboratorio di Murzin dal 1961; il suo disco «ANS» esce con la Melodija nel 1970", "ig": None},
+            {"artista": "Alfred Schnittke, Sofija Gubajdulina, Edison Denisov", "nota": "i loro pezzi per ANS stanno nella raccolta Melodija «Muzykal'noe prinošenie» (1990)", "ig": None},
+            {"artista": "Coil", "nota": "«ANS», un cofanetto di drone registrati tutti sulla macchina di Mosca", "ig": None},
+            {"artista": "Il cinema sovietico", "nota": "anche la commedia di Leonid Gajdaj «Il braccio di diamante» (1969)", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Intorno al 1960 il prototipo trasloca in un posto che sembra scelto "
+            "apposta, la casa-museo di Skrjabin a Mosca. Lì, intorno all'ANS, "
+            "nasce il primo studio di musica elettronica dell'Unione Sovietica. "
+            "Nel 1961 arriva Stanislav Krejči, compositore e tecnico del suono. "
+            "Passano di lì Schnittke, la Gubajdulina, Denisov e un giovane Eduard "
+            "Artem'ev. Più avanti lo studio finisce sotto la Melodija, la casa "
+            "discografica di Stato, e in serie l'ANS non ci andrà mai. Quello che "
+            "sta oggi al Museo Glinka è il secondo esemplare, costruito dopo. Il "
+            "prototipo del 1958 non c'è più."
+        ),
+        "avvertenza": "Il mastice sulla lastra non asciuga mai. Tenete lontane le maniche: ogni graffio lascia passare la luce, e qui la luce è una nota.",
+        "da_ascoltare": {"brano": "Solaris (colonna sonora)", "artista": "Eduard Artem'ev", "anno": "1972",
+                         "cosa": "L'organo di Bach lo riconoscete. Ascoltate il resto, i suoni che non sapreste dire da che strumento escano: lì dentro c'è l'ANS."},
+        "foto": {
+            "file": "assets/foto/ans/principale.jpg",
+            "autore": "Charles Hutchins (Celesteh)",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "L'ANS com'è oggi, al Museo Glinka di Mosca",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/ans/lastra.jpg",
+             "autore": "Stardancer", "licenza": "CC BY-SA 3.0",
+             "fonte": "Wikimedia Commons", "posizione": "center",
+             "didascalia": "La lastra nel suo telaio, col mastice nero già graffiato (Theremin Center, 2006)"},
+        ],
+        "fonti": [
+            {"titolo": "«ANS synthesizer» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/ANS_synthesizer", "data": "2026-10-20"},
+            {"titolo": "S. Krejči, «The ANS Synthesizer» — Theremin Center, 1997",
+             "url": "http://www.theremin.ru/archive/ans.htm", "data": "2026-10-20"},
+            {"titolo": "«The ANS Synthesiser» — 120 Years of Electronic Music",
+             "url": "https://120years.net/the-ans-synthesisereugeniy-murzinsoviet-union1958-2/", "data": "2026-10-20"},
+            {"titolo": "«Synth-Aesthesia: Soviet Synths And The ANS» — RBMA Daily, 2012",
+             "url": "https://daily.redbullmusicacademy.com/2012/08/history-soviet-synth-ans", "data": "2026-10-20"},
+            {"titolo": "«Космическая музыка» — Snob",
+             "url": "https://snob.ru/history/kosmicheskaya-muzyka-kto-pridumal-sintezator/", "data": "2026-10-20"},
+            {"titolo": "«Синтезатор АНС» — TechInsider, 2013",
+             "url": "https://www.techinsider.ru/design/14888-pervyy-v-mire-mnogogolosnyy-muzykalnyy-sintezator-ans/", "data": "2026-10-20"},
+            {"titolo": "«Musical Offering» — Electronic Sound",
+             "url": "https://www.electronicsound.co.uk/?p=17204", "data": "2026-10-20"},
+            {"titolo": "«Eduard Artemyev's Compositional Strategies» — EEFB",
+             "url": "https://eefb.org/retrospectives/eduard-artemyevs-compositional-strategies/", "data": "2026-10-20"},
+        ],
+        "hashtags": ["#anssynthesizer", "#murzin", "#sintetizzatore", "#tarkovsky", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 063", "I suoni strani di «Solaris» nascono grattando un vetro nero."),
+            ("720 NOTE, NESSUN TASTO", "L'ANS si suona su un vetro col mastice nero. Dove gratti passa la luce."),
+            ("MOSCA · FINE ANNI '30", "Evgenij Murzin, ingegnere militare, prende l'idea dal sonoro del cinema."),
+            ("1958 · A.N.S.", "Murzin finisce l'ANS dopo vent'anni e gli dà le iniziali di Skrjabin."),
+            ("TARKOVSKIJ · 1972", "Eduard Artem'ev ci scrive «Solaris». Oggi l'ANS è uno solo, a Mosca."),
+        ],
+        "reel_cta": "Mandalo a chi ha visto «Solaris» fino in fondo",
+        # Registrazione della macchina vera (regola del 17/10/2026). Licenza
+        # ricontrollata sulla pagina il 20/10/2026. Tratto da confermare
+        # all'ascolto (vedi commento in testa): provvisorio 0:00-0:45.
+        "reel_audio": {
+            "file": "assets/audio/ans/registrazione.mp3", "inizio": 0,
+            "autore": "octopusvision (Maxim Tarashchenko)", "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:The_ANS_Synthesizer_playing_doodles_(live).ogg",
+            "cosa": "l'ANS vero, in una dimostrazione dal vivo a Mosca il 21 ottobre 2009: la macchina legge scarabocchi graffiati sul mastice di una lastra",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 64
+    # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
+    # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
+    # Scheda: Roland JD-800 (1991). Scritta il 2026-10-20.
+    #
+    # FOTO (tutte di Pete Brown, Flickr album «Roland JD-800 Restoration»,
+    # CC BY 2.0, importate su Commons; guardate una per una, 960 px):
+    # - principale: pannello restaurato con i cursori, il display («I-27:Killer
+    #   Pad», «TVA:Level») e la tastiera; a sinistra il logo e' tagliato, ma
+    #   nessun altro marchio e' leggibile e la macchina e' riconoscibile.
+    #   Pagina: https://commons.wikimedia.org/wiki/File:Roland_JD-800_Restoration_-_Restoration_Complete!_(2015-06-26_22.52.59_by_Pete_Brown).jpg
+    #   Thumbnail 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Roland_JD-800_Restoration_-_Restoration_Complete%21_%282015-06-26_22.52.59_by_Pete_Brown%29.jpg/1280px-Roland_JD-800_Restoration_-_Restoration_Complete%21_%282015-06-26_22.52.59_by_Pete_Brown%29.jpg
+    # - pesi.jpg (slide 2): sotto la tastiera, i pesi neri dei tasti; il titolo
+    #   su Commons dice «New keyboard weights. No red glue.». VERTICALE: il
+    #   thumbnail di Wikimedia esce gia' ruotato (l'originale e' 5376x3024 con
+    #   tag EXIF di rotazione), quindi scaricare il thumbnail, non l'originale.
+    #   Da sola non si capisce: nel_reel False.
+    #   Pagina: https://commons.wikimedia.org/wiki/File:Roland_JD-800_Restoration_-_New_keyboard_weights._No_red_glue._(2015-06-26_22.25.00_by_Pete_Brown).jpg
+    #   Thumbnail 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Roland_JD-800_Restoration_-_New_keyboard_weights._No_red_glue._%282015-06-26_22.25.00_by_Pete_Brown%29.jpg/1280px-Roland_JD-800_Restoration_-_New_keyboard_weights._No_red_glue._%282015-06-26_22.25.00_by_Pete_Brown%29.jpg
+    # - display.jpg (slide 3): primo piano del display, «SINGLE 015 CH:01 /
+    #   I-27:Killer Pad» a sinistra, «TVA:Level 50 50» con TONE A, TONE B a destra.
+    #   Pagina: https://commons.wikimedia.org/wiki/File:Roland_JD-800_Restoration_-_I-27_Killer_Pad_(2015-06-26_22.52.34_by_Pete_Brown).jpg
+    #   Thumbnail 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Roland_JD-800_Restoration_-_I-27_Killer_Pad_%282015-06-26_22.52.34_by_Pete_Brown%29.jpg/1280px-Roland_JD-800_Restoration_-_I-27_Killer_Pad_%282015-06-26_22.52.34_by_Pete_Brown%29.jpg
+    # - cursori.jpg (slide 4): le schede dei cursori smontate, file di
+    #   potenziometri neri a slitta, «Roland» stampato sui circuiti.
+    #   Pagina: https://commons.wikimedia.org/wiki/File:Roland_JD-800_Restoration_-_Cleaned_up_and_reinstalled_(2015-06-26_22.01.09_by_Pete_Brown).jpg
+    #   Thumbnail 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Roland_JD-800_Restoration_-_Cleaned_up_and_reinstalled_%282015-06-26_22.01.09_by_Pete_Brown%29.jpg/1280px-Roland_JD-800_Restoration_-_Cleaned_up_and_reinstalled_%282015-06-26_22.01.09_by_Pete_Brown%29.jpg
+    # Scartate: «Roland JD-800.jpg» (intera, ma 490x202 e di provenienza
+    # incerta), «Jazzkatte.jpg» (tre tastiere e due gatti, il JD-800 non si
+    # distingue), «About to clean the panel» (pannello senza cappucci e con
+    # l'asciugamano dentro le feritoie), la foto del concerto di byCharly
+    # (la macchina in primo piano e' il Korg Mono/Poly).
+    #
+    # AUDIO. Delle due registrazioni proposte nessuna dimostra la macchina
+    # vera, quindi in reel_audio c'e' una terza:
+    # - freesound.org/s/534782 (XHALE303, CC0, 17,5 s, «Tools: JD800»),
+    #   caricata l'11/09/2020. Prima delle emulazioni ufficiali Roland
+    #   (espansione per ZENOLOGY a inizio 2021, plug-in il 26/10/2021), ma
+    #   l'autore lavora con librerie Kontakt (ProjectSAM, Heavyocity Damage
+    #   nelle altre descrizioni): «JD800» puo' essere la tastiera o una
+    #   libreria di campioni. Non dimostrabile. Suona bene: pad pieno da 0 a
+    #   ~14 s, poi sfuma. Anteprima: https://cdn.freesound.org/previews/534/534782_9015615-hq.mp3
+    # - freesound.org/s/802134 (Krivo_ok, CC BY 4.0, 18,6 s, «Simple chords
+    #   with Rolands JD800»), caricata il 27/04/2025, quando esistono sia il
+    #   plug-in Roland sia il JD-08: non dimostrabile.
+    #   Anteprima: https://cdn.freesound.org/previews/802/802134_7570820-hq.mp3
+    # - SCELTA: freesound.org/s/58 (fectoper, CC BY 4.0, 59,8 s), caricata
+    #   l'11/03/2005, «A kind of abstract ambient patch programmed with a a
+    #   Roland JD-800 synth». Nel 2005 di JD-800 software non ce n'erano:
+    #   e' la tastiera vera. Difetti: mono, 22,05 kHz, livello basso per
+    #   quasi tutto il file. RMS misurato secondo per secondo sull'anteprima:
+    #   0-6 s quasi silenzio, 7-38 s tappeto a -30/-37 dBFS, 39-48 s il
+    #   tratto pieno a -20/-24 dBFS, poi sfuma fino al silenzio a 58 s.
+    #   inizio 39: parte pieno dal fotogramma 0, ma dopo 10 s cala e verso i
+    #   17-19 s del reel e' quasi muto.
+    #   Anteprima: https://cdn.freesound.org/previews/0/58_45-hq.mp3
+    #   (la -lq e' https://cdn.freesound.org/previews/0/58_45-lq.mp3)
+    #   Se si preferisce la 534782 (CC0), «cosa» va riscritto dicendo che
+    #   l'autore scrive «JD800» senza dire se e' la tastiera.
+    # FATTI E FONTI (due indipendenti per ognuno):
+    # - 1991; 108 forme d'onda; 24 voci, 6 con 4 strati; 4 strati per suono;
+    #   64 suoni; 1.699 sterline: SOS apr. 1991 (Colbeck), Music Technology
+    #   giu. 1991 (Trask), Wikipedia, SOS 2005 (Reid). 44,1 kHz: Colbeck,
+    #   Roland «Story of the JD-800», Wikipedia.
+    # - prima del JD-800 rotella e display di due righe anche in Roland: Reid
+    #   (SOS 2005: «one data wheel and a two-line LCD»); routine post-DX7 a
+    #   pagine: Colbeck e Trask.
+    # - 69 parametri per strato con un comando dedicato: Trask («69
+    #   synthesis parameters per Tone have dedicated knobs, sliders or
+    #   switches») e Roland («69 sliders and buttons»).
+    # - cursori che fanno saltare il valore: Trask (il D70 invece aspetta di
+    #   passare sul valore) e Wikipedia.
+    # - filtro LPF/HPF/BPF risonante, 3 inviluppi, effetti: Reid, Wikipedia,
+    #   Trask, Polynominal.
+    # - Persing: forme d'onda e suoni di fabbrica (Wikipedia, Spectrasonics
+    #   https://www.spectrasonics.net/company/other/ep-roland.php, Roland,
+    #   Synthanatomy); R&D-LA a Culver City, breve vita, primo prodotto metà
+    #   Giappone e metà LA (Wikipedia, Roland); capo sound designer 1984-2004
+    #   e D-50 (Wikipedia «Eric Persing», Roland); Spectrasonics e Omnisphere
+    #   (Wikipedia, Spectrasonics). Crystal Rhodes e' suo: Spectrasonics
+    #   https://www.spectrasonics.net/products/keyscape/models/jd800-crystal-ep/
+    #   e Roland (articolo su Prince), Guitarcloud.
+    # - fine produzione: Wikipedia 1996, Vintage Synth Explorer 1993
+    #   (https://www.vintagesynth.com/roland/jd-800). Detto come dubbio.
+    # - colla rossa: Polynominal («red resin under the keys drips over
+    #   mainboard … dead contacts»), Vintage Synth Explorer («red goo of
+    #   death»), titolo della foto su Commons («No red glue»), matrixsynth
+    #   (https://www.matrixsynth.com/2019/08/roland-jd-800-synthesizer-pristine.html).
+    # - Prince, «Love Symbol» e «Damn U» con Crystal Rhodes: Roland (citazione
+    #   di Barbarella) e Guitarcloud (che cita Barbarella con i numeri dei preset).
+    # - Jarre, «Chronologie»: Wikipedia (dal libretto, Dreyfus FDM 36152-2) e
+    #   matrixsynth (Arte 1993, Jarre mostra il JD800 in tour):
+    #   https://www.matrixsynth.com/2012/02/jean-michel-jarre-megamix-arte.html
+    # - Howlett: Future Music 1993 (lo aveva, non gli piaceva, scambiato con
+    #   un Jupiter-8 ora rotto; buono per i bassi con l'enhancer; usato nella
+    #   versione su album di «Fire») e SOS 1996 (provato in negozio dopo aver
+    #   venduto gli analogici, «within a week I wasn't happy», un anno dopo il
+    #   JD-990). «Fire» anche nella pagina strumenti di theprodigy.info
+    #   (https://theprodigy.info/equipment/roland-jd-800.html).
+    # - JD-990 da rack nel 1993: Wikipedia, Roland, SOS 2021 (Wherry).
+    # - software Roland 2021 con i 64 suoni originali: comunicato Roland
+    #   (https://www.roland.com/us/company/press_releases/2021/Roland-Announces-JD-800-Software-Synthesizer/)
+    #   e Synthanatomy (https://synthanatomy.com/2021/10/roland-releases-jd-800-synthesizer-plugin-onto-roland-cloud.html).
+    #
+    # SCARTATI PERCHÉ A FONTE SINGOLA (o solo Roland, cioe' il costruttore
+    # che parla di se' in due articoli):
+    # - Kazuhisa Takahashi capo progetto, la frustrazione per i display, lo
+    #   sviluppo dall'autunno 1989 (solo Roland «Story of the JD-800»);
+    # - il colore pensato nero e l'aria da «bombardiere stealth»; i
+    #   processori separati contro il ritardo del D-50; «Ac. Piano 1» unico
+    #   campione acustico voluto dal commerciale; 128 passi dei cursori (solo
+    #   Roland);
+    # - Persing che programma il JD-800 accanto a Marcus Miller per «The King
+    #   Is Gone» (solo Roland); Tony Banks e «I Can't Dance» (solo Roland);
+    #   il basso di «Voodoo People» (Roland; e Howlett nel 1996 dice di averlo
+    #   dato via presto: contraddetto, tolto);
+    # - Prince che sega due JD-800 per farne uno ibrido (Keyboard 1999 via
+    #   Guitarcloud, poi ripreso da Roland che cita Guitarcloud: non indipendenti);
+    # - Mouse on Mars, A Guy Called Gerald «Anything», Sasha, Air Liquide
+    #   (solo Roland, Equipboard copia lo stesso testo); Kevin Moore e
+    #   «Images and Words» (solo ipotesi in un'intervista);
+    # - prezzo USA 2.895 dollari (solo Wikipedia); 61 cursori (solo
+    #   Polynominal: il numero non torna con le altre fonti, quindi niente
+    #   conteggio dei cursori, solo i 69 parametri);
+    # - Persing chiamato da Tom Beckman al NAMM 1984; Spectrasonics fondata
+    #   nel 1994 con la moglie (solo Wikipedia);
+    # - Crystal Rhodes «in quasi tutti i dischi pop dell'epoca» (Spectrasonics,
+    #   cioè Persing su se stesso: superlativo vago, comunque fuori).
+    {
+        "slug": "jd800",
+        "numero": 64,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Roland JD-800",
+        "anno": "1991",
+        "luogo": "Giappone e Los Angeles",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("USCITA", "1991"),
+            ("VOCI", "24"),
+            ("FORME D'ONDA", "108"),
+            ("PREZZO UK", "1.699 £"),
+        ],
+        "gancio": "Otto anni di menu dopo il DX7, Roland rimette i cursori su un synth digitale",
+        "sottotitolo": "108 forme d'onda campionate a 44,1 kHz, 24 voci, 4 strati per suono e un pannello che sembra il banco di un mixer.",
+        "la_macchina": (
+            "Sul pannello, le file di cursori grigi muovono tutte il suono: "
+            "inviluppi, filtro, i due LFO, il volume di ognuno dei 4 strati. Nel "
+            "1991 un synth digitale si programmava con una rotella e un display di "
+            "due righe, pagina dopo pagina, e la stessa Roland li faceva così da "
+            "anni. Il JD-800 dà un comando suo a 69 parametri. Secondo me è la "
+            "macchina più bella da toccare di tutto il catalogo. Se ne trovate uno "
+            "usato, chiedete della colla rossa. I pesi sotto i tasti erano "
+            "incollati con una resina che col tempo cola sui contatti, e i tasti "
+            "smettono di suonare."
+        ),
+        "inventore_nome": "Eric Persing",
+        "inventore": (
+            "Il JD-800 è il primo prodotto Roland progettato metà in Giappone e "
+            "metà a Los Angeles, in un ufficio piccolo di Culver City che è durato "
+            "pochi anni. Lì Eric Persing fa tutte le 108 forme d'onda e i 64 suoni "
+            "di fabbrica. In Roland è il capo dei sound designer dal 1984 al 2004, "
+            "e prima aveva fatto i suoni del D-50. Uno dei suoi preset è un piano "
+            "elettrico che si chiama Crystal Rhodes. Tenetelo a mente per la slide "
+            "5. Più tardi Persing ha fondato Spectrasonics, quella di Omnisphere. "
+            "Su quando il JD-800 sia uscito di produzione le fonti non concordano, "
+            "c'è chi scrive 1993 e chi 1996."
+        ),
+        "come_funziona": (
+            "Il suono parte da una delle 108 forme d'onda in memoria, registrate a "
+            "44,1 kHz. Ci sono onde classiche da synth, pezzi di strumenti messi in "
+            "ciclo, attacchi brevi. Poi passa in un filtro passa-basso, passa-alto "
+            "o passa-banda con la risonanza, e in tre inviluppi, per l'altezza, il "
+            "filtro e il volume. Questo è uno strato. Un suono ne mette insieme "
+            "fino a 4, e qui c'è un conto da fare: le voci sono 24 con uno strato "
+            "solo, 6 con quattro. In fondo c'è una catena di effetti con "
+            "distorsione, phaser, chorus, delay e riverbero. Di analogico non c'è "
+            "niente, anche se il pannello ve lo fa credere."
+        ),
+        "richiami": [
+            ("FIG. 1", "108 forme d'onda a 44,1 kHz"),
+            ("FIG. 2", "Filtro LPF, HPF, BPF con risonanza"),
+            ("FIG. 3", "4 strati: 24 voci, 6 a strati pieni"),
+        ],
+        "chi_lusata": [
+            {"artista": "Prince", "nota": "«Love Symbol» (1992): secondo il tastierista Tommy Barbarella c'è dappertutto", "ig": None},
+            {"artista": "Jean-Michel Jarre", "nota": "«Chronologie» (1993): il JD 800 è nella lista delle macchine sul libretto", "ig": "jeanmicheljarre"},
+            {"artista": "The Prodigy", "nota": "«Experience» (1992), nella versione di «Fire» che sta sull'album", "ig": None},
+        ],
+        # @rolandglobal e @jeanmicheljarre sono gia' usati e verificati in
+        # contenuti.py (schede 808, 909, Space Echo; Oxygène, Synthex).
+        "menzioni_extra": [
+            {"ig": "rolandglobal",
+             "riga": "Nel 2021 @rolandglobal l'ha rifatto in software, con i 64 suoni originali."},
+        ],
+        "aneddoto": (
+            "Liam Howlett dei Prodigy vende i suoi synth analogici. In un negozio "
+            "prova un JD-800, gli sembra che abbia la sensazione dell'analogico e "
+            "lo compra. A casa, racconta, entro una settimana sa che non gli "
+            "piace. Fa in tempo a usarlo nella versione di «Fire» che sta "
+            "sull'album, e a Future Music dice che per i bassi è buono, per via "
+            "dell'enhancer. Poi lo scambia con un Jupiter-8, che quando rilascia "
+            "l'intervista si è già rotto. Un anno dopo aver dato via il JD-800 si "
+            "compra il JD-990, la versione da rack, senza cursori."
+        ),
+        "avvertenza": "Richiamato un suono, i cursori restano dove li avevate lasciati. Toccatene uno e il valore salta lì di colpo, anche con la nota tenuta.",
+        "da_ascoltare": {"brano": "Damn U", "artista": "Prince", "anno": "1992",
+                         "cosa": "Dentro c'è il preset Crystal Rhodes. Lo racconta Tommy Barbarella, che suonava le tastiere con Prince nei New Power Generation."},
+        "foto": {
+            "file": "assets/foto/jd800/principale.jpg",
+            "autore": "Pete Brown",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un JD-800 appena restaurato. Sul display, il suono I-27",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/jd800/pesi.jpg",
+             "autore": "Pete Brown", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "posizione": "center", "nel_reel": False,
+             "didascalia": "Sotto la tastiera: i pesi dei tasti rimessi senza la colla rossa"},
+            {"file": "assets/foto/jd800/display.jpg",
+             "autore": "Pete Brown", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "posizione": "center",
+             "didascalia": "Il display: a sinistra il nome del suono, a destra il parametro toccato"},
+            {"file": "assets/foto/jd800/cursori.jpg",
+             "autore": "Pete Brown", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "posizione": "center",
+             "didascalia": "Le schede dei cursori, smontate durante un restauro"},
+        ],
+        "fonti": [
+            {"titolo": "«Knobular Synthesis» — Sound On Sound, aprile 1991",
+             "url": "https://www.muzines.co.uk/articles/knobular-synthesis/7410", "data": "2026-10-20"},
+            {"titolo": "«Roland JD800» — Music Technology, giugno 1991",
+             "url": "https://www.muzines.co.uk/articles/roland-jd800/821", "data": "2026-10-20"},
+            {"titolo": "«The History of Roland, Part 3» — Sound On Sound, 2005",
+             "url": "https://www.soundonsound.com/music-business/history-roland-part-3", "data": "2026-10-20"},
+            {"titolo": "«Roland JD-800» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_JD-800", "data": "2026-10-20"},
+            {"titolo": "«Eric Persing and the JD-800» — Roland, 2021",
+             "url": "https://articles.roland.com/digital-dreams-eric-persing-and-the-jd-800/", "data": "2026-10-20"},
+            {"titolo": "«Prince e il JD-800» — Roland, 2021",
+             "url": "https://articles.roland.com/?p=40800", "data": "2026-10-20"},
+            {"titolo": "«Roland JD-800» — Guitarcloud (Prince)",
+             "url": "https://guitarcloud.org/equipment/roland-jd-800/", "data": "2026-10-20"},
+            {"titolo": "Liam Howlett — Future Music, febbraio 1993",
+             "url": "https://theprodigy.info/articles/prodigious-talent.html", "data": "2026-10-20"},
+            {"titolo": "Liam Howlett — Sound On Sound, 1996",
+             "url": "https://theprodigy.info/articles/sound_on_sound_1996.html", "data": "2026-10-20"},
+            {"titolo": "«Roland JD-800» — Polynominal (la resina rossa)",
+             "url": "https://www.polynominal.com/m/roland-jd-800.htm", "data": "2026-10-20"},
+        ],
+        "hashtags": ["#jd800", "#roland", "#sintetizzatore", "#prince", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 064", "Il Roland JD-800 riporta i cursori sui synth digitali"),
+            ("ANNI '80", "Dal DX7 in poi un synth digitale si programma a menu, una pagina per volta."),
+            ("ROLAND · 1991", "Sul pannello del JD-800, 69 parametri hanno un comando ciascuno."),
+            ("LOS ANGELES", "Eric Persing ci programma i 64 suoni di fabbrica. Uno è Crystal Rhodes."),
+            ("PRINCE · 1992", "Prince mette Crystal Rhodes in «Damn U», dal disco «Love Symbol»."),
+        ],
+        "reel_cta": "Mandalo a chi passa le ore dentro i menu",
+        # Registrazione: freesound.org/s/58, licenza ricontrollata sulla pagina
+        # (Attribution 4.0). Caricata l'11/03/2005, prima di qualunque JD-800
+        # software: e' la tastiera vera. Tratto pieno 0:39-0:49, poi sfuma.
+        # Anteprima: https://cdn.freesound.org/previews/0/58_45-hq.mp3
+        "reel_audio": {
+            "file": "assets/audio/jd800/registrazione.mp3", "inizio": 0,
+            "autore": "fectoper", "licenza": "CC BY 4.0",
+            "fonte": "freesound.org/s/58",
+            "url": "https://freesound.org/s/58/",
+            "cosa": "un JD-800 vero, nel 2005: un pad ambient programmato da chi l'ha registrato, in mono e a bassa risoluzione",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 65
+    # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
+    # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
+    # Scheda «polivoks» — scritta il 2026-10-20.
+    #
+    # FOTO (tutte viste: thumbnail scaricati e guardati)
+    # principale: https://commons.wikimedia.org/wiki/File:Polivoks_new.jpg
+    #   OriginalJambo, CC BY-SA 4.0, 3999x2000, 2023
+    #   thumb 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Polivoks_new.jpg/1280px-Polivoks_new.jpg
+    #   Foto 2:1, macchina intera di fronte su un tavolo di legno: "ritaglio": True
+    #   perché in copertina si veda tutta, tastiera compresa.
+    # extra 1: https://commons.wikimedia.org/wiki/File:Polivoks_(closeup).jpg
+    #   Rob Sinclair, CC BY-SA 2.0, 3622x2415, bianco e nero
+    #   thumb 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Polivoks_%28closeup%29.jpg/1280px-Polivoks_%28closeup%29.jpg
+    #   Si vedono ПОЛИВОКС col logo, ГЕНЕРАТОР I e II, МИКШЕР, e a destra
+    #   ФИЛЬТР con ЧАСТОТА СРЕЗА e РЕЗОНАНС. Il cirillico è ovunque, quindi la
+    #   didascalia regge con qualunque ritaglio.
+    # extra 2: https://commons.wikimedia.org/wiki/File:%D0%91%D1%80%D0%B5%D0%BD%D0%B4%D1%8B_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%A3%D1%80%D0%B0%D0%BB%D0%B0_38.jpg
+    #   Леонид Макаров (Leonid Makarov), CC0, 4000x2256, 13/02/2021; categoria
+    #   «Brands of the Soviet Urals - The Museum of History and Archeology of the Urals»
+    #   thumb 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/%D0%91%D1%80%D0%B5%D0%BD%D0%B4%D1%8B_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%A3%D1%80%D0%B0%D0%BB%D0%B0_38.jpg/1280px-%D0%91%D1%80%D0%B5%D0%BD%D0%B4%D1%8B_%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%A3%D1%80%D0%B0%D0%BB%D0%B0_38.jpg
+    #   Polivoks in vetrina con un pedale davanti, riflessi del vetro sopra la
+    #   macchina: "nel_reel": False (nel reel i riflessi sembrerebbero un difetto).
+    #
+    # AUDIO
+    # pagina: https://freesound.org/s/148940/  (odo-ada, CC0 — ricontrollato sulla
+    #   pagina il 2026-10-20; «Vladimir Kuzmin, engineer of the popular "polivoks"
+    #   synthesizer gives a demonstration of his invention. recorded may 2002 in
+    #   yekaterinburg on minidisc with Soundman binaural microphones»; 3:55)
+    # file: https://cdn.freesound.org/previews/148/148940_37247-hq.mp3
+    #   (l'anteprima -lq.mp3 è confermata dal lettore incorporato di Freesound;
+    #   la -hq segue lo stesso schema. Dal container cdn.freesound.org dà 403:
+    #   va scaricato dal runner.)
+    # TRATTO: 211-235 s (fino alla fine del file). Non ho potuto ascoltarlo: il
+    #   tratto è ricavato dallo spettrogramma e dalla forma d'onda di Freesound
+    #   (780 px = 235,5 s), misurando quanto restano ferme le armoniche colonna
+    #   per colonna. Fra 213 e 229 s ci sono note tenute forti, righe orizzontali
+    #   pulite, l'ampiezza più alta del file: è la macchina. Seconda scelta
+    #   99-115 s (stessa firma, ampiezza più bassa). Nel resto le note sono brevi
+    #   e in mezzo c'è il parlato irregolare. DA RIASCOLTARE prima di montare:
+    #   è una registrazione d'ambiente e una voce sotto le note non si vede.
+    #
+    # DA ASCOLTARE omesso apposta: le attribuzioni a un brano preciso sono tutte a
+    #   fonte singola («Black Cherry» e «Train» di Goldfrapp: solo Sound On Sound
+    #   2003; «Ulysses» di Franz Ferdinand: solo Wikipedia, che cita un critico
+    #   non raggiungibile; «Hellwalker» di Mick Gordon: solo una tesina). Gli
+    #   ALBUM invece hanno 3-5 fonti e stanno in chi_lusata.
+    #
+    # Timbro: lo slug va aggiunto a suoni.VOCE_SCHEDA (valida_scheda lo pretende).
+    # FONTI PER FATTO (chi regge cosa)
+    # - filtro 12 dB, 2 op-amp + 6 resistenze, niente condensatori discreti
+    #   (capacità interna degli op-amp): SOS 2010, Cherry Audio (Mark Barton);
+    #   12 dB e passa-basso/passa-banda anche MusicTech «USSR vs ADSR».
+    # - voleva il suono del Minimoog / la «dolcezza» del Moog: Synthtopia 2009, Cherry Audio.
+    # - quasi un anno sul filtro: SOS 2010, Synthtopia 2009.
+    # - suono ruvido/sporco: SOS 2010 («harsh, abrasive, distorted», specie con
+    #   la risonanza alta), Cherry Audio («rough-sounding»).
+    # - inviluppi in loop AD: SOS 2010, Synthtopia 2009, MusicTech.
+    # - pannello a gradini = moduli sotto: SOS 2010 (schede su backplane, comandi
+    #   distanziati per i moduli), RBMA 2016 («3D control panel shows the module structure»).
+    # - duofonico, 2 oscillatori: SOS 2010, Gearnews, Synthtopia 2009, Wikipedia.
+    # - 920 rubli: SOS 2010, RBMA 2016, Moscow Times 2009, Synthtopia 2009.
+    # - troppo caro per i singoli, comprato da enti culturali: SOS 2010, RBMA 2016.
+    # - numeri: Kuzmin ~25.000 (RBMA), 20-30.000 (SOS); >100.000 (Moscow Times,
+    #   Synthtopia 2009). Scritto come disaccordo.
+    # - Vladivostok 1953: RBMA 2016, Fontanka 2026.
+    # - bassista nella band universitaria: SOS 2010, RBMA 2016. Laurea 1976: idem.
+    # - Vector fabbrica nata in guerra, a Ekaterinburg: SOS 2010 (radici nella
+    #   seconda guerra mondiale), RBMA 2016 («former war factory»).
+    # - Feofilov nella squadra: SOS 2010 (Pheophilov), Fontanka 2026 (Fiofilov).
+    # - Olimpiada e le radio militari: Moscow Times 2009, Fontanka 2026, Synthtopia 2009.
+    # - Moog, Korg, Roland come modello: RBMA 2016, Fontanka 2026 (Synthtopia
+    #   2009: «American and Japanese synths»).
+    # - prototipo 1980, produzione 1982: Izvestia 2026, Synthtopia 2026; 1982-1990
+    #   anche SOS, RBMA, Moscow Times. Kachkanar/Formanta: SOS 2010, MusicTech.
+    # - morto il 12/06/2026: Synthtopia 2026 (annuncio Elta Music), Izvestia 2026,
+    #   Fontanka 2026; 72 anni: Fontanka (TASS), coerente con la nascita 13/10/1953.
+    # - nessuna vendita fuori dall'URSS fino al 1991: SOS 2010, RBMA 2016.
+    # - anni '90 Germania/Polonia, techno dura e industriale: RBMA 2016 (Germania,
+    #   Polonia, hard techno, industrial), SOS 2010 (hard techno, industrial).
+    # - Kuzmin scopre la fama con internet a inizio anni 2000: RBMA 2016, SOS 2010 («until around 2002»).
+    # - registrazione maggio 2002 a Ekaterinburg: pagina Freesound (è la
+    #   registrazione stessa).
+    # - Franz Ferdinand, «Tonight» (2009): SOS (pagina audio, «all over»),
+    #   RBMA, Moscow Times, MusicTech. Goldfrapp, «Black Cherry»: SOS 2003, RBMA,
+    #   MusicTech, Moscow Times. Mick Gordon, Doom 2016: Gearnews, Fontanka.
+    # - Instagram: @franz_ferdinand dal link di franzferdinand.com
+    #   (franzferdinand.ffm.to/ig → instagram.com/franz_ferdinand/);
+    #   @goldfrappmusic dal link di goldfrapp.com. Da seguire prima dell'uscita.
+    #
+    # FATTI SCARTATI PERCHÉ A FONTE SINGOLA
+    # - Kuzmin che prende in prestito per una notte i synth delle band in tour (solo SOS).
+    # - Vladimir Lugovetz, inventore del FAEMI e suocero di Kuzmin (solo SOS).
+    # - il logo che sembra lo yin e yang ma sono due punti di saldatura (solo SOS).
+    # - il nome che vuol dire «molti timbri», non polifonia (solo SOS).
+    # - tastiera a contatti reed con magneti; 48 tasti da fa a mi (SOS dice 48,
+    #   MusicTech e SOS 2003 dicono 49: le fonti non concordano, tolto).
+    # - mobile di metallo invece del truciolato rivestito (solo SOS).
+    # - interruttore Gate On per suonare senza tasti (solo SOS).
+    # - Kuzmin che si costruisce il basso perché non si trovavano chitarre (solo RBMA).
+    # - padre militare; diploma di architettura di Olimpiada; colore cachi (solo RBMA;
+    #   il cachi nelle foto non si vede).
+    # - Kuzmin: «ogni Polivoks costruito dalla Vector funziona ancora» (solo RBMA;
+    #   SOS racconta il contrario sull'affidabilità).
+    # - «non si entra due volte nella stessa acqua» sul rifarlo (solo RBMA).
+    # - lasciò la Vector nel 1991 con 8 ingegneri (solo RBMA).
+    # - 920 rubli = 8 mesi di stipendio (solo Moscow Times).
+    # - Troitsky: negli anni '80 sembrava roba da poco, tutti volevano un DX7 (solo Moscow Times).
+    # - Kapranos: «il pannello di controllo di un carro armato sovietico» (solo
+    #   Moscow Times); «costruito con pezzi di ricambio nella guerra fredda» (solo NME 2007).
+    # - Will Gregory: trovato in Germania Est, manopole che «mandano tutto fuori
+    #   di testa», basso «da sottomarino» in «Black Cherry», ringhio in «Train» (solo SOS 2003).
+    # - «Ulysses» e «Lucid Dreams» (solo Wikipedia/Simon Maes); «Hellwalker» di
+    #   Doom (solo una tesina della Bradford College).
+    # - Rammstein (Moscow Times e Izvestia lo nominano senza un disco: vago, tolto).
+    # - prezzo 600 rubli (un risultato di ricerca, contro 920 di quattro fonti).
+    {
+        "slug": "polivoks",
+        "numero": 65,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Formanta Polivoks",
+        "anno": "1982",
+        "luogo": "URSS",
+        "costruttore": "Formanta (gruppo Vector)",
+        "specifiche": [
+            ("USCITA", "1982"),
+            ("PREZZO", "920 rubli"),
+            ("VOCI", "2, duofonico"),
+            ("FILTRO", "12 dB, 2 amplificatori"),
+        ],
+        "gancio": "Il filtro non ha condensatori: 2 amplificatori e 6 resistenze. Doveva suonare dolce come un Minimoog",
+        "sottotitolo": "Un ingegnere degli Urali voleva dare all'URSS il suono dei synth americani e giapponesi. Gli è venuto un altro suono.",
+        "la_macchina": (
+            "Il pannello è a gradini, e non per bellezza: ogni riquadro in "
+            "rilievo corrisponde a una scheda di circuito infilata lì sotto. Le "
+            "scritte sono tutte in cirillico. Ci sono 2 oscillatori, un filtro, 2 "
+            "inviluppi, e si suonano al massimo 2 note insieme. Costava 920 "
+            "rubli, troppi per un musicista, e infatti li compravano soprattutto "
+            "gli enti culturali. Quanti ne siano usciti non si sa. Kuzmin parlava "
+            "di circa 25.000, la Moscow Times nel 2009 scriveva più di 100.000. "
+            "Io mi fido di lui. Se ne trovate uno, l'interruttore rosso a destra "
+            "con scritto СЕТЬ è l'accensione."
+        ),
+        "inventore_nome": "Vladimir Kuzmin",
+        "inventore": (
+            "Vladimir Kuzmin nasce a Vladivostok nel 1953. Nella band "
+            "dell'università suona il basso, si laurea nel 1976 e va a lavorare "
+            "alla Vector di Ekaterinburg, una fabbrica nata durante la guerra che "
+            "ora fa strumenti elettronici. Lì guida una squadra piccola: Yuri "
+            "Feofilov per l'elettronica e sua moglie Olimpiada per il mobile e il "
+            "pannello, che lei disegna guardando le radio militari sovietiche. "
+            "Kuzmin vuole che i musicisti abbiano i colori di Moog, Korg e Roland, "
+            "che in URSS non si trovano quasi. Il prototipo è del 1980, la "
+            "Formanta di Kachkanar lo produce dal 1982. Kuzmin è morto il 12 "
+            "giugno 2026, a 72 anni."
+        ),
+        "come_funziona": (
+            "Kuzmin voleva un filtro dolce come quello del Minimoog e ci ha "
+            "lavorato quasi un anno. Alla fine ne fa uno tutto suo, con 2 "
+            "amplificatori operazionali e 6 resistenze. Il lavoro che in ogni "
+            "altro filtro fanno i condensatori qui lo fanno quelli minuscoli che "
+            "stanno già dentro gli amplificatori. Taglia 12 dB per ottava, in "
+            "passa-basso o in passa-banda. Di dolce non ha niente: con la "
+            "risonanza alta è ruvido e sporco, e secondo me è proprio per questo "
+            "che lo si cerca ancora. I 2 inviluppi possono ripetere in loop "
+            "attacco e decadimento, e allora il suono pulsa come se dietro ci "
+            "fosse un sequencer."
+        ),
+        "richiami": [
+            ("FIG. 1", "Filtro: 2 amplificatori, 6 resistenze"),
+            ("FIG. 2", "Passa-basso o passa-banda"),
+            ("FIG. 3", "Inviluppi in ripetizione"),
+        ],
+        "chi_lusata": [
+            {"artista": "Franz Ferdinand", "nota": "in tutto l'album «Tonight: Franz Ferdinand» (2009)", "ig": "franz_ferdinand"},
+            {"artista": "Goldfrapp", "nota": "sull'album «Black Cherry» (2003)", "ig": "goldfrappmusic"},
+            {"artista": "Mick Gordon", "nota": "nella colonna sonora del videogioco Doom (2016)", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Fino al 1991 il Polivoks non esce dall'URSS, e la produzione si è "
+            "già fermata nel 1990. Poi le frontiere si aprono e i Polivoks usati "
+            "prendono la strada della Germania e della Polonia, dove negli anni "
+            "'90 finiscono nella techno più dura e nella musica industriale. "
+            "Kuzmin non ne sa niente. Lo scopre all'inizio degli anni 2000, "
+            "quando comincia a usare internet, e trova all'estero gente che "
+            "cerca la sua macchina. La registrazione del reel è di quel periodo: "
+            "maggio 2002, Ekaterinburg, Kuzmin che suona il suo Polivoks davanti "
+            "a un registratore a minidisc."
+        ),
+        "avvertenza": "Pannello in cirillico. РЕЗОНАНС è la risonanza: a fine corsa il filtro del Polivoks non fischia, graffia. Abbassare il volume prima.",
+        "foto": {
+            "file": "assets/foto/polivoks/principale.jpg",
+            "autore": "OriginalJambo",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+            "didascalia": "In alto al centro c'è scritto ПОЛИВОКС: sul pannello è tutto in cirillico",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/polivoks/pannello.jpg",
+             "autore": "Rob Sinclair", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "I 2 generatori, il miscelatore e il filtro, con le manopole numerate da 0 a 6"},
+            {"file": "assets/foto/polivoks/museo.jpg",
+             "autore": "Leonid Makarov", "licenza": "CC0", "fonte": "Wikimedia Commons",
+             "nel_reel": False,
+             "didascalia": "In vetrina al Museo di storia e archeologia degli Urali, fra i marchi sovietici della regione"},
+        ],
+        "fonti": [
+            {"titolo": "«Formanta Polivoks» — Sound On Sound, luglio 2010",
+             "url": "https://www.soundonsound.com/reviews/formanta-polivoks-synthesizer", "data": "2026-10-20"},
+            {"titolo": "Intervista a Vladimir Kuzmin — RBMA Daily, 2016",
+             "url": "https://daily.redbullmusicacademy.com/2016/03/vladimir-kuzmin-interview", "data": "2026-10-20"},
+            {"titolo": "«Instrument Sound That Went Round the World» — The Moscow Times, 2009",
+             "url": "https://www.themoscowtimes.com/archive/instrument-sound-that-went-round-the-world", "data": "2026-10-20"},
+            {"titolo": "«The Formanta Polivoks» — Synthtopia, 2009",
+             "url": "https://www.synthtopia.com/content/2009/08/17/formanta-polivoks/", "data": "2026-10-20"},
+            {"titolo": "Il filtro del Polivoks — Cherry Audio",
+             "url": "https://cherryaudio.com/news/secrets-of-atomika", "data": "2026-10-20"},
+            {"titolo": "Morto Vladimir Kuzmin — Synthtopia, 2026",
+             "url": "https://synthtopia.com/content/2026/06/13/polivoks-synthesizer-designer-vladimir-kuzmin-has-died/", "data": "2026-10-20"},
+            {"titolo": "Morto Vladimir Kuzmin — Fontanka, 2026",
+             "url": "https://www.fontanka.ru/2026/06/16/76480447/", "data": "2026-10-20"},
+            {"titolo": "Morto Vladimir Kuzmin — Izvestia, 2026",
+             "url": "https://en.iz.ru/en/2116073/2026-06-16/vladimir-kuzmin-creator-polyvox-synthesizer-has-died", "data": "2026-10-20"},
+            {"titolo": "«DOOM: Making the music of hell» — Gearnews, 2016",
+             "url": "https://www.gearnews.com/?p=6113", "data": "2026-10-20"},
+        ],
+        "hashtags": ["#polivoks", "#formanta", "#sintetizzatore", "#franzferdinand", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 065", "Il filtro del Polivoks non ha nemmeno un condensatore"),
+            ("VECTOR · EKATERINBURG", "Vladimir Kuzmin vuole dare all'URSS il suono di Moog, Korg e Roland."),
+            ("UN ANNO SUL FILTRO", "Il filtro di Kuzmin ha 2 amplificatori e 6 resistenze, e graffia."),
+            ("1991 · FRONTIERE APERTE", "Il Polivoks arriva in Germania e in Polonia, nella techno più dura."),
+            ("INTERNET · INIZI 2000", "Su internet Kuzmin scopre che all'estero il Polivoks è famoso."),
+        ],
+        "reel_cta": "Mandalo a chi sa leggere il cirillico",
+        "reel_audio": {
+            # inizio = secondi nel file intero di Freesound (3:55). Vedi TRATTO sopra.
+            "file": "assets/audio/polivoks/registrazione.mp3", "inizio": 0,
+            "autore": "odo-ada", "licenza": "CC0 1.0",
+            "fonte": "freesound.org/s/148940",
+            "url": "https://freesound.org/s/148940/",
+            "cosa": "Vladimir Kuzmin in persona che suona il suo Polivoks, Ekaterinburg, maggio 2002: registrazione d'ambiente su minidisc",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 66
+    # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
+    # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
+    # Scheda «d50» — Roland D-50 (1987). Fonti aperte il 20/10/2026.
+    #
+    # FOTO PRINCIPALE
+    #   Pagina:    https://commons.wikimedia.org/wiki/File:Roland_D-50_Front.JPG
+    #   Autore iixorbiusii, pubblico dominio (rilascio dell'autore), 1805x1200, 3/12/2010.
+    #   Thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Roland_D-50_Front.JPG/1280px-Roland_D-50_Front.JPG
+    #              (960: .../960px-Roland_D-50_Front.JPG)
+    #   Vista dall'alto, macchina intera: joystick a sinistra del display, a destra
+    #   lo schema serigrafato delle strutture, in alto a sinistra una scheda di
+    #   memoria Roland infilata nella feritoia. Ritaglio consigliato: tutta.
+    #
+    # FOTO EXTRA (deepsonic, Flickr -> Commons, CC BY-SA 2.0; l'esemplare è un
+    # D-50 con l'espansione Musitronics, «D-50 EX» nella descrizione Commons)
+    #   joystick.jpg  https://commons.wikimedia.org/wiki/File:P1010903_(49964950062).jpg  (2048x1088)
+    #     https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/P1010903_%2849964950062%29.jpg/1280px-P1010903_%2849964950062%29.jpg
+    #     Joystick in primo piano a sinistra, accanto le scritte UPPER/LOWER e
+    #     PARTIAL BALANCE, poi il display. Il display è retroilluminato verde
+    #     (modifica dell'esemplare): la didascalia parla del joystick, non del display.
+    #   retro.jpg     https://commons.wikimedia.org/wiki/File:P1010850_(49964949627).jpg  (2048x734)
+    #     https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/P1010850_%2849964949627%29.jpg/1280px-P1010850_%2849964949627%29.jpg
+    #     Il retro, con la scritta «Roland D-50» grande al centro e le prese a sinistra.
+    #   Scartata: «Roland LA32 Chip.jpg» (categoria D-50, ma la descrizione dice che
+    #   il chip viene da un D-110: non è questa macchina).
+    #
+    # REGISTRAZIONE (reel_audio)
+    #   Scelta: Freesound 437313, agerven, CC0, 3:54, WAV 44.1k stereo.
+    #   Pagina: https://freesound.org/s/437313/
+    #   Anteprima: https://cdn.freesound.org/previews/437/437313_2554953-hq.mp3
+    #              (lq: https://cdn.freesound.org/previews/437/437313_2554953-lq.mp3)
+    #   È LA MACCHINA VERA: la descrizione dice «one track, D50 only, no effects or
+    #   overdubs» e che i bordoni sono suonati «on the D50's own keyboard» (arpeggi
+    #   da una Arturia Keystep). Un D-50 con la sua tastiera: non il plug-in Roland
+    #   Cloud né la D-05, che una tastiera non ce l'hanno. Lo stesso pacchetto
+    #   «agerven_D50_sounds» ha registrazioni D50 dal 2016, prima di plug-in e D-05.
+    #   NON è Pizzagogo: è un suono programmato dall'autore («working on a new
+    #   sound»), improvvisato. La didascalia lo dice.
+    #   Tratto: non ho potuto ascoltarlo (container bloccato da Freesound). Dalla
+    #   forma d'onda: silenzio/attacco nei primi ~5 s, tutto pieno dopo, il punto più
+    #   denso fra 2:20 e 2:35. Proposta: da 140 a 165 s (inizio=140); alternativa
+    #   8-33 s. Da ascoltare prima di montare.
+    #
+    #   Alternativa scartata per ora: Commons «D-50 Pizzagogo - Patch.wav»
+    #   (W. B. Jaeger, CC0 1.0, 14,17 s, 3/10/2023, «factory patch 44 Pizzagogo»)
+    #   https://commons.wikimedia.org/wiki/File:D-50_Pizzagogo_-_Patch.wav
+    #   https://upload.wikimedia.org/wikipedia/commons/2/2f/D-50_Pizzagogo_-_Patch.wav
+    #   Sarebbe perfetta per la storia, ma né la pagina né il profilo dell'autore
+    #   dicono se è un D-50 vero o il plug-in Roland Cloud (che esiste dal 2017 e
+    #   ha gli stessi preset). Regola di CLAUDE.md: «non dimostrabile» = fuori
+    #   (come l'Hammond). Se il proprietario o l'autore confermano l'hardware,
+    #   va questa, con cosa = «il preset Pizzagogo, il suono di Orinoco Flow».
+    # ------------------------------------------------------------------ FATTI E FONTI
+    # Ogni fatto qui sopra, con le due fonti indipendenti:
+    # - 1987, 61 tasti, 16 voci: Wikipedia; Vintage Synth Explorer (vintagesynth.com/roland/d-50); Roland 30°.
+    # - 1.445 sterline: SOS mag. 1987 (Russ); Music Technology mag. 1987 (Trask).
+    # - 100 campioni, 47 attacchi, 29 in ciclo: Music Technology 1987; SOS 1997 (Ward). 47 anche Wikipedia.
+    # - riverbero digitale con 32 programmi: SOS 1987; Music Technology 1987.
+    # - tra i primi col riverbero/effetti dentro: Roland 30° («first performance synthesizer with
+    #   integrated DSP effects»); Wikipedia («among the first»); VSE («for the first time digital reverb»).
+    # - Russ «do not be fooled»: è la recensione stessa (SOS 1987), citata come tale.
+    # - stufi della FM / più facile del DX7: SOS 1997; Vintage Synth Explorer.
+    # - soffi e strappi d'arco negli attacchi: SOS 1987 («brassy chiffs, bow scrapes»); SOS 1997 («breathy chiffs»).
+    # - toglie il primo posto al DX7 fino all'M1: SOS feb. 2018, recensione D-05 (Reid: «ended the
+    #   dominance of the DX7»); Wikipedia (il più popolare fino all'M1, l'anno dopo); Roland Articles
+    #   («topped synthesizer sales charts»).
+    # - memoria cara, quindi solo attacchi: Roland Articles; Wikipedia.
+    # - l'attacco fa riconoscere lo strumento: Roland 30° (Kikumoto); Wikipedia (History).
+    # - onda quadra o dente di sega + filtro/inviluppo: Wikipedia; SOS 1997; Music Technology 1987.
+    # - Upper/Lower, due parziali ciascuna: SOS 1997; Wikipedia; Roland 30°.
+    # - joystick per il bilanciamento: Roland 30°; SOS 1997; Wikipedia.
+    # - Pizzagogo costruito sul campione Pizz: Synthmania; de.wikipedia «LA-Synthese».
+    # - Persing al NAMM 1984 e poi capo del sound design: SOS 2000; Designing Sound 2010
+    #   (designingsound.org/2010/01/21/interview-with-eric-persing-founder-of-spectrasonics); Roland 30°.
+    # - prima i suoni li facevano gli ingegneri, a macchina finita: Designing Sound 2010 (Persing);
+    #   Roland 30° («Before D-50, it was normal to make sounds after hardware development»).
+    # - preset di Persing e Scott: Roland 30°; Wikipedia; SOS 2000 («a majority of the patches»).
+    # - Spectrasonics 1994 con la moglie, Omnisphere: SOS 2000; NAMM Oral History.
+    # - Watermark registrato fra Dublino (Aigle) e Orinoco Studios: Wikipedia «Orinoco Flow»; Great Irish Songbook.
+    # - manca un pezzo, scritto per ultimo/in fretta: SOS mar. 1989; Great Irish Songbook.
+    # - pizzicato di un D-50: SOS 1989; Roland Articles; Synthmania. «Pizzagogo»: Roland Articles; Synthmania; Wikipedia.
+    # - preset ritoccati e sovrapposti: SOS 1989 (e Wikipedia «customising a patch», che cita SOS):
+    #   lo si dice come voce discordante, non come fatto.
+    # - titolo dallo studio: Wikipedia; Great Irish Songbook; The Ringer 2018.
+    # - testi di Roma Ryan: Wikipedia; Songfacts (citazione di Roma Ryan).
+    # - ottobre 1988, primo posto UK per 3 settimane: Wikipedia; Great Irish Songbook
+    #   (sul giorno non concordano: 3 ottobre contro 15, quindi solo «ottobre»).
+    # - Man in the Mirror, introduzione col D-50: SOS 2017 (notizia D-05); Roland Articles.
+    # - Jarre, «Revolutions» (1988): SOS 2017; Roland Articles.
+    # - D-05 nel 2017: SOS 2017 e 2018; Wikipedia.
+    #
+    # HANDLE (link dal sito ufficiale, aperti il 20/10/2026):
+    # - official_enya: enya.com -> instagram.com/official_enya
+    # - jeanmicheljarre: jeanmicheljarre.com -> instagram.com/jeanmicheljarre
+    # - rolandglobal: roland.com/global -> instagram.com/rolandglobal
+    # - spectrasonics_official: spectrasonics.net -> instagram.com/spectrasonics_official
+    # - Michael Jackson: None. michaeljackson.com rimanda a un link accorciato
+    #   (MichaelJackson.lnk.to/_followAW/instagram) che da qui non ho potuto seguire.
+    #   NB: la scheda Synclavier usa già "michaeljackson": se quella verifica vale, si può mettere.
+    #
+    # ------------------------------------------------------------------ SCARTATI (fonte singola)
+    # - Kikumoto (TR-808) «capo tecnico» del D-50 e la frase sul 90% dell'identità di un
+    #   suono nei primi 20-30 ms: solo la pagina Roland del 30°.
+    # - Toshio Yamabata capo del progetto; Kazz Takahashi e il joystick: solo Roland.
+    # - «Digital Native Dance» nato per sbaglio da fonemi messi in ciclo: solo Roland
+    #   (il fatto che sia un ciclo di più campioni c'è anche in SOS 1997, non l'errore).
+    # - Persing coinvolto nei suoni fin dall'inizio dello sviluppo, cosa insolita: solo Roland.
+    # - Adrian Scott partito come dimostratore: solo Roland.
+    # - Persing capo del sound design fino al 2005: solo Roland.
+    # - il D-50 per «Watermark» era noleggiato, e il giro di accordi mai usato: solo SOS 1989.
+    # - Enya suona tutte le tastiere, niente sequencer: solo SOS 1989.
+    # - «Nicky, where's the single?» di Rob Dickins: la stessa intervista (Guardian 2008)
+    #   ripresa da The Ringer e Songfacts; e Roma Ryan dice che il singolo si decise alla fine.
+    # - The Ringer: «very little synthesizer», 30 archi veri e timpani: fonte singola.
+    # - Pizzagogo = Pizz + Agogo (il secondo campione): solo le pagine di W. B. Jaeger su Commons/de.wiki.
+    # - patch numero 44: solo Commons.
+    # - prezzo USA: 1.895 / 1.995 / 2.095 dollari a seconda della fonte; tenuto solo il prezzo UK.
+    # - aprile 1987 come mese d'uscita: solo Wikipedia.
+    # - il joystick non manda dati MIDI; il joystick rumoroso (Russ 1987): fonte singola ciascuno.
+    # - TEC Award 1988: Wikipedia con link morto.
+    # - Clapton «Bad Love», Bangles «Hazy Shade of Winter», New Order «Vanishing Point»,
+    #   George Michael «Faith» (scheda PN-D50), Gary Numan: solo Roland Articles per il brano.
+    # - Fantasia nelle musiche di Star Trek: The Next Generation: Future Music 2020 per il
+    #   preset, Roland solo per la serie.
+    # - il D-50 ha influenzato l'M1: solo Wikipedia.
+    # - pianoforte di fabbrica debole: c'è in due fonti (MT 1987, SOS 1997) ma è un giudizio, lasciato fuori per spazio.
+    {
+        "slug": "d50",
+        "numero": 66,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Roland D-50",
+        "anno": "1987",
+        "luogo": "Osaka, Giappone",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("USCITA", "1987"),
+            ("VOCI", "16"),
+            ("CAMPIONI PCM", "100"),
+            ("PREZZO UK", "1.445 £"),
+        ],
+        "gancio": "Il pizzicato di Enya in «Orinoco Flow» viene da un suono di fabbrica di questa tastiera",
+        "sottotitolo": "Toglie il primo posto al DX7 di Yamaha e lo tiene finché, l'anno dopo, non arriva il Korg M1.",
+        "la_macchina": (
+            "Una tastiera nera da 61 tasti, con un joystick a sinistra del display, "
+            "che in Inghilterra nel 1987 costa 1.445 sterline. Dentro ci sono 100 "
+            "campioni corti e un riverbero digitale con 32 programmi: è uno dei primi "
+            "synth ad averne uno suo. Martin Russ la prova per Sound On Sound a maggio "
+            "del 1987 e avverte di non farsi ingannare, perché non è un sintetizzatore "
+            "come gli altri. Chi aveva litigato per anni con la sintesi FM "
+            "del DX7 qui ritrova filtri e inviluppi. Io un D-50 lo riconosco dalla "
+            "testa delle note, dove quasi sempre c'è un soffio o uno strappo d'arco."
+        ),
+        "inventore_nome": "Eric Persing e Adrian Scott",
+        "inventore": (
+            "La macchina la progetta il reparto ricerca di Roland, ma a me interessa "
+            "di più chi ci ha messo dentro i suoni. Eric Persing nel 1984 fa le "
+            "dimostrazioni Roland al NAMM, la fiera americana degli strumenti, e da "
+            "lì diventa il capo del sound design. Fino ad allora in Roland i suoni di "
+            "fabbrica li facevano gli ingegneri, a macchina finita. Col D-50 li "
+            "scrivono lui e Adrian Scott, e sono proprio quei suoni a finire nei "
+            "dischi. Nel 1994 Persing fonda con la moglie Spectrasonics, la ditta di "
+            "Omnisphere. Secondo me è la prima volta che chi ha fatto i preset conta "
+            "quanto chi ha fatto la macchina."
+        ),
+        "come_funziona": (
+            "Nel 1987 la memoria costa troppo per registrare uno strumento intero, e "
+            "in Roland sono convinti che a farlo riconoscere sia l'inizio della nota. "
+            "Così dei 100 campioni 47 sono soltanto attacchi, il colpo di martelletto "
+            "o lo strappo dell'arco. Altri 29 sono forme d'onda in ciclo. Il resto "
+            "della nota lo fa un oscillatore digitale, onda quadra o dente di sega, "
+            "con filtro e inviluppo. Ogni suono ha due metà, Upper e Lower, fatte di "
+            "due parziali ciascuna, e col joystick decidete quanto pesa l'una "
+            "sull'altra. Pizzagogo parte dal campione del pizzicato d'archi."
+        ),
+        "richiami": [
+            ("FIG. 1", "47 attacchi campionati"),
+            ("FIG. 2", "Onda quadra o dente di sega"),
+            ("FIG. 3", "Joystick: dosa le parziali"),
+        ],
+        "chi_lusata": [
+            {"artista": "Enya", "nota": "«Orinoco Flow» (1988), sul preset Pizzagogo", "ig": "official_enya"},
+            {"artista": "Michael Jackson", "nota": "l'introduzione di «Man in the Mirror» (1987)", "ig": None},
+            {"artista": "Jean-Michel Jarre", "nota": "l'album «Revolutions» (1988)", "ig": "jeanmicheljarre"},
+        ],
+        "menzioni_extra": [
+            {"ig": "rolandglobal",
+             "riga": "Nel 2017 Roland l'ha rifatto in piccolo, il D-05: @rolandglobal."},
+            {"ig": "spectrasonics_official",
+             "riga": "La ditta che Eric Persing ha fondato nel 1994 è @spectrasonics_official."},
+        ],
+        "aneddoto": (
+            "Nel 1988 «Watermark» è quasi finito. Enya, il produttore Nicky Ryan e "
+            "Roma Ryan, che scrive i testi, lo hanno registrato fra Dublino e gli "
+            "Orinoco Studios di Londra, e si accorgono che manca ancora un pezzo. Lo "
+            "costruiscono in fretta sul pizzicato di un D-50. Il titolo lo prendono "
+            "dallo studio. «Orinoco Flow» esce come singolo a ottobre e sta al primo "
+            "posto in Inghilterra per 3 settimane. Sul suono le fonti non concordano: "
+            "Roland dice Pizzagogo così com'è, Sound On Sound nel 1989 parla di preset "
+            "ritoccati e sovrapposti. Ascoltatelo e decidete voi."
+        ),
+        "avvertenza": "Nei suoni che imitano uno strumento il campione è solo l'attacco. Se dopo un attimo sembra un'altra cosa è perché lo è: il resto è sintesi.",
+        "da_ascoltare": {"brano": "Man in the Mirror", "artista": "Michael Jackson",
+                         "anno": "1987",
+                         "cosa": "Le note che aprono il pezzo, prima che entri la voce, vengono da un D-50 uscito quell'anno."},
+        "foto": {
+            "file": "assets/foto/d50/principale.jpg",
+            "autore": "iixorbiusii",
+            "licenza": "pubblico dominio",
+            "fonte": "Wikimedia Commons",
+            "ritaglio": True,
+            "didascalia": "Il D-50 dall'alto: il joystick a sinistra del display, una scheda di memoria nella feritoia",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/d50/joystick.jpg",
+             "autore": "deepsonic", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il joystick e la scritta PARTIAL BALANCE: con un pollice si dosano le parziali"},
+            {"file": "assets/foto/d50/retro.jpg",
+             "autore": "deepsonic", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "Il retro, con il nome scritto grande e le prese a sinistra"},
+        ],
+        "fonti": [
+            {"titolo": "«Roland D-50» — Sound On Sound, maggio 1987 (Martin Russ)",
+             "url": "https://www.muzines.co.uk/articles/roland-d-50/1218", "data": "2026-10-20"},
+            {"titolo": "«Roland D50» — Music Technology, maggio 1987",
+             "url": "https://www.muzines.co.uk/articles/roland-d50/2026", "data": "2026-10-20"},
+            {"titolo": "«Roland D50» — Sound On Sound, luglio 1997",
+             "url": "https://www.soundonsound.com/reviews/roland-d50", "data": "2026-10-20"},
+            {"titolo": "D-50, 30° anniversario — Roland",
+             "url": "https://www.roland.com/ca/promos/d-50_30th_anniversary/", "data": "2026-10-20"},
+            {"titolo": "«Sounds of the D-50» — Roland Articles",
+             "url": "https://articles.roland.com/listening-guide-sounds-of-the-d-50/", "data": "2026-10-20"},
+            {"titolo": "«Enya: Watermark» — Sound On Sound, marzo 1989",
+             "url": "https://www.muzines.co.uk/articles/enya-watermark/4506", "data": "2026-10-20"},
+            {"titolo": "«Orinoco Flow» — Great Irish Songbook",
+             "url": "https://great-irish-songbook.shorthandstories.com/orinoco-flow/index.html", "data": "2026-10-20"},
+            {"titolo": "«Eric Persing» — Sound On Sound, 2000",
+             "url": "https://www.soundonsound.com/people/eric-persing-creating-spectrasonics", "data": "2026-10-20"},
+            {"titolo": "Roland D-50 — Synthmania",
+             "url": "https://www.synthmania.com/d-50.htm", "data": "2026-10-20"},
+            {"titolo": "Roland D-50 — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_D-50", "data": "2026-10-20"},
+        ],
+        "hashtags": ["#rolandd50", "#roland", "#sintetizzatore", "#michaeljackson", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 066", "Il pizzicato di «Orinoco Flow» nasce da un suono di fabbrica"),
+            ("ROLAND · 1987", "Il Roland D-50 tiene in memoria solo l'attacco degli strumenti veri."),
+            ("I SUONI DI FABBRICA", "I suoni del D-50 li scrivono Eric Persing e Adrian Scott. Uno è Pizzagogo."),
+            ("LONDRA · 1988", "A «Watermark» di Enya manca un pezzo. Nasce sul pizzicato di un D-50."),
+            ("OTTOBRE 1988", "«Orinoco Flow» esce come singolo e va al primo posto in Inghilterra."),
+        ],
+        "reel_cta": "Mandalo a chi ha ancora «Watermark» in cassetta",
+        "reel_audio": {
+            "file": "assets/audio/d50/registrazione.mp3", "inizio": 0,
+            "autore": "agerven", "licenza": "CC0",
+            "fonte": "Freesound",
+            "url": "https://freesound.org/s/437313/",
+            "cosa": "un Roland D-50 vero, suonato dalla sua tastiera con un suono programmato da chi registra (non è Pizzagogo), senza effetti esterni",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 67
+    # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
+    # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
+    # Clavia Nord Lead — scheda scritta il 2026-10-20.
+    #
+    # FOTO (entrambe di John Athayde, CC BY 2.0, licenza letta sulla pagina
+    # Commons con l'API extmetadata; tutte e due sono un Nord Lead 2 del 1997,
+    # su Commons non c'è nessuna foto libera del primo Nord Lead a tastiera,
+    # solo del Nord Rack e sfocata; il Nord Lead 2 ha la stessa scocca rossa
+    # e lo stesso schema di pannello):
+    #   principale: https://commons.wikimedia.org/wiki/File:Clavia_Nord_Lead_2_on_Yamaha_DX7,.jpg
+    #     originale 1600x1200; thumbnail 1280:
+    #     https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Clavia_Nord_Lead_2_on_Yamaha_DX7%2C.jpg/1280px-Clavia_Nord_Lead_2_on_Yamaha_DX7%2C.jpg
+    #     Guardata (thumbnail 960): il Nord Lead 2 in diagonale riempie la foto,
+    #     «nord lead 2» si legge sulla scocca; sotto si vedono i tasti del DX7 e
+    #     in basso a sinistra, piccola, la scritta YAMAHA. Il rosso domina.
+    #   extra: https://commons.wikimedia.org/wiki/File:Clavia_Nord_Lead_2_-_a_bit_excited_on_the_%22E%22_key.jpg
+    #     originale 1200x1600 (verticale); thumbnail 960:
+    #     https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clavia_Nord_Lead_2_-_a_bit_excited_on_the_%22E%22_key.jpg/960px-Clavia_Nord_Lead_2_-_a_bit_excited_on_the_%22E%22_key.jpg
+    #     Descrizione dell'autore: «Mishaps in the van. Time to buy a flight
+    #     case.» Si vedono le manopole, la scritta «made in Sweden by Clavia» e
+    #     un tasto bianco sollevato a metà della foto. Per la reel va bene
+    #     (verticale); in una banda orizzontale il tasto rotto sta al centro.
+    #
+    # AUDIO: https://freesound.org/s/60282/ — «Nord LoveStory1.wav», KatHakaku,
+    #   Creative Commons 0 (letta sulla pagina), 1:38.9, caricato il 12/09/2008.
+    #   Descrizione dell'autore: «Same Sequence Different Nord Lead settings»;
+    #   sta nel pack «Nord Lead 2 - Ambient and Such» (n. 3465): è un Nord
+    #   Lead 2, non il primo modello, e la «cosa» lo dice. Il 1997 è l'anno del
+    #   modello, NON dell'esemplare: la pagina non dice quando è stato comprato.
+    #   Anteprima mp3 (dall'iframe di embed, nella pagina non compare):
+    #     https://cdn.freesound.org/previews/60/60282_164285-hq.mp3
+    #     (lq: https://cdn.freesound.org/previews/60/60282_164285-lq.mp3)
+    #   Tratto migliore: NON ASCOLTATO. Dal container il CDN di Freesound
+    #   risponde 403, quindi non ho potuto sentirlo né misurarlo. Va scelto con
+    #   l'analisi RMS dopo il download dal runner (inizio provvisorio 0). È una
+    #   sequenza ripetuta con impostazioni diverse: probabilmente qualunque
+    #   tratto di 20-30 s fa sentire due o tre timbri.
+    # VERIFICA, fatto per fatto (le due fonti indipendenti):
+    # - Clavia fondata nel 1983 a Stoccolma da Nordelius e Carlsson, in uno
+    #   scantinato; Digital Percussion Plate 1; ddrum l'anno dopo col rosso nel
+    #   marchio; ddrum venduta nel 2005 al distributore USA (Armadillo):
+    #   Music Inc. 2023 + Wikipedia «Clavia» (+ nordkeyboards.com/about-us/ per
+    #   scantinato, 1983, DPP1, ddrum).
+    # - Prima di Nord, Clavia nota per le ddrum: SOS maggio 1995 + Music Inc.
+    # - Nord Lead 1995, primo synth di Clavia: SOS 1995 + nordkeyboards.com.
+    # - 4 voci, 12 con l'espansione; Motorola 56002; 2 oscillatori (sega,
+    #   triangolo, impulso con PWM), 2 LFO, 2 ADSR: SOS 1995 + SOS 1996 (Reid)
+    #   + sequencer.de (voci e DSP).
+    # - Una manopola per funzione, niente menu; pitch stick di legno + rotella
+    #   di modulazione; rosso: SOS 1995 + Mixdown («wooden pitch bend toggle»,
+    #   «real-time control over menu diving») + Wikipedia «Nord Lead».
+    # - «Virtual analog» coniato da Clavia col Nord Lead e diventato il nome
+    #   della categoria: Wikipedia «Nord Lead» + Mixdown + sequencer.de; SOS
+    #   1995 lo chiama già «Virtual Analogue Synthesis instrument».
+    # - Forma d'onda calcolata in tempo reale dal DSP: SOS 1995 + Wikipedia
+    #   («DSPs programmed to emulate»).
+    # - Somiglianza con il Prophet-5: SOS 1996 (Reid) + MusicRadar/Future Music
+    #   (Nordelius: «something like a Minimoog or Prophet-5 architecture»).
+    # - Il sogno di un Prophet-5 tutto digitale: MusicRadar/Future Music;
+    #   Prophet-5 suo preferito: SOS 2015 («my personal favourite, the
+    #   Prophet 5»). Due fonti per il legame Nordelius-Prophet-5; la parola
+    #   «sogno» è solo di MusicRadar (vedi sotto: testo non aperto per intero).
+    # - Nord Lead 2 nel 1997 con 16 voci: SOS settembre 1997 + Wikipedia.
+    # - Howlett: «I love the Nord... set the new standard for analogue» e «the
+    #   other three members all like it too - after all, it's nice and red»:
+    #   theprodigy.info (The Mix, ottobre 1998) + VICE 2014 (Mixmag, settembre
+    #   1998). Le due fonti NON concordano sulla rivista, e la scheda lo dice.
+    # - Nord Lead nel rack di Howlett nel 1996: theprodigy.info (foto «from
+    #   1996») + VICE («el setup de Howlett en 1996»).
+    # - «Funky Shit» col preset Funky del Nord Lead: theprodigy.info + VICE;
+    #   «Funky Shit» su «The Fat of the Land», 30/06/1997: Wikipedia
+    #   discografia Prodigy + Under the Radar (tracklist ristampa).
+    # - Jarre: «Nordlead» nelle note di copertina di «Oxygène 7–13» (1997):
+    #   Wikipedia + strawberrybricks.com; nel tour del 1997 lo mostra: SOS
+    #   settembre 1997 («made a special effort to show off his Nord») +
+    #   recensione di un concerto a Stoccolma, maggio 1997, ludd.ltu.se
+    #   (Nord Lead II promozionale).
+    # - Handle: @nordkeyboards (link Instagram su nordkeyboards.com),
+    #   @theprodigyofficial (theprodigy.com), @jeanmicheljarre
+    #   (jeanmicheljarre.com). Il proprietario li segue prima dell'uscita.
+    #
+    # SCARTATI perché a fonte singola (o fonti non indipendenti):
+    # - Peter Jubel ha scritto il software del Nord Lead: solo SOS 2003
+    #   (intervista a Ernst Nathorst-Böös); Wikipedia e Mixdown la riprendono.
+    # - Progettato, costruito e spedito «in meno di 10 mesi»: solo David
+    #   Crombie, SOS 1995. Nordelius (MusicRadar) dice solo «un progetto
+    #   veloce, avevo due programmatori».
+    # - Nordelius veniva dall'elettronica per le telecomunicazioni svedesi: solo
+    #   MusicRadar.
+    # - Nordelius aveva un Prophet-5 costoso che non teneva l'accordatura; il
+    #   sovracampionamento contro l'aliasing: solo MusicRadar.
+    # - Prezzo: 1.500 sterline la tastiera, 1.300 il rack: solo SOS 1995.
+    # - Il filtro non autooscilla: solo Sound On Sound (1995 e 1996, stessa
+    #   testata e stesso autore, non indipendenti).
+    # - Tastiera di 4 ottave, display a due cifre, 99 memorie: solo SOS 1995.
+    # - Jarre suona «Oxygène IV» su un Nord Lead II promozionale a Stoccolma:
+    #   solo una recensione su ludd.ltu.se.
+    # - Prima del Nord, Howlett usava un Roland SH-101: solo theprodigy.info.
+    # - La sirena di Prodigy fatta con un preset del Nord modificato: solo
+    #   theprodigy.info.
+    # - Anniversary Model del 2008: 299 esemplari (Sonicstate) o 300
+    #   (Wikipedia); le fonti non concordano e non serve alla storia.
+    # - Infected Mushroom e la psy-trance israeliana, The Crystal Method: solo
+    #   VICE (più elenchi generici di vintagesynth.com sul Nord Rack).
+    # - Prince e il Nord Lead 2 su «Newpower Soul»: solo guitarcloud.org, e
+    #   con «most likely».
+    # - «Café del Mar» (Energy 52): solo un video di Sonicstate che mostra la
+    #   macchina in studio, senza dire cosa suona.
+    {
+        "slug": "nordlead",
+        "numero": 67,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Clavia Nord Lead",
+        "anno": "1995",
+        "luogo": "Stoccolma, Svezia",
+        "costruttore": "Clavia DMI",
+        "specifiche": [
+            ("USCITA", "1995"),
+            ("VOCI", "4, espandibili a 12"),
+            ("PROCESSORE", "Motorola 56002"),
+            ("SINTESI", "Analogico virtuale"),
+        ],
+        "gancio": "Lo costruisce una ditta svedese di batterie elettroniche, ed è un digitale travestito da analogico",
+        "sottotitolo": "Due anni dopo arriva il Nord Lead 2, con 16 voci invece di 4 e la stessa scocca rossa.",
+        "la_macchina": (
+            "Su un palco lo riconoscete dal colore prima che dal suono. È rosso "
+            "acceso, e al posto della rotella del pitch ha un bastoncino di legno. "
+            "Sul pannello c'è una manopola per ogni funzione e nessun menu da "
+            "sfogliare. Dentro, invece, non c'è un solo circuito analogico che "
+            "faccia suono. Il primo, del 1995, ha 4 voci, e con una scheda di "
+            "espansione arrivano a 12. Le foto e la registrazione di questa scheda "
+            "sono di un Nord Lead 2, che da fuori è quasi uguale. A me "
+            "piace per una ragione semplice. È una macchina digitale che si "
+            "impara girando le manopole, senza aprire il manuale."
+        ),
+        "inventore_nome": "Hans Nordelius e Mikael Carlsson",
+        "inventore": (
+            "Nel 1983 Hans Nordelius e Mikael Carlsson lavorano in uno scantinato "
+            "di Stoccolma. Il loro primo prodotto è un pad di batteria digitale, "
+            "il Digital Percussion Plate 1. L'anno dopo ne esce una versione "
+            "migliore e prende il nome ddrum, e il rosso compare già nel marchio. "
+            "Per 12 anni Clavia è conosciuta per le batterie. Il Nord Lead è "
+            "il suo primo sintetizzatore, e Nordelius ha raccontato che veniva da "
+            "un vecchio sogno, un Prophet-5 tutto digitale, e nel 2015 il "
+            "Prophet-5 è ancora il suo synth preferito. Le ddrum Clavia le vende "
+            "nel 2005, al suo distributore americano."
+        ),
+        "come_funziona": (
+            "Ogni voce ha 2 oscillatori, con dente di sega, triangolo o onda "
+            "quadra a larghezza variabile, poi un filtro con la risonanza, 2 "
+            "inviluppi e 2 LFO. È lo schema di un polifonico analogico di fine "
+            "anni '70, e Sound On Sound fece notare che somigliava parecchio a un "
+            "Prophet-5. Solo che i conti li fa un processore Motorola 56002, che "
+            "calcola la forma d'onda mentre suonate invece di leggerla da una "
+            "memoria come facevano i campionatori. Clavia chiama questa cosa "
+            "«virtual analog». Il nome ha preso, e oggi si usa per qualunque synth "
+            "che lavori così, anche per quelli degli altri."
+        ),
+        "richiami": [
+            ("FIG. 1", "Una manopola per funzione"),
+            ("FIG. 2", "Pitch a bastoncino di legno"),
+            ("FIG. 3", "DSP Motorola 56002"),
+        ],
+        "chi_lusata": [
+            {"artista": "The Prodigy",
+             "nota": "Liam Howlett lo ha nel rack già nel 1996",
+             "ig": "theprodigyofficial"},
+            {"artista": "Jean-Michel Jarre",
+             "nota": "è fra le macchine di «Oxygène 7–13» (1997), e nel tour di quell'anno lo mette in mostra",
+             "ig": "jeanmicheljarre"},
+        ],
+        "menzioni_extra": [
+            {"ig": "nordkeyboards",
+             "riga": "Le tastiere rosse le fa ancora Clavia, che su Instagram è @nordkeyboards."},
+        ],
+        "da_ascoltare": {"brano": "Funky Shit", "artista": "The Prodigy", "anno": "1997",
+                         "cosa": "Liam Howlett ci usa un preset di fabbrica del primo Nord Lead, quello che si chiama Funky."},
+        "aneddoto": (
+            "Nel 1998 una rivista inglese chiede a Liam Howlett del suo Nord. Lui "
+            "risponde che lo adora e che secondo lui ha fissato il nuovo standard "
+            "dell'analogico, e lo dice di una macchina digitale. Poi aggiunge che piace "
+            "anche agli altri tre del gruppo, perché è bello rosso. Le fonti non "
+            "sono d'accordo su quale rivista fosse, Mixmag di settembre o The Mix "
+            "di ottobre. Sulla frase sì."
+        ),
+        "avvertenza": "Il pitch qui si piega con un bastoncino di legno. Se cercate una rotella da girare, quella accanto è la modulazione.",
+        "foto": {
+            "file": "assets/foto/nordlead/principale.jpg",
+            "autore": "John Athayde",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un Nord Lead 2 appoggiato su un Yamaha DX7: la scocca rossa è quella del primo",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/nordlead/tasto.jpg",
+             "autore": "John Athayde", "licenza": "CC BY 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "La scocca rossa e i tasti del Nord Lead 2, visti da vicino"},
+        ],
+        "fonti": [
+            {"titolo": "«Clavia Nord» — Sound On Sound, maggio 1995",
+             "url": "https://www.soundonsound.com/reviews/clavia-nord", "data": "2026-10-20"},
+            {"titolo": "«Clavia Nord Lead 2.0» — Sound On Sound, dicembre 1996",
+             "url": "https://www.soundonsound.com/reviews/clavia-nord-lead-20", "data": "2026-10-20"},
+            {"titolo": "«Clavia Nord Lead 2» — Sound On Sound, settembre 1997",
+             "url": "https://www.soundonsound.com/reviews/clavia-nord-lead-2", "data": "2026-10-20"},
+            {"titolo": "«Clavia Nord Lead A1» — Sound On Sound, 2015 (Nordelius sul Prophet-5)",
+             "url": "https://www.soundonsound.com/reviews/clavia-nord-lead-a1", "data": "2026-10-20"},
+            {"titolo": "«Inside Nord's Stockholm factory» — MusicRadar",
+             "url": "https://www.musicradar.com/news/tech/in-pictures-inside-nords-stockholm-factory-613549", "data": "2026-10-20"},
+            {"titolo": "I 40 anni di ddrum — Music Inc., 2023",
+             "url": "https://www.musicincmag.com/news/detail/ddrum-shares-statement-on-its-40th-anniversary", "data": "2026-10-20"},
+            {"titolo": "«Nord Lead» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Nord_Lead", "data": "2026-10-20"},
+            {"titolo": "Il Nord Lead di Liam Howlett — theprodigy.info",
+             "url": "https://theprodigy.info/equipment/clavia-nord-lead-synthesiser.html", "data": "2026-10-20"},
+            {"titolo": "«Synthopedia: Nord Lead» — VICE, 2014",
+             "url": "https://www.vice.com/es/article/synthopedia-nord-lead/", "data": "2026-10-20"},
+            {"titolo": "«Oxygène 7–13», strumenti dalle note di copertina — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Oxyg%C3%A8ne_7%E2%80%9313", "data": "2026-10-20"},
+        ],
+        "hashtags": ["#nordlead", "#clavia", "#sintetizzatore", "#theprodigy", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 067", "Il Nord Lead lo costruisce una ditta di batterie"),
+            ("STOCCOLMA · 1983", "Hans Nordelius e Mikael Carlsson fanno pad di batteria in uno scantinato."),
+            ("DDRUM · 1984", "Le loro batterie si chiamano ddrum, e il marchio è già rosso."),
+            ("CLAVIA · 1995", "Esce il Nord Lead, digitale, rosso, con una manopola per ogni funzione."),
+            ("THE PRODIGY · 1998", "Liam Howlett dice che piace a tutto il gruppo, perché è bello rosso."),
+        ],
+        "reel_cta": "Mandalo a chi ha una tastiera rossa sul palco",
+        "reel_audio": {
+            "file": "assets/audio/nordlead/registrazione.mp3", "inizio": 0,
+            "autore": "KatHakaku", "licenza": "CC0 1.0",
+            "fonte": "freesound.org/s/60282",
+            "url": "https://freesound.org/s/60282/",
+            "cosa": "un Nord Lead 2, il modello del 1997 e non il primo: la stessa sequenza suonata più volte cambiando le impostazioni",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 68
+    # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
+    # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
+    # Scheda «mc202» — scritta il 2026-10-20.
+    #
+    # FOTO (viste entrambe: thumbnail scaricati con WebFetch e guardati)
+    # principale: https://commons.wikimedia.org/wiki/File:Roland_MC-202_Synthesizer_at_SMEM_Playroom.jpg
+    #   1904.CC (categoria nascosta «Images by Manuel Schmalstieg»), CC BY 4.0,
+    #   «Own work», 4032x3024, 14/01/2026, iPhone 12 Pro Max. Museo SMEM di
+    #   Friburgo (Svizzera): le coordinate della foto cadono a Friburgo.
+    #   thumb 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Roland_MC-202_Synthesizer_at_SMEM_Playroom.jpg/1280px-Roland_MC-202_Synthesizer_at_SMEM_Playroom.jpg
+    #   Macchina intera vista dall'alto e di fronte, su uno scaffale di legno con
+    #   le piastrelle bianche dietro. Si leggono LFO / VCO / SOURCE MIXER / VCF /
+    #   VCA / ENV, la targa «Roland MC-202 MicroComposer», l'LCD, la manopola
+    #   ACCENT, e sotto i tastini bianchi i numeri 1-9 e 0. Ai lati, tagliate dal
+    #   bordo, due altre Roland (a sinistra una TR-505, a destra una macchina
+    #   argento di cui si legge solo «TD»/«TB»): la macchina più leggibile è il
+    #   202. La macchina occupa ~75% della larghezza: se la copertina taglia i
+    #   lati non si perde niente di importante; se taglia sopra/sotto, meglio
+    #   "ritaglio": True per non perdere la fila dei tasti.
+    # extra 1: https://commons.wikimedia.org/wiki/File:Roland_MC-202.jpg
+    #   Brandon Daniel (Sunnyvale, CA), CC BY-SA 2.0, Flickr
+    #   https://www.flickr.com/photos/54581307@N00/3796065022/ (licenza verificata
+    #   dal bot Flickr il 14/01/2010), 3872x2592, 2009.
+    #   thumb 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Roland_MC-202.jpg/1280px-Roland_MC-202.jpg
+    #   Primo piano di sbieco, profondità di campo corta: a fuoco la scritta
+    #   «Roland MC-202 MicroComposer» e sotto l'LCD con a sinistra PLAY / PITCH /
+    #   STEP / GATE; sopra, sfocati, i cursori. La targa sta al centro della
+    #   foto: con un ritaglio centrato si vede sempre.
+    # Scartate: File:Roland_mc202.jpg (604x403, troppo piccola) e
+    #   File:Synthesizers_at_SMEM_Playroom.jpg (il 202 è piccolo in mezzo a uno
+    #   scaffale di altre macchine).
+    #
+    # AUDIO
+    # pagina: https://commons.wikimedia.org/wiki/File:Mc202example.ogg
+    #   ricontrollata il 2026-10-20: «small looped example using the built in
+    #   sequencer, filter and controls; no additional effects». Autore Sven
+    #   Buresch per Wikipedia (utente Audioschotter.net su en.wikipedia), caricata
+    #   il 20/09/2005, PUBBLICO DOMINIO dichiarato dall'autore, con permesso VRT
+    #   #2007053110008626. 4:55, Ogg Vorbis 79 kbps, mono 44,1 kHz. La pagina ha
+    #   il bollino «requires review» del trasferimento da en.wikipedia: è un
+    #   controllo di forma del bot, la licenza è confermata dal ticket VRT. È
+    #   anche il file d'esempio della voce Wikipedia «Roland MC-202».
+    # file: https://upload.wikimedia.org/wikipedia/commons/e/ee/Mc202example.ogg
+    #   mp3 (transcodifica di Commons, 129 kbps, schema standard, non provato dal
+    #   container): https://upload.wikimedia.org/wikipedia/commons/transcoded/e/ee/Mc202example.ogg/Mc202example.ogg.mp3
+    #   Io l'ho scaricato tramite WebFetch (2,8 MB) e misurato con ffmpeg.
+    # TRATTO: 65-110 s. Fino a 65 s suona solo una sequenza acuta, piu' bassa di
+    #   volume (-19/-20 dB RMS) con buchi a 40-60 s; a 65,0 s entra di colpo il
+    #   basso (sotto i 200 Hz si passa da -54 a -25 dB in mezzo secondo) e da lì
+    #   il pezzo è pieno, -9/-12 dB RMS. Quindi «inizio»: 65 attacca col pezzo
+    #   pieno dal fotogramma 0. Fra 115 e 135 s nello spettrogramma si vede una
+    #   apertura del filtro (la manopola che gira): se il reel vuole quella, il
+    #   tratto alternativo è 100-145 s. A 162-166 s il basso si ferma per 4 s:
+    #   non far cadere lì nessun taglio. Niente silenzi in tutto il file.
+    #
+    # NOTA TECNICA: suoni.VOCE_SCHEDA non ha «mc202»: va aggiunto (la
+    #   famiglia è quella della tb303, «acido», o della sh101, «sega»), o
+    #   valida_scheda rifiuta la scheda.
+    # FONTI PER FATTO (chi regge cosa; tutte aperte il 2026-10-20)
+    # - 1983, Roland: Wikipedia; SOS 1995; E&MM maggio 1983.
+    # - 365 sterline: E&MM 1983 («£365 inc VAT»); One Two Testing dic. 1983.
+    # - 34x20 cm, alto 5 (13½ x 8 x 2 pollici): E&MM 1983; One Two Testing 1983.
+    # - 6 pile da 1,5 V (formato C per E&MM) o alimentatore: E&MM; One Two
+    #   Testing; Wikipedia.
+    # - 2.729 note su 2 piste: E&MM 1983; Vintage Synth Explorer
+    #   (https://www.vintagesynth.com/roland/mc-202). SOS e One Two Testing
+    #   dicono «2600»: arrotondano.
+    # - memoria persa allo spegnimento, salvataggio su cassetta: E&MM; One Two
+    #   Testing; SOS 1995; Wikipedia.
+    # - POWER SAVE tiene viva la memoria a synth spento: E&MM («Power Save
+    #   function»); One Two Testing («disconnect the synth from the six 1.5V
+    #   cells so just the memory is kept alive»); la scritta POWER SAVE è sopra
+    #   i tasti nella foto principale.
+    # - 2 ottave e mezza di tastini: E&MM; Wikipedia («rubber buttons»).
+    # - tasti bianchi numerati 0-9 come un tastierino: One Two Testing; si
+    #   leggono nella foto principale.
+    # - LCD che mostra numeri (note, step, gate): SOS 1995; foto extra.
+    # - uscita cuffia: E&MM; SOS 1995.
+    # - synth = SH-101 senza rumore, con ritardo sull'LFO; 1 VCO con dente di
+    #   sega, impulso, sub; passa-basso 24 dB; 1 inviluppo: SOS 1995; Wikipedia;
+    #   Vintage Synth Explorer.
+    # - immissione in tre passate (altezze, poi step time, poi gate time) e
+    #   registrazione a tempo col metronomo: E&MM; One Two Testing; SOS 1995.
+    # - accento e portamento per nota, come la TB-303: Wikipedia; SOS 1995
+    #   («Portamento and accent are set in step-edit mode»); Vintage Synth.
+    # - una pista suona il synth interno, l'altra un synth esterno da CV/gate:
+    #   Wikipedia; SOS 1995; E&MM.
+    # - Ralph Dyck canadese, prototipo a un canale, tastierino da calcolatrice,
+    #   primi anni '70 (1971 per SOS, 1972 per l'Enciclopedia canadese, «circa
+    #   1972» per lui stesso): SOS 1997; Wikipedia MC-8; intervista a Dyck
+    #   (https://rolandmc8.wordpress.com/2010/01/25/exclusive-interview-with-ralph-dyck-godfather-of-the-mc-8/).
+    # - MC-8 1977, 8 canali, 16 KB, ~200 venduti: Wikipedia MC-8; SOS nov. 2004
+    #   «The History Of Roland Part 1» (https://www.soundonsound.com/sos/nov04/articles/roland.htm);
+    #   intervista a Dyck (8 canali, 1977).
+    # - prezzo MC-8: 4.795 $ per SOS 1997 e Wikipedia; «around eight thousand
+    #   dollars» per SOS 2004. Scritto in scheda che non concordano.
+    # - Cortini nato a Bologna, Nine Inch Nails dal vivo: Wikipedia
+    #   (https://en.wikipedia.org/wiki/Alessandro_Cortini); nin.com
+    #   (https://www.nin.com/music/alessandro-cortini-sonno/, «lead electronics
+    #   performer in Nine Inch Nails' live unit»).
+    # - «Sonno» 2014, Hospital Productions, 9 pezzi, camere d'albergo, MC 202 +
+    #   pedale di delay, registrato diretto o in una piccola cassa portatile:
+    #   nin.com; Soundohm (https://www.soundohm.com/product/sonno, HOS-412);
+    #   Resident Advisor 2014; Juno Daily 11/06/2014
+    #   (https://www.juno.co.uk/junodaily/2014/06/11/hospital-productions-to-issue-album-from-alessandro-cortini);
+    #   The Quietus 2015.
+    # - il registratore in mano, rubinetti/porte/finestre: Resident Advisor;
+    #   Soundohm (stessa citazione di Cortini).
+    # - «Voltaggio Solitario» seconda traccia di «Sonno»: Resident Advisor;
+    #   Juno Daily.
+    # - «Risveglio» l'anno dopo, con una TB-303 sincronizzata al 202: The Quietus
+    #   28/08/2015 (https://thequietus.com/?p=18655); Juno 18/06/2015
+    #   (https://www.juno.co.uk/reviews/2015/06/18/alessandro-cortini-returns-with-risveglio/);
+    #   anno 2015 anche su Wikipedia.
+    # - Autechre: SOS aprile 2004 (Booth: «It's batty, totally upside down, but
+    #   it's brilliant to use once you understand the numbers»); Elektron
+    #   Stories 2006, intervista di Jon Mårtensson (Booth: «A Roland MC202 is
+    #   mental really, that sequencer still spins me out»), copia su
+    #   https://aepages.org/wiki/Elektron_Stories:_Sean_Booth,_2006.
+    # - Frusciante ne ha 6: Premier Guitar 03/03/2014 (con la citazione «one of
+    #   my favorite instruments»); Vice Italia 06/04/2016
+    #   (https://www.vice.com/it/article/lo-studio-di-john-frusciante-il-paradiso-degli-smanettoni/,
+    #   «sei MC-202»).
+    # - Daft Punk, MC-202 nella lista di «Homework»: MusicTech 25/02/2021; Mixmag
+    #   23/02/2021 (https://mixmag.net/read/daft-punk-homework-tech-gear-equipment-news).
+    #   ATTENZIONE: tutte e due riprendono lo stesso ritaglio di una rivista
+    #   giapponese (1999 per loro; Equipboard dice Sound & Recording 1997). Le
+    #   testate sono indipendenti, il documento è uno. Per questo la nota dice
+    #   «nella lista», non «suonato in» un brano preciso.
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
+    # - Human League su «Rock Me Again…» (Hysteria, 1984): lo dice solo Ian
+    #   Burden in Electronic Soundmaker, ott. 1984 (muzines 3390). Che i Human
+    #   League l'abbiano usato lo dicono due fonti (quella e SOS 1995), il brano
+    #   una sola: tolti dalla lista per non metterli senza disco.
+    # - Vince Clarke, Bomb The Bass, K-Klass: solo SOS 1995, nessun brano.
+    # - 17 mesi di produzione: solo SOS 1995 (Matrixsynth ricopia la stessa
+    #   frase); Wikipedia dice 1983-1985.
+    # - 595 dollari di listino: solo Wikipedia (infobox, senza nota).
+    # - oscillatore su chip Curtis 3340: solo E&MM 1983.
+    # - nome «MicroComposer» scelto per non dire «computer»: solo One Two
+    #   Testing, ed è detto mezzo per scherzo.
+    # - «la peggio venduta delle Roland del decennio»: MusicRadar, ma la pagina
+    #   non si apre (testo non leggibile), quindi non verificato.
+    # - svendita a 159 sterline da Soho Soundhouse nel 1986: solo la pagina di
+    #   Zoe Blade che cita la pubblicità; la pubblicità non l'ho trovata.
+    # - prezzi dell'usato nel 1995 (100 sterline, poi 200-250; la 303 sopra le
+    #   500): solo SOS 1995.
+    # - Autechre: il 202 come seconda macchina dopo la TR-606: solo SOS 2004.
+    # - Frusciante: sei 202 programmati per sembrare un Wurlitzer in «Foregrow»
+    #   (solo Vice 2016); melodia di «After Below» di Trickfinger su un 202
+    #   (solo Groove.de 2015, e lui dice «probably»); una corda di chitarra per
+    #   macchina (solo Premier Guitar).
+    # - Josh Wink, «Higher State of Consciousness» col 202: leggenda smentita
+    #   (è una 303).
+    # - MC-303 (1996) erede digitale: solo Wikipedia.
+    # - Kakehashi in visita allo studio di Dyck nel 1976: solo l'intervista a
+    #   Dyck.
+    # - handle Instagram: nessuno verificato da un sito ufficiale in questa
+    #   sessione, quindi tutti None e niente menzioni_extra.
+    {
+        "slug": "mc202",
+        "numero": 68,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Roland MC-202 MicroComposer",
+        "anno": "1983",
+        "luogo": "Giappone",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("USCITA", "1983"),
+            ("PREZZO", "365 £"),
+            ("MEMORIA", "2.729 note"),
+            ("PILE", "6 da 1,5 V"),
+        ],
+        "gancio": "Il fratello della TB-303 col sequencer dentro. Va a pile, e le note si scrivono coi numeri",
+        "sottotitolo": "Un synth monofonico, 2 piste di sequencer e l'uscita per la cuffia, in una scatola grigia di 34 centimetri per 20.",
+        "la_macchina": (
+            "A vederlo sembra un SH-101 a cui hanno tolto la tastiera. Al suo posto "
+            "ci sono 2 ottave e mezza di tastini di plastica, e sotto quelli bianchi "
+            "sono stampati i numeri da 0 a 9. Sopra c'è uno schermo a cristalli "
+            "liquidi che mostra numeri e basta. Le note in memoria sono 2.729, divise "
+            "fra 2 piste. Si salvano su una cassetta qualsiasi, e se non lo fate le "
+            "perdete. Va a 6 pile da 1,5 volt o con l'alimentatore. In Inghilterra, "
+            "nel 1983, costava 365 sterline. A me è sempre sembrato più bello da "
+            "guardare che comodo da usare, e credo sia per questo che tanti ci si "
+            "affezionano."
+        ),
+        "inventore_nome": "Ralph Dyck, e Roland",
+        "inventore": (
+            "Un progettista con nome e cognome l'MC-202 non ce l'ha. Ha un nonno. "
+            "Nei primi anni '70 Ralph Dyck, musicista canadese, si costruisce in "
+            "casa un sequencer digitale a un canale solo, e le note le batte su un "
+            "tastierino da calcolatrice. A Roland l'idea piace. Nel 1977 esce "
+            "l'MC-8 MicroComposer, 8 canali e 16 KB di memoria, e ne vendono circa "
+            "200 in tutto il mondo. Sul prezzo le fonti non concordano. Sound On "
+            "Sound nel 1997 scrive 4.795 dollari, nel 2004 «circa 8.000». Sei anni "
+            "dopo l'MC-202 si porta dietro la stessa idea, le note scritte in "
+            "numeri, in una scatola da mettere in borsa."
+        ),
+        "come_funziona": (
+            "Il synth è quello dell'SH-101 senza il generatore di rumore e con in "
+            "più un ritardo sull'LFO. Un oscillatore con dente di sega, impulso e "
+            "sub, un filtro passa-basso a 24 dB, un inviluppo. La parte strana è il "
+            "sequencer. Le note si possono suonare col metronomo, ma il "
+            "modo vero è scriverle in tre passate. Prima le altezze, una dopo "
+            "l'altra. Poi quanto dura ogni passo, poi quanto resta aperta la nota. "
+            "Ogni nota può avere l'accento e il portamento, come sulla TB-303, e una "
+            "delle 2 piste può suonare un altro synth dalle prese CV e gate. "
+            "Provate a scrivere un giro così e vi accorgerete che state pensando in "
+            "numeri."
+        ),
+        "richiami": [
+            ("FIG. 1", "Tasti numerati da 0 a 9"),
+            ("FIG. 2", "2 piste, 2.729 note"),
+            ("FIG. 3", "Accento e portamento per nota"),
+        ],
+        "chi_lusata": [
+            {"artista": "Alessandro Cortini", "nota": "«Sonno» (2014): un album intero con un MC-202 e un pedale di delay", "ig": None},
+            {"artista": "Autechre", "nota": "Sean Booth, 2004: il sequencer è «matto, tutto al contrario», e geniale quando capisci i numeri", "ig": None},
+            {"artista": "John Frusciante", "nota": "ne ha 6, e per lui è «uno dei miei strumenti preferiti» (2014)", "ig": None},
+            {"artista": "Daft Punk", "nota": "nella lista delle macchine di «Homework» (1997)", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Voltaggio Solitario", "artista": "Alessandro Cortini", "anno": "2014",
+                         "cosa": "Un synth che suona una nota alla volta e un pedale di delay. Ascoltatelo sapendo che non c'è nient'altro."},
+        "aneddoto": (
+            "Alessandro Cortini è nato a Bologna e da anni suona le macchine dal "
+            "vivo coi Nine Inch Nails. Nel 2014 pubblica «Sonno» con Hospital "
+            "Productions, 9 pezzi registrati in camere d'albergo con un MC-202 che "
+            "passa in un pedale di delay. Il suono va dritto nel registratore, a "
+            "volte esce da una piccola cassa portatile. Cortini racconta che girava "
+            "per la stanza col registratore in mano, per sentire dove la sequenza "
+            "suonava meglio. Apriva i rubinetti, le porte, le finestre, e stava a "
+            "sentire come quei rumori si mescolavano al 202. L'anno dopo esce "
+            "«Risveglio», con una TB-303 sincronizzata allo stesso MC-202."
+        ),
+        "avvertenza": "Spegnendo si perdono tutte le 2.729 note. Prima la cassetta, oppure POWER SAVE, che tiene viva la memoria e spegne il synth.",
+        "foto": {
+            "file": "assets/foto/mc202/principale.jpg",
+            "autore": "1904.CC",
+            "licenza": "CC BY 4.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un MC-202 nella sala prove del museo SMEM di Friburgo, in Svizzera",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/mc202/targa.jpg",
+             "autore": "Brandon Daniel", "licenza": "CC BY-SA 2.0", "fonte": "Wikimedia Commons",
+             "didascalia": "La targa MicroComposer e lo schermo, che mostra solo numeri"},
+        ],
+        "fonti": [
+            {"titolo": "«Roland MC-202» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_MC-202", "data": "2026-10-20"},
+            {"titolo": "«The MC-202 MicroComposer» — E&MM, 1983",
+             "url": "https://www.muzines.co.uk/articles/the-mc-202-microcomposer/6017", "data": "2026-10-20"},
+            {"titolo": "«Roland MC202 Microcomposer» — One Two Testing, 1983",
+             "url": "https://www.muzines.co.uk/articles/roland-mc202-microcomposer/4760", "data": "2026-10-20"},
+            {"titolo": "«Roland MC202» — Sound On Sound, 1995",
+             "url": "https://www.soundonsound.com/reviews/roland-mc202", "data": "2026-10-20"},
+            {"titolo": "«Roland MC8» — Sound On Sound, 1997",
+             "url": "https://www.soundonsound.com/reviews/roland-mc8", "data": "2026-10-20"},
+            {"titolo": "«Roland MC-8 Microcomposer» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_MC-8_Microcomposer", "data": "2026-10-20"},
+            {"titolo": "«Autechre» — Sound On Sound, 2004",
+             "url": "https://www.soundonsound.com/people/autechre", "data": "2026-10-20"},
+            {"titolo": "«Sonno» di Alessandro Cortini — Resident Advisor, 2014",
+             "url": "https://ra.co/news/25102", "data": "2026-10-20"},
+            {"titolo": "«John Frusciante: War and Peace» — Premier Guitar, 2014",
+             "url": "https://www.premierguitar.com/artists/john-frusciante-war-and-peace", "data": "2026-10-20"},
+            {"titolo": "La lista delle macchine di «Homework» — MusicTech, 2021",
+             "url": "https://musictech.com/news/daft-punk-gear-list-1997-homework-album/", "data": "2026-10-20"},
+        ],
+        "hashtags": ["#mc202", "#roland", "#sintetizzatore", "#daftpunk", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 068", "Un album intero, registrato in hotel con un Roland MC-202"),
+            ("ROLAND · 1983", "L'MC-202 è un synth col sequencer dentro, 2 piste e 6 pile."),
+            ("COME LA TB-303", "Ogni nota ha accento e portamento, e si scrive coi numeri."),
+            ("«SONNO» · 2014", "Alessandro Cortini dei Nine Inch Nails suona l'MC-202 in hotel, col delay."),
+            ("IL REGISTRATORE IN MANO", "Cortini gira la stanza col registratore, e apre rubinetti e finestre."),
+        ],
+        "reel_cta": "Mandalo a chi compone in camera d'albergo",
+        "reel_audio": {
+            # inizio = secondi nel file intero di Commons (4:55). Vedi TRATTO sopra.
+            "file": "assets/audio/mc202/registrazione.mp3", "inizio": 0,
+            "autore": "Sven Buresch (Audioschotter.net)", "licenza": "Pubblico dominio",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Mc202example.ogg",
+            "cosa": "un Roland MC-202 vero che suona un giro dal suo sequencer, col filtro e le manopole del pannello, senza effetti aggiunti",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 69
     # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
     # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
     # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
@@ -5468,7 +6939,7 @@ SCHEDE = [
     # Commons o Freesound: il reel usa la sigla.
     {
         "slug": "autotune",
-        "numero": 63,
+        "numero": 69,
         "serie": "GLI EFFETTI",
         "strumento": "Antares Auto-Tune",
         "anno": "1997",
@@ -5554,7 +7025,7 @@ SCHEDE = [
         ],
         "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 063", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("ELETTROFONI · N. 069", "La voce robot di Cher nasce da chi cercava il petrolio"),
             ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
             ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
             ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
@@ -5565,7 +7036,7 @@ SCHEDE = [
     },
     {
         "slug": "lowrey",
-        "numero": 64,
+        "numero": 70,
         "serie": "GLI ORGANI",
         "strumento": "Lowrey DSO",
         "anno": "1965",
@@ -5658,7 +7129,7 @@ SCHEDE = [
         ],
         "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 064", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ELETTROFONI · N. 070", "Quel clavicembalo dei Beatles è un organo da salotto"),
             ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
             ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
             ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
@@ -5669,7 +7140,7 @@ SCHEDE = [
     },
     {
         "slug": "wasp",
-        "numero": 65,
+        "numero": 71,
         "serie": "I SINTETIZZATORI",
         "strumento": "EDP Wasp",
         "anno": "1978",
@@ -5761,7 +7232,7 @@ SCHEDE = [
         ],
         "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 065", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("ELETTROFONI · N. 071", "Casale dei Devo: col sudore delle dita suona da solo"),
             ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
             ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
@@ -5772,7 +7243,7 @@ SCHEDE = [
     },
     {
         "slug": "elkarhapsody",
-        "numero": 66,
+        "numero": 72,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -5862,7 +7333,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 066", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 072", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -5873,7 +7344,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 67,
+        "numero": 73,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -5959,7 +7430,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 067", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 073", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -5970,7 +7441,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 68,
+        "numero": 74,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -6059,7 +7530,7 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 068", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 074", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
@@ -6070,7 +7541,7 @@ SCHEDE = [
     },
     {
         "slug": "pianet",
-        "numero": 69,
+        "numero": 75,
         "serie": "GLI ELETTROMECCANICI",
         "strumento": "Hohner Pianet",
         "anno": "1962",
@@ -6155,7 +7626,7 @@ SCHEDE = [
         ],
         "hashtags": ["#pianet", "#hohner", "#pianoelettrico", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 069", "«She's Not There» degli Zombies: un Pianet da casa"),
+            ("ELETTROFONI · N. 075", "«She's Not There» degli Zombies: un Pianet da casa"),
             ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
             ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
@@ -6164,6 +7635,113 @@ SCHEDE = [
         "reel_cta": "Mandalo a un tastierista da lamelle",
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 75
+    # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
+    # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
+    # Scheda «ans» — sintetizzatore ANS di Evgenij Murzin (URSS, prototipo 1958).
+    # Scritta il 2026-10-20. Ogni fatto qui sotto ha almeno 2 fonti indipendenti
+    # (elenco in «fonti»); i fatti a fonte singola sono in fondo, scartati.
+    #
+    # Serie: «LE ORIGINI», non «GLI ANTENATI». In contenuti.py «LE ORIGINI» tiene
+    # gli strumenti unici da laboratorio e da studio (theremin, ondes, trautonium,
+    # Telharmonium, Synket), «GLI ANTENATI» i prodotti di serie che precedono il
+    # synth (Mellotron, Ondioline, Novachord). L'ANS è un esemplare unico, mai
+    # prodotto in serie: sta con i primi.
+    #
+    # FOTO PRINCIPALE
+    #   Pagina:    https://commons.wikimedia.org/wiki/File:ANS_Synthesiser,_Glinka_Museum.jpg
+    #   Thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/ANS_Synthesiser%2C_Glinka_Museum.jpg/1280px-ANS_Synthesiser%2C_Glinka_Museum.jpg
+    #   Originale 2576x1936 (orizzontale). Charles Hutchins su Flickr (su Commons
+    #   il campo autore dice «Celesteh», che è il suo nome utente), 11/05/2013,
+    #   CC BY 2.0. Guardata a 500 px: la macchina intera di fronte, a sinistra la
+    #   colonna nera delle manopole, al centro il telaio della lastra con una
+    #   scala a tasti in verticale, in basso la pulsantiera; la scritta «АНС» è
+    #   tagliata dal bordo alto, quindi la didascalia non la cita.
+    #
+    # FOTO EXTRA (tavola 2, sotto «la_macchina»)
+    #   Pagina:    https://commons.wikimedia.org/wiki/File:ANS_synthesizer_01623.jpg
+    #   Thumbnail: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/ANS_synthesizer_01623.jpg/1280px-ANS_synthesizer_01623.jpg
+    #   Originale 1632x1224. Stardancer, «taken by myself», Theremin Center di
+    #   Mosca, febbraio 2006, CC BY-SA 3.0 (doppia licenza con GFDL). Si vede la
+    #   lastra nera nel telaio, graffiata, con la colonna delle manopole a sinistra.
+    #   Scartate: «ANS synthesizer.jpg» (gli alimentatori da PC dentro la macchina:
+    #   nella foto non c'è niente che dica ANS) e il ritaglio della lastra
+    #   («...scratched on a glass plate covered with black mastic (clip).jpg»,
+    #   864x1320, CC BY-SA 3.0): è quasi tutto nero, e con multiply sulla carta
+    #   diventerebbe un rettangolo bruno. Se serve una terza foto, è quella.
+    #
+    # REGISTRAZIONE
+    #   Pagina:  https://commons.wikimedia.org/wiki/File:The_ANS_Synthesizer_playing_doodles_(live).ogg
+    #   File:    https://upload.wikimedia.org/wikipedia/commons/3/33/The_ANS_Synthesizer_playing_doodles_%28live%29.ogg
+    #   MP3 transcodificato (stesso file, 192 kbps):
+    #            https://upload.wikimedia.org/wikipedia/commons/transcoded/3/33/The_ANS_Synthesizer_playing_doodles_%28live%29.ogg/The_ANS_Synthesizer_playing_doodles_%28live%29.ogg.mp3
+    #   octopusvision (Maxim Tarashchenko), CC BY-SA 3.0 Unported, 172 s, Ogg
+    #   Vorbis. Ricontrollato sulla pagina il 20/10/2026: licenza CC BY-SA 3.0;
+    #   descrizione «The ANS Synthesizer playing doodles scratched onto the
+    #   mastic-covered glass substrate», «recorded at a live demonstration on 21
+    #   October 2009», estratto dall'audio del video YouTube gM4O593Pzm4.
+    #   È la macchina VERA: di ANS ne esiste uno solo, e Synthtopia (23/10/2009,
+    #   https://www.synthtopia.com/?p=17854) colloca lo stesso video di
+    #   Octopusvision al concerto del 21/10/2009 al Museo Glinka per i 95 anni
+    #   di Murzin. Non è Virtual ANS né un'emulazione.
+    #   Tratto: dal container sia l'originale sia il transcodificato hanno dato
+    #   429, quindi NON l'ho ascoltato. Proposta provvisoria 0:00-0:45, «inizio»
+    #   0; va confermato all'ascolto (è l'audio di una dimostrazione dal vivo:
+    #   controllare che all'inizio non ci siano voci o applausi, e nel caso
+    #   spostare «inizio»).
+    #
+    # HANDLE: nessuno. Il Museo Glinka non ha un account Instagram linkato dal
+    # suo sito ufficiale che io abbia potuto verificare (e Instagram in Russia è
+    # bloccato dal 2022); Coil e Murzin non ci sono. menzioni_extra vuota.
+    # FATTI E FONTI, campo per campo (per il controllo):
+    # - Murzin 1914 Samara, morto 1970: Wikipedia «Yevgeny Murzin», Snob, 120years.
+    # - ingegnere militare, tiro contraereo / difesa aerea: 120years, Snob (NII-5),
+    #   TechInsider (sistemi di difesa aerea), Wikipedia Murzin.
+    # - Skrjabin come passione: Snob, 120years, TechInsider.
+    # - idea dal sonoro ottico del cinema: Krejči, 120years, TechInsider, Wikipedia Murzin.
+    # - anno dell'idea discorde: 1937 (Wikipedia ANS), 1938 (Krejči, Wikipedia
+    #   Murzin, Snob, Electronic Sound), 1939 (RBMA). 120years dice «around 1948».
+    # - la guerra lo ferma: TechInsider, Snob (riprende nel 1946).
+    # - vent'anni, senza lo Stato, nel tempo libero: RBMA e Electronic Sound
+    #   (Smirnov: «did not wait for state support»), Snob (soldi suoi),
+    #   Wikipedia Murzin (hobby).
+    # - prototipo pronto nel 1958: TechInsider, Snob, Krejči (laboratorio 1958),
+    #   Electronic Sound.
+    # - A.N.S. = Aleksandr Nikolaevič Skrjabin; Skrjabin e il suono-luce:
+    #   Wikipedia, Krejči, RBMA, 120years, EEFB (sinestesia).
+    # - 5 dischi x 144 piste = 720 toni puri, 1/72 d'ottava = 1/6 di semitono,
+    #   10 ottave: Wikipedia, Krejči, 120years, RBMA, EEFB, TechInsider (72 per ottava, 10 ottave).
+    # - procedimento di stampa dei dischi inventato da Murzin: Wikipedia, RBMA.
+    # - lastra di vetro, mastice nero che non asciuga, si gratta; verticale
+    #   altezza, orizzontale tempo, «come la notazione»: Wikipedia, Krejči, 120years.
+    # - correzione spalmando il mastice: Krejči, 120years.
+    # - luce proiettata dietro la lastra: RBMA, Wikipedia.
+    # - 20 fotocellule, 20 amplificatori e filtri passa-banda: Wikipedia, Krejči, 120years.
+    # - scorrimento a motore o a mano, fino a fermarsi; tempo senza cambiare
+    #   intonazione: Wikipedia, Krejči, RBMA (a mano).
+    # - graffio verticale = tutte le note / rumore bianco: 120years, Krejči
+    #   («fino al rumore bianco»), Wikipedia (tutte le 720 insieme).
+    # - casa-museo di Skrjabin, intorno al 1960 (1959 o 1960 a seconda della
+    #   fonte): Wikipedia, RBMA, 120years (1960), Snob.
+    # - primo studio di musica elettronica dell'URSS: 120years, Snob.
+    # - Krejči dal 1961, compositore e tecnico del suono: Krejči, 120years.
+    # - Schnittke, Gubajdulina, Denisov, Artem'ev: Wikipedia, Krejči, 120years, Snob, Electronic Sound.
+    # - raccolta Melodija «Muzykal'noe prinošenie» 1990: Krejči, Wikipedia,
+    #   Electronic Sound (ristampa Cold Spring).
+    # - disco «ANS» di Krejči, Melodija 1970: Krejči, 120years.
+    # - studio assorbito dalla Melodija, mai prodotto in serie: Snob, TechInsider.
+    # - secondo esemplare al Museo Glinka, prototipo perduto: Wikipedia, RBMA,
+    #   Electronic Sound («only two were built»), TechInsider (Museo Glinka).
+    # - «Solaris» 1972 con l'ANS: Wikipedia, Wikipedia Murzin, RBMA, Snob,
+    #   EEFB, Synthtopia (?p=32401), Electronic Sound.
+    # - «Lo specchio»: Snob, TechInsider, RBMA.
+    # - «Il braccio di diamante» (Brilliantovaja ruka): TechInsider, Snob.
+    # - Coil, «ANS»: Wikipedia, RBMA, Electronic Sound (anno discorde, 2003 o
+    #   2004, quindi omesso).
+    # - DA ASCOLTARE: organo di Bach in apertura di «Solaris» (EEFB, Under the
+    #   Radar); l'ANS nei passaggi astratti / onirici (Wikipedia «abstract,
+    #   sci-fi effect», Under the Radar «more abstract passages», EEFB «oneiric scenes»).
+
 ]
 
 
