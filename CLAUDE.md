@@ -86,6 +86,18 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
 - Firma fissa ovunque: **LE MACCHINE NON SUONANO DA SOLE. QUASI MAI.**
 - Formato: carosello 6 slide (copertina / la macchina / chi l'ha
   costruita / come funziona / chi l'ha usata / aneddoto+fonti).
+  **Più la settima, il suono** (decisione del proprietario, 20/10/2026:
+  «Sicuramente metterei il video»): se la scheda ha `reel_audio`,
+  `genera_suono.py` fa `suono.mp4` (864x1080, la tavola con la foto e
+  un oscilloscopio con la forma d'onda vera della registrazione, 15-30
+  s) e `pubblica.py` lo mette in fondo al carosello. Facoltativa come la
+  storia: se manca o il container fallisce, escono le sei tavole e il
+  log lo dice; dopo la pubblicazione il log conta gli elementi VERI del
+  carosello (`/children`). Il proprietario ha proposto anche un numero
+  di slide variabile («min 4, max 12»): l'API ne accetta al massimo 10,
+  e le altre slide facoltative (foto da vicino, un disco) si aggiungono
+  solo dopo aver visto i numeri di questa. Il 6 non va più scritto nei
+  testi («le slide e le fonti sul profilo»).
 - **Reel «formato 2»** (dal 07/10/2026, vedi la sezione «I numeri» qui
   sotto): 5 battute (`reel_battute`, coppie kick/testo) + la chiusura con
   `reel_cta`, file `reel2.mp4`. **Ogni battuta dura quanto serve a

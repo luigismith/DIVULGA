@@ -141,6 +141,10 @@ jobs:
           # Come prima, il video non deve poter bloccare il post.
           python genera_reel.py --prossima \
             || echo "[warn] reel non generato: si prosegue senza"
+          # La settima slide, il suono vero (20/10/2026): facoltativa come
+          # il reel, se non si genera il carosello esce con sei tavole.
+          python genera_suono.py --prossima \
+            || echo "[warn] slide del suono non generata: carosello di 6 tavole"
           python genera_archivio.py
           git add docs
           # LEZIONE IMPARATA (27/08/2026): qui il push era secco, senza

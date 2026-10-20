@@ -275,7 +275,9 @@ def battute(scheda):
     # Dal 15/10/2026 la chiusura dice dove sta il resto: chi arriva in
     # fondo è proprio chi vuole saperne di più, e il numero di scheda a
     # lui non diceva niente.
-    chiusura = scheda.get("reel_kick_chiusura") or "6 SLIDE E FONTI SUL PROFILO"
+    # Senza numero dal 20/10/2026: le schede col suono vero hanno una
+    # settima slide (genera_suono.py), quelle uscite prima ne hanno sei.
+    chiusura = scheda.get("reel_kick_chiusura") or "LE SLIDE E LE FONTI SUL PROFILO"
     # Chiusura: stessa foto e stesso movimento della prima battuta, così
     # quando il reel ricomincia non c'è uno stacco.
     out.append({"foto": 0, "moto": MOTI[0],

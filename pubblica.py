@@ -318,6 +318,30 @@ def main():
                     alt_text=contenuti.alt_slide(scheda, n)[:1000])
             attendi_container(c["id"], token)
             figli.append(c["id"])
+
+        # LA SETTIMA SLIDE: IL SUONO (decisione del proprietario,
+        # 20/10/2026: «Sicuramente metterei il video»). Un video con la
+        # registrazione vera e la sua forma d'onda (genera_suono.py), in
+        # fondo al carosello. È facoltativa come la storia: se il file
+        # manca o il container non passa, il post esce con le sei tavole e
+        # il log lo dice. UN SOLO TENTATIVO: è un container video, e il
+        # budget di elaborazione dell'account lo consumano anche i
+        # fallimenti.
+        if scheda.get("reel_audio"):
+            video = slide_dir / "suono.mp4"
+            url_v = f"{BASE_PAGES}/tavole/{scheda['slug']}/suono.mp4"
+            try:
+                if not video.exists():
+                    raise RuntimeError("suono.mp4 non generato")
+                verifica_immagini_online([url_v])
+                c = api("POST", f"{ig_user}/media", token, media_type="VIDEO",
+                        video_url=url_v, is_carousel_item="true")
+                attendi_container(c["id"], token, tentativi=25)
+                figli.append(c["id"])
+                print("[ok] slide del suono pronta (7 elementi)")
+            except Exception as e:
+                print(f"[warn] slide del suono NON inclusa, il carosello esce "
+                      f"con 6 tavole: {e}")
         carosello = api("POST", f"{ig_user}/media", token,
                         media_type="CAROUSEL", children=",".join(figli),
                         caption=contenuti.componi_didascalia(scheda))
@@ -366,6 +390,17 @@ def main():
         if media_id not in ids:
             raise RuntimeError(f"media {media_id} assente dagli ultimi post dell'account: {ids}")
         permalink = next(m.get("permalink") for m in ultimi["data"] if m["id"] == media_id)
+        # Quanti elementi ha DAVVERO il carosello. Il Graph risponde 200
+        # anche a quello che poi butta via (CLAUDE.md, 29/09/2026): che la
+        # slide del suono ci sia lo dice il post, non la risposta della
+        # creazione.
+        try:
+            figli_pub = api("GET", f"{media_id}/children", token, fields="media_type").get("data", [])
+            tipi = [f.get("media_type") for f in figli_pub]
+            print(f"[ok] carosello di {len(tipi)} elementi: {tipi.count('IMAGE')} tavole, "
+                  f"{tipi.count('VIDEO')} video")
+        except Exception as e:
+            print(f"[warn] elementi del carosello non letti: {e}")
         stato = leggi_stato()
         stato["pubblicati"][-1]["permalink"] = permalink
         scrivi_stato(stato, f"stato: permalink {scheda['slug']}")

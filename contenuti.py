@@ -7852,7 +7852,7 @@ def componi_didascalia_reel(scheda, menzioni=True):
     # il reel. Prima questa indicazione stava alla quarta riga, cioè dopo
     # «…altro», dove non la leggeva nessuno.
     righe = [frase(b[0][1]),
-             f"Le 6 slide con tutta la storia e le fonti: @elettrofoni, "
+             f"Le slide con tutta la storia e le fonti: @elettrofoni, "
              f"il post «{scheda['strumento']}».", ""]
     righe.append(" ".join(frase(t) for _, t in b[1:]))
     righe.append("")

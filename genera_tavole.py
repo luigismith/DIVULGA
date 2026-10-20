@@ -196,7 +196,12 @@ def _testata(scheda):
 
 
 def _pager(scheda, n):
-    return f"""<div class="pager"><span class="qui">{scheda['strumento'].upper()}</span><span class="num">{n} / 6 →</span></div>"""
+    # Dal 20/10/2026 le schede con la registrazione vera hanno una
+    # settima slide, il video del suono (genera_suono.py): il contatore
+    # deve dire 7, o chi arriva alla 6 crede che sia finita.
+    tot = 7 if scheda.get("reel_audio") else 6
+    freccia = " →" if n < tot else ""
+    return f"""<div class="pager"><span class="qui">{scheda['strumento'].upper()}</span><span class="num">{n} / {tot}{freccia}</span></div>"""
 
 
 def _zoccolo():
@@ -571,7 +576,7 @@ body{{height:1920px}}
   <div class="nome-macchina autofit" data-min="60" style="height:auto;max-height:240px">{scheda['strumento']}</div>
   <div class="gancio autofit" data-min="30" style="height:auto;max-height:260px">{scheda['gancio']}</div>
   <div class="sottotitolo">{scheda['sottotitolo']}</div>
-  <div class="invito"><div class="freccia">↑</div><div><div class="riga">LE 6 SLIDE · TOCCA IL NOME IN ALTO</div><div class="grande">è il post di oggi</div></div></div>
+  <div class="invito"><div class="freccia">↑</div><div><div class="riga">{"LE SLIDE E IL SUONO" if scheda.get("reel_audio") else "LE 6 SLIDE"} · TOCCA IL NOME IN ALTO</div><div class="grande">è il post di oggi</div></div></div>
 </div>
 {_zoccolo()}
 <div class="riparo"></div>
