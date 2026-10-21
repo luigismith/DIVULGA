@@ -148,7 +148,7 @@ def costruisci(scheda, cartella, file_testo=None):
     wer, mancanti = voce.verifica(voce_wav, atteso)
     print(f"[reel3] voce: {fine_voce - SEC_INTRO:.1f} s di parlato, WER {wer:.2f}"
           + (f", parole non riconosciute: {mancanti}" if mancanti else ""))
-    if mancanti or wer > voce.WER_MAX:
+    if not voce.va_bene(wer, mancanti):
         raise RuntimeError(f"Dinamo non si capisce (WER {wer:.2f}, mancano {mancanti}): "
                            "correggere il lessico in voce.py o la frase")
 
@@ -201,7 +201,9 @@ def costruisci(scheda, cartella, file_testo=None):
     dpx = int(round(DINAMO_PX * k / 2)) * 2
     dx = int(round(DINAMO_X * k))
     dy = int(round((gr.H - DINAMO_BOTTOM - DINAMO_PX) * k))
-    pattern = dinamo.sequenza(voce_wav, FPS, n_tot / FPS, SEC_INTRO, lavoro / "dinamo")
+    import zlib
+    pattern = dinamo.sequenza(voce_wav, FPS, n_tot / FPS, SEC_INTRO, lavoro / "dinamo",
+                              seme=zlib.crc32(scheda["slug"].encode()))
     con_dinamo = lavoro / "con_dinamo.mp4"
     gr._esegui([ff, "-y", "-loglevel", "error", "-i", str(muto),
                 "-framerate", str(FPS), "-i", str(pattern),

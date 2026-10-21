@@ -1,0 +1,146 @@
+{
+ "scheda": "cz101",
+ "strumento": "Casio CZ-101",
+ "numero": 60,
+ "versione": "riscrittura del 21/10/2026 dopo i due verificatori",
+ "regola_detta": "fra «scritta» e «detta» cambiano SOLO numeri e sigle; nomi e prestiti restano in grafia normale, li porta voce.normalizza (NOMI/LESSICO)",
+ "parole_al_secondo": 2.6,
+ "parole_totali": 74,
+ "secondi_stimati": 28.5,
+ "secondi_misurati_frasi": 27.1,
+ "secondi_misurati_parlato_con_pause": 29.8,
+ "secondi_misurati_reel_intero": 35.3,
+ "misura": "Kokoro if_sara via voce.sintetizza, pause di genera_reel_voce.py (intro 2,5 + 0,4 fra le battute + 0,3 prima della chiusura + 0,4 + outro 3,0); Whisper medium sulla traccia intera: vedi riscrittura_testo/misura.log (i secondi per frase sono misurati, non stimati)",
+ "frasi": [
+  {
+   "ruolo": "battuta1",
+   "sullo_schermo": [
+    "ELETTROFONI · N. 060",
+    "Quelli delle calcolatrici contro il DX7 di Yamaha"
+   ],
+   "scritta": "Il Casio CZ-101 lo fa la ditta delle calcolatrici, contro il DX7 di Yamaha.",
+   "detta": "Il Casio ci zeta centouno lo fa la ditta delle calcolatrici, contro il di ics sette di Yamaha.",
+   "campi_di_origine": [
+    "reel_battute[0]",
+    "inventore (la ditta delle calcolatrici … vuole lo scaffale accanto allo Yamaha DX7)",
+    "strumento (Casio CZ-101)"
+   ],
+   "dettaglio_in_piu": "i nomi: «la Casio» al posto di «quelli» (chi ascolta non può rileggere) e il CZ-101 detto per intero nella prima battuta, come vuole la regola «la prima volta la macchina si chiama per nome». «Lo Yamaha DX7» nell'ordine della scheda, così il «di ics sette» non si incolla a un «di Yamaha». Da solo Whisper lo sente giusto due volte su due; dentro la traccia intera una volta «lo Yamaha», una «l'Oyama» (il nome passa comunque il controllo). «Il DX7 della Yamaha» esce sempre pulito ma costa 0,3 s e una parola che non ci sono",
+   "parole": 14,
+   "secondi": 4.32
+  },
+  {
+   "ruolo": "battuta2",
+   "sullo_schermo": [
+    "NOVEMBRE 1984",
+    "Il Casio CZ-101 costa 495 dollari. Il DX7 quasi 2.000."
+   ],
+   "scritta": "Il Casio costa 495 dollari, il DX7 quasi 2.000.",
+   "detta": "Il Casio costa quattrocento novantacinque dollari, il di ics sette quasi duemila.",
+   "campi_di_origine": [
+    "reel_battute[1]",
+    "specifiche PREZZO (495 $)",
+    "inventore (il DX7 costava quasi duemila dollari)"
+   ],
+   "dettaglio_in_piu": "nessuno: sono le parole dello schermo. «Il Casio» è la macchina («la Casio» della battuta 1 è la ditta, come nella scheda). Provato «lo Yamaha quasi 2.000»: Kokoro stacca la a finale di Iamàha e Whisper sente «lo Yamaha ha quasi», due volte su due; «il DX7 quasi 2.000» esce pulito",
+   "parole": 9,
+   "secondi": 4.75
+  },
+  {
+   "ruolo": "battuta3",
+   "sullo_schermo": [
+    "BREVETTO DI STANFORD",
+    "La FM è un brevetto di Stanford. Casio inventa la distorsione di fase."
+   ],
+   "scritta": "La sintesi FM ha un brevetto di Stanford, così Casio inventa la distorsione di fase.",
+   "detta": "La sintesi effe emme ha un brevetto di Stanford, così Casio inventa la distorsione di fase.",
+   "campi_di_origine": [
+    "reel_battute[2]",
+    "inventore (la sintesi FM che gli stava dentro era un brevetto di Stanford, con la licenza da pagare. Casio si scrive un metodo proprio, la distorsione di fase)"
+   ],
+   "dettaglio_in_piu": "«sintesi» davanti a FM, che è la parola che fa capire di cosa si parla, e «così», che dice il nesso che sullo schermo sta nel punto fra le due frasi",
+   "parole": 15,
+   "secondi": 5.32
+  },
+  {
+   "ruolo": "battuta4",
+   "sullo_schermo": [
+    "68.500 ESEMPLARI",
+    "Va a 6 pile torcia, e i ragazzi se lo portano in camera."
+   ],
+   "scritta": "Il Casio va a 6 pile torcia: te lo porti in camera.",
+   "detta": "Il Casio va a sei pile torcia: te lo porti in camera.",
+   "campi_di_origine": [
+    "reel_battute[3]",
+    "la_macchina (va a sei pile torcia)",
+    "richiami FIG. 3",
+    "aneddoto (perché andava a pile: te lo portavi in camera)"
+   ],
+   "dettaglio_in_piu": "il «te lo porti in camera» dell'aneddoto, l'unico passaggio in seconda persona della scheda: è qui che Dinamo dà del tu prima della CTA. Il verbo «va» e il soggetto «il Casio» ci sono",
+   "parole": 12,
+   "secondi": 3.04
+  },
+  {
+   "ruolo": "battuta5",
+   "sullo_schermo": [
+    "VINCE CLARKE · ERASURE",
+    "Synth dei poveri, dicono. Vince Clarke degli Erasure ne tiene 4."
+   ],
+   "scritta": "Synth dei poveri, dicono. Vince Clarke degli Erasure ne tiene 4.",
+   "detta": "Synth dei poveri, dicono. Vince Clarke degli Erasure ne tiene quattro.",
+   "campi_di_origine": [
+    "reel_battute[4]",
+    "chi_lusata (Vince Clarke degli Erasure: a un certo punto ne teneva quattro)",
+    "reel_cta (chi lo chiama synth dei poveri)"
+   ],
+   "dettaglio_in_piu": "nessuno. «Lo chiamano» al posto di «dicono» (stesso verbo della CTA che segue; «lo» è il Casio nominato nella battuta subito prima). Niente «Nomea ingiusta»: detto e scritto dicono la stessa cosa, e la replica la fa il fatto",
+   "parole": 11,
+   "secondi": 4.69
+  },
+  {
+   "ruolo": "cta",
+   "sullo_schermo": [
+    "LE SLIDE E LE FONTI SUL PROFILO",
+    "Mandalo a chi lo chiama synth dei poveri"
+   ],
+   "scritta": "Mandalo a chi lo chiama synth dei poveri.",
+   "detta": "Mandalo a chi lo chiama synth dei poveri.",
+   "campi_di_origine": [
+    "reel_cta"
+   ],
+   "dettaglio_in_piu": "nessuno: la CTA si dice com'è scritta",
+   "parole": 8,
+   "secondi": 2.32
+  },
+  {
+   "ruolo": "chiusura",
+   "sullo_schermo": [
+    "LE SLIDE E LE FONTI SUL PROFILO",
+    "@ELETTROFONI"
+   ],
+   "scritta": "Le slide e le fonti sul profilo Elettrofoni.",
+   "detta": "Le slide e le fonti sul profilo Elettrofoni.",
+   "campi_di_origine": [
+    "chiusura fissa di genera_reel.battute (LE SLIDE E LE FONTI SUL PROFILO)",
+    "handle @ELETTROFONI sullo schermo"
+   ],
+   "dettaglio_in_piu": "il nome del profilo: chi ascolta senza guardare deve sapere dove andare. Senza «sono» è la riga dello schermo parola per parola, e costa 0,22 s in meno: è quello che tiene il parlato sotto i 30 s con le pause del montaggio",
+   "parole": 8,
+   "secondi": 2.66
+  }
+ ],
+ "parole_difficili": [
+  "CZ-101 → detta «ci zeta cento uno», come in voce.LESSICO (espeak-ng: tʃɪ dzˈɛta tʃˈɛnto ˈuno, due accenti; «centouno» in una parola ne avrebbe uno solo, tʃentoˈuno: se si preferisce, si cambia in voce.LESSICO, non qui)",
+  "DX7 → detta «di ics sette» (dɪ ˈiks sˈɛtːe); Whisper lo scrive «di X7», nel confronto conta mezza parola",
+  "FM → detta «effe emme» (ˈɛffe ˈɛmme), sempre preceduta da «sintesi»",
+  "495 → detta «quattrocento novantacinque» in due parole (due accenti; in una parola, come fa voce.numero_in_lettere, ne resta uno in fondo; durata identica, 4,5 s). 2.000 → «duemila», 6 → «sei», 4 → «quattro»",
+  "Vince Clarke → in detta resta scritto normale: lo porta voce.normalizza a «Vins Clark» (NOMI). Whisper scrive «Vince Clark»: clarke/clark passa il controllo nomi",
+  "Erasure → scritto normale; voce.py lo lascia apposta com'è (espeak: erazˈure; «Irèisciur» diventava «E-Ration»). Whisper sente «rasure», rapporto 0,92, passa",
+  "synth → scritto normale; voce.LESSICO lo legge «sint» (sˈint), Whisper scrive «Sint»: nel confronto synth/sint fa 0,67, sopra la soglia dei nomi; conta però come errore nel WER, due volte",
+  "slide → NON è coperto da voce.py: espeak-ng legge zlˈide. ATTENZIONE: Whisper lo trascrive lo stesso «slide» per contesto, quindi voce.verifica NON se ne accorge (una verifica che non può dire di no). Da aggiungere a voce.LESSICO prima della prova: «slide»: «slaid» (provato: zlˈaɪd, 2,86 s, Whisper «slide»). Qui resta «slide» perché nella detta cambiano solo numeri e sigle",
+  "Elettrofoni → espeak-ng lo accenta giusto da solo (eletːrˈɔfonɪ, come «microfoni»); Whisper lo scrive minuscolo, passa. Niente da aggiungere a NOMI",
+  "Yamaha → voce.NOMI lo porta a «Iamàha» (jamˈaa); in «lo Yamaha quasi duemila» Whisper ha inserito un «ha» (lo Yamaha ha quasi): è la trascrizione, non la voce; 1 inserimento nel WER",
+  "Casio → voce.NOMI lo porta a «Càsio» (kˈazio). «La Casio» è la ditta (battuta 1), «il Casio» la macchina (battute 2 e 4), come scrive la scheda",
+  "Stanford → giusto da solo (stˈanford); «sfida», «pile torcia», «Mandalo» giusti"
+ ]
+}
