@@ -99,7 +99,9 @@ def costruisci(scheda, cartella, file_testo=None):
     import voce
     from playwright.sync_api import sync_playwright
 
-    cartella = pathlib.Path(cartella)
+    # Assoluta: Chromium apre i file con as_uri(), che su un percorso
+    # relativo esplode (seconda prova sul runner, 21/10/2026).
+    cartella = pathlib.Path(cartella).resolve()
     cartella.mkdir(parents=True, exist_ok=True)
     lavoro = cartella / "_reel3"
     lavoro.mkdir(exist_ok=True)
