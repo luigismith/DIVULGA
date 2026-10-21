@@ -246,6 +246,12 @@ def costruisci(scheda, cartella, file_testo=None):
     gr._esegui([ff, "-y", "-loglevel", "error", "-i", str(grezzo), "-c", "copy",
                 "-movflags", "+faststart", "-use_editlist", "0", str(finale)])
     print(f"[reel3] scene: " + " + ".join(f"{s:.1f}" for s in sec_scene) + f" = {durata:.1f} s")
+    # La cartella di lavoro (clip, wav, 1.000 link di Dinamo) non deve
+    # restare dentro docs/: Pages ha un tetto di 1 GB e upload-pages-artifact
+    # prende tutto, anche quello che non è committato (terza prova sul
+    # runner, 21/10/2026: artifact da 57 MB per un reel da 6).
+    import shutil
+    shutil.rmtree(lavoro, ignore_errors=True)
     return finale
 
 
