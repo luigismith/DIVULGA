@@ -100,6 +100,10 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   numero; le prossime candidate (foto da vicino, un disco) si aggiungono
   dopo aver visto i numeri di quella del suono. Il 6 non va più scritto
   nei testi («le slide e le fonti sul profilo»).
+  Sulla slide del suono l'invito è **«▶ ALZA IL VOLUME»**, al singolare
+  (proprietario, 21/10/2026: «non mi piace "ALZATE" il volume, preferisco
+  "ALZA", ricordalo per i prossimi»). Vale per le etichette e gli inviti
+  sulle tavole e nei video nuovi.
 - **Reel «formato 2»** (dal 07/10/2026, vedi la sezione «I numeri» qui
   sotto): 5 battute (`reel_battute`, coppie kick/testo) + la chiusura con
   `reel_cta`, file `reel2.mp4`. **Ogni battuta dura quanto serve a

@@ -79,7 +79,9 @@ def slide_suono(scheda):
 {gt._testata(scheda)}
 {gt._intesta(7, "DA SENTIRE", "Il suono vero")}
 {gt._banda(scheda, 0, altezza_foto, stile="margin-top:22px")}
-<div class="ascolta"><span>▶ ALZATE IL VOLUME</span><span>{scheda['strumento'].upper()} · REGISTRAZIONE VERA</span></div>
+<!-- «ALZA», non «ALZATE» (proprietario, 21/10/2026): l'etichetta
+     della slide parla a chi la guarda, uno alla volta. -->
+<div class="ascolta"><span>▶ ALZA IL VOLUME</span><span>{scheda['strumento'].upper()} · REGISTRAZIONE VERA</span></div>
 <div class="osc" id="osc"></div>
 <div class="cosa autofit" data-min="20">{_frase(a['cosa'])}</div>
 <div class="reg">Registrazione: {a['autore']} · {a['licenza']} · {a['fonte']}</div>
