@@ -135,8 +135,12 @@ jobs:
         timeout-minutes: 12
         run: |
           pip install -q torch --index-url https://download.pytorch.org/whl/cpu
-          pip install -q kokoro espeakng-loader phonemizer-fork faster-whisper numpy
-          python -c "import kokoro, faster_whisper; print('voce: pacchetti ok')"
+          # av fissato (21/10/2026): alla prima prova sul runner pip ha
+          # scelto un PyAV senza il parametro `metadata_errors` che
+          # faster-whisper usa, e la trascrizione è morta con un TypeError.
+          # 18.1.0 è la versione provata in locale con faster-whisper 1.2.1.
+          pip install -q kokoro espeakng-loader phonemizer-fork "faster-whisper==1.2.1" "av==18.1.0" numpy
+          python -c "import av, kokoro, faster_whisper, torch; print('voce: pacchetti ok, av', av.__version__, 'torch', torch.__version__)"
 
       - name: Costruisci il reel del formato 2
         if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.voce != '1'
