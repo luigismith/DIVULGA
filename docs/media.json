@@ -20,6 +20,10 @@
    "file": "tavole/crumards2/reel2.jpg",
    "firma": "17e51c9679c0cfe4-1"
   },
+  "cz101": {
+   "file": "tavole/cz101/reel2.jpg",
+   "firma": "a88e88866a82cd23-1"
+  },
   "dx7": {
    "file": "tavole/dx7/reel2.jpg",
    "firma": "a3d7f50563ded981-1"
@@ -273,6 +277,26 @@
     ]
    },
    "firma": "9cb308dcdf5f5c36-320-640-1280-1"
+  },
+  "cz101": {
+   "1280": "foto/cz101-1280.jpg",
+   "320": "foto/cz101-320.jpg",
+   "640": "foto/cz101-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     424
+    ],
+    "320": [
+     320,
+     106
+    ],
+    "640": [
+     640,
+     212
+    ]
+   },
+   "firma": "ee6be6576907ee33-320-640-1280-1"
   },
   "dmx": {
    "1280": "foto/dmx-1280.jpg",
@@ -1305,6 +1329,11 @@
    "file": "suoni/arpodyssey.mp3",
    "firma": "cffe206e00442593-0-45-1",
    "secondi": 40.0
+  },
+  "cz101": {
+   "file": "suoni/cz101.mp3",
+   "firma": "ea6164040a64e202-0-45-1",
+   "secondi": 45
   },
   "fairlight": {
    "file": "suoni/fairlight.mp3",
