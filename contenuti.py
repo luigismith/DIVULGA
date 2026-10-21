@@ -5475,6 +5475,32 @@ SCHEDE = [
             ("1983", "Eno e Lanois lo usano in «Deep Blue Day», dall'album «Apollo»."),
         ],
         "reel_cta": "Mandalo a chi non sa suonare",
+        # Reel parlato (formato 3, prova a schede alterne dal 21/10/2026): le
+        # frasi che Dinamo dice, una per battuta; scritte e verificate (fatti e
+        # stile) da due agenti, stesse fonti della scheda.
+        "reel_voce": [
+            {"ruolo": "battuta1",
+             "detta": "All'Omnichord basta un dito, e Brian Eno ci fa Deep Blue Day.",
+             "scritta": "All'Omnichord basta un dito, e Brian Eno ci fa Deep Blue Day."},
+            {"ruolo": "battuta2",
+             "detta": "Nel millenovecentottantuno Suzuki presenta l'Omnichord, un'autoarpa elettronica per chi ha paura della tastiera.",
+             "scritta": "Nel 1981 Suzuki presenta l'Omnichord, un'autoarpa elettronica per chi ha paura della tastiera."},
+            {"ruolo": "battuta3",
+             "detta": "Scegli un accordo con i tasti e striscia il dito sulla piastra.",
+             "scritta": "Scegli un accordo con i tasti e striscia il dito sulla piastra."},
+            {"ruolo": "battuta4",
+             "detta": "L'Omnichord o emme ventisette, il primo modello, ha ventisette accordi e un solo suono, l'arpa.",
+             "scritta": "L'Omnichord OM-27, il primo modello, ha 27 accordi e un solo suono, l'arpa."},
+            {"ruolo": "battuta5",
+             "detta": "Nel millenovecentottantatré Eno e Daniel Lanois usano l'Omnichord nell'album Apollo.",
+             "scritta": "Nel 1983 Eno e Daniel Lanois usano l'Omnichord nell'album Apollo."},
+            {"ruolo": "cta",
+             "detta": "Mandalo a chi non sa suonare.",
+             "scritta": "Mandalo a chi non sa suonare."},
+            {"ruolo": "chiusura",
+             "detta": "Le slide e le fonti sul profilo Elettrofoni.",
+             "scritta": "Le slide e le fonti sul profilo Elettrofoni."},
+        ],
         # Registrazione della macchina vera (17/10/2026, regola del proprietario:
         # il suono vero in ogni uscita). Licenza verificata sulla pagina;
         # estratto 0:00-0:16; è un OM-36, non il primo modello, e la didascalia lo dice.
@@ -5907,6 +5933,32 @@ SCHEDE = [
             ("PRINCE · 1992", "Prince mette Crystal Rhodes in «Damn U», dal disco «Love Symbol»."),
         ],
         "reel_cta": "Mandalo a chi passa le ore dentro i menu",
+        # Reel parlato (formato 3, prova a schede alterne dal 21/10/2026): le
+        # frasi che Dinamo dice, una per battuta; scritte e verificate (fatti e
+        # stile) da due agenti, stesse fonti della scheda.
+        "reel_voce": [
+            {"ruolo": "battuta1",
+             "detta": "Il Roland gei di ottocento riporta i cursori sui synth digitali.",
+             "scritta": "Il Roland JD-800 riporta i cursori sui synth digitali."},
+            {"ruolo": "battuta2",
+             "detta": "Dopo il di ics sette un synth digitale si programma a menu.",
+             "scritta": "Dopo il DX7 un synth digitale si programma a menu."},
+            {"ruolo": "battuta3",
+             "detta": "Sul gei di ottocento, sessantanove parametri hanno un comando ciascuno sul pannello.",
+             "scritta": "Sul JD-800, 69 parametri hanno un comando ciascuno sul pannello."},
+            {"ruolo": "battuta4",
+             "detta": "Eric Persing, sound designer di Roland, programma i sessantaquattro suoni di fabbrica, fra cui Crystal Rhodes.",
+             "scritta": "Eric Persing, sound designer di Roland, programma i 64 suoni di fabbrica, fra cui Crystal Rhodes."},
+            {"ruolo": "battuta5",
+             "detta": "Prince mette Crystal Rhodes in Damn U, dal disco Love Symbol.",
+             "scritta": "Prince mette Crystal Rhodes in Damn U, dal disco Love Symbol."},
+            {"ruolo": "cta",
+             "detta": "Mandalo a chi passa le ore dentro i menu.",
+             "scritta": "Mandalo a chi passa le ore dentro i menu."},
+            {"ruolo": "chiusura",
+             "detta": "Le slide e le fonti sul profilo Elettrofoni.",
+             "scritta": "Le slide e le fonti sul profilo Elettrofoni."},
+        ],
         # Registrazione: freesound.org/s/58, licenza ricontrollata sulla pagina
         # (Attribution 4.0). Caricata l'11/03/2005, prima di qualunque JD-800
         # software: e' la tastiera vera. Tratto pieno 0:39-0:49, poi sfuma.
@@ -6419,6 +6471,32 @@ SCHEDE = [
             ("OTTOBRE 1988", "«Orinoco Flow» esce come singolo e va al primo posto in Inghilterra."),
         ],
         "reel_cta": "Mandalo a chi ha ancora «Watermark» in cassetta",
+        # Reel parlato (formato 3, prova a schede alterne dal 21/10/2026): le
+        # frasi che Dinamo dice, una per battuta; scritte e verificate (fatti e
+        # stile) da due agenti, stesse fonti della scheda.
+        "reel_voce": [
+            {"ruolo": "battuta1",
+             "detta": "Il pizzicato di Orinoco Flow nasce da un suono di fabbrica del Roland di cinquanta.",
+             "scritta": "Il pizzicato di Orinoco Flow nasce da un suono di fabbrica del Roland D-50."},
+            {"ruolo": "battuta2",
+             "detta": "Il Roland di cinquanta memorizza solo l'attacco degli strumenti veri.",
+             "scritta": "Il Roland D-50 memorizza solo l'attacco degli strumenti veri."},
+            {"ruolo": "battuta3",
+             "detta": "I suoni li scrivono Eric Persing e Adrian Scott: uno si chiama Pizzagogo.",
+             "scritta": "I suoni li scrivono Eric Persing e Adrian Scott: uno si chiama Pizzagogo."},
+            {"ruolo": "battuta4",
+             "detta": "A Watermark di Enya manca un pezzo: nasce sul pizzicato di un di cinquanta.",
+             "scritta": "A Watermark di Enya manca un pezzo: nasce sul pizzicato di un D-50."},
+            {"ruolo": "battuta5",
+             "detta": "Orinoco Flow esce: primo in Inghilterra per tre settimane.",
+             "scritta": "Orinoco Flow esce: primo in Inghilterra per 3 settimane."},
+            {"ruolo": "cta",
+             "detta": "Mandalo a chi ha ancora Watermark in cassetta.",
+             "scritta": "Mandalo a chi ha ancora Watermark in cassetta."},
+            {"ruolo": "chiusura",
+             "detta": "Le slide e le fonti sul profilo Elettrofoni.",
+             "scritta": "Le slide e le fonti sul profilo Elettrofoni."},
+        ],
         "reel_audio": {
             "file": "assets/audio/d50/registrazione.mp3", "inizio": 0,
             "autore": "agerven", "licenza": "CC0",
@@ -6948,6 +7026,32 @@ SCHEDE = [
             ("IL REGISTRATORE IN MANO", "Cortini gira la stanza col registratore, e apre rubinetti e finestre."),
         ],
         "reel_cta": "Mandalo a chi compone in camera d'albergo",
+        # Reel parlato (formato 3, prova a schede alterne dal 21/10/2026): le
+        # frasi che Dinamo dice, una per battuta; scritte e verificate (fatti e
+        # stile) da due agenti, stesse fonti della scheda.
+        "reel_voce": [
+            {"ruolo": "battuta1",
+             "detta": "Un album intero, registrato in hotel con un Roland emme ci duecentodue.",
+             "scritta": "Un album intero, registrato in hotel con un Roland MC-202."},
+            {"ruolo": "battuta2",
+             "detta": "L'emme ci duecentodue, un synth col sequencer dentro, ha due piste e sei pile.",
+             "scritta": "L'MC-202, un synth col sequencer dentro, ha 2 piste e 6 pile."},
+            {"ruolo": "battuta3",
+             "detta": "Ogni nota prende accento e portamento, e la scrivi coi numeri.",
+             "scritta": "Ogni nota prende accento e portamento, e la scrivi coi numeri."},
+            {"ruolo": "battuta4",
+             "detta": "Quell'album lo registra Alessandro Cortini, col duecentodue e un pedale di delay.",
+             "scritta": "Quell'album lo registra Alessandro Cortini, col 202 e un pedale di delay."},
+            {"ruolo": "battuta5",
+             "detta": "Cortini gira la stanza col registratore, e apre rubinetti e finestre.",
+             "scritta": "Cortini gira la stanza col registratore, e apre rubinetti e finestre."},
+            {"ruolo": "cta",
+             "detta": "Mandalo a chi compone in camera d'albergo.",
+             "scritta": "Mandalo a chi compone in camera d'albergo."},
+            {"ruolo": "chiusura",
+             "detta": "Le slide e le fonti sul profilo Elettrofoni.",
+             "scritta": "Le slide e le fonti sul profilo Elettrofoni."},
+        ],
         "reel_audio": {
             # inizio = secondi nel file intero di Commons (4:55). Vedi TRATTO sopra.
             "file": "assets/audio/mc202/registrazione.mp3", "inizio": 0,
@@ -8045,7 +8149,9 @@ def valida_scheda(scheda):
         if tot > MAX_VOCE_TOTALE:
             errori.append(f"reel_voce: {tot} parole in tutto (max {MAX_VOCE_TOTALE})")
         cta = next((f for f in rv if f.get("ruolo") == "cta"), None)
-        if cta and scheda.get("reel_cta") and cta.get("scritta", "").rstrip(".") != scheda["reel_cta"].rstrip("."):
+        # Le virgolette «» della CTA non si dicono: il confronto le ignora.
+        _piana = lambda s: s.replace("«", "").replace("»", "").rstrip(".")
+        if cta and scheda.get("reel_cta") and _piana(cta.get("scritta", "")) != _piana(scheda["reel_cta"]):
             errori.append("reel_voce cta: non è reel_cta")
         ch = next((f for f in rv if f.get("ruolo") == "chiusura"), None)
         if ch and ch.get("scritta") != CHIUSURA_VOCE:

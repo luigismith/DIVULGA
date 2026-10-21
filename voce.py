@@ -213,6 +213,15 @@ NOMI = {
     "Yamaha": "Iamàha",
     "Korg": "Korg",
     "Roland": "Ròland",
+    # Aggiunti il 21/10/2026 per i testi di Omnichord, JD-800 e D-50
+    # (grafie provate con espeak-ng dai verificatori dello stile).
+    "Deep Blue Day": "Dip Blu Dèi",
+    "Lanois": "Lanuà",
+    "Prince": "Prins",
+    "Damn U": "Dam iu",
+    "Watermark": "Uòtermark",
+    "Persing": "Pèrsing",
+    "Orinoco Flow": "Orinoco Flòu",
     "Casio": "Càsio",
     "Vince": "Vins",
     # NON riscrivere Depeche Mode: da solo si capisce, «Depèsc Mod» diventa «The Pesce Mod».
