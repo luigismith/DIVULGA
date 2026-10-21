@@ -187,7 +187,9 @@ def slug_per_media():
         # nel confronto fra formato 1 e formato 2 falserebbe il confronto.
         # «reel2l»: formato 2 col ritmo di lettura (dal 13/10/2026, battute
         # lunghe quanto serve a leggerle invece di 2,6 s fissi).
+        # «reel3»: il reel parlato (dal 21/10/2026, in prova a giorni alterni).
         ruolo = ("speciale" if r.get("fuori_catalogo")
+                 else "reel3" if r.get("formato", 1) == 3
                  else "reel2l" if r.get("formato", 1) == 2 and r.get("ritmo") == "lettura"
                  else "reel2" if r.get("formato", 1) == 2 else "reel")
         if r.get("media_id"):
@@ -239,7 +241,8 @@ def riassunto(dati):
     # Il confronto che conta: formato 1 contro formato 2, stesse metriche.
     print("\nREEL PER FORMATO (mediane):")
     for ruolo, nome in (("reel", "formato 1"), ("reel2", "formato 2"),
-                        ("reel2l", "formato 2, ritmo di lettura")):
+                        ("reel2l", "formato 2, ritmo di lettura"),
+                        ("reel3", "formato 3, parlato")):
         g = [m["insights"] for m in dati["media"] if m.get("ruolo") == ruolo]
         if not g:
             print(f"  {nome}: nessun reel"); continue

@@ -148,6 +148,42 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   lo vede chi non ci segue, e per lui il gesto che conta è l'invio, non
   il commento. Carosello e tavole tengono `cta(scheda)`.
 - Cadenza: OGNI GIORNO alle 18 italiane (dal 26/08/2026).
+- **Reel parlato, «formato 3», IN PROVA** (21/10/2026, il proprietario:
+  «reels parlanti (con voce sintetica) e animati con la mascotte… che
+  racconta (in un angolo) mentre le slide scorrono… BENE con strumenti
+  gratuiti e… IO NON DEVO FARE NIENTE», poi «Vai»). Com'è fatto:
+  `genera_reel_voce.py` (scene del formato 2, Dinamo in basso a sinistra
+  accanto alla targhetta che muove la bocca sulla voce, `dinamo.py`;
+  2,5 s di sola macchina in testa e 3 in coda, in mezzo la macchina
+  sotto la voce), `voce.py` (Kokoro-82M `if_sara`, Apache 2.0, scelta
+  sulle MISURE: Whisper la ricapisce col 15% di errori contro il 27% di
+  Piper; lessico per sigle e nomi; riascolto con faster-whisper medium
+  prima di consegnare il file: nome storpiato = reel non costruito).
+  Le frasi di Dinamo stanno in `reel_voce` della scheda (ruoli
+  battuta1..5, cta, chiusura; «detta» per il motore, «scritta» per il
+  riascolto; ≤80 parole; `valida_scheda` le controlla): una frase un
+  po' più piena dello STESSO fatto della battuta, mai un fatto nuovo,
+  Dinamo asciutto e dà del tu; si scrivono con due verificatori (fatti
+  e stile) come il 21/10. Lezioni dalla prima prova: niente due sigle
+  sillabate di fila; «è» all'orecchio è «e»; 101 = «centouno»; «slide»
+  nel lessico; la battuta 5 non ripete la CTA. **La prova**: due
+  settimane a schede ALTERNE (`reel_voce` solo su omnichord, jd800,
+  d50, mc202; cz101 ce l'ha per la prova sul runner), poi si confrontano
+  `reel3` e `reel2l` in `metriche/` (visione, abbandono, condivisioni) e
+  decide il proprietario. Il reel parlato si costruisce in `reel.yml`
+  (torch CPU + kokoro + faster-whisper da pip, modelli in
+  `actions/cache`), NON in `pubblica.yml`: il post non deve dipendere
+  da 1,9 GB di modelli. Input `prova: <slug>` costruisce sul runner
+  senza pubblicare (artifact). Dubbi aperti: la voce è naturale, non
+  da automa (se serve, effetto in missaggio); «Erasure» esce «erasùre»
+  perché la forma giusta Whisper la boccia; Dinamo copre l'angolo in
+  basso a sinistra della foto; 36 s contro 22.
+- **Il reel serale ha due inneschi** (21/10/2026): la Routine delle
+  19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
+  e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno
+  la Routine è rimasta in coda due ore per un blocco della sessione.
+  `pubblica_reel.py` ora rispetta la finestra 16-23 come il post
+  (`forza` per scavalcarla, dichiarandolo).
 - **Il suono vero della macchina in ogni uscita** (regola del
   proprietario, 17/10/2026: «Dobbiamo lavorare meglio sul suono reale
   dello strumento. Voglio che ci sia in ogni prossimo post/storia/reel. È

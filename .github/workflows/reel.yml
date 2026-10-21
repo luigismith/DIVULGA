@@ -1,21 +1,46 @@
-# ELETTROFONI — pubblica UN reel, a comando. Mai automatico.
+# ELETTROFONI — pubblica UN reel.
 #
 # Il budget video dell'account si consuma anche coi tentativi falliti:
-# per questo non c'e' nessun cron qui e non c'e' nessun retry. Si lancia
-# a mano, si guarda il risultato, e se e' andata male si aspetta un'ora
-# prima di riprovare.
+# per questo non c'e' nessun retry. Lo lancia la Routine (12:30 e 19:30
+# italiane) e, dal 21/10/2026, anche un cron serale di GitHub come rete:
+# quel giorno la Routine e' rimasta in coda due ore per un blocco della
+# sessione e il reel della scheda del giorno e' uscito alle 21:34. Il
+# cron arriva DOPO la Routine apposta (come cron-job.org per il post):
+# se il reel e' gia' uscito, pubblica_reel.py non trova niente da fare.
+# La finestra oraria (16-23 italiane) la controlla pubblica_reel.py, cosi'
+# un cron in ritardo di ore non pubblica di notte.
 #
 # Dal 07/10/2026 il reel e' il «formato 2» (genera_reel.py, reel2.mp4).
-# Per la scheda del giorno il file lo costruisce gia' pubblica.yml; per
-# un rifacimento (una scheda vecchia che ha solo il reel del formato 1)
-# lo si costruisce qui, lo si mette su Pages e solo dopo si pubblica.
+# Dal 21/10/2026, in prova a giorni alterni, il «formato 3»: il reel
+# PARLATO (genera_reel_voce.py, reel3.mp4), per le schede che hanno
+# `reel_voce`. Per la scheda del giorno il formato 2 lo costruisce gia'
+# pubblica.yml; il formato 3 si costruisce QUI (la voce vuole 1,9 GB di
+# modelli e qualche minuto: non deve stare nel percorso del post). Per un
+# rifacimento (una scheda vecchia che ha solo il reel del formato 1) si
+# costruisce qui il formato 2.
 name: Pubblica reel
 
 on:
+  schedule:
+    # 17:55 UTC = 19:55 con l'ora legale, 18:55 con quella solare: sempre
+    # dopo la Routine delle 19:30 e dentro la finestra. Il cron senza
+    # input vale «--prossimo»: solo la scheda senza nessun reel, mai un
+    # rifacimento.
+    - cron: '55 17 * * *'
   workflow_dispatch:
     inputs:
       slug:
         description: 'Slug della scheda; vuoto = la piu vecchia senza reel; --rifacimento = la piu vecchia senza reel del formato 2'
+        required: false
+        default: ''
+        type: string
+      forza:
+        description: 'Scavalca la finestra oraria (solo chi sa cosa fa)'
+        required: false
+        default: false
+        type: boolean
+      prova:
+        description: 'Slug di una scheda con reel_voce: costruisce il reel parlato sul runner SENZA pubblicare e lo carica come artifact (regola 10: un ambiente diverso si prova)'
         required: false
         default: ''
         type: string
@@ -52,11 +77,23 @@ jobs:
         run: |
           # Niente pipe: se lo script fallisce, il passo deve fallire con
           # lui (con `| tail -1` uno slug vuoto sembrava «niente da fare»).
-          SLUG=$(python pubblica_reel.py --quale "${{ inputs.slug || '--prossimo' }}")
+          if [ -n "${{ inputs.prova }}" ]; then
+            SLUG="${{ inputs.prova }}"
+            echo "prova=1" >> "$GITHUB_OUTPUT"
+          else
+            SLUG=$(python pubblica_reel.py --quale "${{ inputs.slug || '--prossimo' }}")
+          fi
           echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
           echo "scheda: '${SLUG}'"
-          if [ -n "$SLUG" ] && [ ! -f "docs/tavole/$SLUG/reel2.mp4" ]; then
-            echo "costruire=1" >> "$GITHUB_OUTPUT"
+          if [ -n "$SLUG" ]; then
+            FILE=$(python pubblica_reel.py --file "$SLUG")
+            echo "file: $FILE"
+            if [ "$FILE" = "reel3.mp4" ]; then
+              echo "voce=1" >> "$GITHUB_OUTPUT"
+            fi
+            if [ -n "${{ inputs.prova }}" ] || [ ! -f "docs/tavole/$SLUG/$FILE" ]; then
+              echo "costruire=1" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       # Solo se il file manca. Qui ffmpeg NON e' facoltativo: senza il
@@ -81,8 +118,28 @@ jobs:
         if: steps.quale.outputs.costruire == '1'
         timeout-minutes: 10
         run: python -m playwright install --with-deps chromium
+
+      # La voce di Dinamo: Kokoro (torch CPU) per la sintesi, faster-whisper
+      # per il riascolto. Tutto pip, niente apt (espeak-ng arriva da
+      # espeakng-loader). I modelli (~1,9 GB) stanno nella cache di
+      # GitHub fra una corsa e l'altra: senza, ogni reel li riscarica.
+      - name: Voce, modelli in cache
+        if: steps.quale.outputs.voce == '1'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/elettrofoni/voce
+          key: voce-${{ hashFiles('voce.py') }}
+          restore-keys: voce-
+      - name: Voce, dipendenze
+        if: steps.quale.outputs.voce == '1'
+        timeout-minutes: 12
+        run: |
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q kokoro espeakng-loader phonemizer-fork faster-whisper numpy
+          python -c "import kokoro, faster_whisper; print('voce: pacchetti ok')"
+
       - name: Costruisci il reel del formato 2
-        if: steps.quale.outputs.costruire == '1'
+        if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.voce != '1'
         timeout-minutes: 8
         run: |
           SLUG="${{ steps.quale.outputs.slug }}"
@@ -100,25 +157,55 @@ jobs:
           done
           echo "push fallito"; exit 1
 
+      - name: Costruisci il reel parlato (formato 3)
+        if: steps.quale.outputs.voce == '1'
+        timeout-minutes: 20
+        run: |
+          SLUG="${{ steps.quale.outputs.slug }}"
+          if [ "${{ steps.quale.outputs.prova }}" = "1" ]; then
+            # Prova sul runner: fuori da docs/, niente commit, niente Pages.
+            python genera_reel_voce.py "$SLUG" "prova_reel/$SLUG"
+            exit 0
+          fi
+          python genera_reel_voce.py "$SLUG"
+          git add "docs/tavole/$SLUG/reel3.mp4"
+          git commit -m "reel: formato 3 (parlato) per $SLUG"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "push respinto, mi riallineo (tentativo $i)"
+            sleep $(( i * 3 + RANDOM % 5 ))
+          done
+          echo "push fallito"; exit 1
+      - name: Carica la prova
+        if: steps.quale.outputs.prova == '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: reel-parlato-${{ steps.quale.outputs.slug }}
+          path: prova_reel/
+          if-no-files-found: error
+
       # Il video deve essere online PRIMA di chiamare l'API (Instagram lo
       # scarica da un URL pubblico). Stesso schema di pubblica.yml.
       - name: Configura Pages
-        if: steps.quale.outputs.costruire == '1'
+        if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1'
         uses: actions/configure-pages@v5
         with:
           enablement: true
       - uses: actions/upload-pages-artifact@v3
-        if: steps.quale.outputs.costruire == '1'
+        if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1'
         with:
           path: docs
       - name: Deploy Pages
-        if: steps.quale.outputs.costruire == '1'
+        if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1'
         uses: actions/deploy-pages@v4
 
       - name: Pubblica il reel
-        if: steps.quale.outputs.slug != ''
+        if: steps.quale.outputs.slug != '' && steps.quale.outputs.prova != '1'
         env:
           STATE_KEY: ${{ secrets.STATE_KEY }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Solo chi lancia a mano e spunta la casella scavalca l'orario:
+          # il cron e la Routine non lo fanno mai (vedi pubblica.py).
+          FORZA_ORARIO: ${{ inputs.forza && '1' || '0' }}
         run: python pubblica_reel.py "${{ steps.quale.outputs.slug }}"

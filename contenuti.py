@@ -85,6 +85,13 @@ MAX_REEL_GANCIO = 60
 MAX_REEL_BATTUTA = 75
 MAX_REEL_KICK = 28
 MAX_REEL_CTA = 50
+# Reel parlato (formato 3, in prova dal 21/10/2026): quello che Dinamo
+# DICE per ogni battuta (`reel_voce`). A 2,6 parole al secondo 80 parole
+# sono 30 s di voce, il tetto perché il reel resti sotto i 40 s.
+RUOLI_VOCE = ("battuta1", "battuta2", "battuta3", "battuta4", "battuta5", "cta", "chiusura")
+MAX_VOCE_PAROLE = 18        # per frase (le verifiche chiedono 8-16)
+MAX_VOCE_TOTALE = 80
+CHIUSURA_VOCE = "Le slide e le fonti sul profilo Elettrofoni."
 
 SCHEDE = [
     {
@@ -5241,6 +5248,32 @@ SCHEDE = [
             ("VINCE CLARKE · ERASURE", "Synth dei poveri, dicono. Vince Clarke degli Erasure ne tiene 4."),
         ],
         "reel_cta": "Mandalo a chi lo chiama synth dei poveri",
+        # Reel parlato (formato 3, prova del 21/10/2026): le frasi che
+        # Dinamo dice, una per battuta. Scheda già uscita: serve solo a
+        # provare la costruzione sul runner e a rifare il reel se si decide.
+        "reel_voce": [
+            {"ruolo": "battuta1",
+             "detta": "Il Casio ci zeta centouno lo fa la ditta delle calcolatrici, contro il di ics sette di Yamaha.",
+             "scritta": "Il Casio CZ-101 lo fa la ditta delle calcolatrici, contro il DX7 di Yamaha."},
+            {"ruolo": "battuta2",
+             "detta": "Il Casio costa quattrocento novantacinque dollari, il di ics sette quasi duemila.",
+             "scritta": "Il Casio costa 495 dollari, il DX7 quasi 2.000."},
+            {"ruolo": "battuta3",
+             "detta": "La sintesi effe emme ha un brevetto di Stanford, così Casio inventa la distorsione di fase.",
+             "scritta": "La sintesi FM ha un brevetto di Stanford, così Casio inventa la distorsione di fase."},
+            {"ruolo": "battuta4",
+             "detta": "Il Casio va a sei pile torcia: te lo porti in camera.",
+             "scritta": "Il Casio va a 6 pile torcia: te lo porti in camera."},
+            {"ruolo": "battuta5",
+             "detta": "Synth dei poveri, dicono. Vince Clarke degli Erasure ne tiene quattro.",
+             "scritta": "Synth dei poveri, dicono. Vince Clarke degli Erasure ne tiene 4."},
+            {"ruolo": "cta",
+             "detta": "Mandalo a chi lo chiama synth dei poveri.",
+             "scritta": "Mandalo a chi lo chiama synth dei poveri."},
+            {"ruolo": "chiusura",
+             "detta": "Le slide e le fonti sul profilo Elettrofoni.",
+             "scritta": "Le slide e le fonti sul profilo Elettrofoni."},
+        ],
         # Registrazione della macchina vera (17/10/2026, regola del proprietario:
         # il suono vero in ogni uscita). Licenza verificata sulla pagina;
         # è un suono di rumori, non un preset: «A Casio CZ-101, abused to produce interesting sounding sounds and noises».
@@ -7941,6 +7974,14 @@ def primo_commento(scheda):
     return "In questa scheda: " + " ".join(tags)
 
 
+def parlato(scheda):
+    """Vero se il reel della scheda è quello PARLATO (formato 3): ha le
+    frasi di Dinamo (`reel_voce`) e la registrazione vera sotto. In prova
+    dal 21/10/2026, a schede alterne: `reel_voce` lo hanno solo quelle
+    scelte per la prova, le altre escono nel formato 2."""
+    return bool(scheda.get("reel_voce")) and bool(scheda.get("reel_audio"))
+
+
 def valida_scheda(scheda):
     """Controlli automatici: una scheda fuori misura viene rifiutata QUI,
     in fase di scrittura, non davanti all'errore dell'API."""
@@ -7979,6 +8020,36 @@ def valida_scheda(scheda):
             errori.append("manca reel_cta")
     elif len(scheda["reel_cta"]) > MAX_REEL_CTA:
         errori.append(f"reel_cta {len(scheda['reel_cta'])} caratteri (max {MAX_REEL_CTA})")
+    # Il reel parlato: le frasi di Dinamo, una per battuta più CTA e
+    # chiusura, con la versione «detta» (per il motore) e «scritta» (per il
+    # riascolto con Whisper). Senza registrazione vera non ha senso: la
+    # voce parla SOPRA la macchina, non al posto della sigla.
+    rv = scheda.get("reel_voce")
+    if rv:
+        if not scheda.get("reel_audio"):
+            errori.append("reel_voce senza reel_audio: il reel parlato vuole la macchina vera")
+        ruoli = [f.get("ruolo") for f in rv]
+        if ruoli != list(RUOLI_VOCE):
+            errori.append(f"reel_voce: ruoli {ruoli}, attesi {list(RUOLI_VOCE)}")
+        tot = 0
+        for f in rv:
+            for k in ("detta", "scritta"):
+                if not f.get(k):
+                    errori.append(f"reel_voce {f.get('ruolo')}: manca «{k}»")
+            n = len((f.get("scritta") or "").split())
+            tot += n
+            if n > MAX_VOCE_PAROLE:
+                errori.append(f"reel_voce {f.get('ruolo')}: {n} parole (max {MAX_VOCE_PAROLE})")
+            if any(c.isdigit() for c in f.get("detta") or ""):
+                errori.append(f"reel_voce {f.get('ruolo')}: cifre nella versione detta")
+        if tot > MAX_VOCE_TOTALE:
+            errori.append(f"reel_voce: {tot} parole in tutto (max {MAX_VOCE_TOTALE})")
+        cta = next((f for f in rv if f.get("ruolo") == "cta"), None)
+        if cta and scheda.get("reel_cta") and cta.get("scritta", "").rstrip(".") != scheda["reel_cta"].rstrip("."):
+            errori.append("reel_voce cta: non è reel_cta")
+        ch = next((f for f in rv if f.get("ruolo") == "chiusura"), None)
+        if ch and ch.get("scritta") != CHIUSURA_VOCE:
+            errori.append(f"reel_voce chiusura: deve essere «{CHIUSURA_VOCE}»")
     a = scheda.get("reel_audio")
     if a:
         # «url» e' la pagina della registrazione (Commons o Freesound): dal

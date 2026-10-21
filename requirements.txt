@@ -3,3 +3,5 @@ cryptography>=42
 playwright>=1.45
 # foto del sito (genera_archivio.py): ridimensiona e raddrizza con l'EXIF
 Pillow>=10
+# reel parlato (genera_reel_voce.py, dinamo.py): l'inviluppo della voce
+numpy>=1.26

@@ -27,6 +27,24 @@ import genera_reel
 # I reel usciti prima del 07/10/2026 non hanno il campo «formato»: sono
 # tutti del formato 1 (sette scene di testo, 28 secondi).
 FORMATO = 2
+# Dal 21/10/2026, in prova: il formato 3 è il reel PARLATO (Dinamo con la
+# voce sintetica, genera_reel_voce.py, file reel3.mp4). Lo hanno le schede
+# con `reel_voce`, a giorni alterni, così le metriche confrontano i due.
+FORMATO_VOCE = 3
+
+
+def formato_di(scheda):
+    return FORMATO_VOCE if contenuti.parlato(scheda) else FORMATO
+
+
+def file_di(scheda):
+    """Il nome del file su Pages: reel3.mp4 per il parlato, reel2.mp4 per
+    il formato 2. L'import è qui dentro perché genera_reel_voce tira
+    numpy, che al publisher non serve."""
+    if contenuti.parlato(scheda):
+        import genera_reel_voce
+        return genera_reel_voce.NOME_FILE
+    return genera_reel.NOME_FILE
 
 
 def gia_pubblicati(stato, formato=None):
@@ -51,9 +69,20 @@ def main(slug):
 
     stato = P.leggi_stato()
 
-    # Idempotenza: come per i post, sta nello stato, non nell'API.
-    if slug in gia_pubblicati(stato, FORMATO):
-        print(f"[stop] il reel di '{slug}' (formato {FORMATO}) risulta già pubblicato: non lo rifaccio.")
+    # La finestra oraria vale anche qui (21/10/2026): la routine delle
+    # 19:30 era rimasta in coda due ore per un blocco della sessione, e un
+    # cron di GitHub può arrivare anche di notte. Si scavalca solo
+    # dichiarandolo (input `forza`), come per il post.
+    if not P.dentro_la_finestra():
+        print(f"[stop] fuori dalla finestra {P.FINESTRA_ORE[0]}:00-{P.FINESTRA_ORE[1]}:00 "
+              "italiane: il reel resta da fare.")
+        return 0
+
+    formato = formato_di(scheda) if speciale is None else FORMATO
+    # Idempotenza: come per i post, sta nello stato, non nell'API. Un reel
+    # del formato 2 o 3 vale lo stesso: uno per scheda.
+    if slug in gia_pubblicati(stato, FORMATO) or slug in gia_pubblicati(stato, FORMATO_VOCE):
+        print(f"[stop] il reel di '{slug}' (formato 2 o 3) risulta già pubblicato: non lo rifaccio.")
         return 0
     # Un reel ha senso solo per una scheda già uscita nel feed.
     if speciale is None and slug not in {p["slug"] for p in stato["pubblicati"]}:
@@ -68,7 +97,9 @@ def main(slug):
     if rifacimento:
         print(f"[reel] '{slug}' ha già un reel del formato 1: questo è il rifacimento")
 
-    url = f"{P.BASE_PAGES}/tavole/{slug}/{genera_reel.NOME_FILE}"
+    nome_file = genera_reel.NOME_FILE if speciale is not None else file_di(scheda)
+    print(f"[reel] formato {formato}, file {nome_file}")
+    url = f"{P.BASE_PAGES}/tavole/{slug}/{nome_file}"
     P.verifica_immagini_online([url])          # HEAD: accetta anche video/
 
     token, _ = token_ig.token_corrente()
@@ -156,11 +187,11 @@ def main(slug):
 
     stato.setdefault("reel", []).append({
         "slug": slug,
-        "formato": FORMATO,
+        "formato": formato,
         # Dal 13/10/2026 le battute durano quanto serve a leggerle (i
         # commenti dicevano «troppo veloci»): `metriche.py` li tiene
         # separati dai reel a 2,6 s fissi per poterli confrontare.
-        "ritmo": genera_reel.RITMO,
+        "ritmo": "voce" if formato == FORMATO_VOCE else genera_reel.RITMO,
         **({"fuori_catalogo": True} if speciale is not None else {}),
         "quando": dt.datetime.now(dt.timezone.utc).isoformat(),
         "media_id": media_id,
@@ -184,7 +215,7 @@ def prossimo_reel(stato=None):
 def prossimo_rifacimento(stato=None):
     """La scheda piu' vecchia che ha solo il reel del formato 1."""
     stato = stato or P.leggi_stato()
-    nuovi = gia_pubblicati(stato, FORMATO)
+    nuovi = gia_pubblicati(stato, FORMATO) | gia_pubblicati(stato, FORMATO_VOCE)
     for p in stato["pubblicati"]:
         if p["slug"] not in nuovi:
             return p["slug"]
@@ -193,6 +224,12 @@ def prossimo_rifacimento(stato=None):
 
 if __name__ == "__main__":
     slug = sys.argv[1] if len(sys.argv) > 1 else "--prossimo"
+    if slug == "--file":
+        # Per reel.yml: quale file serve a questa scheda (reel3.mp4 se
+        # parlata, reel2.mp4 se no), senza pubblicare.
+        s = next((x for x in contenuti.SCHEDE if x["slug"] == sys.argv[2]), None)
+        print(genera_reel.NOME_FILE if s is None else file_di(s))
+        raise SystemExit(0)
     if slug == "--quale":
         # Per reel.yml: dice quale scheda toccherebbe, senza pubblicare.
         modo = sys.argv[2] if len(sys.argv) > 2 else "--prossimo"
