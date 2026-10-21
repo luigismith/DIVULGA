@@ -443,6 +443,14 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   Facebook Login e una Pagina collegata (solo Sound Collection e suoni
   originali, non i brani in classifica). Non è un permesso da chiedere,
   è un'altra autenticazione.
+  **Deciso il 21/10/2026: niente brani dei dischi, nemmeno dall'app.**
+  Il proprietario ha chiesto se «piccole porzioni» di brani protetti si
+  possono usare (no: nessuna soglia di secondi, art. 70 l. 633/1941 solo
+  per citazione/critica, Corte UE «Pelham» 2019 anche 2 s di un disco
+  sono protetti, e Instagram riconosce l'audio in automatico e silenzia
+  o blocca) e se mettere il brano del «Da ascoltare» dalla libreria di
+  Instagram nella storia, a mano. Risposta: «va bene la registrazione
+  libera». Non riproporlo.
   Se il reel manca si ripiega sul `story.jpg` muto.
   La storia resta facoltativa per scelta — se fallisce si annota nel log
   e non si blocca niente (il post è la missione, la story il megafono).
