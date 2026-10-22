@@ -68,7 +68,16 @@ import wave
 import numpy as np
 
 MOTORE = "kokoro"            # hexgrad/Kokoro-82M, Apache 2.0
-VOCE = os.environ.get("ELETTROFONI_VOCE", "if_sara")   # if_sara: WER 0,150; im_nicola: 0,217
+# LA VOCE DI DINAMO (scelta del proprietario, 22/10/2026). La prima era
+# if_sara, la più intelligibile sulle misure; il proprietario l'ha sentita
+# nel reel di prova: «la voce è troppo umana e femminile». Fra quattro
+# campioni maschili con un trattamento da automa ha scelto il numero 1:
+# im_nicola, abbassata del 10% (circa due semitoni) con un'eco di 6 ms che
+# la rende metallica senza coprirla. Whisper la ricapisce come le altre
+# (WER 0,21 sulla frase di prova, nessun nome perso).
+VOCE = os.environ.get("ELETTROFONI_VOCE", "im_nicola")   # if_sara: WER 0,150; im_nicola: 0,217
+TRATTAMENTO = ("asetrate={sr}*0.90,aresample={sr},atempo=1.111,"
+               "aecho=0.6:0.7:6:0.45,highpass=f=150,lowpass=f=6000")
 REPO_MODELLO = "hexgrad/Kokoro-82M"
 FILE_MODELLO = "kokoro-v1_0.pth"
 SR = 24000                   # Kokoro esce a 24 kHz mono
@@ -522,7 +531,32 @@ def sintetizza(testo, wav_out, velocita=1.0):
         w.setsampwidth(2)
         w.setframerate(SR)
         w.writeframes((a * 32767).astype("<i2").tobytes())
-    return len(a) / SR
+    if TRATTAMENTO:
+        _tratta(wav_out)
+    with wave.open(str(wav_out)) as w:
+        return w.getnframes() / w.getframerate()
+
+
+def _ffmpeg():
+    import shutil
+    if shutil.which("ffmpeg"):
+        return "ffmpeg"
+    import imageio_ffmpeg
+    return imageio_ffmpeg.get_ffmpeg_exe()
+
+
+def _tratta(wav):
+    """Il trattamento da automa, applicato al file prima del riascolto: Whisper
+    deve giudicare la voce che si sente nel reel, non quella pulita."""
+    import subprocess
+    tmp = wav.with_suffix(".grezzo.wav")
+    wav.replace(tmp)
+    r = subprocess.run([_ffmpeg(), "-y", "-loglevel", "error", "-i", str(tmp),
+                        "-af", TRATTAMENTO.format(sr=SR), "-ar", str(SR), "-ac", "1",
+                        "-c:a", "pcm_s16le", str(wav)], capture_output=True, text=True)
+    tmp.unlink()
+    if r.returncode != 0:
+        raise RuntimeError("trattamento della voce fallito: " + r.stderr[-300:])
 
 
 # ---------------------------------------------------------- verifica ---

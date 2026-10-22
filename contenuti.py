@@ -8078,12 +8078,12 @@ def primo_commento(scheda):
     return "In questa scheda: " + " ".join(tags)
 
 
-# Interruttore del reel parlato. SPENTO dal 22/10/2026: il proprietario ha
-# sentito la prima voce («la voce è troppo umana e femminile») e deve
-# sceglierne una nuova fra quattro campioni maschili. Finché non sceglie,
-# le schede con `reel_voce` escono nel formato 2: una voce che non gli
-# piace non va pubblicata.
-PARLATO_ATTIVO = False
+# Interruttore del reel parlato. Spento il 22/10/2026 finché il
+# proprietario non ha scelto la voce nuova («la voce è troppo umana e
+# femminile»), riacceso lo stesso giorno quando ha scelto il campione 1
+# (voce.py, VOCE e TRATTAMENTO). Se un giorno la voce va cambiata di nuovo,
+# si spegne qui: le schede con `reel_voce` escono nel formato 2.
+PARLATO_ATTIVO = True
 
 
 def parlato(scheda):

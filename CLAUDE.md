@@ -178,6 +178,13 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   da automa (se serve, effetto in missaggio); «Erasure» esce «erasùre»
   perché la forma giusta Whisper la boccia; Dinamo copre l'angolo in
   basso a sinistra della foto; 36 s contro 22.
+  **La voce l'ha scelta il proprietario il 22/10/2026**: la prima
+  (if_sara) era «troppo umana e femminile»; fra quattro campioni maschili
+  trattati da automa ha scelto il n. 1: `im_nicola` abbassata del 10% con
+  un'eco di 6 ms (`VOCE` e `TRATTAMENTO` in voce.py; il riascolto con
+  Whisper si fa sulla voce trattata). Per cambiarla di nuovo si spegne
+  `PARLATO_ATTIVO` in contenuti.py e si fa scegliere su campioni: una
+  voce che non gli piace non esce.
 - **Il reel serale ha due inneschi** (21/10/2026): la Routine delle
   19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
   e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno
