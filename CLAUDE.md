@@ -189,8 +189,9 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
   e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno
   la Routine è rimasta in coda due ore per un blocco della sessione.
-  `pubblica_reel.py` ora rispetta la finestra 16-23 come il post
-  (`forza` per scavalcarla, dichiarandolo).
+  `pubblica_reel.py` ora ha una finestra sua, 12-23 (`FINESTRA_REEL`):
+  dalle 12 per i rifacimenti delle 12:30, che con la finestra del post
+  (16-23) si sarebbero fermati in silenzio (`forza` per scavalcarla).
 - **Il suono vero della macchina in ogni uscita** (regola del
   proprietario, 17/10/2026: «Dobbiamo lavorare meglio sul suono reale
   dello strumento. Voglio che ci sia in ogni prossimo post/storia/reel. È

@@ -31,6 +31,7 @@ FORMATO = 2
 # voce sintetica, genera_reel_voce.py, file reel3.mp4). Lo hanno le schede
 # con `reel_voce`, a giorni alterni, così le metriche confrontano i due.
 FORMATO_VOCE = 3
+FINESTRA_REEL = (12, 23)   # ore italiane: rifacimenti alle 12:30, reel della scheda la sera
 
 
 def formato_di(scheda):
@@ -73,8 +74,13 @@ def main(slug):
     # 19:30 era rimasta in coda due ore per un blocco della sessione, e un
     # cron di GitHub può arrivare anche di notte. Si scavalca solo
     # dichiarandolo (input `forza`), come per il post.
-    if not P.dentro_la_finestra():
-        print(f"[stop] fuori dalla finestra {P.FINESTRA_ORE[0]}:00-{P.FINESTRA_ORE[1]}:00 "
+    # La finestra dei reel parte alle 12, non alle 16: i rifacimenti delle
+    # 12:30 li ha approvati il proprietario il 07/10/2026 (accorgimento del
+    # 22/10, quando la finestra del post li avrebbe fermati in silenzio).
+    import os
+    ora = P.dt.datetime.now(P.ROMA).hour
+    if os.environ.get("FORZA_ORARIO") != "1" and not FINESTRA_REEL[0] <= ora < FINESTRA_REEL[1]:
+        print(f"[stop] fuori dalla finestra dei reel {FINESTRA_REEL[0]}:00-{FINESTRA_REEL[1]}:00 "
               "italiane: il reel resta da fare.")
         return 0
 
