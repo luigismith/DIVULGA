@@ -8078,12 +8078,20 @@ def primo_commento(scheda):
     return "In questa scheda: " + " ".join(tags)
 
 
+# Interruttore del reel parlato. SPENTO dal 22/10/2026: il proprietario ha
+# sentito la prima voce («la voce è troppo umana e femminile») e deve
+# sceglierne una nuova fra quattro campioni maschili. Finché non sceglie,
+# le schede con `reel_voce` escono nel formato 2: una voce che non gli
+# piace non va pubblicata.
+PARLATO_ATTIVO = False
+
+
 def parlato(scheda):
     """Vero se il reel della scheda è quello PARLATO (formato 3): ha le
     frasi di Dinamo (`reel_voce`) e la registrazione vera sotto. In prova
     dal 21/10/2026, a schede alterne: `reel_voce` lo hanno solo quelle
     scelte per la prova, le altre escono nel formato 2."""
-    return bool(scheda.get("reel_voce")) and bool(scheda.get("reel_audio"))
+    return PARLATO_ATTIVO and bool(scheda.get("reel_voce")) and bool(scheda.get("reel_audio"))
 
 
 def valida_scheda(scheda):

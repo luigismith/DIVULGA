@@ -68,7 +68,7 @@ import wave
 import numpy as np
 
 MOTORE = "kokoro"            # hexgrad/Kokoro-82M, Apache 2.0
-VOCE = "if_sara"             # if_sara: WER 0,150; im_nicola: 0,217
+VOCE = os.environ.get("ELETTROFONI_VOCE", "if_sara")   # if_sara: WER 0,150; im_nicola: 0,217
 REPO_MODELLO = "hexgrad/Kokoro-82M"
 FILE_MODELLO = "kokoro-v1_0.pth"
 SR = 24000                   # Kokoro esce a 24 kHz mono
