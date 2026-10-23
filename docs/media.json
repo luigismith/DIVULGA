@@ -68,6 +68,10 @@
    "file": "tavole/oberheim4voice/reel2.jpg",
    "firma": "84df21b03ed9bffb-1"
   },
+  "omnichord": {
+   "file": "tavole/omnichord/reel2.jpg",
+   "firma": "083d596bf69b21a3-1"
+  },
   "ondes": {
    "file": "tavole/ondes/reel2.jpg",
    "firma": "877d2e99fb3cd557-1"
@@ -689,6 +693,26 @@
     ]
    },
    "firma": "f9faa3733e2985bb-320-640-1280-1"
+  },
+  "omnichord": {
+   "1280": "foto/omnichord-1280.jpg",
+   "320": "foto/omnichord-320.jpg",
+   "640": "foto/omnichord-640.jpg",
+   "dimensioni": {
+    "1280": [
+     960,
+     447
+    ],
+    "320": [
+     320,
+     149
+    ],
+    "640": [
+     640,
+     298
+    ]
+   },
+   "firma": "7b316faebf7ee4ee-320-640-1280-1"
   },
   "ondes": {
    "1280": "foto/ondes-1280.jpg",
@@ -1406,6 +1430,11 @@
    "file": "suoni/ms20.mp3",
    "firma": "e31eb05c8340cc51-0-45-1",
    "secondi": 45
+  },
+  "omnichord": {
+   "file": "suoni/omnichord.mp3",
+   "firma": "651869fedd32cb75-0-45-1",
+   "secondi": 16.0
   },
   "optigan": {
    "file": "suoni/optigan.mp3",
