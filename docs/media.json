@@ -1,5 +1,9 @@
 {
  "copertine": {
+  "ans": {
+   "file": "tavole/ans/reel2.jpg",
+   "firma": "0780239005499560-1"
+  },
   "arp2600": {
    "file": "tavole/arp2600/reel2.jpg",
    "firma": "f4056dc85c554630-1"
@@ -138,6 +142,26 @@
   }
  },
  "foto": {
+  "ans": {
+   "1280": "foto/ans-1280.jpg",
+   "320": "foto/ans-320.jpg",
+   "640": "foto/ans-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     962
+    ],
+    "320": [
+     320,
+     241
+    ],
+    "640": [
+     640,
+     481
+    ]
+   },
+   "firma": "9923daf72b72e2c5-320-640-1280-1"
+  },
   "arp2600": {
    "1280": "foto/arp2600-1280.jpg",
    "320": "foto/arp2600-320.jpg",
@@ -1380,6 +1404,11 @@
   }
  },
  "suoni": {
+  "ans": {
+   "file": "suoni/ans.mp3",
+   "firma": "a9378aaf4aab7058-0-45-1",
+   "secondi": 45
+  },
   "arp2600": {
    "file": "suoni/arp2600.mp3",
    "firma": "e0dd51a83e99d434-0-45-1",
