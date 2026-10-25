@@ -40,6 +40,10 @@
    "file": "tavole/hammond/reel2.jpg",
    "firma": "a3e84269c49ea6c0-1"
   },
+  "jd800": {
+   "file": "tavole/jd800/reel2.jpg",
+   "firma": "5cce9b2294fb5a81-1"
+  },
   "juno106": {
    "file": "tavole/juno106/reel2.jpg",
    "firma": "28367bb1da7206de-1"
@@ -501,6 +505,26 @@
     ]
    },
    "firma": "18ca44ccd1f7850f-320-640-1280-1"
+  },
+  "jd800": {
+   "1280": "foto/jd800-1280.jpg",
+   "320": "foto/jd800-320.jpg",
+   "640": "foto/jd800-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     720
+    ],
+    "320": [
+     320,
+     180
+    ],
+    "640": [
+     640,
+     360
+    ]
+   },
+   "firma": "9700473e4a93b69d-320-640-1280-1"
   },
   "juno106": {
    "1280": "foto/juno106-1280.jpg",
@@ -1433,6 +1457,11 @@
    "file": "suoni/hammond.mp3",
    "firma": "4fe136ec7be862ec-0-45-1",
    "secondi": 23.0
+  },
+  "jd800": {
+   "file": "suoni/jd800.mp3",
+   "firma": "400b023227a08c29-0-45-1",
+   "secondi": 44.0
   },
   "juno106": {
    "file": "suoni/juno106.mp3",
