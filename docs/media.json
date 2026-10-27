@@ -28,6 +28,10 @@
    "file": "tavole/cz101/reel2.jpg",
    "firma": "a88e88866a82cd23-1"
   },
+  "d50": {
+   "file": "tavole/d50/reel2.jpg",
+   "firma": "8b612de0d6cc5bb7-1"
+  },
   "dx7": {
    "file": "tavole/dx7/reel2.jpg",
    "firma": "a3d7f50563ded981-1"
@@ -349,6 +353,26 @@
     ]
    },
    "firma": "ee6be6576907ee33-320-640-1280-1"
+  },
+  "d50": {
+   "1280": "foto/d50-1280.jpg",
+   "320": "foto/d50-320.jpg",
+   "640": "foto/d50-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     851
+    ],
+    "320": [
+     320,
+     213
+    ],
+    "640": [
+     640,
+     426
+    ]
+   },
+   "firma": "523d3845fccce6c1-320-640-1280-1"
   },
   "dmx": {
    "1280": "foto/dmx-1280.jpg",
@@ -1470,6 +1494,11 @@
   "cz101": {
    "file": "suoni/cz101.mp3",
    "firma": "ea6164040a64e202-0-45-1",
+   "secondi": 45
+  },
+  "d50": {
+   "file": "suoni/d50.mp3",
+   "firma": "a7234b59e71916fb-0-45-1",
    "secondi": 45
   },
   "fairlight": {
