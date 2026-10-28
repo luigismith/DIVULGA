@@ -416,6 +416,13 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   lo stesso: cron-job.org ha il fuso Europe/Rome). Il cron di `reel.yml`
   segue: `55 18` con la solare, `55 17` con la legale. **Il 28/03/2027**
   si torna all'ora legale e vanno rimessi tutti e quattro.
+  Le Routine invece, dal 28/10/2026, hanno il fuso scritto nel cron
+  (`CRON_TZ=Europe/Rome`): prima erano in UTC e con l'ora solare la rete
+  delle 18:20 sarebbe partita alle 17:20, PRIMA di cron-job.org, e
+  avrebbe pubblicato lei. Una Routine nuova si scrive sempre così.
+  Il rifornimento del martedì è fallito due volte di fila (20 e 27/10)
+  per «USAGE_LIMIT_REACHED»: non è un errore del codice, è il limite
+  d'uso dell'account, e la coda la tiene d'occhio la sentinella.
 - **L'innesco vero non e' il cron di GitHub.** Il 26, 27 e 28/08/2026 ha
   scartato passate serali (il 27 tutte e tre). Ora ci sono tre inneschi
   indipendenti, in ordine di affidabilita':
