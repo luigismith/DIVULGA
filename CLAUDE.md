@@ -763,6 +763,18 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   delle prove in locale) e in `reel.yml` installazione, Chromium e
   montaggio sono tre passi col loro tetto. Il fallimento è avvenuto
   PRIMA dell'API: niente pubblicato, budget video intatto.
+- **Nel gruppo «pubblicazione» resta in attesa UN run solo** (27/10/2026).
+  `pubblica.yml`, `reel.yml` e `rispondi.yml` condividono il gruppo di
+  concorrenza: se uno resta acceso, l'ultimo arrivato in coda scalza quello
+  prima. La passata delle 21:40 si è piantata 6 ore sulle dipendenze (senza
+  `timeout-minutes` il tetto di GitHub è 6 ore), il reel del D-50 è finito in
+  coda ed è stato annullato dalla passata successiva: nessun errore, solo
+  «cancelled». Ora i job hanno un tetto (40 e 60 minuti) e i passi lenti il
+  loro. Un reel che manca si guarda prima fra gli annullati.
+- **Gli scarichi di un rifornimento vanno in UN run** (28/10/2026):
+  `scarica-foto.yml` con `lista` (un file del repo con una riga «dest url»
+  per file) scarica tutto e fa un commit solo. Le foto che servono stanno
+  ora anche su `thumb.wikimedia.org`, l'host che l'API restituisce.
 - **Mai lanciare commit in raffica mentre può partire una pubblicazione**
   (07/10/2026). Tredici `scarica-foto.yml` in parallelo hanno fatto
   respingere il push dello stato a `pubblica_reel.py`: reel uscito, stato
