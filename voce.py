@@ -237,6 +237,9 @@ NOMI = {
     "Kraftwerk": "Kràftverk",
     "Vangelis": "Vanghèlis",
     "Stevie Wonder": "Stìvi Uònder",
+    # 28/10/2026, Volca Keys: «Kìis» Whisper lo sente «Case», «Kis» «Kiss»;
+    # «Chiis» torna «Keys» (provato in locale sulla voce trattata).
+    "Keys": "Chiis",
     "Herbie Hancock": "Hèrbi Hàncoc",
     "Bob Moog": "Bob Mùg",
     "Oberheim": "Òberhaim",
