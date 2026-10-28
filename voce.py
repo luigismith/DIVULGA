@@ -238,7 +238,10 @@ NOMI = {
     "Vangelis": "Vanghèlis",
     "Stevie Wonder": "Stìvi Uònder",
     # 28/10/2026, Volca Keys: «Kìis» Whisper lo sente «Case», «Kis» «Kiss»;
-    # «Chiis» torna «Keys» (provato in locale sulla voce trattata).
+    # «Chiis» torna «Keys» nella frase da sola (provato in locale sulla voce
+    # trattata), ma nel riascolto del parlato intero sul runner no: le frasi
+    # di Dinamo del Volca Keys dicono «il Volca degli accordi». La voce
+    # resta qui per la prossima scheda che nomina un «Keys».
     "Keys": "Chiis",
     "Herbie Hancock": "Hèrbi Hàncoc",
     "Bob Moog": "Bob Mùg",

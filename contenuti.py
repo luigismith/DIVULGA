@@ -7696,13 +7696,13 @@ SCHEDE = [
                        "scritta": 'Korg assume Takahashi, e nel 2013 lui fa uscire tre Volca '
                                   'insieme.'},
                       {"ruolo": 'battuta4',
-                       "detta": 'Il Volca Keys fa gli accordi, tre note, e va a sei pile.',
-                       "scritta": 'Il Volca Keys fa gli accordi, 3 note, e va a 6 pile.'},
+                       "detta": 'Il Volca degli accordi suona tre note insieme, e va a sei pile.',
+                       "scritta": 'Il Volca degli accordi suona 3 note insieme, e va a 6 pile.'},
                       {"ruolo": 'battuta5',
-                       "detta": "Aphex Twin intervista Takahashi, e nel suo pezzo tutto Korg c'è un "
-                                'Volca Keys.',
-                       "scritta": "Aphex Twin intervista Takahashi, e nel suo pezzo tutto Korg c'è un "
-                                  'Volca Keys.'},
+                       "detta": "Aphex Twin intervista Takahashi, e nel suo pezzo tutto Korg c'è anche "
+                                'quel Volca.',
+                       "scritta": "Aphex Twin intervista Takahashi, e nel suo pezzo tutto Korg c'è anche "
+                                  'quel Volca.'},
                       {"ruolo": 'cta',
                        "detta": 'Mandalo a chi ha un colloquio domani.',
                        "scritta": 'Mandalo a chi ha un colloquio domani.'},
