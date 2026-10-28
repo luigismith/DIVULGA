@@ -406,12 +406,16 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
 ## Promemoria tecnici
 
 - Cron in `pubblica.yml`: in UTC, ignora l'ora legale. Sono TRE passate
-  (`50 15`, `35 16`, `40 19`): il cron di GitHub è best effort e il
+  (con l'ora solare `50 16`, `35 17`, `40 20`; con la legale `50 15`,
+  `35 16`, `40 19`): il cron di GitHub è best effort e il
   27/08/2026 ha semplicemente saltato il giro, senza alcun errore nei log
   — mai schedulare allo scoccare dell'ora, e perché la giornata salti
   davvero devono cadere tutte e tre (il doppione lo impedisce la regola
-  delle 6 ore in `pubblica.py`). **Il 25/10/2026** vanno spostate a
-  `50 16`, `35 17`, `40 20` (c'è un promemoria schedulato).
+  delle 6 ore in `pubblica.py`). Spostate all'ora solare il 28/10/2026,
+  tre giorni in ritardo perché la sessione era bloccata (il post è uscito
+  lo stesso: cron-job.org ha il fuso Europe/Rome). Il cron di `reel.yml`
+  segue: `55 18` con la solare, `55 17` con la legale. **Il 28/03/2027**
+  si torna all'ora legale e vanno rimessi tutti e quattro.
 - **L'innesco vero non e' il cron di GitHub.** Il 26, 27 e 28/08/2026 ha
   scartato passate serali (il 27 tutte e tre). Ora ci sono tre inneschi
   indipendenti, in ordine di affidabilita':

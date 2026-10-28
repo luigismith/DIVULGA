@@ -22,11 +22,12 @@ name: Pubblica reel
 
 on:
   schedule:
-    # 17:55 UTC = 19:55 con l'ora legale, 18:55 con quella solare: sempre
-    # dopo la Routine delle 19:30 e dentro la finestra. Il cron senza
+    # 18:55 UTC = 19:55 con l'ora solare (dal 28/10/2026; con l'ora
+    # legale, dal 28/03/2027, va riportato a '55 17'): sempre dopo la
+    # Routine delle 19:30 e dentro la finestra. Il cron senza
     # input vale «--prossimo»: solo la scheda senza nessun reel, mai un
     # rifacimento.
-    - cron: '55 17 * * *'
+    - cron: '55 18 * * *'
   workflow_dispatch:
     inputs:
       slug:

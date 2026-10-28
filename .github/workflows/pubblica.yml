@@ -28,11 +28,14 @@ on:
     # L'ultima è tardi apposta: un post alle 21:40 è fuori orario, ma un
     # post fuori orario batte una giornata di silenzio.
     #
-    # >>> DAL 25 OTTOBRE 2026 (ritorno all'ora solare, CET, UTC+1) <<<
-    # >>> i tre cron vanno spostati a: '50 16', '35 17', '40 20'      <<<
-    - cron: '50 15 * * *'   # 17:50 italiane — passata principale
-    - cron: '35 16 * * *'   # 18:35 italiane — prima scorta
-    - cron: '40 19 * * *'   # 21:40 italiane — ultima spiaggia
+    # Ora solare (CET, UTC+1) dal 25/10/2026: spostati il 28/10 (in
+    # ritardo di tre giorni; nel frattempo il post l'ha fatto partire
+    # cron-job.org, che ha il fuso Europe/Rome e non ne risente).
+    # >>> DAL 28 MARZO 2027 (ora legale, CEST, UTC+2) si torna a:    <<<
+    # >>> '50 15', '35 16', '40 19'                                   <<<
+    - cron: '50 16 * * *'   # 17:50 italiane — passata principale
+    - cron: '35 17 * * *'   # 18:35 italiane — prima scorta
+    - cron: '40 20 * * *'   # 21:40 italiane — ultima spiaggia
   workflow_dispatch:
     inputs:
       forza:
