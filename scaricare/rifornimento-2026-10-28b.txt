@@ -1,0 +1,12 @@
+assets/foto/microkorg/principale.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Korg_microKORG_DB2K4755.jpg/1280px-Korg_microKORG_DB2K4755.jpg
+assets/foto/microkorg/microfono.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Microkorg.jpg/1280px-Microkorg.jpg
+assets/foto/microkorg/pannello.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Korg_microKORG_%28Klangkreuzfahrt_Leipzig%29.jpg/1280px-Korg_microKORG_%28Klangkreuzfahrt_Leipzig%29.jpg
+assets/audio/microkorg/originale.mp3 https://cdn.freesound.org/previews/489/489517_5114707-hq.mp3
+assets/foto/crybaby/principale.png https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Cry_Baby_wah-wah.png/1280px-Cry_Baby_wah-wah.png
+assets/foto/crybaby/interno.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Inside_Dunlop_Cry_Baby_wah-wah.JPG/1280px-Inside_Dunlop_Cry_Baby_wah-wah.JPG
+assets/foto/crybaby/vox.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/VOX_Wah-Wah_front.jpg/960px-VOX_Wah-Wah_front.jpg
+assets/audio/crybaby/originale.mp3 https://upload.wikimedia.org/wikipedia/commons/transcoded/3/36/Wahwah_crybaby_GCB95_-_clean_sound_%28various_techniques%29.ogg/Wahwah_crybaby_GCB95_-_clean_sound_%28various_techniques%29.ogg.mp3
+assets/foto/mt40/principale.jpg https://upload.wikimedia.org/wikipedia/commons/a/a4/Casio_MT-40.jpg
+assets/audio/mt40/originale.mp3 https://upload.wikimedia.org/wikipedia/commons/0/0c/Casio_MT-40_Drumpattern.mp3
+assets/foto/opera6/principale.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Siel_Opera_6.jpg/1280px-Siel_Opera_6.jpg
+assets/audio/opera6/originale.mp3 https://cdn.freesound.org/previews/26/26985_146516-hq.mp3
