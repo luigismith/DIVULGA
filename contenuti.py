@@ -9013,6 +9013,1022 @@ SCHEDE = [
         "verificata": True
     },
     # ---------------------------------------------------------------- 75
+    # Il pedale wah-wah: Thomas Organ / Vox (Clyde McCoy, V846), poi Cry Baby,
+    # poi Dunlop. Scheda scritta il 28/10/2026 per il rifornimento.
+    # Serie «GLI EFFETTI». In catalogo ci sono già Uni-Vibe (univibe) e Phase 90
+    # (phase90): qui non si ripete niente di loro. In particolare l'acquisto della
+    # MXR da parte di Dunlop (1987) sta nell'aneddoto del Phase 90; qui di Dunlop
+    # c'è solo il nome Cry Baby comprato nel 1982.
+    #
+    # LA STORIA ITALIANA (richiesta di verifica). Esito: VERA, ma non a
+    # Castelfidardo. Il wah nasce in California (Thomas Organ, Brad Plunkett,
+    # novembre 1966); la produzione passa in Italia, e dalla fine degli anni '60 i
+    # wah Vox e i Cry Baby li costruisce la JEN di PESCARA, fondata da Joe Benaron
+    # (Thomas Organ) ed Ennio Uncini (ex EKO). L'EKO e la EME stavano a Recanati
+    # (distretto Castelfidardo-Loreto-Recanati), non a Castelfidardo.
+    # - JEN a Pescara costruisce wah Vox e Cry Baby: voxshowroom «Vox Wah-Wah by
+    #   JEN» («Benaron and Italian importer Ennio Unchini set up JEN, a
+    #   manufacturing plant in Pescara Italy»); hendrixguitars.com Ef271 («Tone
+    #   Bender, manufactured by JEN in Pescara»; «Jen handled the Cry Baby Wah
+    #   production»); Crave Guitars «1980 Jen Cry Baby Super» («Made by Jen
+    #   Elettronica in Pescara, Italy»; «Jen manufactured the Cry Baby under their
+    #   own name throughout the 1970s»); Wikipedia «Wah-wah pedal» («JEN, who had
+    #   been responsible for the manufacture of Thomas Organ and Vox wah pedals»).
+    # - JEN = Joe + ENnio: voxshowroom (acronimo dei nomi); hendrixguitars («named
+    #   from the J in Joe and EN from Ennio»).
+    # - Benaron voleva produrre in Italia per spendere meno: voxshowroom («to
+    #   reduce labor costs»); hendrixguitars («wanted to move production to Italy
+    #   to reduce costs»).
+    # - Uncini veniva dalla EKO: voxac30.org.uk («Oliviero Pigini and Ennio Uncini
+    #   of EKO»); hendrixguitars («Eko's manufacturing manager, Ennio Uncini»).
+    # - EKO a Recanati: voxac30.org.uk («EKO was based at Recanati, south of
+    #   Ancona»); Wikipedia IT «Eko (azienda)» («l'azienda sposta la propria sede
+    #   a Recanati»).
+    # - quando il wah passa alla JEN: 1968 per hendrixguitars («Jen handled the
+    #   Cry Baby Wah production for a while in 1968»), metà 1969 per voxshowroom
+    #   («By mid 1969»). In scheda: le fonti non concordano.
+    # - per tutti gli anni '70: voxshowroom («from 1969 through 1978»); Crave
+    #   («throughout the 1970s»).
+    # - i wah di Hendrix fatti in Italia: Wikipedia «Jimi Hendrix», nota da
+    #   Michael Heatley, «Jimi Hendrix Gear» (2009), pp. 104-105 («The wah pedals
+    #   that Hendrix owned were designed by the Thomas Organ Company and
+    #   manufactured in Italy by JEN Elettronica Pescara for Vox»); Dunlop,
+    #   «Celebrating Fifty Years of Cry Baby» (14/03/2017: «Jimi's original
+    #   Italian-made Thomas Organ unit»). Pescara la nomina solo Heatley, l'Italia
+    #   tutte e due: per questo in scheda la frase è attribuita a Heatley. DUBBIO:
+    #   il primo wah di Hendrix (estate 1967) è anteriore alla JEN (1968-69);
+    #   Heatley dice «i wah che possedeva», non il primo. La battuta 1 del reel
+    #   dice «escono da una fabbrica di Pescara», al presente, come Heatley.
+    #
+    # FATTI E FONTI (tutte lette il 28/10/2026)
+    # - Plunkett, Thomas Organ / Warwick Electronics, novembre 1966, per caso,
+    #   rifacendo il commutatore MRB del Super Beatle: Wikipedia «Wah-wah pedal»;
+    #   voxshowroom «Clyde McCoy» («assigned one of their young engineers, Brad
+    #   Plunkett, to redesign the MRB circuit»); Premier Guitar 15/03/2011
+    #   (recensione del documentario «Cry Baby: The Pedal That Rocks the World»:
+    #   «Mid Range Boost switch», «The tale starts in 1966»); Dunlop 2017 («The
+    #   year: 1966», «accidentally invented»).
+    # - il commutatore costava: Wikipedia («the expensive Jennings 3-position
+    #   mid-range boost»); Premier Guitar («cost Vox four dollars per unit»). I 4
+    #   dollari sono solo Premier Guitar: non scritti.
+    # - Thomas Organ costruisce i Vox per l'America: Wikipedia; Vintage Guitar
+    #   «1966 Vox/Thomas Organ V-1141 Super Beatle Head».
+    # - prototipo nella scatola del pedale del volume del Vox Continental:
+    #   Wikipedia («the housing of a Vox Continental Organ volume pedal»); Dunlop
+    #   2017 («Plunkett put it into a volume pedal housing»).
+    # - Benaron (o Banaron: Wikipedia e Vintage Guitar scrivono Banaron,
+    #   voxshowroom e hendrixguitars Benaron) lo voleva per i fiati: Wikipedia
+    #   («marketing the wah pedal for wind instruments»); voxshowroom («an
+    #   accessory for brass instruments»); Vintage Guitar, Dave Hunter, «Del
+    #   Casher», nov. 2017 («Every trumpet player would want the wah pedal instead
+    #   of a mute!»).
+    # - nome di Clyde McCoy, «Sugar Blues», circa 500 dollari: Wikipedia «Clyde
+    #   McCoy» (sordine, «Sugar Blues» 1931 e 1935, nome usato solo per la
+    #   promozione); voxshowroom («reportedly offered McCoy $500»); Vintage Guitar
+    #   («offered Clyde $500 to use his name»).
+    # - febbraio 1967 in vendita: Wikipedia («released to the public in February
+    #   1967»); voxshowroom (disco promozionale del febbraio 1967); Vintage Guitar
+    #   («10-track demo on vinyl in February '67»).
+    # - brevetto USA 3.530.224, domanda 24/02/1967, concesso 22/09/1970, Plunkett e
+    #   Lester Kushner: Wikipedia; voxshowroom «Clyde McCoy». Google Patents non
+    #   l'ho potuto aprire (503).
+    # - Cry Baby nome americano della Thomas Organ accanto al Vox V846: Wikipedia
+    #   («changing it to Cry Baby which was sold in parallel to the Italian Vox
+    #   V846»); voxshowroom «Thomas Organ Crybaby» («introduced by Thomas Organ in
+    #   1967 as a thinly veiled copy of the Vox V846»).
+    # - nome mai registrato, poi copie: Wikipedia (da Guitar Player); Crave
+    #   («neither Thomas Organ nor Jen trademarked the name»); Wikipedia «Dunlop
+    #   Cry Baby».
+    # - Thomas Organ chiude nel 1981, Dunlop compra il nome nel 1982: Dunlop 2017
+    #   («In 1981, Thomas Organ Company went out of business», «acquired ... the
+    #   following year»); Premier Guitar 2011 (Dunlop compra il design «in
+    #   1982»). Una ricerca riporta Guitar World col 1979 per la chiusura: non
+    #   l'ho potuto leggere (pagina tronca), non scritto.
+    # - GCB-95 «Original», modello base: Wikipedia «Dunlop Cry Baby»; foto di
+    #   Barbieri («Original Dunlop Cry Baby ... GCB-95 Pre-1990»); pagina Dunlop
+    #   del Cry Baby Standard.
+    # - circuito a 2 transistor: voxshowroom «JEN» («the original patented two
+    #   transistor Thomas Organ/Vox circuit design»); la foto interna di Barbieri
+    #   (se ne contano 2 sulla scheda). ATTENZIONE: secondo una ricerca,
+    #   ElectroSmash descrive il GCB-95 con 3 stadi (Q0-Q2): non l'ho potuto
+    #   aprire (host non raggiungibile dal container). Se chi integra trova 3,
+    #   tolga «2 transistor» da la_macchina.
+    # - induttore + condensatore = filtro risonante spostato dal potenziometro:
+    #   voxshowroom «Crybaby» («At the heart of every Wah and Crybaby pedal is a
+    #   500 mH ferrite inductor»); ElectroSmash (letto solo nell'estratto della
+    #   ricerca: «LC filter made up of a fixed inductor L1 and a fixed capacitor
+    #   C2 ... changed using a variable resistor»). I 500 mH non li ho scritti.
+    # - filtro passa-banda spostato su e giù dal pedale a bilanciere con un
+    #   potenziometro, imita la voce che dice «wah-wah», nato dalla sordina dei
+    #   trombettisti: Wikipedia (lead); Wikipedia «Clyde McCoy».
+    # - «cocked wah», il pedale lasciato fermo a metà: Wikipedia; MusicRadar,
+    #   Alex Lynham, 16/04/2021 (citato con la frase nella nota di Wikipedia).
+    # - Clapton, «Tales of Brave Ulysses», maggio 1967, fra i primi dischi col wah,
+    #   un pedale Vox: Wikipedia «Tales of Brave Ulysses»; Wikipedia «Wah-wah
+    #   pedal»; uDiscover Music («Vox pedal»).
+    # - Hendrix: primo wah su «Burning of the Midnight Lamp» (1967), l'aveva visto
+    #   usare da Frank Zappa a New York: Wikipedia «Jimi Hendrix» (Shadwick 2003);
+    #   Far Out Magazine («on the recommendation of fellow space cadet Frank
+    #   Zappa»; primo uso su «Burning of the Midnight Lamp»).
+    # - «Voodoo Child (Slight Return)», 1968, intro con corde smorzate e wah:
+    #   Wikipedia «Voodoo Child (Slight Return)» (Murray: «percussively scratches
+    #   from his guitar and wah-wah pedal at the beginning»); Far Out («striking
+    #   deadened strings while working the wah pedal»).
+    # - Charles «Skip» Pitts, intro wah di «Theme from Shaft», 1971: Wikipedia
+    #   «Charles Pitts»; Associated Press su TheGrio 01/05/2012. NESSUNA fonte dice
+    #   la marca del suo pedale: in scheda c'è «col wah», non «col Cry Baby».
+    #
+    # FATTI SCARTATI (una fonte sola o fonti in conflitto)
+    # - produzione passata prima alla EME di Recanati (controllata dalla EKO) nel
+    #   1967: solo voxshowroom (e un annuncio Reverb). hendrixguitars dice il
+    #   contrario («Eko declined»). Tolto.
+    # - JEN fondata nel 1967 (hendrixguitars), 1968, o 1970 (National Music Centre
+    #   citato da madegooddesigns): troppe date, nessuna scritta.
+    # - Plunkett pagato 50 dollari per l'invenzione: solo Vintage Guitar.
+    # - Bill Page che ci suona per primo il sassofono: solo Wikipedia.
+    # - il ritratto di McCoy disegnato sul fondo dei primi pedali: voxshowroom e
+    #   una vecchia versione di Wikipedia (la stessa frase, probabilmente copiata).
+    # - il nome Cry Baby nato da una lite con la JMI inglese: solo voxshowroom.
+    # - JEN che spedisce anche alla Vox inglese fino al 1978: solo voxshowroom.
+    # - escursione del filtro 450 Hz - 1,6 kHz: solo ElectroSmash, e non l'ho letto
+    #   intero.
+    # - induttore Fasel rosso «italiano» sul GCB-95 dal 2003: solo Wikipedia (da
+    #   una tabella Sweetwater).
+    # - Clapton che riceve il pedale da Manny's sulla 48esima: solo uDiscover.
+    # - Chet Atkins e Peter Van Wood come precursori: solo Wikipedia.
+    # - Electric Prunes fra i primi a usarlo: solo Vintage Guitar.
+    #
+    # FONTI LETTE MA NON NELL'ELENCO DELLA SCHEDA (la didascalia superava 2.200
+    # unità UTF-16; le URL restano qui, lette il 28/10/2026):
+    # - Vox Showroom, «Thomas Organ Crybaby»: https://www.voxshowroom.com/us/misc/crybaby.html
+    # - Premier Guitar 15/03/2011: https://www.premierguitar.com/gear/movie-review-crybaby-the-pedal-that-rocks-the-world
+    # - voxac30.org.uk: https://www.voxac30.org.uk/vox_continental_italian_production.html
+    # - Wikipedia «Voodoo Child (Slight Return)»: https://en.wikipedia.org/wiki/Voodoo_Child_(Slight_Return)
+    # - uDiscover Music: https://www.udiscovermusic.com/stories/tales-of-brave-ulysses-cream-feature/
+    # - Vintage Guitar, Super Beatle: https://www.vintageguitar.com/89794/1966-vox-thomas-organ-v-1141-super-beatle-head/
+    # - MusicRadar 16/04/2021: https://www.musicradar.com/news/the-4-unsung-hero-effects-pedals-and-3-great-ways-you-can-use-them
+    #
+    # HANDLE INSTAGRAM: nessuno verificato da un sito ufficiale in questa
+    # sessione, tutti None. @jimdunlop esiste ma non l'ho controllato dal sito
+    # Dunlop: niente menzioni_extra.
+    #
+    # FOTO (thumbnail scaricati e guardati, metadati letti dall'API il 28/10/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Cry_Baby_wah-wah.png
+    #   Massimo Barbieri, «Own work», 24/07/2010, CC BY-SA 3.0 (in alternativa
+    #   GFDL 1.2), 2602x1810, «Original Dunlop Cry Baby Wah-wah Model GCB-95
+    #   Pre-1990». PNG SCONTORNATO con canale alfa (253.582 pixel trasparenti su
+    #   641.280 nel thumbnail da 960): destinazione .png e "ritaglio": True, come
+    #   tr909 e drumulator. Il pedale intero visto di tre quarti dal basso, con la
+    #   targhetta dorata «ORIGINAL CRY BABY». Nessun'altra macchina.
+    #   Scartata File:GCB95.MAIN.jpg (Fredandres, CC BY-SA 4.0, «Own work»): è
+    #   identica alla foto di catalogo Dunlop, fondo bianco da studio e nome file
+    #   da sito di vendita. Credo sia una foto Dunlop caricata come propria.
+    # extra 1 (slide 2, la macchina): https://commons.wikimedia.org/wiki/File:Inside_Dunlop_Cry_Baby_wah-wah.JPG
+    #   stesso autore e licenza, Canon EOS 400D, 24/07/2010, 1592x3672 (verticale).
+    #   Si vedono in alto le prese, il potenziometro con l'ingranaggio, al centro
+    #   la scheda con l'induttore (disco nero), 2 transistor e i condensatori
+    #   rossi. La banda è orizzontale: con "posizione": "center 56%" dovrebbe
+    #   entrare la scheda con l'induttore, NON il potenziometro (sta al 15-25%
+    #   dell'altezza). La didascalia parla solo della scheda. DA GUARDARE NELLA
+    #   TAVOLA GENERATA.
+    # extra 2 (slide 3, chi l'ha costruito): https://commons.wikimedia.org/wiki/File:VOX_Wah-Wah_front.jpg
+    #   Marco Raaphorst (Flickr, «3/365»), CC BY 2.0, 16/01/2008, 1280x960. Un wah
+    #   Vox con la scritta VOX grande sul fianco, una mano che preme il pedale. Chi
+    #   l'ha caricata scrive «may be made in USA by Thomas Organ»: l'anno
+    #   dell'esemplare NON è noto, quindi la didascalia non lo data. "posizione":
+    #   "center 70%" per tenere la scritta VOX dentro la banda da 470 px.
+    #   Il marchio leggibile è VOX e non Cry Baby: è lo stesso pedale e la slide
+    #   3 racconta proprio la Thomas Organ e la Vox, quindi secondo me regge. Se
+    #   chi integra non è d'accordo, nel reel si può mettere "nel_reel": False.
+    # Scartate per misura: Thomas Organ Crybaby.jpg (1970, 521 px), le due foto
+    #   interne del Thomas Organ di Bryan (800 px), 1968 King Vox Wah pedal.JPG
+    #   (769 px, verticale), Dunlop-Crybaby.jpg (446 px). Cry-baby.jpg su Commons
+    #   è un neonato che piange, non il pedale.
+    #
+    # REGISTRAZIONE: https://commons.wikimedia.org/wiki/File:Wahwah_crybaby_GCB95_-_clean_sound_(various_techniques).ogg
+    #   Skimel, «Own work», 10/10/2019, CC BY-SA 4.0, 22 s, Ogg Vorbis. Pagina
+    #   riaperta il 28/10/2026: «audio file of Crybaby CGB95 wahwah pedal on
+    #   electric guitar (clean sound)»; strumenti dichiarati Yamaha Pacifica 112 e
+    #   «Fender Supersonic amp simulation in Amplitube 4», REAPER. Quindi il PEDALE
+    #   è vero (un Cry Baby GCB-95), l'AMPLIFICATORE è simulato al computer:
+    #   «cosa» lo dice. Nessuna melodia dichiarata nella pagina.
+    #   L'mp3 transcodificato l'ho scaricato (22,05 s) e analizzato, non
+    #   ascoltato: 0-2,2 s una nota bassa tenuta (circa Sol, 98 Hz) col baricentro
+    #   dello spettro che sale da 900 a 2.500 Hz, cioè una passata lenta del
+    #   pedale dal tallone alla punta, suono già presente dal primo fotogramma
+    #   (-22 dB al secondo 0); poi note e accordi brevi su La, Sol, Fa diesis con
+    #   passate più rapide; dal 17,75 s un La tenuto con una passata lenta fino
+    #   alla fine. Note sparse e tenute, nessuna linea che somigli a un brano.
+    #   CHI INTEGRA LA ASCOLTI per escludere una citazione riconoscibile.
+    #   «inizio» 0: la prima passata è il momento migliore.
+    #
+    # NOMI STRANIERI NELLA «DETTA» di reel_voce (per FONEMI in voce.py):
+    #   Jimi Hendrix, Brad Plunkett, Thomas Organ, Vox, Joe Benaron, Clyde McCoy,
+    #   Cry Baby, Jen (la JEN di Pescara, scritta «Jen» nella detta perché si dice
+    #   come parola, non sillabata). «Mandalo» e «Voodoo Child» nella cta.
+    #
+    # NOTA TECNICA: suoni.VOCE_SCHEDA non ha «crybaby» (va aggiunta dal timbro
+    #   degli effetti, come univibe/phase90).
+    {
+        "slug": "crybaby",
+        "numero": 75,
+        "serie": 'GLI EFFETTI',
+        "strumento": 'Wah-wah Cry Baby',
+        "anno": '1966',
+        "luogo": 'California e Pescara',
+        "costruttore": 'Thomas Organ (Vox), poi Dunlop',
+        "specifiche": [('NATO', 'Novembre 1966'),
+                       ('IN NEGOZIO', 'Febbraio 1967'),
+                       ('BREVETTO', 'USA 3.530.224'),
+                       ('DUNLOP', 'Dal 1982')],
+        "gancio": 'I wah di Jimi Hendrix li costruiva una fabbrica di Pescara',
+        "sottotitolo": 'Il pedale a bilanciere di Vox e Thomas Organ, poi di Dunlop. Da 60 anni sotto '
+                       'i piedi dei chitarristi.',
+        "la_macchina": 'Quello della foto è un Cry Baby GCB-95, il modello base di Dunlop, fatto '
+                       "prima del 1990. Dentro c'è pochissimo. Il pedale è un bilanciere, e "
+                       'muovendolo fa girare un potenziometro. Sulla scheda ci sono 2 transistor e un '
+                       'induttore, il disco nero al centro, che con un condensatore decide quale '
+                       "fetta di frequenze passa più forte. Il nome Dunlop l'ha comprato nel 1982, "
+                       "l'anno dopo la chiusura della Thomas Organ. A me il wah è sempre sembrato il "
+                       'pedale più onesto della pedaliera. Quello che fa il piede si sente subito, '
+                       'nel bene e nel male.',
+        "inventore_nome": 'Brad Plunkett, Thomas Organ',
+        "inventore": 'Nel novembre 1966 la Thomas Organ, che in California costruisce i Vox per il '
+                     'mercato americano, chiede a un giovane ingegnere, Brad Plunkett, di togliere un '
+                     "commutatore costoso dall'amplificatore Super Beatle. Lui lo rifà a transistor "
+                     'con un potenziometro, e provandolo si accorge di aver fatto per sbaglio '
+                     "un'altra cosa. Il prototipo finisce nella scatola di un pedale del volume "
+                     "dell'organo Vox Continental. Il presidente, Joe Benaron (le fonti lo scrivono "
+                     'anche Banaron), lo vuole vendere ai fiati, e ci mette il nome di Clyde McCoy, '
+                     'il trombettista di «Sugar Blues». Pare per 500 dollari.',
+        "come_funziona": 'È un filtro passa-banda. Lascia passare forte una fetta stretta di '
+                         'frequenze e abbassa il resto, e il piede sposta quella fetta su e giù, dai '
+                         "bassi agli acuti. Viene dalla sordina. Negli anni '20 i trombettisti la "
+                         'muovevano davanti alla campana e lo strumento sembrava piangere, e McCoy su '
+                         'quel trucco ci aveva fatto una carriera. Il pedale fa lo stesso con la '
+                         'chitarra, e il risultato somiglia a una voce che dice «uà». Provate anche a '
+                         'lasciarlo fermo a metà corsa. Diventa un filtro fisso, quello che i '
+                         'chitarristi chiamano «cocked wah».',
+        "richiami": [('FIG. 1', 'Pedale a bilanciere'),
+                     ('FIG. 2', 'Filtro passa-banda'),
+                     ('FIG. 3', 'Induttore sulla scheda')],
+        "chi_lusata": [{"artista": 'Eric Clapton (Cream)',
+                        "nota": '«Tales of Brave Ulysses», registrata nel maggio 1967 con un pedale '
+                                'Vox, fra i primi dischi col wah',
+                        "ig": None},
+                       {"artista": 'Jimi Hendrix',
+                        "nota": 'il primo wah su «Burning of the Midnight Lamp» (1967), dopo averlo '
+                                'visto usare da Frank Zappa a New York',
+                        "ig": None},
+                       {"artista": 'Charles «Skip» Pitts',
+                        "nota": "l'attacco col wah di «Theme from Shaft» di Isaac Hayes (1971)",
+                        "ig": None}],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": 'Voodoo Child (Slight Return)',
+                         "artista": 'The Jimi Hendrix Experience',
+                         "anno": '1968',
+                         "cosa": 'I primi secondi. Hendrix smorza le corde e il ritmo lo fa col '
+                                 'pedale, prima ancora di suonare una nota.'},
+        "aneddoto": 'Joe Benaron vuole costruire i Vox dove costa meno. Ennio Uncini viene dalla EKO '
+                    'di Recanati, la fabbrica di chitarre, e insieme aprono a Pescara la JEN, che '
+                    'sono le loro iniziali, Joe ed ENnio. Lì passa la produzione dei wah Vox e dei '
+                    'Cry Baby, nel 1968 o nel 1969 (le fonti non concordano), e ci resta per tutti '
+                    "gli anni '70. Il nome Cry Baby la Thomas Organ non l'ha mai registrato, e la JEN "
+                    'lo mette anche sui pedali col suo marchio. Michael Heatley, che ha fatto '
+                    "l'inventario dell'attrezzatura di Hendrix, scrive che i suoi wah erano fatti lì.",
+        "avvertenza": 'La scatola viene dal pedale del volume di un organo Vox Continental. Il '
+                      'volume, però, non lo tocca: il piede sposta il filtro.',
+        "foto": {"file": 'assets/foto/crybaby/principale.png',
+                 "autore": 'Massimo Barbieri',
+                 "licenza": 'CC BY-SA 3.0',
+                 "fonte": 'Wikimedia Commons',
+                 "ritaglio": True,
+                 "didascalia": 'Un Cry Baby GCB-95 di Dunlop, quello con la targhetta «Original»'},
+        "foto_extra": [{"file": 'assets/foto/crybaby/interno.jpg',
+                        "autore": 'Massimo Barbieri',
+                        "licenza": 'CC BY-SA 3.0',
+                        "fonte": 'Wikimedia Commons',
+                        "posizione": 'center 56%',
+                        "didascalia": "Dentro un GCB-95: il disco nero sulla scheda è l'induttore"},
+                       {"file": 'assets/foto/crybaby/vox.jpg',
+                        "autore": 'Marco Raaphorst',
+                        "licenza": 'CC BY 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "posizione": 'center 70%',
+                        "didascalia": 'Un wah Vox, il marchio con cui il pedale esce per primo'}],
+        "fonti": [{"titolo": '«Wah-wah pedal» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Wah-wah_pedal',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Dunlop Cry Baby» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Dunlop_Cry_Baby',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Clyde McCoy Wah» — Vox Showroom',
+                   "url": 'https://voxshowroom.com/us/misc/clyde.html',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Vox Wah-Wah by JEN» — Vox Showroom',
+                   "url": 'https://www.voxshowroom.com/us/misc/jenwah.html',
+                   "data": '2026-10-28'},
+                  {"titolo": '«50 Years of Cry Baby» — Dunlop, 2017',
+                   "url": 'https://lifestyle.jimdunlop.com/?p=11049',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Del Casher» — Vintage Guitar, 2017',
+                   "url": 'https://vintageguitar.com/32681/del-casher-4',
+                   "data": '2026-10-28'},
+                  {"titolo": '«JEN Tone Bender» — hendrixguitars.com',
+                   "url": 'https://www.hendrixguitars.com/Ef271.htm',
+                   "data": '2026-10-28'},
+                  {"titolo": '«1980 Jen Cry Baby Super» — Crave Guitars',
+                   "url": 'https://www.craveguitars.co.uk/home/features/effects/feature-1980-jen-cry-baby-super/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Eko (azienda)» — Wikipedia (IT)',
+                   "url": 'https://it.wikipedia.org/wiki/Eko_(azienda)',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Clyde McCoy» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Clyde_McCoy',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Jimi Hendrix» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Jimi_Hendrix',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Voodoo Child» — Far Out Magazine',
+                   "url": 'https://faroutmagazine.co.uk/jimi-hendrix-the-greatest-use-of-the-wah-pedal-in-rock/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Tales of Brave Ulysses» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Tales_of_Brave_Ulysses',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Charles Pitts» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Charles_Pitts',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Charles Pitts», necrologio — AP, 2012',
+                   "url": 'https://thegrio.com/2012/05/01/shaft-guitarist-charles-pitts-dies-at-65',
+                   "data": '2026-10-28'}],
+        "hashtags": ['#crybaby', '#dunlop', '#effettichitarra', '#jimihendrix', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 075',
+                          'I wah di Jimi Hendrix escono da una fabbrica di Pescara'),
+                         ('THOMAS ORGAN · 1966',
+                          'Brad Plunkett deve rendere più economico un amplificatore Vox.'),
+                         ('IL PROTOTIPO',
+                          'Il suo circuito nuovo finisce nel pedale del volume di un organo Vox.'),
+                         ('FEBBRAIO 1967',
+                          'Joe Benaron vuole il wah per i trombettisti, e lo chiama come Clyde '
+                          'McCoy.'),
+                         ("PESCARA · FINE ANNI '60",
+                          'In America diventa il Cry Baby, e lo costruisce la JEN di Pescara.')],
+        "reel_cta": 'Mandalo a chi in sala prove attacca «Voodoo Child»',
+        "reel_audio": {"file": 'assets/audio/crybaby/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'Skimel',
+                       "licenza": 'CC BY-SA 4.0',
+                       "fonte": 'Wikimedia Commons',
+                       "url": 'https://commons.wikimedia.org/wiki/File:Wahwah_crybaby_GCB95_-_clean_sound_(various_techniques).ogg',
+                       "cosa": 'un Cry Baby GCB-95 vero su una chitarra elettrica in suono pulito, '
+                               "con passate lente e rapide del pedale; l'amplificatore è simulato al "
+                               'computer'},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 76
+    # REGISTRAZIONE CAMBIATA all'integrazione (28/10/2026): il campionario
+    # Freesound 489517 (21 minuti) ha due soli tratti senza pause, un
+    # sub-basso che dal telefono non si sente e un pad fermo. Si usa
+    # Commons «Star_Sky.ogg» (Qnx, pubblico dominio, «Played and recorded
+    # by myself», caricato su en.wiki prima del 2012), tratto 0-47 s.
+    # Korg microKORG (2002). Scheda scritta il 28/10/2026 per il rifornimento
+    # (posteriore al 1988). In catalogo ci sono già MS-20, M1, Poly-800, Volca
+    # Keys e Monotron: qui non si ripetono. Il vocoder «da manuale» sta già nel
+    # VP-330 (Laurie Anderson, Stevie Wonder): qui si racconta solo quello che il
+    # microKORG ha di suo (16 filtri a coppie, FORMANT HOLD). Takahashi non
+    # c'entra. La storia è Liam Howlett e «Girls» (2004).
+    #
+    # REGISTRAZIONE (da ricontrollare a orecchio da chi integra, vedi DUBBI)
+    # - Freesound 489517, «microkorg samples - ambient and noise», utente nthnh,
+    #   caricata il 23/10/2019, licenza «Creative Commons 0» (letta sulla pagina
+    #   il 28/10/2026). Descrizione: «these are samples from the korg microkorg,
+    #   recorded via audio interface. multiple octaves». Pack «microkorg
+    #   samplesets» (8 file, tutti dichiarati dal microKORG). Originale WAV 24 bit
+    #   stereo, 21:30 (1.290 s). È la macchina vera presa dall'uscita, non un
+    #   plug-in: lo dice l'autore, non c'è altro modo di dimostrarlo. Nessuna
+    #   melodia: sono note tenute a ottave diverse.
+    # - Anteprima HQ: https://cdn.freesound.org/previews/489/489517_5114707-hq.mp3
+    #   (5114707 = id utente, dal percorso dell'avatar; WebFetch conferma che il
+    #   file esiste e supera i 10 MB, coerente con 21 minuti in mp3).
+    # - TRATTO MIGLIORE: NON L'HO POTUTO SENTIRE. Da questo container Freesound
+    #   risponde 403 a curl (pagina e cdn) e upload.wikimedia.org 429, quindi
+    #   l'audio non è arrivato qui. `inizio` resta 0. Chi integra, dopo lo
+    #   scarico sul runner, cerchi un tratto di 30-45 s SENZA silenzi (è un
+    #   «sampleset a ottave»: rischio di note staccate da pause, il caso dell'MS-20
+    #   scartato il 07/10): `ffmpeg -i originale.mp3 -af silencedetect=n=-45dB:d=0.4
+    #   -f null -` e poi a orecchio.
+    # - ALTERNATIVA PRONTA se il tratto non regge: Wikimedia Commons,
+    #   File:Star_Sky.ogg (50,2 s), utente Qnx di en.wikipedia, Pubblico dominio,
+    #   descrizione «Sample of microKORG synthesiser sound. Played and recorded by
+    #   myself.» (2006). Stesso autore e stessa licenza: Crystal.ogg (30,1 s),
+    #   Alien_World.ogg (25,9 s), Ring_X-Mod.ogg (37,5 s, «One of microKORG
+    #   synthesiser sounds»). Anche queste non le ho sentite (429). Scartata
+    #   File:MicroKORG_Demo.ogg (CC BY-SA 4.0): dentro c'è «Radio» di Emile's
+    #   Telegraphic Transmission Device, una canzone.
+    #
+    # FATTI E FONTI (tutte lette il 28/10/2026)
+    # - NAMM di luglio 2002 (il NAMM estivo): pagina Korg giapponese «ten years»
+    #   («2002年7月、NAMMショーにてmicroKORG初登場»); SonicState 30/07/2002
+    #   («SNAMM02: microKorg demo just in»). In vendita in Giappone il 30/10/2002:
+    #   solo Korg, non scritto.
+    # - stesso motore dell'MS2000: pagina Korg USA («the same DSP analog modeling
+    #   system as the MS-2000»); SOS gen. 2003 («very similar to that of Korg's
+    #   MS2000»); Vintage Synth Explorer; Sonicbids 2014. MS2000 del 2000:
+    #   Sonicbids 2014; Electronic Sound 2017.
+    # - fianchi di legno: Korg (pagina funzioni, «wooden side panels»); pagina
+    #   Korg giapponese; si vedono nelle foto.
+    # - disegno che richiama il miniKORG 700: pagina Korg giapponese (cita
+    #   Decacorg/KORGUE e Minikorg 700); Sonicbids 2014, Richard Formidoni,
+    #   responsabile della formazione prodotto di Korg («the MiniKORG 700 and
+    #   700S»). miniKORG 700 primo synth Korg, 1973: Wikipedia «Korg miniKORG
+    #   700»; MusicRadar (700FS, «its first analogue synth»).
+    # - 37 tasti piccoli con dinamica: specifiche Korg; SOS 2003; Vintage Synth.
+    # - 5 manopole: Korg (pagina funzioni, «five knobs»); Electronic Sound 2017
+    #   («just five control knobs»); Sonicbids («five performance knobs»).
+    # - display a 3 caratteri: specifiche Korg («3 characters×1 line»); si legge
+    #   nelle foto extra («17», «Prt»).
+    # - microfono a condensatore incluso, orientabile, a collo d'oca: Korg
+    #   (specifiche «Condenser Microphone», funzioni «can be adjusted to the
+    #   desired angle»); SOS 2003 («plugs into a rear socket», «'condenser' mic»);
+    #   Guitar Center 2024 e Modulargrid («gooseneck»). Che esca dal retro si vede
+    #   nella foto del microfono.
+    # - 524 mm di larghezza: specifiche Korg (524 x 232 x 70); Sonicbids («20.5
+    #   inches by 9 inches»).
+    # - 6 pile stilo (AA) o alimentatore: specifiche Korg; SOS 2003.
+    # - 399 sterline: SOS gennaio 2003 («£399 including VAT»); Electronic Sound
+    #   2017 («it cost under £400»).
+    # - banche coi nomi dei generi (Trance, Hip-Hop/Vintage…): SOS 2003 («a
+    #   questionable series of genre titles»); Korg («clear genre categories»);
+    #   le scritte TRANCE, HIPHOP/VINTAGE, RETRO, VOCODER si leggono nelle foto.
+    # - 128 programmi: specifiche Korg; SOS 2003; Vintage Synth.
+    # - 4 voci: specifiche Korg; SOS 2003; Electronic Sound 2017.
+    # - 2 oscillatori + rumore: specifiche Korg; SOS 2003. Oscillatore 1 con
+    #   le onde classiche, vox e 64 forme DWGS, oscillatore 2 solo dente di sega,
+    #   quadra e triangolo: SOS 2003; Vintage Synth Explorer (64 DWGS).
+    # - filtro passa-basso 24 dB, più passa-basso, passa-banda e passa-alto a 12:
+    #   specifiche Korg; SOS 2003.
+    # - vocoder a 8 bande con 16 filtri usati a coppie: Korg, pagina funzioni
+    #   («eight-band vocoder (the sixteen filters are used in pairs)»); SOS 2003
+    #   («split into 16 frequency bands», raggruppate in 8 canali). Wikipedia e
+    #   Vintage Synth dicono 8; Guitar Center dice 16: in scheda c'è la
+    #   spiegazione di Korg, che mette d'accordo tutti.
+    # - FORMANT HOLD congela la vocale e si suona dalla tastiera senza cantare,
+    #   e resta salvata col programma: Korg, pagina funzioni («freezes the
+    #   formants of the input vocal signal», «saved when the vocoder program is
+    #   written»); Korg microKORG EasyStart e manuale (E.F. Sense su Hold). Sono
+    #   due documenti Korg: è la descrizione di un tasto, non una storia.
+    # - quanti ne sono stati fatti, LE FONTI NON CONCORDANO: Synthtopia
+    #   22/05/2009 riporta il venditore di Big City Music («the 100,000th Korg
+    #   MicroKorg keyboard just came off the assembly line»), e Wikipedia dice
+    #   100.000 a maggio 2009; Sonicbids 19/06/2014, Formidoni di Korg: «the
+    #   200,000th microKORG was produced in 2008». In scheda tutte e due.
+    # - microKORG 2 presentato al NAMM di gennaio 2024: KVR Audio 18/01/2024;
+    #   SonicState 18/01/2024; MusicTech (NAMM 2024). 2024 - 2002 = 22 anni.
+    # - Howlett: dopo «The Fat of the Land» (1997) il nuovo album nel 2004, 7
+    #   anni: pagina Korg Germania 14/06/2014 (ripresa dell'intervista del
+    #   2004); Wikipedia «Always Outnumbered, Never Outgunned».
+    # - volta le spalle a quasi tutto lo studio, compra un portatile e Reason:
+    #   SOS ottobre 2004, Sue Sillitoe («Turning his back on most of the
+    #   equipment in his studio, Liam bought a laptop»); Keyboard 01/02/2005,
+    #   Robbie Busch; Korg 2004.
+    # - scrive «Girls» a letto: SOS 2004 («I wrote 'Spitfire', 'Wake Up' and
+    #   'Girls', which is the single, in bed»); Keyboard 2005 («He wrote the
+    #   tracks "Spitfire," "Wake Up Call," and "Girls" in bed»).
+    # - «Girls» primo singolo dell'album: SOS 2004; Korg 2004.
+    # - il basso di «Girls» è il microKORG: Korg magazine 29/11/2004, «Never
+    #   Outgunned: Liam Howlett» (copia su theprodigy.info/articles/
+    #   korg_interview_2004.html: «It provided the bass on Girls»); Guitar
+    #   Center 13/12/2024 (George Van Wagner, «Girls» fra i brani col
+    #   microKORG). La pagina Korg tedesca del 2014 ripete l'intervista del 2004
+    #   e NON la conto come seconda fonte. ATTENZIONE: Remix agosto 2004 e
+    #   Keyboard 2005 nella lista dei suoi strumenti scrivono «Korg
+    #   microKontrol»; SOS 2004 scrive «Korg Micro Keyboard». Il dubbio è scritto
+    #   in scheda.
+    # - The Killers / Brandon Flowers: Guitar Center 2024 («noted for
+    #   popularizing the microKORG», «Hot Fuss»); Vintage Synth Explorer (lista
+    #   utenti); happymag.tv 30/05/2023. Sul brano non concordano (Guitar Center
+    #   «Somebody Told Me», Happy «Smile Like You Mean It»): nessun brano in
+    #   scheda.
+    # - LCD Soundsystem: Electronic Sound 2017; Guitar Center 2024 («no specific
+    #   tracks are documented»); Vintage Synth Explorer.
+    # - Crystal Castles / Ethan Kath: intervista a Sparks vs Space 12/06/2007
+    #   (lista strumenti, «Micorkorg», riportata da Equipboard); Wikipedia
+    #   «MicroKORG» (Ethan Kath fra gli utenti). L'intervista originale non l'ho
+    #   aperta.
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
+    # - Minoru Koike, della pianificazione prodotto Korg, che pensa il microKORG
+    #   per le band di chitarre che volevano suoni elettronici, 2 anni di
+    #   sviluppo subito dopo l'MS2000: solo Electronic Sound 12/10/2017 (Mark
+    #   Roland). Era la storia più bella; in scheda c'è scritto che il nome sta
+    #   in un'intervista sola.
+    # - Howlett ne ha 3 ed è la sua tastiera preferita; sub-basso su «Memphis
+    #   Bells» e «Wake Up Call»; rumore alla Human League su «Spitfire»: solo
+    #   l'intervista Korg 2004 (la pagina tedesca del 2014 la ricopia).
+    # - il basso di «Trick Me» di Kelis «è un microKORG»: solo Howlett, Korg 2004.
+    # - Yeah Yeah Yeahs «Heads Will Roll»: Happy e Guitar Center, ma un'altra
+    #   fonte sull'album parla di un ARP. Scartato.
+    # - Tame Impala (Innerspeaker), MGMT: solo Wikipedia e un blog; per MGMT
+    #   le patch «Kids» per microKORG sono di terzi.
+    # - Ariana Grande al Saturday Night Live: solo Guitar Center (le altre fonti
+    #   parlano di un vocoder ai Billboard Awards, senza modello).
+    # - Devo: solo Electronic Sound. Pharrell, Chromeo, Rilo Kiley: solo Guitar
+    #   Center.
+    # - le 64 DWGS «prese dal DW-8000»: solo Vintage Synth Explorer.
+    # - 2,2 kg: solo le specifiche Korg. In vendita in Giappone il 30/10/2002:
+    #   solo Korg. 36.925 venduti al dettaglio negli USA: solo Sonicbids. 2.000
+    #   microKORG-GD per i 50 anni di Korg: solo Sonicbids.
+    # - alcuni programmi della banca VOCODER suonano senza cantare perché scritti
+    #   col FORMANT HOLD acceso: solo il manuale Korg.
+    # - handle Instagram: nessuno verificato da un sito ufficiale in questa
+    #   sessione, quindi tutti None e niente menzioni_extra.
+    #
+    # FOTO (API Commons letta il 28/10/2026; le tre le ho guardate a 960 px)
+    # - principale: File:Korg_microKORG_DB2K4755.jpg, Ashley Pomeroy, CC BY-SA
+    #   4.0, «A first-generation Korg microKORG», 3000x1864, scontornata su
+    #   bianco: «ritaglio»: True.
+    # - microfono: File:Microkorg.jpg, F J Degenaar, Pubblico dominio (PD-self),
+    #   2468x1528. Il collo d'oca sta in alto al centro: «posizione» center top,
+    #   così nella banda da 500 px entra tutto il microfono e il pannello; si
+    #   perde il bordo basso dei tasti.
+    # - pannello: File:Korg_microKORG_(Klangkreuzfahrt_Leipzig).jpg,
+    #   GeschnittenBrot, CC BY-SA 2.0 (Flickr, revisionata), 3872x2592. Nella
+    #   banda da 470 px con «center 40%» entrano la manopola dei generi, il
+    #   display rosso («17») e l'inizio della tastiera. DA GUARDARE sulla tavola.
+    #
+    # DUBBI APERTI
+    # - il tratto della registrazione (sopra).
+    # - Brandon Flowers: le fonti sono un negozio, un database e una lista di un
+    #   magazine; nessuna intervista sua. Se chi integra vuole solo fonti
+    #   giornalistiche, la riga si toglie.
+    # - nomi stranieri nella «detta» di reel_voce: Korg, microKORG, Formant Hold,
+    #   Liam Howlett, Prodigy, Girls. «microKORG» va al motore come una parola:
+    #   se esce «micròcorg» o sillabato, aggiungerlo a FONEMI.
+    # - suoni.VOCE_SCHEDA: manca «microkorg» (famiglia dei synth digitali che
+    #   imitano l'analogico, come nordlead).
+    {
+        "slug": "microkorg",
+        "numero": 76,
+        "serie": 'I SINTETIZZATORI',
+        "strumento": 'Korg microKORG',
+        "anno": '2002',
+        "luogo": 'Giappone',
+        "costruttore": 'Korg',
+        "specifiche": [('USCITA', '2002'), ('TASTI', '37'), ('VOCI', '4'), ('VOCODER', '8 bande')],
+        "gancio": 'Esce nel 2002 e da allora non va più fuori listino. Il successore, il microKORG 2, '
+                  'arriva 22 anni dopo',
+        "sottotitolo": "Un synth digitale che imita l'analogico, con un vocoder dentro e 128 suoni "
+                       'pronti da richiamare.',
+        "la_macchina": 'Se ne trovate uno, guardate i fianchi, che sono di legno. Davanti ci sono 37 '
+                       'tastini con la dinamica e 5 manopole, e il display rosso mostra 3 caratteri '
+                       "in tutto. Dal retro esce un microfono a collo d'oca. È largo 52 centimetri e "
+                       "va anche a 6 pile stilo. In Inghilterra, all'inizio del 2003, costava 399 "
+                       'sterline. I suoni si scelgono con una manopola che gira fra i generi '
+                       'musicali, da TRANCE a HIPHOP/VINTAGE. Sound On Sound, nel 2003, li chiamava '
+                       'una serie discutibile di etichette. A me hanno sempre fatto sorridere.',
+        "inventore_nome": "Korg, dall'MS2000",
+        "inventore": "Il nome di chi l'ha pensato lo trovo in un'intervista sola, e allora non lo "
+                     "scrivo. Il microKORG nasce dall'MS2000, un synth Korg del 2000, e dentro ha lo "
+                     "stesso motore digitale che imita l'analogico. Fuori Korg lo veste da vecchio. "
+                     'La sua pagina giapponese dice che il disegno richiama il miniKORG 700 del 1973, '
+                     'il primo synth della casa, e nel 2014 lo ripete un uomo di Korg. Debutta al '
+                     'NAMM di luglio del 2002. Quanti ne abbiano fatti non si sa. Nel 2009 un negozio '
+                     "americano scrive che è appena uscito di fabbrica il 100.000°. L'uomo di Korg, "
+                     'nel 2014, parla del 200.000° prodotto nel 2008.',
+        "come_funziona": 'Il motore ha 2 oscillatori e un generatore di rumore, e suona 4 note alla '
+                         "volta. Il primo oscillatore ha le onde classiche più 64 forme d'onda "
+                         'digitali, il secondo solo 3 onde semplici. Il filtro taglia a 24 dB per '
+                         'ottava e sa fare anche il passa-alto e il passa-banda. La parte che conta '
+                         'però è il vocoder. Korg lo chiama a 8 bande, ma i filtri sono 16, usati a '
+                         'coppie. Provate a cantare una vocale nel microfono e a premere FORMANT '
+                         'HOLD. La forma della vostra voce resta ferma lì. Potete smettere di cantare '
+                         'e continuare a suonarla dalla tastiera.',
+        "richiami": [('FIG. 1', "Microfono a collo d'oca"),
+                     ('FIG. 2', '16 filtri, 8 bande'),
+                     ('FIG. 3', 'Il tasto FORMANT HOLD')],
+        "chi_lusata": [{"artista": 'The Prodigy',
+                        "nota": 'Liam Howlett, «Always Outnumbered, Never Outgunned» (2004)',
+                        "ig": None},
+                       {"artista": 'The Killers',
+                        "nota": 'Brandon Flowers, ai tempi di «Hot Fuss» (2004)',
+                        "ig": None},
+                       {"artista": 'LCD Soundsystem',
+                        "nota": "lo usano, ma un brano preciso non l'ho trovato",
+                        "ig": None},
+                       {"artista": 'Crystal Castles',
+                        "nota": 'Ethan Kath lo mette nella lista dei suoi strumenti nel 2007',
+                        "ig": None}],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": 'Girls',
+                         "artista": 'The Prodigy',
+                         "anno": '2004',
+                         "cosa": 'Ascoltatelo per il basso, che secondo Howlett esce da un '
+                                 'microKORG.'},
+        "aneddoto": "Nel 2004 Liam Howlett torna coi Prodigy, 7 anni dopo l'ultimo album. Ha voltato "
+                    'le spalle a quasi tutto lo studio e lavora su un portatile con Reason. A Sound '
+                    'On Sound racconta di aver scritto alcuni pezzi a letto. Uno è «Girls», il primo '
+                    "singolo. A Korg, quell'autunno, dice che il basso di «Girls» viene dal "
+                    "microKORG. C'è una cosa che non torna. Due riviste americane, nella lista dei "
+                    'suoi strumenti, scrivono microKONTROL, la tastierina MIDI della stessa serie, e '
+                    'Sound On Sound scrive «Korg Micro Keyboard». Io mi fido di lui, che a Korg i '
+                    'pezzi li ha nominati uno per uno.',
+        "avvertenza": 'FORMANT HOLD salva col programma la vocale che stavate cantando. Prima di '
+                      'premere WRITE, ricordatevi cosa avete detto nel microfono.',
+        "foto": {"file": 'assets/foto/microkorg/principale.jpg',
+                 "autore": 'Ashley Pomeroy',
+                 "licenza": 'CC BY-SA 4.0',
+                 "fonte": 'Wikimedia Commons',
+                 "ritaglio": True,
+                 "didascalia": 'Un microKORG della prima serie, coi fianchi di legno'},
+        "foto_extra": [{"file": 'assets/foto/microkorg/microfono.jpg',
+                        "posizione": 'center top',
+                        "autore": 'F J Degenaar',
+                        "licenza": 'Pubblico dominio',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": "Il microfono a collo d'oca, infilato nel retro"},
+                       {"file": 'assets/foto/microkorg/pannello.jpg',
+                        "posizione": 'center 40%',
+                        "autore": 'GeschnittenBrot',
+                        "licenza": 'CC BY-SA 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'La manopola dei generi e il display rosso'}],
+        "fonti": [{"titolo": '«Korg Microkorg» — Sound On Sound, gennaio 2003',
+                   "url": 'https://www.soundonsound.com/reviews/korg-microkorg',
+                   "data": '2026-10-28'},
+                  {"titolo": 'microKORG, specifiche — Korg',
+                   "url": 'https://www.korg.com/us/products/synthesizers/microkorg/page_3.php',
+                   "data": '2026-10-28'},
+                  {"titolo": 'microKORG, funzioni (vocoder, FORMANT HOLD) — Korg',
+                   "url": 'https://www.korg.com/us/products/synthesizers/microkorg/page_2.php',
+                   "data": '2026-10-28'},
+                  {"titolo": 'microKORG 10 years — Korg Giappone',
+                   "url": 'https://www.korg.com/jp/products/synthesizers/microkorg/ten_years.php',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Intervista a Richard Formidoni (Korg) — Sonicbids, 2014',
+                   "url": 'https://blog.sonicbids.com/how-microkorg-became-every-indie-bands-go-to-synth',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Il 100.000° microKORG — Synthtopia, 2009',
+                   "url": 'https://www.synthtopia.com/content/2009/05/22/the-korg-microkorg-the-most-popular-synthesizer-of-all-time/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«The microKORG» — Electronic Sound, 2017',
+                   "url": 'https://www.electronicsound.co.uk/features/time-machine/the-microkorg/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Korg microKorg» — Vintage Synth Explorer',
+                   "url": 'https://www.vintagesynth.com/korg/microkorg',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Liam Howlett — Sound On Sound, ottobre 2004',
+                   "url": 'https://www.soundonsound.com/people/the-prodigy',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Never Outgunned: Liam Howlett» — Korg magazine, 2004',
+                   "url": 'https://theprodigy.info/articles/korg_interview_2004.html',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Trim the Fat» — Keyboard, 2005',
+                   "url": 'https://theprodigy.info/articles/us/keyboard2005.html',
+                   "data": '2026-10-28'},
+                  {"titolo": '«The History of the KORG microKORG» — Guitar Center, 2024',
+                   "url": 'https://www.guitarcenter.com/riffs/gear-tips/keyboards--midi/korg-microkorg-history',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Korg microKorg 2 Revamped Classic» — SonicState, 2024',
+                   "url": 'https://sonicstate.com/news/2024/01/18/korg-microkorg-2-revamped-classic',
+                   "data": '2026-10-28'},
+                  {"titolo": '«MicroKORG» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/MicroKORG',
+                   "data": '2026-10-28'}],
+        "hashtags": ['#microkorg', '#korg', '#sintetizzatore', '#theprodigy', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 076',
+                          'Il Korg microKORG congela la tua voce e la tiene lì'),
+                         ('KORG · 2002',
+                          "Il microKORG ha 37 tastini, 4 voci e un microfono a collo d'oca."),
+                         ('FORMANT HOLD',
+                          'Canti una vocale, premi FORMANT HOLD, e la voce resta anche se smetti.'),
+                         ('THE PRODIGY · 2004',
+                          'Liam Howlett dei Prodigy lascia quasi tutto lo studio e scrive a letto.'),
+                         ('«GIRLS»',
+                          'Il basso di «Girls», il primo singolo, Howlett lo fa col microKORG.')],
+        "reel_cta": "Mandalo all'amico che fa musica a letto",
+        "reel_audio": {"file": 'assets/audio/microkorg/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'Qnx (Wikipedia in inglese)',
+                       "licenza": 'Pubblico dominio',
+                       "fonte": 'Wikimedia Commons',
+                       "url": 'https://commons.wikimedia.org/wiki/File:Star_Sky.ogg',
+                       "cosa": "un microKORG vero, suonato e registrato da chi l'ha caricato: accordi "
+                               'lunghi col filtro che si apre e si chiude'},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 77
+    # Casio Casiotone MT-40 (1981). Scheda scritta il 28/10/2026 per il
+    # rifornimento. La storia della Casio (i fratelli Kashio, le calcolatrici)
+    # sta già nella scheda vl1, e il CZ-101 ha la sua: qui non si ripetono. Il
+    # campo «inventore» racconta Hiroko Okuda, che ha scritto i ritmi di
+    # fabbrica, e l'aneddoto Kingston 1984. Tutte le fonti lette il 28/10/2026.
+    #
+    # FATTI E FONTI (ognuno su almeno 2 fonti indipendenti)
+    # - uscita 1981: Engadget 04/12/2015 (James Trew); Nippon.com 01/02/2022
+    #   (Hashino Yukinori, prima intervista a Okuda); AP 2022 (Yuri Kageyama,
+    #   ripresa da Trinidad Express: «went on sale in 1981»); The Quietus 2025.
+    # - circa 150 dollari: Engadget 2015 («around $150»); AP 2022 («$150
+    #   MT-40»); The Quietus 2025 («a drop in the ocean at $150»).
+    # - DX7 quasi 2.000 dollari: The Quietus 2025 («nearly $2000»); scheda dx7
+    #   di questo catalogo / Wikipedia «Yamaha DX7» (1.995 dollari).
+    # - 37 tasti, 8 note insieme sui tasti grandi: Vintage Synth Explorer
+    #   (VSE, «9-voice polyphony with eight notes being playable on the main
+    #   keys and a single note on the bass»); Sound Programming (37 mini keys,
+    #   polyphony 8); Engadget (37 keys).
+    # - 15 tastini del basso, una nota alla volta: VSE («dedicated mini bass
+    #   keyboard that has 15 keys»); Sound Programming («15-key
+    #   mini-bass-button keyboard … monophonic bass lines»); la foto (si
+    #   contano 9 bianchi e 6 neri, scritta «bass»).
+    # - 22 suoni coi nomi stampati sopra i tasti: Engadget; NYT 08/08/2025
+    #   (Patricia Meschino, letta nella ristampa del San Juan Daily Star: «22
+    #   instrument sounds, a mini bass keyboard and six preset rhythms»); VSE
+    #   («names and numbers of the 22 different instrument types are also
+    #   listed above the keyboard»); la foto.
+    # - 6 ritmi di fabbrica: Engadget; NYT 2025; VSE; Sound Programming; AP
+    #   2022 (samba, swing, waltz fra i 6). Il cursore con le 6 tacche e
+    #   «rock» all'ultima a destra si legge nella foto (waltz, samba, swing,
+    #   slow rock, pops, rock).
+    # - va anche a pile: AP 2022 («battery-operated»); Sound Programming
+    #   («Batteries: 5 x D»). Il numero delle pile è solo Sound Programming:
+    #   non scritto.
+    # - non è un sintetizzatore: Engadget 2015; Bass Culture (Dubmatix,
+    #   16/06/2025: «It wasn't a synthesizer in the traditional sense»).
+    # - i ritmi sono solo batteria e basso: Nippon.com 2022 («could only use
+    #   drum and bass sounds»); The Guardian 20/02/2014 (David Katz; King
+    #   Jammy: «no rhythm section, just drum and bass»).
+    # - il basso parte da uno dei tastini di sinistra, dopo «synchro»:
+    #   Wikipedia «Casio MT-40» (synchro, poi il tastino del basso);
+    #   United Reggae 26/07/2011 («hit one of the tiny keys on the left hand
+    #   side that added a bass melody»); la scritta «synchro» sotto il tasto
+    #   rosso «casio bass» si legge nella foto.
+    # - sui tasti grandi si suona sopra le linee di basso preimpostate: The
+    #   Quietus 2025; Wikipedia «Casio MT-40» (che cita The Quietus) e VSE.
+    # - tasto fill da tenere premuto: VSE («dedicated "fill" button that can
+    #   be held down»); Nippon.com 2022 e AP 2022 (Okuda ha programmato 2
+    #   «fill-in»).
+    # - il fill-in è l'inizio di «Under Mi Sleng Teng»: Nippon.com 2022
+    #   («the intro to the song even used the fill-in preset»); AP 2022 («or
+    #   at the start of a song, as it is in "Under Mi Sleng Teng"»).
+    # - Casio lo rimette su SA-46 e SA-76 come «MT40 riddim»: Engadget 2015;
+    #   VSE; Nippon.com 2022 (SA-76).
+    # - OKUDA: entra in Casio nel 1980 dal Kunitachi College of Music di
+    #   Tokyo: Engadget 2015; Nippon.com 2022; AP 2022.
+    # - tesi di laurea sul reggae: Engadget 2015; Nippon.com 2022; AP 2022.
+    # - concerti di Bob Marley in Giappone nel 1979: Nippon.com 2022 (anno
+    #   1979); AP 2022 («going to Bob Marley's concerts in Japan»).
+    # - l'MT-40 è il suo primo lavoro: Engadget 2015; Nippon.com 2022; AP 2022.
+    # - scrive lei i 6 ritmi con le linee di basso: Nippon.com 2022 («rhythm
+    #   patterns for six genres, bass lines…»); AP 2022 («six kinds of
+    #   rhythms… creating a bass line and a beat»).
+    # - ORIGINE DI «ROCK», LE FONTI NON CONCORDANO (scritto in scheda così):
+    #   The Guardian 2014 lo dà come «a mutation of Eddie Cochran's Somethin'
+    #   Else», e così United Reggae 2011; Engadget 2015, Okuda: Cochran no
+    #   («categorically not inspired»), «A British rock record from the 70s is
+    #   all she would confirm»; Nippon.com 2022, Okuda: «the bassline was
+    #   something I came up with myself. It wasn't based on any other tune».
+    #   The Quietus 2025 mette in fila le due versioni di Okuda e nota la
+    #   contraddizione. (Melodics 2016 e The Quietus citano anche la teoria di
+    #   «Hang On To Yourself» di Bowie: lasciata fuori per spazio.)
+    # - lo chiama il suo primo figlio: AP 2022 («It's really like my first
+    #   child»); Nippon.com 2022 («I've never been able to top that first
+    #   child!»). Non usato in scheda, tenuto qui per chi rifà le battute.
+    # - KINGSTON: Waterhouse, quartiere di Kingston: Guardian 2014; Quietus
+    #   2025.
+    # - Noel Davey ha solo una melodica: Quietus 2025 («Davey's only keyboard
+    #   was a melodica»); AP 2022 («Davey was blowing into a Melodica»).
+    # - l'MT-40 gliela procura dagli Stati Uniti il mentore George «Buddy»
+    #   Haye dei Wailing Souls: Quietus 2025 (in tour in America); NYT 2025
+    #   (Haye «of the Wailing Souls», la tastiera stava a casa sua in
+    #   California); AP 2022 (un amico, comprata in California).
+    # - Davey voleva un DX7: Engadget 2015 («had actually wanted to buy a …
+    #   Yamaha DX7 … but couldn't afford»); Quietus 2025 (il DX7 a quasi 2.000
+    #   dollari contro i 150 dell'MT-40); Wikipedia «Under Mi Sleng Teng».
+    # - fine 1984: Guardian 2014 («in late 1984»); Quietus 2025 (novembre e
+    #   dicembre 1984).
+    # - trovato per caso, perso e ritrovato: Quietus 2025 («by chance»); AP
+    #   2022 (Davey: «found it, lost it, then had to look for it»); NYT 2025
+    #   (non capivano quale tasto); Nippon.com 2022 (Davey «lost the rhythm»).
+    # - CHI HA PREMUTO, LE FONTI NON CONCORDANO: Wayne Smith per The Quietus;
+    #   Davey per AP 2022; King Jammy stesso per United Reggae 2011.
+    # - King Jammy lo trova troppo veloce e lo rallenta: Guardian 2014
+    #   (Jammy: «too fast… I slowed it down»); NYT 2025 («I slowed the tempo
+    #   down to a reggae beat»); Quietus 2025 («breakneck speed»).
+    # - aggiunge pianoforte e percussioni: Guardian 2014; NYT 2025 (stessa
+    #   frase di Jammy, in due interviste diverse).
+    # - il disco esce nel 1985 sull'etichetta di Jammy: Guardian 2014 (7
+    #   pollici su Jammys); Engadget 2015; Wikipedia «Under Mi Sleng Teng».
+    # - uno dei primi dischi giamaicani fatti in digitale: Guardian 2014;
+    #   NYT 2025 («When reggae went digital»); Wikipedia.
+    # - QUANTE VERSIONI, LE FONTI NON CONCORDANO: Guardian 2014 «more than
+    #   200»; Engadget 2015 «more than 250»; Nippon.com 2022 «as many as 450»;
+    #   NYT 2025 (dati Riddim-ID) «over 500». In scheda: 200 contro 500.
+    # - Gorillaz: Sound On Sound luglio 2017 (Paul Tingen, «Inside Track»
+    #   su «Charger»: «There is a Casio MT40 snare as well on track 13»); VSE
+    #   («Damon Albarn of Gorillaz also made use of this keyboard»).
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
+    # - «Charger» come brano preciso: solo Sound On Sound (Wikipedia lo
+    #   riprende da lì). Per questo la nota dei Gorillaz non nomina il pezzo.
+    #   Un risultato di ricerca parla di «We Got the Power»: non letto, fuori.
+    # - 35.000 yen di listino: solo Nippon.com.
+    # - ritirata dopo circa un anno: solo Engadget (Wikipedia lo copia).
+    # - vendute bene in America centrale e meridionale: solo Nippon.com.
+    # - Okuda scopre tutto ad agosto 1986 da un articolo di «Music Magazine»
+    #   («The Sleng Teng Flood»): solo Nippon.com (DancehallMag e Wikipedia lo
+    #   ricopiano da lì).
+    # - il ritmo «avant garde», più punk, bocciato dai dirigenti come «too
+    #   crazy»: solo AP 2022. Peccato, era il dettaglio più bello.
+    # - preset lunghi 2 battute: solo Nippon.com (ricopiato da DancehallMag).
+    # - linee di basso per accordi maggiori, minori e di settima: solo
+    #   Nippon.com.
+    # - Casio lascia usare il giro gratis purché si citi l'MT-40: solo
+    #   Nippon.com (DancehallMag lo ricopia).
+    # - il tastino del basso giusto è il RE, il secondo da sinistra: solo
+    #   Wikipedia.
+    # - Jammy era a Londra quando arrivano Davey e Smith; Smith esce dallo
+    #   studio per piangere: solo The Quietus (che cita Lesser 1989).
+    # - i produttori che scartano il pezzo prima di Jammy: solo NYT.
+    # - il Syndrum di Jammy: NYT; Wikipedia lo ricopia.
+    # - clash con Black Scorpio pochi giorni dopo: Guardian 2014; The Quietus
+    #   2025 lo chiama un mito. Lasciato fuori invece di metterlo come dubbio,
+    #   per spazio. Clash Rodigan contro Barry G a Montego Bay, febbraio 1985:
+    #   Quietus + NYT, verificato ma fuori per spazio.
+    # - Julian Cope ne compra una nel 1981 / demo di «World Shut Your Mouth»:
+    #   Quietus e Wikipedia, ma la ricerca non lega l'MT-40 al brano.
+    # - 584 mm, 2,2 kg, CPU NEC D775G, percussioni analogiche: solo Sound
+    #   Programming.
+    # - The Magnetic Fields: solo VSE.
+    # - testo sul fumo e contro la cocaina, ispirato a «Under Mi Sensi» di
+    #   Barrington Levy: Guardian (Engadget dice solo «dangers of drugs»).
+    # - Smith morto il 17/02/2014 a 48 anni: Guardian + Rolling Stone,
+    #   verificato ma non serve alla scheda.
+    #
+    # DUBBI E COSE NON VERIFICATE
+    # - FOTO: su Commons esiste UNA sola foto dell'MT-40 (File:Casio
+    #   MT-40.jpg, duojet, pubblico dominio), 800 x 251 px. Cercato per
+    #   «Casio MT-40», «MT-40», «Casiotone MT»: nient'altro, niente pannello o
+    #   interno per foto_extra. L'API con iiurlwidth=1280 restituisce come
+    #   thumburl l'ORIGINALE («thumbnail_unscaled»): un thumbnail più largo
+    #   del file non esiste. In SCARICARE c'è quindi l'URL che l'API dà
+    #   (scaricato con successo dal container alle 20:43 con 200). Va
+    #   guardata la tavola: a 1080 px è ingrandita 1,35 volte, e i RITAGLI
+    #   zoomati delle tavole 2 e 3 rischiano di sgranare. Se non regge, la
+    #   scheda aspetta una foto migliore (Flickr CC da caricare su Commons:
+    #   cosa da proprietario). Fondo rosso nella foto: col multiply resta un
+    #   rettangolo scuro, non una macchina scontornata.
+    # - REGISTRAZIONE: File:Casio MT-40 Drumpattern.mp3 (19,3 s), pagina
+    #   ricontrollata via API il 28/10/2026. Licenza della registrazione «self
+    #   cc-by-sa-4.0» di Maximilian Schönherr; il pattern è marcato
+    #   «PD-because commercial synthesizer sounds». Descrizione: «Rhythmussektion
+    #   des Casio MT-40 Minikeyboards», data 16/01/1984. Non so QUALE dei 6
+    #   ritmi sia (non dichiarato, e il file dal container ha dato 429: non
+    #   l'ho potuto ascoltare né analizzare). `cosa` dice quindi «uno dei
+    #   ritmi», non «rock», e che il basso di Sleng Teng non c'è.
+    # - Gender: la scheda tratta l'MT-40 al femminile («la Casiotone», «una
+    #   tastiera»); in grafia «l'MT-40» va bene per tutti e due.
+    # - hashtag artista: #gorillaz è l'artista più noto in scheda, come vuole
+    #   lo schema; se sembra fuori tono su una scheda tutta giamaicana, l'unica
+    #   alternativa coerente è #waynesmith.
+    # - handle Instagram: nessuno verificato da un sito ufficiale, tutti None.
+    # - NOMI STRANIERI NELLA «DETTA» del reel_voce (da controllare in FONEMI):
+    #   Casio, Hiroko Okuda, Kingston, Noel Davey, Wayne Smith, King Jammy,
+    #   Under Mi Sleng Teng, rock.
+    {
+        "slug": "mt40",
+        "numero": 77,
+        "serie": 'I GIOCATTOLI',
+        "strumento": 'Casio Casiotone MT-40',
+        "anno": '1981',
+        "luogo": 'Tokyo, Giappone',
+        "costruttore": 'Casio',
+        "specifiche": [('USCITA', '1981'),
+                       ('PREZZO', '150 $ circa'),
+                       ('TASTI', '37 + 15 di basso'),
+                       ('RITMI', '6')],
+        "gancio": "Dentro c'è un ritmo che si chiama «rock». In Giamaica ci hanno cantato sopra in "
+                  'centinaia',
+        "sottotitolo": 'Non è un sintetizzatore, è una tastiera da casa coi ritmi automatici. Casio '
+                       'la mette in vendita nel 1981.',
+        "la_macchina": 'Si riconosce dai tastini a sinistra. Sono 15, ci sta scritto «bass» e suonano '
+                       "una nota alla volta. Il resto è una Casiotone color crema con l'altoparlante "
+                       'incorporato, 37 tasti che suonano 8 note insieme e i nomi dei 22 suoni '
+                       "stampati in fila sopra la tastiera. Al centro c'è un cursore con 6 tacche, "
+                       "una per ritmo, e l'ultima a destra dice «rock». Va anche a pile. Costava "
+                       'circa 150 dollari, quando un DX7 ne costava quasi 2.000. A me fa simpatia '
+                       'proprio per questo, è una tastiera da regalare a un nipote e nessuno, '
+                       'guardandola, ci scommetterebbe una lira.',
+        "inventore_nome": 'Hiroko Okuda, per Casio',
+        "inventore": 'Hiroko Okuda entra in Casio nel 1980, appena laureata al Kunitachi College of '
+                     "Music di Tokyo con una tesi sul reggae. L'anno prima era andata a sentire Bob "
+                     "Marley in Giappone. L'MT-40 è il suo primo lavoro, e tocca a lei scrivere i 6 "
+                     'ritmi con le loro linee di basso. Da dove venga «rock», le versioni non '
+                     "coincidono. Il Guardian nel 2014 lo dà per una variazione di «Somethin' Else» "
+                     "di Eddie Cochran. Nel 2015 Okuda dice a Engadget che Cochran non c'entra e che "
+                     "viene da un disco rock inglese degli anni '70, senza dire quale. Nel 2022, a "
+                     "Nippon.com, dice che quel basso l'ha inventato lei. Io credo all'ultima.",
+        "come_funziona": 'Ogni ritmo è un giro già scritto in fabbrica, solo batteria e basso. Lo '
+                         'scegliete col cursore e ne regolate la velocità con la manopola del tempo. '
+                         'Il tasto rosso porta scritto «casio bass», e sotto «synchro». Il basso '
+                         'entra quando premete uno dei tastini di sinistra, e intanto sui 37 tasti '
+                         'grandi suonate quello che volete, con uno dei 22 suoni. Tenendo premuto il '
+                         'tasto fill il ritmo fa una battuta di passaggio. Se ne trovate una, mettete '
+                         "il cursore su «rock» prima di tutto il resto. Casio quel giro l'ha rimesso "
+                         'anni dopo su 2 tastiere nuove, la SA-46 e la SA-76, col nome «MT40 riddim».',
+        "richiami": [('FIG. 1', '15 tastini per il basso'),
+                     ('FIG. 2', '6 ritmi, «rock» in fondo'),
+                     ('FIG. 3', '22 suoni stampati in fila')],
+        "chi_lusata": [{"artista": 'Wayne Smith',
+                        "nota": '«Under Mi Sleng Teng» (1985), uno dei primi dischi giamaicani fatti '
+                                'in digitale',
+                        "ig": None},
+                       {"artista": 'Noel Davey',
+                        "nota": "l'MT-40 di «Sleng Teng» era la sua",
+                        "ig": None},
+                       {"artista": 'King Jammy',
+                        "nota": 'il disco esce sulla sua etichetta, nel 1985',
+                        "ig": None},
+                       {"artista": 'Gorillaz',
+                        "nota": "Damon Albarn l'ha usata nei suoi pezzi",
+                        "ig": None}],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": 'Under Mi Sleng Teng',
+                         "artista": 'Wayne Smith',
+                         "anno": '1985',
+                         "cosa": "Batteria e basso sono il ritmo «rock» dell'MT-40. Ascoltate i primi "
+                                 'secondi, sono la battuta di passaggio del tasto fill.'},
+        "aneddoto": 'A Waterhouse, un quartiere di Kingston, Noel Davey ha solo una melodica e sogna '
+                    'un DX7. Il mentore, George «Buddy» Haye dei Wailing Souls, gli procura dagli '
+                    'Stati Uniti un MT-40. Alla fine del 1984 Davey e il cantante Wayne Smith ci '
+                    "trovano dentro un giro per caso, lo perdono e ci mettono un po' a ritrovarlo. "
+                    'Chi abbia premuto il tasto, ogni fonte lo racconta a modo suo. Lo portano a King '
+                    'Jammy, che lo trova troppo veloce, lo rallenta e ci aggiunge pianoforte e '
+                    'percussioni. Il disco esce nel 1985. Delle versioni cantate dopo, il Guardian '
+                    'nel 2014 ne contava più di 200, il New York Times nel 2025 più di 500.',
+        "avvertenza": "Il ritmo «rock» sta all'ultima tacca del cursore, e il basso parte da un "
+                      "tastino. Trovato il giro, segnatevi la posizione: a Kingston l'hanno perso.",
+        "foto": {"file": 'assets/foto/mt40/principale.jpg',
+                 "autore": 'duojet',
+                 "licenza": 'Pubblico dominio',
+                 "fonte": 'Wikimedia Commons',
+                 "ritaglio": True,
+                 "didascalia": 'A sinistra i 15 tastini del basso, al centro il cursore dei 6 ritmi'},
+        "fonti": [{"titolo": '«Casio MT-40» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Casio_MT-40',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Under Mi Sleng Teng» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Under_Mi_Sleng_Teng',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Casio and the Sleng Teng riddim» — Engadget, 2015',
+                   "url": 'https://www.engadget.com/2015-12-04-casio-and-the-sleng-teng-riddim.html',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Intervista a Okuda Hiroko — Nippon.com, 2022',
+                   "url": 'https://www.nippon.com/en/japan-topics/g02027/okuda-hiroko-the-casio-employee-behind-the-sleng-teng-riddim-that-revolutionized-reggae.html',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Okuda e lo Sleng Teng — AP, 2022',
+                   "url": 'https://trinidadexpress.com/features/local/sleng-teng-how-a-japanese-woman-influenced-j-ca-s-reggae/article_0d371324-976d-11ec-acba-bf65f75207ca.html',
+                   "data": '2026-10-28'},
+                  {"titolo": "«Wayne Smith's Under Mi Sleng Teng» — The Guardian, 2014",
+                   "url": 'https://www.theguardian.com/music/2014/feb/20/wayne-smith-sleng-teng-revolutionised-dancehall-reggae',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Like a human flood» — The Quietus, 2025',
+                   "url": 'https://thequietus.com/opinion-and-essays/anniversary/wayne-smith-sleng-teng-riddim-40/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«When reggae went digital» — The New York Times, 2025',
+                   "url": 'https://www.nytimes.com/2025/08/08/arts/music/sleng-teng-wayne-smith-reggae.html',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Casio MT-40» — Vintage Synth Explorer',
+                   "url": 'https://vintagesynth.com/casio/mt-40',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Casio Casiotone MT-40» — Sound Programming',
+                   "url": 'https://soundprogramming.net/keyboards/casio/casio-casiotone-mt-40',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Inside Track: Gorillaz, Charger» — Sound On Sound, 2017',
+                   "url": 'https://www.soundonsound.com/techniques/inside-track-gorillaz-charger',
+                   "data": '2026-10-28'}],
+        "hashtags": ['#mt40', '#casio', '#tastiera', '#gorillaz', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 077',
+                          'Il ritmo di una Casio da 150 dollari cambia il reggae'),
+                         ('CASIO MT-40 · 1981',
+                          "Hiroko Okuda, appena assunta, scrive i 6 ritmi dell'MT-40. Uno è «rock»."),
+                         ('KINGSTON · 1984',
+                          'Noel Davey e Wayne Smith trovano «rock» per caso, e poi lo perdono.'),
+                         ('KING JAMMY',
+                          'King Jammy trova il giro troppo veloce, lo rallenta e ci mette il piano.'),
+                         ('1985 · «SLENG TENG»',
+                          'Esce «Under Mi Sleng Teng». Sopra quel giro cantano in centinaia.')],
+        "reel_cta": 'Mandalo a chi voleva un synth e ha avuto una Casio',
+        "reel_audio": {"file": 'assets/audio/mt40/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'Maximilian Schönherr',
+                       "licenza": 'CC BY-SA 4.0',
+                       "fonte": 'Wikimedia Commons',
+                       "url": 'https://commons.wikimedia.org/wiki/File:Casio_MT-40_Drumpattern.mp3',
+                       "cosa": 'un Casio MT-40 vero che suona uno dei suoi ritmi di fabbrica, '
+                               'registrato nel 1984: si sente solo la batteria, il basso di «Sleng '
+                               "Teng» qui non c'è"},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 78
     # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
     # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
     # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
@@ -9026,7 +10042,7 @@ SCHEDE = [
     # Commons o Freesound: il reel usa la sigla.
     {
         "slug": "autotune",
-        "numero": 75,
+        "numero": 78,
         "serie": "GLI EFFETTI",
         "strumento": "Antares Auto-Tune",
         "anno": "1997",
@@ -9112,7 +10128,7 @@ SCHEDE = [
         ],
         "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 075", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("ELETTROFONI · N. 078", "La voce robot di Cher nasce da chi cercava il petrolio"),
             ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
             ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
             ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
@@ -9123,7 +10139,7 @@ SCHEDE = [
     },
     {
         "slug": "lowrey",
-        "numero": 76,
+        "numero": 79,
         "serie": "GLI ORGANI",
         "strumento": "Lowrey DSO",
         "anno": "1965",
@@ -9216,7 +10232,7 @@ SCHEDE = [
         ],
         "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 076", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ELETTROFONI · N. 079", "Quel clavicembalo dei Beatles è un organo da salotto"),
             ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
             ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
             ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
@@ -9227,7 +10243,7 @@ SCHEDE = [
     },
     {
         "slug": "wasp",
-        "numero": 77,
+        "numero": 80,
         "serie": "I SINTETIZZATORI",
         "strumento": "EDP Wasp",
         "anno": "1978",
@@ -9319,7 +10335,7 @@ SCHEDE = [
         ],
         "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 077", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("ELETTROFONI · N. 080", "Casale dei Devo: col sudore delle dita suona da solo"),
             ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
             ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
@@ -9330,7 +10346,7 @@ SCHEDE = [
     },
     {
         "slug": "elkarhapsody",
-        "numero": 78,
+        "numero": 81,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -9420,7 +10436,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 078", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 081", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -9431,7 +10447,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 79,
+        "numero": 82,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -9517,7 +10533,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 079", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 082", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -9528,7 +10544,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 80,
+        "numero": 83,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -9617,7 +10633,7 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 080", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 083", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
@@ -9628,7 +10644,7 @@ SCHEDE = [
     },
     {
         "slug": "pianet",
-        "numero": 81,
+        "numero": 84,
         "serie": "GLI ELETTROMECCANICI",
         "strumento": "Hohner Pianet",
         "anno": "1962",
@@ -9713,7 +10729,7 @@ SCHEDE = [
         ],
         "hashtags": ["#pianet", "#hohner", "#pianoelettrico", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 081", "«She's Not There» degli Zombies: un Pianet da casa"),
+            ("ELETTROFONI · N. 084", "«She's Not There» degli Zombies: un Pianet da casa"),
             ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
             ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
@@ -9722,7 +10738,7 @@ SCHEDE = [
         "reel_cta": "Mandalo a chi canta «She's Not There» in macchina",
         "verificata": True,
     },
-    # ---------------------------------------------------------------- 81
+    # ---------------------------------------------------------------- 84
     # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
     # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
     # Scheda «ans» — sintetizzatore ANS di Evgenij Murzin (URSS, prototipo 1958).

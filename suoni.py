@@ -260,6 +260,7 @@ VOCE_SCHEDA = {
     # rifornimento del 28/10/2026
     "syntorchestra": "organo", "proone": "sega", "volcakeys": "sega",
     "jv1080": "fm", "monotron": "acido", "doepfer": "studio", "drumulator": "sega",
+    "crybaby": "studio", "mt40": "giocattolo", "microkorg": "sega",
     # elettronica da pochi soldi
     "stylophone": "giocattolo", "omnichord": "giocattolo", "speakspell": "giocattolo", "vl1": "giocattolo",
     # ritmiche: la voce sta sotto, comanda la batteria (vedi CON_BATTERIA)
@@ -269,7 +270,7 @@ VOCE_SCHEDA = {
 }
 CON_BATTERIA = {"tr808", "tr909", "tr606", "lm1", "dmx", "simmonssds5",
                 "mpc60", "sp1200", "rhythmace", "tb303", "ms20", "spaceecho",
-                "sh101", "vl1", "drumulator"}
+                "sh101", "vl1", "drumulator", "mt40"}
 CON_ECO = {"spaceecho", "vcs3", "fonologia", "theremin", "h910"}
 
 
