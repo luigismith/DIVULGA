@@ -72,6 +72,10 @@
    "file": "tavole/ms20/reel2.jpg",
    "firma": "c4f172d4bb4c9ae5-1"
   },
+  "nordlead": {
+   "file": "tavole/nordlead/reel2.jpg",
+   "firma": "ab3820e999dfd822-1"
+  },
   "novachord": {
    "file": "tavole/novachord/reel2.jpg",
    "firma": "1d76739ca36b6adf-1"
@@ -733,6 +737,26 @@
     ]
    },
    "firma": "9ca361299e562b38-320-640-1280-1"
+  },
+  "nordlead": {
+   "1280": "foto/nordlead-1280.jpg",
+   "320": "foto/nordlead-320.jpg",
+   "640": "foto/nordlead-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "755cbde85933789d-320-640-1280-1"
   },
   "novachord": {
    "1280": "foto/novachord-1280.jpg",
@@ -1544,6 +1568,11 @@
   "ms20": {
    "file": "suoni/ms20.mp3",
    "firma": "e31eb05c8340cc51-0-45-1",
+   "secondi": 45
+  },
+  "nordlead": {
+   "file": "suoni/nordlead.mp3",
+   "firma": "90e82f22cc765f19-0-45-1",
    "secondi": 45
   },
   "omnichord": {
