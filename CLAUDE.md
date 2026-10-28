@@ -147,6 +147,17 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   Dal 07/10/2026 il REEL ha la sua (`reel_cta`, «Mandalo a…»): il reel
   lo vede chi non ci segue, e per lui il gesto che conta è l'invio, non
   il commento. Carosello e tavole tengono `cta(scheda)`.
+  **Come si scrive un «Mandalo a…»** (28/10/2026, il proprietario:
+  «Occhio ai "mandalo a"… falli meglio»). Il destinatario è UNA persona
+  che chi guarda conosce davvero, presa dalla storia della scheda: «a chi
+  canta ancora «Only You»», «all'amico che vive dentro Pro Tools», «a chi
+  ha più cavi che vestiti». No alle categorie da questionario («chi suona
+  l'organo», «un chitarrista che ama l'eco»), no a ciò che chiede di sapere
+  qualcosa («chi sa leggere il cirillico»), no al bersaglio a caso («chi ha
+  un colloquio domani»). Prova: leggendola, ti viene in mente un nome? Nel
+  reel la chiusura ha una grafica sua (`_chiusura_html` in genera_reel.py):
+  l'aeroplanino di carta dell'icona «Invia» con MANDALO in arancio, il
+  destinatario in grande, la riga del profilo staccata in fondo.
 - Cadenza: OGNI GIORNO alle 18 italiane (dal 26/08/2026).
 - **Reel parlato, «formato 3», IN PROVA** (21/10/2026, il proprietario:
   «reels parlanti (con voce sintetica) e animati con la mascotte… che
@@ -185,6 +196,20 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   Whisper si fa sulla voce trattata). Per cambiarla di nuovo si spegne
   `PARLATO_ATTIVO` in contenuti.py e si fa scegliere su campioni: una
   voce che non gli piace non esce.
+  **Dinamo rifatto il 28/10/2026** (il proprietario: «Migliora il
+  personaggio nei reels parlati… fallo molto molto meglio e definito
+  graficamente»). Era l'icona al tratto delle tavole in un tondo, 187 px
+  su 720: da lontano un bollino. Ora è un busto a colori pieni con bordo da
+  adesivo (si stacca da qualunque foto), 200 px di larghezza, e si muove
+  di più: lampadina dell'antenna accesa quando parla, lancetta del VU sul
+  petto con la balistica di uno strumento, bocca a 5 livelli, occhiate in
+  alto a destra verso il testo, palpebre in due tempi (`dinamo.py`, gli
+  sprite si fanno solo per gli stati usati). **Pronuncia**: i nomi
+  stranieri che l'alfabeto italiano non sa scrivere (Takahashi, Nathan,
+  Aphex Twin, Love Symbol, Tomb Raider, McCree…) vanno al motore in
+  fonemi IPA (`FONEMI` in voce.py), il resto della frase passa da espeak.
+  Una voce entra solo se passa il riascolto: «Erasure» e «Deep Blue Day»
+  in fonemi Whisper non li capisce, e restano riscritti in NOMI.
 - **Il reel serale ha due inneschi** (21/10/2026): la Routine delle
   19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
   e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno

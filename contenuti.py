@@ -7025,7 +7025,7 @@ SCHEDE = [
             ("«SONNO» · 2014", "Alessandro Cortini dei Nine Inch Nails suona l'MC-202 in hotel, col delay."),
             ("IL REGISTRATORE IN MANO", "Cortini gira la stanza col registratore, e apre rubinetti e finestre."),
         ],
-        "reel_cta": "Mandalo a chi compone in camera d'albergo",
+        "reel_cta": "Mandalo all'amico che suona anche in vacanza",
         # Reel parlato (formato 3, prova a schede alterne dal 21/10/2026): le
         # frasi che Dinamo dice, una per battuta; scritte e verificate (fatti e
         # stile) da due agenti, stesse fonti della scheda.
@@ -7046,8 +7046,8 @@ SCHEDE = [
              "detta": "Cortini gira la stanza col registratore, e apre rubinetti e finestre.",
              "scritta": "Cortini gira la stanza col registratore, e apre rubinetti e finestre."},
             {"ruolo": "cta",
-             "detta": "Mandalo a chi compone in camera d'albergo.",
-             "scritta": "Mandalo a chi compone in camera d'albergo."},
+             "detta": "Mandalo all'amico che suona anche in vacanza.",
+             "scritta": "Mandalo all'amico che suona anche in vacanza."},
             {"ruolo": "chiusura",
              "detta": "Le slide e le fonti sul profilo Elettrofoni.",
              "scritta": "Le slide e le fonti sul profilo Elettrofoni."},
@@ -7339,7 +7339,7 @@ SCHEDE = [
                           'Clarke ha un sequencer Roland MC-4, ma il suo Jupiter-4 non ha le prese.'),
                          ("«UPSTAIRS AT ERIC'S», 1982",
                           "Compra un Pro-One, e l'MC-4 lo suona al posto di una band.")],
-        "reel_cta": 'Mandalo a chi suona tutto da solo',
+        "reel_cta": 'Mandalo a chi canta ancora «Only You»',
         "reel_audio": {"file": 'assets/audio/proone/registrazione.mp3',
                        "inizio": 0,
                        "autore": 'druidbloke',
@@ -7679,33 +7679,29 @@ SCHEDE = [
                           'Il Volca Keys è quello degli accordi: 3 note, 6 pile, un altoparlante.'),
                          ('APHEX TWIN · 2017',
                           'Aphex Twin intervista Takahashi e mette un Volca Keys in un pezzo suo.')],
-        "reel_cta": 'Mandalo a chi ha un colloquio domani',
+        "reel_cta": 'Mandalo a chi dice che i synth costano troppo',
         "reel_voce": [{"ruolo": 'battuta1',
                        "detta": 'Tatsuya Takahashi va al colloquio in Korg con un synth costruito da '
                                 'lui.',
                        "scritta": 'Tatsuya Takahashi va al colloquio in Korg con un synth costruito '
                                   'da lui.'},
                       {"ruolo": 'battuta2',
-                       "detta": 'Quel synth ha otto oscillatori, va a pile e ha gli altoparlanti '
-                                'dentro.',
-                       "scritta": 'Quel synth ha 8 oscillatori, va a pile e ha gli altoparlanti '
-                                  'dentro.'},
+                       "detta": 'Quel synth ha otto oscillatori, va a pile, con gli altoparlanti dentro.',
+                       "scritta": 'Quel synth ha 8 oscillatori, va a pile, con gli altoparlanti dentro.'},
                       {"ruolo": 'battuta3',
-                       "detta": 'Korg assume Takahashi, e nel duemilatredici lui fa uscire tre Volca '
-                                'insieme.',
-                       "scritta": 'Korg assume Takahashi, e nel 2013 lui fa uscire tre Volca '
-                                  'insieme.'},
+                       "detta": 'Takahashi entra in Korg, e nel duemilatredici fa uscire tre Volca insieme.',
+                       "scritta": 'Takahashi entra in Korg, e nel 2013 fa uscire tre Volca insieme.'},
                       {"ruolo": 'battuta4',
                        "detta": 'Il Volca degli accordi suona tre note insieme, e va a sei pile.',
                        "scritta": 'Il Volca degli accordi suona 3 note insieme, e va a 6 pile.'},
                       {"ruolo": 'battuta5',
-                       "detta": "Aphex Twin intervista Takahashi, e nel suo pezzo tutto Korg c'è anche "
+                       "detta": "Aphex Twin intervista Takahashi, e nel suo pezzo tutto Korg c'è "
                                 'quel Volca.',
-                       "scritta": "Aphex Twin intervista Takahashi, e nel suo pezzo tutto Korg c'è anche "
+                       "scritta": "Aphex Twin intervista Takahashi, e nel suo pezzo tutto Korg c'è "
                                   'quel Volca.'},
                       {"ruolo": 'cta',
-                       "detta": 'Mandalo a chi ha un colloquio domani.',
-                       "scritta": 'Mandalo a chi ha un colloquio domani.'},
+                       "detta": 'Mandalo a chi dice che i synth costano troppo.',
+                       "scritta": 'Mandalo a chi dice che i synth costano troppo.'},
                       {"ruolo": 'chiusura',
                        "detta": 'Le slide e le fonti sul profilo Elettrofoni.',
                        "scritta": 'Le slide e le fonti sul profilo Elettrofoni.'}],
@@ -8003,7 +7999,7 @@ SCHEDE = [
                           'Il loro set Rock Drums finisce dentro «Shout» dei Tears for Fears.'),
                          ('DIGIDESIGN · 1991',
                           'Nel 1991 Digidrums, che ora si chiama Digidesign, fa uscire Pro Tools.')],
-        "reel_cta": 'Mandalo a chi registra in Pro Tools',
+        "reel_cta": "Mandalo all'amico che vive dentro Pro Tools",
         "reel_audio": {"file": 'assets/audio/drumulator/registrazione.mp3',
                        "inizio": 0,
                        "autore": 'Andreas Gortan',
@@ -8082,8 +8078,8 @@ SCHEDE = [
     # NOTA TECNICA: suoni.VOCE_SCHEDA ha già «jv1080» (valida_scheda non
     #   lo segnala). Nel lessico di voce.py mancano «JV-1080» (qui scritto «gei vi
     #   milleottanta», sul modello di «JD-800»: «gei di ottocento»), «Tomb
-    #   Raider» («Tum Rèider»), «McCree» («Macrì») e «Abbey Road» («Èbbi
-    #   Ròud»): da provare col riascolto, il nome di McCree è quello a rischio.
+    #   Raider», «McCree» e «Abbey Road»: dal 28/10/2026 vanno in fonemi (FONEMI in
+    #   voce.py), non più riscritti all'italiana come «Tum Rèider».
     #
     # FONTI PER FATTO (chi regge cosa)
     # - 1994: Wikipedia; Roland (pagina del software, «Released in 1994»);
@@ -8354,9 +8350,9 @@ SCHEDE = [
                           'Nathan McCree ha 4 settimane e un JV-1080 con la scheda Orchestral.'),
                          ('ABBEY ROAD · 2017',
                           "Nel 2017 un'orchestra vera registra le musiche di McCree ad Abbey Road.")],
-        "reel_cta": 'Mandalo a chi ha giocato al primo Tomb Raider',
+        "reel_cta": 'Mandalo a chi ha finito il primo Tomb Raider',
         "reel_voce": [{"ruolo": 'battuta1',
-                       "detta": 'Le musiche del primo Tum Rèider escono da un Roland gei vi '
+                       "detta": 'Le musiche del primo Tomb Raider escono da un Roland gei vi '
                                 'milleottanta.',
                        "scritta": 'Le musiche del primo Tomb Raider escono da un Roland JV-1080.'},
                       {"ruolo": 'battuta2',
@@ -8368,17 +8364,17 @@ SCHEDE = [
                        "detta": 'Sotto il coperchio trovi quattro slot per altre schede di suoni.',
                        "scritta": 'Sotto il coperchio trovi 4 slot per altre schede di suoni.'},
                       {"ruolo": 'battuta4',
-                       "detta": 'Nathan Macrì ha quattro settimane per Tum Rèider, e la scheda '
+                       "detta": 'Nathan McCree ha quattro settimane per Tomb Raider, e la scheda '
                                 'Orchestral fa quasi tutto.',
                        "scritta": 'Nathan McCree ha 4 settimane per Tomb Raider, e la scheda '
                                   'Orchestral fa quasi tutto.'},
                       {"ruolo": 'battuta5',
                        "detta": "Nel duemiladiciassette un'orchestra vera registra quelle musiche ad "
-                                'Èbbi Ròud.',
+                                'Abbey Road.',
                        "scritta": "Nel 2017 un'orchestra vera registra quelle musiche ad Abbey Road."},
                       {"ruolo": 'cta',
-                       "detta": 'Mandalo a chi ha giocato al primo Tum Rèider.',
-                       "scritta": 'Mandalo a chi ha giocato al primo Tomb Raider.'},
+                       "detta": 'Mandalo a chi ha finito il primo Tomb Raider.',
+                       "scritta": 'Mandalo a chi ha finito il primo Tomb Raider.'},
                       {"ruolo": 'chiusura',
                        "detta": 'Le slide e le fonti sul profilo Elettrofoni.',
                        "scritta": 'Le slide e le fonti sul profilo Elettrofoni.'}],
@@ -8714,7 +8710,7 @@ SCHEDE = [
                           'Eurorack.'),
                          ('5 O 10 ANNI',
                           "Doepfer dà all'A-100 5 o 10 anni di vita, e l'A-100 ne compie 30.")],
-        "reel_cta": 'Mandalo a chi ha più cavetti che synth',
+        "reel_cta": 'Mandalo a chi ha più cavi che vestiti',
         "reel_audio": {"file": 'assets/audio/doepfer/registrazione.mp3',
                        "inizio": 0,
                        "autore": 'Zoë Blade',
@@ -9004,7 +9000,7 @@ SCHEDE = [
                           'Takahashi scrive i punti di prova sulla scheda, per smontarla lui stesso.'),
                          ('NOVEMBRE 2010',
                           'Korg pubblica lo schema, e chi salda aggiunge al Monotron il MIDI.')],
-        "reel_cta": 'Mandalo a chi apre tutto col cacciavite',
+        "reel_cta": 'Mandalo a chi smonta tutto quello che compra',
         "reel_audio": {"file": 'assets/audio/monotron/registrazione.mp3',
                        "inizio": 0,
                        "autore": 'Schminnte',
@@ -9122,7 +9118,7 @@ SCHEDE = [
             ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
             ("CHER · 1998", "In «Believe» la correzione è a zero: la voce salta di nota in nota."),
         ],
-        "reel_cta": "Mandalo a chi giura di non usare l'autotune",
+        "reel_cta": 'Mandalo a chi stona e dà la colpa al microfono',
         "verificata": True,
     },
     {
@@ -9226,7 +9222,7 @@ SCHEDE = [
             ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
             ("LE PRIME 8 NOTE", "4 imitazioni mediocri sommate: un timbro che in natura non esiste."),
         ],
-        "reel_cta": "Mandalo a chi pensava fosse un clavicembalo",
+        "reel_cta": 'Mandalo a chi giurava che era un clavicembalo',
         "verificata": True,
     },
     {
@@ -9329,7 +9325,7 @@ SCHEDE = [
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
             ("ELECTRONIC DREAM PLANT", "Anche la ditta dura poco: nel 1980 fallisce, schiacciata dai debiti."),
         ],
-        "reel_cta": "Mandalo a chi suona con le mani sudate",
+        "reel_cta": 'Mandalo a chi ha sempre le mani sudate',
         "verificata": True,
     },
     {
@@ -9430,7 +9426,7 @@ SCHEDE = [
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
             ("GENESIS · KLAUS SCHULZE", "Ci suonano Tony Banks dei Genesis e Klaus Schulze."),
         ],
-        "reel_cta": "Mandalo a chi ascolta i Tangerine Dream",
+        "reel_cta": 'Mandalo a chi si addormenta coi Tangerine Dream',
         "verificata": True,
     },
     {
@@ -9527,7 +9523,7 @@ SCHEDE = [
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
             ("GENESIS · RUSH", "Ci suonano Mike Rutherford dei Genesis e Geddy Lee dei Rush."),
         ],
-        "reel_cta": "Mandalo a chi suona il basso coi piedi",
+        "reel_cta": "Mandalo all'amico fissato coi Genesis",
         "verificata": True,
     },
     {
@@ -9627,7 +9623,7 @@ SCHEDE = [
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
             ("RESTA IN CATALOGO", "Quell'EP-3 si fa fino al 1991. Più di ogni altro modello."),
         ],
-        "reel_cta": "Mandalo a un chitarrista che ama l'eco",
+        "reel_cta": 'Mandalo al chitarrista con dieci pedali',
         "verificata": True,
     },
     {
@@ -9723,7 +9719,7 @@ SCHEDE = [
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
             ("1964", "Rod Argent lo suona su «She's Not There» degli Zombies."),
         ],
-        "reel_cta": "Mandalo a un tastierista da lamelle",
+        "reel_cta": "Mandalo a chi canta «She's Not There» in macchina",
         "verificata": True,
     },
     # ---------------------------------------------------------------- 81

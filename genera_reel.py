@@ -219,7 +219,41 @@ body{{width:{L}px;height:{H}px;position:relative;font-family:'Oswald';color:{gt.
 .tag small{{font-family:'PlexMono';font-weight:600;font-size:30px;margin-left:16px;letter-spacing:.1em}}
 .handle{{display:block;font-family:'PlexMono';font-weight:600;font-size:38px;letter-spacing:.12em;
   color:{gt.ARANCIO};margin-top:26px}}
+/* La chiusura (28/10/2026, il proprietario: «Occhio ai "mandalo a"…
+   falli meglio»). Era una battuta come le altre, e l'invito non si
+   distingueva dal racconto. Ora ha la sua grafica: l'aeroplanino di
+   carta, che è l'icona «Invia» di Instagram, e «MANDALO» in arancio;
+   sotto, in grande, a chi; in fondo, staccato, dove sta il resto. */
+.pannello.cta{{border-bottom-width:12px}}
+.invia{{display:flex;align-items:center;gap:22px;font-weight:700;font-size:64px;letter-spacing:.06em;
+  color:{gt.ARANCIO};line-height:1}}
+.invia svg{{width:74px;height:74px;flex:none}}
+.cta .hook{{font-size:84px;margin-top:18px}}
+.cta .piede{{display:flex;justify-content:space-between;gap:24px;margin-top:30px;padding-top:22px;
+  border-top:3px solid rgba(244,233,210,.25);font-family:'PlexMono';font-weight:600;font-size:25px;white-space:nowrap;
+  letter-spacing:.12em;color:{gt.CREMA2}}}
+.cta .piede b{{color:{gt.ARANCIO};font-weight:600}}
 """
+
+# L'aeroplanino di carta dell'icona «Invia» di Instagram, disegnato a mano
+# (non il marchio: una freccia di carta qualsiasi la riconoscono tutti).
+AEROPLANINO = (f'<svg viewBox="0 0 48 48" fill="none" stroke="{gt.ARANCIO}" stroke-width="4.5" '
+               'stroke-linejoin="round" stroke-linecap="round">'
+               '<path d="M44 5 L4 21 L20 27 L26 44 Z"/><path d="M44 5 L20 27"/></svg>')
+
+
+def _chiusura_html(cta, kick):
+    """«Mandalo a chi…» diviso in due: il verbo con l'aeroplanino, il
+    destinatario in grande. Una CTA che non comincia con «Mandalo» esce
+    tutta in grande, senza l'aeroplanino."""
+    import re
+    from html import escape
+    m = re.match(r"(Mandalo|Mandala|Mandatelo)\s+(.*)$", cta)
+    testa = (f'<div class="invia">{AEROPLANINO}{escape(m.group(1).upper(), quote=False)}</div>'
+             if m else "")
+    resto = m.group(2) if m else cta
+    return (f'<div class="pannello cta">{testa}<div class="hook">{escape(resto, quote=False)}</div>'
+            f'<div class="piede"><span>{escape(kick, quote=False)}</span><b>@ELETTROFONI</b></div></div>')
 
 
 def _pagina(html):
@@ -282,9 +316,7 @@ def battute(scheda):
     # quando il reel ricomincia non c'è uno stacco.
     out.append({"foto": 0, "moto": MOTI[0],
                 "sec": durata_battuta(scheda["reel_cta"], SEC_CHIUSURA_MIN),
-                "html": f'<div class="pannello"><div class="kick">{escape(chiusura, quote=False)}</div>'
-                        f'<div class="hook">{escape(scheda["reel_cta"], quote=False)}</div>'
-                        f'<span class="handle">@ELETTROFONI</span></div>{tag}'})
+                "html": _chiusura_html(scheda["reel_cta"], chiusura) + tag})
     return out
 
 

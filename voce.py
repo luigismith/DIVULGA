@@ -212,7 +212,6 @@ NOMI = {
     "Ekaterinburg": "Iekaterinbùrg",
     "Evgenij": "Evghèni",            # sentito «Evgeny», come da solo: tiene il suono «gh»
     "Tarkovskij": "Tarkòvski",
-    "Clarke": "Clark",
     # NON riscrivere: Erasure (da solo si capisce, «Irèisciur» diventa «E-Ration»),
     # Murzin (da solo esatto, «Mùrsin» diventa «Mursin»).
     "Buchla": "Bùcla",
@@ -224,19 +223,14 @@ NOMI = {
     "Roland": "Ròland",
     # Aggiunti il 21/10/2026 per i testi di Omnichord, JD-800 e D-50
     # (grafie provate con espeak-ng dai verificatori dello stile).
+    # «Deep Blue Day» resta qui: in fonemi inglesi Whisper sente «di Blue
+    # Day» (provato il 28/10/2026); gli altri nomi di questo gruppo sono
+    # passati in FONEMI.
     "Deep Blue Day": "Dip Blu Dèi",
-    "Lanois": "Lanuà",
-    "Prince": "Prins",
-    "Damn U": "Dam iu",
-    "Watermark": "Uòtermark",
-    "Persing": "Pèrsing",
-    "Orinoco Flow": "Orinoco Flòu",
     "Casio": "Càsio",
-    "Vince": "Vins",
     # NON riscrivere Depeche Mode: da solo si capisce, «Depèsc Mod» diventa «The Pesce Mod».
     "Kraftwerk": "Kràftverk",
     "Vangelis": "Vanghèlis",
-    "Stevie Wonder": "Stìvi Uònder",
     # 28/10/2026, Volca Keys: «Kìis» Whisper lo sente «Case», «Kis» «Kiss»;
     # «Chiis» torna «Keys» nella frase da sola (provato in locale sulla voce
     # trattata), ma nel riascolto del parlato intero sul runner no: le frasi
@@ -253,6 +247,41 @@ NOMI = {
     "Theremin": "Tèremin",
     "theremin": "tèremin",
 }
+
+# I nomi stranieri che con le lettere italiane NON si possono scrivere
+# (28/10/2026, il proprietario: «la pronuncia di alcune parole a volte è
+# sbagliata»). Il motore legge tutto all'italiana: l'«h» di Takahashi
+# sparisce, Nathan diventa «Natan», Aphex «Àfex», Love «Lov», Eno «Èno».
+# Con NOMI si poteva solo riscrivere con l'alfabeto italiano, e certi suoni
+# (th inglese, la «a» di «Love», «ei» di «Aphex») l'alfabeto italiano non
+# ce li ha. Qui il nome va al motore già in fonemi IPA, scritti a mano:
+# Kokoro li legge così come sono (KPipeline.infer), il resto della frase
+# passa da espeak-ng come prima. Si aggiunge una voce solo dopo averla
+# provata col riascolto (`python voce.py --fonemi`).
+FONEMI = {
+    "Takahashi": "takahˈaʃi",
+    "Tatsuya": "tatsˈuja",
+    "Nathan": "nˈeɪθən",
+    "Aphex Twin": "ˈeɪfɛks twˈɪn",
+    "Love Symbol": "lˈʌv sˈɪmbəl",
+    "Eno": "ˈiːnoʊ",
+    "Adrian": "ˈeɪdɹiən",
+    "Stanford": "stˈænfɚd",
+    "Abbey Road": "ˈæbi ɹˈoʊd",
+    "Tomb Raider": "tˈuːm ɹˈeɪdɚ",
+    "McCree": "məkɹˈiː",
+    "Crystal": "kɹˈɪstəl",
+    "Daniel Lanois": "dˈænjəl lanwˈa",
+    "Prince": "pɹˈɪns",
+    "Damn U": "dˈæm jˈuː",
+    "Eric Persing": "ˈɛɹɪk pˈɜːsɪŋ",
+    "sound designer": "sˈaʊnd dɪzˈaɪnɚ",
+    "Watermark": "wˈɔːtɚmɑːɹk",
+    "Orinoco Flow": "ɔɹɪnˈoʊkoʊ flˈoʊ",
+    "Vince Clarke": "vˈɪns klˈɑːɹk",
+    "Stevie Wonder": "stˈiːvi wˈʌndɚ",
+}
+_RE_FONEMI = re.compile(r"\b(" + "|".join(re.escape(k) for k in sorted(FONEMI, key=len, reverse=True)) + r")\b")
 
 # Unità dopo un numero (3 V, 24 dB, 44,1 kHz, 8 bit, 100.000 dollari…)
 UNITA = {
@@ -506,6 +535,34 @@ def _normalizza_livello(a):
     return a * g
 
 
+def fonemi_frase(pipe, frase):
+    """I fonemi della frase: espeak-ng per il testo, FONEMI per i nomi che
+    ci stanno. None se la frase non ha nomi da FONEMI (allora si usa la
+    pipeline così com'è, che è la strada provata)."""
+    if not _RE_FONEMI.search(frase):
+        return None
+    pezzi = []
+    for k, parte in enumerate(_RE_FONEMI.split(frase)):
+        if k % 2:
+            pezzi.append(FONEMI[parte])
+        elif parte.strip():
+            ps = pipe.g2p(parte)
+            pezzi.append((ps[0] if isinstance(ps, tuple) else ps).strip())
+    return " ".join(x for x in pezzi if x)
+
+
+def _audio_frase(pipe, frase, velocita):
+    ps = fonemi_frase(pipe, frase)
+    if ps is None:
+        for _, _, audio in pipe(frase, voice=pipe.voce, speed=velocita, split_pattern=None):
+            yield audio
+        return
+    from kokoro import KPipeline
+    pack = pipe.load_voice(pipe.voce).to(pipe.model.device)
+    out = KPipeline.infer(pipe.model, ps, pack, velocita)
+    yield out.audio if out is not None else None
+
+
 def sintetizza(testo, wav_out, velocita=1.0):
     """Scrive `wav_out` (mono, 24 kHz, 16 bit) e torna la durata in secondi.
 
@@ -519,7 +576,7 @@ def sintetizza(testo, wav_out, velocita=1.0):
     with torch.inference_mode():
         for frase in _frasi(normalizza(testo)):
             prima = len(pezzi)
-            for _, _, audio in pipe(frase, voice=pipe.voce, speed=velocita, split_pattern=None):
+            for audio in _audio_frase(pipe, frase, velocita):
                 if audio is not None and len(audio):
                     pezzi.append(_taglia_silenzio(np.asarray(audio, dtype=np.float32)))
             if len(pezzi) == prima:

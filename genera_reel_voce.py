@@ -49,9 +49,12 @@ SEC_PAUSA = 0.4            # fra una frase e l'altra
 SEC_PAUSA_CTA = 0.3        # fra la CTA e «le slide e le fonti…»
 VOLUME_SOTTO = 0.22        # la macchina sotto la voce (≈ -13 dB)
 SR_VOCE = 24000
-# Dinamo: 280 px nel disegno a 1080, in basso a sinistra, col bordo
-# inferiore allineato alla targhetta (bottom:440px in genera_reel._css).
-DINAMO_PX = 280
+# Dinamo: 300 px di larghezza nel disegno a 1080, quasi tutti di
+# personaggio (il vecchio bollino era 280 px, di cui metà tondo crema: da
+# lontano non si capiva cos'era), alto 300*420/308, in basso a
+# sinistra, col bordo inferiore allineato alla targhetta (bottom:440px in
+# genera_reel._css).
+DINAMO_PX = 300
 DINAMO_X = 64
 DINAMO_BOTTOM = 440
 TAG_LEFT = DINAMO_X + DINAMO_PX + 24
@@ -201,8 +204,9 @@ def costruisci(scheda, cartella, file_testo=None):
     #    scala del disegno (1080) a quella del file (720).
     k = gr.LARG / gr.L
     dpx = int(round(DINAMO_PX * k / 2)) * 2
+    dalt = int(round(dpx * dinamo.ALT_SVG / dinamo.LARG_SVG / 2)) * 2
     dx = int(round(DINAMO_X * k))
-    dy = int(round((gr.H - DINAMO_BOTTOM - DINAMO_PX) * k))
+    dy = int(round((gr.H - DINAMO_BOTTOM) * k)) - dalt
     import zlib
     pattern = dinamo.sequenza(voce_wav, FPS, n_tot / FPS, SEC_INTRO, lavoro / "dinamo",
                               seme=zlib.crc32(scheda["slug"].encode()))
@@ -210,7 +214,7 @@ def costruisci(scheda, cartella, file_testo=None):
     gr._esegui([ff, "-y", "-loglevel", "error", "-i", str(muto),
                 "-framerate", str(FPS), "-i", str(pattern),
                 "-filter_complex",
-                f"[1:v]scale={dpx}:{dpx}[d];"
+                f"[1:v]scale={dpx}:{dalt}[d];"
                 f"[0:v][d]overlay={dx}:'{dy}+4*sin(2*PI*t/2.6)':eof_action=pass,format=yuv420p[v]",
                 "-map", "[v]", "-frames:v", str(n_tot), "-r", str(FPS),
                 "-c:v", "libx264", "-profile:v", "main", "-pix_fmt", "yuv420p",
