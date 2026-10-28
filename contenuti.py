@@ -7063,6 +7063,1960 @@ SCHEDE = [
         "verificata": True,
     },
     # ---------------------------------------------------------------- 69
+    # Sequential Circuits Pro-One (1981). Scheda scritta il 28/10/2026 per il
+    # rifornimento. La storia di Dave Smith e della Sequential sta già nella
+    # scheda del Prophet-5 (prophet5): qui non si ripete. Il campo «inventore»
+    # racconta invece i chip di Doug Curtis, che sono quello che il Pro-One
+    # eredita davvero dalla Rev 3 del Prophet.
+    #
+    # FATTI E FONTI (tutte lette il 28/10/2026)
+    # - 1981, presentato a inizio anno: E&MM marzo 1982 («launched officially
+    #   in February '81»); Wine Country Sequential (Winter NAMM 1981);
+    #   Wikipedia «Sequential (company)»; Vintage Synth Explorer (1981-1984).
+    #   SonicState scrive 1982: minoranza, non citata.
+    # - 745 dollari di listino: Wine Country Sequential (letta solo dallo
+    #   snippet di ricerca, la pagina dava 503) e MusicTech «Vintage Rewind»
+    #   («initially selling for $645, but rising swiftly to $745»). I 645
+    #   iniziali sono solo MusicTech: non scritti.
+    # - Prophet-5 a 3.995 dollari (Rev 1-2) e 4.595 (Rev 3): Wikipedia
+    #   «Prophet-5». Per non scegliere fra i due in scheda c'è «meno di un
+    #   quinto» (745/3.995 = 0,19; 745/4.595 = 0,16), vero per entrambi.
+    # - circa 10.000 esemplari: Vintage Synth Explorer; MusicRadar 29/04/2026
+    #   («approximately 10000 units being made and sold»). Il Science Museum
+    #   dice lo stesso ma la sua lista di artisti è identica a quella di
+    #   Vintage Synth Explorer, quindi non la conto come fonte indipendente.
+    #   Wine Country Sequential dice «several thousand»: non contraddice.
+    # - una voce di Prophet-5 Rev 3: MusicRadar 2026 («shares much with the
+    #   Rev.3 Prophet-5»); MusicTech; E&MM 1982 («Curtis custom synth chips»);
+    #   One Two Testing dic. 1983 («similar technology and components»).
+    # - CEM3340 per gli oscillatori, CEM3320 per il filtro: Vintage Synth
+    #   Explorer; Gearnews (Adam Douglas, «Curtis: chip off the old block»);
+    #   greatsynthesizers.com.
+    # - Doug Curtis fonda la Curtis Electromusic Specialties nel 1979, dopo 4
+    #   anni in un'azienda di semiconduttori: Wikipedia «Doug Curtis»
+    #   (Interdesign); Gearnews. Clienti Oberheim e Roland: Wikipedia; Gearnews
+    #   (OB-Xa, SH-101, Jupiter-6 fra i synth coi CEM3340).
+    # - la Rev 3 del Prophet-5 passa dai chip SSM ai Curtis: Wikipedia
+    #   «Prophet-5»; Gearnews.
+    # - matrice di modulazione, 3 sorgenti (inviluppo del filtro, oscillatore
+    #   B, LFO) e 5 destinazioni (frequenza e larghezza d'impulso dei 2
+    #   oscillatori, filtro), levetta a 3 posizioni diretto/rotella/spento:
+    #   E&MM 1982; One Two Testing 1983; greatsynthesizers.com; e si legge sul
+    #   pannello nella foto principale (WH / OFF / DIR).
+    # - sequencer da 40 note in 2 sequenze, tutte della stessa durata: E&MM
+    #   1982; One Two Testing 1983 («40-note sequencer… caused a stir»);
+    #   Vintage Synth Explorer; greatsynthesizers.com. MusicTech e MusicRadar
+    #   2026 scrivono 28 note («No, we don't know why '28' notes either!»):
+    #   in scheda si dice che le fonti non concordano.
+    # - arpeggiatore su e su/giù, con latch: E&MM 1982; One Two Testing 1983;
+    #   Vintage Synth Explorer; greatsynthesizers.com.
+    # - prese CV e gate in entrata e in uscita: E&MM 1982; Vintage Synth
+    #   Explorer; greatsynthesizers.com (pilota un altro synth a 1 V/ottava).
+    # - tastiera di 3 ottave, da do a do, Pratt-Read a contatti J-wire,
+    #   inaffidabile: E&MM 1982 (Pratt Reed, J-wire); MusicTech («troublesome
+    #   J-wire keybed»); MusicRadar 2026 («fairly unreliable»).
+    # - scatola di plastica coi fianchi di legno, pannello che si piega sotto
+    #   un dito: One Two Testing 1983 (Paul Colbert: il pannello di plastica
+    #   «bends under the influence of a finger», legno vero alle estremità);
+    #   MusicRadar 2026 («plastic chassis with wooden end-cheeks»); E&MM 1982
+    #   (cassa in ABS, consiglia un flight case).
+    # - Vince Clarke, Jupiter-4 senza CV/gate, Pro-One comprato per farlo
+    #   suonare all'MC-4, MC-4 «in place of other musicians», primo album
+    #   degli Yazoo fatto con JP-4, Pro One, MC4 e TR-808 «to provide any
+    #   percussion sounds the Pro One couldn't generate»: E&MM marzo 1984,
+    #   «Downstairs At Erics» di Dan Goldstein (parole di Clarke). ATTENZIONE:
+    #   il documento è uno solo; MusicRadar 14/03/2026 ne riprende la frase
+    #   sull'MC-4, Equipboard quella sul Jupiter-4. Il fatto tecnico (il
+    #   Jupiter-4 non ha CV/gate di fabbrica) è confermato a parte da
+    #   greatsynthesizers.com (recensione del Jupiter-4). L'uso del Pro-One
+    #   sul primo album sta anche in One Two Testing nov. 1982 (sotto).
+    # - «Only You», 5 suoni, schemi del pannello disegnati sul Pro-One:
+    #   One Two Testing nov. 1982, «How They Do Only You», firmato Vince Clarke
+    #   (muzines 4589); Synthtopia 20/07/2014 (Pea Hicks lo rifà sul Pro-One
+    #   partendo dalle scansioni, e scrive che l'originale è tutto Pro-One).
+    #   Hicks stesso dubita che il suono «Tinkle» sia un Pro-One: per questo in
+    #   scheda c'è «gli schemi dei 5 suoni», non «tutto col Pro-One».
+    # - «Don't Go» (1982) col Pro-One: MusicRadar 12/05/2021 (Computer Music,
+    #   «40 greatest synth sounds, No 12»: intro di ARP 2600, basso incessante
+    #   del Pro-One, un basso di Juno-60); MusicTech («every sound on that
+    #   track is from the Pro-One»); MusicRadar 2026 («almost entirely»). Non
+    #   concordano su QUANTO: scritto nel «da ascoltare».
+    # - handle: @sequential_llc è il link Instagram nel sito ufficiale
+    #   sequential.com (controllato il 28/10/2026, ed è già in prophet5).
+    #   Vince Clarke: nessun account personale linkato da un sito ufficiale
+    #   (erasureinfo.com linka @erasureinfo, che è la band, non lui;
+    #   vinceclarkemusic.com non risponde). ig None.
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
+    # - 645 dollari al lancio poi 745: solo MusicTech.
+    # - 470 sterline al lancio: solo MusicRadar 2026. In UK le recensioni danno
+    #   416 £ (E&MM 1982) e 399 £ (OTT 1983): date diverse, non usate.
+    # - «il primo synth professionale sotto i 1.000 dollari»: Wine Country e
+    #   Science Museum, ma il secondo ha l'aria di copiare; tolto.
+    # - interfaccia digitale per home computer, «antenata del MIDI»: solo
+    #   Science Museum.
+    # - ruota del Buddha / prayer wheel di 8 byte nella scansione della
+    #   tastiera: solo Grant Richter citato da Tape Op (07/06/2022). Bello, ma
+    #   una fonte.
+    # - Doug Curtis al liceo a Roma, dove si costruisce un synth per chitarra:
+    #   solo il sito della Curtis Electromusic (Wikipedia lo riprende senza
+    #   Roma). Peccato, era il filone italiano.
+    # - Doug Curtis morto nel 2007: gennaio per l'infobox di Wikipedia, aprile
+    #   per il testo della stessa voce. Non serviva.
+    # - Vince Clarke: il Pro-One «il suo synth preferito di sempre» (solo
+    #   MusicRadar 2026) e la frase «I like the envelopes on it…» (Equipboard,
+    #   senza fonte).
+    # - Prince, Soft Cell, New Order, Depeche Mode, Prodigy, Hardfloor e gli
+    #   altri: solo liste (Vintage Synth Explorer, ricopiata dal Science
+    #   Museum; marketing Behringer), nessun disco preciso.
+    # - Thompson Twins, Tom Bailey: MusicTech («for many of their basslines»)
+    #   contro Keyboard agosto 1984 citato da Equipboard (il Pro-One di Bailey
+    #   in una piccola parte dei synth, il grosso è un OB-Xa). Il Keyboard non
+    #   l'ho letto in originale, Equipboard non è una fonte che reggerebbe da
+    #   sola, e la riga in più faceva sforare la didascalia: tolti.
+    # - «Doctor Doctor» dei Thompson Twins col basso del Pro-One: solo
+    #   Equipboard, su un video non linkato.
+    # - Pro-One progettato da Dave Smith in persona: Science Museum e Vice; non
+    #   serve, ed è la storia del Prophet.
+    #
+    # DUBBI E COSE NON VERIFICATE
+    # - Sound On Sound marzo 1994 (Paul Ward) sul Pro-One: archivio
+    #   web.archive.org irraggiungibile dal container, non letto.
+    # - La registrazione (Freesound 167424, druidbloke, CC0, 52 s, FLAC 48 kHz
+    #   mono, caricata il 15/10/2012): la descrizione dice «a sequence made
+    #   with one saw tooth oscillator on a Sequential circuits pro one mono
+    #   synthesizer», tag analogue/pro-one/sequence/synth. Non c'è modo di
+    #   provare oltre la parola dell'autore che sia hardware e non un plug-in
+    #   (nel 2012 di emulazioni del Pro-One ce n'erano poche, e lui scrive
+    #   «mono synthesizer»). Non dice se la sequenza esce dal sequencer
+    #   interno o da fuori: in «cosa» non lo scrivo. Ascoltata (analisi):
+    #   nessun silenzio, RMS ≈ -10 dBFS costante dall'inizio alla fine, un
+    #   giro corto che si ripete col timbro che si apre e si chiude (il
+    #   baricentro dello spettro va da ~300 a ~4.500 Hz). Nessuna melodia
+    #   riconoscibile. URL dell'anteprima HQ ricavato dallo schema
+    #   previews/<id/1000>/<id>_<userid>-hq.mp3 con l'id utente 331583 (dal
+    #   percorso dell'avatar della pagina di druidbloke) e controllato: è un
+    #   MP3 LAME da 1,1 MB che si scarica.
+    # - Foto: su Commons di Pro-One veri ce ne sono 2 a figura intera, tutte e
+    #   due dall'alto con la stessa inquadratura (Rob Kam e Speculos), più un
+    #   dettaglio della targa a 612 px con filtro Instagram (troppo piccolo
+    #   per una banda). Una seconda foto uguale alla prima sarebbe la stessa
+    #   immagine due volte: niente foto_extra, la principale torna coi RITAGLI.
+    # - LESSICO di voce.py: mancano «Pro-One» («Pro uàn») e «MC-4» («emme ci
+    #   quattro»). Nella «detta» li ho già scritti come si pronunciano.
+    # - Kokoro e «Only You»: titolo inglese, come «Deep Blue Day» nell'Omnichord.
+    {
+        "slug": "proone",
+        "numero": 69,
+        "serie": 'I SINTETIZZATORI',
+        "strumento": 'Sequential Circuits Pro-One',
+        "anno": '1981',
+        "luogo": 'San Jose, California',
+        "costruttore": 'Sequential Circuits',
+        "specifiche": [('USCITA', '1981'),
+                       ('PREZZO', '745 $'),
+                       ('ESEMPLARI', 'circa 10.000'),
+                       ('SEQUENCER', '40 note')],
+        "gancio": 'Il Prophet-5 ridotto a una voce sola. Vince Clarke ci disegna i suoni di «Only '
+                  'You»',
+        "sottotitolo": 'Un synth monofonico con sequencer e arpeggiatore dentro, in una scatola di '
+                       'plastica coi fianchi di legno.',
+        "la_macchina": "Sul pannello, a sinistra, c'è una colonna di levette che sul Prophet-5 non "
+                       "c'era. Secondo me la parte più bella del Pro-One sta lì. Il resto è una voce "
+                       "sola di Prophet, 2 oscillatori e un filtro. Esce all'inizio del 1981 a 745 "
+                       'dollari di listino, meno di un quinto di un Prophet-5, e ne fanno circa '
+                       '10.000. Il risparmio si vede. La scatola è di plastica coi fianchi di legno, '
+                       'e nel 1983 One Two Testing scriveva che il pannello si piega sotto un dito. '
+                       'La tastiera è di 3 ottave, da do a do. Memorie non ne ha, quindi quello che '
+                       'sentite è quello che vedete sulle manopole.',
+        "inventore_nome": 'Sequential Circuits, coi chip di Doug Curtis',
+        "inventore": "La storia della Sequential l'abbiamo già raccontata col Prophet-5. Qui conta un "
+                     "altro nome, Doug Curtis. Nel 1979, dopo 4 anni in un'azienda di semiconduttori, "
+                     'fonda la Curtis Electromusic Specialties e comincia a vendere ai costruttori di '
+                     'synth dei chip già pronti, un oscillatore o un filtro in un solo integrato. Fra '
+                     'i clienti ci sono Oberheim e Roland. Con la terza revisione il Prophet-5 lascia '
+                     'i chip SSM e passa ai suoi. Il Pro-One nasce da quella revisione, con 2 CEM3340 '
+                     'per gli oscillatori e un CEM3320 per il filtro passa-basso a 24 dB.',
+        "come_funziona": 'La colonna a sinistra è una piccola matrice di modulazione. Le sorgenti '
+                         "sono l'inviluppo del filtro, l'oscillatore B e l'LFO, e le destinazioni 5: "
+                         "frequenza e larghezza d'impulso di ciascun oscillatore, più il filtro. Ogni "
+                         'destinazione ha una levetta a 3 posizioni. DIR manda la modulazione sempre, '
+                         'WH solo quando spingete la rotella, OFF la toglie. Il sequencer tiene 2 '
+                         'sequenze, note tutte della stessa durata. Quante, le fonti non concordano. '
+                         '40 per le recensioni del 1982 e del 1983, 28 per due riviste di oggi. Io mi '
+                         'fido di chi lo aveva davanti. Dietro ci sono le prese CV e gate, in entrata '
+                         'e in uscita.',
+        "richiami": [('FIG. 1', '3 sorgenti, 5 destinazioni'),
+                     ('FIG. 2', 'Levette DIR / WH / OFF'),
+                     ('FIG. 3', 'Sequencer e arpeggiatore')],
+        "chi_lusata": [{"artista": 'Vince Clarke',
+                        "nota": "il primo album degli Yazoo, «Upstairs at Eric's» (1982), col Pro-One "
+                                'e un sequencer',
+                        "ig": None},
+                       {"artista": 'Yazoo',
+                        "nota": "il basso di «Don't Go» (1982), e per qualcuno quasi tutto il resto",
+                        "ig": None}],
+        "menzioni_extra": [{"ig": 'sequential_llc',
+                            "riga": "La Sequential c'è ancora e fa synth: @sequential_llc."}],
+        "da_ascoltare": {"brano": "Don't Go",
+                         "artista": 'Yazoo',
+                         "anno": '1982',
+                         "cosa": 'Il basso che non si ferma mai è il Pro-One. Per MusicTech è suo '
+                                 "ogni suono del pezzo, per MusicRadar l'intro è un ARP 2600."},
+        "aneddoto": 'Vince Clarke ha appena lasciato i Depeche Mode e vuole fare dischi senza altri '
+                    'musicisti. Ha un Roland Jupiter-4 e un sequencer MC-4, ma il Jupiter-4 non ha le '
+                    "prese CV e gate, e l'MC-4 non lo può suonare. Compra un Pro-One. Per il primo "
+                    "album degli Yazoo gli bastano il Jupiter, il Pro-One, l'MC-4 e una TR-808 per le "
+                    'percussioni che il Pro-One non sa fare. Lo racconta lui nel 1984. Nel novembre '
+                    '1982 la rivista One Two Testing pubblica, firmati da Clarke, gli schemi del '
+                    'pannello dei 5 suoni di «Only You». Sono disegnati sul Pro-One, manopola per '
+                    'manopola.',
+        "avvertenza": 'Levetta su DIR: la modulazione suona sempre, anche con la rotella a zero. Per '
+                      'comandarla con la rotella, mettetela su WH.',
+        "foto": {"file": 'assets/foto/proone/principale.jpg',
+                 "autore": 'Rob Kam',
+                 "licenza": 'CC BY 4.0',
+                 "fonte": 'Wikimedia Commons',
+                 "didascalia": "Un Pro-One visto dall'alto, col pannello nero e la targa sopra i "
+                               'tasti'},
+        "fonti": [{"titolo": '«Pro-One» — E&MM, marzo 1982',
+                   "url": 'https://www.muzines.co.uk/articles/sequential-circuits-pro-one/4225',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Pro One» — One Two Testing, dic. 1983',
+                   "url": 'https://www.muzines.co.uk/articles/sequential-circuits-pro-one/4785',
+                   "data": '2026-10-28'},
+                  {"titolo": '«How They Do Only You» — One Two Testing, nov. 1982',
+                   "url": 'https://www.muzines.co.uk/articles/how-they-do-only-you/4589',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Downstairs At Erics» — E&MM, marzo 1984',
+                   "url": 'https://www.muzines.co.uk/articles/downstairs-at-erics/1592',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Pro One» — Vintage Synth Explorer',
+                   "url": 'https://www.vintagesynth.com/sequential-circuits/pro-one',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Vintage Rewind: Pro-One» — MusicTech',
+                   "url": 'https://musictech.com/reviews/bttf-pro-one/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Storia della Sequential — MusicRadar, 2026',
+                   "url": 'https://www.musicradar.com/music-tech/synths/from-the-prophet-5-to-the-fourm-the-story-of-sequential-in-10-synths-sequencers-and-drum-machines',
+                   "data": '2026-10-28'},
+                  {"titolo": "«Yazoo - Don't Go» — MusicRadar, 2021",
+                   "url": 'https://www.musicradar.com/news/the-40-greatest-synth-sounds-of-all-time-no-12-yazoo-dont-go',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Sequential Pro-One» — greatsynthesizers',
+                   "url": 'https://greatsynthesizers.com/en/review/sequential-pro-one-best-vintage-monophonic/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Scheda tecnica — Wine Country Sequential',
+                   "url": 'https://winecountrysequential.com/pro_one_spec_sheet.htm',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Prophet-5» — Wikipedia',
+                   "url": 'https://en.wikipedia.org/wiki/Prophet-5',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Doug Curtis» — Wikipedia',
+                   "url": 'https://en.wikipedia.org/wiki/Doug_Curtis',
+                   "data": '2026-10-28'},
+                  {"titolo": 'I chip Curtis — Gearnews',
+                   "url": 'https://www.gearnews.com/curtis-chip-off-the-old-block-why-do-synths-sound-different/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Roland Jupiter-4» — greatsynthesizers',
+                   "url": 'https://greatsynthesizers.com/en/review/roland-jupiter-4-the-golden-oldie/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Only You» rifatta sul Pro-One — Synthtopia, 2014',
+                   "url": 'https://www.synthtopia.com/?p=57934',
+                   "data": '2026-10-28'}],
+        "hashtags": ['#proone',
+                     '#sequentialcircuits',
+                     '#sintetizzatore',
+                     '#vinceclarke',
+                     '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 069',
+                          'Vince Clarke disegna i suoni di «Only You» su un Pro-One'),
+                         ('SEQUENTIAL · 1981',
+                          'Il Pro-One è un Prophet-5 con una voce sola, a 745 dollari.'),
+                         ('3 SORGENTI, 5 DESTINAZIONI',
+                          'A sinistra ha una matrice di modulazione, con le levette.'),
+                         ('DOPO I DEPECHE MODE',
+                          'Clarke ha un sequencer Roland MC-4, ma il suo Jupiter-4 non ha le prese.'),
+                         ("«UPSTAIRS AT ERIC'S», 1982",
+                          "Compra un Pro-One, e l'MC-4 lo suona al posto di una band.")],
+        "reel_cta": 'Mandalo a chi suona tutto da solo',
+        "reel_audio": {"file": 'assets/audio/proone/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'druidbloke',
+                       "licenza": 'CC0',
+                       "fonte": 'Freesound',
+                       "url": 'https://freesound.org/s/167424/',
+                       "cosa": 'un Sequential Circuits Pro-One vero che ripete una sequenza con un '
+                               'solo oscillatore a dente di sega, e il filtro che si apre e si '
+                               'chiude'},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 70
+    # Rifornimento del 28/10/2026. Scheda «volcakeys», posteriore al 1988 (quota
+    # di una su quattro). Fonti lette tutte il 2026-10-28.
+    #
+    # REGISTRAZIONE (ricontrollata sulla pagina e via API)
+    # https://commons.wikimedia.org/wiki/File:Korg_Volca_Keys_-_Loop_demo_with_live_effects.flac
+    #   Attosaur, «own work», {{self|cc-by-sa-4.0}}, caricata il 12/03/2022,
+    #   115,2 s, FLAC. Descrizione dell'autore: «Simple demo of the Korg Volca
+    #   Keys synthesiser playing back a loop with some live knob twiddling.
+    #   Includes both "Poly" and "Unison" modes, major use of VCF (filter), a
+    #   little portamento and a small amount of delay. This is literally just the
+    #   Volca Keys plugged into the sound card "Mic" socket, recorded in Audacity
+    #   and saved. No further processing has taken place.» È la macchina vera,
+    #   non un plug-in. Il giro è suo (un loop del sequencer), nessun titolo di
+    #   brano altrui nella pagina. Transcodifica mp3 confermata dall'API
+    #   (videoinfo/derivatives). NON l'ho potuta ascoltare: dal container
+    #   upload.wikimedia.org risponde 429. Chi integra controlli lo
+    #   spettrogramma e scelga il tratto (silenzi in testa? attacco?).
+    #
+    # FOTO (thumbnail scaricati e guardati, tutti e quattro)
+    # principale: https://commons.wikimedia.org/wiki/File:Korg_Volca_Keys.jpg
+    #   Multicherry, CC BY-SA 4.0, 4928x2772, 12/02/2023. Macchina intera, di
+    #   fronte, scontornata su bianco con un'ombra: «ritaglio»: True. Si leggono
+    #   KORG volca keys, VCO/VCF/LFO/EG, DELAY, MIDI IN, IN-SYNC-OUT e sui tasti
+    #   MOTION SEQUENCE, METRONOME, FLUX; quattro LED rossi accesi sotto i tasti
+    #   e tre manopole illuminate.
+    # extra 1: https://commons.wikimedia.org/wiki/File:Korg_Volca_Keys_knobs_1_(photo_by_David_J).jpg
+    #   David J (Alingsås, Svezia), CC BY 2.0, 3072x2304. Manopole trasparenti
+    #   da vicino, EG INT / CUTOFF INT / SUSTAIN leggibili, LED rosso acceso
+    #   dentro la manopola SUSTAIN (in basso a destra, resta nella banda 500 px)
+    #   e un altro sotto quella in alto. La scritta KORG volca keys è sfocata
+    #   sullo sfondo, ma la macchina è una sola.
+    # extra 2: https://commons.wikimedia.org/wiki/File:KORG_volca_beats,_bass,_keys.jpg
+    #   Ritaglio di Clusternote da una foto Flickr di Sonic Potions
+    #   («KORG corner - Dinosauriertreffen 3, Bocholt, 2013-10-26»), CC BY-SA
+    #   2.0, 2102x436. Da sinistra Beats (nero), Bass (argento), Keys (oro),
+    #   come dice la descrizione. È una striscia 4,8:1: «ritaglio»: True (si
+    #   vede intera, con crema sopra e sotto) e «nel_reel»: False (in verticale
+    #   resterebbe un francobollo).
+    # extra 3: https://commons.wikimedia.org/wiki/File:KORG_volca_keys_Analogue_Loop_Synth_-_2014_NAMM_Show_(by_Matt_Vanacoro).jpg
+    #   Matt Vanacoro, CC BY 2.0, 6000x4000, NAMM 25/01/2014. Il Keys di tre
+    #   quarti, un cavetto infilato nella prima presa a destra del MIDI IN (sotto
+    #   la scritta SYNC); a sinistra si vede mezzo un altro Volca argento che
+    #   non so identificare con certezza, quindi in didascalia non lo nomino.
+    #   Il Keys è la macchina più grande e leggibile della foto.
+    # Le thumburl sono quelle restituite dall'API (host thumb.wikimedia.org,
+    # provate: 200). La forma upload.wikimedia.org/wikipedia/commons/thumb/...
+    # dal container dava 429.
+    #
+    # FATTI VERIFICATI (≥2 fonti indipendenti)
+    # - presentati insieme, Beats Bass Keys, a Musikmesse Francoforte il
+    #   10/04/2013: MusicTech 10/04/2013; Synthtopia 10/04/2013 (?p=48996);
+    #   southerntrax 12/04/2013 («on the morning of the 10th April»); Wikipedia.
+    # - le foto trapelate prima e prese per un falso: Sound On Sound ott. 2013
+    #   (Nagle, «Viewed initially as an Internet hoax spawned by wishful
+    #   thinking»); Resident Advisor 15/04/2013 («When word of the mini-synths
+    #   leaked just before MusikMesse opened, they seemed too good to be true»);
+    #   southerntrax (Matrixsynth «treated the whole idea with a great deal of
+    #   scepticism … unofficial render or possible hoax»).
+    # - 150 dollari (149,99 street price USA): Synthtopia 10/04/2013; RA
+    #   («about $150 each»); Sonicstate («$149»); NPR 2017 («$150 synths»).
+    # - 27 tasti a sfioramento (multi-touch): Korg (pagina prodotto); MusicTech;
+    #   Synthtopia (specifiche); SOS («multi-touch surfaces»).
+    # - 3 VCO, 1 VCF, 1 VCA, 1 LFO, 1 EG: Synthtopia (specifiche); SOS («only
+    #   one envelope and filter»); Wikipedia (tutte le voci passano da un filtro);
+    #   Sonicstate («all voices share the same VCA»).
+    # - dente di sega in POLY e UNISON, quadre col modulatore ad anello nei modi
+    #   RING; modi POLY, UNISON (scordatura), OCTAVE, FIFTH, UNISON RING, POLY
+    #   RING: SOS; Sonicstate; Wikipedia. Le manopole si leggono nella foto.
+    # - filtro passa-basso 12 dB rifatto sul miniKORG 700S del 1974: Korg
+    #   («circuitry of the legendary miniKORG700S (1974)»); MusicTech; SOS
+    #   («12dB low-pass design that appeared in … Korg's 700S»); Sonicstate.
+    # - sequencer a 16 passi, note solo in tempo reale (niente passo-passo):
+    #   SOS («Recordings are exclusively real time»); Wikipedia («The only way to
+    #   set sequencer steps is by the real-time recording mode»); Sonicstate (16
+    #   passi).
+    # - motion sequence che registra le manopole: Korg; SOS; Wikipedia;
+    #   Synthtopia recensione 28/08/2013.
+    # - accordatura automatica: Korg («Self-tuning function»); SOS («Oscillator
+    #   tuning takes place automatically»); Synthtopia recensione.
+    # - delay digitale a bassa risoluzione: Sonicstate («low sample rate
+    #   delay»); Wikipedia; SOS («a real digital delay»).
+    # - 6 pile stilo AA, circa 10 ore, 193x115x46 mm, 377 g senza pile: SOS;
+    #   Synthtopia (specifiche ufficiali del 10/04/2013).
+    # - altoparlante interno: SOS; Korg; MusicTech.
+    # - scatola di plastica nera trasparente, LED rossi sotto le manopole
+    #   trasparenti: SOS («shiny cases of see-through black plastic», «clear
+    #   plastic, typically with a red LED underneath»); si vede nelle foto.
+    # - Takahashi cresciuto a Londra, master in ingegneria, lavoro in un bar che
+    #   gli pagava i synth: SOS feb. 2019 (Kim Bjørn); NPR 22/12/2017
+    #   (Tyler-Ameen, «I had a bar job that was paying for the synths that I was
+    #   making»).
+    # - il synth fatto in casa portato al colloquio: 8 oscillatori (SOS) / 8
+    #   cursori di intonazione «like a mixer» (NPR), con un sequencer, a pile e
+    #   con gli altoparlanti: SOS; NPR. Che lui lo veda come antenato dei Volca:
+    #   SOS (detto da SOS, non citato fra virgolette: in scheda non lo scrivo).
+    # - in Giappone nel 2006, telefona lui a Korg: SOS («in 2006 he took a
+    #   flight to Japan», «simply called Korg up»); NPR («I went to them»);
+    #   Wikipedia (Korg dal 2006).
+    # - i Volca divisi in ritmo, basso e accordi: SOS («drums, monosynth/bass,
+    #   and chords»); NPR («break down the music into the rhythm, the bass and
+    #   the chords»); Bonedo 10/10/2013.
+    # - i primi tre progettati insieme: SOS («develop three of them in one
+    #   go»); Bonedo (il progetto dei tre, un anno e mezzo); presentazione
+    #   unica del 10/04/2013.
+    # - lascia il posto di capo ingegnere nel 2017: Resident Advisor 17/02/2017;
+    #   FACT 17/02/2017.
+    # - «korg funk 5» (2017) di Aphex Twin, con un Volca Keys fra le macchine e
+    #   il figlio alla voce, uscito con l'intervista di James a Takahashi su
+    #   Warp: FACT 11/07/2017; Mixmag 11/07/2017; Synthtopia 11/07/2017; CDM
+    #   11/07/2017 (intervista e «all-KORG track»).
+    # - Octo Octa è Maya Bouldry-Morrison, fa house: MusicRadar 2023; Vice
+    #   2017; Wikipedia.
+    # - «Resonant Body» terzo album, 2019, T4T LUV NRG con Eris Drew, scritto
+    #   nella baita nel New Hampshire: Bandcamp dell'album; Crack 24/07/2019;
+    #   The Face 15/08/2019 (terzo album, etichetta).
+    # - è il primo album con le sue macchine, fra cui il Volca Keys: The Face
+    #   15/08/2019 (Josie Roberts). Due Volca Keys col delay e il riverbero
+    #   «sull'ultimo album che ho fatto»: Attack Magazine 28/01/2020. DUBBIO:
+    #   Attack non nomina il disco; a gennaio 2020 il suo ultimo album è
+    #   «Resonant Body» (uscito il 6/09/2019), quindi lo deduco io.
+    # - «uno dei miei synth preferiti di sempre», lo usa di continuo:
+    #   MusicRadar 2023; Jim Ottewill, Substack 14/05/2026 («One of my favourite
+    #   synths of all time is the Korg Volca Keys»).
+    # - @korgofficial: link Instagram nel piè di pagina di korg.com e
+    #   korg.com/us, controllato il 28/10/2026 (korg.com/uk rimanda a @korguk,
+    #   korg.com/jp a @korg_inc). Già usato in contenuti.py (ARP 2600, MS-20).
+    #   @korg_official, proposto nel brief, NON è l'account linkato da Korg.
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
+    # - nato vicino a Tokio: solo NPR (Wikipedia cita NPR).
+    # - la cinghia del synth fatto in casa, ispirata a Christian Marclay: solo
+    #   NPR (Wikipedia la riprende da lì).
+    # - Cambridge: solo SOS (Wikipedia cita SOS).
+    # - al secondo colloquio Tsutomu e Seiki Kato, «quando vuoi cominciare?»;
+    #   «non sapevo cosa dire, così ho portato il synth»: solo SOS.
+    # - squadra di 2 o 3 persone per i tre Volca: solo SOS.
+    # - prima vennero batteria e basso, il synth per gli accordi dopo; un anno
+    #   e mezzo di lavoro: solo Bonedo 2013.
+    # - l'idea del Monotron da Tadahiko Sakamaki in una pausa sigaretta: solo
+    #   Bonedo (SOS dice solo che ne parlarono).
+    # - il Keys unico Volca col metronomo; risonanza esclusa dal motion
+    #   sequence perché il filtro del 700 non ha la risonanza in tensione;
+    #   altoparlante che si stacca con la cuffia; spegnimento automatico dopo 4
+    #   ore: solo SOS. (Il tasto METRONOME però si legge nella foto.)
+    # - il Keys il più rumoroso dei tre per colpa del delay: solo SOS
+    #   (Sonicstate parla di rumore col filtro chiuso, non del delay).
+    # - tastiera senza dinamica: solo Wikipedia.
+    # - Korg Berlin nel 2019 con Takahashi a capo: solo Noisegate (via
+    #   Wikipedia).
+    # - Octo Octa: il Volca Keys su «Hidden Truth» (2017): solo Vice, e lei
+    #   dice «I believe». «Lo accusano di suonare come un giocattolo, io lo
+    #   uso quasi su tutto», il motion sequencing: solo Ottewill 2026. Il
+    #   DW-8000 al banco dei pegni per 300 dollari: solo The Face.
+    # - Legowelt, Galantis, Tame Impala (Jay Watson), Stephan Bodzin, BT,
+    #   Octave One, Mathew Jonson: solo Equipboard (foto e video sui social),
+    #   nessun disco.
+    # - «proved a success for Korg», vendite: nessun numero, nessuna fonte che
+    #   dia cifre. Taciuto.
+    #
+    # DUBBI APERTI
+    # - il «da ascoltare» è «korg funk 5»: che il Keys ci sia lo dicono quattro
+    #   testate, ma la lista viene da un documento solo (Warp/Korg). Quale
+    #   parte suoni non lo dice nessuno, e la scheda lo ammette.
+    # - Synthtopia 10/04/2013 è il comunicato Korg ripubblicato: per prezzo e
+    #   specifiche l'ho contato come fonte ufficiale, e ogni dato ha anche SOS.
+    # - Ascolto della registrazione non fatto (vedi sopra).
+    # - Handle di Octo Octa e Aphex Twin: nessun sito ufficiale raggiungibile
+    #   (octoocta.com 502), quindi None.
+    {
+        "slug": "volcakeys",
+        "numero": 70,
+        "serie": 'I SINTETIZZATORI',
+        "strumento": 'Korg Volca Keys',
+        "anno": '2013',
+        "luogo": 'Giappone',
+        "costruttore": 'Korg',
+        "specifiche": [('USCITA', '2013'),
+                       ('VOCI', '3'),
+                       ('TASTI', '27 a sfioramento'),
+                       ('PILE', '6 stilo')],
+        "gancio": 'Quando trapelarono le prime foto, in rete lo presero per un falso. Era vero, e '
+                  'costava 150 dollari',
+        "sottotitolo": 'Un synth analogico a 3 voci col sequencer dentro, in una scatola che sta in '
+                       'una mano.',
+        "la_macchina": 'È una scatola di plastica nera trasparente di 19 centimetri per 11 e mezzo, e '
+                       'senza pile pesa 377 grammi. Le pile sono 6 stilo e durano circa 10 ore. '
+                       "Dentro c'è un altoparlante piccolo, quindi si suona sul divano senza "
+                       'collegare niente. Le manopole sono trasparenti e sotto alcune si accende un '
+                       "LED rosso. Al posto della tastiera c'è una lastra con 27 tasti disegnati, che "
+                       "si suonano sfiorandoli. Il Volca Keys l'ho sempre trovato il più strano dei "
+                       'tre, e anche il più bello da guardare.',
+        "inventore_nome": 'Tatsuya Takahashi',
+        "inventore": 'Tatsuya Takahashi cresce a Londra. Finito il master in ingegneria lavora in un '
+                     'bar, e con quei soldi si costruisce i synth. Uno ha 8 oscillatori e un '
+                     'sequencer, va a pile e ha gli altoparlanti dentro, perché la musica deve '
+                     'potersi portare in giro. Nel 2006 vola in Giappone, telefona lui a Korg e al '
+                     'colloquio si presenta con quel synth. Lo assumono. Nel 2013 i Volca escono in '
+                     "tre insieme, e l'idea è di dividere la musica in pezzi semplici. Una macchina "
+                     'per la batteria, una per il basso, una per gli accordi, che è il Keys. '
+                     'Takahashi lascia il posto di capo ingegnere di Korg nel 2017.',
+        "come_funziona": 'Gli oscillatori analogici sono 3, a dente di sega, e una manopola decide '
+                         'come suonano insieme. In POLY fanno 3 note diverse, cioè un accordo. In '
+                         "UNISON suonano la stessa nota, un po' scordati fra loro, e poi ci sono "
+                         "l'ottava, la quinta e due modi col modulatore ad anello. Il filtro "
+                         'passa-basso a 12 dB rifà quello del miniKORG 700S, del 1974. Il sequencer '
+                         'ha 16 passi e le note si registrano solo suonando, mentre il giro corre. Il '
+                         'motion sequence registra anche le manopole che girate e le rigira a ogni '
+                         "passaggio. In fondo c'è un delay digitale a bassa risoluzione. Gli "
+                         'oscillatori si accordano da soli.',
+        "richiami": [('FIG. 1', '3 oscillatori a dente di sega'),
+                     ('FIG. 2', 'Filtro del miniKORG 700S, 12 dB'),
+                     ('FIG. 3', '16 passi, si registra solo suonando')],
+        "chi_lusata": [{"artista": 'Octo Octa',
+                        "nota": 'per lei è «uno dei miei synth preferiti di sempre» (2023)',
+                        "ig": None},
+                       {"artista": 'Aphex Twin',
+                        "nota": 'un Volca Keys fra le macchine di «korg funk 5» (2017), uscito con la '
+                                'sua intervista a Takahashi',
+                        "ig": None}],
+        "menzioni_extra": [{"ig": 'korgofficial', "riga": 'I Volca sono di @korgofficial.'}],
+        "da_ascoltare": {"brano": 'korg funk 5',
+                         "artista": 'Aphex Twin',
+                         "anno": '2017',
+                         "cosa": 'Suonato tutto con macchine Korg, Volca Keys compreso, e la voce è '
+                                 "di suo figlio. Quale parte faccia il Keys non l'ha detto nessuno."},
+        "aneddoto": 'Maya Bouldry-Morrison, che firma Octo Octa, fa house. Il suo terzo album, '
+                    '«Resonant Body», lo scrive in una baita nei boschi del New Hampshire e lo '
+                    "pubblica nel 2019 con T4T LUV NRG, l'etichetta che ha messo su con Eris Drew. È "
+                    "il primo disco in cui entrano molte delle sue macchine, e fra queste c'è il "
+                    'Volca Keys. Anzi, ce ne sono due. Qualche mese dopo racconta ad Attack di averli '
+                    "fatti passare in un po' di delay e di riverbero, per aprirli. Nel 2023, a "
+                    'MusicRadar, dice che lo usa di continuo.',
+        "avvertenza": "In POLY le 3 note hanno un filtro e un inviluppo solo. L'accordo si apre e si "
+                      'chiude tutto insieme, mai una nota per volta.',
+        "foto": {"file": 'assets/foto/volcakeys/principale.jpg',
+                 "autore": 'Multicherry',
+                 "licenza": 'CC BY-SA 4.0',
+                 "fonte": 'Wikimedia Commons',
+                 "ritaglio": True,
+                 "didascalia": 'Un Volca Keys acceso. Sui tasti a sfioramento, i nomi delle funzioni '
+                               'del sequencer'},
+        "foto_extra": [{"file": 'assets/foto/volcakeys/manopole.jpg',
+                        "autore": 'David J',
+                        "licenza": 'CC BY 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "posizione": 'center',
+                        "didascalia": 'Le manopole trasparenti. Sotto quella del SUSTAIN si è acceso '
+                                      'il LED rosso'},
+                       {"file": 'assets/foto/volcakeys/famiglia.jpg',
+                        "autore": 'Sonic Potions, ritaglio di Clusternote',
+                        "licenza": 'CC BY-SA 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "ritaglio": True,
+                        "nel_reel": False,
+                        "didascalia": 'I primi tre Volca in fila: Beats, Bass e Keys'},
+                       {"file": 'assets/foto/volcakeys/sync.jpg',
+                        "autore": 'Matt Vanacoro',
+                        "licenza": 'CC BY 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "posizione": 'center',
+                        "didascalia": 'Un Volca Keys al NAMM 2014, col cavetto infilato nella presa '
+                                      'del sync'}],
+        "fonti": [{"titolo": 'Sound On Sound, recensione, 10/2013',
+                   "url": 'https://www.soundonsound.com/reviews/korg-volca-beats-bass-keys',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Sonicstate, recensione, 2013',
+                   "url": 'https://sonicstate.com/news/2013/09/17/review-korg-volca-keys/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Korg, pagina del volca keys',
+                   "url": 'https://www.korg.com/us/products/dj/volca_keys/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'MusicTech, 10/04/2013',
+                   "url": 'https://musictech.com/news/musikmesse-2013-korg-volca/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Synthtopia, specifiche, 10/04/2013',
+                   "url": 'https://www.synthtopia.com/?p=48996',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Resident Advisor, 15/04/2013',
+                   "url": 'https://ra.co/news/19505',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Wikipedia (EN), Volca Keys',
+                   "url": 'https://en.wikipedia.org/wiki/Volca_Keys',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Sound On Sound, Takahashi, 02/2019',
+                   "url": 'https://www.soundonsound.com/people/tatsuya-takahashi-synth-designer',
+                   "data": '2026-10-28'},
+                  {"titolo": 'NPR, Takahashi, 22/12/2017',
+                   "url": 'https://www.npr.org/sections/therecord/2017/12/22/569092364/analog-for-the-people-synth-master-tatsuya-takahashi-on-engineering-fun',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Bonedo, 10/10/2013',
+                   "url": 'https://www.bonedo.de/artikel/interview-die-entwicklung-der-korg-volca-analogsynthesizer-und-drums/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Resident Advisor, 17/02/2017',
+                   "url": 'https://ra.co/news/38199',
+                   "data": '2026-10-28'},
+                  {"titolo": 'FACT, «korg funk 5», 11/07/2017',
+                   "url": 'https://factmag.com/2017/07/11/aphex-twin-tatsuya-takahashi-interview',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Mixmag, 11/07/2017',
+                   "url": 'https://mixmag.net/read/aphex-twins-new-track-is-squelchy-menacing-electro-made-only-with-korg-gear-news',
+                   "data": '2026-10-28'},
+                  {"titolo": 'The Face, Octo Octa, 15/08/2019',
+                   "url": 'https://theface.com/music/octo-octa-interview-resonant-body',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Attack Magazine, 28/01/2020',
+                   "url": 'https://www.attackmagazine.com/features/long-read/back-to-the-old-school-again-pt-2/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'MusicRadar, Octo Octa, 2023',
+                   "url": 'https://www.musicradar.com/news/octo-octa-interview',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Bandcamp, «Resonant Body»',
+                   "url": 'https://octoocta.bandcamp.com/album/resonant-body',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Crack Magazine, 24/07/2019',
+                   "url": 'https://crackmagazine.net/?p=126941',
+                   "data": '2026-10-28'}],
+        "hashtags": ['#volcakeys', '#korg', '#sintetizzatore', '#aphextwin', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 070',
+                          'Tatsuya Takahashi va al colloquio in Korg col suo synth'),
+                         ('LONDRA · ANNI 2000',
+                          'Il synth di Takahashi ha 8 oscillatori, va a pile e ha le casse dentro.'),
+                         ('KORG · 2006',
+                          'Korg assume Takahashi, e nel 2013 lui fa uscire tre Volca insieme.'),
+                         ('VOLCA KEYS · 2013',
+                          'Il Volca Keys è quello degli accordi: 3 note, 6 pile, un altoparlante.'),
+                         ('APHEX TWIN · 2017',
+                          'Aphex Twin intervista Takahashi e mette un Volca Keys in un pezzo suo.')],
+        "reel_cta": 'Mandalo a chi ha un colloquio domani',
+        "reel_voce": [{"ruolo": 'battuta1',
+                       "detta": 'Tatsuya Takahashi va al colloquio in Korg con un synth costruito da '
+                                'lui.',
+                       "scritta": 'Tatsuya Takahashi va al colloquio in Korg con un synth costruito '
+                                  'da lui.'},
+                      {"ruolo": 'battuta2',
+                       "detta": 'Quel synth ha otto oscillatori, va a pile e ha gli altoparlanti '
+                                'dentro.',
+                       "scritta": 'Quel synth ha 8 oscillatori, va a pile e ha gli altoparlanti '
+                                  'dentro.'},
+                      {"ruolo": 'battuta3',
+                       "detta": 'Korg assume Takahashi, e nel duemilatredici lui fa uscire tre Volca '
+                                'insieme.',
+                       "scritta": 'Korg assume Takahashi, e nel 2013 lui fa uscire tre Volca '
+                                  'insieme.'},
+                      {"ruolo": 'battuta4',
+                       "detta": 'Il Volca Keys fa gli accordi, tre note, e va a sei pile.',
+                       "scritta": 'Il Volca Keys fa gli accordi, 3 note, e va a 6 pile.'},
+                      {"ruolo": 'battuta5',
+                       "detta": "Aphex Twin intervista Takahashi, e nel suo pezzo tutto Korg c'è un "
+                                'Volca Keys.',
+                       "scritta": "Aphex Twin intervista Takahashi, e nel suo pezzo tutto Korg c'è un "
+                                  'Volca Keys.'},
+                      {"ruolo": 'cta',
+                       "detta": 'Mandalo a chi ha un colloquio domani.',
+                       "scritta": 'Mandalo a chi ha un colloquio domani.'},
+                      {"ruolo": 'chiusura',
+                       "detta": 'Le slide e le fonti sul profilo Elettrofoni.',
+                       "scritta": 'Le slide e le fonti sul profilo Elettrofoni.'}],
+        "reel_audio": {"file": 'assets/audio/volcakeys/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'Attosaur',
+                       "licenza": 'CC BY-SA 4.0',
+                       "fonte": 'Wikimedia Commons',
+                       "url": 'https://commons.wikimedia.org/wiki/File:Korg_Volca_Keys_-_Loop_demo_with_live_effects.flac',
+                       "cosa": 'un Volca Keys vero che suona un giro dal suo sequencer, in POLY e in '
+                               "UNISON, con le manopole del filtro girate a mano, un po' di "
+                               'portamento e di delay, senza altri effetti'},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 71
+    # Scheda «drumulator» — scritta il 2026-10-28 (rifornimento del 28/10/2026).
+    # Non ripete LM-1, Emulator e SP-1200: la fondazione di E-mu e Rossum/Wedge
+    # stanno già nell'Emulator, il seguito hip hop nell'SP-1200. Qui la storia
+    # è il prezzo sotto i 1.000 dollari e i chip di ricambio di Digidrums.
+    #
+    # FOTO (viste entrambe: thumbnail scaricati e guardati)
+    # principale: https://commons.wikimedia.org/wiki/File:Drumulator_Vorderseite.png
+    #   Andreas Gortan (utente Superandi321), CC BY-SA 4.0, «Own work», 2500x1900,
+    #   01/01/2018, «E-mu Drumulator front panel». PNG SCONTORNATO CON CANALE
+    #   ALFA (color type 6), come assets/foto/tr909/principale.png: per questo la
+    #   destinazione è .png e non .jpg, e c'è "ritaglio": True. Macchina intera,
+    #   vista dall'alto e di fronte, leggermente in prospettiva. Si leggono
+    #   «Drumulator», «E-mu Systems, Inc.», i 2 display rossi MODE/STEP e
+    #   VALUE/SEG., le manopole MIX VOLUME e METRONOME VOLUME, il cursore, i 6
+    #   tasti blu con sopra CLAVÉ / COWBELL / CLAPS / HI HAT OPEN / HI HAT CLOSED /
+    #   CYMBAL e sotto BASS / SNARE / RIM / HI TOM / MID TOM / LO TOM, il tasto
+    #   PERC./DRUMS con le 2 spie, AUTO CORRECT, SWING, il RUN/STOP e i 4 pad neri
+    #   A B C D. Nessun'altra macchina nella foto.
+    #   thumb 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Drumulator_Vorderseite.png/1280px-Drumulator_Vorderseite.png
+    # extra: https://commons.wikimedia.org/wiki/File:Drumulator_Hinterseite.png
+    #   stesso autore, stessa licenza e data, 2500x1200, «E-mu Drumulator back
+    #   side», PNG con alfa. Si leggono, da sinistra, OFF/ON, RUN/STOP, REPEAT,
+    #   GATE D-A, CLK/CAS OUT e IN, poi MIX OUT, MET/TRIG e le 8 uscite LO TOM,
+    #   H/M TOMS, CLAVE/CWB, CLAP, CYMBAL, HATS, SNARE/RIM, BASS. In basso le
+    #   scritte «Drumulator» ed «E-mu Systems, Inc.». In alto si vede il pannello
+    #   da dietro, con le scritte capovolte: per questo "nel_reel": False.
+    #   thumb 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Drumulator_Hinterseite.png/1280px-Drumulator_Hinterseite.png
+    # Su Commons, nella categoria «E-mu Drumulator», non c'è altro (2 foto e 2
+    # registrazioni, tutte di Gortan). Nessuna foto dell'interno coi 4 chip.
+    #
+    # REGISTRAZIONE
+    # https://commons.wikimedia.org/wiki/File:Drumulator_Beispiel1.ogg
+    #   Andreas Gortan, CC BY-SA 4.0 («Attribution-Share Alike 4.0
+    #   International»), «Own work», 01/01/2018, 17,03 s, Ogg Vorbis 148 kbps.
+    #   Descrizione: «Drum pattern, sequenced on an E-mu Drumulator» / «Rhythmus,
+    #   programmiert auf dem internen Sequenzer des E-mu Drumulators». Usata nella
+    #   voce tedesca di Wikipedia. Solo batteria, nessuna melodia: spettrogramma e
+    #   forma d'onda guardati, colpi regolari dall'inizio a 16,3 s, nessun
+    #   silenzio sopra 0,4 s, RMS -14,5 dBFS, picco 0 dB. Il file finisce a
+    #   17 s: per un reel di 20-25 s va ripetuto o allungato.
+    #   Transcodifica mp3 (HEAD 200, audio/mpeg):
+    #   https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e9/Drumulator_Beispiel1.ogg/Drumulator_Beispiel1.ogg.mp3
+    #   NON usata: Drumulator_Beispiel2.ogg («used in a piece of music with other
+    #   Synthesizers»), c'è dentro altro oltre alla macchina.
+    #
+    # FATTI E FONTI (≥2 indipendenti per ciascuno, tutte lette il 2026-10-28)
+    # - 1983, 995 dollari: Sound On Sound «30 Years Of Emu»; Amazona «Black Box»;
+    #   Wikipedia EN e DE.
+    # - Linn e Oberheim sopra i 2.500 dollari: SOS («over $2500»); Amazona («rund
+    #   2.500 Dollar»). Obiettivo sotto i 1.000: Amazona («unter 1000 Dollar»);
+    #   E&MM giugno 1983 («under £1,000», in sterline per il mercato inglese).
+    # - Progetto di Dave Rossum, una scheda sola, componenti condivisi fra le
+    #   voci: SOS («shared components to cut costs»); Amazona
+    #   («Ein-Platinen-Technik, bei der Bauteile mehrfach genutzt wurden»); E&MM
+    #   1983 (tutto su un circuito stampato).
+    # - Circa 10.000 in 2 anni. LE FONTI NON CONCORDANO: SOS «nearly 10,000 over
+    #   two years»; Wikipedia EN «over 10,000 in two years»; Amazona «über
+    #   10.000 produziert». Scritto in scheda.
+    # - MIDI aggiunto dopo: SOS (MIDI In nel 1984); Amazona (sistema 3.0, MIDI
+    #   rudimentale); Wikipedia DE (solo i modelli successivi).
+    # - 12 suoni, quali: E&MM 1983; Wikipedia DE; foto del pannello. Il piatto è
+    #   «Ride» per E&MM e polynominal, «CYMBAL» sul pannello: in scheda «un piatto».
+    # - 6 tasti blu da 2 suoni ciascuno, modo DRUMS/PERC: Wikipedia DE + foto.
+    # - 36 segmenti e 8 canzoni, salvataggio su cassetta: E&MM 1983; Wikipedia DE.
+    # - 8 uscite separate più il mix: Amazona («acht Einzelausgänge»); E&MM 1983
+    #   (elenco delle uscite); foto del retro.
+    # - 4 EPROM, 64 KB, su zoccoli, intercambiabili: SOS (64 kB); Amazona (4
+    #   E-Proms austauschbar); polynominal («4 A-B-C-D socket EPROMS», «64 kb»);
+    #   E&MM 1983 (4 ROM da 16K).
+    # - Bit: LE FONTI NON CONCORDANO. 8 bit per SOS, Wikipedia EN e polynominal;
+    #   12 bit per Wikipedia DE, Vintage Synth Explorer e Production Expert.
+    #   Scritto in scheda. (Probabile spiegazione: 8 bit con un convertitore a
+    #   compressione che rende come 12. Una fonte sola, un forum, e non sul
+    #   Drumulator: NON scritto.)
+    # - Tom filtrati da 2 SSM2044: Amazona; polynominal («TOM channels are
+    #   filtered by 2 famous chip SSM2044»). SOS: filtri SSM2044.
+    # - Gli stessi filtri e il motore di lettura rimessi nell'SP-1200: SOS; la
+    #   scheda sp1200 già in catalogo (SSM2044) e Wikipedia SP-1200.
+    # - Programmazione in tempo reale con correzione automatica e swing: SOS;
+    #   Wikipedia DE; E&MM 1983; tasti AUTO CORRECT e SWING nella foto.
+    # - Erede SP-12: SOS («direct descendant», «much of its design reused»);
+    #   Wikipedia EN («Successor: E-mu SP-12»).
+    # - Digidrums: Gotcher e Brooks amici dal liceo (Wikipedia «Pro Tools»;
+    #   Production Expert, Mike Thornton 2018; NAMM oral history di Brooks);
+    #   studiano la memoria del Drumulator e vendono chip un anno dopo l'uscita
+    #   (Wikipedia «Pro Tools»; Production Expert); Digidrums diventa Digidesign
+    #   (Production Expert; NAMM Brooks; Amazona; Wikipedia DE); Pro Tools il
+    #   05/06/1991 (Wikipedia «Pro Tools»; Production Expert).
+    # - Set Rock Drums in «Shout»: Wikipedia EN; Reverb Machine 2019 («The main
+    #   beat comes from the Drumulator», «used the Rock Drums set»); Amazona (il
+    #   rullante del set in «Shout»).
+    # - Rock Drums dai campioni di «When the Levee Breaks»: Reverb Machine;
+    #   Wikipedia DE. Nessuna delle due dà una prova, e un annuncio di vendita su
+    #   Reverb.com lo chiama «rumors»: in scheda lo dico.
+    # - Depeche Mode, «Everything Counts» e «Construction Time Again»: Wikipedia
+    #   EN; dmlive.wiki (campioni confermati brano per brano); MatrixSynth 2010
+    #   (Pea Hicks: «used heavily on Construction Time Again»).
+    # - Cocteau Twins, «Head over Heels» 1983, primo disco in 2: E&MM agosto 1984
+    #   (Dan Goldstein: Guthrie solo dopo l'uscita di Heggie, «new hardware, in the
+    #   shape of a Drumulator»); Wikipedia EN (Drumulator e «Head over Heels»).
+    # - Howard Jones: Vintage Synth Explorer; Amazona («frühen Alben»); il disco,
+    #   «Human's Lib» 1984, Wikipedia EN e DE.
+    # - Handle Instagram: nessuno verificato da un sito ufficiale in questa
+    #   sessione, quindi tutti None e niente menzioni_extra.
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
+    # - Digidrums ha venduto 60.000 chip: solo Wikipedia «Pro Tools».
+    # - Alan Wilder ha scelto il Drumulator invece della Linn «because we were
+    #   cheap!», e in «Work Hard» c'è il clic del metronomo: solo Pea Hicks su
+    #   MatrixSynth, che riporta una chiacchierata.
+    # - Guthrie nel 1984 cerca chip nuovi e teme che non entrino nel suo, «one of
+    #   the very early ones»: solo E&MM agosto 1984. Bellissimo, ma una fonte.
+    # - Cassa di plastica e retro chiuso col cartone; il ride occupa un chip
+    #   intero; il Pad Programmer «un vero flop»; la batteria al litio dura 5
+    #   anni; il sistema 2.0 porta le canzoni da 8 a 24: solo Amazona.
+    # - Il mixer e il pan della LinnDrum tolti per risparmiare; 6 posizioni di
+    #   swing dal 50% al 71%: solo E&MM 1983.
+    # - Sviluppo breve; E-mu diventa un'azienda media; vendite in calo nel 1984
+    #   con DMX, TR-909 e RX11: solo SOS.
+    # - SP-12 a 2.745 dollari e anteprima al NAMM 1985: solo SOS (che poi si
+    #   contraddice sulla data).
+    # - Dimensioni 36x34x11 cm e 4,5 kg; 15 set Digidrums da 5 EPROM: solo
+    #   Wikipedia DE.
+    # - Sound Designer per l'Emulator II venduto anch'esso a 995 dollari: solo
+    #   Wikipedia «Pro Tools», e Production Expert lo data diversamente.
+    # - Kenny Loggins «Footloose», Rockwell «Somebody's Watching Me», Nu Shooz,
+    #   Big Black, Front 242, Camel, Lou Reed, Jean-Michel Jarre «Rendez-Vous»:
+    #   solo le tabelle di Wikipedia (EN e DE si copiano), nessuna seconda fonte
+    #   trovata. Front 242 c'è anche su Amazona, ma senza disco: lasciati fuori.
+    # - Frequenza di campionamento: nessuna fonte affidabile (un forum dice 24
+    #   kHz per dei chip con suoni di 808 e 909).
+    # - «Sugar Hiccup» come brano del Drumulator e Guthrie «easy to program»:
+    #   solo Reverb.com, pagina bloccata (403) e non letta.
+    #
+    # DUBBI APERTI
+    # - La registrazione e le foto sono dello stesso autore e dello stesso
+    #   giorno, quindi probabilmente della stessa macchina; non so se monta i chip
+    #   di fabbrica o un set Digidrums. La descrizione dice solo «sequenced on an
+    #   E-mu Drumulator».
+    # - PNG con trasparenza: le tavole lo reggono (multiply sulla crema, come la
+    #   TR-909) e il sito lo mette su bianco (genera_archivio.py). Nel reel
+    #   ffmpeg butta via il canale alfa: guardare il primo fotogramma, e se il
+    #   fondo esce nero o sporco appiattire la foto su crema prima del montaggio.
+    # - reel_voce: «Drumulator», «Pro Tools», «Digidrums», «Digidesign»,
+    #   «Gotcher», «Rock Drums», «Shout», «Tears for Fears» non sono nel
+    #   lessico di voce.py. Vanno provati con il riascolto prima di aggiungere
+    #   riscritture.
+    # - L'anno di «Shout»: singolo nel novembre 1984, album nel 1985. In scheda
+    #   c'è l'album, che è l'anno della tabella di Wikipedia.
+    {
+        "slug": "drumulator",
+        "numero": 71,
+        "serie": 'LE DRUM MACHINE',
+        "strumento": 'E-mu Drumulator',
+        "anno": '1983',
+        "luogo": 'California',
+        "costruttore": 'E-mu Systems',
+        "specifiche": [('USCITA', '1983'), ('PREZZO', '995 $'), ('SUONI', '12'), ('MEMORIA', '64 KB')],
+        "gancio": 'Una drum machine sotto i 1.000 dollari. Due amici le cambiano i suoni, e la loro '
+                  'ditta farà Pro Tools',
+        "sottotitolo": "Il nonno dell'SP-1200, perché E-mu ne riprende il progetto per farci l'SP-12.",
+        "la_macchina": 'Il pannello è grigio, con 2 display rossi, un cursore e 6 tasti blu. Ognuno '
+                       'di quei tasti vale 2 suoni, e una spia vi dice quale. Con DRUMS accesa avete '
+                       'cassa, rullante, rim e 3 tom. Con PERC avete clave, campanaccio, battimani, '
+                       'charleston aperto e chiuso e un piatto. In basso ci sono 4 pad quadrati e il '
+                       'RUN/STOP, dietro 8 uscite separate e il mix. In memoria stanno 36 pattern e 8 '
+                       "canzoni, e per salvarli si usa una cassetta. Non c'è altro. A me piace "
+                       'proprio per questo, lo guardi una volta e hai capito come si usa.',
+        "inventore_nome": 'Dave Rossum, E-mu Systems',
+        "inventore": 'Nel 1983 le drum machine coi suoni campionati le fanno Linn e Oberheim, e '
+                     'costano più di 2.500 dollari. Alla E-mu decidono di stare sotto i 1.000. Dave '
+                     'Rossum la progetta su una scheda sola, e fa lavorare gli stessi componenti per '
+                     'più voci. Il prezzo di listino è 995 dollari. Quei 5 dollari sotto la soglia mi '
+                     'fanno sorridere, ma funzionano. In 2 anni ne vendono circa 10.000, e sul numero '
+                     'esatto le fonti non concordano. Sound On Sound scrive «quasi», altre scrivono '
+                     "«più di». La presa MIDI sulle prime non c'è, arriva più tardi.",
+        "come_funziona": 'I 12 suoni sono campioni chiusi in 4 chip di memoria EPROM, 64 KB in tutto, '
+                         'quindi pochi istanti per ogni colpo. Sui bit le fonti si dividono, 8 per '
+                         'Sound On Sound e 12 per altre. I chip stanno su zoccoli e si sfilano, e per '
+                         'cambiare batteria si cambiano i chip. I 3 tom passano in 2 filtri analogici '
+                         "SSM2044, gli stessi che E-mu rimetterà nell'SP-1200. Il ritmo si suona in "
+                         'tempo reale sui tasti e la macchina lo raddrizza da sola sulla griglia, se '
+                         'volete anche con lo swing.',
+        "richiami": [('FIG. 1', '6 tasti, 12 suoni'),
+                     ('FIG. 2', '4 chip, 64 KB'),
+                     ('FIG. 3', 'Tom filtrati SSM2044')],
+        "chi_lusata": [{"artista": 'Depeche Mode',
+                        "nota": '«Everything Counts» (1983): la batteria di «Construction Time Again» '
+                                'viene da qui',
+                        "ig": None},
+                       {"artista": 'Cocteau Twins',
+                        "nota": '«Head over Heels» (1983), il primo disco in 2, con la macchina nuova '
+                                'di Robin Guthrie',
+                        "ig": None},
+                       {"artista": 'Tears for Fears',
+                        "nota": '«Shout», da «Songs from the Big Chair» (1985), col set di suoni Rock '
+                                'Drums',
+                        "ig": None},
+                       {"artista": 'Howard Jones',
+                        "nota": "sul primo album, «Human's Lib» (1984)",
+                        "ig": None}],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": 'Everything Counts',
+                         "artista": 'Depeche Mode',
+                         "anno": '1983',
+                         "cosa": 'La batteria è quella del Drumulator, coi suoi colpi corti. '
+                                 'Ascoltatela sapendo che costava meno della metà di una Linn.'},
+        "aneddoto": 'Due amici del liceo, Peter Gotcher ed Evan Brooks, studiano come sono disposti i '
+                    "suoni nella memoria del Drumulator. Un anno dopo l'uscita della macchina "
+                    'cominciano a vendere chip nuovi da montare al posto di quelli di fabbrica, col '
+                    'marchio Digidrums. Uno dei set si chiama Rock Drums. Due fonti scrivono che i '
+                    'campioni vengono da «When the Levee Breaks» dei Led Zeppelin, ma io non ho '
+                    'trovato chi lo dimostri. Quel set finisce in «Shout» dei Tears for Fears. Poi '
+                    'Digidrums cambia nome in Digidesign, e nel 1991 fa uscire Pro Tools.',
+        "avvertenza": 'Ogni tasto blu porta 2 suoni. Se il rullante esce come un campanaccio, '
+                      'guardate le spie: è accesa PERC, e serve DRUMS.',
+        "foto": {"file": 'assets/foto/drumulator/principale.png',
+                 "ritaglio": True,
+                 "autore": 'Andreas Gortan',
+                 "licenza": 'CC BY-SA 4.0',
+                 "fonte": 'Wikimedia Commons',
+                 "didascalia": 'Il pannello del Drumulator, coi 6 tasti blu da 2 suoni ciascuno e i 4 '
+                               'pad neri'},
+        "foto_extra": [{"file": 'assets/foto/drumulator/retro.png',
+                        "ritaglio": True,
+                        "nel_reel": False,
+                        "autore": 'Andreas Gortan',
+                        "licenza": 'CC BY-SA 4.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Il retro, con le 8 uscite separate e le prese per la '
+                                      'cassetta'}],
+        "fonti": [{"titolo": 'Drumulator, Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/E-mu_Drumulator',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Drumulator, Wikipedia (DE)',
+                   "url": 'https://de.wikipedia.org/wiki/E-mu_Drumulator',
+                   "data": '2026-10-28'},
+                  {"titolo": '«30 Years Of Emu», Sound On Sound',
+                   "url": 'https://www.soundonsound.com/music-business/30-years-emu',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Black Box Drumulator, Amazona.de',
+                   "url": 'https://www.amazona.de/black-box-e-mu-systems-drumulator/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Drumulator, E&MM, giugno 1983',
+                   "url": 'https://www.muzines.co.uk/articles/e-mu-drumulator/6047',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Drumulator, Polynominal',
+                   "url": 'https://www.polynominal.com/repair/emu-drumulator/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Drumulator, Vintage Synth Explorer',
+                   "url": 'https://www.vintagesynth.com/e-mu/drumulator',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Storia di Pro Tools, Production Expert, 2018',
+                   "url": 'https://www.production-expert.com/home-page/2018/2/19/the-history-of-pro-tools-1984-to-1993',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Pro Tools, Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Pro_Tools',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Evan Brooks, NAMM Oral History',
+                   "url": 'https://www.namm.org/library/oral-history/evan-brooks',
+                   "data": '2026-10-28'},
+                  {"titolo": 'I synth di «Shout», Reverb Machine, 2019',
+                   "url": 'https://www.reverbmachine.com/blog/tears-for-fears-shout-synths',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Campioni di «Construction Time Again», dmlive.wiki',
+                   "url": 'https://dmlive.wiki/wiki/List_of_Depeche_Mode_sample_sources_by_album/Construction_Time_Again',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Cocteau Twins, E&MM, agosto 1984',
+                   "url": 'https://www.muzines.co.uk/articles/head-over-heels/7950',
+                   "data": '2026-10-28'}],
+        "hashtags": ['#drumulator', '#emu', '#drummachine', '#depechemode', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 071',
+                          'La ditta di Pro Tools nasce coi chip di una drum machine'),
+                         ('E-MU · 1983',
+                          "L'E-mu Drumulator costa 995 dollari e tiene 12 suoni in 4 chip."),
+                         ('DIGIDRUMS · 1984',
+                          'Peter Gotcher ed Evan Brooks fanno chip con suoni nuovi per il '
+                          'Drumulator.'),
+                         ('TEARS FOR FEARS',
+                          'Il loro set Rock Drums finisce dentro «Shout» dei Tears for Fears.'),
+                         ('DIGIDESIGN · 1991',
+                          'Nel 1991 Digidrums, che ora si chiama Digidesign, fa uscire Pro Tools.')],
+        "reel_cta": 'Mandalo a chi registra in Pro Tools',
+        "reel_audio": {"file": 'assets/audio/drumulator/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'Andreas Gortan',
+                       "licenza": 'CC BY-SA 4.0',
+                       "fonte": 'Wikimedia Commons',
+                       "url": 'https://commons.wikimedia.org/wiki/File:Drumulator_Beispiel1.ogg',
+                       "cosa": 'un E-mu Drumulator vero che suona un ritmo programmato sul suo '
+                               "sequencer interno, solo batteria e nient'altro"},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 72
+    # Roland JV-1080 (1994). Rifornimento del 28/10/2026, scheda posteriore al
+    # 1988 (quota «una su quattro»). Tutte le pagine aperte il 2026-10-28.
+    #
+    # NOTA SUL BRIEF: il brief parlava di «modulo a 4 parti / 64 voci». Le parti
+    # sono 16 (manuale Roland, SOS 1994, Wikipedia); 4 sono i Tone di una Patch
+    # e 4 gli slot delle schede SR-JV80. In scheda c'è scritto così.
+    #
+    # FOTO (lette via API Commons il 2026-10-28; il container prendeva 429 dalla
+    # API e da upload.wikimedia.org, i thumbnail sono passati da
+    # thumb.wikimedia.org, che è l'host che la API restituisce oggi in thumburl)
+    # - principale: File:Roland_JV-1080_Pair.jpg, Raymangold22, CC0, 2000x738.
+    #   Due JV-1080 impilati, il secondo acceso (display «PATCH PLAY USER:001
+    #   Symphonique», USER: è il banco utente, quindi non lo chiamo «di
+    #   fabbrica»). Panoramica 2,7:1: sulle tavole sta intera, nel reel si vede
+    #   uno spicchio. Se nel reel non regge, metterle "nel_reel": False e
+    #   lasciare il reel alle due foto extra (4:3).
+    # - schede.jpg: File:JV1080_expansion_cards.jpg, Raymangold22, CC0, 1207x897
+    #   (più stretta di 1280: preso il thumbnail a 960, MAI l'originale). Coperchio
+    #   aperto, SR-JV80-09 Session e SR-JV80-01 Pop montate, slot EXP-C ed EXP-D
+    #   vuoti, serigrafia «JV-1080 EXP BASE BOARD». Le scritte Session/Pop stanno
+    #   nel terzo alto: posizione "center 30%".
+    # - coperchio.jpg: File:Roland_JV-1080.JPG, Vicuna1682, CC BY-SA 3.0,
+    #   4608x3456, 2014. Vista dall'alto: la piastra avvitata degli slot e il
+    #   frontale con «SUPER JV 64 VOICE ... 4x EXPANSION». Colori un po' carichi
+    #   e un foglietto bianco in basso a sinistra. Nessun tag EXIF di rotazione
+    #   (controllato sul thumbnail).
+    # DA GUARDARE sulla tavola generata: che la banda di schede.jpg mostri
+    #   davvero le due etichette (la didascalia le nomina) e quella di
+    #   coperchio.jpg la piastra con le viti.
+    #
+    # AUDIO
+    # pagina: https://commons.wikimedia.org/wiki/File:JV-1080_raggertronic.ogg
+    #   ricontrollata il 2026-10-28 (pagina e extmetadata della API): «An example
+    #   of the stock preset 'raggertronic' which is infamous as one of the common
+    #   presets bundled with the JV-1080». Autore Raymangold22, «Own work», CC0 1.0
+    #   (Universal Public Domain Dedication), creata il 15/06/2022, caricata il
+    #   16/06/2022. Ogg Vorbis 273 kbps, 1:52,6. Categorie: ROMplers, Roland JV
+    #   series.
+    #   PERCHÉ È LA MACCHINA VERA: lo stesso utente, con la stessa data
+    #   (2022-06-15), ha caricato le foto dei suoi due JV-1080 (la principale di
+    #   questa scheda) e delle schede montate dentro. Non è un plug-in: chi
+    #   registra possiede l'hardware.
+    #   DUBBIO: il nome «raggertronic» non l'ho trovato in nessuna lista dei
+    #   preset (cercato su Synthmania, Sweetwater, manuale Roland; il manuale
+    #   dell'hardware è una scansione senza la lista dei suoni). Per questo in
+    #   «cosa» il nome è attribuito a chi registra, non a Roland.
+    #   MELODIE PROTETTE: non l'ho ascoltata (niente altoparlanti nel
+    #   container). L'ho misurata: impulsi regolari ogni 0,30 s per tutto il
+    #   file, spettro rumoroso (flatness 0,2-0,35) e cromagramma che cambia
+    #   nota ogni quarto di secondo senza una linea che si ripeta nei primi 45
+    #   s; da 93 a 108 s si fermano su un accordo di do maggiore. È il profilo
+    #   di un suono ritmico di fabbrica suonato a tasti, non di una canzone.
+    #   Chi integra la ascolti prima di montarla.
+    # file: https://upload.wikimedia.org/wikipedia/commons/6/61/JV-1080_raggertronic.ogg
+    #   mp3 transcodificato (222 kbps, il link qui sotto in SCARICARE) scaricato
+    #   via WebFetch: 112,6 s, stereo 44,1 kHz, 3 MB.
+    # TRATTO: RMS per secondo -14/-22 dB da 0 a 43 s (pieno), poi un buco a
+    #   -30/-34 dB fra 44 e 52 s, un altro a 90-92 s, coda muta da 110 s.
+    #   «inizio» 0 come chiede il brief: i primi 40 s sono il pezzo migliore e
+    #   attacca subito (-22 dB al secondo 0). Non far cadere tagli fra 44 e 52.
+    #   Altre registrazioni dello stesso autore sulla stessa macchina, se questa
+    #   non piace: File:JV-1080_black_rain.ogg, File:JV-1080_spaced_voxx.ogg,
+    #   File:JV-1080_mm_frtlsbend.ogg (non ricontrollate).
+    #
+    # NOTA TECNICA: suoni.VOCE_SCHEDA ha già «jv1080» (valida_scheda non
+    #   lo segnala). Nel lessico di voce.py mancano «JV-1080» (qui scritto «gei vi
+    #   milleottanta», sul modello di «JD-800»: «gei di ottocento»), «Tomb
+    #   Raider» («Tum Rèider»), «McCree» («Macrì») e «Abbey Road» («Èbbi
+    #   Ròud»): da provare col riascolto, il nome di McCree è quello a rischio.
+    #
+    # FONTI PER FATTO (chi regge cosa)
+    # - 1994: Wikipedia; Roland (pagina del software, «Released in 1994»);
+    #   Synthmania; SOS dic. 1994.
+    # - 64 voci, 16 parti, display a 2 righe da 40 caratteri, 40 tipi di EFX più
+    #   chorus e riverbero, uscite MIX + OUTPUT 1 + OUTPUT 2 stereo e cuffia,
+    #   slot per card PCM e DATA: manuale Roland (pagina SPECIFICATIONS) e SOS
+    #   dic. 1994 (Dave Crombie). 64 voci e 16 parti anche su Wikipedia e
+    #   Vintage Synth Explorer.
+    # - 640 Patch (5 banchi da 128, il D è General MIDI): manuale Roland;
+    #   Sweetwater («640 Patches ... one User, and four Preset Banks»).
+    # - 448 forme d'onda in 8 MB: SOS dic. 1994; Roland (pagina del software,
+    #   «including the original 448»); SOS «History of Roland part 4» (2005).
+    #   8 MB anche su Wikipedia.
+    # - fino a 4 Tone per Patch: SOS dic. 1994; Wikipedia («4 or fewer tones per
+    #   voice»).
+    # - 64 voci = 64 Tone, quindi 16 note con Patch a 4 Tone (avvertenza):
+    #   Wikipedia («64 oscillators»); zoeblade («16–64 voices depending on how
+    #   many waveforms each voice uses»); il manuale del JV-1080 software spiega
+    #   lo stesso conto per il suo motore.
+    # - filtro con risonanza e inviluppo per Tone: Wikipedia; SOS 1994.
+    # - Booster e modulatore ad anello sulle strutture a coppie di Tone: SOS
+    #   1994 (Structure 4, sidebar di Nick Magnus sul «Boost»); SOS 2005 («ring
+    #   modulators, and a 'Boost' overdrive facility»). Stessa testata, autori e
+    #   anni diversi: lo segnalo.
+    # - 4 slot SR-JV80 da 8 MB, fino a 42 MB con la card PCM: Wikipedia;
+    #   zoeblade; Vintage Synth Explorer (42 MB); SOS 1994 e 2005 (4 slot).
+    # - nessun tastierino per i valori: SOS 1994 («No keypad for entering
+    #   values»); si vede nelle foto (VALUE, INC, DEC).
+    # - «SUPER JV», «64 VOICE», «4x EXPANSION» sul frontale: foto principale e
+    #   coperchio.jpg; «Super JV-1080» anche su Wikipedia e nel titolo di SOS.
+    # - JV-80 1992, 28 voci, scheda interna da 8 MB: SOS 2005; Synthmania
+    #   (JV-880); Vintage Synth Explorer (JV-880, 28 voci).
+    # - JV-880 versione rack del JV-80: SOS 2005; Synthmania; Vintage Synth
+    #   Explorer. ANNO: 1992 per Synthmania e Vintage Synth Explorer, 1993 per
+    #   SOS 2005. Scritto in scheda che non concordano.
+    # - le schede SR-JV80 vanno anche sui modelli precedenti: SOS 1994 («Like
+    #   its progenitors, the JV90/80, 1000 and 880 ... can accept the SR-JV80»);
+    #   SOS 2005 (schede dal 1992); Wikipedia (elenco delle macchine).
+    # - JV-1080 = JV-90 senza tastiera: McCree a SOS 2000 («a JV90, which is
+    #   like a keyboard version of the 1080») e a guitarguitar 2019 («a Roland
+    #   JV1080 which is the rack version of the JV90»).
+    # - JV-2080 1997, 8 slot: Wikipedia (JV-2080); SOS 2005.
+    # - McCree assunto alla Core Design come programmatore, primo lavoro un
+    #   sequencer per il Mega Drive, poi la musica di un gioco di Asterix:
+    #   Wikipedia (Nathan McCree); SOS maggio 2000. Il titolo del gioco non
+    #   concorda («Asterix and the Great Rescue» per Wikipedia, «Asterix II» per
+    #   SOS): in scheda «un gioco di Asterix».
+    # - Tomb Raider 1996 in circa 4 settimane: Wikipedia («the entire score for
+    #   the first Tomb Raider in four weeks»); guitarguitar 2019 (il gioco era
+    #   «about 4 weeks away from completion» quando ha cominciato).
+    # - JV1080 con la scheda Orchestral che «did the bulk of the work»: SOS 2000;
+    #   guitarguitar 2019 (JV90 e JV1080, tutti e due con le Orchestral 1 e 2).
+    #   Le stesse macchine per la musica del 1996: Raiding the Globe 08/10/2021;
+    #   Music of Tomb Raider 2021.
+    # - orchestra vera ad Abbey Road nel 2017, dopo un Kickstarter: Virtual Lara
+    #   (lancio 26/05/2017, sessioni dal 16/10/2017); WSHU/NPR 13/12/2018
+    #   (Abbey Road, Kickstarter, Royal Philharmonic); Music of Tomb Raider
+    #   (Kickstarter del 26/05/2017).
+    # - 2021, «Synth Mixes» rifatti con 2 JV1080: Raiding the Globe; Music of
+    #   Tomb Raider.
+    # - Kevin Parker, JV-1080 su «Currents» (2015): SOS luglio 2020 (Tom Doyle,
+    #   «"naff" early digital synths such as the Roland D-50 and the JV-1080»);
+    #   AudioTechnology 20/03/2017, citata da Wikipedia «Currents» e ripresa da
+    #   Happy Mag 29/03/2017 («I fell in love with those naff '90s sounding
+    #   keyboards», «I've got a Roland JV1080 synth module»); Reverb Machine
+    #   2018 (i suoni del modulo in «'Cause I'm a Man»).
+    # - Roland l'ha rifatto in software, con le 448 forme d'onda originali:
+    #   roland.com (rc_jv-1080); Plugin Boutique (stessa descrizione, è un
+    #   rivenditore: indipendenza debole, lo segnalo). @rolandglobal è già
+    #   verificato e usato in contenuti.py (schede 808, 909, JD-800, D-50).
+    # - «Tema di Tomb Raider» in «da ascoltare»: è la musica del primo gioco,
+    #   fatta coi JV (SOS 2000; guitarguitar 2019; Raiding the Globe 2021).
+    #   «Orchestra da film» riprende SOS 2000 («the film score orchestral
+    #   sound»), ed è detto come impressione, non come fatto.
+    #
+    # - Vintage Synth Explorer (JV-1080, https://www.vintagesynth.com/roland/jv-1080)
+    #   consultata per 64 voci, 16 parti e 42 MB, tolta da «fonti» per stare
+    #   nei 2.200 caratteri della didascalia (i fatti restano coperti da altre
+    #   due fonti). Le uscite separate non sono più nel testo, per lo stesso
+    #   motivo.
+    #
+    # FATTI SCARTATI (una fonte sola, o non verificabili)
+    # - prezzo di lancio: 1.008 sterline (pubblicità di Active Sound su The Mix,
+    #   dic. 1994, citata da zoeblade) contro 1.085 (Future Music, «30 Years»,
+    #   visto solo in un estratto di ricerca, pagina non apribile). Non
+    #   concordano e una delle due non l'ho letta: niente prezzo.
+    # - fine produzione: 2000 per Wikipedia, 2001 per Vintage Synth Explorer.
+    #   Vera discordanza, lasciata fuori perché la JD-800 usa già la stessa
+    #   frase («sull'anno di fine produzione le fonti non concordano»).
+    # - Darude, «Sandstorm» (1999): rullante «909» e basso dal JV-1080 secondo
+    #   SOS dic. 2020 (Classic Tracks), ma lo stesso articolo elenca un JV-2080
+    #   nello studio di JS16, e Future Music (2017) non l'ho potuto aprire
+    #   (pressreader 403). La «sirena del treno» dal JV per MusicRadar: la
+    #   pagina che ho letto (30/10/2024, ripresa da DJ Mag) non lo dice. Fuori.
+    # - Faithless: Sister Bliss sui pad «glaciali» di «Reverence» e sul JV-1080
+    #   in «God Is a DJ»: solo Roland (due articoli dello stesso sito). Vintage
+    #   Synth Explorer li mette fra gli utenti senza dire dove. Fuori.
+    # - Dario G: SOS ott. 1998 lo lega solo a «Voices» (un preset con l'attacco
+    #   rallentato), non a «Sunchyme». Fonte unica. Fuori.
+    # - videogiochi (Final Fantasy IX, Metal Gear Solid, Resident Evil 2,
+    #   Uematsu, Shimomura): solo la descrizione di un video di Sonic State
+    #   (2025). Fuori.
+    # - «venduto a camionate» («by the lorryload»): solo SOS 2005.
+    # - «il modulo più registrato della storia»: solo Roland, e detto come
+    #   «some say». Fuori.
+    # - la SR-JV80-06 Dance ritirata per diritti d'autore: ritirata sì
+    #   (Wikipedia, zoeblade), il motivo è «copyright problems» per Wikipedia e
+    #   una voce («people speculating») per zoeblade. Non entrata.
+    # - Decca che voleva pubblicare la musica di Tomb Raider e il capo della Core
+    #   che dice no: solo guitarguitar 2019.
+    # - «3 settimane» per la musica del primo Tomb Raider: compare in un
+    #   estratto di ricerca senza fonte leggibile; Wikipedia e guitarguitar
+    #   dicono 4. Tenuto 4.
+    # - frequenza di campionamento 32 kHz: solo il FAQ di Don Solaris via
+    #   zoeblade.
+    # - peso 5 kg: solo il manuale Roland.
+    # - handle Instagram: tameimpala.com e nathanmccree.com non hanno link a
+    #   Instagram leggibili (pagine generate da JavaScript), quindi «ig» None.
+    {
+        "slug": "jv1080",
+        "numero": 72,
+        "serie": 'I SINTETIZZATORI',
+        "strumento": 'Roland JV-1080',
+        "anno": '1994',
+        "luogo": 'Giappone',
+        "costruttore": 'Roland',
+        "specifiche": [('USCITA', '1994'), ('VOCI', '64'), ('PARTI', '16'), ("FORME D'ONDA", '448')],
+        "gancio": "L'orchestra del primo Tomb Raider non è un'orchestra. È questo modulo rack, con "
+                  'una scheda in più',
+        "sottotitolo": 'Alto 2 unità di rack e senza tastiera, sotto il coperchio ha 4 slot per altre '
+                       "schede di suoni da 8 MB l'una.",
+        "la_macchina": "Sul frontale c'è scritto Super JV, 64 voice, 4x expansion, e già lì Roland vi "
+                       "dice cosa conta. Tastiera non ce n'è, lo si suona via MIDI da un'altra "
+                       'macchina. A sinistra il volume e la cuffia, al centro un display '
+                       'retroilluminato da 2 righe di 40 caratteri, a destra la manopola VALUE e le '
+                       'fessure per le card. I numeri si scelgono girando la manopola o coi tasti INC '
+                       "e DEC. Un tastierino non c'è, e non ho mai capito perché su una macchina con "
+                       '640 suoni in memoria.',
+        "inventore_nome": 'La famiglia JV di Roland',
+        "inventore": 'Il JV-1080 è il terzo di una famiglia. Nel 1992 Roland fa il JV-80, una '
+                     'tastiera da 28 voci che accetta dentro una scheda di espansione da 8 MB. Poi '
+                     "arriva il JV-880, lo stesso suono in un rack. Sull'anno le fonti non "
+                     'concordano, Synthmania e Vintage Synth Explorer scrivono 1992, Sound On Sound '
+                     '1993. Nel 1994 il JV-1080 porta le voci a 64 e gli slot a 4, e le schede '
+                     'SR-JV80 comprate per i modelli di prima ci entrano. Nathan McCree, che '
+                     'incontrerete più avanti, lo descrive come un JV-90 senza tastiera. Nel 1997 '
+                     'esce il JV-2080, con 8 slot.',
+        "come_funziona": "Il JV-1080 i suoni li legge dalla memoria, dove ci sono 448 forme d'onda "
+                         'campionate, in 8 MB. Un suono, che Roland chiama Patch, ne mette insieme '
+                         'fino a 4, e ognuna, un Tone, passa nel suo filtro con la risonanza e nel '
+                         'suo inviluppo. Due Tone si possono anche legare in coppia, con un Booster '
+                         'che li satura e un modulatore ad anello. In fondo ci sono 40 tipi di '
+                         'effetto, più un chorus e un riverbero. In modalità Performance suonano 16 '
+                         'parti insieme. Con 4 schede SR-JV80 e una card PCM si arriva a 42 MB. Se ne '
+                         'trovate uno usato, aprite il coperchio prima di pagarlo.',
+        "richiami": [('FIG. 1', "448 forme d'onda in 8 MB"),
+                     ('FIG. 2', 'Fino a 4 Tone per Patch'),
+                     ('FIG. 3', '4 slot per le schede SR-JV80')],
+        "chi_lusata": [{"artista": 'Nathan McCree',
+                        "nota": 'le musiche dei primi Tomb Raider, dal 1996, con la scheda Orchestral',
+                        "ig": None},
+                       {"artista": 'Tame Impala',
+                        "nota": 'Kevin Parker su «Currents» (2015): «mi sono innamorato di quelle '
+                                "tastiere anni '90 un po' pacchiane»",
+                        "ig": None}],
+        "menzioni_extra": [{"ig": 'rolandglobal',
+                            "riga": 'Oggi @rolandglobal lo vende anche in software, con le 448 forme '
+                                    "d'onda di allora."}],
+        "da_ascoltare": {"brano": 'Tema di Tomb Raider',
+                         "artista": 'Nathan McCree',
+                         "anno": '1996',
+                         "cosa": "Sembra un'orchestra da film. Ascoltatelo sapendo che è un modulo "
+                                 'rack con dentro la scheda Orchestral.'},
+        "aneddoto": 'Nathan McCree entra alla Core Design come programmatore. Il primo lavoro è un '
+                    "sequencer per il Mega Drive, e per provarlo ci scrive sopra un po' di musica. Il "
+                    'capo la sente e gli fa fare quella di un gioco di Asterix. Nel 1996 tocca a Tomb '
+                    'Raider, quando al gioco mancano circa 4 settimane. McCree ha un JV-1080 con '
+                    "dentro la scheda Orchestral, e racconta che il grosso del lavoro l'ha fatto lei. "
+                    "Nel 2017 raccoglie i soldi su Kickstarter e un'orchestra vera registra quelle "
+                    'musiche ad Abbey Road. Nel 2021 escono di nuovo, rifatte su 2 JV-1080.',
+        "avvertenza": 'Le 64 voci sono 64 Tone, non 64 note. Con una Patch a 4 Tone gli accordi si '
+                      'fermano a 16 note in tutto.',
+        "foto": {"nel_reel": False,
+                 "file": 'assets/foto/jv1080/principale.jpg',
+                 "autore": 'Raymangold22',
+                 "licenza": 'CC0',
+                 "fonte": 'Wikimedia Commons',
+                 "didascalia": "Due JV-1080 uno sopra l'altro: quello sotto è acceso, sul suono "
+                               'Symphonique'},
+        "foto_extra": [{"file": 'assets/foto/jv1080/schede.jpg',
+                        "posizione": 'center 30%',
+                        "autore": 'Raymangold22',
+                        "licenza": 'CC0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Sotto il coperchio, 2 schede SR-JV80 montate, Session e Pop'},
+                       {"file": 'assets/foto/jv1080/coperchio.jpg',
+                        "autore": 'Vicuna1682',
+                        "licenza": 'CC BY-SA 3.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'La piastra avvitata sopra il modulo: lì sotto stanno i 4 '
+                                      'slot'}],
+        "fonti": [{"titolo": '«Roland JV-1080» — Wikipedia',
+                   "url": 'https://en.wikipedia.org/wiki/Roland_JV-1080',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Roland Super JV1080» — Sound On Sound, 1994',
+                   "url": 'https://www.soundonsound.com/reviews/roland-super-jv1080',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Manuale del JV-1080 — Roland',
+                   "url": 'https://static.roland.com/assets/media/pdf/JV-1080_OM.pdf',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Storia di Roland, parte 4 — Sound On Sound, 2005',
+                   "url": 'https://www.soundonsound.com/music-business/history-roland-part-4',
+                   "data": '2026-10-28'},
+                  {"titolo": '«JV-1080» — Zoe Blade',
+                   "url": 'https://notebook.zoeblade.com/JV-1080.html',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Roland JV-880» — Synthmania',
+                   "url": 'https://synthmania.com/jv-880.htm',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Roland JV-880» — Vintage Synth Explorer',
+                   "url": 'https://www.vintagesynth.com/roland/jv-880',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Roland JV-2080» — Wikipedia',
+                   "url": 'https://en.wikipedia.org/wiki/Roland_JV-2080',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Il JV-1080 in software — Roland',
+                   "url": 'https://www.roland.com/us/products/rc_jv-1080/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'McCree e Kemp — Sound On Sound, 2000',
+                   "url": 'https://www.soundonsound.com/people/nathan-mccree-matt-kemp-music-computer-games',
+                   "data": '2026-10-28'},
+                  {"titolo": 'McCree — guitarguitar, 2019',
+                   "url": 'https://www.guitarguitar.co.uk/news/140902/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Nathan McCree» — Wikipedia',
+                   "url": 'https://en.wikipedia.org/wiki/Nathan_McCree',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Synth Mixes» — Raiding the Globe, 2021',
+                   "url": 'https://raidingtheglobe.com/news/the-tomb-raider-suite-synth-mixes-out-now',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Synth Mixes» — Music of Tomb Raider, 2021',
+                   "url": 'https://www.musicoftombraider.com/2021/07/nathan-mccree-releases-tomb-raider.html',
+                   "data": '2026-10-28'},
+                  {"titolo": '«The Tomb Raider Suite» — Virtual Lara',
+                   "url": 'https://www.virtuallara.com/the-tomb-raider-suite.html',
+                   "data": '2026-10-28'},
+                  {"titolo": '«The Tomb Raider Suite» — WSHU, 2018',
+                   "url": 'https://www.wshu.org/culture/2018-12-13/the-tomb-raider-suite-nathan-mccree-builds-an-orchestra-for-lara-croft',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Kevin Parker — Sound On Sound, 2020',
+                   "url": 'https://www.soundonsound.com/node/4921408?page=2',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Currents» — Happy Mag, 2017',
+                   "url": 'https://happymag.tv/learn-how-to-play-the-synth-sounds-of-tame-impalas-currents-thanks-to-a-real-life-synth-wizard/',
+                   "data": '2026-10-28'},
+                  {"titolo": "«'Cause I'm A Man» — Reverb Machine, 2018",
+                   "url": 'https://reverbmachine.com/blog/tame-impala-cause-im-a-man-synth-sounds/',
+                   "data": '2026-10-28'}],
+        "hashtags": ['#jv1080', '#roland', '#sintetizzatore', '#tameimpala', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 072',
+                          'Le musiche del primo Tomb Raider escono da un Roland JV-1080'),
+                         ('ROLAND · 1994',
+                          "Il JV-1080 è un rack senza tastiera, con 64 voci e 448 forme d'onda."),
+                         ('SR-JV80 · 8 MB',
+                          'Sotto il coperchio ci sono 4 slot per altre schede di suoni da 8 MB.'),
+                         ('TOMB RAIDER · 1996',
+                          'Nathan McCree ha 4 settimane e un JV-1080 con la scheda Orchestral.'),
+                         ('ABBEY ROAD · 2017',
+                          "Nel 2017 un'orchestra vera registra le musiche di McCree ad Abbey Road.")],
+        "reel_cta": 'Mandalo a chi ha giocato al primo Tomb Raider',
+        "reel_voce": [{"ruolo": 'battuta1',
+                       "detta": 'Le musiche del primo Tum Rèider escono da un Roland gei vi '
+                                'milleottanta.',
+                       "scritta": 'Le musiche del primo Tomb Raider escono da un Roland JV-1080.'},
+                      {"ruolo": 'battuta2',
+                       "detta": 'Il gei vi milleottanta, un rack senza tastiera, ha sessantaquattro '
+                                "voci e quattrocentoquarantotto forme d'onda.",
+                       "scritta": 'Il JV-1080, un rack senza tastiera, ha 64 voci e 448 forme '
+                                  "d'onda."},
+                      {"ruolo": 'battuta3',
+                       "detta": 'Sotto il coperchio trovi quattro slot per altre schede di suoni.',
+                       "scritta": 'Sotto il coperchio trovi 4 slot per altre schede di suoni.'},
+                      {"ruolo": 'battuta4',
+                       "detta": 'Nathan Macrì ha quattro settimane per Tum Rèider, e la scheda '
+                                'Orchestral fa quasi tutto.',
+                       "scritta": 'Nathan McCree ha 4 settimane per Tomb Raider, e la scheda '
+                                  'Orchestral fa quasi tutto.'},
+                      {"ruolo": 'battuta5',
+                       "detta": "Nel duemiladiciassette un'orchestra vera registra quelle musiche ad "
+                                'Èbbi Ròud.',
+                       "scritta": "Nel 2017 un'orchestra vera registra quelle musiche ad Abbey Road."},
+                      {"ruolo": 'cta',
+                       "detta": 'Mandalo a chi ha giocato al primo Tum Rèider.',
+                       "scritta": 'Mandalo a chi ha giocato al primo Tomb Raider.'},
+                      {"ruolo": 'chiusura',
+                       "detta": 'Le slide e le fonti sul profilo Elettrofoni.',
+                       "scritta": 'Le slide e le fonti sul profilo Elettrofoni.'}],
+        "reel_audio": {"file": 'assets/audio/jv1080/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'Raymangold22',
+                       "licenza": 'CC0',
+                       "fonte": 'Wikimedia Commons',
+                       "url": 'https://commons.wikimedia.org/wiki/File:JV-1080_raggertronic.ogg',
+                       "cosa": 'un Roland JV-1080 vero, registrato da chi possiede i due delle foto, '
+                               'su un suono di fabbrica che lui chiama «raggertronic»'},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 73
+    # Rifornimento del 28/10/2026. Scheda «doepfer» (Doepfer A-100, 1995) —
+    # scritta il 2026-10-28. Posteriore al 1988 (quota «una su quattro»).
+    #
+    # REGISTRAZIONE — CAMBIATA rispetto a quella indicata nel brief
+    # - Indicata: https://freesound.org/s/850655/ («doepfer improv», DaríoFrsnd,
+    #   CC0, 9:31, caricata il 16/04/2026). Ricontrollata il 28/10: licenza CC0
+    #   giusta, ma la descrizione dice solo «Improvisation I made with an analog
+    #   Doepfer modular synthesizer in October 2025»: non nomina l'A-100 né un
+    #   modulo. Quasi certamente è un A-100 (Doepfer non fa altri modulari), ma
+    #   «quasi certamente» non dimostra niente, come chiede il brief. Scartata.
+    #   (Anteprima, se servisse come riserva:
+    #   https://cdn.freesound.org/previews/850/850655_18708729-hq.mp3 — id utente
+    #   18708729 letto dall'avatar; il file esiste, oltre 10 MB. Dal container
+    #   freesound.org risponde 403, quindi l'ho verificata solo via WebFetch.)
+    # - Usata: https://commons.wikimedia.org/wiki/File:Railing.oga — «Quirky
+    #   piece of music performed entirely on a Doepfer A-100, making pretty heavy
+    #   use of spring reverb», Zoë Blade (utente ZoeB), «Own work», 09/12/2012,
+    #   CC BY-SA 3.0, 4:15, nella categoria «Doepfer A-100». È un pezzo suo, non
+    #   la melodia di un disco. Licenza BY-SA come altre registrazioni già in
+    #   coda (es. Ritchie333, ESMUC): credito con autore, licenza e link.
+    #   File scaricato via WebFetch (mp3 transcodificato, 6,5 MB, 255 s) e
+    #   misurato con ffmpeg: -17,9 LUFS integrati, nessun silenzio fino a 4:05
+    #   (poi 10 s di coda muta). ATTENZIONE: i primi 25 s sono bassi (momentaneo
+    #   -34/-37 LUFS, il pezzo cresce piano); il volume pieno arriva verso 1:02
+    #   (momentaneo -13 a 63 s). TRATTO consigliato per registrazione.mp3: da
+    #   1:02 in poi, per non avere un reel muto nei primi 3 secondi. Non l'ho
+    #   ascoltato: l'ho solo misurato.
+    #
+    # FOTO (viste tutte e tre: thumbnail scaricati via WebFetch e guardati)
+    # principale: https://commons.wikimedia.org/wiki/File:Printemps_de_Bourges_2019-19,_Doepfer_A-100BS2.jpg
+    #   Cjp24, CC BY-SA 4.0, «Own work», 18/04/2019, 4608x3456. Un A-100BS2
+    #   (sistema di base) cablato, di fronte: «A-100 ANALOG MODULAR SYSTEM» e
+    #   «DOEPFER» leggibili sul telaio in alto e in basso, due file di moduli
+    #   (A-110-1 VCO, A-120 VCF1, A-131 VCA, A-190-4 col display rosso «CHn»),
+    #   cavi colorati, pannelli ciechi nella metà bassa. Fondo di legno chiaro.
+    #   «posizione» center 25%: la scritta in alto sta al 10% dell'altezza e un
+    #   ritaglio centrato del 20% la sfiorerebbe.
+    # moduli: https://commons.wikimedia.org/wiki/File:Doepfer_Eurorack_(A-101-2,A-102,A-103,A-104,A-106-1,A-106-5,_A-113,A-115,A-116,A-117,A-118,A-119,A120,_A-132-4,A-133,A-134-1,A-134-2,A-143-2,A-137-1,A-137-2)_-_2016_NAMM_Show_(2016-01-24_11.04.06_by_Daniel_Larsen).jpg
+    #   Daniel Larsen, CC BY-SA 2.0 (da Flickr), 24/01/2016, 2448x2448. Primo
+    #   piano di tre file di moduli Doepfer, «DOEPFER» stampato in fondo a ogni
+    #   pannello. Quadrata: nella banda (slide 2, 1080x500) si vede una fascia
+    #   orizzontale. Con «posizione» center 15% entra la fila in alto (A-101-2
+    #   LPG, A-102, A-103, A-104 «Trautonium Formant Filter», A-106-1) e l'inizio
+    #   della seconda (i display rossi dell'A-113). La didascalia parla del
+    #   quarto modulo della fila in alto: VA GUARDATA SULLA TAVOLA GENERATA.
+    # telaio: https://commons.wikimedia.org/wiki/File:Eurorack_Case_8253.jpg
+    #   Ashley Pomeroy, CC BY-SA 4.0, «Own work», 31/12/2020, 3000x2000. «An
+    #   unpopulated Doepfer LC6 Eurorack case»: cassa di legno vuota, binari
+    #   forati in alto, in mezzo e in basso, due schede verdi «DOEPFER
+    #   MUSIKELEKTRONIK GMBH A-100 BUS BOARD» coi connettori a pettine,
+    #   alimentatore al centro con l'etichetta gialla di pericolo. Rapporto 3:2:
+    #   nella banda della slide 3 (1080x470) le due schede bus restano dentro.
+    # Scartate: «Doepfer A-100.jpg» (2 moduli su 2 sono di Analogue Solutions,
+    #   dice la descrizione), «Doepfer A100, drøn studio» (moduli Plan B e
+    #   Bananalogue in primo piano, colori virati), «Doepfer A-100&Virus rack»
+    #   (c'è un Access Virus), «Power connectors on A-100 modules.png» (schema
+    #   400 px).
+    # Dal container upload.wikimedia.org risponde 429 (robot policy) anche ai
+    #   thumbnail: in SCARICARE ci sono le URL thumb a 1280 su upload.wikimedia.org,
+    #   provate una per una via WebFetch (tutte JPEG). L'API oggi restituisce lo
+    #   stesso percorso su thumb.wikimedia.org.
+    #
+    # FATTI, con le fonti (tutte lette il 28/10/2026)
+    # - A-100 nel 1995: Wikipedia «Doepfer A-100», Wikipedia «Doepfer», Ableton
+    #   2015 («A-100 modular system in 1995»), TechCrunch 2019. Nel 1996: la
+    #   cronologia sul sito Doepfer (time.htm, ripresa da Keys 1997: «1996: A-100
+    #   analog modular system, first series») e Wikipedia «Eurorack» (sezione
+    #   storia). NON CONCORDANO, e lo dice il sottotitolo.
+    # - MS-404 synth analogico monofonico MIDI: time.htm; Wikipedia «Doepfer»;
+    #   SOS 2017. Anno: 1994 per TechCrunch e GreatSynthesizers 2013, 1995 per
+    #   time.htm e Wikipedia. In scheda solo «a metà anni '90».
+    # - Successo dell'MS-404: GreatSynthesizers 2013 («exceeded all our
+    #   expectations»); SOS 2017 («Thanks to its success…»).
+    # - Primi moduli A-100 = circuiti dell'MS-404: SOS 2017 («nothing more than
+    #   circuits taken from the MS404»); GreatSynthesizers 2013; TechCrunch.
+    # - 10 moduli al debutto: TechCrunch («ten individual Doepfer modules»);
+    #   Wikipedia «Doepfer A-100» («only 10 module types at time of release»).
+    # - Circa 120 moduli Doepfer oggi: GreatSynthesizers 2013 («about 120»); SOS
+    #   2017 («about 125»); Wikipedia («more than 120»).
+    # - 3U invece dei 5U dei modulari Moog, prese da 3,5 mm invece di 6,35:
+    #   Wikipedia «Doepfer A-100»; TechCrunch (3U contro il 5U «larger and more
+    #   expensive»); SOS 2012 (Bob Williams sul formato piccolo).
+    # - Pannello alto 128,5 mm, larghezza in HP da 5,08 mm: Doepfer «A-100
+    #   Construction Details» (a100m_e); Wikipedia «Eurorack».
+    # - Bus a +12/-12 V, cavo piatto a 10 o 16 poli, prese da 3,5 mm: Doepfer
+    #   «A-100 Technical Details» (a100t_e); Wikipedia «Eurorack».
+    # - Misure pubblicate sul sito: TechCrunch; Wikipedia «Eurorack» (le specifiche
+    #   sono i documenti pubblici di Doepfer); le pagine a100m_e e a100t_e stesse.
+    # - Il formato oggi si chiama Eurorack e viene dall'A-100: SOS 2017; Wikipedia
+    #   «Eurorack» e «Doepfer». Centinaia di marchi: TechCrunch 2019 (oltre 200
+    #   secondo Allan Hall di AJH); Wikipedia «Eurorack» (oltre 600 nel 2022,
+    #   dati ModularGrid). Scritto «centinaia», senza numero.
+    # - Analogue Systems fa un modulare simile senza sapere di Doepfer, con fori e
+    #   cavi della corrente diversi, poi rifà gli alimentatori con uscite alla
+    #   Doepfer: SOS novembre 2012 (Gordon Reid, «neither party knew what the
+    #   other was doing»); TechCrunch; Wikipedia «Eurorack».
+    # - Doepfer pensava che durasse 5 o 10 anni: SOS 2017 («assumed it might last
+    #   five or 10 years»); TechCrunch («I never thought that it would last for
+    #   such a long time»).
+    # - Doepfer studente di fisica, chitarra in un gruppo, ripara l'attrezzatura:
+    #   SOS 2017; Ableton 2015.
+    # - Moduli per il Formant: SOS 2017; Ableton 2015; time.htm (1979, phaser per
+    #   il Formant). Formant pubblicato da Elektor: Ableton 2015; Wikipedia
+    #   «Elektor Formant» (dal 1977).
+    # - Restauro del Moog modulare di «Popcorn»: Ableton 2015 («restore an entire
+    #   Moog modular system… the same one that was used to record "Popcorn"»);
+    #   GreatSynthesizers 2013 (contratto di assistenza per il Moog modulare di
+    #   Gershon Kingsley, «Popcorn»). Due fonti per Moog + «Popcorn»; il resto
+    #   (vedi sotto) no.
+    # - MAQ16/3 del 1992 fatto coi Kraftwerk: time.htm («co-designed with
+    #   Kraftwerk»); Wikipedia «Doepfer»; GreatSynthesizers 2013 (Florian
+    #   Schneider consiglia sull'MAQ 16/3).
+    # - Telaio dal rack industriale da 19 pollici: GreatSynthesizers 2013 («an
+    #   industrial standard in those days»); a100m_e (DIN 41494, IEC 297-3);
+    #   Wikipedia «Eurorack» (Eurocard).
+    # - Recensione SOS luglio 1998 firmata Chris Carter: la recensione stessa
+    #   (https://www.soundonsound.com/reviews/doepfer-a100) e Wikipedia «Doepfer
+    #   A-100» che la cita come «Carter's 1998 Sound On Sound article». Che sia il
+    #   Chris Carter dei Throbbing Gristle: Wikipedia «Chris Carter (British
+    #   musician)» («in 1994… regularly has technical articles and reviews
+    #   published in Sound on Sound») e la biografia di HighResAudio (giornalismo
+    #   dal 1994). Il contenuto (23 moduli, custodia di alluminio da 6U, cavi
+    #   grigi poco saldi e tutti uguali, il camice bianco e la matematica
+    #   applicata, «out there' dance music») viene dal testo della recensione:
+    #   fonte primaria, una sola per definizione. Lo segnalo.
+    # - GusGus, «Forever» (2007), percussioni fatte col modulare Doepfer: pagina
+    #   «A-100 Music» sul sito Doepfer («they use a lot of their new A-100 system
+    #   in this album», percussioni con l'A-100); MusicTech 02/06/2021, Biggi
+    #   Veira («gave our beats identity on the subsequent albums, Attention and
+    #   Forever»). Uscita 23/02/2007, Pineapple: Wikipedia «Forever (GusGus
+    #   album)». Veira dice «Doepfer gear», la pagina Doepfer dice A-100.
+    # - Avvertenza: «red strip down», il colore marca il -12 V, al contrario «the
+    #   module's instant destruction» e garanzia persa: a100t_e. Il rischio di
+    #   attaccarlo al contrario lo nomina anche Doepfer in SOS 2017 («the customer
+    #   may plug the modules in the wrong way to the bus board»).
+    # - Handle: @officialgusgus, link Instagram nella pagina di gusgus.com, che
+    #   Wikipedia indica come sito ufficiale della band. Doepfer: nessun
+    #   Instagram trovato sul sito ufficiale, quindi niente menzioni_extra.
+    #   Hashtag artista: #kraftwerk (il nome più noto fra quelli in scheda); se si
+    #   preferisce un artista che l'A-100 l'ha suonato su un disco con due fonti,
+    #   va #gusgus.
+    #
+    # SCARTATI perché a fonte singola (o fonti che si copiano)
+    # - Doepfer conosce il formato 3U durante la tesi di fisica: solo
+    #   GreatSynthesizers 2013.
+    # - «L'idea era renderlo economico» (Doepfer): solo TechCrunch.
+    # - Le specifiche pubblicate perché Doepfer non poteva fare ogni modulo, e
+    #   gli altri costruttori che chiedono il permesso dopo 2-3 anni: solo
+    #   TechCrunch.
+    # - Il Moog di «Popcorn» stava in un albergo di Monaco ed era di Gershon
+    #   Kingsley: solo GreatSynthesizers.
+    # - L'MS-404 nato dai prezzi dell'usato della TB-303: solo SOS 2017.
+    # - Moduli A-100 venduti «oltre 100.000, meno di un milione»: solo
+    #   GreatSynthesizers 2013. Doepfer con 4 dipendenti: solo TechCrunch.
+    # - Kraftwerk utenti dell'A-100: solo SOS 1998 (Wikipedia cita la stessa
+    #   recensione). Florian Schneider consulente per i moduli vocoder A-129: solo
+    #   GreatSynthesizers (più un blog). MMK2 dei Kraftwerk per «Pocket
+    #   Calculator»: time.htm e Wikipedia «Doepfer», che lo riprende.
+    # - Biggi Veira compra i primi moduli nel 1998 e fa il remix di «Hunter» di
+    #   Björk solo col Doepfer; «Chernobyl» e «Unfolder»: solo MusicTech 2021.
+    # - Hot Chip, «One Life Stand» (2010), contromelodia dell'A-100: solo EQ
+    #   Magazine 2010 (ripubblicato da Patrick Sisson).
+    # - Trent Reznor, deadmau5, Frusciante, Autechre, Human League, Hans Zimmer,
+    #   Infected Mushroom: Wikipedia con un video o una pagina sola ciascuno, o
+    #   SOS 2004 che dice solo «a few Doepfer modules» (Autechre).
+    # - Prezzi 1998 (999 sterline il sistema CV): solo SOS 1998.
+    # - Anno di fondazione della ditta (1977 o 1979, le fonti non concordano):
+    #   non serve alla storia.
+    #
+    # DUBBI APERTI
+    # - 1995 o 1996 (vedi sopra): «anno» resta 1995 come chiesto, la scheda dice
+    #   che non concordano.
+    # - «Doepfer» detto dalla voce italiana (Kokoro) e riconosciuto da Whisper:
+    #   non provato. Se esce storpiato, nel lessico «Dòpfer».
+    # - Il tratto audio (vedi sopra) e i ritagli delle tre foto vanno guardati
+    #   sulle tavole generate.
+    {
+        "slug": "doepfer",
+        "numero": 73,
+        "serie": 'I SINTETIZZATORI',
+        "strumento": 'Doepfer A-100',
+        "anno": '1995',
+        "luogo": 'Gräfelfing (Monaco di Baviera), Germania',
+        "costruttore": 'Doepfer Musikelektronik',
+        "specifiche": [('USCITA', '1995'),
+                       ('AL DEBUTTO', '10 moduli'),
+                       ('ALTEZZA', '128,5 mm'),
+                       ('CORRENTE', '+12 e −12 V')],
+        "gancio": 'Doepfer mette sul sito le misure del suo modulare. Oggi centinaia di marchi fanno '
+                  'moduli che ci entrano',
+        "sottotitolo": 'Il primo esce nel 1995, o forse nel 1996. Le fonti non concordano, e la '
+                       'cronologia di Doepfer dice 1996.',
+        "la_macchina": 'Non ha una tastiera e non ha un suono suo. È un telaio di metallo con due '
+                       'file di binari, e ci si avvitano dei pannelli stretti, ognuno con un nome '
+                       "stampato sopra. A-110 è l'oscillatore, A-120 il filtro, e così via. Ogni "
+                       'modulo fa una cosa sola, e i collegamenti li fate voi coi cavetti. Rispetto '
+                       "ai Moog modulari degli anni '60 è piccolo. I pannelli sono alti 3 unità di "
+                       'rack invece di 5, e le prese sono da 3,5 mm, quelle delle cuffie, invece che '
+                       'da 6,35. Oggi Doepfer di moduli ne fa circa 120. A me è sempre sembrato più '
+                       'un sistema di misure che uno strumento, e credo che il suo merito sia proprio '
+                       'questo.',
+        "inventore_nome": 'Dieter Doepfer',
+        "inventore": "A fine anni '70 Dieter Doepfer studia fisica e suona la chitarra in un gruppo. "
+                     "Ripara l'attrezzatura del gruppo, poi comincia a costruire moduli per il "
+                     'Formant, un synth da montare in casa che la rivista Elektor pubblicava dal '
+                     '1977. La prima occasione vera è un restauro. Con un amico rimette in sesto un '
+                     'Moog modulare, lo stesso con cui era stata registrata «Popcorn». Nel 1992 '
+                     "disegna un sequencer insieme ai Kraftwerk, l'MAQ16/3. A metà anni '90 esce il "
+                     'suo MS-404, un synth analogico monofonico col MIDI, e vende più del previsto. I '
+                     "primi moduli dell'A-100 sono i circuiti dell'MS-404, separati uno per uno.",
+        "come_funziona": "Il telaio viene dai rack da 19 pollici dell'elettronica industriale. Ogni "
+                         "pannello è alto 128,5 mm e largo un multiplo di 5,08 mm, l'HP. La corrente "
+                         'arriva da dietro, da un cavo piatto infilato su una scheda che corre lungo '
+                         'il telaio, a +12 e −12 volt. Il suono e i comandi passano davanti, nei '
+                         'cavetti. Negli stessi anni in Inghilterra Analogue Systems fa un modulare '
+                         'alto uguale, senza sapere niente di lui. Fori delle viti e cavo della '
+                         'corrente sono diversi, e più tardi gli inglesi rifanno gli alimentatori con '
+                         'le uscite alla Doepfer.',
+        "richiami": [('FIG. 1', 'Un modulo, una funzione'),
+                     ('FIG. 2', 'Prese da 3,5 mm'),
+                     ('FIG. 3', 'Larghezza in HP da 5,08 mm')],
+        "chi_lusata": [{"artista": 'GusGus',
+                        "nota": 'Biggi Veira ci fa le percussioni di «Forever» (2007)',
+                        "ig": 'officialgusgus'}],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": 'Forever',
+                         "artista": 'GusGus',
+                         "anno": '2007',
+                         "cosa": "L'album intero, non solo il pezzo che gli dà il nome. Ascoltate la "
+                                 'batteria, che esce in buona parte dal modulare Doepfer di Biggi '
+                                 'Veira.'},
+        "aneddoto": "Nel luglio 1998 Sound On Sound fa provare l'A-100 a Chris Carter, quello dei "
+                    'Throbbing Gristle, che per la rivista scrive dal 1994. Il sistema che gli arriva '
+                    'ha 23 moduli in una custodia di alluminio. Carter lo trova capace di suoni '
+                    'notevoli e adatto alla dance più sperimentale. Si lamenta dei cavi, grigi e '
+                    'tutti uguali, che stanno poco saldi nelle prese, perché senza colori non si '
+                    'capisce dove va cosa. E poi scrive una frase che a me fa ridere ancora adesso. '
+                    'Sembra fatto per essere suonato da qualcuno in camice bianco, con una laurea in '
+                    'matematica applicata.',
+        "avvertenza": "Il cavo piatto va sul bus con la riga rossa in basso, dove c'è scritto −12 V. "
+                      'Girato al contrario, il modulo si brucia subito.',
+        "foto": {"file": 'assets/foto/doepfer/principale.jpg',
+                 "autore": 'Cjp24',
+                 "licenza": 'CC BY-SA 4.0',
+                 "fonte": 'Wikimedia Commons',
+                 "posizione": 'center 25%',
+                 "didascalia": 'Un A-100 di base al Printemps de Bourges nel 2019, col nome stampato '
+                               'sul telaio sopra e sotto'},
+        "foto_extra": [{"file": 'assets/foto/doepfer/moduli.jpg',
+                        "posizione": 'center 15%',
+                        "autore": 'Daniel Larsen',
+                        "licenza": 'CC BY-SA 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Moduli Doepfer al NAMM del 2016, ognuno col suo nome. Il '
+                                      'quarto da sinistra è un filtro «Trautonium»'},
+                       {"file": 'assets/foto/doepfer/telaio.jpg',
+                        "autore": 'Ashley Pomeroy',
+                        "licenza": 'CC BY-SA 4.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Un telaio Doepfer vuoto, coi binari forati e le due schede '
+                                      'verdi del bus dove si attacca la corrente'}],
+        "fonti": [{"titolo": 'Doepfer A-100 — Wikipedia',
+                   "url": 'https://en.wikipedia.org/wiki/Doepfer_A-100',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Eurorack — Wikipedia',
+                   "url": 'https://en.wikipedia.org/wiki/Eurorack',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Doepfer — Wikipedia',
+                   "url": 'https://en.wikipedia.org/wiki/Doepfer',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Cronologia Doepfer (Keys, 1997) — doepfer.de',
+                   "url": 'http://www.doepfer.de/time.htm',
+                   "data": '2026-10-28'},
+                  {"titolo": 'A-100 Construction Details — doepfer.de',
+                   "url": 'https://doepfer.de/a100_man/a100m_e.htm',
+                   "data": '2026-10-28'},
+                  {"titolo": 'A-100 Technical Details — doepfer.de',
+                   "url": 'https://doepfer.de/a100_man/a100t_e.htm',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Dieter Doepfer — Sound On Sound, 2017',
+                   "url": 'https://www.soundonsound.com/people/modular-profile-dieter-doepfer',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Intervista a Dieter Doepfer — GreatSynthesizers, 2013',
+                   "url": 'https://greatsynthesizers.com/en/general/interview-en/dieter-doepfer-creator-of-the-a-100-modular-system/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Intervista a Dieter Doepfer — Ableton, 2015',
+                   "url": 'https://www.ableton.com/en/blog/dieter-doepfer-completing-the-circuit/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'I costruttori di modulari — TechCrunch, 2019',
+                   "url": 'https://techcrunch.com/2019/09/28/meet-the-makers-of-modular/',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Analogue Systems — Sound On Sound, 2012',
+                   "url": 'https://www.soundonsound.com/people/bob-williams-analogue-systems-story',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Doepfer A100, di Chris Carter — Sound On Sound, 1998',
+                   "url": 'https://www.soundonsound.com/reviews/doepfer-a100',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Chris Carter — Wikipedia',
+                   "url": 'https://en.wikipedia.org/wiki/Chris_Carter_(British_musician)',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Elektor Formant — Wikipedia',
+                   "url": 'https://en.wikipedia.org/wiki/Elektor_Formant',
+                   "data": '2026-10-28'},
+                  {"titolo": 'A-100 Music — doepfer.de',
+                   "url": 'https://doepfer.de/a100_music_e.htm',
+                   "data": '2026-10-28'},
+                  {"titolo": 'GusGus in studio — MusicTech, 2021',
+                   "url": 'https://musictech.com/features/studios/show-off-your-studio-gusgus-and-the-monophony-monster-wall/',
+                   "data": '2026-10-28'}],
+        "hashtags": ['#doepfera100', '#doepfer', '#sintetizzatore', '#gusgus', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 073',
+                          'Centinaia di marchi costruiscono sulle misure di Doepfer'),
+                         ('DOEPFER · 1995',
+                          "Dieter Doepfer smonta il suo synth MS-404 e ne fa 10 moduli, l'A-100."),
+                         ('LE MISURE',
+                          "Doepfer mette sul suo sito le misure dell'A-100, e chiunque le legge."),
+                         ('ALTRI MARCHI',
+                          'Altri marchi fanno moduli su quelle misure, e il formato diventa '
+                          'Eurorack.'),
+                         ('5 O 10 ANNI',
+                          "Doepfer dà all'A-100 5 o 10 anni di vita, e l'A-100 ne compie 30.")],
+        "reel_cta": 'Mandalo a chi ha più cavetti che synth',
+        "reel_audio": {"file": 'assets/audio/doepfer/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'Zoë Blade',
+                       "licenza": 'CC BY-SA 3.0',
+                       "fonte": 'Wikimedia Commons',
+                       "url": 'https://commons.wikimedia.org/wiki/File:Railing.oga',
+                       "cosa": 'un Doepfer A-100 vero, che suona «Railing», un pezzo di Zoë Blade del '
+                               '2012 fatto tutto sul modulare, con molto riverbero a molla'},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 74
+    # Korg Monotron (2010), con la famiglia Duo/Delay (2011). Scheda posteriore
+    # al 1988 (quota «una su quattro»). La storia dell'MS-20 sta già nella
+    # scheda ms20: qui del filtro si dice solo da dove viene. Fonti lette il
+    # 28/10/2026.
+    #
+    # FATTI E FONTI (ognuno su almeno 2 fonti indipendenti)
+    # - presentato alla Musikmesse di Francoforte, marzo 2010: Engadget
+    #   24/03/2010 («Currently on display at Korg's booth»); MusicRadar news
+    #   24/03/2010 (citata da Wikipedia «Monotron»).
+    # - 12 x 7 cm: Sound On Sound ago. 2010 (Paul Nagle); Resident Advisor
+    #   25/08/2010 (4,72 x 2,83 pollici).
+    # - 2 pile AAA: SOS 2010; MusicRadar 2010 (Greg Scarth); RA 2010; Engadget.
+    # - altoparlante che si spegne quando si infila la cuffia, e il fruscio che
+    #   resta anche in cuffia: SOS 2010; MusicRadar 2010.
+    # - 1 oscillatore a dente di sega, LFO a dente di sega che va su altezza O
+    #   filtro, uno alla volta: SOS 2010; MusicRadar 2010; RA 2010.
+    # - LFO fino a circa 900 Hz: SOS 2010; Electronic Musician dic. 2010 (via
+    #   Wikipedia). RA: «the rate reaches the audio range».
+    # - 5 manopole pitch / rate / int. / cutoff / peak: SOS 2010; la foto.
+    # - filtro «lo stesso VCF di MS-10 e MS-20»: dichiarazione Korg riportata da
+    #   MusicRadar 2010; SOS 2010; Engadget 2010; pagina Korg del Delay
+    #   («Original Analog (VCF) Filter taken from the classic MS-10 & MS-20»).
+    # - ingresso aux che fa passare suoni esterni nel filtro: SOS 2010;
+    #   MusicRadar 2010 («the ace up Monotron's sleeve»); RA 2010.
+    # - ANNI SENZA UN ANALOGICO KORG, LE FONTI NON CONCORDANO: SOS 2010 «first
+    #   truly analogue synthesizer in 25 years»; MusicRadar 2010 «nearly three
+    #   decades», l'ultimo «1982's Trident mkII»; Wikipedia «two decades»;
+    #   Vintage Synth Explorer «nearly thirty years». In scheda: 25 contro 30.
+    # - Korg lavorava sul digitale: MusicRadar 2010 («Since the late 1980s,
+    #   analogue technology has simply not been on the agenda»); SOS feb. 2019,
+    #   profilo di Takahashi (Kim Bjørn: scetticismo in Korg sull'analogico).
+    # - idea di Tadahiko Sakamaki, pianificatore di prodotto, che chiede un synth
+    #   analogico a pile: bonedo 10/10/2013, intervista di Lasse Eilers («Es war
+    #   nicht ursprünglich meine Idee. Sie kam von unserem Produktplaner
+    #   Tadahiko Sakamaki»); SOS 2019 («We talked about doing an analogue synth,
+    #   with batteries…»).
+    # - approvato perché costava poco e rischiava poco: bonedo 2013 («abgesegnet,
+    #   eben weil er so günstig ist»); SOS 2019 («very low-risk»).
+    # - progettato da Tatsuya Takahashi: SOS 2019; NPR/WRVO 22/12/2017; bonedo
+    #   2013 e 2017; Wikipedia.
+    # - Takahashi cresciuto a Londra: SOS 2019; NPR 2017.
+    # - costruiva circuiti da quando aveva circa 11 anni: NPR 2017; intervista di
+    #   John Richards (Dirty Electronics, 31/07/2013).
+    # - voleva un analogico che costasse poco, per tutti: Richards 2013 («to rid
+    #   analog of its snobbery»); bonedo 2013 («Analog muss nicht teuer sein»).
+    #   Due interviste diverse, stessa idea: in scheda solo la parafrasi.
+    # - PRIMO PROGETTO, LE FONTI NON CONCORDANO: NPR 2017 dice che il Monotron è
+    #   il suo primo progetto in Korg; SOS 2019 dice che il primo è stato
+    #   l'hardware del microKORG XL. In scheda si dice così.
+    # - dopo: Monotribe, volca, minilogue: bonedo 16/02/2017; NPR 2017 (volca,
+    #   minilogue); CDM 03/11/2011 (Monotribe dopo il Monotron).
+    # - i punti di prova scritti sulla scheda, messi per sé: SOS 2019 («The test
+    #   points were actually just for me»); bonedo 2013 («damit ich sie später
+    #   auseinander bauen und damit machen kann, was ich will!»). Le scritte
+    #   VCO, cutoff, LFO, rate si leggono nella foto del retro (Nick Ames); lo
+    #   schema Korg segna i punti come «TP1 pitch» ecc.
+    # - schema elettrico pubblicato da Korg a novembre 2010: Synthtopia
+    #   05/11/2010; Hackaday 10/11/2010. Il PDF Korg ha data di creazione
+    #   13/10/2010. Oggi sta nell'archivio schemi di korg.com, con la clausola
+    #   che Korg non risponde dei danni da modifica (pagina Korg).
+    # - modifiche col controllo in tensione: Hackaday 09/06/2018 (Harry Axten);
+    #   CDM 25/09/2019. Col MIDI: Hackaday 2018 (ATmega328P); Horizontal Pitch
+    #   16/11/2020 (Zack Scholl, MIDI da un Raspberry Pi); Tom's Hardware 2020.
+    # - Monotron Delay e Duo annunciati a novembre 2011: CDM 03/11/2011; The
+    #   Verge 03/11/2011 (non leggibile da qui, citata da Wikipedia); SOS feb.
+    #   2012 li recensisce.
+    # - Delay: «Space Delay» (pagina Korg; CDM 2011); chip PT2399 (MusicRadar
+    #   Delay 28/01/2012; lo schema Korg del Delay, dove c'è scritto PT2399);
+    #   eco fino a circa 1 secondo (MusicRadar 2012; SOS 2012, «just over one
+    #   second»); niente manopola della risonanza (MusicRadar 2012; SOS 2012);
+    #   col feedback alto sale il rumore (MusicRadar 2012 «a rising swell of
+    #   white noise»; SOS 2012 «digital crunchiness»); LFO triangolo o quadra
+    #   (Korg; SOS 2012); vernice UV e grafica da fantascienza (SOS 2012;
+    #   MusicRadar 2012 «funky Sci-Fi paint job»).
+    # - Duo: 2 oscillatori a onda quadra e la cross-modulazione presa dal
+    #   Mono/Poly: CDM 2011; SOS 2012.
+    # - Gorillaz, «The Fall» (2010), registrato su un iPad in 32 giorni di
+    #   tournée in Nord America, con un Monotron fra gli strumenti: The National
+    #   13/04/2011 (Louis Pattison: «buzzing Korg Monotron»); Wikipedia «The
+    #   Fall», che cita le note di copertina (fonte primaria, non letta da qui).
+    #   L'iPad e i 32 giorni anche su The Guardian 10/12/2010 (citata da
+    #   Wikipedia, non leggibile da qui).
+    #
+    # FATTI SCARTATI (fonte singola o fonti che non concordano)
+    # - pausa sigaretta del 2009 e prezzo obiettivo di 50 dollari: solo bonedo.
+    # - «batteries and four knobs» (ne sono uscite 5): solo SOS 2019.
+    # - Takahashi in Korg dal 2006, laurea a Cambridge, convinse il controllo
+    #   qualità con le sue misure: solo SOS 2019 (bonedo dice «circa dieci anni»).
+    # - «a price point that I could have bought when I was a kid»: solo
+    #   l'intervista di Richards (anche Organised Sound 2013 è sua, stesso testo).
+    # - prezzi di lancio: 59 sterline e 59 dollari (SOS), «about $67»
+    #   (Engadget), «about 70 euro» (RA), 42 sterline nel 2012 (MusicRadar). Non
+    #   concordano e sono prezzi, quindi fuori.
+    # - estensione del nastro del Delay: 4 ottave per MusicRadar, circa 6 per
+    #   SOS. Tasti disegnati «solo decorativi»: solo SOS. Tolti.
+    # - chip del filtro: Korg-35 per MusicRadar, «Korg-25» per Wikipedia. Taciuto.
+    # - il nastro che apre anche il filtro verso l'acuto: SOS e Wikipedia (Mix,
+    #   rivista non letta). Tolto per prudenza.
+    # - sul Duo le scritte sulla scheda non ci sono per via dell'accordatura
+    #   automatica: solo bonedo 2013.
+    # - Martyn Ware (Human League, Heaven 17) e il Delay fra i suoi 11 synth
+    #   preferiti: solo MusicRadar 22/05/2013 (Wikipedia ricopia quella).
+    #   Shlohmo, RAC, Ana da Silva, Martijn Deijkers: fonti singole o di carta
+    #   non leggibili. Zack Scholl («at the place», 2020): solo Horizontal Pitch.
+    # - nomination ai Makey Awards 2011 di Make («Best Product Documentation»):
+    #   solo Make.
+    # - «the dexterity of a brain surgeon» per le melodie sul nastro: è una
+    #   citazione di MusicRadar 2010, riportata come tale; che il nastro sia
+    #   corto e impreciso lo dice anche SOS 2010.
+    # - il Monotron come «nuovo Stylophone»: è un paragone di Stuff ed
+    #   Electronic Musician, non un fatto.
+    # - DA ASCOLTARE omesso: che il Monotron si senta proprio in «Phoner To
+    #   Arizona» e «Snake In Dallas» lo dice solo The National. Le note di
+    #   copertina lo mettono fra gli strumenti dell'album, non su un brano.
+    #
+    # FONTI NON ELENCATE IN «fonti» (per stare nei 2.200 caratteri della
+    # didascalia), lette il 28/10/2026 e usate come seconda fonte qui sopra:
+    # - Resident Advisor 25/08/2010: https://ra.co/reviews/7888
+    # - Engadget 24/03/2010: https://www.engadget.com/2010-03-24-korg-debuts-pocket-sized-monotron-analog-synth-and-we-want-it.html
+    # - CDM 03/11/2011: https://cdm.link/2011/11/korg-monotron-duo-monotron-delay-bring-fun-back-via-monopoly-ms-circuits-and-pocket-size/
+    # - CDM 25/09/2019: https://cdm.link/2019/09/monotron-cv-hack-video/
+    # - schema Korg del Delay (PT2399): https://www.korg.com/download/global/monotron_delay_schematic/monotron_DELAY_sch.pdf
+    # - pagina Korg del Delay: https://www.korg.com/us/products/dj/monotron_delay/
+    # - bonedo 16/02/2017: https://www.bonedo.de/?p=280090
+    # - Richards 2013: https://www.dirtyelectronics.org/docs/Takahashi_interview.pdf
+    # - Horizontal Pitch 16/11/2020: https://www.horizontalpitch.com/?p=2355
+    # - Wikipedia «The Fall»: https://en.wikipedia.org/wiki/The_Fall_(Gorillaz_album)
+    # - Wikipedia «Monotron»: https://en.wikipedia.org/wiki/Monotron
+    # - MusicRadar 22/05/2013 (Martyn Ware, scartato): https://www.musicradar.com/news/tech/martyn-wares-11-favourite-hardware-synths-575279
+    #
+    # DUBBI E COSE NON VERIFICATE
+    # - The Verge e The Guardian non si aprono da qui: le date di Duo/Delay
+    #   reggono comunque su CDM e SOS, l'iPad su The National e Wikipedia.
+    # - Gorillaz: le due fonti sono una recensione (The National) e Wikipedia
+    #   che riporta le note di copertina. Indipendenti, ma la seconda è di
+    #   seconda mano. Chi integra può controllare il libretto (c'è una copia su
+    #   Scribd).
+    # - handle Instagram: nessuno verificato da un sito ufficiale in questa
+    #   sessione, quindi «ig» None e niente menzioni_extra. @korgofficial sta già
+    #   nella scheda ms20; se lo si vuole anche qui, va riverificato sul sito
+    #   Korg e il proprietario lo segue già.
+    # - la registrazione è di un Monotron DELAY, non dell'originale: lo dice
+    #   «cosa». Pagina ricontrollata il 28/10/2026: Schminnte, «Own work»,
+    #   13/04/2023, CC BY-SA 4.0, 58 s; descrizione: «The demo begins with a
+    #   pitch sweep, then demonstrates the LFO, VCF, and finishes by showing
+    #   the delay circuit with altering delay times. Note the noisy output
+    #   signal.» Nessuna melodia, quindi niente melodie protette. Il
+    #   transcodificato MP3 esiste (pagina Commons, «Completed 25 February
+    #   2026») ma Wikimedia rispondeva 429 e non ho potuto provarne l'URL: in
+    #   SCARICARE c'è l'originale .ogg, che è sicuro. Non l'ho ascoltata.
+    # - foto: autore e licenza letti via API il 28/10/2026. Nella foto
+    #   principale la manopola rate è illuminata di rosso; che lampeggi col
+    #   tempo dell'LFO non l'ho verificato su due fonti, quindi la didascalia
+    #   dice solo quello che si vede.
+    {
+        "slug": "monotron",
+        "numero": 74,
+        "serie": 'I SINTETIZZATORI',
+        "strumento": 'Korg Monotron',
+        "anno": '2010',
+        "luogo": 'Giappone',
+        "costruttore": 'Korg',
+        "specifiche": [('USCITA', '2010'),
+                       ('MISURE', '12 x 7 cm'),
+                       ('PILE', '2 AAA'),
+                       ('FILTRO', "quello dell'MS-20")],
+        "gancio": "Un synth analogico che sta in tasca. E sul retro della scheda c'è scritto dove "
+                  'metterci le mani',
+        "sottotitolo": "Un oscillatore e il filtro dell'MS-20 sotto un nastro da sfiorare col dito, "
+                       'con 2 pile ministilo e un altoparlante.',
+        "la_macchina": 'Sta nel palmo di una mano, 12 centimetri per 7. Davanti ci sono 5 manopole, '
+                       'un interruttore e un nastro con dei tasti disegnati sopra, che si suona '
+                       'sfiorandolo col dito. Korg lo mostra alla Musikmesse di Francoforte nel marzo '
+                       '2010, ed è il suo primo synth davvero analogico da parecchio tempo. Quanto, '
+                       'le fonti non lo dicono uguale. Sound On Sound scrive 25 anni, MusicRadar '
+                       'quasi 30, contando dal Trident mkII del 1982. Secondo me il Monotron va '
+                       'trattato come un effetto più che come una tastiera. Già nel 2010 MusicRadar '
+                       'scriveva che per prendere le note giuste servono le dita di un chirurgo.',
+        "inventore_nome": 'Tatsuya Takahashi',
+        "inventore": "L'idea, lo racconta lui, non era sua. Tadahiko Sakamaki, che in Korg pianifica "
+                     'i prodotti, gli chiede un synth analogico a pile. Tatsuya Takahashi è un '
+                     'ingegnere cresciuto a Londra che costruisce circuiti dagli 11 anni, e pensa che '
+                     "l'analogico non debba costare caro. In Korg in quegli anni si lavora sul "
+                     'digitale. Il progetto passa proprio perché costa poco e rischia poco. Su cosa '
+                     'avesse fatto prima le fonti non concordano. Per NPR il Monotron è il suo primo '
+                     "progetto in Korg, per Sound On Sound prima c'era stato il microKORG XL. Dopo "
+                     'vengono il Monotribe e i volca.',
+        "come_funziona": 'Un oscillatore a dente di sega entra in un filtro passa-basso che Korg '
+                         'dichiara uguale a quello di MS-10 e MS-20. Le manopole si chiamano pitch, '
+                         "rate, int., cutoff e peak. L'LFO muove l'altezza oppure il filtro, uno alla "
+                         'volta, e arriva a circa 900 Hz, dove non è più un vibrato ma un altro '
+                         'suono. Dalla presa aux potete far passare nel filtro qualsiasi suono '
+                         'esterno. Nel Delay del 2011 la manopola della risonanza sparisce e arriva '
+                         "un'eco su un chip PT2399, lunga fino a circa un secondo. Alzando il "
+                         'feedback le ripetizioni si allungano, e il fruscio sale con loro.',
+        "richiami": [('FIG. 1', 'Filtro di MS-10 e MS-20'),
+                     ('FIG. 2', 'Nastro al posto dei tasti'),
+                     ('FIG. 3', 'Schema elettrico pubblico')],
+        "chi_lusata": [{"artista": 'Gorillaz',
+                        "nota": '«The Fall» (2010), registrato su un iPad in 32 giorni di tournée: '
+                                "fra gli strumenti c'è un Monotron",
+                        "ig": None}],
+        "menzioni_extra": [],
+        "aneddoto": 'Sul retro della scheda del Monotron ci sono delle scritte. VCO, cutoff, LFO, '
+                    'rate. Sono i punti dove misurare il circuito, e Takahashi racconta che li aveva '
+                    'messi per sé, per poterlo smontare dopo e farci quello che voleva. A novembre '
+                    "2010, pochi mesi dopo l'uscita, Korg pubblica sul suo sito lo schema elettrico. "
+                    "Chi salda non aspetta molto, e negli anni arrivano Monotron con l'ingresso per "
+                    'il controllo in tensione, e altri che si suonano via MIDI. Lo schema è ancora '
+                    'sul sito Korg, insieme a quelli del Duo e del Delay.',
+        "avvertenza": 'Lo schema è pubblico e i punti di prova sono scritti sulla scheda. Korg non '
+                      'risponde di quello che ci saldate sopra.',
+        "foto": {"file": 'assets/foto/monotron/principale.jpg',
+                 "autore": 'Xanor',
+                 "licenza": 'CC0',
+                 "fonte": 'Wikimedia Commons',
+                 "didascalia": 'Il Monotron del 2010, con la manopola rate illuminata e i tasti '
+                               'disegnati sul nastro'},
+        "foto_extra": [{"file": 'assets/foto/monotron/scheda.jpg',
+                        "autore": 'Nick Ames',
+                        "licenza": 'CC BY-SA 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Il retro della scheda, coi punti scritti in chiaro: VCO, '
+                                      'cutoff, LFO, rate'},
+                       {"file": 'assets/foto/monotron/delay.jpg',
+                        "autore": 'Jupiter80',
+                        "licenza": 'CC BY-SA 3.0 DE',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Il Monotron Delay del 2011, con le manopole TIME e FEEDBACK '
+                                      "dell'eco"}],
+        "fonti": [{"titolo": '«Korg Monotron» — Sound On Sound, 2010',
+                   "url": 'https://www.soundonsound.com/reviews/korg-monotron',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Korg Monotron review» — MusicRadar, 2010',
+                   "url": 'https://www.musicradar.com/reviews/tech/korg-monotron-262689',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Korg Monotron Delay & Duo» — Sound On Sound, 2012',
+                   "url": 'https://www.soundonsound.com/reviews/korg-monotron-delay-duo',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Korg Monotron Delay review» — MusicRadar, 2012',
+                   "url": 'https://www.musicradar.com/reviews/tech/korg-monotron-delay-526874',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Archivio degli schemi monotron — Korg',
+                   "url": 'https://www.korg.com/us/products/dj/monotron_delay/page_3.php',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Tatsuya Takahashi» — Sound On Sound, 2019',
+                   "url": 'https://www.soundonsound.com/people/tatsuya-takahashi-synth-designer',
+                   "data": '2026-10-28'},
+                  {"titolo": 'Intervista a Takahashi — bonedo, 2013',
+                   "url": 'https://www.bonedo.de/artikel/interview-die-entwicklung-der-korg-volca-analogsynthesizer-und-drums/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Analog For The People» — NPR, 2017',
+                   "url": 'https://www.wrvo.org/2017-12-22/analog-for-the-people-synth-master-tatsuya-takahashi-on-engineering-fun',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Korg publishes Monotron schematic» — Synthtopia, 2010',
+                   "url": 'https://www.synthtopia.com/content/2010/11/05/korg-publishes-monotron-schematic/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Monotron openly monophonic» — Hackaday, 2010',
+                   "url": 'https://hackaday.com/2010/11/10/monotron-openly-monophonic',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Monotron Gets All The Mods» — Hackaday, 2018',
+                   "url": 'https://hackaday.com/2018/06/09/monotron-gets-all-the-mods/',
+                   "data": '2026-10-28'},
+                  {"titolo": '«Made in transit» (Gorillaz) — The National, 2011',
+                   "url": 'https://thenationalnews.com/arts-culture/music/made-in-transit-1.418280',
+                   "data": '2026-10-28'}],
+        "hashtags": ['#korgmonotron', '#korg', '#sintetizzatore', '#gorillaz', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 074',
+                          'Il Korg Monotron sta in tasca, e il suo schema è pubblico'),
+                         ('KORG · 2010',
+                          "Il Monotron ha il filtro dell'MS-20, 2 pile e un nastro al posto dei "
+                          'tasti.'),
+                         ("L'IDEA DI SAKAMAKI",
+                          'Tadahiko Sakamaki chiede a Tatsuya Takahashi un synth analogico a pile.'),
+                         ('I PUNTI SUL RETRO',
+                          'Takahashi scrive i punti di prova sulla scheda, per smontarla lui stesso.'),
+                         ('NOVEMBRE 2010',
+                          'Korg pubblica lo schema, e chi salda aggiunge al Monotron il MIDI.')],
+        "reel_cta": 'Mandalo a chi apre tutto col cacciavite',
+        "reel_audio": {"file": 'assets/audio/monotron/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'Schminnte',
+                       "licenza": 'CC BY-SA 4.0',
+                       "fonte": 'Wikimedia Commons',
+                       "url": 'https://commons.wikimedia.org/wiki/File:Monotron_Delay_Demonstration.ogg',
+                       "cosa": "un Korg Monotron Delay vero, non l'originale del 2010: una spazzata "
+                               "d'altezza, l'LFO, il filtro e poi l'eco col tempo che cambia, fruscio "
+                               'compreso'},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 75
     # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
     # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
     # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
@@ -7076,7 +9030,7 @@ SCHEDE = [
     # Commons o Freesound: il reel usa la sigla.
     {
         "slug": "autotune",
-        "numero": 69,
+        "numero": 75,
         "serie": "GLI EFFETTI",
         "strumento": "Antares Auto-Tune",
         "anno": "1997",
@@ -7162,7 +9116,7 @@ SCHEDE = [
         ],
         "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 069", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("ELETTROFONI · N. 075", "La voce robot di Cher nasce da chi cercava il petrolio"),
             ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
             ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
             ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
@@ -7173,7 +9127,7 @@ SCHEDE = [
     },
     {
         "slug": "lowrey",
-        "numero": 70,
+        "numero": 76,
         "serie": "GLI ORGANI",
         "strumento": "Lowrey DSO",
         "anno": "1965",
@@ -7266,7 +9220,7 @@ SCHEDE = [
         ],
         "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 070", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ELETTROFONI · N. 076", "Quel clavicembalo dei Beatles è un organo da salotto"),
             ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
             ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
             ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
@@ -7277,7 +9231,7 @@ SCHEDE = [
     },
     {
         "slug": "wasp",
-        "numero": 71,
+        "numero": 77,
         "serie": "I SINTETIZZATORI",
         "strumento": "EDP Wasp",
         "anno": "1978",
@@ -7369,7 +9323,7 @@ SCHEDE = [
         ],
         "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 071", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("ELETTROFONI · N. 077", "Casale dei Devo: col sudore delle dita suona da solo"),
             ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
             ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
@@ -7380,7 +9334,7 @@ SCHEDE = [
     },
     {
         "slug": "elkarhapsody",
-        "numero": 72,
+        "numero": 78,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -7470,7 +9424,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 072", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 078", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -7481,7 +9435,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 73,
+        "numero": 79,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -7567,7 +9521,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 073", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 079", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -7578,7 +9532,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 74,
+        "numero": 80,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -7667,7 +9621,7 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 074", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 080", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
@@ -7678,7 +9632,7 @@ SCHEDE = [
     },
     {
         "slug": "pianet",
-        "numero": 75,
+        "numero": 81,
         "serie": "GLI ELETTROMECCANICI",
         "strumento": "Hohner Pianet",
         "anno": "1962",
@@ -7763,7 +9717,7 @@ SCHEDE = [
         ],
         "hashtags": ["#pianet", "#hohner", "#pianoelettrico", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 075", "«She's Not There» degli Zombies: un Pianet da casa"),
+            ("ELETTROFONI · N. 081", "«She's Not There» degli Zombies: un Pianet da casa"),
             ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
             ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
@@ -7772,7 +9726,7 @@ SCHEDE = [
         "reel_cta": "Mandalo a un tastierista da lamelle",
         "verificata": True,
     },
-    # ---------------------------------------------------------------- 75
+    # ---------------------------------------------------------------- 81
     # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
     # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
     # Scheda «ans» — sintetizzatore ANS di Evgenij Murzin (URSS, prototipo 1958).
@@ -7956,8 +9910,11 @@ def foto_del_reel(scheda):
     che non chiedono una didascalia per essere capite (nel_reel=False).
     Sta qui e non in genera_reel.py perché anche la didascalia del reel
     deve saperlo: ogni foto mostrata va accreditata."""
-    return [scheda["foto"]] + [f for f in (scheda.get("foto_extra") or [])
-                               if f.get("nel_reel", True)]
+    # Dal 28/10/2026 vale anche per la principale: quella del JV-1080 è un
+    # panorama 2,7:1 che sulle tavole regge e nel reel 9:16 diventa una
+    # striscia sottile in mezzo al nero. Se le togli tutte resta lei.
+    tutte = [scheda["foto"]] + list(scheda.get("foto_extra") or [])
+    return [f for f in tutte if f.get("nel_reel", True)] or [scheda["foto"]]
 
 
 def componi_didascalia_reel(scheda, menzioni=True):

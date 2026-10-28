@@ -13,19 +13,13 @@ da qui. ★ = dopo il 1988.
 | Macchina | Pagina | Autore | Licenza | Durata | Cosa si sente / note |
 |---|---|---|---|---|---|
 | Roland CR-78 (1978) | https://commons.wikimedia.org/wiki/File:Cr78.ogg | Ianmacm | PD | 22 s | Rhumba con effetto metallico; alternativa `CR-78_Presets_Rock-1A_-_Disco-2B.ogg` (Wexstun, CC BY-SA 3.0, 105 s) |
-| ★ Doepfer A-100 / Eurorack (1995) | https://freesound.org/s/850655/ | DaríoFrsnd | CC0 | 571 s | improvvisazione su modulare Doepfer |
 | Casio MT-40 (1981) | https://commons.wikimedia.org/wiki/File:Casio_MT-40_Drumpattern.mp3 | Maximilian Schönherr | CC BY-SA 4.0 | 19 s | solo ritmo (il basso di «Sleng Teng» qui non c'è) |
-| ★ Korg Volca Keys (2013) | https://commons.wikimedia.org/wiki/File:Korg_Volca_Keys_-_Loop_demo_with_live_effects.flac | Attosaur | CC BY-SA 4.0 | 115 s | senza elaborazioni |
-| ★ Korg Monotron (2010) | https://commons.wikimedia.org/wiki/File:Monotron_Delay_Demonstration.ogg | Schminnte | CC BY-SA 4.0 | 58 s | sweep, LFO, filtro, delay |
-| ★ Roland JV-1080 (1994) | https://commons.wikimedia.org/wiki/File:JV-1080_raggertronic.ogg | Raymangold22 | CC0 | 113 s | preset di fabbrica |
 | ★ Korg microKORG (2002) | https://freesound.org/s/489517/ | nthnh | CC0 | 1.290 s | campioni ambient, da tagliare |
 | Cry Baby wah (1966; qui GCB95) | https://commons.wikimedia.org/wiki/File:Wahwah_crybaby_GCB95_-_clean_sound_(various_techniques).ogg | Skimel | CC BY-SA 4.0 | 22 s | wah vero, ampli simulato |
 | Farfisa Syntorchestra (anni '70) | https://commons.wikimedia.org/wiki/File:Syntorchestra_Demo.wav | Jupiter80 | PD | 16 s | filone italiano |
 | ★ Pocket Operator PO-12 (2015) | https://freesound.org/s/674345/ | incidentalnoise | CC0 | 12 s | loop ritmico |
 | ★ Ensoniq VFX (1989) | https://freesound.org/s/449222/ | parabolix | CC0 | 87 s | pad a transwave; 3,8 s di silenzio in coda |
-| E-mu Drumulator (1983) | https://commons.wikimedia.org/wiki/File:Drumulator_Beispiel1.ogg | Andreas Gortan | CC BY-SA 4.0 | 17 s | pattern |
 | Siel Opera 6 (1983) | https://freesound.org/s/26985/ | Raggaman | CC BY 3.0 | 8 s | filone italiano; corto, va in loop |
-| Sequential Pro-One (1981) | https://freesound.org/s/167424/ | druidbloke | CC0 | 52 s | sequenza a dente di sega |
 
 Riserve: Aelita (Commons, «Murom_Aelita_sounds», CC BY-SA 4.0), Moog
 Grandmother (freesound 472235, CC0), Juno-60 (Commons «JUNO-60_PWM_Strings»,
@@ -53,6 +47,19 @@ agerven, D-50 vero suonato dalla sua tastiera: la Pizzagogo di Commons non
 dice se è la macchina o il plug-in), Polivoks, ANS, Nord Lead, MC-202,
 JD-800 (Freesound 58 di fectoper, del 2005, prima di ogni JD-800 software:
 le due della lista non lo dimostravano).
+
+Entrate in catalogo il 28/10/2026: Pro-One, Volca Keys, Drumulator, JV-1080,
+Doepfer A-100 (NON la Freesound 850655, che non dice quale Doepfer: si usa
+Commons «Railing.oga» di Zoë Blade, «performed entirely on a Doepfer
+A-100», tratto 60-105 s perché i primi 60 sono quasi muti), Monotron (è un
+Monotron Delay, e la scheda lo dice). Tutte tagliate allo spettrogramma: il
+Volca Keys ha un fischio fisso nei primi 20 s, si usa 76-112 s.
+**Farfisa Syntorchestra: FERMA.** L'unica foto su Commons
+(Farfisa_Syntorchestra_Overview.jpg, «Matrixsynth, CC BY-SA 2.5») viene da
+un'asta eBay ripresa da Matrixsynth come «fair use»: la licenza l'ha messa
+chi l'ha caricata, e su una foto della stessa serie c'è la filigrana del
+venditore. La scheda è scritta (fatti a due fonti) e aspetta una foto
+libera vera; la registrazione è dello stesso utente e va ascoltata prima.
 
 ## Piste ancora aperte per schede già uscite (17/10/2026)
 
