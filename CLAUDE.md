@@ -420,7 +420,7 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   (`CRON_TZ=Europe/Rome`): prima erano in UTC e con l'ora solare la rete
   delle 18:20 sarebbe partita alle 17:20, PRIMA di cron-job.org, e
   avrebbe pubblicato lei. Una Routine nuova si scrive sempre così.
-  Il rifornimento del martedì è fallito due volte di fila (20 e 27/10)
+  Il rifornimento del 27/10 è fallito in 69 secondi
   per «USAGE_LIMIT_REACHED»: non è un errore del codice, è il limite
   d'uso dell'account, e la coda la tiene d'occhio la sentinella.
 - **L'innesco vero non e' il cron di GitHub.** Il 26, 27 e 28/08/2026 ha
