@@ -8,11 +8,18 @@ on:
     inputs:
       url:
         description: 'URL diretto della foto (verificare prima la licenza!)'
-        required: true
+        required: false
+        default: ''
         type: string
       dest:
         description: 'Percorso di destinazione nel repo (es. assets/foto/x/principale.jpg)'
-        required: true
+        required: false
+        default: ''
+        type: string
+      lista:
+        description: 'In alternativa: file del repo con una riga «dest url» per ogni file (tutto in UN commit)'
+        required: false
+        default: ''
         type: string
 
 permissions:
@@ -24,20 +31,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Scarica e committa
+        env:
+          URL: ${{ inputs.url }}
+          DEST: ${{ inputs.dest }}
+          LISTA: ${{ inputs.lista }}
         run: |
-          mkdir -p "$(dirname "${{ inputs.dest }}")"
-          curl -sSL -A "ElettrofoniBot/1.0 (+https://github.com/${{ github.repository }})" \
-            -o "${{ inputs.dest }}" "${{ inputs.url }}"
-          FILETYPE=$(file -b --mime-type "${{ inputs.dest }}")
-          echo "Scaricato: $(stat -c%s "${{ inputs.dest }}") byte, tipo $FILETYPE"
-          # Dal 07/10/2026 anche le registrazioni vere per i reel (Commons
-          # le serve come Ogg/FLAC/WAV/MP3): stessa via, stesso controllo.
-          case "$FILETYPE" in image/*|audio/*|application/ogg|video/ogg) ;; *) echo "NON è un'immagine né un audio ($FILETYPE): mi fermo"; exit 1;; esac
+          # LEZIONE IMPARATA (28/10/2026): un rifornimento sono una ventina di
+          # file, cioè venti run e venti commit che si contendono il ramo
+          # vicino alle pubblicazioni. Con `lista` è un run e un commit solo.
+          if [ -n "$LISTA" ]; then cp "$LISTA" /tmp/lista.txt; else echo "$DEST $URL" > /tmp/lista.txt; fi
+          FILES=""
+          while read -r D U; do
+            [ -z "$D" ] && continue
+            mkdir -p "$(dirname "$D")"
+            curl -sSL --fail --retry 3 --retry-delay 5 -A "ElettrofoniBot/1.0 (+https://github.com/${{ github.repository }})" -o "$D" "$U"
+            FILETYPE=$(file -b --mime-type "$D")
+            echo "Scaricato $D: $(stat -c%s "$D") byte, tipo $FILETYPE"
+            # Dal 07/10/2026 anche le registrazioni vere per i reel (Commons
+            # le serve come Ogg/FLAC/WAV/MP3): stessa via, stesso controllo.
+            case "$FILETYPE" in image/*|audio/*|application/ogg|video/ogg) ;; *) echo "NON è un'immagine né un audio ($FILETYPE): mi fermo"; exit 1;; esac
+            FILES="$FILES $D"
+            sleep 2
+          done < /tmp/lista.txt
           git config user.name "elettrofoni-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add "${{ inputs.dest }}"
+          git add $FILES
           git diff --cached --quiet && exit 0
-          git commit -m "foto: ${{ inputs.dest }}"
+          git commit -m "foto: ${LISTA:-$DEST}"
           # LEZIONE IMPARATA (23/09/2026): con un push secco due scarichi
           # lanciati insieme si scontrano e il secondo muore per
           # non-fast-forward, quindi si potevano fare solo in fila. Lo
