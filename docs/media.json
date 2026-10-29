@@ -64,6 +64,10 @@
    "file": "tavole/leslie/reel2.jpg",
    "firma": "9dfbec0f694b7231-1"
   },
+  "mc202": {
+   "file": "tavole/mc202/reel2.jpg",
+   "firma": "f5c222b645a087e4-1"
+  },
   "mellotron": {
    "file": "tavole/mellotron/reel2.jpg",
    "firma": "70b2cc7c43639264-1"
@@ -661,6 +665,26 @@
     ]
    },
    "firma": "8ffd822de267e869-320-640-1280-1"
+  },
+  "mc202": {
+   "1280": "foto/mc202-1280.jpg",
+   "320": "foto/mc202-320.jpg",
+   "640": "foto/mc202-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "8650c9fbd91d9ecb-320-640-1280-1"
   },
   "mellotron": {
    "1280": "foto/mellotron-1280.jpg",
@@ -1558,6 +1582,11 @@
    "file": "suoni/leslie.mp3",
    "firma": "44067bbf1a9706d3-2-45-1",
    "secondi": 21.5
+  },
+  "mc202": {
+   "file": "suoni/mc202.mp3",
+   "firma": "6fa07781132d84f1-0-45-1",
+   "secondi": 45
   },
   "mellotron": {
    "file": "suoni/mellotron.mp3",
