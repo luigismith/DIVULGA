@@ -200,7 +200,7 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   personaggio nei reels parlati… fallo molto molto meglio e definito
   graficamente»). Era l'icona al tratto delle tavole in un tondo, 187 px
   su 720: da lontano un bollino. Ora è un busto a colori pieni con bordo da
-  adesivo (si stacca da qualunque foto), 200 px di larghezza, e si muove
+  adesivo (si stacca da qualunque foto), e si muove
   di più: lampadina dell'antenna accesa quando parla, lancetta del VU sul
   petto con la balistica di uno strumento, bocca a 5 livelli, occhiate in
   alto a destra verso il testo, palpebre in due tempi (`dinamo.py`, gli
@@ -210,6 +210,17 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   fonemi IPA (`FONEMI` in voce.py), il resto della frase passa da espeak.
   Una voce entra solo se passa il riascolto: «Erasure» e «Deep Blue Day»
   in fonemi Whisper non li capisce, e restano riscritti in NOMI.
+  **Più grande e sotto la foto dal 29/10/2026** (il proprietario: «perché
+  Dinamo è così piccolo e copre completamente l'immagine?»). Era largo
+  300 px su 1080 e poggiava sul fondo della foto. Spostarlo in basso così
+  com'era non bastava: in basso a sinistra Instagram stampa nome,
+  didascalia e audio (da y≈1600), e Dinamo ci finiva sotto (provato con
+  l'interfaccia simulata). Nel parlato quindi l'impaginato è suo
+  (`IMPAGINATO` in genera_reel_voce.py): battute a 74 px con il pannello
+  che finisce entro y 600, foto più in alto e più bassa (da 610, al
+  massimo 460), Dinamo largo 440 con la base a y 1600 che sfiora la foto
+  solo con l'antenna, targhetta alla sua destra sotto la foto. Il formato
+  2 resta com'era.
 - **Il reel serale ha due inneschi** (21/10/2026): la Routine delle
   19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
   e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno

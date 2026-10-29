@@ -49,15 +49,28 @@ SEC_PAUSA = 0.4            # fra una frase e l'altra
 SEC_PAUSA_CTA = 0.3        # fra la CTA e «le slide e le fonti…»
 VOLUME_SOTTO = 0.22        # la macchina sotto la voce (≈ -13 dB)
 SR_VOCE = 24000
-# Dinamo: 300 px di larghezza nel disegno a 1080, quasi tutti di
-# personaggio (il vecchio bollino era 280 px, di cui metà tondo crema: da
-# lontano non si capiva cos'era), alto 300*420/308, in basso a
-# sinistra, col bordo inferiore allineato alla targhetta (bottom:440px in
-# genera_reel._css).
-DINAMO_PX = 300
-DINAMO_X = 64
-DINAMO_BOTTOM = 440
+# Impaginato del reel parlato (29/10/2026, il proprietario: «Perché
+# Dinamo è così piccolo e copre completamente l'immagine? Non sarebbe
+# meglio se fosse più grande e spostato più in basso?»). Aveva ragione,
+# ma più in basso a sinistra Instagram stampa nome, didascalia e audio
+# (da y≈1600 su 1920): Dinamo grande lì sotto finiva sotto le scritte
+# (provato con l'interfaccia simulata). Quindi si fa posto: nel parlato
+# il racconto lo fa la voce, il pannello del testo può essere più basso
+# (battute a 74 px invece di 88, fine entro y 600) e la foto sale (fascia
+# da 610, alta al massimo 460). Sotto la foto Dinamo è largo 440 px (era
+# 300), con la base a y 1600, dove cominciano le scritte di Instagram, e
+# sfiora la foto solo con l'antenna; la targhetta col nome sta alla sua
+# destra, sotto la foto, e va a capo se è lunga. Il formato 2 non cambia.
+IMPAGINATO = {"PANNELLO_MAX": 600, "FASCIA_Y": 610, "FASCIA_MAX": 460}
+HOOK_PX = 74
+DINAMO_PX = 440
+DINAMO_X = 40
+DINAMO_BOTTOM = 320
 TAG_LEFT = DINAMO_X + DINAMO_PX + 24
+TAG_TOP = IMPAGINATO["FASCIA_Y"] + IMPAGINATO["FASCIA_MAX"] + 24
+CSS_PARLATO = (f".hook,.cta .hook{{font-size:{HOOK_PX}px}}"
+               f".tag{{left:{TAG_LEFT}px;bottom:auto;top:{TAG_TOP}px;max-width:{900 - TAG_LEFT}px;"
+               f"white-space:normal;font-size:50px;line-height:1.05}}")
 NOME_FILE = "reel3.mp4"
 
 
@@ -110,6 +123,20 @@ def costruisci(scheda, cartella, file_testo=None):
     lavoro.mkdir(exist_ok=True)
     ff = gr._ff()
 
+    # L'impaginato del parlato vale solo dentro questa funzione: le
+    # costanti del formato 2 si rimettono com'erano anche se qualcosa
+    # va storto.
+    prima = {k: getattr(gr, k) for k in IMPAGINATO}
+    for k, v in IMPAGINATO.items():
+        setattr(gr, k, v)
+    try:
+        return _costruisci(scheda, cartella, lavoro, ff, file_testo, dinamo, voce, sync_playwright)
+    finally:
+        for k, v in prima.items():
+            setattr(gr, k, v)
+
+
+def _costruisci(scheda, cartella, lavoro, ff, file_testo, dinamo, voce, sync_playwright):
     frasi = frasi_di(scheda, file_testo)
     scene = gr.battute(scheda)          # html, foto e moto come nel formato 2
     n_batt = len(scheda["reel_battute"])
@@ -157,8 +184,8 @@ def costruisci(scheda, cartella, file_testo=None):
         raise RuntimeError(f"Dinamo non si capisce (WER {wer:.2f}, mancano {mancanti}): "
                            "correggere il lessico in voce.py o la frase")
 
-    # 4. Le scene video, come nel formato 2 ma con la targhetta spostata
-    #    a destra per far posto a Dinamo. Lo <style> dentro il body vale.
+    # 4. Le scene video, come nel formato 2 ma con l'impaginato del parlato
+    #    (vedi IMPAGINATO). Lo <style> dentro il body vale.
     foto = contenuti.foto_del_reel(scheda)
     png = []
     with sync_playwright() as p:
@@ -167,7 +194,7 @@ def costruisci(scheda, cartella, file_testo=None):
         pg = b.new_page(viewport={"width": gr.L, "height": gr.H})
         for i, sc in enumerate(scene):
             tmp = lavoro / f"t{i}.html"
-            tmp.write_text(gr._pagina(f"<style>.tag{{left:{TAG_LEFT}px}}</style>" + sc["html"]),
+            tmp.write_text(gr._pagina(f"<style>{CSS_PARLATO}</style>" + sc["html"]),
                            encoding="utf-8")
             pg.goto(tmp.as_uri())
             pg.wait_for_selector("body[data-pronto='1']", timeout=20000)
