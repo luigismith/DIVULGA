@@ -239,6 +239,14 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   dice quante uscite sono coperte; `pubblica.py` avvisa nel log se ne
   esce una senza. Sulle schede vecchie il suono arriva col sito (che lo
   prende da `reel_audio` da solo) e coi rifacimenti delle 12:30.
+  **Eccezione decisa dal proprietario il 29/10/2026** («per le sette
+  schede scelgo la 1»): Auto-Tune, Lowrey, EDP Wasp, Elka Rhapsody, Moog
+  Taurus, Echoplex e Pianet erano già in coda prima della regola e una
+  registrazione libera e dimostrabile non esiste (ricerca del 28/10,
+  `bozze/registrazioni_coda_2026-10-28.md`): escono col suono
+  sintetizzato, come prima del 17/10. Vale solo per queste sette; le
+  schede NUOVE continuano a entrare solo con la loro `reel_audio`. Se una
+  registrazione buona salta fuori prima dell'uscita, si aggiunge.
 - **La foto reale dello strumento è obbligatoria in ogni scheda** (regola
   del proprietario), con credito autore+licenza; fonti foto: Wikimedia
   Commons (API: `commons.wikimedia.org/w/api.php`, campi extmetadata).
