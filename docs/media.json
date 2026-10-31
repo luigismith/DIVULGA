@@ -172,6 +172,10 @@
    "file": "tavole/vl1/reel2.jpg",
    "firma": "0a3784ace64e8a1d-1"
   },
+  "volcakeys": {
+   "file": "tavole/volcakeys/reel2.jpg",
+   "firma": "3bbc57abeb3a986b-1"
+  },
   "wurlitzer200a": {
    "file": "tavole/wurlitzer200a/reel2.jpg",
    "firma": "b471fc6f5f24ae2e-1"
@@ -1498,6 +1502,26 @@
    },
    "firma": "488c791ac7bf1592-320-640-1280-1"
   },
+  "volcakeys": {
+   "1280": "foto/volcakeys-1280.jpg",
+   "320": "foto/volcakeys-320.jpg",
+   "640": "foto/volcakeys-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     720
+    ],
+    "320": [
+     320,
+     180
+    ],
+    "640": [
+     640,
+     360
+    ]
+   },
+   "firma": "03e5d3b94bf899b3-320-640-1280-1"
+  },
   "voxcontinental": {
    "1280": "foto/voxcontinental-1280.jpg",
    "320": "foto/voxcontinental-320.jpg",
@@ -1729,6 +1753,11 @@
    "file": "suoni/vl1.mp3",
    "firma": "cd1764664519dc9a-1-45-1",
    "secondi": 41.7
+  },
+  "volcakeys": {
+   "file": "suoni/volcakeys.mp3",
+   "firma": "a9004aeb89c7bd0c-0-45-1",
+   "secondi": 36.0
   },
   "voxcontinental": {
    "file": "suoni/voxcontinental.mp3",
