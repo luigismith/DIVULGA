@@ -32,6 +32,10 @@
    "file": "tavole/d50/reel2.jpg",
    "firma": "8b612de0d6cc5bb7-1"
   },
+  "drumulator": {
+   "file": "tavole/drumulator/reel2.jpg",
+   "firma": "58b66366d46b6a4e-1"
+  },
   "dx7": {
    "file": "tavole/dx7/reel2.jpg",
    "firma": "a3d7f50563ded981-1"
@@ -425,6 +429,26 @@
     ]
    },
    "firma": "1da46a2a893a273b-320-640-1280-1"
+  },
+  "drumulator": {
+   "1280": "foto/drumulator-1280.jpg",
+   "320": "foto/drumulator-320.jpg",
+   "640": "foto/drumulator-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     973
+    ],
+    "320": [
+     320,
+     243
+    ],
+    "640": [
+     640,
+     487
+    ]
+   },
+   "firma": "591ef1b76465b953-320-640-1280-1"
   },
   "dx7": {
    "1280": "foto/dx7-1280.jpg",
@@ -1612,6 +1636,11 @@
    "file": "suoni/d50.mp3",
    "firma": "a7234b59e71916fb-0-45-1",
    "secondi": 45
+  },
+  "drumulator": {
+   "file": "suoni/drumulator.mp3",
+   "firma": "6da4fb25b39ff209-0-45-1",
+   "secondi": 15.1
   },
   "fairlight": {
    "file": "suoni/fairlight.mp3",
