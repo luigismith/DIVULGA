@@ -36,6 +36,10 @@
    "file": "tavole/d50/reel2.jpg",
    "firma": "8b612de0d6cc5bb7-1"
   },
+  "doepfer": {
+   "file": "tavole/doepfer/reel2.jpg",
+   "firma": "b22d86236328ebf3-1"
+  },
   "drumulator": {
    "file": "tavole/drumulator/reel2.jpg",
    "firma": "58b66366d46b6a4e-1"
@@ -441,6 +445,26 @@
     ]
    },
    "firma": "1da46a2a893a273b-320-640-1280-1"
+  },
+  "doepfer": {
+   "1280": "foto/doepfer-1280.jpg",
+   "320": "foto/doepfer-320.jpg",
+   "640": "foto/doepfer-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "04eb450a1a5c2d55-320-640-1280-1"
   },
   "drumulator": {
    "1280": "foto/drumulator-1280.jpg",
@@ -1667,6 +1691,11 @@
   "d50": {
    "file": "suoni/d50.mp3",
    "firma": "a7234b59e71916fb-0-45-1",
+   "secondi": 45
+  },
+  "doepfer": {
+   "file": "suoni/doepfer.mp3",
+   "firma": "057ccae2f855fd9e-0-45-1",
    "secondi": 45
   },
   "drumulator": {
