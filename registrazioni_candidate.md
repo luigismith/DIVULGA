@@ -77,3 +77,18 @@ libera vera; la registrazione è dello stesso utente e va ascoltata prima.
 - Hammond Model A (1935): https://commons.wikimedia.org/wiki/File:Hammond_Organ_-_Model_A_Medley.ogg
   (CC BY 3.0, OTRS) è un medley: prima di usarlo va capito quali brani
   sono, per escludere melodie protette.
+
+## Rifornimento del 03/11/2026 (coda a 12, sotto il minimo di 14): nessuna scheda aggiunta
+
+- **Siel Opera 6** (bozze/opera6.py): provata in coda, `valida_scheda` passa
+  una volta aggiunto `"opera6": "sega"` in `suoni.VOCE_SCHEDA`. Tavole generate
+  e guardate: la 5 «Nei dischi» esce vuota (nessun artista con due fonti) e
+  riprende la stessa foto per la quarta volta; l'audio (Freesound 26985,
+  7,6 s, a -4,9 dB di media, picco 0 dB) è un giro gated con 4 silenzi da
+  0,35-0,7 s, non riascoltato. Non entrata: serve almeno un artista/disco
+  con due fonti, o la decisione del proprietario di far uscire la scheda così.
+- **Ensoniq VFX**: l'unica registrazione lunga (Freesound 449222) non dimostra
+  di essere la macchina vera (vedi bozze/vfx.py); foto 1028x250.
+- **Farfisa Syntorchestra**: ferma per la foto (vedi sopra).
+- Dal container freesound.org e cdn.freesound.org rispondono 403 e Playwright
+  Python qui va lanciato con `ELETTROFONI_CHROMIUM=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell`.
