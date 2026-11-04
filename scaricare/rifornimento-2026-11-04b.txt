@@ -1,0 +1,5 @@
+assets/audio/system100/test101.mp3 https://cdn.freesound.org/previews/587/587908_692765-hq.mp3
+assets/audio/grandmother/originale.mp3 https://cdn.freesound.org/previews/472/472235_10009269-hq.mp3
+assets/foto/grandmother/principale.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Moog_Grandmother_%2849654085281%29.jpg/1280px-Moog_Grandmother_%2849654085281%29.jpg
+assets/foto/grandmother/dettaglio.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Moog_Grandmother_detail_%2849608923708%29.jpg/1280px-Moog_Grandmother_detail_%2849608923708%29.jpg
+assets/foto/grandmother/negozio.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Moog_Grandmother_-_Guitar_Center_Silver_Spring_%282018-10-22_by_Kazuhisa_OTSUBO%29.jpg/500px-Moog_Grandmother_-_Guitar_Center_Silver_Spring_%282018-10-22_by_Kazuhisa_OTSUBO%29.jpg
