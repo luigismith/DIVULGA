@@ -100,6 +100,10 @@
    "file": "tavole/minimoog/reel2.jpg",
    "firma": "1e11c9a187aaa135-1"
   },
+  "monotron": {
+   "file": "tavole/monotron/reel2.jpg",
+   "firma": "83c7c7561aa4a62c-1"
+  },
   "ms20": {
    "file": "tavole/ms20/reel2.jpg",
    "firma": "c4f172d4bb4c9ae5-1"
@@ -829,6 +833,26 @@
     ]
    },
    "firma": "d9dee4e8d66520de-320-640-1280-1"
+  },
+  "monotron": {
+   "1280": "foto/monotron-1280.jpg",
+   "320": "foto/monotron-320.jpg",
+   "640": "foto/monotron-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "d1ab959a6c9797aa-320-640-1280-1"
   },
   "mpc60": {
    "1280": "foto/mpc60-1280.jpg",
@@ -1756,6 +1780,11 @@
    "file": "suoni/minimoog.mp3",
    "firma": "ae650e916fe0d963-0-45-1",
    "secondi": 31.0
+  },
+  "monotron": {
+   "file": "suoni/monotron.mp3",
+   "firma": "a4aa82f0555702e8-0-45-1",
+   "secondi": 33.6
   },
   "ms20": {
    "file": "suoni/ms20.mp3",
