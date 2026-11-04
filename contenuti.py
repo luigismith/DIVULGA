@@ -10072,6 +10072,560 @@ SCHEDE = [
         "verificata": True
     },
     # ---------------------------------------------------------------- 78
+    # Roland System-100 (1975). Rifornimento del 04/11/2026. Fonti lette il
+    # 04/11/2026.
+    #
+    # FATTI E FONTI (ognuno su almeno 2 fonti indipendenti)
+    # - 1975-1979: Wikipedia «Roland System 100»; Vintage Synth Explorer (VSE).
+    # - 5 pezzi: 101 synth con tastiera, 102 espansore senza tasti con
+    #   modulatore ad anello e sample and hold, 103 mixer a 4 canali con
+    #   riverbero a molla, 104 sequencer 12 passi x 2, 109 coppia di casse:
+    #   Wikipedia; VSE. Il 104 «12x2, 24step» anche nella foto di Commons.
+    # - semimodulare (collegamenti di fabbrica, i cavi li scavalcano):
+    #   Wikipedia; VSE («fully self-contained analog mono-synth»).
+    # - 101: oscillatore, filtro, ADSR, LFO, rumore: VSE; Wikipedia
+    #   (oscillator, filter, ADSR); la foto del pannello (ADSR, LFO, VCO).
+    # - 104 in serie (24 passi) o in parallelo (2 linee): VSE; Wikipedia
+    #   (two-channel); didascalia Commons «12x2, 24step».
+    # - niente preset, i suoni si segnano su fogli: Bonedo 2009 («Presets
+    #   auf Knopfdruck gab es damals nicht», patch sheet); VSE (nessuna
+    #   memoria, CV/Gate). Monofonico: Wikipedia; VSE.
+    # - System-100M dal 1979, modulare vero: Wikipedia «Roland System-100M»;
+    #   Sound On Sound (articolo sul 100M, listino 1985).
+    # - Roland fondata nel 1972 da Ikutaro Kakehashi: Wikipedia «Roland
+    #   Corporation»; Sound On Sound, «History of Roland part 2» (rimanda alla
+    #   parte 1, 1972-1978).
+    # - Human League, «Reproduction» (1979) e «Travelogue» (1980) quasi tutti
+    #   col System-100, percussioni comprese: Wikipedia (Forrest, «A-Z of
+    #   Analogue Synthesizers»); Roland Articles, intervista a Ware («our
+    #   main workhorse»).
+    # - «Being Boiled»: Korg 700, il System-100 di Ian Craig Marsh, un SM58 e
+    #   un Sony a 2 piste, rimbalzando da una pista all'altra senza mixer:
+    #   MusicRadar (Ware: «My Korg-700, Ian's System 100, an SM58 mic and a
+    #   Sony two-track»); Roland Articles («the only kit we had»,
+    #   rimbalzi); RBMA 2013 (registratore a 2 piste, niente mixer); Bonedo
+    #   e Matrixsynth (Ware mostra il System-100 col beat di «Being Boiled»).
+    # - cassa e rullante fatti a mano coi synth, niente campioni: RBMA 2013
+    #   («every single item was handmade, the kick drum, the snare»);
+    #   Wikipedia «Roland System 100» (percussioni col System-100).
+    # - fabbrica abbandonata: Wikipedia «Being Boiled»; RBMA («disused small
+    #   factories where they used to make cutlery»).
+    # - costo: 2,50 sterline (Wikipedia, da «Blind Youth») o 3 (RBMA): non
+    #   concordano, e la scheda lo dice.
+    # - Fast Product, 30/06/1978: Wikipedia «Being Boiled»; RBMA.
+    # - Ian più bravo a fare i suoni sul System-100: Roland Articles; MusicRadar
+    #   («Ian's System 100»). Scritto come «era suo» + «i suoni li faceva lui»
+    #   solo la prima parte su 2 fonti: la seconda è OMESSA.
+    # - Vince Clarke regala a Ware un System-100 completo: Sound On Sound 2000
+    #   («gave me one of the original Roland System 100s»); Wikipedia (podcast
+    #   «Electronically Yours», 2020).
+    # - Daniel Miller (Mute) e «A Broken Frame» dei Depeche Mode (1982):
+    #   Wikipedia (Esch, «Electri_City», p. 257); VSE (Depeche Mode fra gli
+    #   utenti).
+    # SCARTATI a fonte singola: prezzo di listino (1.950 dollari solo su un
+    # blog), chi ha disegnato i circuiti (nessuna fonte), il chip del filtro
+    # in comune con la TB-303 (solo VSE), l'alimentazione separata di ogni
+    # modulo (solo Wikipedia), Bowie e «the future of music».
+    # AUDIO: la Freesound 260239 (schafferdavid, CC0, «drones») è tutta sotto
+    # i 200 Hz: dal telefono non si sente niente, scartata. Si usa la
+    # Freesound 587908 di ZzoundPi (CC0, 19 minuti di prova di un Model 101
+    # con riverbero e eco aggiunti): estratto 10:34-11:19 scelto allo
+    # spettrogramma (un solo lead con glissati e filtro che si apre, niente
+    # silenzi, -9 LUFS; i primi 10 minuti sono soffi e bassi).
+    # Handle Instagram: nessuno verificato da un sito ufficiale, tutti None.
+    {
+        "slug": "system100",
+        "numero": 78,
+        "serie": 'I SINTETIZZATORI',
+        "strumento": 'Roland System-100',
+        "anno": '1975',
+        "luogo": 'Giappone',
+        "costruttore": 'Roland',
+        "specifiche": [('USCITA', '1975'), ('PEZZI', '5'), ('SEQUENCER', '12 passi x 2'), ('VOCI', '1')],
+        "gancio": 'I primi 2 album degli Human League escono quasi interi da questi 5 pezzi',
+        "sottotitolo": 'Un sintetizzatore Roland in 5 pezzi che si collegano coi cavi. Resta in '
+                       'listino dal 1975 al 1979.',
+        "la_macchina": 'Montato tutto insieme sembra un mobile stereo. In mezzo c\'è il 101, il '
+                       'synth con la tastiera, e dietro gli sta il 102, che è lo stesso synth senza '
+                       'tasti e in più ha il modulatore ad anello e il sample and hold. Ai lati '
+                       'stanno il 104, un sequencer da 12 passi su 2 file, e il 103, un mixer a 4 '
+                       'canali con dentro un riverbero a molla. Le 2 casse sono il 109. Ogni pezzo '
+                       'si compra da solo. A me quel grigio chiaro con le cornici cromate ricorda '
+                       'un registratore di casa più che un laboratorio.',
+        "inventore_nome": 'Roland',
+        "inventore": 'Chi abbia disegnato i circuiti non sono riuscito a saperlo. La Roland nel '
+                     "1975 ha 3 anni, l'ha fondata Ikutaro Kakehashi nel 1972. Il System-100 non è "
+                     'un modulare vero, e chi lo chiama semimodulare ha ragione: dentro il 101 i '
+                     'collegamenti sono già fatti, il suono esce anche senza infilare un cavo, e i '
+                     'cavi servono a cambiare strada al segnale. Il modulare vero la Roland lo '
+                     'fa dopo. Nel 1979 arriva il System-100M, coi moduli da montare in un telaio, '
+                     'e il System-100 esce di listino.',
+        "come_funziona": "Il 101 da solo è un synth completo, con un oscillatore, un filtro, "
+                         "l'inviluppo ADSR, l'LFO e il rumore. Premete un tasto e suona. Poi "
+                         'prendete un cavo e lo infilate in una presa del pannello: quel '
+                         'collegamento passa sopra quello di fabbrica. Il 104 manda al synth una '
+                         'fila di 12 tensioni, una per passo, e il 101 le suona in giro una dopo '
+                         "l'altra. Con le 2 file in serie i passi diventano 24, in parallelo fanno "
+                         '2 linee insieme. Preset non ce ne sono. Un suono che vi piace lo segnate '
+                         'su un foglio, cursore per cursore.',
+        "richiami": [('FIG. 1', 'Il 101, synth e tastiera'),
+                     ('FIG. 2', 'Il 104, 12 passi su 2 file'),
+                     ('FIG. 3', 'Il 103, mixer col riverbero')],
+        "chi_lusata": [{"artista": 'The Human League',
+                        "nota": '«Reproduction» (1979) e «Travelogue» (1980), percussioni comprese',
+                        "ig": None},
+                       {"artista": 'Ian Craig Marsh',
+                        "nota": 'il System-100 di «Being Boiled» era il suo',
+                        "ig": None},
+                       {"artista": 'Vince Clarke',
+                        "nota": 'ne regala uno completo a Martyn Ware',
+                        "ig": None},
+                       {"artista": 'Daniel Miller',
+                        "nota": "il capo della Mute lo usa per «A Broken Frame» dei Depeche Mode "
+                                '(1982)',
+                        "ig": None}],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": 'Being Boiled',
+                         "artista": 'The Human League',
+                         "anno": '1978',
+                         "cosa": 'Cassa e rullante non sono campioni e nemmeno una batteria '
+                                 'elettronica. Li hanno costruiti coi synth.'},
+        "aneddoto": 'Sheffield, 1978. Martyn Ware e Ian Craig Marsh registrano in una fabbrichetta '
+                    'abbandonata. Hanno il Korg 700 di Ware, il System-100 di Marsh e un '
+                    'registratore Sony a 2 piste. Il mixer '
+                    'non ce l\'hanno, e ogni strumento nuovo si aggiunge rimbalzando il nastro da '
+                    'una pista all\'altra: quello che c\'era prima non si corregge più. Philip '
+                    'Oakey ci scrive sopra le parole. Un amico gli dice di mandare il nastro alla '
+                    'Fast Product, un\'etichetta scozzese, e «Being Boiled» esce. Quanto è '
+                    'costato? Wikipedia dice 2 sterline e 50, Ware a Red Bull Music Academy 3.',
+        "avvertenza": 'Il cavo infilato nel pannello scavalca il collegamento di fabbrica. Se il '
+                      '101 tace, prima di chiamare il tecnico togliete i cavi.',
+        "foto": {"file": 'assets/foto/system100/principale.jpg',
+                 "autore": 'Notreshuggie',
+                 "licenza": 'CC BY 2.0',
+                 "fonte": 'Wikimedia Commons',
+                 "didascalia": 'Il System-100 montato, con le 2 casse 109 dietro'},
+        "foto_extra": [{"file": 'assets/foto/system100/pannello.jpg',
+                        "autore": 'Notreshuggie',
+                        "licenza": 'CC BY 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": "Il pannello del 101: ADSR, LFO e oscillatore"},
+                       {"file": 'assets/foto/system100/sequencer.jpg',
+                        "autore": 'Notreshuggie',
+                        "licenza": 'CC BY 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Il sequencer 104: 2 file da 12 manopole'},
+                       {"file": 'assets/foto/system100/mixer.jpg',
+                        "autore": 'Notreshuggie',
+                        "licenza": 'CC BY 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Il mixer 103: 4 canali, e il riverbero per ognuno'}],
+        "fonti": [{"titolo": '«Roland System 100» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Roland_System_100',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Roland System-100» — Vintage Synth Explorer',
+                   "url": 'https://www.vintagesynth.com/roland/system-100',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Roland System-100M» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Roland_System-100M',
+                   "data": '2026-11-04'},
+                  {"titolo": '«The History of Roland: Part 2» — Sound On Sound, 2004',
+                   "url": 'https://www.soundonsound.com/people/history-roland-part-2',
+                   "data": '2026-11-04'},
+                  {"titolo": 'Martyn Ware — Roland Articles',
+                   "url": 'https://articles.roland.com/careers-in-music-technology-and-chart-toppers-with-martyn-ware/',
+                   "data": '2026-11-04'},
+                  {"titolo": 'Martyn Ware su Kraftwerk e i soldi — MusicRadar',
+                   "url": 'https://www.musicradar.com/artists/everybody-goes-on-about-how-brilliant-kraftwerk-were-but-they-were-only-brilliant-because-they-were-rich-heaven-17-legend-martyn-ware-on-how-financial-barriers-can-prevent-great-music-from-ever-being-heard',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Key Tracks: Martyn Ware on Being Boiled» — Red Bull Music Academy, 2013',
+                   "url": 'https://daily.redbullmusicacademy.com/2013/11/key-tracks-martyn-ware-being-boiled',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Human League: Being Boiled und das Roland System-100» — Bonedo, 2009',
+                   "url": 'https://www.bonedo.de/artikel/human-league-being-boiled-und-das-roland-system-100/',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Being Boiled» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Being_Boiled',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Martyn Ware: The Clarke & Ware Experiment» — Sound On Sound, 2000',
+                   "url": 'https://www.soundonsound.com/people/martyn-ware-clarke-ware-experiment',
+                   "data": '2026-11-04'}],
+        "hashtags": ['#system100', '#roland', '#sintetizzatore', '#thehumanleague', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 078',
+                          'Quasi tutto il primo album degli Human League è un Roland'),
+                         ('ROLAND · 1975',
+                          'Il Roland System-100 è un synth in 5 pezzi, collegati coi cavi.'),
+                         ('SHEFFIELD · 1978',
+                          'Martyn Ware e Ian Craig Marsh hanno un Korg, il System-100 e un nastro.'),
+                         ('«BEING BOILED»',
+                          'Ware e Marsh fanno cassa e rullante coi synth, una pista alla volta.'),
+                         ('VINCE CLARKE',
+                          'Anni dopo Vince Clarke regala a Ware un System-100 completo.')],
+        "reel_cta": 'Mandalo a chi balla ancora gli Human League',
+        "reel_audio": {"file": 'assets/audio/system100/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'ZzoundPi',
+                       "licenza": 'CC0',
+                       "fonte": 'Freesound',
+                       "url": 'https://freesound.org/s/587908/',
+                       "cosa": 'un System-100 Model 101 vero, provato da chi l\'ha caricato con '
+                               'riverbero ed eco aggiunti: un estratto di 45 secondi'},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 79
+    # Teenage Engineering PO-12 rhythm (2015). Rifornimento del 04/11/2026,
+    # la scheda dopo il 1988 di questo giro. Fonti lette il 04/11/2026.
+    #
+    # FATTI E FONTI (ognuno su almeno 2 fonti indipendenti)
+    # - serie PO-10 (PO-12 rhythm, PO-14 sub, PO-16 factory) al NAMM di
+    #   gennaio 2015, 59 dollari, con Cheap Monday: Engadget 21/01/2015;
+    #   Wallpaper* 2025; pagina dei 10 anni di Teenage Engineering;
+    #   Wikipedia «Pocket Operators».
+    # - circuito stampato nudo, schermo a cristalli liquidi, 23 tasti, 2
+    #   manopole, piedino: Wikipedia; Engadget 2014 (23 switches, wire
+    #   stand) e 2015 («just a circuit board with a display»); It's Nice
+    #   That 2015 («exposed solder»); le foto.
+    # - 2 pile ministilo: Engadget 2015; Wikipedia (AAA).
+    # - altoparlante: Engadget 2015; Wallpaper*.
+    # - sveglia: Wikipedia; CDM 2015 («metronome and alarm clock function»).
+    # - custodia a parte: It's Nice That; Engadget 2015 (39 dollari, di
+    #   Cheap Monday). Nella foto «custodia» c'è la CA-12.
+    # - macchina da cucire sullo schermo: It's Nice That (didascalia «HIP
+    #   HOP» con la macchina da cucire); le foto «principale» e «due».
+    # - 16 suoni (2 intonati), 16 effetti, 16 pattern: Engadget 2015;
+    #   Wikipedia; CDM.
+    # - «write» e manopole registrate sui passi (parameter lock), effetti
+    #   allo stesso modo: CDM; Engadget 2015 («parameter locks»); Engadget
+    #   2014 (citando CDM).
+    # - si sincronizzano fra loro: Engadget 2015 («sync functionality»);
+    #   Wallpaper*; descrizione Commons di Tim Walker.
+    # - Teenage Engineering, Stoccolma, 2005: Wikipedia «Teenage
+    #   Engineering»; It's Nice That (Kouthoofd).
+    # - Game & Watch di Nintendo come modello: Wallpaper*; Wikipedia «Teenage
+    #   Engineering» («according to Kouthoofd»).
+    # - quasi un milione venduti (tutta la serie): pagina dei 10 anni di
+    #   Teenage Engineering («just under one million»); Wallpaper* («nearly a
+    #   million»).
+    # - Moogfest 2014, panel «Future of Music», cartellino «moogfest
+    #   special», regali fermati in dogana, una sola arrivata, foto di Robert
+    #   Pluma: Synthtopia 05/05/2014; Engadget 05/05/2014. 49 dollari
+    #   annunciati: Engadget 2014; pagina dei 10 anni (prezzo «originally
+    #   intended» 49). La versione dei 200 prototipi senza schermo: pagina
+    #   dei 10 anni; video Moog su Matrixsynth. Il disaccordo sta nel testo.
+    # - Norla, «Shake It Off» su PO-12, PO-14 e PO-16, 2016: Bonedo
+    #   06/06/2016 (che cita Matrixsynth).
+    # - Kenny Beats, Shlohmo, Zombie Nation: fra i musicisti della pagina dei
+    #   10 anni di Teenage Engineering. È la fonte prima di quello che si dice
+    #   («Teenage Engineering li mette nella sua pagina»), e la nota non dice
+    #   di più: non dice quale modello né quale disco.
+    # NESSUN DISCO: non ho trovato un brano uscito legato al PO-12 da due
+    # fonti, quindi niente «da ascoltare». Da segnalare al proprietario.
+    # SCARTATI: l'accordo con Ann-Sofie Back (synth in cambio di vestiti da
+    # laboratorio, solo Teenage Engineering), la durata delle pile, il
+    # cavetto audio per la sincronia.
+    # AUDIO: Freesound 674345 di incidentalnoise, CC0, «pocket operator po-12
+    # rhythm loop 80 bpm», 12 s, intero: il reel la ripete (-stream_loop).
+    # Handle Instagram: @teenageengineering NON verificato da questa
+    # sessione, quindi None.
+    {
+        "slug": "po12",
+        "numero": 79,
+        "serie": 'LE DRUM MACHINE',
+        "strumento": 'Teenage Engineering PO-12 rhythm',
+        "anno": '2015',
+        "luogo": 'Stoccolma, Svezia',
+        "costruttore": 'Teenage Engineering',
+        "specifiche": [('USCITA', '2015'), ('PREZZO', '59 $'), ('SUONI', '16'), ('PILE', '2 ministilo')],
+        "gancio": 'Fra lui e i suoi fratelli, Teenage Engineering ne vende quasi un milione',
+        "sottotitolo": 'Una drum machine svedese grande come una calcolatrice, da tenere in '
+                       'tasca.',
+        "la_macchina": 'Non c\'è un guscio. Quello che tenete in mano è il circuito stampato, con '
+                       '23 tasti, 2 manopole e uno schermo a cristalli liquidi, e dietro le 2 pile '
+                       'ministilo. Un gancetto di filo fa da piedino. Mentre suona, sullo schermo '
+                       'una macchina da cucire lavora a tempo. Ha un altoparlante suo e fa anche '
+                       'da sveglia. La custodia si compra a parte, per chi le saldature a vista '
+                       'non le vuole vedere. A me piace nudo, mi sembra più onesto di una scatola '
+                       'di plastica.',
+        "inventore_nome": 'Teenage Engineering, Stoccolma',
+        "inventore": 'Teenage Engineering nasce a Stoccolma nel 2005. Fra i fondatori c\'è Jesper '
+                     'Kouthoofd, che oggi la dirige. Il PO-12 esce a gennaio 2015 con altri 2 '
+                     'fratelli, il PO-14 per il basso e il PO-16 per la melodia, e sopra porta '
+                     'stampato il marchio di Cheap Monday, i jeans svedesi, che lo mettono in '
+                     'vendita con loro. Lo schermo, dice Kouthoofd, viene dai Game & Watch di '
+                     'Nintendo, quei giochini a cristalli liquidi degli anni \'80. Si vede '
+                     'subito: i disegni si accendono a pezzi fissi, come una partita a Ball. Dopo '
+                     'il PO-12 ne escono molti altri, fino a Street Fighter e Mega Man.',
+        "come_funziona": 'Dentro ci sono 16 suoni, dalla cassa a 2 voci intonate, e 16 effetti. '
+                         'Scegliete un suono, premete «write» e accendete i passi sui 16 tasti '
+                         'numerati: il sequencer li suona in giro. Tenendo premuto «write» si '
+                         'registra anche la posizione delle manopole su ogni passo, e gli effetti '
+                         'funzionano allo stesso modo. I pattern sono 16. Se avete 2 Pocket '
+                         'Operator, si sincronizzano fra loro e uno dà il tempo all\'altro. '
+                         'Non cercate un battimani normale, CDM nel 2015 notava che non c\'è.',
+        "richiami": [('FIG. 1', 'Lo schermo, con la macchina da cucire'),
+                     ('FIG. 2', '16 tasti numerati, uno per passo'),
+                     ('FIG. 3', '2 manopole, e «write» in fondo')],
+        "chi_lusata": [{"artista": 'Norla',
+                        "nota": "rifà «Shake It Off» di Taylor Swift con PO-12, PO-14 e PO-16, su "
+                                'YouTube nel 2016',
+                        "ig": None},
+                       {"artista": 'Kenny Beats',
+                        "nota": 'fra i musicisti che Teenage Engineering mette nella pagina dei 10 '
+                                'anni dei Pocket Operator',
+                        "ig": None},
+                       {"artista": 'Zombie Nation',
+                        "nota": 'anche lui in quella pagina, che però non dice con quale modello',
+                        "ig": None}],
+        "menzioni_extra": [],
+        "aneddoto": 'Maggio 2014, Moogfest. A un incontro sul futuro della musica Teenage '
+                    'Engineering presenta una schedina con 23 tasti e un cartellino attaccato, '
+                    '«moogfest special». Dovevano essere regali per il festival, ma la dogana li '
+                    'ferma e ne arriva uno solo, scrivono Synthtopia ed Engadget. I dettagli si '
+                    'sanno dalle foto di uno del pubblico, Robert Pluma. 10 anni dopo Teenage '
+                    'Engineering racconta un\'altra versione, con 200 prototipi senza schermo. '
+                    'Quale sia giusta non lo so. Il prezzo annunciato era 49 dollari, e al NAMM '
+                    'di gennaio diventano 59.',
+        "avvertenza": 'Il circuito è nudo. Tenetelo per i bordi e lontano dalle chiavi in tasca: '
+                      'la custodia si vende a parte.',
+        "foto": {"file": 'assets/foto/po12/principale.jpg',
+                 "autore": 'Tim Walker',
+                 "licenza": 'CC BY 2.0',
+                 "fonte": 'Wikimedia Commons',
+                 "didascalia": 'Il PO-12 nudo, con la macchina da cucire sullo schermo'},
+        "foto_extra": [{"file": 'assets/foto/po12/due.jpg',
+                        "autore": 'Tim Walker',
+                        "licenza": 'CC BY 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Il PO-12 rhythm accanto al PO-14 sub'},
+                       {"file": 'assets/foto/po12/custodia.jpg',
+                        "autore": 'Nivinir',
+                        "licenza": 'CC BY-SA 4.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Nella custodia, che si compra a parte'}],
+        "fonti": [{"titolo": '«Teenage Engineering will put a synth in your pocket for $59» — Engadget, 2015',
+                   "url": 'https://www.engadget.com/2015-01-21-teenage-engineering-pocket-operator-synths.html',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Meet the Teenage Engineering PO-12» — Engadget, 2014',
+                   "url": 'https://www.engadget.com/2014/05/05/teenage-engineering-po-12-drum-machine/',
+                   "data": '2026-11-04'},
+                  {"titolo": 'Teenage Engineering al Moogfest — Synthtopia, 2014',
+                   "url": 'https://www.synthtopia.com/content/2014/05/05/teenage-engineering-debuts-new-synth-at-moogfest-future-of-music-panel/',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Pocket Operators» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Pocket_Operators',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Teenage Engineering» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Teenage_Engineering',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Here’s how TE’s $59 Pocket Operator Rhythm sounds» — CDM, 2015',
+                   "url": 'https://cdm.link/2015/01/heres-tes-59-pocket-operator-rhythm-sounds-work/',
+                   "data": '2026-11-04'},
+                  {"titolo": '10 anni di Pocket Operator — Wallpaper*, 2025',
+                   "url": 'https://wallpaper.com/tech/teenage-engineering-10-years-pocket-operator-series',
+                   "data": '2026-11-04'},
+                  {"titolo": 'Pocket Operator, 10 anni — Teenage Engineering',
+                   "url": 'https://teenage.engineering/products/po/anniversary',
+                   "data": '2026-11-04'},
+                  {"titolo": 'I Pocket Operator — It\'s Nice That, 2015',
+                   "url": 'https://www.itsnicethat.com/articles/teenage-engineering-pocket-operators',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Shake It Off» sui Pocket Operator — Bonedo, 2016',
+                   "url": 'https://www.bonedo.de/?p=304642',
+                   "data": '2026-11-04'}],
+        "hashtags": ['#po12', '#teenageengineering', '#drummachine', '#kennybeats', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 079',
+                          'Il PO-12 è una drum machine senza scatola, tutta circuito'),
+                         ('16 SUONI · 16 EFFETTI',
+                          'Il PO-12 ha 16 suoni, 16 effetti e la sveglia. Va a 2 pile ministilo.'),
+                         ('MOOGFEST · 2014',
+                          'Al Moogfest il PO-12 doveva essere un regalo. La dogana lo blocca.'),
+                         ('NAMM · 2015',
+                          'Al NAMM il PO-12 esce davvero, a 59 dollari, col marchio Cheap Monday.'),
+                         ('10 ANNI DOPO',
+                          '10 anni dopo, fra PO-12 e fratelli, ne hanno venduti quasi un milione.')],
+        "reel_cta": "Mandalo all'amico che fa i beat sul telefono",
+        "reel_audio": {"file": 'assets/audio/po12/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'incidentalnoise',
+                       "licenza": 'CC0',
+                       "fonte": 'Freesound',
+                       "url": 'https://freesound.org/s/674345/',
+                       "cosa": 'un PO-12 che suona un suo giro di batteria a 80 bpm, 12 secondi che '
+                               'nel reel ricominciano da capo'},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 80
+    # Aelita (Radiofabbrica di Murom, URSS, anni '80). Rifornimento del
+    # 04/11/2026. Fonti lette il 04/11/2026.
+    #
+    # FATTI E FONTI (ognuno su almeno 2 fonti indipendenti)
+    # - radiofabbrica di Murom, URSS: Wikipedia EN; Sequencer.de (Murom);
+    #   descrizione della foto di Commons (Robertdemeester).
+    # - produzione dal 1980: Wikipedia EN; Matrixsynth/Encyclotronic. Il
+    #   dubbio di Sequencer.de («das Baujahr stimmt nicht») sta nel testo.
+    # - pannello quasi verticale che si chiude sulla tastiera per il
+    #   trasporto: Wikipedia EN; descrizione Commons («swiveling control
+    #   panel to protect the controls during transportation»); le 2 foto.
+    # - cursori di plastica colorata: Wikipedia EN; le foto. (Il massimo in
+    #   basso sta solo su Wikipedia: OMESSO.)
+    # - tasti a pressione come le vecchie radio: Sequencer.de («Tasten wie
+    #   bei alten Radios»); Wikipedia EN (push-buttons al posto dei
+    #   selettori).
+    # - scritte in cirillico: Wikipedia EN; Sequencer.de; le foto.
+    # - 44 tasti da fa a do, 3 ottave e mezza, estensione 7 ottave e mezza:
+    #   Wikipedia EN; Wikipedia RU; Sequencer.de (44 tasti).
+    # - «una specie di Minimoog russo»: Sequencer.de (opinione, attribuita).
+    # - 3 oscillatori con dente di sega, impulso e quadra, un quarto solo in
+    #   unisono: Wikipedia EN; Encyclotronic/Matrixsynth (3 VCO + 4°).
+    # - passa-basso con risonanza, 1 LFO, 2 inviluppi: Wikipedia EN;
+    #   Sequencer.de.
+    # - effetto «archi»: Wikipedia EN («Strings mode»); Wikipedia RU (effetto
+    #   strumento ad arco).
+    # - monofonico: Wikipedia EN; Sequencer.de («1 Stimme»). Wikipedia RU dice
+    #   «трёхголосный», a 3 voci: il disaccordo sta nel testo.
+    # - niente memorie, niente MIDI: Wikipedia EN; Sequencer.de.
+    # - Mando Diao, «Ælita», 2014, titolo preso dal synth: Wikipedia EN
+    #   «Ælita»; Svenska Yle 02/05/2014; Wikipedia RU.
+    # - 23/04/2014, primo posto in Svezia, sesto in Germania: Wikipedia
+    #   «Ælita»; swedishcharts.com; offiziellecharts.de.
+    # - Dixgård: «non si comporta mai due volte allo stesso modo»: Svenska
+    #   Yle. È una citazione, attribuita a chi l'ha raccolta.
+    # - Bad Sector, «Kosmodrom»: Wikipedia RU; recensione di Machine
+    #   Department (machine.radionoise.ru).
+    # SCARTATI: il mercatino di Stoccolma dove i Mando Diao l'avrebbero
+    # trovato (solo Svenska Yle, e la scheda lo dice), la revisione del 1986
+    # (solo Wikipedia EN), peso e misure (solo Wikipedia RU), Mick Gordon e
+    # Luis Dubuc (solo Equipboard), gli Slagsmålsklubben (solo la
+    # descrizione di una foto). Nessun brano dei Mando Diao è legato al
+    # synth da una fonte: niente «da ascoltare».
+    # AUDIO: Commons «Murom Aelita sounds (2).wav» di Frederic Scalliet, CC
+    # BY-SA 4.0, «recorded directly from its output», 31 s, intero. Le altre
+    # 4 dello stesso autore hanno silenzi lunghi o partono piano.
+    # Handle Instagram: nessuno verificato, tutti None.
+    {
+        "slug": "aelita",
+        "numero": 80,
+        "serie": 'I SINTETIZZATORI',
+        "strumento": 'Aelita',
+        "anno": '1980',
+        "luogo": 'Murom, URSS',
+        "costruttore": 'Radiofabbrica di Murom',
+        "specifiche": [('USCITA', '1980?'), ('TASTI', '44'), ('OSCILLATORI', '3 + 1'), ('MEMORIE', 'nessuna')],
+        "gancio": 'Un gruppo rock svedese ne trova uno e gli intitola il disco nuovo, con la Æ al '
+                  'posto di Ae',
+        "sottotitolo": 'Un synth sovietico a 3 oscillatori, costruito negli anni \'80 dalla '
+                       'radiofabbrica di Murom.',
+        "la_macchina": 'Il pannello sta quasi in piedi, come il leggio di un pianoforte, e quando '
+                       'lo chiudete sulla tastiera diventa un coperchio. Così si trasporta. I '
+                       'comandi sono cursori di plastica rossi, gialli e blu, e le forme d\'onda si '
+                       'scelgono con tasti a pressione come quelli delle vecchie radio: ne premete '
+                       'uno e salta su l\'altro. Le scritte sono tutte in cirillico. La tastiera ha '
+                       '44 tasti, da fa a do. Sequencer.de la chiama una specie di Minimoog russo. A '
+                       'me piace di più chiuso, quando sembra la valigetta di un rappresentante.',
+        "inventore_nome": 'Radiofabbrica di Murom',
+        "inventore": "Chi l'abbia progettato non lo dice nessuna delle fonti che ho trovato. So "
+                     "che esce dalla radiofabbrica di Murom, una città a est di Mosca, e che "
+                     'Wikipedia fa partire la produzione nel 1980. Sequencer.de scrive che '
+                     "quell'anno è sbagliato, senza dire quale sia quello giusto. Io lascio 1980, "
+                     'col punto di domanda. Le fonti non vanno d\'accordo nemmeno sulle voci: '
+                     'Wikipedia in russo lo dice a 3 voci, quella in inglese e Sequencer.de a una '
+                     'sola. Secondo me hanno ragione tutte e due. Le 3 voci sono i 3 oscillatori, '
+                     'e la nota che suonano è una.',
+        "come_funziona": 'Ha 3 oscillatori, ognuno col dente di sega, l\'impulso e la quadra. Un '
+                         'quarto oscillatore si accende solo in modalità unisono, che ingrossa il '
+                         'suono. Poi c\'è un filtro passa-basso con la risonanza, un LFO e 2 '
+                         'inviluppi. Suona una nota alla volta, ma se accordate gli oscillatori a '
+                         'intervalli diversi ogni tasto fa un accordo fisso. C\'è anche un effetto '
+                         '«archi», una specie di vibrato che va per conto suo. Memorie no, MIDI no. '
+                         'Se ne trovate uno partite dall\'unisono, con 4 oscillatori sulla stessa '
+                         'nota: chi lo recensisce lo chiama grasso.',
+        "richiami": [('FIG. 1', 'Il pannello che si chiude'),
+                     ('FIG. 2', 'Cursori colorati, scritte in cirillico'),
+                     ('FIG. 3', '44 tasti, da fa a do')],
+        "chi_lusata": [{"artista": 'Mando Diao',
+                        "nota": '«Ælita» (2014), il disco che prende il nome dal synth',
+                        "ig": None},
+                       {"artista": 'Bad Sector',
+                        "nota": "l'Aelita è fra le macchine dell'album «Kosmodrom»",
+                        "ig": None}],
+        "menzioni_extra": [],
+        "aneddoto": 'Nel 2014 i Mando Diao, un gruppo rock svedese, fanno un disco pieno di synth '
+                    'e batterie elettroniche e lo chiamano «Ælita», come la macchina. Dove '
+                    "l'abbiano trovata lo racconta un articolo solo, e allora non lo scrivo. A "
+                    'Svenska Yle Björn Dixgård dice che quel synth non si comporta mai due volte '
+                    'allo stesso modo. Il disco esce in Svezia il 23 aprile e va al primo posto '
+                    'della classifica. In Germania arriva sesto. Non so quanti di quelli che '
+                    "l'hanno comprato sapessero che il titolo era un sintetizzatore di Murom.",
+        "avvertenza": 'Il pannello si richiude sulla tastiera come il coperchio di un pianoforte. '
+                      'Prima di abbassarlo, togliete le dita e i cavi.',
+        "foto": {"file": 'assets/foto/aelita/principale.jpg',
+                 "autore": 'Robertdemeester',
+                 "licenza": 'CC BY-SA 4.0',
+                 "fonte": 'Wikimedia Commons',
+                 "didascalia": 'Il pannello aperto, quasi in piedi sopra la tastiera'},
+        "foto_extra": [{"file": 'assets/foto/aelita/chiuso.jpg',
+                        "autore": 'Robertdemeester',
+                        "licenza": 'CC BY-SA 4.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Chiuso: il pannello fa da coperchio ai tasti'},
+                       {"file": 'assets/foto/aelita/concerto.jpg',
+                        "autore": 'Andreas Dreyer Hysing',
+                        "licenza": 'CC BY-SA 2.0',
+                        "fonte": 'Wikimedia Commons',
+                        "didascalia": 'Sul palco a Trondheim, nel 2010'}],
+        "fonti": [{"titolo": '«Aelita (synthesizer)» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/Aelita_(synthesizer)',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Аэлита (синтезатор)» — Wikipedia (RU)',
+                   "url": 'https://ru.wikipedia.org/wiki/Аэлита_(синтезатор)',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Murom Aelita» — Sequencer.de',
+                   "url": 'https://www.sequencer.de/syns/murom/Aelita.html',
+                   "data": '2026-11-04'},
+                  {"titolo": '«AELITA Monophonic Synthesizer» — Encyclotronic (archivio)',
+                   "url": 'https://web.archive.org/web/20191025182012/https://encyclotronic.com/synthesizers/soviet-synthesizers/aelita-r1272/',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Aelita 3-VCO rare vintage Soviet analog» — Matrixsynth, 2011',
+                   "url": 'https://www.matrixsynth.com/2011/01/aelita-3-vco-rare-vintage-soviet-analog.html',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Ælita» — Wikipedia (EN)',
+                   "url": 'https://en.wikipedia.org/wiki/%C3%86lita',
+                   "data": '2026-11-04'},
+                  {"titolo": 'Mando Diao e l\'Aelita — Svenska Yle, 2014',
+                   "url": 'https://yle.fi/a/7-786659',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Ælita» — swedishcharts.com',
+                   "url": 'https://swedishcharts.com/showitem.asp?interpret=Mando+Diao&titel=%C3%86lita&cat=a',
+                   "data": '2026-11-04'},
+                  {"titolo": '«Ælita» — Offizielle Deutsche Charts',
+                   "url": 'https://www.offiziellecharts.de/album-details-242981',
+                   "data": '2026-11-04'},
+                  {"titolo": 'Bad Sector, «Kosmodrom» — Machine Department (archivio)',
+                   "url": 'https://web.archive.org/web/20131029193459/http://machine.radionoise.ru/reviews/bad_sector.html',
+                   "data": '2026-11-04'}],
+        "hashtags": ['#aelita', '#murom', '#sintetizzatore', '#mandodiao', '#storiadellamusica'],
+        "reel_battute": [('ELETTROFONI · N. 080',
+                          'Un synth sovietico dà il nome a un disco svedese'),
+                         ('MUROM · URSS',
+                          "L'Aelita esce dalla radiofabbrica di Murom, negli anni '80."),
+                         ('3 OSCILLATORI',
+                          "L'Aelita ha 3 oscillatori, 44 tasti e le scritte in cirillico."),
+                         ('MANDO DIAO · 2014',
+                          'Nel 2014 i Mando Diao, rock svedese, fanno un disco pieno di synth.'),
+                         ('«ÆLITA»',
+                          'Il disco dei Mando Diao si chiama «Ælita» e in Svezia va al numero 1.')],
+        "reel_cta": 'Mandalo a chi ascolta ancora i Mando Diao',
+        "reel_audio": {"file": 'assets/audio/aelita/registrazione.mp3',
+                       "inizio": 0,
+                       "autore": 'Frederic Scalliet',
+                       "licenza": 'CC BY-SA 4.0',
+                       "fonte": 'Wikimedia Commons',
+                       "url": 'https://commons.wikimedia.org/wiki/File:Murom_Aelita_sounds_(2).wav',
+                       "cosa": "un Aelita vero, registrato direttamente dalla sua uscita: note "
+                               'tenute con timbri diversi e il vibrato'},
+        "verificata": True
+    },
+    # ---------------------------------------------------------------- 81
     # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
     # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
     # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
@@ -10085,7 +10639,7 @@ SCHEDE = [
     # Commons o Freesound: il reel usa la sigla.
     {
         "slug": "autotune",
-        "numero": 78,
+        "numero": 81,
         "serie": "GLI EFFETTI",
         "strumento": "Antares Auto-Tune",
         "anno": "1997",
@@ -10171,7 +10725,7 @@ SCHEDE = [
         ],
         "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 078", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("ELETTROFONI · N. 081", "La voce robot di Cher nasce da chi cercava il petrolio"),
             ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
             ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
             ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
@@ -10182,7 +10736,7 @@ SCHEDE = [
     },
     {
         "slug": "lowrey",
-        "numero": 79,
+        "numero": 82,
         "serie": "GLI ORGANI",
         "strumento": "Lowrey DSO",
         "anno": "1965",
@@ -10275,7 +10829,7 @@ SCHEDE = [
         ],
         "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 079", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ELETTROFONI · N. 082", "Quel clavicembalo dei Beatles è un organo da salotto"),
             ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
             ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
             ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
@@ -10286,7 +10840,7 @@ SCHEDE = [
     },
     {
         "slug": "wasp",
-        "numero": 80,
+        "numero": 83,
         "serie": "I SINTETIZZATORI",
         "strumento": "EDP Wasp",
         "anno": "1978",
@@ -10378,7 +10932,7 @@ SCHEDE = [
         ],
         "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 080", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("ELETTROFONI · N. 083", "Casale dei Devo: col sudore delle dita suona da solo"),
             ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
             ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
@@ -10389,7 +10943,7 @@ SCHEDE = [
     },
     {
         "slug": "elkarhapsody",
-        "numero": 81,
+        "numero": 84,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -10479,7 +11033,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 081", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 084", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -10490,7 +11044,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 82,
+        "numero": 85,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -10576,7 +11130,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 082", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 085", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -10587,7 +11141,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 83,
+        "numero": 86,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -10676,7 +11230,7 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 083", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 086", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
@@ -10687,7 +11241,7 @@ SCHEDE = [
     },
     {
         "slug": "pianet",
-        "numero": 84,
+        "numero": 87,
         "serie": "GLI ELETTROMECCANICI",
         "strumento": "Hohner Pianet",
         "anno": "1962",
@@ -10772,7 +11326,7 @@ SCHEDE = [
         ],
         "hashtags": ["#pianet", "#hohner", "#pianoelettrico", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 084", "«She's Not There» degli Zombies: un Pianet da casa"),
+            ("ELETTROFONI · N. 087", "«She's Not There» degli Zombies: un Pianet da casa"),
             ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
             ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
@@ -10781,7 +11335,7 @@ SCHEDE = [
         "reel_cta": "Mandalo a chi canta «She's Not There» in macchina",
         "verificata": True,
     },
-    # ---------------------------------------------------------------- 84
+    # ---------------------------------------------------------------- 87
     # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
     # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
     # Scheda «ans» — sintetizzatore ANS di Evgenij Murzin (URSS, prototipo 1958).
@@ -10887,6 +11441,7 @@ SCHEDE = [
     # - DA ASCOLTARE: organo di Bach in apertura di «Solaris» (EEFB, Under the
     #   Radar); l'ANS nei passaggi astratti / onirici (Wikipedia «abstract,
     #   sci-fi effect», Under the Radar «more abstract passages», EEFB «oneiric scenes»).
+
 
 ]
 

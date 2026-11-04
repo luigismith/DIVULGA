@@ -17,16 +17,15 @@ da qui. ★ = dopo il 1988.
 | ★ Korg microKORG (2002) | https://freesound.org/s/489517/ | nthnh | CC0 | 1.290 s | campioni ambient, da tagliare |
 | Cry Baby wah (1966; qui GCB95) | https://commons.wikimedia.org/wiki/File:Wahwah_crybaby_GCB95_-_clean_sound_(various_techniques).ogg | Skimel | CC BY-SA 4.0 | 22 s | wah vero, ampli simulato |
 | Farfisa Syntorchestra (anni '70) | https://commons.wikimedia.org/wiki/File:Syntorchestra_Demo.wav | Jupiter80 | PD | 16 s | filone italiano |
-| ★ Pocket Operator PO-12 (2015) | https://freesound.org/s/674345/ | incidentalnoise | CC0 | 12 s | loop ritmico |
 | ★ Ensoniq VFX (1989) | https://freesound.org/s/449222/ | parabolix | CC0 | 87 s | pad a transwave; 3,8 s di silenzio in coda |
 | Siel Opera 6 (1983) | https://freesound.org/s/26985/ | Raggaman | CC BY 3.0 | 8 s | filone italiano; corto, va in loop |
 
-Riserve: Aelita (Commons, «Murom_Aelita_sounds», CC BY-SA 4.0), Moog
-Grandmother (freesound 472235, CC0), Juno-60 (Commons «JUNO-60_PWM_Strings»,
-CC0), Roland System-100 (freesound 260239, CC0), Access Virus TI
-(freesound 115059, CC BY 4.0), Yamaha CS1x (Commons, CC BY-SA 3.0), Korg
-Minilogue (freesound 411226, CC0), EKO «Micky» (Commons, CC BY-SA 4.0,
-macchina da identificare).
+Riserve: Moog Grandmother (freesound 472235, CC0, 95 s, sequenza vera con
+la molla: buona, ma nessun disco a due fonti), Juno-60 (Commons
+«JUNO-60_PWM_Strings», CC0), Access Virus TI (freesound 115059, CC BY 4.0:
+è UNA nota, G#5, di un multicampione), Yamaha CS1x (Commons, CC BY-SA 3.0),
+Korg Minilogue (freesound 411226, CC0: 4 do in fila, nota di prova), EKO
+«Micky» (Commons, CC BY-SA 4.0: nessuna fonte dice che macchina sia).
 
 Scartate: Waldorf Q (demo di fabbrica), TX81Z (nessuna descrizione),
 Elektron Machinedrum / Electribe / Kaossilator (campioni troppo corti),
@@ -77,3 +76,15 @@ libera vera; la registrazione è dello stesso utente e va ascoltata prima.
 - Hammond Model A (1935): https://commons.wikimedia.org/wiki/File:Hammond_Organ_-_Model_A_Medley.ogg
   (CC BY 3.0, OTRS) è un medley: prima di usarlo va capito quali brani
   sono, per escludere melodie protette.
+
+Entrate in catalogo il 04/11/2026: System-100 (NON la Freesound 260239 di
+schafferdavid, che sta tutta sotto i 200 Hz e dal telefono è muta: si usa
+la 587908 di ZzoundPi, CC0, 19 minuti di prova di un Model 101 con
+riverbero ed eco, estratto 10:34-11:19), Aelita (Commons «Murom Aelita
+sounds (2).wav», intera), PO-12 (Freesound 674345, intera, va in loop).
+Scartate il 04/11/2026: DigiTech Whammy, Freesound 343755 (Brokenphono,
+CC0): chitarra con bottleneck, riverbero ed eco, a -28 LUFS; i glissati del
+Whammy non si distinguono da quelli del bottleneck, quindi non dimostra la
+macchina. Roland CR-78: le registrazioni ci sono (Cr78.ogg, PD; i preset di
+Wexstun, CC BY-SA 3.0) ma su Commons non c'è nessuna FOTO di un CR-78.
+Tenori-on: foto ottime (anche Little Boots), nessuna registrazione libera.
