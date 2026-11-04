@@ -221,6 +221,18 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   massimo 460), Dinamo largo 440 con la base a y 1600 che sfiora la foto
   solo con l'antenna, targhetta alla sua destra sotto la foto. Il formato
   2 resta com'era.
+  **Prova prolungata il 04/11/2026** (il proprietario: «decidi tu qual è
+  la strada migliore»). I numeri del 03/11, schede nuove dal 21/10:
+  6 parlati contro 7 scritti. Copertura mediana 850 contro 1.198, visione
+  10,3 s contro 9,7 (ma il parlato dura 36 s e lo scritto 22), abbandono
+  47% contro 44%, condivisioni ogni 1.000 account 6,7 contro 1,1, che
+  però diventano 2,4 senza il Volca Keys (31 condivisioni, 23 s di
+  visione: il migliore del periodo). Troppo poco per adottarlo e troppo
+  per buttarlo. Si prosegue due settimane con lo stesso schema (`reel3`
+  contro `reel2l`): `reel_voce` su crybaby e mt40, poi su una scheda
+  nuova sì e una no fra quelle che arrivano col suono vero (il parlato
+  la vuole: `usa_parlato` richiede `reel_audio`). Si decide di nuovo
+  verso il 18/11 con almeno 10 parlati.
 - **Il reel serale ha due inneschi** (21/10/2026): la Routine delle
   19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
   e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno

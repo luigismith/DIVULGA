@@ -280,6 +280,14 @@ FONEMI = {
     "Orinoco Flow": "ɔɹɪnˈoʊkoʊ flˈoʊ",
     "Vince Clarke": "vˈɪns klˈɑːɹk",
     "Stevie Wonder": "stˈiːvi wˈʌndɚ",
+    # Cry Baby e MT-40 (04/11/2026), provate col riascolto. In fonemi
+    # peggioravano e restano fuori: King Jammy («Kim Jaemi») e Under Mi
+    # Sleng Teng («quando mi slang tang»).
+    "Jimi Hendrix": "dʒˈɪmi hˈɛndɹɪks",
+    "Clyde McCoy": "klˈaɪd məkˈɔɪ",
+    "Cry Baby": "kɹˈaɪ bˈeɪbi",
+    "Voodoo Child": "vˈuːduː tʃˈaɪld",
+    "Noel Davey": "nˈoʊəl dˈeɪvi",
 }
 _RE_FONEMI = re.compile(r"\b(" + "|".join(re.escape(k) for k in sorted(FONEMI, key=len, reverse=True)) + r")\b")
 

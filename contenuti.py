@@ -9373,7 +9373,29 @@ SCHEDE = [
                           'McCoy.'),
                          ("PESCARA · FINE ANNI '60",
                           'In America diventa il Cry Baby, e lo costruisce la JEN di Pescara.')],
-        "reel_cta": 'Mandalo a chi in sala prove attacca «Voodoo Child»',
+        # CTA girata il 04/11/2026: «a chi in sala prove attacca» la voce
+        # lo dice «chinsà la prova» (Whisper, due prove); così passa.
+        "reel_cta": 'Mandalo a chi attacca «Voodoo Child» in sala prove',
+        # Reel parlato (prova prolungata il 04/11/2026). Fatti e stile verificati da due
+        # verificatori; «In America» tolto (nessun campo lo sostiene), la JEN
+        # resta «Pescara» (detta «ien» non si capisce). Nomi in FONEMI: Jimi
+        # Hendrix, Clyde McCoy, Cry Baby, Voodoo Child.
+        "reel_voce": [
+            {"ruolo": 'battuta1', "detta": "I pedali uà di Jimi Hendrix escono da una fabbrica di Pescara.",
+             "scritta": "I pedali wah di Jimi Hendrix escono da una fabbrica di Pescara."},
+            {"ruolo": 'battuta2', "detta": "Nel millenovecentosessantasei Brad Plunkett deve risparmiare su un amplificatore Vox.",
+             "scritta": "Nel 1966 Brad Plunkett deve risparmiare su un amplificatore Vox."},
+            {"ruolo": 'battuta3', "detta": "Il suo circuito finisce nella scatola di un pedale del volume Vox.",
+             "scritta": "Il suo circuito finisce nella scatola di un pedale del volume Vox."},
+            {"ruolo": 'battuta4', "detta": "Il presidente Joe Benaron lo vuole per i trombettisti, e lo chiama Clyde McCoy.",
+             "scritta": "Il presidente Joe Benaron lo vuole per i trombettisti, e lo chiama Clyde McCoy."},
+            {"ruolo": 'battuta5', "detta": "Diventa il Cry Baby, e a fine anni sessanta lo fanno a Pescara.",
+             "scritta": "Diventa il Cry Baby, e a fine anni '60 lo fanno a Pescara."},
+            {"ruolo": 'cta', "detta": "Mandalo a chi attacca Voodoo Child in sala prove.",
+             "scritta": "Mandalo a chi attacca Voodoo Child in sala prove."},
+            {"ruolo": 'chiusura', "detta": "Le slide e le fonti sul profilo Elettrofoni.",
+             "scritta": "Le slide e le fonti sul profilo Elettrofoni."},
+        ],
         "reel_audio": {"file": 'assets/audio/crybaby/registrazione.mp3',
                        "inizio": 0,
                        "autore": 'Skimel',
@@ -10017,6 +10039,27 @@ SCHEDE = [
                          ('1985 · «SLENG TENG»',
                           'Esce «Under Mi Sleng Teng». Sopra quel giro cantano in centinaia.')],
         "reel_cta": 'Mandalo a chi voleva un synth e ha avuto una Casio',
+        # Reel parlato (prova prolungata il 04/11/2026). Fatti e stile verificati da due
+        # verificatori; «rock» nominato prima di usarlo, il titolo detto
+        # «il disco» perché all'orecchio le virgolette non si sentono. Noel
+        # Davey in FONEMI; King Jammy e Sleng Teng restano all'italiana (in
+        # fonemi Whisper li capiva peggio).
+        "reel_voce": [
+            {"ruolo": 'battuta1', "detta": "Il ritmo di una Casio da centocinquanta dollari cambia il reggae.",
+             "scritta": "Il ritmo di una Casio da 150 dollari cambia il reggae."},
+            {"ruolo": 'battuta2', "detta": "Hiroko Okuda, appena assunta, scrive sei ritmi. Uno si chiama rock.",
+             "scritta": "Hiroko Okuda, appena assunta, scrive 6 ritmi. Uno si chiama rock."},
+            {"ruolo": 'battuta3', "detta": "A Kingston Noel Davey e Wayne Smith lo trovano per caso, e lo perdono.",
+             "scritta": "A Kingston Noel Davey e Wayne Smith lo trovano per caso, e lo perdono."},
+            {"ruolo": 'battuta4', "detta": "King Jammy lo trova troppo veloce, lo rallenta e aggiunge il piano.",
+             "scritta": "King Jammy lo trova troppo veloce, lo rallenta e aggiunge il piano."},
+            {"ruolo": 'battuta5', "detta": "Esce il disco Under Mi Sleng Teng. Sopra quel giro cantano in centinaia.",
+             "scritta": "Esce il disco Under Mi Sleng Teng. Sopra quel giro cantano in centinaia."},
+            {"ruolo": 'cta', "detta": "Mandalo a chi voleva un synth e ha avuto una Casio.",
+             "scritta": "Mandalo a chi voleva un synth e ha avuto una Casio."},
+            {"ruolo": 'chiusura', "detta": "Le slide e le fonti sul profilo Elettrofoni.",
+             "scritta": "Le slide e le fonti sul profilo Elettrofoni."},
+        ],
         "reel_audio": {"file": 'assets/audio/mt40/registrazione.mp3',
                        "inizio": 0,
                        "autore": 'Maximilian Schönherr',
