@@ -28,6 +28,10 @@
    "file": "tavole/crumards2/reel2.jpg",
    "firma": "17e51c9679c0cfe4-1"
   },
+  "crybaby": {
+   "file": "tavole/crybaby/reel2.jpg",
+   "firma": "1cc734dee02f1f53-1"
+  },
   "cz101": {
    "file": "tavole/cz101/reel2.jpg",
    "firma": "a88e88866a82cd23-1"
@@ -377,6 +381,26 @@
     ]
    },
    "firma": "57f05a4266ec8742-320-640-1280-1"
+  },
+  "crybaby": {
+   "1280": "foto/crybaby-1280.jpg",
+   "320": "foto/crybaby-320.jpg",
+   "640": "foto/crybaby-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     890
+    ],
+    "320": [
+     320,
+     223
+    ],
+    "640": [
+     640,
+     445
+    ]
+   },
+   "firma": "1ab9d1df703ed0e3-320-640-1280-1"
   },
   "cs80": {
    "1280": "foto/cs80-1280.jpg",
@@ -1714,6 +1738,11 @@
    "file": "suoni/arpodyssey.mp3",
    "firma": "cffe206e00442593-0-45-1",
    "secondi": 40.0
+  },
+  "crybaby": {
+   "file": "suoni/crybaby.mp3",
+   "firma": "a1aa73dbbaf7e1ab-0-45-1",
+   "secondi": 22.0
   },
   "cz101": {
    "file": "suoni/cz101.mp3",
