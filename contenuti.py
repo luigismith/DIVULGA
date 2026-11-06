@@ -10625,7 +10625,478 @@ SCHEDE = [
                                'tenute con timbri diversi e il vibrato'},
         "verificata": True
     },
-    # ---------------------------------------------------------------- 81
+    {
+        "slug": "vfx",
+        "numero": 81,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Ensoniq VFX",
+        "anno": "1989",
+        "luogo": "Stati Uniti",
+        "costruttore": "Ensoniq",
+        "specifiche": [
+            ("USCITA", "1989"),
+            ("VOCI", "21"),
+            ("TRANSWAVE", "17"),
+            ("PREZZO", "1.350 £"),
+        ],
+        "gancio": "Esce nell'anno delle workstation, e il sequencer non ce l'ha. In cambio le sue forme d'onda si muovono",
+        "sottotitolo": "Un synth digitale americano da 21 voci, con 61 tasti che sentono la pressione di ogni dito per conto suo.",
+        "la_macchina": (
+            "A guardarlo è una tastiera nera col nome VFX stampato a sinistra e un "
+            "display fluorescente in mezzo al pannello. Sopra le ruote del pitch e "
+            "della modulazione ci sono 2 tasti, i Patch Select, che accendono e "
+            "spengono pezzi del suono mentre suonate. Le uscite sono solo 2. Il "
+            "sequencer non c'è, e il Korg M1 di quegli anni invece ce l'ha. In "
+            "Inghilterra, nel 1989, il VFX costa 1.350 sterline, meno dell'M1. A me "
+            "piace proprio così, un synth che fa il synth e basta."
+        ),
+        "inventore_nome": "Ensoniq, cioè 3 ex Commodore",
+        "inventore": (
+            "In Pennsylvania 3 ingegneri usciti dalla Commodore fondano Ensoniq. "
+            "Uno è Bob Yannes, che aveva disegnato il SID, il chip che dà la voce "
+            "al Commodore 64. Sulla data le fonti non concordano. Craig Anderton, "
+            "su Sound On Sound, scrive che Yannes dal 1982 lavorava già nella "
+            "società dei chip da cui nasce Ensoniq. Wikipedia la fa partire nella "
+            "primavera del 1983, col nome Peripheral Visions. Il primo strumento è "
+            "il campionatore Mirage, presentato nel febbraio 1985 a meno di 1.700 "
+            "dollari. Nel 1986 arriva l'ESQ-1, nel 1989 il VFX. A fine 1997 "
+            "Ensoniq la compra Creative, di Singapore, per 77 milioni di dollari."
+        ),
+        "come_funziona": (
+            "Un suono, che Ensoniq chiama Program, mette insieme fino a 6 Voci, e "
+            "ogni Voce suona una delle 109 forme d'onda in memoria. Ci sono "
+            "strumenti campionati, ma il bello sono le 17 Transwave. Ognuna è una "
+            "fila di forme d'onda parenti, con le armoniche che cambiano poco alla "
+            "volta, e la nota ci scorre sopra seguendo una delle 15 sorgenti di "
+            "modulazione. È l'idea della PPG Wave, rifatta a modo loro. I 2 filtri "
+            "digitali di ogni Voce non hanno la risonanza, e quel fischio lo "
+            "trovate già dentro alcune Transwave. Provate a muovere lo slider dei "
+            "dati mentre suonate, cambia il timbro."
+        ),
+        "richiami": [
+            ("FIG. 1", "17 Transwave"),
+            ("FIG. 2", "2 tasti Patch Select"),
+            ("FIG. 3", "21 voci, fino a 6 per suono"),
+        ],
+        "chi_lusata": [
+            {"artista": "Genesis", "nota": "Tony Banks lo ha in studio nel 1991, mentre il gruppo scrive «We Can't Dance»", "ig": "genesis_band"},
+            {"artista": "Duran Duran", "nota": "Nick Rhodes, nei primi anni '90", "ig": "duranduran"},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Ordinary World", "artista": "Duran Duran", "anno": "1992",
+                         "cosa": "Il coproduttore John Jones dice che le tastiere «alla Beatles» del pezzo sono del VFX. Ascoltatela lasciando stare la voce, e cercate quelle."},
+        "aneddoto": (
+            "Dopo «Liberty» i Duran Duran lavorano quasi sempre a Privacy, lo "
+            "studio in casa del chitarrista Warren Cuccurullo, con John Jones che "
+            "coproduce. «Ordinary World» nasce lì, un giorno in cui suonano tutti "
+            "insieme nella stanza, in cuffia. Nick Rhodes tiene gli accordi e Simon "
+            "Le Bon ci trova sopra la melodia. Nel 1993 Jones racconta a una "
+            "rivista che alcune tastiere del pezzo vengono da un VFX. Per il mix "
+            "chiamano anche David Richards, il produttore dei Queen, che lo fa nel "
+            "suo studio di Montreux. Nei negozi va il suo."
+        ),
+        "avvertenza": "Cambiando suono, se cambia il tipo di effetto l'uscita tace un attimo. Il VFX sta caricando l'effetto nuovo, non è un guasto.",
+        "foto": {
+            "file": "assets/foto/vfx/principale.jpg",
+            "ritaglio": True,
+            "autore": "nourogg (ritaglio di Clusternote)",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un VFX nel 2009. A sinistra, sopra le ruote, i 2 tasti Patch Select",
+        },
+        "fonti": [
+            {"titolo": "«Ensoniq VFX» — Sound On Sound, luglio 1989",
+             "url": "https://www.muzines.co.uk/articles/ensoniq-vfx/5605", "data": "2026-10-28"},
+            {"titolo": "«Ensoniq VFX» — Music Technology, luglio 1989",
+             "url": "https://www.muzines.co.uk/articles/ensoniq-vfx/109", "data": "2026-10-28"},
+            {"titolo": "«Ensoniq VFX Synthesizer» — Sound On Sound, giugno 1989",
+             "url": "https://www.muzines.co.uk/articles/ensoniq-vfx-synthesizer/4573", "data": "2026-10-28"},
+            {"titolo": "«Ensoniq VFX» — Wikipedia",
+             "url": "https://en.wikipedia.org/wiki/Ensoniq_VFX", "data": "2026-10-28"},
+            {"titolo": "«Ensoniq VFX» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/ensoniq/vfx", "data": "2026-10-28"},
+            {"titolo": "«Blast from the past: Ensoniq VFX series» — MusicRadar, 2019",
+             "url": "https://www.musicradar.com/news/blast-from-the-past-ensoniq-vfx-series", "data": "2026-10-28"},
+            {"titolo": "«Sampling Ensoniq» — Sound On Sound, febbraio 1988",
+             "url": "https://www.muzines.co.uk/articles/sampling-ensoniq/3473", "data": "2026-10-28"},
+            {"titolo": "«Ensoniq» — Wikipedia",
+             "url": "https://en.wikipedia.org/wiki/Ensoniq", "data": "2026-10-28"},
+            {"titolo": "Intervista a Bob Yannes — Andreas Varga, 1996",
+             "url": "https://landley.net/history/mirror/commodore/yannes.html", "data": "2026-10-28"},
+            {"titolo": "«Creative to acquire Ensoniq» — UPI, 1997",
+             "url": "https://www.upi.com/Archives/1997/12/10/Creative-to-acquire-Ensoniq/4877881730000/", "data": "2026-10-28"},
+            {"titolo": "«Still Life», Tony Banks — Sound On Sound, luglio 1991",
+             "url": "https://www.muzines.co.uk/articles/still-life/7462", "data": "2026-10-28"},
+            {"titolo": "«We Can't Dance» — Wikipedia",
+             "url": "https://en.wikipedia.org/wiki/We_Can%27t_Dance", "data": "2026-10-28"},
+            {"titolo": "«John Jones & Duran Duran» — Recording Musician, aprile 1993",
+             "url": "https://www.muzines.co.uk/articles/john-jones-and-duran-duran/3088", "data": "2026-10-28"},
+            {"titolo": "«Reflections on The Wedding Album» — duranduran.com, 2013",
+             "url": "https://duranduran.com/2013/reflections-on-duran-durans-the-wedding-album/", "data": "2026-10-28"},
+            {"titolo": "«Ordinary World (song)» — Wikipedia",
+             "url": "https://en.wikipedia.org/wiki/Ordinary_World_(song)", "data": "2026-10-28"},
+        ],
+        "hashtags": ["#ensoniqvfx", "#ensoniq", "#sintetizzatore", "#duranduran", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 081", "L'Ensoniq VFX ha 17 forme d'onda fatte per muoversi"),
+            ("TRANSWAVE", "Ogni Transwave è una fila di forme d'onda, e la nota ci scorre sopra."),
+            ("BOB YANNES · SID", "Bob Yannes disegna il chip del suono del Commodore 64, poi fonda Ensoniq."),
+            ("ENSONIQ · 1989", "Nel 1989 il VFX esce senza sequencer. Il Korg M1 ce l'ha."),
+            ("1.350 £", "In Inghilterra il VFX costa 1.350 sterline, meno del Korg M1."),
+        ],
+        "reel_cta": "Mandalo all'amico che ha ancora il Commodore 64",
+        # Reel parlato (formato 3): le frasi di Dinamo, una per battuta.
+        "reel_voce": [
+            {"ruolo": "battuta1",
+             "detta": "L'Ensoniq vu effe ics ha diciassette forme d'onda fatte per muoversi.",
+             "scritta": "L'Ensoniq VFX ha 17 forme d'onda fatte per muoversi."},
+            {"ruolo": "battuta2",
+             "detta": "Ogni Transwave è una fila di forme d'onda, e la nota ci scorre sopra.",
+             "scritta": "Ogni Transwave è una fila di forme d'onda, e la nota ci scorre sopra."},
+            {"ruolo": "battuta3",
+             "detta": "Bob Yannes disegna il chip del suono del Commodore sessantaquattro, poi fonda Ensoniq.",
+             "scritta": "Bob Yannes disegna il chip del suono del Commodore 64, poi fonda Ensoniq."},
+            {"ruolo": "battuta4",
+             "detta": "Nel millenovecentottantanove il vu effe ics esce senza sequencer. Il Korg emme uno ce l'ha.",
+             "scritta": "Nel 1989 il VFX esce senza sequencer. Il Korg M1 ce l'ha."},
+            {"ruolo": "battuta5",
+             "detta": "In Inghilterra costa milletrecentocinquanta sterline, meno del Korg emme uno.",
+             "scritta": "In Inghilterra costa 1.350 sterline, meno del Korg M1."},
+            {"ruolo": "cta",
+             "detta": "Mandalo all'amico che ha ancora il Commodore sessantaquattro.",
+             "scritta": "Mandalo all'amico che ha ancora il Commodore 64."},
+            {"ruolo": "chiusura",
+             "detta": "Le slide e le fonti sul profilo Elettrofoni.",
+             "scritta": "Le slide e le fonti sul profilo Elettrofoni."},
+        ],
+        "reel_audio": {
+            # inizio = secondi nel file intero (1:26,6). Vedi REGISTRAZIONE sopra:
+            # che sia un VFX vero lo dice il titolo, non la descrizione.
+            "file": "assets/audio/vfx/registrazione.mp3", "inizio": 0,
+            "autore": "parabolix", "licenza": "CC0",
+            "fonte": "Freesound",
+            "url": "https://freesound.org/s/449222/",
+            "cosa": "un pad su una Transwave, che chi l'ha caricato presenta come un Ensoniq VFX: il timbro cambia perché la lettura scorre fra le forme d'onda",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- Siel Opera 6
+    # Scheda scritta il 28/10/2026 (rifornimento). Filone italiano: Siel.
+    #
+    # !!! CORREZIONE AL BRIEF: la Siel NON è di Ancona. Sta ad Acquaviva Picena,
+    #   provincia di Ascoli Piceno: Wikipedia IT («fondata nel 1976 ad Acquaviva
+    #   Picena (AP) da Carlo Lucarelli») e l'indirizzo stampato su MCmicrocomputer
+    #   n. 48, gennaio 1986 («Siel. Zona Industriale 63030 Acquaviva Picena»). Ad
+    #   Ancona (Castelfidardo, Camerano) c'era la Farfisa, da cui veniva
+    #   Lucarelli: è lì che nasce l'equivoco (anche la NAMM scrive «Farfisa
+    #   Organs in the Ancona area»). In scheda: «in provincia di Ascoli».
+    #
+    # !!! «CHI L'HA USATA» È VUOTA, e manca «da_ascoltare». Nessun artista e
+    #   nessun disco con l'Opera 6 regge due fonti. Cercato: Equipboard (Ralf
+    #   Hildenbeutel, da un'intervista di Attack Magazine che non ho trovato;
+    #   Thomas Sohet, solo perché si vede in un video), Synthpedia (Jarre,
+    #   Kraftwerk, Tangerine Dream: la stessa pagina dice che l'Opera 6 è un
+    #   monofonico di fine anni '70, quindi inattendibile), Discogs (niente),
+    #   ricerche in italiano su italo disco e tastieristi (solo annunci di
+    #   vendita). La tavola 5 così ha la lista vuota e prende la foto nello
+    #   spazio che avanza (genera_tavole.slide_artisti): chi integra la guardi e
+    #   decida se la scheda può uscire così. Di conseguenza anche il quarto
+    #   hashtag non è un artista: ho messo #sequentialcircuits, il nome più noto
+    #   che sta nella scheda (come #paoloketoff sul Synket).
+    #
+    # !!! REGISTRAZIONE: non l'ho potuta ASCOLTARE. Dal container freesound.org e
+    #   cdn.freesound.org rispondono 403 (blocco del proxy, non di Freesound).
+    #   Pagina riaperta il 28/10/2026 con WebFetch:
+    #   https://freesound.org/people/Raggaman/sounds/26985/ «Siel Bass.wav»,
+    #   descrizione «Rhythm Bass from Opera Siel 6», Raggaman, 10/12/2006,
+    #   CC BY 3.0, WAV 44,1 kHz 16 bit stereo, 7,563 s. Sta nel pacchetto «MS 2000
+    #   and Opera Siel Loops - 127 bpm» (pack 1662) insieme a 3 loop di Korg MS2000.
+    #   I tag («korg», «ms», «c64», «trancegate») sono copiati dai loop MS2000
+    #   dello stesso giorno: NON dicono che il suono sia un MS2000, ma «gate» e
+    #   «trancegate» fanno sospettare un effetto di gate aggiunto. Che sia la
+    #   macchina vera lo dice solo la descrizione dell'autore; nessun indizio di
+    #   emulazione (nel 2006 di Opera 6 in software non ne conosco). Melodia
+    #   protetta: improbabile in un giro di basso di 8 s, ma va sentito.
+    #   Chi integra: ascoltarla, scrivere «cosa» su quello che si sente, e
+    #   controllare se c'è un gate ritmico (in quel caso dirlo in «cosa»).
+    #   URL dell'anteprima: ricostruito dallo schema dell'anteprima «lq» letta
+    #   nella pagina embed (https://cdn.freesound.org/previews/26/26985_146516-lq.mp3);
+    #   la «-hq» segue lo schema standard di Freesound ma non l'ho potuta aprire.
+    #   L'«-hq» è mp3 128 kbps: per il reel basta; il WAV vuole il login.
+    #
+    # ALTERNATIVE PIÙ LUNGHE (stesso autore, stessa licenza CC BY 3.0, stessa
+    #   macchina): il pacchetto «Siel Opera 6 MKII (analogue Synth, 1982, Italy)
+    #   Sounds for software sampler» (pack 1572, 12/11/2006), 6 file mono: una
+    #   NOTA SOLA tenuta per file, un do per ottava («c 1.wav» ... «c 6.wav»),
+    #   descrizione «Soundsample from the Siel Opera 6 ... used for software
+    #   samplers like halion, giga etc. Sounds like the 8bit-tunes from C64».
+    #   Durate: c1 11,2 s (25493), c2 11,2 (25494), c3 11,5 (25495), c4 12,0
+    #   (25496), c5 14,5 (25497), c6 11,3 (25498). Il più lungo è «c 5.wav»,
+    #   https://freesound.org/people/Raggaman/sounds/25497/ (anteprima:
+    #   https://cdn.freesound.org/previews/25/25497_146516-hq.mp3). Più lungo ma
+    #   è una nota ferma: per un reel secondo me il giro di basso di 8 s in loop
+    #   è meglio; i sei do messi in fila (CC BY lo consente, dichiarandolo)
+    #   farebbero 72 s di «scala», utile al sito più che al reel.
+    #   Expander 80 / EK 600: nessuna registrazione libera trovata, né su
+    #   Freesound («siel» dà 11 risultati, tutti Raggaman tranne un lavoro di
+    #   studenti senza Siel) né su Commons (nessun file audio Siel).
+    #   Nota: l'autore scrive «1982» nel nome del pacchetto; nessuna fonte lo
+    #   conferma (vedi l'anno sotto).
+    #
+    # FOTO: su Commons c'è UNA sola foto dell'Opera 6 (File:Siel_Opera_6.jpg,
+    #   zergonion su Flickr, CC BY-SA 2.0, 1600x1200, 20/05/2011). Cercato
+    #   «Siel», «Opera 6», «DK600», «Kiwi», «Expander», categoria «Societa
+    #   Industrie Elettroniche (SIEL)»: nessun pannello, interno o retro. Niente
+    #   foto_extra, quindi le bande useranno i RITAGLI della principale. Nella
+    #   foto si leggono D.C.O., MIDI IN/OUT, TAPE, DYNAMIC A.D.S.R. e i 10
+    #   tastini rotondi con PROGRAM ENTER accanto al nome: è una delle versioni
+    #   coi DCO. La didascalia parla del pannello e dei tastini: chi integra
+    #   controlli che entrino nel ritaglio della banda.
+    #
+    # NOMI STRANIERI NELLA «DETTA» DEL REEL PARLATO: ARP, Sequential Circuits,
+    #   Roland, Roland Europe. «midi» è scritto minuscolo apposta.
+    #
+    # FONTI PER FATTO (tutte aperte il 2026-10-28)
+    # - anno: 1983 per E&MM ottobre 1983 (recensione), Sonicstate, Vintage Synth
+    #   Explorer (1983-1985), SMEM (1983-1985), Gearnews. 1984 per Wikipedia EN,
+    #   sequencer.de e la descrizione della foto su Commons. Scritto in scheda che
+    #   non concordano; la recensione dell'ottobre 1983 basta a dire 1983.
+    # - 6 voci, 2 oscillatori per voce, dente di sega o impulso, 16'/8'/4': E&MM
+    #   1983; E&MM dic. 1984 (DK600, «almost identical»); One Two Testing mag.
+    #   1984 («12 DCOs»); VSE; sequencer.de.
+    # - filtro passa-basso 24 dB che autooscilla: E&MM 1983 (la risonanza lo
+    #   porta in oscillazione sinusoidale); One Two Testing; sequencer.de;
+    #   Sonicstate («self-oscillating»).
+    # - un ADSR per voce: E&MM 1983; One Two Testing («six ADSR»).
+    # - Dynamic ADSR, velocity sul livello dell'inviluppo o sull'attacco, verso
+    #   VCF, VCA o tutti e due: E&MM 1983; Sonicstate («the keyboard can control
+    #   the VCA, VCF or both»). «DYNAMIC A.D.S.R.» si legge sul pannello.
+    # - sensibilità al tocco non regolabile sull'Opera 6: One Two Testing («can't
+    #   be adjusted»); E&MM dic. 1984 (sul DK600 è programmabile «for the first
+    #   time»). È l'AVVERTENZA.
+    # - 3 LFO sul pannello ma 2 con le stesse manopole: E&MM 1983; E&MM 1984.
+    # - chip SSM (2031, 2024, 2044, 2056): sequencer.de; soundprogramming.net.
+    # - 3 versioni, prima VCO e poi DCO: SMEM (v3 coi DCO «rather than the VCOs
+    #   of earlier models»); VSE (originale a VCO, poi DCO per l'accordatura).
+    #   E&MM 1984 lo conferma dal lato del DK600. DUBBIO: VSE dice che il MIDI
+    #   arriva solo con l'ultima versione, ma la recensione E&MM dell'ottobre 1983
+    #   ha già MIDI in e out sul retro, e One Two Testing (maggio 1984) in, out e
+    #   thru. Per questo in scheda c'è «prese MIDI nel 1983» e non «primo».
+    # - 95 programmi: One Two Testing; VSE; SMEM; soundprogramming. E&MM 1983
+    #   scrive 100: minoranza, non citata.
+    # - 10 tastini, 2 cifre più ENTER, display a 2 cifre: One Two Testing; E&MM
+    #   1983 (tastierino, 2 display a 7 segmenti, Enter); E&MM 1984; si vedono
+    #   nella foto.
+    # - 1.299 sterline: E&MM 1983 (£1,299 IVA inclusa); One Two Testing 1984.
+    # - DK600 nel 1984 a 999 sterline, stesso suono, pulsanti nuovi: E&MM dic.
+    #   1984 (Twigg); Electronic Soundmaker ott. 1984 («revised version of the
+    #   Opera 6, with new casing and selector switches», £999).
+    # - pannello azzurro pieno sull'Opera, solo bordi azzurri sul DK600: E&MM
+    #   1984 e la foto.
+    # - Siel fondata nel 1976 da Carlo Lucarelli, progettista alla Farfisa fino
+    #   al 1976: Wikipedia IT; NAMM Oral History (Lucarelli). Ingegnere
+    #   elettronico: NAMM (laurea 1963); Wikipedia IT («progettista elettronico»).
+    #   Omonimo dello scrittore: lo scrittore è nato a Parma nel 1960, questo
+    #   Lucarelli è laureato nel 1963; nessuna fonte li confonde, la frase serve a
+    #   chi legge il nome.
+    # - Acquaviva Picena (AP): Wikipedia IT; MCmicrocomputer 1986 (indirizzo).
+    # - Orchestra 1979 venduta da ARP come Quartet: Wikipedia EN «Siel» e «Siel
+    #   Orchestra»; Gearnews.
+    # - Orchestra 2 venduta da Sequential Circuits come Prelude: Wikipedia EN
+    #   «Siel»; Gearnews; Matrixsynth (annunci del Prelude).
+    # - Siel collabora con Sequential nel 1983: E&MM 1983 («recent co-operation
+    #   with Sequential Circuits»); One Two Testing 1984 (Sequential consulente
+    #   nella progettazione del MIDI). Il legame fra le due cose è un'opinione e
+    #   in scheda è scritto come tale.
+    # - Sequential = la casa del Prophet-5: Wikipedia EN «Sequential (company)»;
+    #   scheda prophet5 già in contenuti.py.
+    # - Kiwi: SMEM e sequencer.de dicono che il Kiwi è l'Opera 6 v3 / DK600 con
+    #   altro nome. Non messo in scheda (non aggiunge niente al racconto).
+    # - Expander 1984, l'Opera senza tastiera, collegato via MIDI: One Two
+    #   Testing; Wikipedia EN; Electronic Soundmaker 1984. Non messo in scheda.
+    # - 1987, Siel entra in Roland e nasce Roland Europe: Wikipedia IT («joint
+    #   venture con la Roland Corporation di Osaka, diventando così la Roland
+    #   Europe S.p.a.»); NAMM Oral History (Luigi Bruti: «bought out by Roland,
+    #   becoming Roland Europe»); Gearnews («bought out by Roland in 1987»).
+    #   Acquisto o società insieme: le fonti non concordano, scritto in scheda.
+    # - Luigi Bruti in Siel per presentare i prodotti nuovi, poi progettista:
+    #   NAMM (Bruti). L'E-20 e le V-Accordion: NAMM (Bruti) e Proel North America
+    #   (la zona come «key location» per E-20 e V-Accordion).
+    # - 2014, Roland chiude la fabbrica italiana; Bruti e colleghi fondano
+    #   Dexibell: NAMM (Bruti); Proel North America («when Roland's organization
+    #   changed in 2014»). Pianoforti digitali fatti in Italia: Proel; sito
+    #   Dexibell («Handmade in Italy»).
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
+    # - Roland Europe annuncia nel novembre 2013 la chiusura di Acquaviva Picena,
+    #   150 posti, produzione in Asia: solo Eurofound (che cita il Corriere
+    #   Adriatico). Per questo non scrivo che la fabbrica Roland fosse proprio ad
+    #   Acquaviva.
+    # - Bruti campione di fisarmonica da ragazzo: solo NAMM.
+    # - Lucarelli torinese (Wikipedia IT, e madegooddesigns che la ricopia);
+    #   fondatori in 4 («he and three colleagues», solo NAMM); 3 anni alla GTE di
+    #   Milano (solo NAMM); morto nel 2024 (solo NAMM).
+    # - Sequential consulente proprio per il MIDI dell'Opera: solo One Two
+    #   Testing (la collaborazione generica ne ha due).
+    # - Cruise venduto da Sequential come Fugue: solo Gearnews.
+    # - Expander a 699 sterline: solo One Two Testing.
+    # - aggiornamenti gratuiti per chi aveva già un Opera 6: solo Electronic
+    #   Soundmaker 1984.
+    # - interfaccia per Commodore 64 «sotto le 100 sterline» annunciata nel 1984:
+    #   One Two Testing la promette, Electronic Soundmaker la recensisce (MCI, 99
+    #   sterline) e Wikipedia IT cita l'interfaccia MIDI per C64. Reggerebbe, ma
+    #   la scheda è già piena; buona per un'altra volta.
+    # - le battute di Paul Colbert su One Two Testing («Many Idiots Desire It»,
+    #   «Makes Italians Do It», suoni di fabbrica «thin, reedy»): un articolo solo.
+    # - 14,5 kg di peso: solo soundprogramming.
+    # - handle Instagram: nessuno (niente artisti; Siel non esiste più).
+
+    {
+        "slug": "opera6",
+        "numero": 82,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Siel Opera 6",
+        "anno": "1983",
+        "luogo": "Acquaviva Picena (AP), Italia",
+        "costruttore": "Siel (Società Industrie Elettroniche)",
+        "specifiche": [
+            ("USCITA", "1983"),
+            ("VOCI", "6"),
+            ("PREZZO", "1.299 £"),
+            ("PROGRAMMI", "95"),
+        ],
+        "gancio": "Un polifonico fatto in provincia di Ascoli, con le prese MIDI già nel 1983",
+        "sottotitolo": "6 voci con 2 oscillatori ciascuna e una tastiera che sente quanto forte premete.",
+        "la_macchina": (
+            "Lo riconoscete da lontano per il pannello azzurro sul fondo nero, "
+            "con le sezioni scritte in inglese. Accanto al nome ci sono 10 tastini "
+            "rotondi. Per cambiare suono si battono 2 cifre e poi ENTER, e il numero "
+            "compare su un display a 2 cifre. I programmi sono 95. In Inghilterra "
+            "costa 1.299 sterline. Sull'anno le fonti non concordano, ma la prima "
+            "recensione inglese è dell'ottobre 1983. Un anno dopo Siel lo rifà col "
+            "nome DK600, pulsanti nuovi e lo stesso suono, a 999 sterline. A me "
+            "piace di più l'Opera, perché sul DK600 l'azzurro resta solo nei bordi."
+        ),
+        "inventore_nome": "Carlo Lucarelli e la Siel",
+        "inventore": (
+            "Carlo Lucarelli è un ingegnere elettronico, e con lo scrittore di gialli "
+            "ha in comune solo il nome. Fino al 1976 progetta organi alla Farfisa. "
+            "Poi fonda la Siel ad Acquaviva Picena, in provincia di Ascoli. Alcune "
+            "macchine Siel vanno in America col nome di altri. L'Orchestra del 1979 "
+            "diventa l'ARP Quartet, l'Orchestra 2 la vende Sequential Circuits come "
+            "Prelude. Sequential è la casa del Prophet-5, e nel 1983 le riviste "
+            "inglesi scrivono che lavora con Siel. Secondo me le prese MIDI "
+            "dell'Opera 6 vengono anche da quella frequentazione."
+        ),
+        "come_funziona": (
+            "Ogni voce ha 2 oscillatori, con dente di sega o impulso e i piedaggi "
+            "da 16, 8 e 4. Poi un filtro passa-basso a 24 dB che con la risonanza "
+            "in cima fischia da solo, e un inviluppo ADSR. Dentro lavorano chip "
+            "americani della SSM. La parte che Siel chiama Dynamic ADSR è quella che "
+            "preferisco. La forza con cui premete il tasto cambia il livello "
+            "dell'inviluppo o l'attacco, sul filtro, sul volume o su tutti e due. "
+            "Le versioni sono 3. Le prime hanno oscillatori controllati in tensione, "
+            "le ultime li hanno a controllo digitale, che tengono l'accordatura. Sul "
+            "pannello gli LFO sono 3, ma i primi 2 si dividono le manopole."
+        ),
+        "richiami": [
+            ("FIG. 1", "Dynamic ADSR, conta la forza sul tasto"),
+            ("FIG. 2", "2 oscillatori per voce, 6 voci"),
+            ("FIG. 3", "MIDI in e out nel 1983"),
+        ],
+        "chi_lusata": [],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Nel 1987 la Siel entra in Roland e diventa Roland Europe. Sul come, le "
+            "fonti non dicono la stessa cosa. Per la NAMM e per Gearnews Roland la "
+            "compra, per Wikipedia in italiano è una società fatta insieme. Luigi "
+            "Bruti era entrato in Siel per presentare gli strumenti nuovi, e ci era "
+            "rimasto da progettista. Con Roland lavora alla tastiera E-20 e alle "
+            "fisarmoniche digitali V-Accordion. Nel 2014 Roland riorganizza tutto e "
+            "chiude la fabbrica italiana. Bruti e alcuni colleghi fondano Dexibell, "
+            "che fa pianoforti digitali in Italia."
+        ),
+        "avvertenza": "Tastiera dinamica a sensibilità fissa, non regolabile. Dosare la mano: la macchina non si adatta.",
+        "foto": {
+            "file": "assets/foto/opera6/principale.jpg",
+            "autore": "zergonion (Flickr)",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Il pannello azzurro dell'Opera 6 e i 10 tastini dei programmi accanto al nome",
+        },
+        "fonti": [
+            {"titolo": "«SIEL Opera 6» — Electronics & Music Maker, ottobre 1983",
+             "url": "https://www.muzines.co.uk/articles/siel-opera-6/6204", "data": "2026-10-28"},
+            {"titolo": "«Siel Polysynth and Expander» — One Two Testing, maggio 1984",
+             "url": "https://www.muzines.co.uk/articles/siel-polysynth-and-expander/6546", "data": "2026-10-28"},
+            {"titolo": "«Siel DK600» — Electronics & Music Maker, dicembre 1984",
+             "url": "https://www.muzines.co.uk/articles/siel-dk600/8028", "data": "2026-10-28"},
+            {"titolo": "«The Siel System» — Electronic Soundmaker, ottobre 1984",
+             "url": "https://www.muzines.co.uk/articles/big-k/3391", "data": "2026-10-28"},
+            {"titolo": "«Siel Opera 6» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/siel/opera-6", "data": "2026-10-28"},
+            {"titolo": "«Siel Opera 6 v3» — SMEM, Friburgo",
+             "url": "https://www.smemmusic.ch/de/node/1489", "data": "2026-10-28"},
+            {"titolo": "«Opera 6, DK600» — sequencer.de",
+             "url": "https://sequencer.de/syns/siel/Opera6_DK600.html", "data": "2026-10-28"},
+            {"titolo": "«SIEL» — Wikipedia (IT)",
+             "url": "https://it.wikipedia.org/wiki/SIEL", "data": "2026-10-28"},
+            {"titolo": "«Siel» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Siel", "data": "2026-10-28"},
+            {"titolo": "Carlo Lucarelli — NAMM Oral History",
+             "url": "https://www.namm.org/library/oral-history/carlo-lucarelli", "data": "2026-10-28"},
+            {"titolo": "Luigi Bruti — NAMM Oral History",
+             "url": "https://www.namm.org/library/oral-history/luigi-bruti", "data": "2026-10-28"},
+            {"titolo": "«Italian synthesizers» — Gearnews",
+             "url": "https://gearnews.com/italian-synthesizers", "data": "2026-10-28"},
+            {"titolo": "MCmicrocomputer n. 48, gennaio 1986 (indirizzo Siel)",
+             "url": "http://www.digitanto.it/mc-online/PDF/Articoli/048_060_063_0.pdf", "data": "2026-10-28"},
+            {"titolo": "«The Music & Sound Retailer Visits Italy» — Proel North America",
+             "url": "https://www.proelnorthamerica.com/blogs/proel-north-america-blog/the-music-sound-retailer-visits-italy", "data": "2026-10-28"},
+        ],
+        "hashtags": ["#opera6", "#siel", "#sintetizzatore", "#sequentialcircuits", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 082", "Nel 1983 un synth fatto nelle Marche ha già le prese MIDI"),
+            ("SIEL OPERA 6 · 1983", "L'Opera 6 della Siel ha 6 voci, 2 oscillatori per voce e i tasti dinamici."),
+            ("ACQUAVIVA PICENA · 1976", "Carlo Lucarelli lascia la Farfisa e fonda la Siel, in provincia di Ascoli."),
+            ("ARP E SEQUENTIAL", "In America alcune macchine Siel escono col nome di ARP e di Sequential."),
+            ("ROLAND · 1987", "Nel 1987 la Siel entra in Roland e diventa Roland Europe."),
+        ],
+        "reel_cta": "Mandalo all'amico marchigiano che suona",
+        "reel_voce": [
+            {"ruolo": "battuta1",
+             "detta": "Nel millenovecentottantatré un synth costruito nelle Marche ha già le prese midi.",
+             "scritta": "Nel 1983 un synth costruito nelle Marche ha già le prese MIDI."},
+            {"ruolo": "battuta2",
+             "detta": "L'Opera sei della Siel ha sei voci, due oscillatori per voce e tasti che sentono la forza.",
+             "scritta": "L'Opera 6 della Siel ha 6 voci, 2 oscillatori per voce e tasti che sentono la forza."},
+            {"ruolo": "battuta3",
+             "detta": "La Siel la fonda Carlo Lucarelli nel millenovecentosettantasei, quando lascia la Farfisa.",
+             "scritta": "La Siel la fonda Carlo Lucarelli nel 1976, quando lascia la Farfisa."},
+            {"ruolo": "battuta4",
+             "detta": "In America alcune macchine Siel escono col nome di altri, ARP e Sequential Circuits.",
+             "scritta": "In America alcune macchine Siel escono col nome di altri, ARP e Sequential Circuits."},
+            {"ruolo": "battuta5",
+             "detta": "Nel millenovecentottantasette la Siel entra in Roland, e diventa Roland Europe.",
+             "scritta": "Nel 1987 la Siel entra in Roland, e diventa Roland Europe."},
+            {"ruolo": "cta",
+             "detta": "Mandalo all'amico marchigiano che suona.",
+             "scritta": "Mandalo all'amico marchigiano che suona."},
+            {"ruolo": "chiusura",
+             "detta": "Le slide e le fonti sul profilo Elettrofoni.",
+             "scritta": "Le slide e le fonti sul profilo Elettrofoni."},
+        ],
+        "reel_audio": {
+            # 7,6 s: nel reel va in loop. Vedi REGISTRAZIONE in testa (non ascoltata).
+            "file": "assets/audio/opera6/registrazione.mp3", "inizio": 0,
+            "autore": "Raggaman", "licenza": "CC BY 3.0",
+            "fonte": "Freesound",
+            "url": "https://freesound.org/people/Raggaman/sounds/26985/",
+            "cosa": "un Siel Opera 6 vero che suona un giro di basso ritmico a 127 bpm, registrato dall'autore nel 2006 e tagliato a tempo con un gate: il rumore fra una nota e l'altra è zero",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 83
     # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
     # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
     # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
@@ -10639,7 +11110,7 @@ SCHEDE = [
     # Commons o Freesound: il reel usa la sigla.
     {
         "slug": "autotune",
-        "numero": 81,
+        "numero": 83,
         "serie": "GLI EFFETTI",
         "strumento": "Antares Auto-Tune",
         "anno": "1997",
@@ -10725,7 +11196,7 @@ SCHEDE = [
         ],
         "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 081", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("ELETTROFONI · N. 083", "La voce robot di Cher nasce da chi cercava il petrolio"),
             ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
             ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
             ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
@@ -10736,7 +11207,7 @@ SCHEDE = [
     },
     {
         "slug": "lowrey",
-        "numero": 82,
+        "numero": 84,
         "serie": "GLI ORGANI",
         "strumento": "Lowrey DSO",
         "anno": "1965",
@@ -10829,7 +11300,7 @@ SCHEDE = [
         ],
         "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 082", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ELETTROFONI · N. 084", "Quel clavicembalo dei Beatles è un organo da salotto"),
             ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
             ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
             ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
@@ -10840,7 +11311,7 @@ SCHEDE = [
     },
     {
         "slug": "wasp",
-        "numero": 83,
+        "numero": 85,
         "serie": "I SINTETIZZATORI",
         "strumento": "EDP Wasp",
         "anno": "1978",
@@ -10932,7 +11403,7 @@ SCHEDE = [
         ],
         "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 083", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("ELETTROFONI · N. 085", "Casale dei Devo: col sudore delle dita suona da solo"),
             ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
             ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
@@ -10943,7 +11414,7 @@ SCHEDE = [
     },
     {
         "slug": "elkarhapsody",
-        "numero": 84,
+        "numero": 86,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -11033,7 +11504,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 084", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 086", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -11044,7 +11515,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 85,
+        "numero": 87,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -11130,7 +11601,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 085", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 087", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -11141,7 +11612,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 86,
+        "numero": 88,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -11230,7 +11701,7 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 086", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 088", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
@@ -11241,7 +11712,7 @@ SCHEDE = [
     },
     {
         "slug": "pianet",
-        "numero": 87,
+        "numero": 89,
         "serie": "GLI ELETTROMECCANICI",
         "strumento": "Hohner Pianet",
         "anno": "1962",
@@ -11326,7 +11797,7 @@ SCHEDE = [
         ],
         "hashtags": ["#pianet", "#hohner", "#pianoelettrico", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 087", "«She's Not There» degli Zombies: un Pianet da casa"),
+            ("ELETTROFONI · N. 089", "«She's Not There» degli Zombies: un Pianet da casa"),
             ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
             ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
@@ -11335,7 +11806,7 @@ SCHEDE = [
         "reel_cta": "Mandalo a chi canta «She's Not There» in macchina",
         "verificata": True,
     },
-    # ---------------------------------------------------------------- 87
+    # ---------------------------------------------------------------- 89
     # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
     # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
     # Scheda «ans» — sintetizzatore ANS di Evgenij Murzin (URSS, prototipo 1958).
@@ -11441,6 +11912,214 @@ SCHEDE = [
     # - DA ASCOLTARE: organo di Bach in apertura di «Solaris» (EEFB, Under the
     #   Radar); l'ANS nei passaggi astratti / onirici (Wikipedia «abstract,
     #   sci-fi effect», Under the Radar «more abstract passages», EEFB «oneiric scenes»).
+
+
+    # ---------------------------------------------------------------- vfx
+    # Ensoniq VFX (1989). Rifornimento del 28/10/2026, scheda posteriore al 1988
+    # (quota «una su quattro»). Tutte le pagine aperte il 2026-10-28.
+    # Il catalogo non ha altre schede Ensoniq: la storia della ditta (ex
+    # Commodore, Mirage, ESQ-1) sta qui nel campo «inventore».
+    #
+    # REGISTRAZIONE (DUBBIO APERTO, il più importante della scheda)
+    # pagina: https://freesound.org/s/449222/ («ensoniq vfx transwave pad.wav»,
+    #   parabolix). Ricontrollata il 2026-10-28 via WebFetch (freesound.org e
+    #   cdn.freesound.org rispondono 403 al container, quindi NON l'ho
+    #   scaricata né ascoltata né misurata). Licenza Creative Commons 0, caricata
+    #   il 25/11/2018, WAV stereo 44,1 kHz 16 bit, 1:26,653. Tag: digital,
+    #   ensoniq, pad, synth, transwave, vfx, wavetable, in-nervous-convulsion-
+    #   crouches. Profilo dell'autore: «broadcast radio engineer developing weird
+    #   guitar pedals». Id utente 1036771 (dall'URL dell'avatar), quindi
+    #   anteprima https://cdn.freesound.org/previews/449/449222_1036771-hq.mp3
+    #   (stesso schema di proone e doepfer; non provata da qui per il 403).
+    #   LA DESCRIZIONE NON DIMOSTRA CHE SIA LA MACCHINA VERA. Racconta il VFX
+    #   (1989, Transwave, 6 oscillatori, il VFX-SD col sequencer) e dice che
+    #   questo pad nasce dalla modulazione che scorre le forme d'onda, ma non
+    #   scrive «il mio VFX» né come l'ha registrato. Indizi a favore, non prove:
+    #   lo stesso autore carica altre registrazioni di hardware Ensoniq raro
+    #   (Freesound 390472, «used an ensoniq fizmo with some compression», CC0;
+    #   254141, Fizmo, CC BY 4.0); di plug-in del VFX in commercio non ne ho
+    #   trovati (MusicRadar 2019 propone come «alternative» solo PPG
+    #   WaveGenerator, Korg Wavestation e SQ8L, che è l'SQ-80). Contro: MAME
+    #   ha un driver per la famiglia VFX (esq5505), quindi un'emulazione esiste.
+    #   ALTERNATIVE CERCATE: su Commons nessun file audio Ensoniq (ricerca
+    #   audio «Ensoniq» vuota, categorie Ensoniq e Transwave synthesis senza
+    #   audio). Su Freesound, ricerca «ensoniq vfx»: oltre a questa solo
+    #   https://freesound.org/s/69154/ (TZTH999, CC BY 4.0, 2009, mono,
+    #   7,3 s, «slightly detuned 6 oscillator saw with some chorus (of the vfx
+    #   built in modulation chorus)», pacchetto «VFX»): la descrizione parla
+    #   del chorus interno, quindi è più probabilmente la macchina vera, ma 7
+    #   secondi non bastano per un reel da 15-30 s. Ricerca «VFX-SD»: niente.
+    #   Chi integra decide: tenere 449222 dichiarando il dubbio, o chiedere al
+    #   proprietario. Lunghezza 87 s con 3,8 s di silenzio in coda (dato del
+    #   brief, non rimisurato): «inizio» 0, il pad attacca subito secondo la
+    #   descrizione, da ASCOLTARE prima di montare. Un pad, nessuna melodia
+    #   protetta dichiarata.
+    #
+    # FOTO (Commons, API letta il 2026-10-28)
+    # - principale: File:Ensoniq_VFX_(angled).jpg, 1028x250, CC BY-SA 2.0.
+    #   È un ritaglio, fatto da Clusternote il 07/11/2010, di
+    #   File:Ensoniq_EPS-16+,_VFX_@_Sarlacc_Studios.jpg (nourogg su Flickr,
+    #   29/10/2009, «EPS-16+ and VFX», dove il VFX è «my first real synth»).
+    #   È l'UNICA foto su Commons col VFX da solo. Si vedono il logo VFX a
+    #   sinistra, il display, i 2 tasti Patch Select sopra le ruote, il logo
+    #   ensoniq a destra. PROBLEMA: è piccola e larga 4:1. Preso il thumbnail a
+    #   960 (il file è largo 1028, MAI l'originale); "ritaglio": True per
+    #   vederla intera. Sulle tavole e nel reel rischia di sgranare, e i
+    #   RITAGLI di dettaglio (niente foto_extra) la ingrandiranno ancora:
+    #   GUARDARE le tavole generate.
+    # - scartate: la foto intera di Sarlacc Studios (960x578 disponibile): il
+    #   marchio più leggibile è «EPS 16 PLUS» della tastiera sopra, regola
+    #   «la macchina più riconoscibile deve essere quella della scheda».
+    #   File:Michael_Allen_Harrison.JPG (pubblico dominio): è un VFX-SD o un
+    #   SD-1 (tasti Seq/Song/Rec, fessura del floppy), display spento, e in
+    #   primo piano c'è il musicista. Le foto Sarlacc front/back sono strisce
+    #   1024x163 e 1024x246 di tutto lo studio. Nessuna foto del pannello o
+    #   dell'interno su Commons, quindi niente foto_extra.
+    #
+    # HANDLE
+    # - @genesis_band: già in contenuti.py (scheda del Mellotron); il link sta
+    #   anche oggi su genesis-music.com (controllato il 2026-10-28).
+    # - @duranduran: link Instagram sulla home di duranduran.com (letta via
+    #   WebFetch il 2026-10-28, «https://www.instagram.com/duranduran/»).
+    #   Il proprietario li deve seguire prima dell'uscita (regola 3).
+    #
+    # NOMI STRANIERI NELLA «DETTA» (per FONEMI in voce.py, li prova chi
+    # integra): Ensoniq, Transwave, Bob Yannes, Commodore, Korg, sequencer.
+    # «VFX» è scritto «vu effe ics», «M1» «emme uno», 64 «sessantaquattro».
+    # suoni.VOCE_SCHEDA non ha «vfx» (errore atteso).
+    #
+    # FONTI PER FATTO
+    # - 1989: SOS giu. e lug. 1989; MT lug. 1989; Wikipedia; Vintage Synth
+    #   Explorer; MusicRadar 2019.
+    # - 21 voci, fino a 6 Voci (oscillatori) per Program: SOS lug. 1989; MT lug.
+    #   1989; Wikipedia; Vintage Synth Explorer; MusicRadar.
+    # - 109 forme d'onda: SOS lug. 1989; MT lug. 1989; Vintage Synth Explorer.
+    # - 17 Transwave, ciascuna una fila di forme d'onda con armoniche che
+    #   cambiano a poco a poco, lettura spostata da una modulazione: SOS lug.
+    #   1989 («17 Transwaves ... around 100 variations»); MT lug. 1989 («17
+    #   Transwaves in all, each consisting of many single-cycle waveforms»);
+    #   MusicRadar («a string of related waveforms strung end-to-end»). Il
+    #   «circa 100» è solo SOS: NON scritto.
+    # - 15 sorgenti di modulazione: SOS lug. 1989 (elenco); MT lug. 1989
+    #   (elenco); Vintage Synth Explorer.
+    # - parente della PPG Wave: MT lug. 1989 («akin to the old PPG Wave
+    #   approach»); MusicRadar («a variation of the wavetable synthesis
+    #   introduced by PPG»); Wikipedia.
+    # - 2 filtri digitali per Voce senza risonanza, la risonanza sta in alcune
+    #   Transwave: Wikipedia («Transwaves are also the only way to get a
+    #   resonance sound since the filters ... did not have a resonance
+    #   parameter»); SOS lug. 1989 (fra le Transwave «four resonance and two
+    #   pulse width modulation waves»; i parametri dei filtri sono solo taglio,
+    #   tracking e modulazione); MT lug. 1989 (stessi parametri). Due filtri per
+    #   Voce anche su Vintage Synth Explorer.
+    # - slider dei dati che muove il Timbre mentre si suona: SOS lug. 1989; MT
+    #   lug. 1989.
+    # - 2 tasti Patch Select sopra le ruote, 4 combinazioni di Voci: SOS giu.
+    #   1989; MT lug. 1989; Wikipedia; MusicRadar. Si vedono nella foto.
+    # - display fluorescente: MT lug. 1989 («fluorescent display»); Wikipedia
+    #   («the large fluorescent display», a proposito del VFX-SD). SOS giu. 1989
+    #   scrive «LED display»: tenuto «fluorescente» (2 contro 1).
+    # - 61 tasti con aftertouch polifonico: Vintage Synth Explorer; SOS giu. e
+    #   lug. 1989 («five-octave», «polyphonic aftertouch»); MT lug. 1989;
+    #   Wikipedia.
+    # - senza sequencer, uscite solo stereo: SOS lug. 1989; MT lug. 1989;
+    #   MusicRadar («Ensoniq gave it a miss on the original VFX»).
+    # - il Korg M1 ha il sequencer e costa di più: SOS lug. 1989 («the VFX is
+    #   cheaper ... than both of its main rivals», M1 e D50); MT lug. 1989
+    #   («Korg's M1 which costs not much more than Ensoniq's synth, includes an
+    #   onboard sequencer»). MusicRadar sul M1 come workstation col sequencer.
+    # - 1.350 sterline IVA compresa: SOS lug. 1989; MT lug. 1989; MusicRadar.
+    # - cambio di effetto = un attimo di silenzio (avvertenza): SOS lug. 1989
+    #   («a brief silence will be heard»); MT lug. 1989 («a brief drop in
+    #   volume as the new Program's effect is installed»); Wikipedia (lo stesso
+    #   nel sequencer del VFX-SD).
+    # - fondatori ex Commodore (Crockett, Charpentier, Yannes): SOS feb. 1988
+    #   (Craig Anderton, «all refugees from Commodore»); Wikipedia «Ensoniq»;
+    #   intervista a Yannes di Andreas Varga (1996, «co-founded ... Ensoniq»).
+    # - Yannes ha disegnato il SID del Commodore 64: SOS feb. 1988; Varga 1996;
+    #   Wikipedia «Bob Yannes».
+    # - DATA DI NASCITA (scritto in scheda che non concordano): Anderton dice
+    #   che dal 1982 Yannes lavorava in una società di consulenza sui chip, la
+    #   PVI che poi diventa Ensoniq; Wikipedia la fa nascere nella primavera
+    #   1983 come Peripheral Visions (citando IEEE Spectrum, marzo 1985) e
+    #   nell'infobox scrive 1982.
+    # - Pennsylvania (Malvern): SOS feb. 1988; Wikipedia; UPI 1997.
+    # - Mirage presentato al NAMM di febbraio 1985, circa 1.700 dollari: SOS
+    #   feb. 1988 («$1700 sampler», «February '85 NAMM»); Wikipedia (1.695
+    #   dollari). In scheda «meno di 1.700», vero per tutte e due.
+    # - ESQ-1 nel 1986: Wikipedia; MusicRadar (due anni prima dell'M1, che è
+    #   del 1988); Vintage Synth Explorer (il VFX viene dopo ESQ-1 e SQ-80).
+    # - Creative compra Ensoniq per 77 milioni di dollari, accordo del 9/12/1997:
+    #   UPI 10/12/1997; Wikipedia (gennaio 1998, la chiusura). In scheda «a
+    #   fine 1997», la data dell'accordo.
+    # - Tony Banks ha il VFX nel 1991 mentre i Genesis scrivono il disco nuovo:
+    #   SOS lug. 1991 (Kendall Wrightson: «His most recent acquisitions include
+    #   an Ensoniq VFX», e la band «three months into a new album project»);
+    #   Keyboard feb. 1992 (Doerschuk), citata da Wikipedia «We Can't Dance»,
+    #   mette il VFX fra le tastiere del disco. Keyboard NON l'ho letta, solo la
+    #   citazione. Banks fra gli utenti anche su Vintage Synth Explorer.
+    # - Nick Rhodes e il VFX: Vintage Synth Explorer (utenti); Recording
+    #   Musician apr. 1993.
+    # - Duran Duran a Privacy, casa di Warren Cuccurullo: Recording Musician apr.
+    #   1993 (Richard Buskin); duranduran.com 2013 (Nick Rhodes, «the sessions
+    #   which were mostly at Privacy, at Warren's house»).
+    # - dopo «Liberty»: duranduran.com 2013 (Rhodes); Wikipedia «Ordinary World
+    #   (song)».
+    # - John Jones coproduttore: Recording Musician 1993; duranduran.com 2013.
+    # - «Ordinary World» nata suonando tutti insieme, Le Bon ci trova sopra la
+    #   melodia: duranduran.com 2013 (Rhodes, «jamming all together in the room
+    #   with headphones», «Simon came up with a melody on top»); Recording
+    #   Musician 1993 (Le Bon, «Nick was playing the chords... within minutes I
+    #   had the melody»).
+    # - mix di David Richards, produttore dei Queen, dal suo studio di
+    #   Montreux, ed è quello che esce: Recording Musician 1993 («Queen's
+    #   producer Dave Richards in Switzerland», la sua versione «has found its
+    #   way into the record shops»); duranduran.com 2013 (John Taylor, mix di
+    #   «Ordinary World» «courtesy of David Richards, better known for his work
+    #   with Queen»; Cuccurullo, «the mixes back from david's montreaux
+    #   studio»).
+    # - uscita del singolo nel 1992 (19/12/1992 negli USA): Wikipedia; Radio &
+    #   Records 14/08/1992 (citata da Wikipedia, sulla fuga in radio prima
+    #   dell'uscita); duranduran.com 2013 (Rhodes sulla fuga in radio).
+    #
+    # DUBBIO SUL DISCO (da_ascoltare e aneddoto)
+    # - Il VFX in «Ordinary World» lo dice UN documento solo: John Jones a
+    #   Recording Musician, apr. 1993 («some Beatley sounds courtesy of
+    #   keyboard parts off the Ensoniq VFX, plus string and choir samples off
+    #   the Akai S1000. The main string synth sound was from the Roland D50»).
+    #   Wikipedia e Vintage Digital lo ripetono prendendolo da lì. Per questo in
+    #   scheda è sempre «Jones racconta», mai un fatto nudo. Una risposta
+    #   attribuita a Rhodes su un forum (Vintage Synth Explorer, di seconda
+    #   mano) parla di altre macchine: non è una fonte, ma vuol dire che chi
+    #   integra può preferire togliere da_ascoltare. Il disco dei Genesis è
+    #   l'alternativa, ma lì nessuna fonte seria lega il VFX a un brano preciso
+    #   (solo ricordi di fan su genesis-news.com e korgfans, che non concordano
+    #   sulle patch).
+    #
+    # FATTI SCARTATI (una fonte sola o fonti che si copiano)
+    # - «circa 100» forme d'onda per Transwave: solo SOS 1989.
+    # - suono «scuro e granuloso» contro l'M1 «leggero e liscio»: solo MT 1989.
+    # - forme d'onda a 16 bit e circa 39 kHz: solo Wikipedia.
+    # - tastiera in 3 pezzi che si rompe alle saldature, surriscaldamento:
+    #   solo Wikipedia; MusicRadar parla genericamente di instabilità del VFX-SD.
+    # - VFX-SD che vende poco e torna come SD-1: Vintage Synth Explorer e
+    #   MusicRadar lo dicono in modi diversi (MusicRadar: SD-1 «il più
+    #   affidabile»). Non serviva, fuori.
+    # - prezzo USA 1.995 dollari: visto solo in un estratto di ricerca.
+    # - modelli europei di Ensoniq costruiti in Italia per un periodo: solo SOS
+    #   feb. 1988 (peccato, era il filone italiano).
+    # - Yannes che nel 1984 promette campionatori a un decimo del prezzo: solo
+    #   SOS feb. 1988.
+    # - uccelli e auto che si sentono isolando la voce di «Ordinary World», e
+    #   Jones seduto nel vano della finestra: solo Recording Musician 1993.
+    # - mix di Richards fatto di nascosto durante il concerto per Freddie
+    #   Mercury: solo Recording Musician 1993 (Wikipedia lo copia).
+    # - «Ordinary World» prima in Italia: solo Wikipedia.
+    # - patch del VFX nei brani dei Genesis («Fading Lights», «Driving the Last
+    #   Spike», «Jesus He Knows Me»): solo ricordi di fan, discordanti.
+    # - Richard Barbieri, Rick Wakeman, Front 242, Oscar Peterson, Hudson
+    #   Mohawke, Boards of Canada: liste senza disco o fonte unica. Fuori.
+    # - Michael Allen Harrison col VFX-SD: solo la foto di Commons.
 
 
 ]

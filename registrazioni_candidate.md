@@ -17,8 +17,6 @@ da qui. ★ = dopo il 1988.
 | ★ Korg microKORG (2002) | https://freesound.org/s/489517/ | nthnh | CC0 | 1.290 s | campioni ambient, da tagliare |
 | Cry Baby wah (1966; qui GCB95) | https://commons.wikimedia.org/wiki/File:Wahwah_crybaby_GCB95_-_clean_sound_(various_techniques).ogg | Skimel | CC BY-SA 4.0 | 22 s | wah vero, ampli simulato |
 | Farfisa Syntorchestra (anni '70) | https://commons.wikimedia.org/wiki/File:Syntorchestra_Demo.wav | Jupiter80 | PD | 16 s | filone italiano |
-| ★ Ensoniq VFX (1989) | https://freesound.org/s/449222/ | parabolix | CC0 | 87 s | pad a transwave; 3,8 s di silenzio in coda |
-| Siel Opera 6 (1983) | https://freesound.org/s/26985/ | Raggaman | CC BY 3.0 | 8 s | filone italiano; corto, va in loop |
 
 Riserve: Moog Grandmother (freesound 472235, CC0, 95 s, sequenza vera con
 la molla: buona, ma nessun disco a due fonti), Juno-60 (Commons
@@ -88,3 +86,10 @@ Whammy non si distinguono da quelli del bottleneck, quindi non dimostra la
 macchina. Roland CR-78: le registrazioni ci sono (Cr78.ogg, PD; i preset di
 Wexstun, CC BY-SA 3.0) ma su Commons non c'è nessuna FOTO di un CR-78.
 Tenori-on: foto ottime (anche Little Boots), nessuna registrazione libera.
+
+Entrate in catalogo il 06/11/2026: Ensoniq VFX (Freesound 449222, parabolix,
+CC0, 0-80 s: che sia la macchina vera lo dicono titolo e tag dell'autore,
+non una prova; la scheda lo dichiara in «cosa») e Siel Opera 6 (Freesound
+26985, Raggaman, CC BY 3.0, 7,6 s in loop: misurato, ha un gate ritmico
+a zero assoluto fra le note, detto in «cosa»). Opera 6 ha la tavola 5
+quasi vuota: nessun artista regge due fonti.

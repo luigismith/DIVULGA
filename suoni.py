@@ -260,7 +260,7 @@ VOCE_SCHEDA = {
     # rifornimento del 28/10/2026
     "syntorchestra": "organo", "proone": "sega", "volcakeys": "sega",
     "jv1080": "fm", "monotron": "acido", "doepfer": "studio", "drumulator": "sega",
-    "crybaby": "studio", "mt40": "giocattolo", "microkorg": "sega",
+    "crybaby": "studio", "mt40": "giocattolo", "microkorg": "sega", "vfx": "fm", "opera6": "organo",
     # rifornimento del 04/11/2026
     "system100": "sega", "aelita": "sega", "po12": "sega",
     # elettronica da pochi soldi
