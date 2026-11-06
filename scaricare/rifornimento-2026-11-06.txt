@@ -1,0 +1,2 @@
+assets/audio/vfx/originale.mp3 https://cdn.freesound.org/previews/449/449222_1036771-hq.mp3
+assets/audio/opera6/originale.mp3 https://cdn.freesound.org/previews/26/26985_146516-hq.mp3
