@@ -1,0 +1,14 @@
+assets/audio/sk1/originale.mp3 https://cdn.freesound.org/previews/499/499589_7700251-hq.mp3
+assets/audio/jupiter4/arpeggio.ogg https://upload.wikimedia.org/wikipedia/commons/0/04/JP-4_Bass_Arpeggio.ogg
+assets/audio/jupiter4/pwm.ogg https://upload.wikimedia.org/wikipedia/commons/4/43/JP-4_PWM_Strings.ogg
+assets/audio/jupiter4/sh.ogg https://upload.wikimedia.org/wikipedia/commons/b/bb/JP-4_Sample_and_Hold.ogg
+assets/audio/bigmuff/little.ogg https://upload.wikimedia.org/wikipedia/commons/4/43/Big_muff_2011-08-04_extract.ogg
+assets/audio/bigmuff/riff.ogg https://upload.wikimedia.org/wikipedia/commons/7/70/Soundriff_Fuzz.ogg
+assets/foto/sk1/principale.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Casio_SK-1.jpg/960px-Casio_SK-1.jpg
+assets/foto/sk1/pannello.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Casio_SK-1_zoomed.jpg/1280px-Casio_SK-1_zoomed.jpg
+assets/foto/jupiter4/principale.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Roland_Jupiter-4%2C_PNW_SynthFest_2013.jpg/1280px-Roland_Jupiter-4%2C_PNW_SynthFest_2013.jpg
+assets/foto/jupiter4/preset.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Roland_Jupiter-4%2C_preset_buttons%2C_PNW_SynthFest_2013.jpg/1280px-Roland_Jupiter-4%2C_preset_buttons%2C_PNW_SynthFest_2013.jpg
+assets/foto/jupiter4/comandi.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Roland_Jupiter-4%2C_pitch_bender_%26_other_controls%2C_PNW_SynthFest_2013.jpg/1280px-Roland_Jupiter-4%2C_pitch_bender_%26_other_controls%2C_PNW_SynthFest_2013.jpg
+assets/foto/jupiter4/tastiera.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Roland_Jupiter-4%2C_side_angled_view%2C_PNW_SynthFest_2013.jpg/1280px-Roland_Jupiter-4%2C_side_angled_view%2C_PNW_SynthFest_2013.jpg
+assets/foto/bigmuff/principale.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Electro_Harmonix_Big_Muff_%28cropped%29.jpg/1280px-Electro_Harmonix_Big_Muff_%28cropped%29.jpg
+assets/foto/bigmuff/little.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Electro_Harmonix_Little_Big_Muff_and_Micro_Metal_Muff_2813.JPG/1280px-Electro_Harmonix_Little_Big_Muff_and_Micro_Metal_Muff_2813.JPG
