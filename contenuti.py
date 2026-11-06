@@ -12130,6 +12130,492 @@ SCHEDE = [
     # - Michael Allen Harrison col VFX-SD: solo la foto di Commons.
 
 
+    # ---------------------------------------------------------------- 90
+    # Casio SK-1. Scheda scritta il 06/11/2026 sera (rifornimento a mano: la
+    # coda era a 12). Campionatore, uno dei pochi della coda.
+    #
+    # REGISTRAZIONE: https://freesound.org/people/makenoisemusic/sounds/499589/
+    #   «SK1 drum patterns REEL.wav», makenoisemusic (l'account di Make Noise,
+    #   la ditta di moduli di Asheville), 20/12/2019, CC0, WAV 48 kHz 32 bit
+    #   stereo, 37,353 s. Pagina letta il 06/11/2026: «Released in 1985, the
+    #   Casio SK-1 [...] We have reformatted its classic built-in rhythms (as
+    #   well as their Fill-In variations) as a Reel of Splices». Quindi sono i
+    #   RITMI DI FABBRICA dello SK-1, non un campione registrato col microfono:
+    #   «cosa» lo dice. Fa parte del pacchetto «Drum Pattern Morphagene Reels»
+    #   (pack 29447) con l'Optigan (la stessa serie «classic hardware drum
+    #   sounds»). Scaricata dal runner (anteprima hq, mp3 128 kbps) col
+    #   rifornimento-2026-11-06b. MISURATA il 06/11/2026 (ffmpeg 6.1):
+    #   37,39 s, -15,0 LUFS integrati, LRA 3,7, picco -0,2 dBFS; un solo buco
+    #   sotto -45 dB, 0,41 s a 12,27 s (giunta fra due spezzoni), e 0,7 s di
+    #   coda finale; RMS -17,9 dB in tutto, -22,2 dB sopra i 200 Hz: piatti e
+    #   rullante stanno in alto e dal telefono si sentono. Spettrogramma: colpi
+    #   secchi fino a 12 kHz, nessun fischio fisso. Nessuna melodia: sono
+    #   ritmi di batteria. registrazione.mp3 = il file intero.
+    #
+    # FONTI PER FATTO (aperte il 06/11/2026)
+    # - 1985: Wikipedia, Vintage Synth Explorer. Ghazala (EMI dic. 1996) lo
+    #   ricorda nei negozi nel 1986, e le recensioni inglesi sono del 1986:
+    #   detto in scheda che le date non coincidono.
+    # - campione da 1,4 s, 8 bit, 9,38 kHz (9,35 in IM, 9,3 in Making Music):
+    #   Wikipedia, VSE, Making Music lug. 1986 (Paul Colbert), International
+    #   Musician nov. 1986 (Jim Betteridge).
+    # - 32 tasti piccoli, 2 ottave e mezza: Wikipedia, VSE, Making Music, IM.
+    # - 4 note insieme: Wikipedia, VSE, Making Music, IM.
+    # - 8 suoni di fabbrica (piano, trumpet, human voice, pipe organ, brass
+    #   ensemble, flute, synth drums, jazz organ): Making Music, IM, VSE; si
+    #   leggono sul pannello nella foto.
+    # - 13 inviluppi: Wikipedia, VSE, Making Music, IM.
+    # - 11 ritmi: IM, VSE; i nomi si leggono sotto i tasti nella foto extra
+    #   (disco, rock, pops, march, samba, bossa nova, rhumba, 4beat, swing,
+    #   slow rock, waltz).
+    # - sintesi additiva con 9 tasti bianchi che sommano armoniche a una nota
+    #   d'organo («like one stop drawbars»): Making Music; IM («up to eight
+    #   harmonics with the fundamental»); i piedaggi 16'...1' sotto i tasti
+    #   nella foto extra.
+    # - microfono incorporato in alto a destra, prese mic e line dietro:
+    #   Making Music, Wikipedia, VSE, FACT 2017.
+    # - campione perso allo spegnimento: Making Music, VSE («Volatile, lost
+    #   when powered off»). 5 pile stilo: Making Music; IM (alimentatore o
+    #   accendisigari): le pile sono UNA fonte, l'avvertenza parla di «pile»
+    #   perché la macchina si accende a pile (MM) e si vede il vano nella foto
+    #   del Sampletone, non per un numero.
+    # - Loop che ripete il campione finché si tiene il tasto: Making Music, IM.
+    # - prezzo: 119 sterline in Making Music (lug. 1986), 89 in IM (nov. 1986,
+    #   «RRP»); Ghazala circa 90 dollari. Detto che le riviste non concordano.
+    # - banda fino a circa 4,5 kHz: IM (stima del recensore); è metà della
+    #   frequenza di campionamento, quindi fisica, non un'opinione.
+    # - Casio e le calcolatrici; primo strumento Casiotone 201, gennaio 1980,
+    #   voluto da Toshio Kashio, uno dei fratelli fondatori: Casio (pagina dei
+    #   40 anni del CT-201), MMR Magazine 2020 sui 40 anni di Casio,
+    #   Wikipedia «Casio».
+    # - progettista dello SK-1: non trovato. Scritto così.
+    # - Reed Ghazala, articolo «The Casio SK-1: Escapist Sample Shuttle»,
+    #   Experimental Musical Instruments vol. 12 n. 2, dicembre 1996, 36
+    #   modifiche: l'articolo stesso (ristampato su oddmusic.com); Wikipedia
+    #   «Casio SK-1» (la guida di Ghazala); Ghazala ha dato il nome al circuit
+    #   bending: Wikipedia «Circuit bending», Wikipedia «Reed Ghazala».
+    # - Autechre: i primi attrezzi una TR-606, uno SK-1, uno SK-5 e un delay
+    #   Boss: Sound On Sound nov. 1997 (Christopher Holder); FACT 25/02/2017
+    #   (Scott Wilson: «a Roland 606 drum machine and a Casio SK-1»).
+    # - la bibita rovesciata che «lo ha modificato da solo»: Westword
+    #   16/10/2015 (Tom Murphy, citazione: «we spilled a drink on it once and
+    #   it virtually modded itself»); FACT 2017 («they spilled Vimto»).
+    # - il chip aperto davanti al giornalista, 2 punti che uniti incrociano i
+    #   campioni, il selettore da montare dietro: SOS nov. 1997; FACT 2017
+    #   (riporta le stesse frasi).
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
+    # - Large Professor che faceva i primi loop con lo SK-1: lo dice LUI a
+    #   Complex (23/05/2012) e Wikipedia lo prende da lì; Rock the Bells 2021
+    #   è sparito (404) e la Kennedy Center blocca il container. Una fonte
+    #   sola, fuori. Peccato: era un bel «da ascoltare» mancato.
+    # - Damon Albarn su «Advert» (Blur, 1993): solo Wikipedia; VSE dice
+    #   «Blur» senza disco. Fuori.
+    # - Fatboy Slim, Beck, Portishead, Nine Inch Nails: solo la lista di VSE.
+    # - lo SK-1 visto da Sean Booth da Dixons a 25 sterline: solo FACT.
+    # - Ghazala che ne ricompra 2 in un mercatino a 1,50 e 5 dollari: solo il
+    #   suo articolo.
+    # - oltre un milione di pezzi venduti: una pagina Casio vista solo in un
+    #   estratto di ricerca (la pagina dà 404).
+    # - kit MIDI pubblicato da Keyboard nel 1987: Wikipedia e una pagina
+    #   archiviata che dal container non si apre. Fuori.
+    # - Realistic Concertmate 500 di Radio Shack: stessa situazione.
+    # - Yamaha VSS-100 a 179 sterline con 8 secondi: solo IM.
+    #
+    # HANDLE INSTAGRAM: nessuno. Gli Autechre non hanno un account ufficiale
+    #   che abbia potuto verificare da autechre.ws; Casio non c'entra con un
+    #   tag (la macchina è fuori produzione da 40 anni).
+    #
+    # FOTO (thumbnail scaricati dal runner e guardati il 06/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Casio_SK-1.jpg
+    #   ritaglio di Clusternote da «Casio SK-1 & Realistic Rap-Master.jpg» di
+    #   Vlad Spears (Flickr), CC BY-SA 2.0, 975x335, thumbnail da 960. Lo SK-1
+    #   intero dall'alto, fondo bianco: "ritaglio": True. Si leggono CASIO SK-1,
+    #   SAMPLING KEYBOARD e la griglia del microfono in alto a destra.
+    # extra: https://commons.wikimedia.org/wiki/File:Casio_SK-1_zoomed.jpg
+    #   Jon Seidman (Flickr), CC BY 2.0, 2592x1944, thumbnail 1280. I tasti
+    #   da vicino: sopra, i tasti dei suoni e il giallo «sample»; sotto i
+    #   tasti bianchi i piedaggi 16'...1' e i nomi degli 11 ritmi, ma sono
+    #   scuri e nella banda non si leggono: la didascalia parla dei tasti dei
+    #   suoni, che nella banda stanno in alto ("posizione" center 18%).
+    # Scartata «Casio SK-1 Sampling Synthesizer.jpg» (Vlad Spears): lo SK-1
+    #   ci sta sotto un Realistic Rap-Master, e nella banda l'occhio andrebbe
+    #   sull'altra tastiera.
+    {
+        "slug": "sk1",
+        "numero": 90,
+        "serie": "I CAMPIONATORI",
+        "strumento": "Casio SK-1",
+        "anno": "1985",
+        "luogo": "Giappone",
+        "costruttore": "Casio",
+        "specifiche": [
+            ("USCITA", "1985"),
+            ("CAMPIONE", "1,4 s"),
+            ("RISOLUZIONE", "8 bit"),
+            ("TASTI", "32"),
+        ],
+        "gancio": "Gli Autechre ci rovesciano sopra una bibita, e da quel giorno si modifica da solo",
+        "sottotitolo": "Una tastierina a pile con un microfono in un angolo, che registra 1,4 secondi di qualunque cosa.",
+        "la_macchina": (
+            "Sono 32 tasti piccoli, un altoparlante a sinistra e il microfono "
+            "nell'angolo in alto a destra. Premete il tasto giallo, fate un "
+            "rumore, e il rumore finisce sotto i tasti, da suonare fino a 4 note "
+            "per volta. Il campione dura al massimo 1,4 secondi e quando spegnete "
+            "sparisce. Poi ci sono 8 suoni di fabbrica, dal pianoforte alla voce "
+            "umana, e 11 ritmi. Sul prezzo le riviste inglesi del 1986 non "
+            "concordano, Making Music scrive 119 sterline e International "
+            "Musician 89. A me sembra ancora il modo più rapido per capire cos'è "
+            "un campionatore."
+        ),
+        "inventore_nome": "Casio, la casa delle calcolatrici",
+        "inventore": (
+            "Chi l'abbia disegnato non sono riuscito a scoprirlo. Casio fa "
+            "calcolatrici, e il primo strumento lo mette in vendita nel gennaio "
+            "1980. È il Casiotone 201, voluto da Toshio Kashio, uno dei fratelli "
+            "che hanno fondato la ditta. Lo SK-1 arriva qualche anno dopo. "
+            "Wikipedia e Vintage Synth Explorer dicono 1985, le recensioni "
+            "inglesi sono del 1986 e Reed Ghazala, l'uomo che ha dato il nome al "
+            "circuit bending, se lo ricorda nei negozi nel 1986. Nel dicembre 1996 "
+            "proprio Ghazala gli dedica un articolo intero su Experimental Musical "
+            "Instruments, con 36 modifiche da fare col saldatore."
+        ),
+        "come_funziona": (
+            "Campionare vuol dire misurare. Lo SK-1 ascolta il microfono e ne "
+            "prende il livello 9.380 volte al secondo, e ogni misura è un numero "
+            "di 8 bit, uno fra 256. A quella velocità sopra i 4.500 hertz circa "
+            "non passa niente, ed è per questo che tutto quello che registra "
+            "sembra uscito da una radiolina. Gli altri suoni si cambiano con 13 "
+            "inviluppi, che toccano attacco e coda anche del campione. E con 9 "
+            "tasti bianchi si sommano armoniche a una nota d'organo, come i "
+            "registri di un Hammond in miniatura. Provate il Loop, il pezzo "
+            "registrato ricomincia finché tenete giù il tasto."
+        ),
+        "richiami": [
+            ("FIG. 1", "Microfono incorporato"),
+            ("FIG. 2", "1,4 s di campione a 8 bit"),
+            ("FIG. 3", "13 inviluppi, 11 ritmi"),
+        ],
+        "chi_lusata": [
+            {"artista": "Autechre",
+             "nota": "fra i loro primi attrezzi, con una TR-606, uno SK-5 e un delay Boss",
+             "ig": None},
+        ],
+        "menzioni_extra": [],
+        "aneddoto": (
+            "Novembre 1997. Christopher Holder va a intervistare gli Autechre per "
+            "Sound On Sound, e prima delle domande si ritrova davanti uno SK-1 "
+            "aperto. Gli fanno fare il giro delle viscere. Uno dei due gli indica "
+            "un chip e spiega che collegando 2 di quei punti i campioni si "
+            "incrociano fra loro. Il progetto è montare sul retro un selettore che "
+            "si sposti da un punto all'altro, così da non dover più aprire la "
+            "scatola. Vent'anni dopo FACT mette lo SK-1 fra i 7 attrezzi che hanno "
+            "fatto il suono degli Autechre."
+        ),
+        "avvertenza": "Il campione vive finché c'è corrente. Prima di cambiare le pile, registrate su un'altra cosa quello che vi serve.",
+        "foto": {
+            "file": "assets/foto/sk1/principale.jpg",
+            "ritaglio": True,
+            "autore": "Vlad Spears (ritaglio di Clusternote)",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Lo SK-1 dall'alto. Il microfono è la grata in alto a destra",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/sk1/pannello.jpg",
+             "autore": "Jon Seidman",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 18%",
+             "didascalia": "I tasti dei suoni sopra la tastiera. Quello giallo è il campione"},
+        ],
+        "fonti": [
+            {"titolo": "«Casio SK-1» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Casio_SK-1", "data": "2026-11-06"},
+            {"titolo": "«Casio SK-1» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/casio/sk-1", "data": "2026-11-06"},
+            {"titolo": "«Casio SK1», Paul Colbert — Making Music, luglio 1986",
+             "url": "https://www.muzines.co.uk/articles/casio-sk1/4921", "data": "2026-11-06"},
+            {"titolo": "«Casio SK-1», Jim Betteridge — International Musician, novembre 1986",
+             "url": "https://www.muzines.co.uk/articles/casio-sk-1/11198", "data": "2026-11-06"},
+            {"titolo": "«The Casio SK-1: Escapist Sample Shuttle», Reed Ghazala — Experimental Musical Instruments, 1996",
+             "url": "https://www.oddmusic.com/illogic/sk1.html", "data": "2026-11-06"},
+            {"titolo": "«Reed Ghazala» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Reed_Ghazala", "data": "2026-11-06"},
+            {"titolo": "Casiotone 201 — Casio, 40 anni di strumenti",
+             "url": "https://web.casio.com/emi/40th/history/ct-201.html", "data": "2026-11-06"},
+            {"titolo": "«Exploring Casio's 40 years» — MMR Magazine",
+             "url": "https://mmrmagazine.com/exploring-casios-40-years-of-creativity-and-contribution/", "data": "2026-11-06"},
+            {"titolo": "«Autechre: Techno Logical», Christopher Holder — Sound On Sound, novembre 1997",
+             "url": "https://www.soundonsound.com/people/autechre-techno-logical", "data": "2026-11-06"},
+            {"titolo": "«Designing chaos», Scott Wilson — FACT, 25/02/2017",
+             "url": "https://factmag.com/2017/02/25/autechre-gear-synths-samplers-drum-machines-effects", "data": "2026-11-06"},
+            {"titolo": "Autechre, intervista di Tom Murphy — Westword, 16/10/2015",
+             "url": "https://den-experimental.voicemediagroup.com/?p=40700578", "data": "2026-11-06"},
+        ],
+        "hashtags": ["#casiosk1", "#casio", "#campionatore", "#autechre", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 090", "Gli Autechre bagnano il Casio SK-1, e si modifica da solo"),
+            ("CASIO · 1985", "Il Casio SK-1 è una tastierina a pile, con un microfono in un angolo."),
+            ("1,4 SECONDI", "Premi il tasto giallo e lo SK-1 registra 1,4 secondi di qualunque rumore."),
+            ("AUTECHRE", "Sean Booth e Rob Brown cominciano con una TR-606 e uno SK-1."),
+            ("IL CHIP", "Aprono lo SK-1 e uniscono 2 punti di un chip. I campioni si mescolano."),
+        ],
+        "reel_cta": "Mandalo all'amico che apre tutto col cacciavite",
+        "reel_audio": {
+            "file": "assets/audio/sk1/registrazione.mp3", "inizio": 0,
+            "autore": "Make Noise (makenoisemusic)", "licenza": "CC0",
+            "fonte": "Freesound",
+            "url": "https://freesound.org/s/499589/",
+            "cosa": "i ritmi di fabbrica di uno SK-1 vero, con le loro variazioni, messi in fila da Make Noise: la batteria interna, non un campione",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 91
+    # Roland Jupiter-4. Scheda scritta il 06/11/2026 sera (rifornimento a
+    # mano). Synth, ma con la registrazione più solida trovata quella sera.
+    #
+    # REGISTRAZIONE: https://commons.wikimedia.org/wiki/File:JP-4_Bass_Arpeggio.ogg
+    #   Raymangold22, «Own work», 15/06/2022, CC0, Ogg Vorbis 44,1 kHz stereo,
+    #   233,58 s. Descrizione: «The Jupiter-4's "Bass" preset played through
+    #   the random arpeggio with portamento and extended release». Che sia un
+    #   Jupiter-4 VERO lo dicono le altre cose caricate dallo stesso utente: la
+    #   foto del suo Jupiter-4 (Roland_Jupiter-4.png, 2018), le schede voce di
+    #   due revisioni fotografate da lui (Jp4-voice-cards-1/2.jpg, 2023), i 2
+    #   chip NEC 8048 del suo esemplare (Jupiter-4-nec-chips.jpg) e i kit
+    #   Hamburg-wave che sostituiscono la logica del Jupiter-4. È lo stesso
+    #   autore delle registrazioni del JV-1080 già in catalogo. Scaricata dal
+    #   runner (originale .ogg) col rifornimento-2026-11-06b, insieme a «JP-4
+    #   PWM Strings» (68 s) e «JP-4 Sample and Hold» (148 s), scartate: archi
+    #   fermi e un effetto di laboratorio raccontano meno della scheda.
+    #   MISURATA il 06/11/2026 (ffmpeg 6.1), file intero: 233,6 s, -13,7 LUFS
+    #   integrati, LRA 3,0, picco -1,0 dBFS, nessun silenzio sotto -45 dB
+    #   tranne gli ultimi 0,4 s; RMS -15,7 dB, -19,4 dB sopra i 200 Hz (è il
+    #   preset «Bass», ma le armoniche fra 300 Hz e 1,3 kHz sono forti e dal
+    #   telefono il giro si sente). Spettrogramma: note brevi e regolari per
+    #   tutto il file, nessun fischio fisso. Note a caso dell'arpeggiatore,
+    #   quindi nessuna melodia di nessuno. registrazione.mp3 = 10-70 s.
+    #
+    # FONTI PER FATTO (aperte il 06/11/2026)
+    # - 1978, il primo vero polifonico di Roland: Sound On Sound nov. 2004
+    #   (Gordon Reid, «the company's first true polysynth»); Wikipedia; VSE
+    #   («the first Jupiter synth», 1978/79); Synthtopia 2009.
+    # - 4 voci, un oscillatore (più un sub) per voce: SOS 2004, Wikipedia,
+    #   VSE, Synthtopia.
+    # - 1.800 sterline: SOS 2004 («At just £1800»); Wikipedia (1.810 sterline,
+    #   2.895 dollari). Scritto «1.800 sterline», che hanno tutte e due.
+    # - parte di Compuphonic, comandi letti da un microprocessore che regola
+    #   oscillatori, filtri e amplificatori: SOS 2004; Wikipedia. SOS scrive
+    #   Intel 8048; Wikipedia scrive 2 NEC 8048, e la foto di Raymangold22 del
+    #   suo esemplare mostra 2 chip NEC: in scheda «2 chip 8048», senza marca.
+    # - arpeggiatore su, giù, su e giù, a caso: Wikipedia; Synthtopia 2009.
+    # - 10 suoni di fabbrica e 8 memorie: Wikipedia; Synthtopia; VSE (che si
+    #   contraddice sulle memorie). Il preset THE FORCE si legge nella foto
+    #   extra.
+    # - 49 tasti, chorus stereo: Wikipedia, VSE, Synthtopia.
+    # - le voci che stonano: Wikipedia (ogni VCO può derivare con
+    #   condensatori vecchi); VSE («can go out often»). È l'AVVERTENZA.
+    # - «Rio» dei Duran Duran col Jupiter-4 di Nick Rhodes: Roland Articles,
+    #   Kat Bein, 16/06/2022; Wikipedia; VSE; Roland UK («the juddering intro
+    #   to 1982's mega-hit Rio»).
+    # - Phil Oakey e i «finti pannelli di legno», «fantastico e sottovalutato»:
+    #   SOS apr. 1995 (Nigel Humberstone). È una citazione, la fonte è
+    #   l'intervista stessa.
+    # - la sigla di BoJack Horseman: Song Exploder ep. 80, 04/08/2016,
+    #   trascrizione (Patrick Carney: «I bought a Roland Jupiter-4 [...] I
+    #   plugged the Pro Tools click track into the CV input, and then turned
+    #   the arpeggiator on»; studio di casa, «the first thing I recorded»;
+    #   Ralph al sax tenore, trombone basso e sax baritono; Noel Bright che
+    #   scrive «like three months later»); Wikipedia «BoJack Horseman
+    #   (soundtrack)» (che cita The Verge 06/08/2016 ed EW 04/08/2016: stesse
+    #   cose, «a few months later»); Stereogum 04/08/2016 (Patrick e lo zio
+    #   Ralph, musica fatta prima che i produttori li cercassero).
+    # - lo «sfasare» del clock perché entra troppo forte: è Carney che lo
+    #   dice nella trascrizione («it's just totally glitching it out»). In
+    #   scheda è «racconta», non un fatto nudo.
+    # - Ralph Carney morto nel dicembre 2017: trascrizione della riedizione
+    #   (Song Exploder 2018); Wikipedia soundtrack. Non messo in scheda.
+    #
+    # FATTI SCARTATI
+    # - Nick Rhodes in modo «random» su un Do maggiore settima: solo Roland
+    #   Articles 2022 (altri parlano di Do minore, voci di forum). Fuori.
+    # - Human League «Seconds» coi modi di assegnazione delle voci: solo
+    #   Wikipedia. Oakey nel 1995 parla di un Jupiter 4 comprato da Ian
+    #   durante «Octopus», non dei dischi del 1981.
+    # - Thriller, McCartney II, Depeche Mode, Vince Clarke, Simple Minds:
+    #   liste di Wikipedia e VSE senza brano o con fonte unica.
+    # - lo studio di Carney a Nashville e il Jupiter-4 comprato da un amico
+    #   in Ohio: solo la trascrizione.
+    # - Promars, il fratello monofonico: c'è in SOS e Wikipedia, non serve.
+    # - Jupiter-8 che vende molto più del 4: solo Wikipedia. In scheda solo
+    #   che arriva nel 1981 con 8 voci (Wikipedia; scheda jupiter8 già uscita).
+    # - Kakehashi fonda Roland a Osaka il 18/04/1972, e prima del 1978 fa SH,
+    #   ritmiche TR e CR, Space Echo: SOS 2004; Wikipedia «Roland
+    #   Corporation»; schede spaceecho e system100 del catalogo.
+    # - i comandi a 64 posizioni per colpa dell'8048: solo SOS 2004.
+    #
+    # HANDLE INSTAGRAM: @duranduran, lo stesso già verificato per la scheda
+    #   del VFX. Black Keys e Patrick Carney: non verificati stasera, niente
+    #   tag (e la regola 3 vuole che il proprietario li segua prima).
+    #
+    # FOTO (thumbnail scaricati dal runner e guardati il 06/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Roland_Jupiter-4,_PNW_SynthFest_2013.jpg
+    #   Daniel Spils (Flickr), CC BY-SA 2.0, 3648x2736, thumbnail 1280. Il
+    #   Jupiter-4 intero di fronte, fianchi di legno, la fila dei preset
+    #   colorati sotto i tasti; ai bordi si vedono braccia e gambe di chi
+    #   guarda (fiera), lo SFONDO non ha altre macchine riconoscibili tranne
+    #   un modulo bianco a sinistra.
+    # extra 1: https://commons.wikimedia.org/wiki/File:Roland_Jupiter-4,_preset_buttons,_PNW_SynthFest_2013.jpg
+    #   stesso autore e licenza: i tasti dei preset, l'ultimo è THE FORCE.
+    # extra 2: https://commons.wikimedia.org/wiki/File:Roland_Jupiter-4,_pitch_bender_%26_other_controls,_PNW_SynthFest_2013.jpg
+    #   stesso autore e licenza: logo Roland JP-4 e la sezione TRIGGER con
+    #   RATE e l'interruttore ARPEGGIO INT/EXT, quello che Carney mette su EXT.
+    #   "posizione" in alto per tenerla nella banda.
+    # extra 3 (slide 4): https://commons.wikimedia.org/wiki/File:Roland_Jupiter-4,_side_angled_view,_PNW_SynthFest_2013.jpg
+    #   stesso autore e licenza: di fianco, gli slider dell'inviluppo del VCA
+    #   (A D S R, LEVEL) e la scritta JUPITER-4 COMPUPHONIC.
+    {
+        "slug": "jupiter4",
+        "numero": 91,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Roland Jupiter-4",
+        "anno": "1978",
+        "luogo": "Osaka, Giappone",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("USCITA", "1978"),
+            ("VOCI", "4"),
+            ("TASTI", "49"),
+            ("PREZZO", "1.800 £"),
+        ],
+        "gancio": "La sigla di BoJack Horseman comincia da un arpeggiatore del 1978",
+        "sottotitolo": "Il primo vero polifonico di Roland: 4 voci, i fianchi di legno e un arpeggiatore che sa anche tirare a caso.",
+        "la_macchina": (
+            "Ha 49 tasti, le guance di legno e sotto la tastiera una fila di "
+            "tasti colorati, uno per ogni suono di fabbrica. L'ultimo si chiama "
+            "THE FORCE, ed era il 1978. Le voci sono 4, una nota ciascuna, e in "
+            "Inghilterra costava 1.800 sterline, molto meno dei polifonici "
+            "americani. Phil Oakey degli Human League, nel 1995, dice che "
+            "sembrava un organo da salotto con quei finti pannelli di legno, e "
+            "nella stessa frase lo chiama fantastico e sottovalutato. Sono "
+            "d'accordo su tutte e due le cose. Il suono è grosso, ma è "
+            "l'arpeggiatore che lo ha fatto entrare nei dischi."
+        ),
+        "inventore_nome": "Roland, Osaka",
+        "inventore": (
+            "Ikutaro Kakehashi fonda Roland a Osaka nell'aprile 1972. In 6 anni "
+            "fa synth a una voce, ritmiche e lo Space Echo. Il Jupiter-4 è il "
+            "primo vero polifonico, e va nella serie Compuphonic, che vuol dire una "
+            "cosa precisa. Le manopole non comandano direttamente il suono. Le "
+            "legge un microprocessore, che poi regola oscillatori, filtri e "
+            "amplificatori, tutti analogici. Dentro ci sono 2 chip 8048, e "
+            "Sound On Sound li chiama primitivi. Hanno però abbastanza memoria "
+            "per 8 suoni vostri, oltre ai 10 di fabbrica. Nel 1981 arriva il "
+            "Jupiter-8, che di voci ne ha 8."
+        ),
+        "come_funziona": (
+            "Ogni voce è un piccolo synth intero. Un oscillatore con un "
+            "sub-oscillatore un'ottava sotto, un filtro passa-basso con la "
+            "risonanza, 2 inviluppi. Con 4 voci ci stanno 4 note, e premendo un "
+            "tasto solo si possono mettere tutte e 4 sulla stessa nota per un "
+            "basso enorme. Poi c'è l'arpeggiatore. Tenete un accordo e il "
+            "Jupiter-4 lo suona una nota alla volta, in su, in giù, su e giù o a "
+            "caso. La velocità la dà lo slider RATE, oppure, spostando "
+            "l'interruttore su EXT, un segnale che arriva da fuori. Provate il "
+            "modo a caso con un accordo di 4 note, viene fuori un giro che "
+            "nessuno ha scritto."
+        ),
+        "richiami": [
+            ("FIG. 1", "4 voci, 1 oscillatore ciascuna"),
+            ("FIG. 2", "Arpeggiatore, anche a caso"),
+            ("FIG. 3", "10 preset e 8 memorie"),
+        ],
+        "chi_lusata": [
+            {"artista": "Duran Duran", "nota": "Nick Rhodes, il giro di «Rio» (1982)", "ig": "duranduran"},
+            {"artista": "Patrick Carney (The Black Keys)", "nota": "la sigla di «BoJack Horseman», con lo zio Ralph ai fiati", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "BoJack Horseman (Main Title Theme)", "artista": "Patrick Carney feat. Ralph Carney", "anno": "2014",
+                         "cosa": "Il giro che entra per primo è l'arpeggiatore del Jupiter-4, mandato avanti dal clic di Pro Tools. I fiati di Ralph arrivano dopo."},
+        "aneddoto": (
+            "Patrick Carney, il batterista dei Black Keys, si è appena fatto lo "
+            "studio in casa e vuole sapere se funziona. La prima cosa che "
+            "registra è una traccia di clic. Poi prende il Jupiter-4, infila il "
+            "clic di Pro Tools nell'ingresso di controllo e accende "
+            "l'arpeggiatore. Racconta che il segnale entra così forte da far "
+            "inciampare il tempo, ed è da lì che viene quel passo zoppo. Aggiunge "
+            "la batteria e manda tutto allo zio Ralph, che ci mette sax tenore, "
+            "sax baritono e trombone basso. Qualche mese dopo gli scrive Noel "
+            "Bright, uno dei produttori di BoJack Horseman."
+        ),
+        "avvertenza": "Le 4 voci hanno un oscillatore ciascuna, e ognuna stona per conto suo. Se un accordo suona storto, prima di tutto riaccordate.",
+        "foto": {
+            "file": "assets/foto/jupiter4/principale.jpg",
+            "autore": "Daniel Spils",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un Jupiter-4 a una fiera di synth nel 2013. Sotto i tasti, la fila dei preset",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/jupiter4/comandi.jpg",
+             "autore": "Daniel Spils",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 0%",
+             "didascalia": "La sezione TRIGGER: lo slider RATE e l'interruttore ARPEGGIO, INT o EXT"},
+            {"file": "assets/foto/jupiter4/preset.jpg",
+             "autore": "Daniel Spils",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 55%",
+             "didascalia": "I tasti dei preset. L'ultimo si chiama THE FORCE"},
+            {"file": "assets/foto/jupiter4/tastiera.jpg",
+             "autore": "Daniel Spils",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 62%",
+             "didascalia": "Gli slider dell'inviluppo del VCA, e la scritta Compuphonic"},
+        ],
+        "fonti": [
+            {"titolo": "«The History Of Roland, Part 1», Gordon Reid — Sound On Sound, novembre 2004",
+             "url": "https://www.soundonsound.com/sos/nov04/articles/roland.htm", "data": "2026-11-06"},
+            {"titolo": "«Roland Jupiter-4» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_Jupiter-4", "data": "2026-11-06"},
+            {"titolo": "«Roland Jupiter-4» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/roland/jupiter-4", "data": "2026-11-06"},
+            {"titolo": "«The Roland Jupiter 4 Compuphonic Synthesizer» — Synthtopia, 2009",
+             "url": "https://www.synthtopia.com/?p=12206", "data": "2026-11-06"},
+            {"titolo": "«Phil Oakey: The Human League», Nigel Humberstone — Sound On Sound, aprile 1995",
+             "url": "https://www.soundonsound.com/people/phil-oakey-human-league", "data": "2026-11-06"},
+            {"titolo": "«Sound Behind the Song: Rio», Kat Bein — Roland, 16/06/2022",
+             "url": "https://articles.roland.com/rio-by-duran-duran/", "data": "2026-11-06"},
+            {"titolo": "«Nick Rhodes on the Roland synths that drive Duran Duran» — Roland UK",
+             "url": "https://www.roland.com/uk/blog/nick-rhodes-on-the-roland-synths-that-drive-duran-duran/", "data": "2026-11-06"},
+            {"titolo": "Song Exploder, ep. 80: BoJack Horseman, trascrizione — 04/08/2016",
+             "url": "https://songexploder.net/transcripts/bojack-horseman-transcript.pdf", "data": "2026-11-06"},
+            {"titolo": "«BoJack Horseman (soundtrack)» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/BoJack_Horseman_(soundtrack)", "data": "2026-11-06"},
+            {"titolo": "Patrick Carney su Song Exploder — Stereogum, 04/08/2016",
+             "url": "https://stereogum.com/1892293/the-black-keys-patrick-carney-breaks-down-the-bojack-horseman-theme-on-song-exploder/music", "data": "2026-11-06"},
+        ],
+        "hashtags": ["#rolandjupiter4", "#roland", "#sintetizzatore", "#duranduran", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 091", "La sigla di BoJack Horseman parte da un Roland del 1978"),
+            ("ROLAND · 1978", "Il Roland Jupiter-4 è il primo vero polifonico di Roland: 4 voci."),
+            ("ARPEGGIATORE", "Tieni un accordo e il Jupiter-4 lo suona nota per nota, anche a caso."),
+            ("DURAN DURAN · 1982", "Nick Rhodes ci fa il giro di «Rio» dei Duran Duran."),
+            ("BOJACK HORSEMAN", "Patrick Carney manda il clic di Pro Tools nel Jupiter-4: è la sigla."),
+        ],
+        "reel_cta": "Mandalo all'amico che ha visto BoJack tre volte",
+        "reel_audio": {
+            "file": "assets/audio/jupiter4/registrazione.mp3", "inizio": 0,
+            "autore": "Raymangold22", "licenza": "CC0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:JP-4_Bass_Arpeggio.ogg",
+            "cosa": "un Jupiter-4 vero col preset «Bass» nell'arpeggiatore in modo casuale, con portamento e coda lunga",
+        },
+        "verificata": True,
+    },
 ]
 
 
