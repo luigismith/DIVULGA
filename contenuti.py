@@ -11094,7 +11094,15 @@ SCHEDE = [
             "url": "https://freesound.org/people/Raggaman/sounds/26985/",
             "cosa": "un Siel Opera 6 vero che suona un giro di basso ritmico a 127 bpm, registrato dall'autore nel 2006 e tagliato a tempo con un gate: il rumore fra una nota e l'altra è zero",
         },
-        "verificata": True,
+        # FERMA (06/11/2026, presidio). Arrivata col rifornimento automatico
+        # su un ramo laterale e portata qui, ma non esce così: la
+        # registrazione è di 7,6 s da ripetere in loop, a -4 LUFS (misurata),
+        # e nella scheda c'è scritto «non ascoltata»; il 28/10 la stessa
+        # registrazione era già stata scartata perché aspra e a scatti. In più
+        # niente «da ascoltare» e nessun artista con due fonti (tavola 5
+        # mezza vuota) e una CTA da questionario («l'amico marchigiano che
+        # suona»). Torna True solo con una registrazione ascoltata e decente.
+        "verificata": False,
     },
     # ---------------------------------------------------------------- 83
     # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
