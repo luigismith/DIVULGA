@@ -264,7 +264,7 @@ VOCE_SCHEDA = {
     # rifornimento del 04/11/2026
     "system100": "sega", "aelita": "sega", "po12": "sega",
     # rifornimento del 06/11/2026 sera
-    "sk1": "giocattolo", "jupiter4": "sega",
+    "sk1": "giocattolo", "jupiter4": "sega", "bigmuff": "studio",
     # elettronica da pochi soldi
     "stylophone": "giocattolo", "omnichord": "giocattolo", "speakspell": "giocattolo", "vl1": "giocattolo",
     # ritmiche: la voce sta sotto, comanda la batteria (vedi CON_BATTERIA)

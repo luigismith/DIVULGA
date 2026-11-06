@@ -93,3 +93,22 @@ non una prova; la scheda lo dichiara in «cosa») e Siel Opera 6 (Freesound
 26985, Raggaman, CC BY 3.0, 7,6 s in loop: misurato, ha un gate ritmico
 a zero assoluto fra le note, detto in «cosa»). Opera 6 ha la tavola 5
 quasi vuota: nessun artista regge due fonti.
+
+Entrate in catalogo il 06/11/2026 sera: Casio SK-1 (Freesound 499589,
+makenoisemusic, CC0, 37,4 s, -15,0 LUFS: i ritmi di fabbrica, non un
+campione), Roland Jupiter-4 (Commons «JP-4 Bass Arpeggio.ogg» di
+Raymangold22, CC0, 233,6 s, estratto 10-70 s; dello stesso utente ci sono
+anche «JP-4 PWM Strings» e «JP-4 Sample and Hold», e «FS1R audio
+sequence.ogg», CC BY-SA 4.0, 127 s, buona per uno Yamaha FS1R del 1998 se
+si trovano artisti a due fonti), Electro-Harmonix Big Muff (Commons «Big
+muff 2011-08-04 extract.ogg», David.Monniaux, CC BY-SA 3.0, 63,3 s: è un
+Little Big Muff, e la scheda lo dice).
+Scartate il 06/11/2026 sera: «Soundriff Fuzz.ogg» (22 s, 1,5 s di silenzio
+in testa, non dice quale Big Muff); Wurlitzer Sideman (Freesound 327439,
+113 s, ma CC BY-NC); «Roland 707 (Antti Luode).mp3» (un brano, nessuna
+prova che sia una TR-707); Freesound «SevenOSeven Dry» (8 s, tag Ableton);
+«EMU ORBIT 9090 V2 - Dance Beat Patterns.ogg» (CC BY-SA 3.0, 7 min: buono,
+ma un modulo di loop dance del 1996 senza storia a due fonti); «Roland jx3p
+demo.ogg» (PD, 39 s: riserva). Dal container Freesound e cdn.freesound.org
+danno 403 e Commons upload 429: le pagine si leggono con WebFetch, i file
+si prendono con scarica-foto.yml.
