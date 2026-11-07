@@ -124,6 +124,10 @@
    "file": "tavole/ms20/reel2.jpg",
    "firma": "c4f172d4bb4c9ae5-1"
   },
+  "mt40": {
+   "file": "tavole/mt40/reel2.jpg",
+   "firma": "59ddef13daa5c69f-1"
+  },
   "nordlead": {
    "file": "tavole/nordlead/reel2.jpg",
    "firma": "ab3820e999dfd822-1"
@@ -953,6 +957,26 @@
     ]
    },
    "firma": "9ca361299e562b38-320-640-1280-1"
+  },
+  "mt40": {
+   "1280": "foto/mt40-1280.jpg",
+   "320": "foto/mt40-320.jpg",
+   "640": "foto/mt40-640.jpg",
+   "dimensioni": {
+    "1280": [
+     800,
+     251
+    ],
+    "320": [
+     320,
+     100
+    ],
+    "640": [
+     640,
+     201
+    ]
+   },
+   "firma": "2ba2d0df9fc1edf1-320-640-1280-1"
   },
   "nordlead": {
    "1280": "foto/nordlead-1280.jpg",
@@ -1860,6 +1884,11 @@
    "file": "suoni/ms20.mp3",
    "firma": "e31eb05c8340cc51-0-45-1",
    "secondi": 45
+  },
+  "mt40": {
+   "file": "suoni/mt40.mp3",
+   "firma": "e7557a3f5871c4c0-0-45-1",
+   "secondi": 18.2
   },
   "nordlead": {
    "file": "suoni/nordlead.mp3",
