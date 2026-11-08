@@ -204,6 +204,10 @@
    "file": "tavole/synthex/reel2.jpg",
    "firma": "0e938bfd941c9957-1"
   },
+  "system100": {
+   "file": "tavole/system100/reel2.jpg",
+   "firma": "057752d053c7b97d-1"
+  },
   "tb303": {
    "file": "tavole/tb303/reel2.jpg",
    "firma": "975dff053a1440f9-1"
@@ -1502,6 +1506,26 @@
    },
    "firma": "e857edeb8c82f5a4-320-640-1280-1"
   },
+  "system100": {
+   "1280": "foto/system100-1280.jpg",
+   "320": "foto/system100-320.jpg",
+   "640": "foto/system100-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     850
+    ],
+    "320": [
+     320,
+     213
+    ],
+    "640": [
+     640,
+     425
+    ]
+   },
+   "firma": "00e6895a8152d5d2-320-640-1280-1"
+  },
   "tb303": {
    "1280": "foto/tb303-1280.jpg",
    "320": "foto/tb303-320.jpg",
@@ -1953,6 +1977,11 @@
    "file": "suoni/stylophone.mp3",
    "firma": "0a988070ec3e5b67-11-45-1",
    "secondi": 23.1
+  },
+  "system100": {
+   "file": "suoni/system100.mp3",
+   "firma": "fe344dd40dd6ca54-0-45-1",
+   "secondi": 45
   },
   "tb303": {
    "file": "suoni/tb303.mp3",
