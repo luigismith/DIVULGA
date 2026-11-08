@@ -212,6 +212,11 @@ NOMI = {
     "Ekaterinburg": "Iekaterinbùrg",
     "Evgenij": "Evghèni",            # sentito «Evgeny», come da solo: tiene il suono «gh»
     "Tarkovskij": "Tarkòvski",
+    # «reggae»: espeak lo accenta in fondo (reɡːˈae, «reggàe»), e un
+    # ascoltatore ce l'ha fatto notare sul reel dell'MT-40 (08/11/2026).
+    # Whisper trascrive «reggae» con tutti e due gli accenti: il riascolto
+    # non vede gli accenti sbagliati, quindi si controllano i fonemi.
+    "reggae": "règghe", "Reggae": "Règghe",
     # NON riscrivere: Erasure (da solo si capisce, «Irèisciur» diventa «E-Ration»),
     # Murzin (da solo esatto, «Mùrsin» diventa «Mursin»).
     "Buchla": "Bùcla",
