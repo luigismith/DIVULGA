@@ -156,6 +156,10 @@
    "file": "tavole/phase90/reel2.jpg",
    "firma": "edc32dccf3460ee0-1"
   },
+  "po12": {
+   "file": "tavole/po12/reel2.jpg",
+   "firma": "0b942874e62e6f8b-1"
+  },
   "polivoks": {
    "file": "tavole/polivoks/reel2.jpg",
    "firma": "817114befc4c193c-1"
@@ -1150,6 +1154,26 @@
    },
    "firma": "18033cb6ca3e709c-320-640-1280-1"
   },
+  "po12": {
+   "1280": "foto/po12-1280.jpg",
+   "320": "foto/po12-320.jpg",
+   "640": "foto/po12-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     1707
+    ],
+    "320": [
+     320,
+     427
+    ],
+    "640": [
+     640,
+     854
+    ]
+   },
+   "firma": "9eea23264aae574c-320-640-1280-1"
+  },
   "polivoks": {
    "1280": "foto/polivoks-1280.jpg",
    "320": "foto/polivoks-320.jpg",
@@ -1936,6 +1960,11 @@
    "file": "suoni/optigan.mp3",
    "firma": "e2e85e9e7a36bd27-0-45-1",
    "secondi": 34.1
+  },
+  "po12": {
+   "file": "suoni/po12.mp3",
+   "firma": "c643453463de87c8-0-45-1",
+   "secondi": 12.1
   },
   "polivoks": {
    "file": "suoni/polivoks.mp3",
