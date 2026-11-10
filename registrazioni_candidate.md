@@ -112,3 +112,12 @@ ma un modulo di loop dance del 1996 senza storia a due fonti); «Roland jx3p
 demo.ogg» (PD, 39 s: riserva). Dal container Freesound e cdn.freesound.org
 danno 403 e Commons upload 429: le pagine si leggono con WebFetch, i file
 si prendono con scarica-foto.yml.
+
+Entrata in catalogo il 10/11/2026: Roland Juno-60 (Commons «JUNO-60 PWM
+Strings.ogg», Raymangold22, CC0, 50 s intera; misurata -9,2 LUFS, un solo
+silenzio, 1 s in coda; NON ascoltata da un orecchio). Riserva dello stesso
+autore: «JUNO-60 Manual PWM.ogg» (111 s, CC0) e «Resonance Sweep» (21 s).
+Foto: deepsonic (Flickr), CC BY 2.0, 4 foto in 2048x1366. Yamaha FS1R: la
+registrazione c'è (Raymangold22, CC BY-SA 4.0, 127 s) ma su Commons le
+uniche foto sono panorami di 2000x188 e 2000x580: inutilizzabili per una
+tavola. Roland JX-3P: foto 800x400 e registrazione PD da 39 s, troppo poco.

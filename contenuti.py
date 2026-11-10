@@ -11821,6 +11821,218 @@ SCHEDE = [
         "verificata": True,
     },
     # ---------------------------------------------------------------- 86
+    # Roland Juno-60. Scheda scritta il 10/11/2026 (rifornimento, coda a 12).
+    #
+    # REGISTRAZIONE: https://commons.wikimedia.org/wiki/File:JUNO-60_PWM_Strings.ogg
+    #   Raymangold22, «Own work», 15/06/2022, CC0, Ogg Vorbis, 50,3 s. Pagina
+    #   letta il 10/11/2026: «JUNO-60 Strings with PWM Envelope»; l'autore
+    #   scrive che l'impulso comandato dall'inviluppo è raro altrove. Scaricata
+    #   dal runner (scaricare/rifornimento-2026-11-10.txt). MISURATA (ffmpeg):
+    #   50,3 s, -9,2 LUFS, LRA 6,1, picco +0,6 dBFS (la normalizzazione del
+    #   reel la porta a -16), un solo silenzio sotto -45 dB: 1 s in coda. NON
+    #   ASCOLTATA da un orecchio: la sessione automatica non ha audio. Scartata
+    #   la «Manual PWM» (1:51, stesso autore, CC0): è la stessa macchina, ma
+    #   i soli accordi tenuti con la mano che gira lo slider sono meno
+    #   riconoscibili. Riserva.
+    #
+    # FATTI (aperti il 10/11/2026), ognuno con due fonti
+    # - 1982, 6 voci, 61 tasti, DCO + sub: Wikipedia EN «Roland Juno-60»;
+    #   Roland Articles «JUNO-60: The Whole Story» (Peter Kirn, 17/02/2021);
+    #   Vintage Synth Explorer; SOS «History of Roland part 2».
+    # - il Juno-6 senza memorie, il 60 con 56: SOS («The only thing that the
+    #   Juno 6 lacked was memories»); Vintage Synth Explorer («56 patches»);
+    #   Wikipedia (infobox 56, nel testo «up to 54»: le fonti non concordano
+    #   sul conto, in scheda 56 che è la cifra di SOS e VSE).
+    # - DCB, la prima porta digitale Roland, senza MIDI: SOS; Wikipedia; VSE;
+    #   Roland «Whole Story» («precursor to MIDI»).
+    # - DCO = analogico guidato da circuito digitale, regge l'accordatura:
+    #   SOS (storia di Roland); Roland «Whole Story» (temperatura);
+    #   Wikipedia.
+    # - un solo ADSR per filtro e volume: Matrixsynth (recensione del 1983);
+    #   Wikipedia («1 ADSR»).
+    # - impulso modulabile dall'inviluppo: descrizione Commons della
+    #   registrazione; Matrixsynth 1983 («pulse width [...] VCF envelope»).
+    # - chorus a linee di ritardo, stereo, I+II: Roland «Whole Story»;
+    #   Wikipedia (BBD, 2 tasti); foto del pannello (OFF, I, II).
+    # - Juno-6 a 1.295 dollari: Wikipedia; Matrixsynth 1983. Juno-60 a 1.750
+    #   (Matrixsynth) o 1.795 (Wikipedia): scritto come dubbio.
+    # - Larry Heard, «Can You Feel It», solo Juno-60 e TR-909, due registratori
+    #   a cassetta, «one take, one pass, on one tape»: Vice (Josh Baines,
+    #   27/06/2017); Roland «Sound Behind the Song» (Dias, 17/02/2021);
+    #   Wikipedia; Red Bull Music Academy (Heard, 01/02/2017).
+    # - il disco: lato B di «Washing Machine», Trax: Vice; Wikipedia. Anno
+    #   1986 (Wikipedia, Vice «Thirty-one years ago»); le macchine comprate
+    #   nel 1984 (Roland «Sound Behind the Song»; RBMA «We're talking about
+    #   1984»). Quando abbia registrato il pezzo: le fonti non concordano,
+    #   in scheda è detto.
+    # - Knuckles e Hardy lo suonano da cassetta: RBMA (Heard); Vice («Ron
+    #   Hardy approved»).
+    # - Rob Hyman, «Time After Time»: pad dalla preset 61 e basso, dal
+    #   racconto di Hyman (Roland Articles 17/02/2021; American Songwriter
+    #   06/08/2026 che lo riprende); Wikipedia «Roland Juno-60» e il video
+    #   di RetroSound su Matrixsynth (19/02/2025) lo mettono fra i suoni.
+    #
+    # FATTI SCARTATI
+    # - convertitore MD-8 da DCB a MIDI: solo Vintage Synth Explorer.
+    # - 0,4 e 0,6 Hz del chorus: solo Wikipedia.
+    # - fine produzione febbraio 1984, Juno-106 successore: solo Wikipedia.
+    # - filtro che oscilla da solo: solo Matrixsynth 1983.
+    # - 76 programmi con la combinazione di tasti e programmi di prova
+    #   80-98: solo VSE.
+    # - Vince Clarke col Juno-60 su un disco preciso: nessuna fonte lo lega;
+    #   solo il rig dal vivo del 1992 (Music Technology).
+    # - «Take On Me»: American Songwriter dice che il Juno-60 fa la melodia
+    #   principale, Roland dice solo che il 60 aggiunge la coda nella
+    #   versione di Tarney. Contraddizione, fuori.
+    # - Heard compra le macchine coi risparmi del lavoro statale: solo Roland.
+    #
+    # HANDLE INSTAGRAM: nessuno (Larry Heard e Cyndi Lauper non verificati,
+    #   e il proprietario li segue prima).
+    #
+    # FOTO (Commons, thumbnail 1280 dal runner, guardate il 10/11/2026)
+    # tutte deepsonic (Svizzera, Flickr), CC BY 2.0, 27/02/2012, Panasonic LX5,
+    # il Juno-60 numero di serie 357180. Principale (6789109492): tutta la
+    # macchina di tre quarti su un tappeto bianco. Extra: chorus (6789103486,
+    # i tasti OFF/I/II); DCO (6935216739, PWM, onde, SUB OSC, NOISE); memorie
+    # (6789107694, i tasti dei numeri e TAPE).
+    {
+        "slug": "juno60",
+        "numero": 86,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Roland Juno-60",
+        "anno": "1982",
+        "luogo": "Osaka, Giappone",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("USCITA", "1982"),
+            ("VOCI", "6"),
+            ("TASTI", "61"),
+            ("MEMORIE", "56"),
+        ],
+        "gancio": "«Can You Feel It» è fatta con un Juno-60, un 909 e due registratori a cassetta",
+        "sottotitolo": "6 voci con l'oscillatore guidato da un circuito digitale e un chorus che si accende con un tasto.",
+        "la_macchina": (
+            "Roland lo presenta nel 1982, dopo il Juno-6, e ha 61 tasti e 6 voci. "
+            "Il Juno-6 non aveva memorie, questo ne ha 56, e sul pannello c'è la "
+            "fila di tasti numerati per richiamarle. Il prezzo negli Stati Uniti "
+            "è 1.750 o 1.795 dollari, a seconda della fonte. Il MIDI non esiste "
+            "ancora, e il Juno-60 ha una presa che si chiama DCB, la prima porta "
+            "digitale di Roland, buona solo per parlare con altre macchine Roland. "
+            "A me il pannello piace quasi più del suono: è tutto in vista, in "
+            "fila, e ogni slider fa una cosa sola."
+        ),
+        "inventore_nome": "Roland, Osaka",
+        "inventore": (
+            "Nel 1982 Roland fa uscire due synth uno dopo l'altro, il Juno-6 a "
+            "1.295 dollari e il Juno-60 che gli aggiunge le memorie. La novità "
+            "sta dentro. Si chiama DCO ed è un oscillatore analogico guidato da "
+            "un circuito digitale, che tiene l'accordatura anche quando cambia "
+            "la temperatura. Sound On Sound scrive che con un oscillatore così "
+            "un synth si poteva portare sul palco senza paura che stonasse. "
+            "Gli oscillatori a tensione, con la temperatura che cambia, "
+            "si scordano più facilmente."
+        ),
+        "come_funziona": (
+            "Ogni voce ha un oscillatore con onda a dente di sega, quadra o a "
+            "impulso, più un sub-oscillatore e il rumore. L'impulso si può far "
+            "allargare e stringere a mano, con l'LFO o con l'inviluppo. L'ultima "
+            "è la cosa che sentite nella registrazione: gli archi che si gonfiano "
+            "da soli. Poi un filtro passa-alto senza risonanza e un passa-basso a "
+            "24 dB. L'inviluppo è uno solo, ADSR, e comanda sia il filtro sia il "
+            "volume. In fondo c'è il chorus, con due tasti, I e II, e premendoli "
+            "insieme viene più forte. Sono linee di ritardo modulate, e il suono "
+            "esce in stereo."
+        ),
+        "richiami": [
+            ("FIG. 1", "DCO: analogico, guidato in digitale"),
+            ("FIG. 2", "Chorus I e II, in stereo"),
+            ("FIG. 3", "56 memorie e la presa DCB"),
+        ],
+        "chi_lusata": [
+            {"artista": "Larry Heard (Mr. Fingers)", "nota": "«Can You Feel It», solo Juno-60 e TR-909", "ig": None},
+            {"artista": "Rob Hyman (Cyndi Lauper)", "nota": "«Time After Time» (1984), dice lui il pad della preset 61", "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Can You Feel It", "artista": "Mr. Fingers", "anno": "1986",
+                         "cosa": "Sentite quanto poco c'è: un Juno-60 e un 909, e secondo Heard nient'altro in tutto il pezzo."},
+        "aneddoto": (
+            "Larry Heard compra un Juno-60 e un TR-909 e comincia a fare dischi "
+            "a casa, a Chicago. Il primo giorno nascono «Mystery of Love» e "
+            "«Washing Machine», racconta. Per «Can You Feel It» non ha un "
+            "registratore multitraccia, solo 2 cassette. Suona tutto in un "
+            "passaggio su una, la riversa sull'altra e aggiunge a mano qualche "
+            "parte. Frankie Knuckles e Ron Hardy la mettono da cassetta. Poi "
+            "esce su Trax, lato B di «Washing Machine», nel 1986. Quando l'abbia "
+            "registrata, le fonti non lo dicono con lo stesso anno."
+        ),
+        "avvertenza": "Niente MIDI: la presa DCB parla solo con macchine Roland. Per un sistema di oggi cercate prima l'interfaccia.",
+        "foto": {
+            "file": "assets/foto/juno60/principale.jpg",
+            "autore": "deepsonic (Flickr)",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Il Juno-60 di tre quarti: sopra i tasti il pannello con tutti i comandi in fila",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/juno60/dco.jpg",
+             "autore": "deepsonic (Flickr)",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "didascalia": "La sezione DCO: PWM, i 3 tasti delle onde, SUB OSC e NOISE"},
+            {"file": "assets/foto/juno60/chorus.jpg",
+             "autore": "deepsonic (Flickr)",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "didascalia": "Il chorus: i tasti OFF, I e II, e accanto i comandi del filtro e dell'inviluppo"},
+            {"file": "assets/foto/juno60/memorie.jpg",
+             "autore": "deepsonic (Flickr)",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "didascalia": "I tasti numerati delle memorie, e quelli di TAPE per salvare i suoni su cassetta"},
+        ],
+        "fonti": [
+            {"titolo": "«Roland Juno-60» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_Juno-60", "data": "2026-11-10"},
+            {"titolo": "«JUNO-60: The Whole Story», Peter Kirn — Roland Articles, 17/02/2021",
+             "url": "https://articles.roland.com/?p=17136", "data": "2026-11-10"},
+            {"titolo": "«The History of Roland, Part 2» — Sound On Sound",
+             "url": "https://www.soundonsound.com/people/history-roland-part-2", "data": "2026-11-10"},
+            {"titolo": "«Roland Juno-60» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/roland/juno-60", "data": "2026-11-10"},
+            {"titolo": "«1983 Roland Juno-60 Polyphony Review» — Matrixsynth",
+             "url": "https://www.matrixsynth.com/2010/03/1983-roland-juno-60-polyphony-review.html", "data": "2026-11-10"},
+            {"titolo": "«Larry Heard, Can You Feel It», Josh Baines — Vice, 27/06/2017",
+             "url": "https://www.vice.com/en/article/larry-heard-can-you-feel-it-making-of", "data": "2026-11-10"},
+            {"titolo": "«Larry Heard on Making His First House Tracks» — Red Bull Music Academy, 01/02/2017",
+             "url": "https://daily.redbullmusicacademy.com/2017/02/larry-heard-fingers-inc", "data": "2026-11-10"},
+            {"titolo": "«Sound Behind the Song: Can You Feel It», Alexander Dias — Roland Articles, 17/02/2021",
+             "url": "https://articles.roland.com/?p=17260", "data": "2026-11-10"},
+            {"titolo": "«Can You Feel It» (Fingers Inc.) — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Can_You_Feel_It_(Fingers_Inc._song)", "data": "2026-11-10"},
+            {"titolo": "«Rob Hyman: The Hooters, Time After Time, and the JUNO-60» — Roland Articles, 17/02/2021",
+             "url": "https://articles.roland.com/?p=17315", "data": "2026-11-10"},
+            {"titolo": "«JUNO-60 PWM Strings.ogg» — Wikimedia Commons (Raymangold22, CC0)",
+             "url": "https://commons.wikimedia.org/wiki/File:JUNO-60_PWM_Strings.ogg", "data": "2026-11-10"},
+        ],
+        "hashtags": ["#juno60", "#roland", "#sintetizzatore", "#larryheard", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 086", "Un classico house nasce da un Juno-60, un 909 e 2 cassette"),
+            ("ROLAND JUNO-60 · 1982", "Il Juno-60 ha 6 voci e 56 memorie. Il Juno-6 non ne aveva."),
+            ("DCO", "L'oscillatore è analogico ma guidato in digitale, quindi resta accordato."),
+            ("MR. FINGERS", "Larry Heard registra «Can You Feel It» in un passaggio, su una cassetta."),
+            ("CHICAGO", "Frankie Knuckles e Ron Hardy la mettono da cassetta, racconta Heard."),
+        ],
+        "reel_cta": "Mandalo a chi ha ballato «Can You Feel It»",
+        "reel_audio": {
+            "file": "assets/audio/juno60/registrazione.mp3", "inizio": 0,
+            "autore": "Raymangold22", "licenza": "CC0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:JUNO-60_PWM_Strings.ogg",
+            "cosa": "un Juno-60 vero che suona un tappeto d'archi, con l'ampiezza dell'impulso comandata dall'inviluppo: il gonfiarsi che sentite",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 87
     # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
     # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
     # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
@@ -11834,7 +12046,7 @@ SCHEDE = [
     # Commons o Freesound: il reel usa la sigla.
     {
         "slug": "autotune",
-        "numero": 86,
+        "numero": 87,
         "serie": "GLI EFFETTI",
         "strumento": "Antares Auto-Tune",
         "anno": "1997",
@@ -11920,7 +12132,7 @@ SCHEDE = [
         ],
         "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 086", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("ELETTROFONI · N. 087", "La voce robot di Cher nasce da chi cercava il petrolio"),
             ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
             ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
             ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
@@ -11931,7 +12143,7 @@ SCHEDE = [
     },
     {
         "slug": "lowrey",
-        "numero": 87,
+        "numero": 88,
         "serie": "GLI ORGANI",
         "strumento": "Lowrey DSO",
         "anno": "1965",
@@ -12024,7 +12236,7 @@ SCHEDE = [
         ],
         "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 087", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ELETTROFONI · N. 088", "Quel clavicembalo dei Beatles è un organo da salotto"),
             ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
             ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
             ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
@@ -12035,7 +12247,7 @@ SCHEDE = [
     },
     {
         "slug": "wasp",
-        "numero": 88,
+        "numero": 89,
         "serie": "I SINTETIZZATORI",
         "strumento": "EDP Wasp",
         "anno": "1978",
@@ -12127,7 +12339,7 @@ SCHEDE = [
         ],
         "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 088", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("ELETTROFONI · N. 089", "Casale dei Devo: col sudore delle dita suona da solo"),
             ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
             ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
@@ -12138,7 +12350,7 @@ SCHEDE = [
     },
     {
         "slug": "elkarhapsody",
-        "numero": 89,
+        "numero": 90,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -12228,7 +12440,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 089", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 090", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -12239,7 +12451,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 90,
+        "numero": 91,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -12325,7 +12537,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 090", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 091", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -12336,7 +12548,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 91,
+        "numero": 92,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -12425,7 +12637,7 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 091", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 092", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
@@ -12436,7 +12648,7 @@ SCHEDE = [
     },
     {
         "slug": "pianet",
-        "numero": 92,
+        "numero": 93,
         "serie": "GLI ELETTROMECCANICI",
         "strumento": "Hohner Pianet",
         "anno": "1962",
@@ -12521,7 +12733,7 @@ SCHEDE = [
         ],
         "hashtags": ["#pianet", "#hohner", "#pianoelettrico", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 092", "«She's Not There» degli Zombies: un Pianet da casa"),
+            ("ELETTROFONI · N. 093", "«She's Not There» degli Zombies: un Pianet da casa"),
             ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
             ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
@@ -12530,7 +12742,7 @@ SCHEDE = [
         "reel_cta": "Mandalo a chi canta «She's Not There» in macchina",
         "verificata": True,
     },
-    # ---------------------------------------------------------------- 92
+    # ---------------------------------------------------------------- 93
     # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
     # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
     # Scheda «ans» — sintetizzatore ANS di Evgenij Murzin (URSS, prototipo 1958).
