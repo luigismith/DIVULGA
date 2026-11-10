@@ -202,11 +202,16 @@ jobs:
         if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1'
         with:
           path: docs
+      # Secondo tentativo del deploy: vedi pubblica.yml, 10/11/2026. Il
+      # rifacimento del 09/11 alle 12:30 e' saltato cosi', prima dell'API.
       - name: Deploy Pages
+        id: deploy1
         if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1'
+        continue-on-error: true
         uses: actions/deploy-pages@v4
-        with:
-          timeout: 1500000     # vedi pubblica.yml, 10/11/2026
+      - name: Deploy Pages, secondo tentativo
+        if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1' && steps.deploy1.outcome == 'failure'
+        uses: actions/deploy-pages@v4
 
       - name: Pubblica il reel
         if: steps.quale.outputs.slug != '' && steps.quale.outputs.prova != '1'

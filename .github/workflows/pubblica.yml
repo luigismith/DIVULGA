@@ -72,7 +72,8 @@ jobs:
     # successiva (in un gruppo resta in attesa un run solo: l'ultimo
     # arrivato scalza gli altri). Ora ogni passo lento ha il suo tetto e il
     # job intero non supera i 40 minuti.
-    # Portato a 60 il 10/11/2026: vedi «Deploy Pages» qui sotto.
+    # Portato a 60 il 10/11/2026: il deploy puo' girare due volte da 10
+    # minuti (vedi «Deploy Pages» qui sotto).
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -188,14 +189,22 @@ jobs:
           path: docs
       # 10/11/2026: il post delle 18 non e' uscito, due volte. Pages e'
       # rimasto in «syncing_files» e deploy-pages si e' arreso al suo tetto
-      # di 10 minuti (`timeout`, default 600000 ms), annullando il deploy:
-      # niente immagini online, quindi niente post. Il sito pesa 722 MB e
-      # ogni deploy carica tutto; quel giorno Actions aveva un'interruzione
-      # parziale. Un Pages lento non deve costare la giornata: 25 minuti.
+      # di 10 minuti, annullando il deploy: niente immagini online, quindi
+      # niente post. Quel giorno Actions aveva un'interruzione parziale.
+      # Il tetto NON si alza: con un `timeout` di 25 minuti l'azione
+      # risponde «timeout value is greater than the allowed maximum -
+      # timeout set to the maximum of 600000 milliseconds». Era una
+      # correzione che non poteva funzionare (regola 10): il post e' uscito
+      # al terzo giro solo perche' Pages si era ripreso. Quindi un secondo
+      # deploy, UNA volta, se il primo fallisce. E' ancora prima dell'API:
+      # il budget video di Instagram non si tocca.
       - name: Deploy Pages
+        id: deploy1
+        continue-on-error: true
         uses: actions/deploy-pages@v4
-        with:
-          timeout: 1500000
+      - name: Deploy Pages, secondo tentativo
+        if: steps.deploy1.outcome == 'failure'
+        uses: actions/deploy-pages@v4
 
       - name: Pubblica su Instagram
         env:
@@ -239,4 +248,3 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           artifact_name: github-pages-archivio
-          timeout: 1500000
