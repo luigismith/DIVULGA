@@ -1,0 +1,8 @@
+assets/foto/juno60/cand0.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Roland_Juno-60_%286789103486%29.jpg/1280px-Roland_Juno-60_%286789103486%29.jpg
+assets/foto/juno60/cand1.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Roland_Juno-60_%286935220135%29.jpg/1280px-Roland_Juno-60_%286935220135%29.jpg
+assets/foto/juno60/cand2.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Roland_Juno-60_%286789107694%29.jpg/1280px-Roland_Juno-60_%286789107694%29.jpg
+assets/foto/juno60/cand3.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Roland_Juno-60_%286789108132%29.jpg/1280px-Roland_Juno-60_%286789108132%29.jpg
+assets/foto/juno60/cand4.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Roland_Juno-60_%286789109492%29.jpg/1280px-Roland_Juno-60_%286789109492%29.jpg
+assets/foto/juno60/cand5.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Roland_Juno-60_%286935216739%29.jpg/1280px-Roland_Juno-60_%286935216739%29.jpg
+assets/audio/juno60/pwm.ogg https://upload.wikimedia.org/wikipedia/commons/9/95/JUNO-60_PWM_Strings.ogg
+assets/audio/juno60/manual.ogg https://upload.wikimedia.org/wikipedia/commons/b/b7/JUNO-60_Manual_PWM.ogg
