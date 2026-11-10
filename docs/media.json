@@ -1,5 +1,9 @@
 {
  "copertine": {
+  "aelita": {
+   "file": "tavole/aelita/reel2.jpg",
+   "firma": "6b8ed9723501a2fc-1"
+  },
   "ans": {
    "file": "tavole/ans/reel2.jpg",
    "firma": "0780239005499560-1"
@@ -254,6 +258,26 @@
   }
  },
  "foto": {
+  "aelita": {
+   "1280": "foto/aelita-1280.jpg",
+   "320": "foto/aelita-320.jpg",
+   "640": "foto/aelita-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "ce1a22f281864b43-320-640-1280-1"
+  },
   "ans": {
    "1280": "foto/ans-1280.jpg",
    "320": "foto/ans-320.jpg",
@@ -1836,6 +1860,11 @@
   }
  },
  "suoni": {
+  "aelita": {
+   "file": "suoni/aelita.mp3",
+   "firma": "b41b4951e5d7df9c-0-45-1",
+   "secondi": 30.7
+  },
   "ans": {
    "file": "suoni/ans.mp3",
    "firma": "a9378aaf4aab7058-0-45-1",
