@@ -1,13 +1,15 @@
-# ELETTROFONI — legge i messaggi diretti (lancio manuale, sola lettura).
+# ELETTROFONI — conta i messaggi diretti nuovi (lancio manuale, sola lettura).
+# Il log di un repo pubblico lo legge chiunque: qui si stampano solo due
+# numeri, mai nomi o testo (11/11/2026, vedi direct.py).
 name: Leggi direct
 
 on:
   workflow_dispatch:
     inputs:
-      quante:
-        description: 'Quante conversazioni'
+      ore:
+        description: 'Messaggi arrivati nelle ultime N ore'
         required: false
-        default: '20'
+        default: '26'
         type: string
 
 permissions:
@@ -25,4 +27,4 @@ jobs:
       - env:
           STATE_KEY: ${{ secrets.STATE_KEY }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-        run: python direct.py "${{ inputs.quante }}"
+        run: python direct.py "${{ inputs.ore }}"

@@ -605,8 +605,15 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   foto profilo e link in bio li può cambiare SOLO il proprietario
   dall'app. Non è un permesso mancante: l'endpoint non esiste per
   nessuno. Non riproporlo come se fosse un problema di scope.
-- **Direct** (16/10/2026): `direct.py` / `direct.yml` li legge (sola
-  lettura). Come per i commenti, si risponde solo col via del proprietario.
+- **Direct** (16/10/2026): `direct.py` / `direct.yml`, sola lettura. Come
+  per i commenti, si risponde solo col via del proprietario.
+  **I direct non si stampano MAI** (11/11/2026, il proprietario: «si vedono
+  i direct sulla repo. non va bene»). Il repo è pubblico e i log di Actions
+  li legge chiunque: per tre settimane ogni lettura ha messo nel log chi ci
+  scriveva e cosa. Quei log sono stati cancellati; ora `direct.py` stampa
+  solo quanti messaggi nuovi e in quante conversazioni, niente nomi né
+  testo. Il contenuto lo legge il proprietario dall'app. Regola generale:
+  nel log di un repo pubblico va solo ciò che si metterebbe in un post.
 - **Risposte ai commenti**: si scrivono in `risposte.json` SOLO dopo il via
   del proprietario e le pubblica `rispondi.yml` (una ogni 2 minuti; le voci
   fatte si segnano, un secondo lancio non risponde due volte).
