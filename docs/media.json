@@ -248,6 +248,10 @@
    "file": "tavole/vcs3/reel2.jpg",
    "firma": "d42065331737ff38-1"
   },
+  "vfx": {
+   "file": "tavole/vfx/reel2.jpg",
+   "firma": "c0197c7c2a65c5d4-1"
+  },
   "vl1": {
    "file": "tavole/vl1/reel2.jpg",
    "firma": "0a3784ace64e8a1d-1"
@@ -1762,6 +1766,26 @@
    },
    "firma": "0070f1b7638905c4-320-640-1280-1"
   },
+  "vfx": {
+   "1280": "foto/vfx-1280.jpg",
+   "320": "foto/vfx-320.jpg",
+   "640": "foto/vfx-640.jpg",
+   "dimensioni": {
+    "1280": [
+     960,
+     233
+    ],
+    "320": [
+     320,
+     78
+    ],
+    "640": [
+     640,
+     155
+    ]
+   },
+   "firma": "6f4f2e5ac252c577-320-640-1280-1"
+  },
   "vl1": {
    "1280": "foto/vl1-1280.jpg",
    "320": "foto/vl1-320.jpg",
@@ -2077,6 +2101,11 @@
   "vcs3": {
    "file": "suoni/vcs3.mp3",
    "firma": "4fbe971f1d770a1f-5-45-1",
+   "secondi": 45
+  },
+  "vfx": {
+   "file": "suoni/vfx.mp3",
+   "firma": "b9d98a1c4bb7007f-0-45-1",
    "secondi": 45
   },
   "vl1": {
