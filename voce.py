@@ -217,6 +217,10 @@ NOMI = {
     # Whisper trascrive «reggae» con tutti e due gli accenti: il riascolto
     # non vede gli accenti sbagliati, quindi si controllano i fonemi.
     "reggae": "règghe", "Reggae": "Règghe",
+    # Stesso controllo sui fonemi prima del reel del VFX (11/11/2026):
+    # espeak diceva «ensònic», «transuàve» e «commodòre». Le forme qui
+    # sotto danno ˈɛnsonik, trˈansʊeiv, kˈɔmmodor e passano il riascolto.
+    "Ensoniq": "Ènsonic", "Transwave": "Trànsueiv", "Commodore": "Còmmodor",
     # NON riscrivere: Erasure (da solo si capisce, «Irèisciur» diventa «E-Ration»),
     # Murzin (da solo esatto, «Mùrsin» diventa «Mursin»).
     "Buchla": "Bùcla",
