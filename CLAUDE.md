@@ -243,11 +243,21 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   iperrealistico B (`assets/dinamo/dinamo_reale_b.png`, latta smaltata
   anni '60). Animazione: `reference_to_video` con l'immagine e l'audio
   della voce (create_video_from_image rifiuta i volti non umani). Nel
-  workspace ci sono voci «CAR …» di un altro progetto: non toccarle. NON
-  ancora in produzione: il runner non ha accesso a HeyGen, i crediti
-  bastano per ~10 reel interi, e un video fotorealistico generato può
-  ricevere da Meta l'etichetta «Info sull'AI» (regola 4: non si
-  nascondono i segnali, decide il proprietario).
+  workspace ci sono voci «CAR …» di un altro progetto: non toccarle. Un
+  video fotorealistico generato può ricevere da Meta l'etichetta «Info
+  sull'AI» (regola 4: non si nascondono i segnali; il proprietario l'ha
+  saputo e ha detto «mi piace fa uscire il nuovo reel»).
+  **Formato 4** (`genera_reel_heygen.py`, file `reel4.mp4`): il runner
+  non ha HeyGen, quindi il reel lo fa la SESSIONE e lo committa già
+  montato prima delle 18 (pubblica.yml lo mette su Pages); se il file
+  c'è, `pubblica_reel.py` pubblica quello (formato 4, ritmo «heygen»,
+  `reel4` in metriche). Passi e lezioni nel commento in testa al file:
+  audio di riferimento al massimo 15 s per clip (due da 18-19 s fallite),
+  tagli nelle pause, frasi verificate da due verificatori, riascolto con
+  i nomi detti giusti ma che Whisper non sa scrivere dichiarati in
+  `nomi_accettati`. Impaginato voluto dal proprietario: Dinamo al centro
+  e grande (cornice 760 px), foto sopra. Primo: Casio SK-1, 12/11/2026,
+  ~45 crediti (restano ~360: ~8 reel così).
 - **Il reel serale ha due inneschi** (21/10/2026): la Routine delle
   19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
   e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno

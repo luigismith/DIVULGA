@@ -189,6 +189,7 @@ def slug_per_media():
         # lunghe quanto serve a leggerle invece di 2,6 s fissi).
         # «reel3»: il reel parlato (dal 21/10/2026, in prova a giorni alterni).
         ruolo = ("speciale" if r.get("fuori_catalogo")
+                 else "reel4" if r.get("formato", 1) == 4
                  else "reel3" if r.get("formato", 1) == 3
                  else "reel2l" if r.get("formato", 1) == 2 and r.get("ritmo") == "lettura"
                  else "reel2" if r.get("formato", 1) == 2 else "reel")
@@ -242,7 +243,8 @@ def riassunto(dati):
     print("\nREEL PER FORMATO (mediane):")
     for ruolo, nome in (("reel", "formato 1"), ("reel2", "formato 2"),
                         ("reel2l", "formato 2, ritmo di lettura"),
-                        ("reel3", "formato 3, parlato")):
+                        ("reel3", "formato 3, parlato"),
+                        ("reel4", "formato 4, parlato HeyGen")):
         g = [m["insights"] for m in dati["media"] if m.get("ruolo") == ruolo]
         if not g:
             print(f"  {nome}: nessun reel"); continue

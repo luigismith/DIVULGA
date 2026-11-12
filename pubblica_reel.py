@@ -31,17 +31,32 @@ FORMATO = 2
 # voce sintetica, genera_reel_voce.py, file reel3.mp4). Lo hanno le schede
 # con `reel_voce`, a giorni alterni, così le metriche confrontano i due.
 FORMATO_VOCE = 3
+# Dal 12/11/2026, in prova: il formato 4 è il parlato fatto con HeyGen
+# (voce «Dinamo v3» e Dinamo di latta animato, genera_reel_heygen.py). Il
+# runner non ha HeyGen: il file lo costruisce la sessione e lo committa in
+# docs/tavole/<slug>/reel4.mp4. Se c'è, si pubblica quello.
+FORMATO_HEYGEN = 4
+NOME_HEYGEN = "reel4.mp4"
+
+
+def heygen_pronto(scheda):
+    return (P.RADICE / "docs" / "tavole" / scheda["slug"] / NOME_HEYGEN).exists()
 FINESTRA_REEL = (12, 23)   # ore italiane: rifacimenti alle 12:30, reel della scheda la sera
 
 
 def formato_di(scheda):
+    if heygen_pronto(scheda):
+        return FORMATO_HEYGEN
     return FORMATO_VOCE if contenuti.parlato(scheda) else FORMATO
 
 
 def file_di(scheda):
     """Il nome del file su Pages: reel3.mp4 per il parlato, reel2.mp4 per
-    il formato 2. L'import è qui dentro perché genera_reel_voce tira
-    numpy, che al publisher non serve."""
+    il formato 2, reel4.mp4 se la sessione ha già fatto quello con HeyGen.
+    L'import è qui dentro perché genera_reel_voce tira numpy, che al
+    publisher non serve."""
+    if heygen_pronto(scheda):
+        return NOME_HEYGEN
     if contenuti.parlato(scheda):
         import genera_reel_voce
         return genera_reel_voce.NOME_FILE
@@ -86,9 +101,9 @@ def main(slug):
 
     formato = formato_di(scheda) if speciale is None else FORMATO
     # Idempotenza: come per i post, sta nello stato, non nell'API. Un reel
-    # del formato 2 o 3 vale lo stesso: uno per scheda.
-    if slug in gia_pubblicati(stato, FORMATO) or slug in gia_pubblicati(stato, FORMATO_VOCE):
-        print(f"[stop] il reel di '{slug}' (formato 2 o 3) risulta già pubblicato: non lo rifaccio.")
+    # del formato 2, 3 o 4 vale lo stesso: uno per scheda.
+    if any(slug in gia_pubblicati(stato, f) for f in (FORMATO, FORMATO_VOCE, FORMATO_HEYGEN)):
+        print(f"[stop] il reel di '{slug}' (formato 2, 3 o 4) risulta già pubblicato: non lo rifaccio.")
         return 0
     # Un reel ha senso solo per una scheda già uscita nel feed.
     if speciale is None and slug not in {p["slug"] for p in stato["pubblicati"]}:
@@ -197,7 +212,8 @@ def main(slug):
         # Dal 13/10/2026 le battute durano quanto serve a leggerle (i
         # commenti dicevano «troppo veloci»): `metriche.py` li tiene
         # separati dai reel a 2,6 s fissi per poterli confrontare.
-        "ritmo": "voce" if formato == FORMATO_VOCE else genera_reel.RITMO,
+        "ritmo": ("heygen" if formato == FORMATO_HEYGEN
+                  else "voce" if formato == FORMATO_VOCE else genera_reel.RITMO),
         **({"fuori_catalogo": True} if speciale is not None else {}),
         "quando": dt.datetime.now(dt.timezone.utc).isoformat(),
         "media_id": media_id,
@@ -221,7 +237,8 @@ def prossimo_reel(stato=None):
 def prossimo_rifacimento(stato=None):
     """La scheda piu' vecchia che ha solo il reel del formato 1."""
     stato = stato or P.leggi_stato()
-    nuovi = gia_pubblicati(stato, FORMATO) | gia_pubblicati(stato, FORMATO_VOCE)
+    nuovi = (gia_pubblicati(stato, FORMATO) | gia_pubblicati(stato, FORMATO_VOCE)
+             | gia_pubblicati(stato, FORMATO_HEYGEN))
     for p in stato["pubblicati"]:
         if p["slug"] not in nuovi:
             return p["slug"]

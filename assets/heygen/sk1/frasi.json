@@ -1,0 +1,44 @@
+{
+ "voce": "ELETTROFONI Dinamo v3 (HeyGen, voice_id 5b3a82eb0fc5420a8f1ce8d9cf786c26)",
+ "verifica": "fatti e stile con due verificatori, 12/11/2026",
+ "frasi": [
+  {
+   "ruolo": "battuta1",
+   "scritta": "Gli Autechre rovesciano una bibita sul Casio SK-1, e da allora si modifica da solo.",
+   "detta": "Gli Autechre rovesciano una bibita sul Casio esse cappa uno, e da allora si modifica da solo."
+  },
+  {
+   "ruolo": "battuta2",
+   "scritta": "Lo SK-1 è una tastierina a pile, con un microfono nell'angolo.",
+   "detta": "Lo esse cappa uno è una tastierina a pile, con un microfono nell'angolo."
+  },
+  {
+   "ruolo": "battuta3",
+   "scritta": "Premi il tasto giallo, fai un rumore: ne registra fino a 1,4 secondi.",
+   "detta": "Premi il tasto giallo, fai un rumore: ne registra fino a uno virgola quattro secondi."
+  },
+  {
+   "ruolo": "battuta4",
+   "scritta": "Gli Autechre, Sean Booth e Rob Brown, cominciano con uno SK-1.",
+   "detta": "Gli Autechre, Sean Booth e Rob Brown, cominciano con uno esse cappa uno."
+  },
+  {
+   "ruolo": "battuta5",
+   "scritta": "Lo aprono e uniscono 2 punti di un chip: i campioni si incrociano.",
+   "detta": "Lo aprono e uniscono due punti di un chip: i campioni si incrociano."
+  },
+  {
+   "ruolo": "cta",
+   "scritta": "Mandalo all'amico che apre tutto col cacciavite.",
+   "detta": "Mandalo all'amico che apre tutto col cacciavite."
+  },
+  {
+   "ruolo": "chiusura",
+   "scritta": "Le slide e le fonti sul profilo Elettrofoni.",
+   "detta": "Le slide e le fonti sul profilo Elettrofoni."
+  }
+ ],
+ "nomi_accettati": {
+  "Autechre": "detto /ˈɔtekər/ (la pronuncia del gruppo, «òtecher»): Whisper lo scrive «oteccor», non conosce la grafia. Ascoltato e controllato sui fonemi il 12/11/2026."
+ }
+}
