@@ -236,8 +236,13 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   **HeyGen in prova (12/11/2026)**, il proprietario: «Usa heygen», poi
   «voce e Dinamo animato», «rendi l'avatar iperrealistico», «v3 e Dinamo
   B». Si lavora dal connettore MCP «HeyGen» (account del proprietario,
-  piano Creator, crediti che si ricaricano solo l'11/11/2027: ~1 credito
-  per secondo di video animato, 4 per due immagini). Scelte del
+  piano Creator: ~1 credito per secondo di video animato, 4 per due
+  immagini). Crediti: il proprietario dice 600 AL MESE; l'API dà solo i
+  «premium_credits» rimasti con `resets_at` 11/11/2027, che avevo letto
+  come ricarica annuale. Il 12/11 si partiva da 432, non da 600: lo
+  stesso workspace lo usa un altro progetto (le voci «CAR …»), che
+  consuma gli stessi crediti. Verifica: se verso l'11/12/2026
+  `get_current_user` torna vicino a 600, è mensile. Scelte del
   proprietario: voce disegnata `ELETTROFONI Dinamo v3` (voice_id
   5b3a82eb0fc5420a8f1ce8d9cf786c26, italiana, calda, «da amico») e Dinamo
   iperrealistico B (`assets/dinamo/dinamo_reale_b.png`, latta smaltata
@@ -257,7 +262,7 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   i nomi detti giusti ma che Whisper non sa scrivere dichiarati in
   `nomi_accettati`. Impaginato voluto dal proprietario: Dinamo al centro
   e grande (cornice 760 px), foto sopra. Primo: Casio SK-1, 12/11/2026,
-  ~45 crediti (restano ~360: ~8 reel così).
+  ~45 crediti.
   **Due a settimana, sulle schede andate meglio** (proprietario,
   12/11/2026: «il reel esce solo 2 volte a settimana basandosi sui post di
   maggior successo»). Lunedì e giovedì, nella passata delle 12:30, AL POSTO
@@ -270,8 +275,9 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   scheda ha già un formato 4. `reel.yml` lo mette su Pages da sé
   (`online=1`), perché alle 12:30 la pubblicazione delle 18 non l'ha
   ancora portato online. Le schede nuove della sera tornano al formato 2
-  e 3. Coi crediti di oggi bastano per circa 4 settimane: prima che
-  finiscano si avvisa il proprietario.
+  e 3. Due a settimana sono ~400 crediti al mese: con 600 mensili
+  ci stanno, ma il workspace è condiviso con un altro progetto, quindi
+  la routine guarda i crediti prima (sotto 60 fa il rifacimento normale).
 - **Il reel serale ha due inneschi** (21/10/2026): la Routine delle
   19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
   e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno
