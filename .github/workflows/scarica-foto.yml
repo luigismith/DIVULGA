@@ -49,7 +49,10 @@ jobs:
             echo "Scaricato $D: $(stat -c%s "$D") byte, tipo $FILETYPE"
             # Dal 07/10/2026 anche le registrazioni vere per i reel (Commons
             # le serve come Ogg/FLAC/WAV/MP3): stessa via, stesso controllo.
-            case "$FILETYPE" in image/*|audio/*|application/ogg|video/ogg) ;; *) echo "NON è un'immagine né un audio ($FILETYPE): mi fermo"; exit 1;; esac
+            # Dal 12/11/2026 anche video/webm: su Commons certe registrazioni
+            # libere esistono solo come video (il Clavinet D6); l'audio si
+            # estrae dopo, in locale, e nel repo va solo l'mp3.
+            case "$FILETYPE" in image/*|audio/*|application/ogg|video/ogg|video/webm) ;; *) echo "NON è un'immagine né un audio ($FILETYPE): mi fermo"; exit 1;; esac
             FILES="$FILES $D"
             sleep 2
           done < /tmp/lista.txt
