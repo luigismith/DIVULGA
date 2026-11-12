@@ -23,6 +23,28 @@ ripeteva in piccolo una tavola piena di testo. Adesso:
 Foto, suoni e copertine dei reel per il web si fanno UNA volta e restano
 in docs/: `docs/media.json` tiene l'impronta del file d'origine, e si
 rifanno solo quando l'origine cambia.
+
+RIDISEGNATO IL 12/11/2026 (il proprietario: «Rifai il SITO STUPENDO»).
+La struttura del 16/10 resta (home = catalogo, suoni in pagina loro, una
+pagina per scheda): cambia come si presenta.
+- Home: una COPERTINA con la vetrina delle ultime cinque macchine (la
+  prima schermata fa vedere più macchine, non una: regola del 16/10), il
+  nastro coi nomi, la fascia del suono vero con un lettore solo, e nella
+  griglia la «linea del tempo» (una colonna per epoca, alta quanto le
+  schede che ha) e l'ordine per anno della macchina.
+- Schede della griglia senza scatola: la foto in un riquadro di carta, il
+  nome sotto, come in un catalogo.
+- Pagina della scheda: foto incorniciata, dati tecnici su una targa
+  bruna, il reel di fianco al racconto (resta fermo mentre si legge), le
+  tavole che si aprono in grande con le frecce (la «lente»),
+  l'avvertenza con la banda a righe da etichetta.
+- Carta con la grana, testata che resta in alto, le sezioni che entrano
+  salendo, e il passaggio fra le pagine dove il browser lo sa fare
+  (`@view-transition`: la foto della griglia diventa quella della scheda).
+- Dinamo di latta (assets/dinamo/dinamo_reale_b.png, scelto dal
+  proprietario il 12/11) nel bollo dell'invito a seguire la pagina.
+Niente file pesanti in più: Pages ha un tetto di 1 GB e il sito è già a
+722 MB. Tutto il resto è HTML e CSS.
 """
 import hashlib
 import html
@@ -72,91 +94,171 @@ FONT_LINK = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
 # Arancio: #d9702e va bene per i fondi e per le cose grandi; per il testo
 # piccolo su crema il contrasto è 2,8:1 e non si legge. Per quello c'è
 # --ruggine (#a84f17, 4,6:1).
+def _onda_css():
+    """La forma d'onda della barra del lettore: 72 stanghette di altezze
+    diverse, sempre le stesse (niente caso: lo stile deve avere
+    un'impronta stabile, VERSIONE_CSS)."""
+    import math
+    barre = []
+    for i in range(72):
+        h = min(1.0, 0.28 + 0.36 * abs(math.sin(i * 0.53))
+                + 0.34 * abs(math.sin(i * 0.19 + 1.3)) * abs(math.cos(i * 0.91)))
+        barre.append(f"%3Crect x='{i * 5}' y='{(1 - h) * 15:.1f}' width='3' height='{h * 30:.1f}'/%3E")
+    return ("url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 30' "
+            "preserveAspectRatio='none'%3E" + "".join(barre) + "%3C/svg%3E\")")
+
+
 STILE = """
-:root{--crema:#f4e9d2;--carta:#fbf4e4;--sabbia:#ead9b6;--bruno:#38291d;--bruno2:#5e4733;
---bruno3:#86705a;--arancio:#d9702e;--ruggine:#a84f17;--filo:rgba(56,41,29,.2);
+:root{--crema:#f4e9d2;--carta:#fbf4e4;--sabbia:#ead9b6;--bruno:#38291d;--notte:#2a1e15;--bruno2:#5e4733;
+--bruno3:#86705a;--arancio:#d9702e;--ruggine:#a84f17;--filo:rgba(56,41,29,.18);--filo-chiaro:rgba(244,233,210,.18);
 --display:'Oswald','Arial Narrow',Impact,sans-serif;--serif:'IBM Plex Serif',Georgia,serif;
---mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace}
+--mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+--grana:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .22 0 0 0 0 .16 0 0 0 0 .11 0 0 0 .13 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)'/%3E%3C/svg%3E")}
 *,*::before,*::after{box-sizing:border-box}
 *{margin:0;padding:0}
 [hidden]{display:none!important}
 .nobr{white-space:nowrap}
 h1,h2{text-wrap:balance}
-html{-webkit-text-size-adjust:100%}
-body{background:var(--crema);color:var(--bruno);font-family:var(--serif);font-size:17px;
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:78px;overflow-x:clip}
+@view-transition{navigation:auto}
+body{background-color:var(--crema);background-image:var(--grana);color:var(--bruno);font-family:var(--serif);font-size:17px;
   line-height:1.62;min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
 main{flex:1}
 img,video{max-width:100%;display:block}
 a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+button{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--arancio);outline-offset:3px}
-.contenitore{width:100%;max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}
-@media(min-width:700px){body{font-size:18px}.contenitore{padding-left:32px;padding-right:32px}}
+::selection{background:var(--arancio);color:var(--bruno)}
+.contenitore{width:100%;max-width:1240px;margin:0 auto;padding-left:18px;padding-right:18px}
+@media(min-width:700px){body{font-size:18px}.contenitore{padding-left:36px;padding-right:36px}}
 .kicker{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
   font-weight:600;color:var(--ruggine)}
+/* Le sezioni entrano salendo di poco quando arrivano sullo schermo. Solo
+   con JavaScript (la classe .js la mette lo script in testa alla pagina):
+   senza, tutto si vede subito. */
+.js .rivela{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .rivela.vista{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rivela{opacity:1;transform:none;transition:none}}
 
 /* testata */
-.testata{background:var(--bruno);color:var(--crema)}
-.testata .contenitore{display:flex;align-items:center;gap:10px 20px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
-.marchio{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
-.marchio .q{width:42px;height:42px;background:var(--arancio);display:grid;place-items:center;flex:none}
-.marchio .q svg{width:30px;height:30px}
-.marchio b{display:block;font-family:var(--display);font-weight:700;font-size:24px;letter-spacing:.14em;line-height:1}
-.marchio small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;
+.testata{position:sticky;top:0;z-index:20;background:var(--bruno);color:var(--crema);border-bottom:6px solid var(--arancio)}
+.testata .contenitore{display:flex;align-items:center;gap:10px 22px;min-height:58px}
+/* Il marchio cede spazio e il menu no: col carattere di ripiego (finché
+   Oswald non è caricato, o se non arriva) le scritte sono più larghe, e
+   sul telefono la testata usciva di 25 px dallo schermo (12/11/2026:
+   trovato provando le pagine coi font bloccati). */
+.marchio{display:flex;align-items:center;gap:11px;text-decoration:none;margin-right:auto;min-width:0}
+.marchio>span:last-child{min-width:0;overflow:hidden}
+.marchio .q{width:36px;height:36px;background:var(--arancio);display:grid;place-items:center;flex:none}
+.marchio .q svg{width:26px;height:26px}
+.marchio b{display:block;font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.14em;line-height:1;
+  white-space:nowrap;overflow:hidden;text-overflow:clip}
+.marchio small{display:none;font-family:var(--mono);font-size:10px;letter-spacing:.16em;
   text-transform:uppercase;color:#dcc7a0;margin-top:5px}
-.testata nav{display:flex;gap:2px;margin-left:-10px}
-.testata nav a{font-family:var(--display);font-weight:500;font-size:14px;letter-spacing:.14em;
-  text-transform:uppercase;text-decoration:none;padding:8px 10px}
-.testata nav a:hover{color:var(--arancio)}
-@media(min-width:700px){.testata nav{margin-left:0}}
-.filetto{height:8px;background:var(--arancio)}
+.testata nav{display:flex;gap:0;flex:none}
+.testata nav a{position:relative;font-family:var(--display);font-weight:500;font-size:13.5px;letter-spacing:.14em;
+  text-transform:uppercase;text-decoration:none;padding:10px 9px}
+.testata nav a::after{content:"";position:absolute;left:9px;right:9px;bottom:5px;height:2px;background:var(--arancio);
+  transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.testata nav a:hover::after{transform:scaleX(1)}
+.testata .largo{display:none}
+@media(min-width:700px){.testata .contenitore{min-height:68px}.marchio .q{width:42px;height:42px}.marchio .q svg{width:30px;height:30px}
+  .marchio b{font-size:24px}.marchio small{display:block}.testata .largo{display:block}.testata nav a{font-size:14px;padding:10px 12px}
+  .testata nav a::after{left:12px;right:12px}}
+.filetto{display:none}
 
 /* bottoni */
 .bottoni{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .bottone{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:500;
-  font-size:15px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:11px 18px;
-  border:2px solid var(--bruno);color:var(--bruno);background:transparent;transition:background .15s,color .15s,border-color .15s}
+  font-size:15px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:12px 20px;
+  border:2px solid var(--bruno);color:var(--bruno);background:transparent;
+  transition:background .15s,color .15s,border-color .15s,transform .15s,box-shadow .15s}
 .bottone:hover{background:var(--bruno);color:var(--crema)}
 .bottone.pieno{background:var(--bruno);color:var(--crema)}
-.bottone.pieno:hover{background:var(--arancio);border-color:var(--arancio);color:var(--bruno)}
+.bottone.pieno:hover{background:var(--arancio);border-color:var(--bruno);color:var(--bruno);transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--bruno)}
 
-/* home: apertura */
-/* La home apre sul CATALOGO, non su una macchina (16/10/2026, il
-   proprietario: «sembra che si parli solo dello strumento dell'ultimo
-   post» e «non è indispensabile che sia tutto su una sola pagina»).
-   Prima c'erano l'ultima scheda a tutta larghezza e i 14 suoni: sul
-   telefono tre schermate prima di vedere le altre macchine. Ora
-   apertura corta, una riga che porta alla pagina dei suoni, e subito la
-   griglia; la più nuova è la prima carta, col bollino. */
-.intro{padding-top:32px;padding-bottom:22px}
-.intro h1{font-family:var(--display);font-weight:700;font-size:clamp(40px,6vw,70px);line-height:.95;
-  text-transform:uppercase;margin-top:12px;text-wrap:wrap}
-.intro .lead{font-size:clamp(17px,2vw,20px);line-height:1.5;max-width:62ch;margin-top:16px;color:var(--bruno2)}
-.cifre{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:20px;padding:10px 0;border-top:2px solid var(--bruno);
-  border-bottom:2px solid var(--bruno);font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--bruno2)}
-.cifre b{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:0;color:var(--bruno);margin-right:6px}
-.verso-suoni{display:flex;align-items:center;gap:14px;text-decoration:none;background:var(--bruno);color:var(--crema);
-  padding:14px 16px}
-.verso-suoni .tondo{flex:none;width:44px;height:44px;border-radius:50%;background:var(--arancio);display:grid;place-items:center}
-.verso-suoni .tondo svg{width:18px;height:18px;fill:var(--bruno)}
-.verso-suoni .riga{flex:1;line-height:1.35}
-.verso-suoni b{font-family:var(--display);font-weight:600;font-size:20px;text-transform:uppercase;letter-spacing:.02em;display:block}
-.verso-suoni small{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:#cdb894}
-.verso-suoni i{font-style:normal;font-family:var(--display);font-size:22px;color:var(--arancio)}
-.verso-suoni:hover b{color:var(--arancio)}
-@media(max-width:559px){.verso-suoni .nomi{display:none}}
-.archivio .testa-sezione h2.kicker{font-family:var(--mono);font-weight:600;font-size:12.5px;letter-spacing:.16em;line-height:1.4;margin:0}
+/* home: la copertina. Il testo a sinistra, a destra la VETRINA: le
+   ultime cinque macchine, perché la prima schermata deve far vedere più
+   macchine e non una (regola del 16/10/2026). Sul telefono la vetrina è
+   una fila che scorre col dito. */
+.copertina{padding-top:26px}
+.copertina .contenitore{display:grid;gap:22px;grid-template-areas:"testo" "vetrina" "cifre"}
+.cop-testo{grid-area:testo;min-width:0}
+.copertina h1{font-family:var(--display);font-weight:700;font-size:clamp(46px,7vw,100px);line-height:.9;
+  text-transform:uppercase;letter-spacing:-.012em;margin-top:14px;text-wrap:wrap}
+.copertina h1 em{font-style:normal;color:var(--arancio)}
+.copertina .lead{font-size:clamp(17px,1.6vw,20px);line-height:1.5;max-width:46ch;margin-top:18px;color:var(--bruno2)}
+.vetrina{grid-area:vetrina;display:grid;grid-auto-flow:column;grid-auto-columns:46%;gap:10px;overflow-x:auto;
+  scroll-snap-type:x mandatory;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none}
+.vetrina::-webkit-scrollbar{display:none}
+.tessera{position:relative;display:flex;flex-direction:column;height:196px;background:var(--carta);text-decoration:none;
+  border:2px solid var(--bruno);overflow:hidden;scroll-snap-align:start;transition:transform .2s,box-shadow .2s}
+.tessera .ft{display:block;flex:1;min-height:0;overflow:hidden}
+.tessera img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply;transition:transform .6s ease}
+.tessera .et{display:flex;align-items:baseline;gap:8px;padding:7px 10px 8px;border-top:2px solid var(--bruno);background:var(--crema);
+  transition:background .2s}
+.tessera .et i{font-style:normal;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.1em;color:var(--ruggine);flex:none}
+.tessera .et b{font-family:var(--display);font-weight:700;font-size:15px;line-height:1.1;text-transform:uppercase;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tessera:hover img{transform:scale(1.06)}
+.tessera:hover .et{background:var(--arancio)}
+.tessera:hover .et i{color:var(--bruno)}
+.bollino{position:absolute;top:0;left:0;z-index:1;background:var(--arancio);color:var(--bruno);font-family:var(--mono);
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:5px 9px}
+.cifre{grid-area:cifre;display:grid;grid-template-columns:repeat(2,1fr);border-top:2px solid var(--bruno);border-bottom:2px solid var(--bruno)}
+.cifre span{display:flex;flex-direction:column;gap:2px;padding:12px 0 11px;font-family:var(--mono);font-size:11px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--bruno2)}
+.cifre span:nth-child(-n+2){border-bottom:1px solid var(--filo)}
+.cifre b{font-family:var(--display);font-weight:700;font-size:34px;line-height:1;letter-spacing:0;color:var(--bruno)}
+@media(min-width:700px){.cifre{grid-template-columns:repeat(4,1fr)}.cifre span{padding:16px 0 14px 22px;border-left:1px solid var(--filo)}
+  .cifre span:first-child{padding-left:0;border-left:none}.cifre span:nth-child(-n+2){border-bottom:none}.cifre b{font-size:46px}}
+@media(min-width:980px){
+  .copertina{padding-top:44px}
+  .copertina .contenitore{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:34px 52px;align-items:center;
+    grid-template-areas:"testo vetrina" "cifre cifre"}
+  .vetrina{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);grid-template-rows:minmax(0,1.3fr) minmax(0,1fr);gap:12px;
+    height:clamp(400px,58vh,520px);overflow:visible;margin:0;padding:0}
+  .tessera{height:auto}
+  .tessera.grande{grid-column:span 2}
+  .tessera.grande .et{padding:10px 14px 12px}
+  .tessera.grande .et b{font-size:26px}
+  .tessera:hover{transform:translate(-3px,-3px);box-shadow:7px 7px 0 var(--arancio)}
+}
+
+/* home: il nastro coi nomi delle macchine */
+.nastro{margin-top:34px;background:var(--bruno);color:var(--crema);overflow:hidden}
+.nastro div{display:flex;width:max-content;animation:scorri 90s linear infinite}
+.nastro span{font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.16em;text-transform:uppercase;
+  padding:12px 0;white-space:nowrap}
+.nastro span::after{content:"";display:inline-block;width:7px;height:7px;background:var(--arancio);margin:0 20px 2px;
+  vertical-align:middle;transform:rotate(45deg)}
+.nastro:hover div{animation-play-state:paused}
+@keyframes scorri{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.nastro div{animation:none}}
+
+/* home: la fascia del suono vero (una riga, non l'elenco: 16/10/2026) */
+.ascolta{background:var(--notte);color:var(--crema);border-top:1px solid var(--filo-chiaro)}
+.ascolta .contenitore{display:grid;gap:14px 34px;align-items:center;padding-top:22px;padding-bottom:24px}
+.ascolta .kicker{color:var(--arancio)}
+.ascolta h2{font-family:var(--display);font-weight:700;font-size:clamp(24px,2.6vw,32px);line-height:1.05;text-transform:uppercase;margin-top:6px}
+.ascolta .lettore{margin:0;padding:0;background:none;border-left:none}
+@media(max-width:699px){.ascolta .lettore-cosa{display:none}}
+.ascolta .verso{font-family:var(--display);font-weight:500;font-size:15px;letter-spacing:.12em;text-transform:uppercase;
+  text-decoration:none;border:2px solid var(--crema);padding:11px 18px;justify-self:start;white-space:nowrap;transition:background .15s,color .15s}
+.ascolta .verso:hover{background:var(--arancio);border-color:var(--arancio);color:var(--bruno)}
+@media(min-width:900px){.ascolta .contenitore{grid-template-columns:auto minmax(0,1fr) auto}}
 
 /* gancio e sottotitolo (testa delle schede) */
-.gancio{font-family:var(--display);font-weight:500;font-size:clamp(21px,2.4vw,27px);line-height:1.22;margin-top:14px}
+.gancio{font-family:var(--display);font-weight:500;font-size:clamp(22px,2.5vw,29px);line-height:1.2;margin-top:16px}
 .sottotitolo{color:var(--bruno2);margin-top:12px;max-width:52ch}
 /* lettore del suono vero */
 .lettore{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:center;background:var(--bruno);
-  color:var(--crema);padding:16px 18px;margin-top:22px}
+  color:var(--crema);padding:18px 20px;margin-top:24px;border-left:6px solid var(--arancio)}
 .lettore audio{grid-column:1/-1;width:100%}
-.lettore .play{width:56px;height:56px;border-radius:50%;border:none;background:var(--arancio);color:var(--bruno);
-  display:grid;place-items:center;cursor:pointer;transition:transform .12s}
+.lettore .play{width:58px;height:58px;border-radius:50%;border:none;background:var(--arancio);color:var(--bruno);
+  display:grid;place-items:center;cursor:pointer;transition:transform .12s,box-shadow .2s}
 .lettore .play:hover{transform:scale(1.06)}
+.lettore.suona .play{box-shadow:0 0 0 6px rgba(217,112,46,.28)}
 .lettore .play svg{width:24px;height:24px;fill:currentColor}
 .lettore .i-pausa,.lettore.suona .i-play{display:none}
 .lettore.suona .i-pausa{display:block}
@@ -164,7 +266,9 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
 .lettore-titolo{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
   font-weight:600;color:var(--arancio);display:flex;align-items:center;gap:10px}
 .lettore-cosa{font-size:16px;line-height:1.4;color:#efe2c6}
-.barra{height:6px;background:rgba(244,233,210,.22);cursor:pointer;position:relative;margin-top:4px}
+/* la barra è una forma d'onda: la maschera la disegna, il colore la riempie */
+.barra{height:30px;background:rgba(244,233,210,.26);cursor:pointer;position:relative;margin-top:2px;
+  -webkit-mask:__ONDA__ center/100% 100% no-repeat;mask:__ONDA__ center/100% 100% no-repeat}
 .barra i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--arancio)}
 .lettore-tempo{font-family:var(--mono);font-size:12px;color:#cdb894}
 .lettore:not(.js) .play,.lettore:not(.js) .barra,.lettore:not(.js) .lettore-tempo{display:none}
@@ -179,73 +283,103 @@ a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
 .credito-suono{font-family:var(--mono);font-size:12px;line-height:1.55;color:var(--bruno2);margin-top:8px}
 .credito-suono a{color:var(--ruggine)}
 
-/* home: la fascia dei suoni */
-.suoni{background:var(--bruno);color:var(--crema);padding:44px 0 60px;min-height:60vh}
+/* la pagina dei suoni */
+.suoni{background:var(--notte);color:var(--crema);padding:48px 0 70px;min-height:60vh}
 .suoni .kicker{color:var(--arancio)}
-.suoni h1,.suoni h2{font-family:var(--display);font-weight:700;font-size:clamp(36px,5vw,58px);text-transform:uppercase;line-height:1;margin-top:10px}
-.suoni .lead{color:#e3d2b0;max-width:60ch;margin-top:14px}
-.dischi{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:30px}
-.disco{display:grid;grid-template-columns:64px 1fr;gap:10px 14px;align-items:center;padding:14px;
-  border:1px solid rgba(244,233,210,.25);background:rgba(244,233,210,.04)}
-.disco-foto{display:block;width:64px;height:64px;background:var(--crema);overflow:hidden}
+.suoni h1,.suoni h2{font-family:var(--display);font-weight:700;font-size:clamp(44px,7vw,96px);text-transform:uppercase;line-height:.92;margin-top:12px}
+.suoni h1 em{font-style:normal;color:var(--arancio)}
+.suoni .lead{color:#e3d2b0;max-width:60ch;margin-top:18px}
+.dischi{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-top:36px}
+.disco{display:grid;grid-template-columns:76px 1fr;gap:10px 14px;align-items:center;padding:14px;
+  border:1px solid var(--filo-chiaro);background:rgba(244,233,210,.045);transition:border-color .2s,background .2s}
+.disco:hover,.disco:has(.suona){border-color:var(--arancio);background:rgba(244,233,210,.08)}
+.disco-foto{display:block;width:76px;height:76px;background:var(--crema);overflow:hidden}
 .disco-foto img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
-.disco-nome{font-family:var(--display);font-weight:600;font-size:19px;text-transform:uppercase;
+.disco-nome{font-family:var(--display);font-weight:600;font-size:20px;text-transform:uppercase;
   text-decoration:none;line-height:1.1;display:block}
 .disco-nome:hover{color:var(--arancio)}
 .disco-meta{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;color:#cdb894;text-transform:uppercase}
-.disco .lettore{grid-column:1/-1;margin:0;padding:0;background:none;gap:4px 12px}
-.lettore.mini .play{width:42px;height:42px}
+.disco .lettore{grid-column:1/-1;margin:0;padding:0;background:none;border:none;gap:4px 12px}
+.lettore.mini{border-left:none}
+.lettore.mini .play{width:44px;height:44px}
 .lettore.mini .play svg{width:18px;height:18px}
+.lettore.mini .barra{height:24px}
 .disco-credito{grid-column:1/-1;font-family:var(--mono);font-size:11px;color:#b9a382;line-height:1.45}
 .disco-credito a{color:#ecdab4}
 
-
 /* home: archivio */
-.archivio{padding-top:30px;padding-bottom:64px}
+.archivio{padding-top:46px;padding-bottom:76px}
 .testa-sezione{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 20px;
   border-bottom:2px solid var(--bruno);padding-bottom:14px}
-.testa-sezione h2{font-family:var(--display);font-weight:700;font-size:clamp(36px,5vw,58px);
-  text-transform:uppercase;line-height:1;margin-top:8px}
+.testa-sezione>div{min-width:0}
+.testa-sezione h2{font-family:var(--display);font-weight:700;font-size:clamp(36px,5.4vw,66px);
+  text-transform:uppercase;line-height:.95;margin-top:8px;overflow-wrap:anywhere}
 .conta{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--bruno2)}
-.strumenti{padding-top:18px}
-.cerca{width:100%;max-width:520px;font-family:var(--mono);font-size:16px;padding:12px 14px;border:2px solid var(--bruno);
-  background:var(--carta);color:var(--bruno);border-radius:0;-webkit-appearance:none;appearance:none}
+.strumenti{display:grid;gap:18px 40px;padding-top:20px}
+.cerca{width:100%;font-family:var(--mono);font-size:16px;padding:13px 14px 13px 44px;border:2px solid var(--bruno);
+  color:var(--bruno);border-radius:0;-webkit-appearance:none;appearance:none;
+  background:var(--carta) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2338291d' stroke-width='2.4'%3E%3Ccircle cx='10.5' cy='10.5' r='6.5'/%3E%3Cpath d='M15.5 15.5 21 21'/%3E%3C/svg%3E") 14px center/20px no-repeat}
 .cerca::placeholder{color:var(--bruno3)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.cerca:focus{outline:none;box-shadow:5px 5px 0 var(--arancio)}
+.etichetta{display:block;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ruggine);margin-bottom:8px}
+/* la linea del tempo: una colonna per epoca, alta quanto le schede che ha */
+.epoche{display:flex;align-items:flex-end;gap:6px}
+.epoca{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.02em;color:var(--bruno2);text-align:center;padding:0;white-space:nowrap}
+.epoca i{display:block;height:calc(8px + var(--h)*46px);background:var(--sabbia);border:2px solid var(--bruno);transition:background .15s}
+.epoca:hover i{background:var(--arancio)}
+.epoca[aria-pressed="true"]{color:var(--bruno);font-weight:600}
+.epoca[aria-pressed="true"] i{background:var(--bruno)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{flex:none;font-family:var(--display);font-weight:500;font-size:14px;letter-spacing:.08em;text-transform:uppercase;
-  border:2px solid var(--bruno);background:transparent;color:var(--bruno);padding:6px 12px;cursor:pointer;border-radius:0}
+  border:2px solid var(--bruno);background:transparent;color:var(--bruno);padding:6px 12px;cursor:pointer;border-radius:0;
+  transition:background .15s,color .15s}
 .chip span{font-family:var(--mono);font-size:11px;margin-left:6px;opacity:.7}
-.chip:hover{border-color:var(--arancio)}
+.chip:hover{background:var(--sabbia)}
 .chip[aria-pressed="true"]{background:var(--bruno);color:var(--crema)}
-@media(max-width:699px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:14px -16px 0;padding:0 16px 6px;scrollbar-width:none}}
-.griglia{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;margin-top:22px}
-.card{display:flex;flex-direction:column;text-decoration:none;border:2px solid var(--bruno);background:var(--carta);
-  transition:transform .15s ease,box-shadow .15s ease}
-.card:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--arancio)}
-.card-foto{display:block;position:relative;aspect-ratio:4/3;background:var(--crema);border-bottom:2px solid var(--bruno);overflow:hidden}
-.bollino{position:absolute;top:0;left:0;z-index:1;background:var(--arancio);color:var(--bruno);font-family:var(--mono);
-  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:5px 9px}
-.card-foto img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
+.riga-chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
+.ordina{display:flex;align-items:center;gap:0;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
+.ordina span{color:var(--bruno2);margin-right:10px}
+.ordina button{background:none;border:2px solid var(--bruno);padding:6px 10px;cursor:pointer;font-family:var(--mono);
+  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
+.ordina button+button{border-left:none}
+.ordina button[aria-pressed="true"]{background:var(--bruno);color:var(--crema)}
+@media(max-width:699px){.chips{flex-wrap:nowrap;overflow-x:auto;margin:0 -18px;padding:0 18px 6px;scrollbar-width:none;max-width:100vw}
+  .riga-chips{display:grid}}
+@media(min-width:900px){.strumenti{grid-template-columns:minmax(280px,400px) minmax(0,1fr);align-items:end}.riga-chips{grid-column:1/-1}}
+.griglia{display:grid;grid-template-columns:repeat(auto-fill,minmax(262px,1fr));gap:38px 26px;margin-top:30px}
+.card{display:flex;flex-direction:column;text-decoration:none}
+.card-foto{display:block;position:relative;aspect-ratio:4/3;background:var(--carta);border:2px solid var(--bruno);overflow:hidden;
+  transition:transform .2s ease,box-shadow .2s ease}
+.card-foto img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply;transition:transform .6s ease}
 img.intera{object-fit:contain!important;padding:8px}
-.card-testo{display:flex;flex-direction:column;gap:6px;padding:14px 16px 16px;flex:1}
-.card-meta{display:flex;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:12px;
-  letter-spacing:.12em;font-weight:600;color:var(--ruggine)}
-.card-nome{font-family:var(--display);font-weight:700;font-size:24px;line-height:1.05;text-transform:uppercase}
-.card-gancio{font-size:15.5px;line-height:1.45;color:var(--bruno2)}
-.card-piede{margin-top:auto;padding-top:10px;display:flex;flex-wrap:wrap;gap:6px 12px;font-family:var(--mono);
-  font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--bruno3)}
-.ha-suono{color:var(--bruno);font-weight:600}
+.card:hover .card-foto{transform:translate(-3px,-3px);box-shadow:7px 7px 0 var(--arancio)}
+.card:hover .card-foto img{transform:scale(1.05)}
+.nota{position:absolute;right:8px;bottom:8px;z-index:1;width:30px;height:30px;border-radius:50%;background:var(--bruno);color:var(--crema);
+  display:grid;place-items:center;font-size:15px;line-height:1}
+.card-testo{display:flex;flex-direction:column;gap:5px;padding:12px 2px 0}
+.card-meta{display:flex;flex-wrap:wrap;gap:2px 10px;font-family:var(--mono);font-size:11.5px;
+  letter-spacing:.1em;font-weight:600;color:var(--ruggine);text-transform:uppercase}
+.card-meta span+span::before{content:"·";margin-right:10px;color:var(--bruno3)}
+.card-nome{font-family:var(--display);font-weight:700;font-size:26px;line-height:1.04;text-transform:uppercase;
+  text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:3px;text-underline-offset:5px;transition:text-decoration-color .2s}
+.card:hover .card-nome{text-decoration-color:var(--arancio)}
+.card-gancio{font-size:15.5px;line-height:1.42;color:var(--bruno2);display:-webkit-box;-webkit-box-orient:vertical;
+  -webkit-line-clamp:3;line-clamp:3;overflow:hidden}
 .nessuna{padding:40px 0;font-size:18px;color:var(--bruno2)}
 /* sul telefono due colonne, come le pagine di un catalogo: la foto e il
    nome bastano a riconoscere la macchina, il gancio sta nella sua pagina */
 @media(max-width:559px){
-  .griglia{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-  .card:hover{transform:none;box-shadow:none}
-  .card-testo{padding:10px 10px 12px;gap:4px}
-  .card-meta{font-size:10.5px;letter-spacing:.08em}
+  .griglia{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}
+  .card:hover .card-foto{transform:none;box-shadow:none}
+  .card-testo{padding-top:8px;gap:3px}
+  .card-meta{font-size:10px;letter-spacing:.06em;gap:2px 6px}
+  .card-meta span+span::before{margin-right:6px}
+  .card-meta .fam{display:none}
   .card-nome{font-size:18px;line-height:1.08}
   .card-gancio{display:none}
-  .card-piede{font-size:10px;letter-spacing:.08em;padding-top:6px;gap:4px 8px}
+  .nota{width:26px;height:26px;font-size:13px;right:6px;bottom:6px}
 }
 
 /* pagina della scheda */
@@ -253,91 +387,131 @@ img.intera{object-fit:contain!important;padding:8px}
 .briciole ol{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
 .briciole li+li::before{content:"/";margin-right:6px;color:var(--bruno3)}
 .briciole a{color:var(--ruggine)}
-.sc-apertura{display:grid;gap:24px;padding-top:20px;padding-bottom:40px}
-.sc-foto{background:var(--crema)}
+.sc-apertura{display:grid;gap:24px;padding-top:20px;padding-bottom:36px}
+.sc-foto{position:relative}
+.sc-foto .quadro{background:var(--carta);border:2px solid var(--bruno);box-shadow:10px 10px 0 var(--sabbia)}
 .sc-foto img{width:100%;height:auto;max-height:min(70vh,640px);object-fit:contain;mix-blend-mode:multiply;margin:0 auto}
-.sc-foto figcaption{font-family:var(--mono);font-size:11.5px;color:var(--bruno3);margin-top:8px;letter-spacing:.04em}
-.sc-testo h1{font-family:var(--display);font-weight:700;font-size:clamp(46px,8.5vw,96px);line-height:.94;
-  text-transform:uppercase;margin-top:12px;overflow-wrap:break-word}
+.sc-foto figcaption{font-family:var(--mono);font-size:11.5px;color:var(--bruno3);margin-top:18px;letter-spacing:.04em}
+.sc-testo{min-width:0}
+.sc-testo h1{font-family:var(--display);font-weight:700;font-size:clamp(48px,8.6vw,108px);line-height:.9;
+  text-transform:uppercase;letter-spacing:-.012em;margin-top:12px;overflow-wrap:break-word}
+.sc-testo .gancio{padding-left:16px;border-left:6px solid var(--arancio)}
 @media(min-width:900px){
-  .sc-apertura{grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-top:36px;padding-bottom:60px}
+  .sc-apertura{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center;padding-top:34px;padding-bottom:56px}
   .sc-foto{order:2}
 }
-.specifiche{display:grid;grid-template-columns:repeat(2,1fr);border-top:2px solid var(--bruno);border-bottom:2px solid var(--bruno)}
-.specifiche div{padding:14px 14px 14px 0;border-bottom:1px solid var(--filo)}
-.specifiche dt{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ruggine)}
-.specifiche dd{font-family:var(--display);font-weight:700;font-size:21px;text-transform:uppercase;line-height:1.12;margin-top:4px}
+.specifiche{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));background:var(--bruno);color:var(--crema)}
+.specifiche div{padding:15px 16px;border-bottom:1px solid var(--filo-chiaro);border-right:1px solid var(--filo-chiaro)}
+.specifiche dt{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--arancio)}
+.specifiche dd{font-family:var(--display);font-weight:700;font-size:22px;text-transform:uppercase;line-height:1.12;margin-top:5px;
+  overflow-wrap:anywhere}
 @media(min-width:700px){
-  .specifiche{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
-  .specifiche div{border-bottom:none;border-right:1px solid var(--filo);padding:16px 18px}
-  .specifiche div:first-child{padding-left:0}
+  .specifiche{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+  .specifiche div{border-bottom:none;padding:20px 22px}
   .specifiche div:last-child{border-right:none}
 }
-.corpo{max-width:800px;padding-top:12px;padding-bottom:12px}
-.sezione{display:grid;grid-template-columns:58px 1fr;gap:4px 16px;padding:32px 0;border-top:2px solid var(--bruno)}
+/* il racconto a sinistra, il reel a destra che resta fermo mentre si legge */
+.sc-corpo{display:grid;gap:0 64px;padding-top:14px}
+.corpo{max-width:800px;min-width:0;padding-bottom:12px}
+@media(min-width:1040px){.sc-corpo.col-reel{grid-template-columns:minmax(0,1fr) 320px;align-items:start}
+  .sc-corpo .lato{position:sticky;top:98px;padding:34px 0 40px}}
+.lato{padding:34px 0;border-top:2px solid var(--bruno)}
+@media(min-width:1040px){.lato{border-top:none}}
+.lato h2{font-family:var(--display);font-weight:700;font-size:30px;text-transform:uppercase;line-height:1;margin-top:8px}
+.lato video{width:100%;max-width:320px;height:auto;aspect-ratio:9/16;background:var(--bruno);border:2px solid var(--bruno);
+  margin-top:16px;box-shadow:8px 8px 0 var(--arancio)}
+.lato p.nota-reel{font-size:15px;line-height:1.5;color:var(--bruno2);margin-top:20px;max-width:34ch}
+.lato p.nota-reel a{color:var(--ruggine)}
+.sezione{display:grid;grid-template-columns:64px 1fr;gap:4px 18px;padding:36px 0;border-top:2px solid var(--bruno)}
 .sezione:first-child{border-top:none}
-.sezione .num{font-family:var(--display);font-weight:700;font-size:46px;line-height:.9;color:var(--arancio)}
-.sezione h2{font-family:var(--display);font-weight:700;font-size:clamp(27px,3.4vw,34px);text-transform:uppercase;line-height:1.06}
+.sezione .num{font-family:var(--display);font-weight:700;font-size:54px;line-height:.86;color:var(--arancio)}
+.sezione h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,38px);text-transform:uppercase;line-height:1.04}
 .sezione h2 .kicker{display:block;margin-bottom:6px}
 .sezione .testo{grid-column:2}
-.sezione p{margin-top:12px;max-width:65ch}
-@media(max-width:599px){.sezione{grid-template-columns:1fr}.sezione .num{font-size:36px}.sezione .testo{grid-column:1}}
-.artisti{list-style:none;margin-top:8px}
-.artisti li{padding:12px 0;border-bottom:1px solid var(--filo)}
+.sezione p{margin-top:14px;max-width:64ch}
+.sezione:first-child .testo>p:first-child::first-letter{font-family:var(--display);font-weight:700;font-size:3.5em;line-height:.8;
+  float:left;margin:.06em .1em 0 0;color:var(--arancio)}
+@media(max-width:599px){.sezione{grid-template-columns:1fr}.sezione .num{font-size:40px}.sezione .testo{grid-column:1}}
+.artisti{list-style:none;margin-top:10px}
+.artisti li{padding:13px 0;border-bottom:1px solid var(--filo)}
 .artisti li:last-child{border-bottom:none}
-.artisti b{display:block;font-family:var(--display);font-weight:600;font-size:20px;letter-spacing:.02em;text-transform:uppercase;line-height:1.15}
-.riquadro{border:2px solid var(--bruno);background:var(--carta);padding:20px 22px;margin-top:22px}
-.riquadro .brano{font-family:var(--display);font-weight:600;font-size:22px;line-height:1.2;margin-top:8px}
+.artisti b{display:block;font-family:var(--display);font-weight:600;font-size:21px;letter-spacing:.02em;text-transform:uppercase;line-height:1.15}
+.riquadro{border:2px solid var(--bruno);background:var(--carta);padding:20px 22px;margin-top:22px;box-shadow:6px 6px 0 var(--sabbia)}
+.riquadro .brano{font-family:var(--display);font-weight:600;font-size:23px;line-height:1.2;margin-top:8px}
 .riquadro p{margin-top:8px}
+/* l'avvertenza è un'etichetta da manuale: la banda a righe in testa */
 .avvertenza{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start;background:var(--sabbia);
-  border:2px solid var(--bruno);padding:20px 22px;margin-top:22px}
+  border:2px solid var(--bruno);padding:30px 22px 20px;margin-top:24px;position:relative}
+.avvertenza::before{content:"";position:absolute;left:0;right:0;top:0;height:12px;border-bottom:2px solid var(--bruno);
+  background:repeating-linear-gradient(-45deg,var(--bruno) 0 10px,var(--arancio) 10px 20px)}
 .avvertenza svg{width:56px;height:56px}
 .avvertenza p{font-family:var(--display);font-weight:500;font-size:21px;line-height:1.3;margin-top:6px}
-.blocco{padding:40px 0;border-top:2px solid var(--bruno)}
-.blocco h2{font-family:var(--display);font-weight:700;font-size:clamp(30px,4vw,42px);text-transform:uppercase;line-height:1;margin-top:8px}
-.reel{display:grid;gap:22px;align-items:center;margin-top:22px}
-.reel video{width:100%;max-width:330px;height:auto;aspect-ratio:9/16;background:var(--bruno);border:2px solid var(--bruno)}
-.reel p{max-width:46ch}
-@media(min-width:760px){.reel{grid-template-columns:330px 1fr;gap:40px}}
-.tavole{display:grid;grid-auto-flow:column;grid-auto-columns:min(78%,300px);gap:14px;overflow-x:auto;
-  scroll-snap-type:x mandatory;margin-top:22px;padding-bottom:10px}
-.tavole a{scroll-snap-align:start;display:block}
-.tavole img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border:2px solid var(--bruno)}
-@media(min-width:980px){.tavole{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible}}
+.blocco{padding:44px 0;border-top:2px solid var(--bruno)}
+.blocco h2{font-family:var(--display);font-weight:700;font-size:clamp(32px,4.2vw,48px);text-transform:uppercase;line-height:1;margin-top:8px}
+.tavole{display:grid;grid-auto-flow:column;grid-auto-columns:min(72%,290px);gap:14px;overflow-x:auto;
+  scroll-snap-type:x mandatory;margin-top:24px;padding-bottom:12px}
+.tavole a{scroll-snap-align:start;display:block;border:2px solid var(--bruno);overflow:hidden;transition:transform .2s,box-shadow .2s;cursor:zoom-in}
+.tavole a:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--arancio)}
+.tavole img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+@media(min-width:980px){.tavole{grid-auto-flow:row;grid-template-columns:repeat(6,1fr);gap:16px;overflow:visible;padding-bottom:0}}
+/* la lente: una tavola in grande, con le frecce */
+.lente{position:fixed;inset:0;z-index:60;background:rgba(30,21,14,.95);display:grid;place-items:center;padding:14px}
+.lente img{max-width:min(94vw,760px);max-height:90vh;width:auto;height:auto;box-shadow:0 20px 70px rgba(0,0,0,.6)}
+.lente button{position:absolute;width:52px;height:52px;border-radius:50%;border:2px solid var(--crema);background:rgba(42,30,21,.7);
+  color:var(--crema);font-family:var(--display);font-size:24px;line-height:1;cursor:pointer;display:grid;place-items:center}
+.lente button:hover{background:var(--arancio);border-color:var(--arancio);color:var(--bruno)}
+.lente .chiudi{top:14px;right:14px}
+.lente .prima{left:14px;top:50%;transform:translateY(-50%)}
+.lente .dopo{right:14px;top:50%;transform:translateY(-50%)}
+.lente .conto{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:12px;
+  letter-spacing:.16em;color:var(--crema)}
 .fonti{font-family:var(--mono);font-size:13.5px;line-height:1.7;color:var(--bruno2)}
 .fonti h2{color:var(--bruno)}
-.fonti ol{padding-left:22px;margin-top:16px}
+.fonti ol{padding-left:22px;margin-top:16px;max-width:900px}
 .fonti li{margin-bottom:8px}
+.fonti li::marker{color:var(--ruggine);font-weight:600}
 .fonti a{color:var(--ruggine);overflow-wrap:anywhere}
 .fonti .data{color:var(--bruno3)}
 .crediti{margin-top:20px}
 .crediti p{margin-top:6px}
-.vicine{display:grid;grid-template-columns:1fr;gap:12px;padding:36px 0;border-top:2px solid var(--bruno)}
-@media(min-width:700px){.vicine{grid-template-columns:1fr 1fr}}
-.vicina{display:flex;gap:14px;align-items:center;border:2px solid var(--bruno);background:var(--carta);padding:10px;
+.vicine{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;padding:40px 0;border-top:2px solid var(--bruno)}
+@media(min-width:700px){.vicine{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.vicina>span:last-child{min-width:0}
+.vicina .nobr{white-space:normal}
+.vicina{display:flex;gap:16px;align-items:center;border:2px solid var(--bruno);background:var(--carta);padding:12px;
   text-decoration:none;transition:box-shadow .15s,transform .15s}
-.vicina:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--arancio)}
-.vicina .ft{width:80px;height:80px;flex:none;background:var(--crema);overflow:hidden}
+.vicina:hover{transform:translate(-3px,-3px);box-shadow:7px 7px 0 var(--arancio)}
+.vicina .ft{width:104px;height:104px;flex:none;background:var(--crema);overflow:hidden}
 .vicina .ft img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
 .vicina .dir{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ruggine);font-weight:600}
-.vicina b{display:block;font-family:var(--display);font-weight:700;font-size:20px;text-transform:uppercase;line-height:1.1;margin-top:3px}
+.vicina b{display:block;font-family:var(--display);font-weight:700;font-size:24px;text-transform:uppercase;line-height:1.08;margin-top:4px;
+  overflow-wrap:anywhere}
 .vicina.dopo{flex-direction:row-reverse;text-align:right}
 .vicina.vuota{display:none}
 @media(min-width:700px){.vicina.vuota{display:block;visibility:hidden}}
-.famiglia{padding-bottom:56px}
+.famiglia{padding-bottom:64px}
 
 /* invito e piede */
-.invito{background:var(--arancio);color:var(--bruno)}
-.invito .contenitore{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px;padding-top:34px;padding-bottom:34px}
-.invito-testo{font-family:var(--display);font-weight:700;font-size:clamp(24px,3.4vw,36px);text-transform:uppercase;line-height:1.1;max-width:26ch}
+.invito{background:var(--arancio);color:var(--bruno);border-top:2px solid var(--bruno)}
+.invito .contenitore{display:flex;flex-wrap:wrap;align-items:center;gap:18px 30px;padding-top:34px;padding-bottom:34px}
+.invito .bollo{flex:none;width:104px;height:104px;border-radius:50%;border:4px solid var(--bruno);overflow:hidden;background:var(--crema);
+  box-shadow:5px 5px 0 var(--bruno)}
+.invito .bollo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transform:scale(1.25)}
+.invito .kicker{color:var(--bruno)}
+.invito-testo{font-family:var(--display);font-weight:700;font-size:clamp(26px,3.6vw,42px);text-transform:uppercase;line-height:1.05;max-width:24ch;margin-top:6px}
+.invito .dove{flex:1;min-width:240px}
+@media(min-width:700px){.invito .bollo{width:150px;height:150px}.invito .contenitore{padding-top:42px;padding-bottom:42px}}
 .piede{background:var(--bruno);color:var(--crema)}
-.piede .firma{font-family:var(--display);font-weight:700;font-size:clamp(20px,2.6vw,28px);letter-spacing:.06em;text-transform:uppercase;padding-top:36px}
-.piede .righe{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--mono);font-size:12.5px;color:#d6c29c;padding:14px 0 36px}
+.piede .firma{font-family:var(--display);font-weight:700;font-size:clamp(30px,6.2vw,84px);letter-spacing:-.005em;text-transform:uppercase;
+  line-height:.95;padding-top:48px;max-width:16ch}
+.piede .firma em{font-style:normal;color:var(--arancio)}
+.piede .righe{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--mono);font-size:12.5px;color:#d6c29c;padding:26px 0 40px;
+  margin-top:34px;border-top:1px solid var(--filo-chiaro)}
 .piede a{color:var(--crema)}
-.errore{padding-top:80px;padding-bottom:80px}
-.errore h1{font-family:var(--display);font-weight:700;font-size:clamp(44px,8vw,88px);text-transform:uppercase;line-height:.95;margin-top:12px}
+.errore{padding-top:70px;padding-bottom:90px}
+.errore h1{font-family:var(--display);font-weight:700;font-size:clamp(44px,8vw,96px);text-transform:uppercase;line-height:.92;margin-top:12px}
 .errore p{margin-top:16px;max-width:50ch}
-"""
+""".replace("__ONDA__", _onda_css())
 VERSIONE_CSS = hashlib.sha1(STILE.encode()).hexdigest()[:8]
 
 AUTOMA = """<svg viewBox="0 0 200 200" fill="none" stroke="#38291d" aria-hidden="true">
@@ -374,19 +548,53 @@ barra.addEventListener('click',function(ev){if(!a.duration)return;var r=barra.ge
 
 # Ricerca e filtri: senza JavaScript la griglia si vede tutta e i comandi
 # restano nascosti, così nessuno vede un bottone che non fa niente.
+# Tre filtri che si sommano (famiglia, epoca, testo) e due ordini: quello
+# d'uscita e quello dell'anno della macchina.
 JS_ARCHIVIO = """<script>(function(){
 var q=document.getElementById('cerca'),chips=[].slice.call(document.querySelectorAll('.chip')),
-cards=[].slice.call(document.querySelectorAll('#griglia .card')),conta=document.getElementById('conta'),
-vuoto=document.getElementById('nessuna'),filtro='tutte';
+ep=[].slice.call(document.querySelectorAll('.epoca')),ord=[].slice.call(document.querySelectorAll('.ordina button')),
+g=document.getElementById('griglia'),cards=[].slice.call(g.querySelectorAll('.card')),conta=document.getElementById('conta'),
+vuoto=document.getElementById('nessuna'),filtro='tutte',epoca='';
 document.getElementById('strumenti').hidden=false;
 function norm(t){return t.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')}
 function aggiorna(){var t=norm(q.value.trim()),n=0;
-cards.forEach(function(c){var ok=(filtro==='tutte'||(filtro==='suono'?c.getAttribute('data-suono')==='1':c.getAttribute('data-serie')===filtro))&&(!t||c.getAttribute('data-testo').indexOf(t)>=0);c.hidden=!ok;if(ok)n++});
+cards.forEach(function(c){var ok=(filtro==='tutte'||(filtro==='suono'?c.getAttribute('data-suono')==='1':c.getAttribute('data-serie')===filtro))&&(!epoca||c.getAttribute('data-epoca')===epoca)&&(!t||c.getAttribute('data-testo').indexOf(t)>=0);c.hidden=!ok;if(ok)n++});
 conta.textContent=n===1?'1 scheda':n+' schede';vuoto.hidden=n>0}
 chips.forEach(function(b){b.addEventListener('click',function(){chips.forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');filtro=b.getAttribute('data-filtro');aggiorna()})});
+ep.forEach(function(b){b.addEventListener('click',function(){var su=b.getAttribute('aria-pressed')==='true';ep.forEach(function(x){x.setAttribute('aria-pressed','false')});if(su){epoca=''}else{b.setAttribute('aria-pressed','true');epoca=b.getAttribute('data-epoca')}aggiorna()})});
+ord.forEach(function(b){b.addEventListener('click',function(){ord.forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');var k=b.getAttribute('data-ordine');
+cards.slice().sort(function(a,c){var n=a.getAttribute('data-n')-c.getAttribute('data-n');return k==='anno'?((a.getAttribute('data-anno')-c.getAttribute('data-anno'))||n):n}).forEach(function(c){g.appendChild(c)})})});
 q.addEventListener('input',aggiorna);
 var f=(location.search.match(/[?&]famiglia=([a-z0-9-]+)/)||[])[1];
 chips.forEach(function(b){if(f&&b.getAttribute('data-filtro')===f){b.click()}});
+})();</script>"""
+
+# Su tutte le pagine: le sezioni con la classe .rivela entrano quando
+# arrivano sullo schermo. La classe .js sull'<html> la mette uno script in
+# testa alla pagina: senza JavaScript non si nasconde niente.
+JS_COMUNE = """<script>(function(){
+var el=[].slice.call(document.querySelectorAll('.rivela'));
+if(!('IntersectionObserver' in window)){el.forEach(function(x){x.classList.add('vista')});return}
+var o=new IntersectionObserver(function(v){v.forEach(function(t){if(t.isIntersecting){t.target.classList.add('vista');o.unobserve(t.target)}})},{rootMargin:'0px 0px -6% 0px'});
+el.forEach(function(x){o.observe(x)});
+})();</script>"""
+
+# La lente: una tavola in grande sopra la pagina, con le frecce (anche da
+# tastiera) e Esc per chiudere. Senza JavaScript il link apre il JPEG.
+JS_LENTE = """<script>(function(){
+var a=[].slice.call(document.querySelectorAll('.tavole a'));if(!a.length)return;var l=null,k=0;
+function mostra(){var im=l.querySelector('img');im.src=a[k].getAttribute('href');im.alt=a[k].querySelector('img').alt;l.querySelector('.conto').textContent=(k+1)+' / '+a.length}
+function tasto(ev){if(ev.key==='Escape')chiudi();if(ev.key==='ArrowRight')vai(1);if(ev.key==='ArrowLeft')vai(-1)}
+function chiudi(){if(l){document.body.removeChild(l);l=null;document.removeEventListener('keydown',tasto);a[k].focus()}}
+function vai(d){k=(k+d+a.length)%a.length;mostra()}
+a.forEach(function(x,i){x.addEventListener('click',function(ev){ev.preventDefault();k=i;
+l=document.createElement('div');l.className='lente';l.setAttribute('role','dialog');l.setAttribute('aria-modal','true');l.setAttribute('aria-label','Le tavole in grande');
+l.innerHTML='<img alt=""><button class="chiudi" type="button" aria-label="Chiudi">\\u00d7</button><button class="prima" type="button" aria-label="Tavola precedente">\\u2190</button><button class="dopo" type="button" aria-label="Tavola successiva">\\u2192</button><span class="conto"></span>';
+l.addEventListener('click',function(e2){if(e2.target===l)chiudi()});
+l.querySelector('.chiudi').addEventListener('click',chiudi);
+l.querySelector('.prima').addEventListener('click',function(){vai(-1)});
+l.querySelector('.dopo').addEventListener('click',function(){vai(1)});
+document.body.appendChild(l);document.addEventListener('keydown',tasto);mostra();l.querySelector('.chiudi').focus()})});
 })();</script>"""
 
 
@@ -400,6 +608,21 @@ def _senza_accenti(t):
 def _anno(s):
     m = re.search(r"\d{4}", str(s["anno"]))
     return int(m.group(0)) if m else None
+
+
+def _epoca(s):
+    """La colonna della linea del tempo: «pre» fino al 1949, poi il decennio."""
+    a = _anno(s)
+    if not a:
+        return ""
+    return "pre" if a < 1950 else str(a // 10 * 10)
+
+
+def _epoca_nome(k):
+    if k == "pre":
+        return "&lt;1950", "Prima del 1950"
+    d = int(k)
+    return (f"'{d % 100:02d}" if d < 2000 else str(d)), f"Anni {d}"
 
 
 def _serie_nome(serie):
@@ -585,25 +808,32 @@ def _copertina_reel(s, indice, ff):
 
 # ------------------------------------------------------------ mattoni ---
 
-def _img(s, foto, prefisso, sizes, *, lazy=True, priorita=False, box=None):
+def _img(s, foto, prefisso, sizes, *, lazy=True, priorita=False, box=None, passaggio=False):
     """`box` è il rapporto del riquadro (4/3 per le schede dell'elenco):
     se riempirlo taglierebbe più del 20% della foto, la foto entra intera
     e avanza un bordo di crema. Stessa regola della copertina delle
     tavole: meglio il bordo che una macchina senza tastiera (l'Eventide
     H910 è largo 4,8 volte l'altezza: col ritaglio si vedeva un display)."""
     alt = f"{s['strumento']} ({s['anno']})"
-    pos = s["foto"].get("posizione") or "center"
+    pos = e(s["foto"].get("posizione") or "center")
     intera = s["foto"].get("ritaglio")
     if foto and box and not intera:
         w, h = foto["dimensioni"]["640"]
         intera = 1 - (box * h / w if w / h > box else (w / h) / box) > 0.20
     classe = ' class="intera"' if intera else ""
     carica = ' loading="lazy" decoding="async"' if lazy else (' fetchpriority="high"' if priorita else "")
+    # `passaggio`: la stessa foto ha lo stesso nome nella griglia e in testa
+    # alla scheda, e il browser che sa farlo (`@view-transition`) la porta
+    # da un posto all'altro. Il nome deve essere UNICO nella pagina, o il
+    # passaggio salta tutto: per questo lo hanno solo le carte della
+    # griglia e la foto d'apertura, non la vetrina né le «vicine».
+    if passaggio:
+        pos += ";view-transition-name:f-" + re.sub(r"[^a-z0-9-]", "-", s["slug"].lower())
     if foto:
         w, h = foto["dimensioni"]["640"]
         srcset = ", ".join(f'{prefisso}{foto[str(x)]} {x}w' for x in LARGHEZZE_FOTO)
         return (f'<img src="{prefisso}{foto["640"]}" srcset="{srcset}" sizes="{sizes}" '
-                f'width="{w}" height="{h}" alt="{e(alt)}" style="object-position:{e(pos)}"{classe}{carica}>')
+                f'width="{w}" height="{h}" alt="{e(alt)}" style="object-position:{pos}"{classe}{carica}>')
     return (f'<img src="{prefisso}tavole/{s["slug"]}/01.jpg" width="1080" height="1350" '
             f'alt="{e(alt)}"{carica}>')
 
@@ -612,18 +842,29 @@ def _testata(prefisso):
     casa = prefisso or "./"
     return f"""<header class="testata"><div class="contenitore">
 <a class="marchio" href="{casa}"><span class="q">{AUTOMA}</span><span><b>ELETTROFONI</b><small>Catalogo delle macchine sonore</small></span></a>
-<nav aria-label="Menu"><a href="{casa}#archivio">Le schede</a><a href="{casa}suoni/">Il suono vero</a><a href="{INSTAGRAM}" rel="noopener">Instagram ↗</a></nav>
-</div></header><div class="filetto"></div>"""
+<nav aria-label="Menu"><a href="{casa}#archivio">Schede</a><a href="{casa}suoni/">Suoni</a><a class="largo" href="{INSTAGRAM}" rel="noopener">Instagram ↗</a></nav>
+</div></header>"""
+
+
+def _firma():
+    """La firma, con «QUASI MAI.» in arancio."""
+    f = e(contenuti.FIRMA)
+    return re.sub(r"(QUASI MAI\.?)$", r"<em>\1</em>", f)
 
 
 def _piede(prefisso):
+    bollo = ""
+    if (DOCS / "dinamo.jpg").exists():
+        bollo = (f'<span class="bollo"><img src="{prefisso}dinamo.jpg" width="520" height="520" loading="lazy" '
+                 'decoding="async" alt="Dinamo, l\'automa che compila il catalogo"></span>')
     return f"""<section class="invito"><div class="contenitore">
-<p class="invito-testo">Una macchina nuova ogni sera alle 18, su Instagram</p>
+{bollo}<div class="dove"><p class="kicker">Compila il catalogo: Dinamo</p>
+<p class="invito-testo">Una macchina nuova ogni sera alle 18, su Instagram</p></div>
 <a class="bottone pieno" href="{INSTAGRAM}" rel="noopener">Segui @elettrofoni ↗</a>
 </div></section>
 <footer class="piede"><div class="contenitore">
-<p class="firma">{e(contenuti.FIRMA)}</p>
-<p class="righe"><a href="{INSTAGRAM}" rel="noopener">@elettrofoni su Instagram</a><span>Foto e registrazioni con licenza libera: i crediti sono in ogni scheda</span><a href="{prefisso}privacy.html">Privacy</a><a href="{prefisso}cancellazione-dati.html">Cancellazione dei dati</a></p>
+<p class="firma">{_firma()}</p>
+<p class="righe"><a href="{INSTAGRAM}" rel="noopener">@elettrofoni su Instagram</a><a href="{prefisso or './'}">Tutte le schede</a><a href="{prefisso}suoni/">Il suono vero</a><span>Foto e registrazioni con licenza libera: i crediti sono in ogni scheda</span><a href="{prefisso}privacy.html">Privacy</a><a href="{prefisso}cancellazione-dati.html">Cancellazione dei dati</a></p>
 </div></footer>"""
 
 
@@ -652,9 +893,10 @@ def _pagina(titolo, corpo, descrizione, *, canonical, prefisso, og_image=None,
     return f"""<!doctype html><html lang="it"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(titolo)}</title>
+<script>document.documentElement.className='js'</script>
 {"".join(meta)}
 {FONT_LINK}<link rel="stylesheet" href="{prefisso}stile.css?v={VERSIONE_CSS}">{_ld(ld) if ld else ""}</head>
-<body>{corpo}{script}</body></html>"""
+<body>{corpo}{script}{JS_COMUNE}</body></html>"""
 
 
 def _org():
@@ -690,19 +932,16 @@ def _credito_suono(a, suono, breve=False):
             f'estratto di {round(suono["secondi"])} s, volume normalizzato')
 
 
-def _card(s, foto, suono, prefisso, sizes, *, nuova=False, lazy=True):
+def _card(s, foto, suono, prefisso, sizes, *, nuova=False, lazy=True, n=0):
     testo = " ".join([s["strumento"], s["costruttore"], str(s["anno"]), s["luogo"],
                       s["inventore_nome"], s["serie"]]
                      + [u["artista"] for u in s["chi_lusata"]])
-    piede = f"<span>{e(_serie_breve(s['serie']))}</span>"
-    if suono:
-        piede += '<span class="ha-suono">♪ Suono vero</span>'
-    return f"""<a class="card" href="{prefisso}tavole/{s['slug']}/" data-serie="{_serie_id(s['serie'])}" data-suono="{1 if suono else 0}" data-testo="{e(_senza_accenti(testo))}">
-<span class="card-foto">{'<span class="bollino">Ultima uscita</span>' if nuova else ''}{_img(s, foto, prefisso, sizes, lazy=lazy, priorita=nuova, box=4 / 3)}</span>
-<span class="card-testo"><span class="card-meta"><span>N. {s['numero']:03d}</span><span>{e(str(s['anno']))}</span></span>
+    nota = '<span class="nota" title="C\'è il suono vero" aria-label="C\'è il suono vero">♪</span>' if suono else ""
+    return f"""<a class="card" href="{prefisso}tavole/{s['slug']}/" data-serie="{_serie_id(s['serie'])}" data-suono="{1 if suono else 0}" data-epoca="{_epoca(s)}" data-anno="{_anno(s) or 0}" data-n="{n}" data-testo="{e(_senza_accenti(testo))}">
+<span class="card-foto">{'<span class="bollino">Ultima uscita</span>' if nuova else ''}{_img(s, foto, prefisso, sizes, lazy=lazy, box=4 / 3, passaggio=True)}{nota}</span>
+<span class="card-testo"><span class="card-meta"><span>N. {s['numero']:03d}</span><span>{e(str(s['anno']))}</span><span class="fam">{e(_serie_breve(s['serie']))}</span></span>
 <span class="card-nome">{_nome(s['strumento'])}</span>
-<span class="card-gancio">{e(s['gancio'])}</span>
-<span class="card-piede">{piede}</span></span></a>"""
+<span class="card-gancio">{e(s['gancio'])}</span></span></a>"""
 
 
 # ------------------------------------------------------ pagina scheda ---
@@ -754,7 +993,7 @@ def _pagina_scheda(s, p, i, uscite, media, reel_link):
          f'<p class="kicker">{etichetta}</p><p>{chiusura}</p></div></div>'),
     ]
     corpo_sezioni = "".join(
-        f'<section class="sezione"><div class="num" aria-hidden="true">{n:02d}</div>'
+        f'<section class="sezione{" rivela" if n > 1 else ""}"><div class="num" aria-hidden="true">{n:02d}</div>'
         f'<h2><span class="kicker">{e(k)}</span>{e(t)}</h2><div class="testo">{html_testo}</div></section>'
         for n, (k, t, html_testo) in enumerate(sezioni, 1))
 
@@ -772,9 +1011,9 @@ def _pagina_scheda(s, p, i, uscite, media, reel_link):
         poster = f' poster="reel2.jpg"' if copertina and copertina.get("file") else ""
         link = (f' <a href="{e(reel_link[slug])}" rel="noopener">Aprilo su Instagram ↗</a>'
                 if reel_link.get(slug) else "")
-        video = f"""<section class="blocco" id="reel"><p class="kicker">Il reel</p><h2>La versione corta</h2>
-<div class="reel"><video controls playsinline preload="none"{poster} width="720" height="1280"><source src="reel2.mp4" type="video/mp4"></video>
-<p>Le cose da sapere in fila, una schermata alla volta, col suono della macchina quando ne esiste una registrazione libera.{link}</p></div></section>"""
+        video = f"""<aside class="lato" id="reel"><p class="kicker">Il reel</p><h2>La versione corta</h2>
+<video controls playsinline preload="none"{poster} width="720" height="1280"><source src="reel2.mp4" type="video/mp4"></video>
+<p class="nota-reel">Le cose da sapere in fila, una schermata alla volta, col suono della macchina quando ne esiste una registrazione libera.{link}</p></aside>"""
 
     fonti = "".join(
         f'<li><a href="{e(f["url"])}" rel="nofollow noopener">{e(f["titolo"])}</a> '
@@ -797,7 +1036,7 @@ def _pagina_scheda(s, p, i, uscite, media, reel_link):
             return '<span class="vicina vuota"></span>'
         etich = "← La precedente" if verso == "prima" else "La successiva →"
         return (f'<a class="vicina {verso}" href="{pre}tavole/{x["slug"]}/">'
-                f'<span class="ft">{_img(x, media["foto"].get(x["slug"]), pre, "80px")}</span>'
+                f'<span class="ft">{_img(x, media["foto"].get(x["slug"]), pre, "104px")}</span>'
                 f'<span><span class="dir">{etich}</span><b>{_nome(x["strumento"])}</b></span></a>')
 
     stessa = sorted((j for j, (_, x) in enumerate(uscite) if x["serie"] == s["serie"] and j != i),
@@ -808,7 +1047,7 @@ def _pagina_scheda(s, p, i, uscite, media, reel_link):
                               media["suoni"].get(uscite[j][1]["slug"]), pre,
                               "(min-width: 1180px) 270px, (min-width: 560px) 45vw, 50vw")
                         for j in stessa)
-        famiglia = (f'<section class="famiglia"><div class="testa-sezione"><div><p class="kicker">Della stessa famiglia</p>'
+        famiglia = (f'<section class="famiglia rivela"><div class="testa-sezione"><div><p class="kicker">Della stessa famiglia</p>'
                     f'<h2>{e(_serie_nome(s["serie"]))}</h2></div></div><div class="griglia">{carte}</div></section>')
 
     corpo = f"""{_testata(pre)}<main>
@@ -816,7 +1055,7 @@ def _pagina_scheda(s, p, i, uscite, media, reel_link):
 <nav class="briciole" aria-label="Sei qui"><ol><li><a href="{pre}">Archivio</a></li><li><a href="{pre}?famiglia={_serie_id(s['serie'])}#archivio">{e(_serie_nome(s['serie']))}</a></li><li aria-current="page">{e(s['strumento'])}</li></ol></nav>
 <article>
 <header class="sc-apertura">
-<figure class="sc-foto">{_img(s, foto, pre, "(min-width: 900px) 560px, 100vw", lazy=False, priorita=True)}
+<figure class="sc-foto"><div class="quadro">{_img(s, foto, pre, "(min-width: 900px) 580px, 100vw", lazy=False, priorita=True, passaggio=True)}</div>
 <figcaption>Foto: {e(s['foto']['autore'])} · {e(s['foto']['licenza'])} · {e(s['foto']['fonte'])}</figcaption></figure>
 <div class="sc-testo">
 <p class="kicker">Scheda {s['numero']:03d} · {e(str(s['anno']))} · {e(s['luogo'])}</p>
@@ -828,10 +1067,9 @@ def _pagina_scheda(s, p, i, uscite, media, reel_link):
 </div>
 </header>
 <dl class="specifiche">{specifiche}</dl>
-<div class="corpo">{corpo_sezioni}</div>
-{video}
-<section class="blocco" id="tavole"><p class="kicker">Il carosello</p><h2>Le 6 tavole</h2><div class="tavole">{tavole}</div></section>
-<section class="blocco fonti"><p class="kicker">Da dove viene</p><h2>Fonti</h2><ol>{fonti}</ol><div class="crediti">{crediti_html}</div></section>
+<div class="sc-corpo{' col-reel' if video else ''}"><div class="corpo">{corpo_sezioni}</div>{video}</div>
+<section class="blocco rivela" id="tavole"><p class="kicker">Il carosello · si aprono in grande</p><h2>Le 6 tavole</h2><div class="tavole">{tavole}</div></section>
+<section class="blocco fonti rivela"><p class="kicker">Da dove viene</p><h2>Fonti</h2><ol>{fonti}</ol><div class="crediti">{crediti_html}</div></section>
 </article>
 <nav class="vicine" aria-label="Altre schede">{vicina(prima, "prima")}{vicina(dopo, "dopo")}</nav>
 {famiglia}
@@ -894,7 +1132,7 @@ def _pagina_scheda(s, p, i, uscite, media, reel_link):
                 corpo, descrizione, canonical=url, prefisso=pre,
                 og_image=f"{BASE}/tavole/{slug}/01.jpg", og_tipo="article",
                 pubblicata=p.get("quando"), ld=ld,
-                script=JS_LETTORE if suono else ""),
+                script=(JS_LETTORE if suono else "") + JS_LENTE),
         encoding="utf-8")
 
 
@@ -908,21 +1146,40 @@ def _home(uscite, media, reel_link):
     for _, s in uscite:
         famiglie[s["serie"]] = famiglie.get(s["serie"], 0) + 1
 
-    intro = f"""<section class="intro contenitore">
+    # La vetrina: le ultime cinque, la più nuova grande. È la prima cosa
+    # che si vede, e fa vedere PIÙ macchine (regola del 16/10/2026).
+    tessere = "".join(
+        f'<a class="tessera{" grande" if n == 0 else ""}" href="tavole/{s["slug"]}/">'
+        + ('<span class="bollino">Ultima uscita</span>' if n == 0 else "")
+        + f'<span class="ft">{_img(s, media["foto"].get(s["slug"]), "", "(min-width: 980px) 340px, 46vw", lazy=False, priorita=(n == 0), box=(5 / 3 if n == 0 else 6 / 5))}</span>'
+        f'<span class="et"><i>N. {s["numero"]:03d}</i><b>{e(s["strumento"])}</b></span></a>'
+        for n, (_, s) in enumerate(recenti[:5]))
+    intro = f"""<section class="copertina"><div class="contenitore">
+<div class="cop-testo">
 <p class="kicker">Elettrofoni · l'archivio delle schede</p>
-<h1>Catalogo delle macchine sonore</h1>
+<h1>Catalogo delle macchine <em>sonore</em></h1>
 <p class="lead">Sintetizzatori, drum machine, organi, campionatori, effetti. Per ognuna c'è chi l'ha costruita, cosa c'è dentro, chi ci ha suonato e una storia, con le fonti in fondo.</p>
+<p class="bottoni"><a class="bottone pieno" href="#archivio">Sfoglia le schede ↓</a>{'<a class="bottone" href="suoni/">Ascolta le macchine →</a>' if con_suono else ''}</p>
+</div>
+<div class="vetrina">{tessere}</div>
 <p class="cifre"><span><b>{len(uscite)}</b>schede</span><span><b>{min(anni) if anni else ''}–{max(anni) if anni else ''}</b>gli anni</span><span><b>{len(famiglie)}</b>famiglie</span><span><b>{len(con_suono)}</b>col suono vero</span></p>
-</section>"""
+</div></section>"""
 
-    # Una riga sola verso la pagina dei suoni: i nomi delle prime tre
-    # dicono cosa c'è dietro meglio di «ascolta».
+    # Il nastro: i nomi di tutte le macchine, due volte di fila perché
+    # scorrendo non si veda la giunta. È decorazione: aria-hidden.
+    nomi_nastro = "".join(f"<span>{e(s['strumento'])}</span>" for _, s in recenti)
+    nastro = f'<div class="nastro" aria-hidden="true"><div>{nomi_nastro}{nomi_nastro}</div></div>' if recenti else ""
+
+    # Una fascia sola verso la pagina dei suoni (16/10/2026: niente elenco
+    # in home), ma con un lettore vero: l'ultima macchina registrata.
     verso = ""
     if con_suono:
-        nomi = ", ".join(e(s["strumento"]) for _, s in con_suono[:3])
-        verso = f"""<div class="contenitore"><a class="verso-suoni" href="suoni/">
-<span class="tondo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-<span class="riga"><b>Il suono vero</b><small>{len(con_suono)} macchine registrate davvero<span class="nomi">: {nomi}…</span></small></span><i aria-hidden="true">→</i></a></div>"""
+        _, s0 = con_suono[0]
+        verso = f"""<section class="ascolta"><div class="contenitore">
+<div><p class="kicker">Il suono vero</p><h2>{len(con_suono)} macchine registrate davvero</h2></div>
+{_lettore(s0, media["suoni"][s0["slug"]], "", etichetta="Ascolta: " + s0["strumento"])}
+<a class="verso" href="suoni/">Tutte le registrazioni →</a>
+</div></section>"""
 
     chips = [f'<button class="chip" type="button" data-filtro="tutte" aria-pressed="true">Tutte<span>{len(uscite)}</span></button>']
     if con_suono:
@@ -930,22 +1187,37 @@ def _home(uscite, media, reel_link):
     for serie, n in sorted(famiglie.items(), key=lambda kv: (-kv[1], kv[0])):
         chips.append(f'<button class="chip" type="button" data-filtro="{_serie_id(serie)}" aria-pressed="false">'
                      f'{e(_serie_breve(serie))}<span>{n}</span></button>')
+    # La linea del tempo: una colonna per epoca, alta quanto le schede.
+    per_epoca = {}
+    for _, s in uscite:
+        k = _epoca(s)
+        if k:
+            per_epoca[k] = per_epoca.get(k, 0) + 1
+    ordine_epoche = sorted(per_epoca, key=lambda k: 0 if k == "pre" else int(k))
+    tetto = max(per_epoca.values(), default=1)
+    epoche = "".join(
+        f'<button class="epoca" type="button" data-epoca="{k}" aria-pressed="false" style="--h:{per_epoca[k] / tetto:.2f}" '
+        f'aria-label="{_epoca_nome(k)[1]}: {per_epoca[k]} schede" title="{_epoca_nome(k)[1]}: {per_epoca[k]} schede">'
+        f'<i></i>{_epoca_nome(k)[0]}</button>'
+        for k in ordine_epoche)
     carte = "".join(_card(s, media["foto"].get(s["slug"]), media["suoni"].get(s["slug"]), "",
-                          "(min-width: 1180px) 270px, (min-width: 560px) 45vw, 50vw",
-                          nuova=(n == 0), lazy=(n >= 4))
+                          "(min-width: 1240px) 280px, (min-width: 560px) 45vw, 50vw",
+                          nuova=(n == 0), n=n)
                     for n, (_, s) in enumerate(recenti))
     archivio = f"""<section class="archivio contenitore" id="archivio">
-<div class="testa-sezione"><div><h2 class="kicker">Tutte le schede · la più nuova per prima</h2></div><p class="conta" id="conta" aria-live="polite">{len(uscite)} schede</p></div>
+<div class="testa-sezione"><div><p class="kicker">La più nuova per prima</p><h2>Tutte le schede</h2></div><p class="conta" id="conta" aria-live="polite">{len(uscite)} schede</p></div>
 <div class="strumenti" id="strumenti" hidden>
-<input id="cerca" class="cerca" type="search" placeholder="Cerca: Moog, 1982, Kraftwerk…" aria-label="Cerca una macchina, un costruttore o un artista" autocomplete="off">
-<div class="chips" role="group" aria-label="Famiglie">{''.join(chips)}</div>
+<div><label class="etichetta" for="cerca">Cerca</label><input id="cerca" class="cerca" type="search" placeholder="Moog, 1982, Kraftwerk…" aria-label="Cerca una macchina, un costruttore o un artista" autocomplete="off"></div>
+<div><span class="etichetta">Linea del tempo</span><div class="epoche" role="group" aria-label="Epoche">{epoche}</div></div>
+<div class="riga-chips"><div class="chips" role="group" aria-label="Famiglie">{''.join(chips)}</div>
+<div class="ordina" role="group" aria-label="Ordine delle schede"><span>Ordina</span><button type="button" data-ordine="uscita" aria-pressed="true">Uscita</button><button type="button" data-ordine="anno" aria-pressed="false">Anno</button></div></div>
 </div>
 <div class="griglia" id="griglia">{carte}</div>
 <p class="nessuna" id="nessuna" hidden>Nessuna scheda trovata. Provate col nome del costruttore o di chi ci ha suonato.</p>
 </section>"""
 
     vuoto = '<p class="contenitore nessuna">Le prime schede stanno arrivando.</p>' if not uscite else ""
-    corpo = f"{_testata('')}<main>{intro}{vuoto}{verso}{archivio}</main>{_piede('')}"
+    corpo = f"{_testata('')}<main>{intro}{vuoto}{nastro}{verso}{archivio}</main>{_piede('')}"
     ld = {"@context": "https://schema.org", "@graph": [
         _org(),
         {"@type": "WebSite", "@id": f"{BASE}/#sito", "name": "Elettrofoni",
@@ -960,7 +1232,7 @@ def _home(uscite, media, reel_link):
                 "come funzionano e chi li ha suonati, con il suono vero dove c'è. "
                 "Una scheda al giorno, con fonti verificate.",
                 canonical=f"{BASE}/", prefisso="", og_image=og_idx, verifica=True, ld=ld,
-                script=JS_ARCHIVIO),
+                script=JS_ARCHIVIO + (JS_LETTORE if con_suono else "")),
         encoding="utf-8")
     _pagina_suoni(con_suono, media)
 
@@ -972,14 +1244,14 @@ def _pagina_suoni(con_suono, media):
     for _, s in con_suono:
         suono = media["suoni"][s["slug"]]
         dischi.append(f"""<li class="disco">
-<a class="disco-foto" href="{pre}tavole/{s['slug']}/" tabindex="-1" aria-hidden="true">{_img(s, media['foto'].get(s['slug']), pre, '64px')}</a>
+<a class="disco-foto" href="{pre}tavole/{s['slug']}/" tabindex="-1" aria-hidden="true">{_img(s, media['foto'].get(s['slug']), pre, '76px')}</a>
 <div><a class="disco-nome" href="{pre}tavole/{s['slug']}/">{_nome(s['strumento'])}</a><span class="disco-meta">{e(str(s['anno']))} · {e(_serie_breve(s['serie']))}</span></div>
 {_lettore(s, suono, pre, mini=True)}
 <p class="disco-credito">{_credito_suono(s['reel_audio'], suono, breve=True)}</p>
 </li>""")
     corpo = f"""{_testata(pre)}<main class="suoni"><div class="contenitore">
-<p class="kicker">Da sentire</p>
-<h1>Il suono vero</h1>
+<p class="kicker">Da sentire · {len(con_suono)} registrazioni</p>
+<h1>Il suono <em>vero</em></h1>
 <p class="lead">Registrazioni libere delle macchine vere, da Wikimedia Commons e da Freesound. Niente dischi, solo la macchina, a volume pareggiato: si può passare dall'una all'altra senza toccare la manopola. Il nome porta alla scheda.</p>
 <ul class="dischi">{''.join(dischi)}</ul>
 </div></main>{_piede(pre)}"""
@@ -1052,6 +1324,19 @@ def main():
         shutil.copyfile(logo, DOCS / "logo.png")
     else:
         print("[archivio] AVVISO: manca assets/marchio/icona-app-meta.png, niente logo né favicon")
+
+    # Dinamo di latta per il bollo dell'invito: 520 px, una volta sola.
+    din_src = RADICE / "assets" / "dinamo" / "dinamo_reale_b.png"
+    din = DOCS / "dinamo.jpg"
+    if din_src.exists() and not din.exists():
+        try:
+            from PIL import Image
+            with Image.open(din_src) as im:
+                im = im.convert("RGB")
+                im.thumbnail((520, 520), Image.LANCZOS)
+                im.save(din, "JPEG", quality=82, optimize=True, progressive=True)
+        except ImportError:
+            print("[archivio] AVVISO: manca Pillow, l'invito esce senza Dinamo")
 
     for i, (p, s) in enumerate(uscite):
         _pagina_scheda(s, p, i, uscite, media, reel_link)

@@ -723,6 +723,19 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
     lui, e fino ad allora non si tocca.
   Ogni ritocco si guarda con Playwright su computer E telefono (390 px),
   controllando che la larghezza della pagina non superi lo schermo.
+  **Ridisegnato il 12/11/2026** (il proprietario: «Rifai il SITO
+  STUPENDO»). La struttura del 16/10 resta; cambia la presentazione, e le
+  scelte stanno nel commento in testa a `genera_archivio.py`: copertina
+  con la vetrina delle ultime cinque macchine, nastro coi nomi, fascia
+  del suono vero con un lettore solo, «linea del tempo» (una colonna per
+  epoca) e ordine per anno nella griglia; pagina della scheda con la
+  targa dei dati, il reel di fianco al racconto e la «lente» sulle
+  tavole; Dinamo di latta nel bollo dell'invito (`docs/dinamo.jpg`).
+  Lezione: la larghezza si prova ANCHE coi font bloccati e a 360 px. Con
+  Oswald in cache tutto stava nello schermo; col carattere di ripiego
+  (cioè nel primo secondo di ogni visita, o sempre se Google Fonts non
+  arriva) la testata usciva di 25 px. Una prova fatta solo nelle
+  condizioni buone non dice niente di quelle cattive (regola 10).
 - Commenti: `commenti.py` elenca quelli mai visti; `commenti.rispondi()`
   pubblica una risposta. **ATTENZIONE (13/10/2026): non ha mai letto un
   commento.** L'API dà `comments_count` giusto (fino a 5 su un post) ma
