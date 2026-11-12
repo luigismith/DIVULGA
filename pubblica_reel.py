@@ -101,9 +101,16 @@ def main(slug):
 
     formato = formato_di(scheda) if speciale is None else FORMATO
     # Idempotenza: come per i post, sta nello stato, non nell'API. Un reel
-    # del formato 2, 3 o 4 vale lo stesso: uno per scheda.
-    if any(slug in gia_pubblicati(stato, f) for f in (FORMATO, FORMATO_VOCE, FORMATO_HEYGEN)):
-        print(f"[stop] il reel di '{slug}' (formato 2, 3 o 4) risulta già pubblicato: non lo rifaccio.")
+    # del formato 2 o 3 vale lo stesso: uno per scheda. Il formato 4
+    # (HeyGen) invece è un reel IN PIÙ, due volte a settimana, sulle schede
+    # andate meglio (proprietario, 12/11/2026; scegli_heygen.py): conta
+    # solo se quella scheda ha già il SUO reel HeyGen.
+    if formato == FORMATO_HEYGEN:
+        if slug in gia_pubblicati(stato, FORMATO_HEYGEN):
+            print(f"[stop] il reel HeyGen di '{slug}' risulta già pubblicato: non lo rifaccio.")
+            return 0
+    elif any(slug in gia_pubblicati(stato, f) for f in (FORMATO, FORMATO_VOCE)):
+        print(f"[stop] il reel di '{slug}' (formato 2 o 3) risulta già pubblicato: non lo rifaccio.")
         return 0
     # Un reel ha senso solo per una scheda già uscita nel feed.
     if speciale is None and slug not in {p["slug"] for p in stato["pubblicati"]}:
@@ -116,7 +123,7 @@ def main(slug):
     # una decisione del proprietario, non di questo file.
     rifacimento = slug in gia_pubblicati(stato)
     if rifacimento:
-        print(f"[reel] '{slug}' ha già un reel del formato 1: questo è il rifacimento")
+        print(f"[reel] '{slug}' ha già un reel: questo è il rifacimento")
 
     nome_file = genera_reel.NOME_FILE if speciale is not None else file_di(scheda)
     print(f"[reel] formato {formato}, file {nome_file}")

@@ -258,6 +258,20 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   `nomi_accettati`. Impaginato voluto dal proprietario: Dinamo al centro
   e grande (cornice 760 px), foto sopra. Primo: Casio SK-1, 12/11/2026,
   ~45 crediti (restano ~360: ~8 reel così).
+  **Due a settimana, sulle schede andate meglio** (proprietario,
+  12/11/2026: «il reel esce solo 2 volte a settimana basandosi sui post di
+  maggior successo»). Lunedì e giovedì, nella passata delle 12:30, AL POSTO
+  del rifacimento: `python scegli_heygen.py` dà la scheda già uscita col
+  punteggio più alto nell'ultima fotografia di `metriche/` (like + 2×
+  commenti + 3× salvataggi + 3× condivisioni, carosello e reel insieme;
+  fuori chi ha già il suo reel HeyGen e chi non ha `reel_audio`). È un
+  reel IN PIÙ per una scheda che il suo reel l'ha già avuto: niente tag
+  (è un rifacimento), e `pubblica_reel.py` lo blocca solo se quella
+  scheda ha già un formato 4. `reel.yml` lo mette su Pages da sé
+  (`online=1`), perché alle 12:30 la pubblicazione delle 18 non l'ha
+  ancora portato online. Le schede nuove della sera tornano al formato 2
+  e 3. Coi crediti di oggi bastano per circa 4 settimane: prima che
+  finiscano si avvisa il proprietario.
 - **Il reel serale ha due inneschi** (21/10/2026): la Routine delle
   19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
   e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno

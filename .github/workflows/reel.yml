@@ -97,6 +97,13 @@ jobs:
             if [ -n "${{ inputs.prova }}" ] || [ ! -f "docs/tavole/$SLUG/$FILE" ]; then
               echo "costruire=1" >> "$GITHUB_OUTPUT"
             fi
+            # Il reel HeyGen (formato 4) lo monta la sessione e lo committa
+            # già fatto: qui non si costruisce, ma va messo su Pages prima
+            # dell'API, perché alle 12:30 la pubblicazione delle 18 non l'ha
+            # ancora portato online (12/11/2026).
+            if [ "$FILE" = "reel4.mp4" ] && [ -z "${{ inputs.prova }}" ]; then
+              echo "online=1" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       # Solo se il file manca. Qui ffmpeg NON e' facoltativo: senza il
@@ -194,23 +201,23 @@ jobs:
       # Il video deve essere online PRIMA di chiamare l'API (Instagram lo
       # scarica da un URL pubblico). Stesso schema di pubblica.yml.
       - name: Configura Pages
-        if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1'
+        if: (steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1') || steps.quale.outputs.online == '1'
         uses: actions/configure-pages@v5
         with:
           enablement: true
       - uses: actions/upload-pages-artifact@v3
-        if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1'
+        if: (steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1') || steps.quale.outputs.online == '1'
         with:
           path: docs
       # Secondo tentativo del deploy: vedi pubblica.yml, 10/11/2026. Il
       # rifacimento del 09/11 alle 12:30 e' saltato cosi', prima dell'API.
       - name: Deploy Pages
         id: deploy1
-        if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1'
+        if: (steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1') || steps.quale.outputs.online == '1'
         continue-on-error: true
         uses: actions/deploy-pages@v4
       - name: Deploy Pages, secondo tentativo
-        if: steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1' && steps.deploy1.outcome == 'failure'
+        if: ((steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1') || steps.quale.outputs.online == '1') && steps.deploy1.outcome == 'failure'
         uses: actions/deploy-pages@v4
 
       - name: Pubblica il reel
