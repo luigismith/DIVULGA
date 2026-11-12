@@ -723,18 +723,21 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
     lui, e fino ad allora non si tocca.
   Ogni ritocco si guarda con Playwright su computer E telefono (390 px),
   controllando che la larghezza della pagina non superi lo schermo.
-  **Ridisegnato il 12/11/2026** (il proprietario: «Rifai il SITO
-  STUPENDO»). La struttura del 16/10 resta; cambia la presentazione, e le
-  scelte stanno nel commento in testa a `genera_archivio.py`: copertina
-  con la vetrina delle ultime cinque macchine, nastro coi nomi, fascia
-  del suono vero con un lettore solo, «linea del tempo» (una colonna per
-  epoca) e ordine per anno nella griglia; pagina della scheda con la
-  targa dei dati, il reel di fianco al racconto e la «lente» sulle
-  tavole; Dinamo di latta nel bollo dell'invito (`docs/dinamo.jpg`).
-  Lezione: la larghezza si prova ANCHE coi font bloccati e a 360 px. Con
-  Oswald in cache tutto stava nello schermo; col carattere di ripiego
-  (cioè nel primo secondo di ogni visita, o sempre se Google Fonts non
-  arriva) la testata usciva di 25 px. Una prova fatta solo nelle
+  **Ridisegnato il 12/11/2026, due volte.** Il proprietario ha chiesto
+  «Rifai il SITO STUPENDO»; la prima versione riprendeva il catalogo anni
+  '70 delle tavole (crema, Oswald, grana) e l'ha bocciata: «devi
+  svecchiare, deve essere un bel sito del 2040, non del 1996». Quindi il
+  sito NON imita le tavole: fondo quasi nero, Geist e Geist Mono, arancio
+  come luce (sfumature, aloni), testata a pillola di vetro, copertina a
+  «bento» con le ultime cinque, le foto in teche chiare con `multiply` (le
+  non scontornate, `.intera`, hanno dietro la stessa foto sfocata) e un
+  oscilloscopio nel lettore che disegna la forma d'onda VERA del file
+  (Web Audio). La struttura del 16/10 resta (catalogo prima, più macchine
+  nella prima schermata, ricerca, filtri, linea del tempo, ordine per
+  anno, lente, reel di fianco al racconto). Le scelte stanno nel commento
+  sopra `STILE` in `genera_archivio.py`. Lezione: la larghezza si prova
+  ANCHE coi font bloccati e a 360 px (col carattere di ripiego la testata
+  della prima versione usciva di 25 px). Una prova fatta solo nelle
   condizioni buone non dice niente di quelle cattive (regola 10).
 - Commenti: `commenti.py` elenca quelli mai visti; `commenti.rispondi()`
   pubblica una risposta. **ATTENZIONE (13/10/2026): non ha mai letto un
