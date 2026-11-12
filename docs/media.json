@@ -200,6 +200,10 @@
    "file": "tavole/simmonssds5/reel2.jpg",
    "firma": "5d21c43fa37ccf82-1"
   },
+  "sk1": {
+   "file": "tavole/sk1/reel2.jpg",
+   "firma": "fb67ef1ea0cc8ead-1"
+  },
   "solina": {
    "file": "tavole/solina/reel2.jpg",
    "firma": "01fbcfb70e9bedec-1"
@@ -1410,6 +1414,26 @@
    },
    "firma": "8eaa5ea6e0a5a00a-320-640-1280-1"
   },
+  "sk1": {
+   "1280": "foto/sk1-1280.jpg",
+   "320": "foto/sk1-320.jpg",
+   "640": "foto/sk1-640.jpg",
+   "dimensioni": {
+    "1280": [
+     960,
+     330
+    ],
+    "320": [
+     320,
+     110
+    ],
+    "640": [
+     640,
+     220
+    ]
+   },
+   "firma": "a83c0155b7a5c464-320-640-1280-1"
+  },
   "solina": {
    "1280": "foto/solina-1280.jpg",
    "320": "foto/solina-320.jpg",
@@ -2061,6 +2085,11 @@
    "file": "suoni/sh101.mp3",
    "firma": "6c161efb6a4a0c02-0-45-1",
    "secondi": 39.0
+  },
+  "sk1": {
+   "file": "suoni/sk1.mp3",
+   "firma": "d47bd1377c2f61f7-0-45-1",
+   "secondi": 37.4
   },
   "solina": {
    "file": "suoni/solina.mp3",
