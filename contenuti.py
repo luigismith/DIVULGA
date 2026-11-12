@@ -3908,6 +3908,22 @@ SCHEDE = [
             ("1972", "Ma Stevie Wonder incide «Superstition» su un modello C, più vecchio."),
         ],
         "reel_cta": "Mandalo a chi ha comprato un Clavinet D6",
+        # Registrazione della macchina vera (12/11/2026, per il sito): video
+        # Commons di Benjamin Dehli (CC BY 3.0 da YouTube, licenza confermata
+        # da YouTubeReviewBot il 05/12/2019). «Hohner Clavinet D6 recorded
+        # with a DI box, then re-amped four times with four different fuzz
+        # pedals»: il pulito non c'è, e «cosa» lo dice. Estratto 1,3-19,7 s
+        # (prima e dopo, silenzio). Note in do minore, niente Gb e Db: non
+        # è il riff di «Superstition» (mi bemolle minore), controllato sulle
+        # note e non a orecchio. La vecchia «Hohner Clavinet D6.ogg» di
+        # Commons resta fuori: «copyrighted free use» non è una licenza libera.
+        "reel_audio": {
+            "file": "assets/audio/clavinet/registrazione.mp3", "inizio": 0,
+            "autore": "Benjamin Dehli", "licenza": "CC BY 3.0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Clavinet_D6_with_4_fuzz_pedals.webm",
+            "cosa": "un Clavinet D6 vero, registrato in presa diretta e poi fatto passare in 4 fuzz diversi, uno dopo l'altro: qui il suono pulito non c'è",
+        },
         "verificata": True,
     },
     # ---------------------------------------------------------------- 48

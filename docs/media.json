@@ -1912,6 +1912,11 @@
    "firma": "cffe206e00442593-0-45-1",
    "secondi": 40.0
   },
+  "clavinet": {
+   "file": "suoni/clavinet.mp3",
+   "firma": "3c41384b46dee44e-0-45-1",
+   "secondi": 18.4
+  },
   "crybaby": {
    "file": "suoni/crybaby.mp3",
    "firma": "a1aa73dbbaf7e1ab-0-45-1",

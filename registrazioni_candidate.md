@@ -121,3 +121,36 @@ Foto: deepsonic (Flickr), CC BY 2.0, 4 foto in 2048x1366. Yamaha FS1R: la
 registrazione c'è (Raymangold22, CC BY-SA 4.0, 127 s) ma su Commons le
 uniche foto sono panorami di 2000x188 e 2000x580: inutilizzabili per una
 tavola. Roland JX-3P: foto 800x400 e registrazione PD da 39 s, troppo poco.
+
+## Ricerca del 12/11/2026 sulle 32 schede uscite senza suono (per il sito)
+
+Il proprietario: «almeno sul sito, puoi aggiungere le schede con i suoni
+veri delle macchine che ancora non mettevamo il suono vero?». Quattro
+ricercatori in parallelo su Freesound, Commons, Internet Archive ed
+Europeana. **Entrato: Clavinet D6** (Commons «Clavinet D6 with 4 fuzz
+pedals.webm», Benjamin Dehli, CC BY 3.0, distorto: lo dice «cosa»).
+Niente di libero e dimostrabile per le altre 31. Gli scarti che vale la
+pena ricordare, per non rifare il giro:
+- Jupiter-8: Freesound 760724 (Snapper4298, CC BY 4.0, 54 s) non dice se
+  è l'hardware o il plug-in Roland Cloud; l'autore fa quasi solo FL Studio.
+- CS-80: i campioni veri di mogigrumbles sono note singole e NC; Freesound
+  623759/427590 sono un Deckard's Dream (clone).
+- Rhythm Ace: pack 2328 di LincolnLog, preset veri da 17 s a 4 minuti, ma
+  licenza Sampling+ (esclusa). Se un giorno si riapre Sampling+, è qui.
+- TR-606: solo 606 modificate (oceansonmars, vdb4f) in loop da 2-8 s.
+- RE-201: Freesound 344203 (stk, CC BY 4.0) è il fruscio dell'unità senza
+  segnale; 479973 (flapjacky, CC0) è un'unità modificata, 19,7 s, ingresso
+  non detto.
+- Buchla Easel: Internet Archive «JuneJauntJamStepItUpDuet» (2007, CC BY-SA,
+  Easel originale) ma in gruppo, l'Easel non si sente da solo.
+- Ondes Martenot, Trautonium, Ondioline: tutto NC/ND o con voci sopra; le
+  piste YouTube (CNSMDP jQJcckNzYoo, Calgary G2qCfgED7IY, Schwimmer
+  DIp4JXk5NWs) non si leggono dal container.
+- Telharmonium: non esistono registrazioni (Weidenaar, «Magic Music from
+  the Telharmonium»).
+- DX7, Prophet-5, PPG, Synclavier, Emulator II, Four Voice, LM-1, DMX,
+  SP-1200, MPC60, SDS-V, Phase 90, H910, Farfisa Compact, Crumar Performer
+  e DS-2, Synthex, Novachord, Fonologia, Synket, Buchla 100: plug-in,
+  campioni singoli, cloni o niente.
+La strada che resta è chiedere a chi ha la macchina una registrazione
+CC0/CC BY (Freesound, musei come il Castello Sforzesco o la NYU).
