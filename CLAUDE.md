@@ -233,6 +233,21 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   nuova sì e una no fra quelle che arrivano col suono vero (il parlato
   la vuole: `usa_parlato` richiede `reel_audio`). Si decide di nuovo
   verso il 18/11 con almeno 10 parlati.
+  **HeyGen in prova (12/11/2026)**, il proprietario: «Usa heygen», poi
+  «voce e Dinamo animato», «rendi l'avatar iperrealistico», «v3 e Dinamo
+  B». Si lavora dal connettore MCP «HeyGen» (account del proprietario,
+  piano Creator, crediti che si ricaricano solo l'11/11/2027: ~1 credito
+  per secondo di video animato, 4 per due immagini). Scelte del
+  proprietario: voce disegnata `ELETTROFONI Dinamo v3` (voice_id
+  5b3a82eb0fc5420a8f1ce8d9cf786c26, italiana, calda, «da amico») e Dinamo
+  iperrealistico B (`assets/dinamo/dinamo_reale_b.png`, latta smaltata
+  anni '60). Animazione: `reference_to_video` con l'immagine e l'audio
+  della voce (create_video_from_image rifiuta i volti non umani). Nel
+  workspace ci sono voci «CAR …» di un altro progetto: non toccarle. NON
+  ancora in produzione: il runner non ha accesso a HeyGen, i crediti
+  bastano per ~10 reel interi, e un video fotorealistico generato può
+  ricevere da Meta l'etichetta «Info sull'AI» (regola 4: non si
+  nascondono i segnali, decide il proprietario).
 - **Il reel serale ha due inneschi** (21/10/2026): la Routine delle
   19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
   e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno
