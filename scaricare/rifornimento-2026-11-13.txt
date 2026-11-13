@@ -1,0 +1,10 @@
+assets/audio/ds1/originale.ogg https://upload.wikimedia.org/wikipedia/commons/b/b5/Boss_DS-1_extrait_audio.ogg
+assets/audio/microfreak/originale.ogg https://upload.wikimedia.org/wikipedia/commons/b/b4/Microfreak_Filter_Sweeps.ogg
+assets/audio/volcafm/originale.flac https://upload.wikimedia.org/wikipedia/commons/3/3a/Korg_Volca_fm_2_-_Demo_using_Yamaha_DX7_presets.flac
+assets/foto/ds1/principale.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Boss-DS-1.jpg/960px-Boss-DS-1.jpg
+assets/foto/ds1/acceso.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Boss_DS-1_On.jpg/960px-Boss_DS-1_On.jpg
+assets/foto/ds1/scheda.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Circuit_of_a_Boss_DS-1.jpeg/960px-Circuit_of_a_Boss_DS-1.jpeg
+assets/foto/microfreak/principale.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/MicroFreak.jpg/1280px-MicroFreak.jpg
+assets/foto/volcafm/principale.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28i%29.jpg/1280px-Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28i%29.jpg
+assets/foto/volcafm/prima.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Korg_Volca_FM_8994.jpg/1280px-Korg_Volca_FM_8994.jpg
+assets/foto/volcafm/manopole.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28ii%29.jpg/1280px-Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28ii%29.jpg
