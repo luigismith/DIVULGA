@@ -16,6 +16,8 @@ Dopo, `python contenuti.py` deve passare: lo script lo controlla da solo
 ricaricando il modulo e confrontando le schede campo per campo.
 """
 import importlib
+import importlib.util
+import os
 import json
 import re
 import sys
@@ -68,9 +70,19 @@ def main():
     if [_slug(b) for b in blocchi] != [s["slug"] for s in contenuti.SCHEDE]:
         raise SystemExit("i blocchi di testo non corrispondono a SCHEDE: non tocco niente")
 
-    fissi = [b for b in blocchi if _slug(b) in usciti]
-    if [_slug(b) for b in blocchi[:len(fissi)]] != [_slug(b) for b in fissi]:
-        raise SystemExit("le schede uscite non stanno tutte in testa: non tocco niente")
+    # LEZIONE (13/11/2026): l'Opera 6 (n. 82) è stata fermata dal presidio il
+    # 06/11, e la SK-1 (n. 83) è uscita dopo di lei. Lo script pretendeva che
+    # le uscite stessero tutte in testa e si rifiutava: due rifornimenti di
+    # fila senza riordino. Spostarla in coda non va bene: prende un numero
+    # nuovo, lascia un buco permanente all'82 e un secondo buco al suo nuovo
+    # numero finché resta ferma, e rinumera schede con le tavole già fatte.
+    # Quindi è fisso tutto quello che sta prima dell'ULTIMA scheda uscita,
+    # comprese le schede ferme in mezzo, che tengono il loro numero.
+    ultimo = max((i for i, b in enumerate(blocchi) if _slug(b) in usciti), default=-1)
+    fissi = blocchi[:ultimo + 1]
+    fermi = [_slug(b) for b in fissi if _slug(b) not in usciti]
+    if fermi:
+        print(f"ferme fra le uscite, restano dove sono col loro numero: {fermi}")
     in_coda = blocchi[len(fissi):]
     # stabile: dentro i due gruppi resta l'ordine di prima
     nuovo = ([b for b in in_coda if per_slug[_slug(b)].get("reel_audio")]
@@ -89,6 +101,11 @@ def main():
     FILE.write_text(testa + "".join(fissi) + "".join(nuovo) + coda, encoding="utf-8")
     # Verifica: stesse schede, stessi campi, cambiano solo numero e kick 1.
     vecchie = {s["slug"]: s for s in contenuti.SCHEDE}
+    # Il .pyc vecchio può sopravvivere alla riscrittura (stessa dimensione,
+    # stesso secondo): il 13/11 la verifica ha riletto la versione di prima.
+    pyc = importlib.util.cache_from_source(contenuti.__file__)
+    if os.path.exists(pyc):
+        os.remove(pyc)
     importlib.reload(contenuti)
     for s in contenuti.SCHEDE:
         v = dict(vecchie.pop(s["slug"]))

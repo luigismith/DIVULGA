@@ -12049,6 +12049,1385 @@ SCHEDE = [
         "verificata": True,
     },
     # ---------------------------------------------------------------- 87
+    # Boss DS-1 Distortion. Scheda scritta il 13/11/2026 (rifornimento automatico,
+    # bozza di un ricercatore riletta dalla sessione). Un
+    # effetto: va nella serie «GLI EFFETTI» con Cry Baby e Big Muff.
+    #
+    # REGISTRAZIONE: https://commons.wikimedia.org/wiki/File:Boss_DS-1_extrait_audio.ogg
+    #   Pagina riletta dall'API il 13/11/2026. Descrizione: «Short audio clip
+    #   of the Boss DS-1 distortion pedal. Signal chain: Ibanez S series
+    #   Prestige with Dimarzio's pickups, a Line 6 Pocket Pod and a Behringer
+    #   Ultra DI». Data 01/03/2012. Autori: Taxiakataxi (video originale su
+    #   YouTube, «Boss DS-1 Distortion (test).webm», licenza YouTube CC BY) e
+    #   Skimel (taglio audio e conversione in Ogg; è lo stesso Skimel della
+    #   registrazione del Cry Baby e della foto del Big Muff). CC BY 3.0,
+    #   23,97 s, 267.853 byte. Categoria «BOSS DS-1 Distortion».
+    #   ATTENZIONE: il Pocket Pod è un simulatore di amplificatore, quindi
+    #   quello che si sente è DS-1 + amplificatore simulato, non DS-1 in un
+    #   amplificatore vero. «cosa» lo dice. Nella descrizione del video
+    #   l'autore scrive di aver provato le regolazioni del manuale («british
+    #   punk», «crunch»): possono esserci più suoni di fila.
+    #   !!! NON ASCOLTATA E NON MISURATA: dal container upload.wikimedia.org
+    #   ha risposto 429 sia sull'originale sia sul transcodificato .mp3 (tre
+    #   tentativi distanziati). Va scaricata dal runner (scarica-foto.yml) e
+    #   misurata (LUFS, silenzi, picco) e ASCOLTATA prima di mettere
+    #   verificata True: chi integra controlli anche che non suoni una
+    #   melodia riconoscibile.
+    #
+    # FONTI PER FATTO (tutte aperte il 13/11/2026)
+    # - 1978, primo distorsore Boss, dopo i primi compatti del 1977: Boss,
+    #   «All About the DS-1» (Jim Bybee: «The following year, the orange DS-1
+    #   Distortion joined the pioneering yellow, green, and red "traffic
+    #   light" pedals»); Wikipedia «Boss Corporation» («Introduced in 1978,
+    #   the DS-1 was Boss's first distortion pedal»); Guitar World «How Boss
+    #   revolutionized effects» (cronologia: 1977 OD-1, PH-1, SP-1; 1978
+    #   DS-1); Total Guitar/MusicRadar 2015 (cronologia).
+    # - colori diversi per tipo d'effetto (giallo, verde, rosso; il DS-1
+    #   arancio): Boss «All About»; Guitar World «How Boss» («the
+    #   colour-coding that identified each effect class»). Che l'OD-1 sia
+    #   giallo: Boss («yellow»... in fila con OD-1, PH-1, SP-1) e foto note;
+    #   in scheda detto solo «giallo l'OD-1» perché Boss elenca giallo, verde,
+    #   rosso nell'ordine OD-1, PH-1, SP-1. Se pare debole, togliere «giallo
+    #   l'OD-1».
+    # - ancora in catalogo: Boss («has remained in the lineup ever since»);
+    #   Wikipedia «Boss DS-1» («1978—present»); Guitar World «How Boss»
+    #   («still available as the current standard DS-1»).
+    # - più venduto: Boss «più di 1,5 milioni», «best-selling compact ever»
+    #   (dato di Boss, ATTRIBUITO in scheda); Wikipedia «Boss Corporation»
+    #   («The DS-1 is Boss's bestselling pedal»); Total Guitar/MusicRadar
+    #   2018 («the best-selling distortion pedal»). Il numero è UNA fonte,
+    #   per questo in scheda c'è «Boss dice».
+    # - vite d'argento del coperchio sostituita da una di plastica nel 1981:
+    #   Total Guitar/MusicRadar 2015 (cronologia: «1981 The silver screw [...]
+    #   is replaced by a plastic version»); Boss «All About» (il DS-1-4A ha
+    #   «a vintage silver screw for the battery compartment»). Nella foto
+    #   principale la vite è nera, di plastica: per questo «dopo il 1981».
+    # - progettista: non trovato. Boss scrive solo «BOSS engineers», e una
+    #   ricerca dedicata non ha dato nomi. Scritto così.
+    # - Boss nata nel 1973 a Osaka come MEG Electronics; Roland fondata da
+    #   Ikutaro Kakehashi l'anno prima; ingegneri in comune all'inizio:
+    #   Guitar World «How Boss» (cronologia e testo: «sharing engineers»);
+    #   Wikipedia «Boss Corporation» (fondata il 13/03/1973). Osaka: solo la
+    #   cronologia di Guitar World (Wikipedia dà la sede attuale,
+    #   Hamamatsu): in scheda NON c'è la città.
+    # - spostamento in Taiwan: Total Guitar/MusicRadar 2015 («1988 Production
+    #   of Boss compact pedals moves from Japan to Taiwan»); Wikipedia «Boss
+    #   Corporation» («circa 1990»). Non concordano: scritto in scheda.
+    # - circuito, transistor che alza + amplificatore operazionale con diodi
+    #   che tagliano («hard clipping»): Boss («combined [...] transistor and
+    #   op-amp—into a single hard-clipping design»); Wikipedia «Boss DS-1»
+    #   (buffer, stadio a transistor, stadio a op-amp con diodi 1N4148);
+    #   Wikipedia «Boss Corporation» («two hard-clipping diodes»).
+    # - Tone parente di quello del Big Muff, a metà scava intorno ai 500 Hz:
+    #   Total Guitar/MusicRadar 2018 («quite similar to that found on the
+    #   Electro-Harmonix Big Muff», «cuts at around 500Hz»); Wikipedia «Boss
+    #   DS-1» («Big Muff»-style, notch near 500 Hz); Boss («slight dip in the
+    #   lower midrange»).
+    # - primo chip Toshiba TA7136AP, cambiato nel 1994 perché fuori
+    #   produzione, dopo volume più basso e suono «fizzy»: Guitar World «DS-1
+    #   vs DS-2» (Alex Lynham: TA7136AP, «unity volume pitfalls of the
+    #   post-'94 unit»); Total Guitar/MusicRadar 2018 («revised in 1994 as
+    #   the Toshiba IC [...] was nearing the end of its life», ROHM, poi
+    #   Mitsubishi «'fizz'»); Wikipedia «Boss DS-1». Almeno 3 chip (Toshiba,
+    #   Rohm, Mitsubishi): Wikipedia e Total Guitar.
+    # - Mitsubishi M5223AL nel DS-1 di Taiwan del 2004: si LEGGE sul chip
+    #   nella foto extra «Circuit of a Boss DS-1.jpeg» (stesso pedale della
+    #   foto «Boss DS-1 On.jpg», dalla targhetta di numero di serie «March
+    #   2004», descrizione Commons di Roadside Guitars); Wikipedia «Boss
+    #   DS-1» (M5223AL dal 2000). Wikipedia «Boss Corporation» dice invece
+    #   NJM3404AL dal 2007: non lo scrivo.
+    # - Cobain e il DS-1 su «Bleach»: Guitar World, «The definitive Kurt
+    #   Cobain gear guide» (Chris Gill; Endino: «the Randall was in the shop
+    #   so they borrowed my amp, which was a Sixties Fender Twin [...] He was
+    #   using a little orange Boss DS-1»); Total Guitar/MusicRadar 2018
+    #   («Cobain was known for prolifically using the pedal around the period
+    #   of Bleach»); MusicRadar 2023 (Rob Laing, il Twin di Endino usato su
+    #   «Bleach»); Wikipedia «Boss DS-1» (DS-1 degli anni '80). Boss «All
+    #   About» riporta la stessa citazione di Guitar World: non conta come
+    #   fonte indipendente.
+    # - Univox che sembrano Mosrite: Guitar World (Endino); MusicRadar 2023
+    #   (Univox High Flyer «Endino hadn't seen since Cobain had one for
+    #   Bleach»).
+    # - il Twin è ancora di Endino e lo chiama «Bleach Twin»: Boss (che cita
+    #   Endino: «it's called 'The Bleach Twin'»); MusicRadar 2023 («It's still
+    #   with Endino, now at Soundhouse Studio»). Il soprannome «Bleach Twin»
+    #   sta solo nella citazione riportata da Boss: in scheda c'è solo che
+    #   il Twin ce l'ha ancora lui (Boss + MusicRadar 2023).
+    # - l'annata del Twin non torna: Endino a Guitar World dice «Sixties»
+    #   (Boss lo riporta come «'67»), MusicRadar 2023 riferisce che lo studio
+    #   di Endino ha corretto in Silverface (quindi non il Blackface del '67).
+    #   Scritto come dubbio.
+    # - «About a Girl» (1989) per «da ascoltare»: MusicRadar 2023 (Endino
+    #   regola il Twin per far suonare «About A Girl with a DS-1 for the
+    #   overdriven parts»; Cobain usa il Twin Silverface su quel pezzo);
+    #   Guitar World e Total Guitar per il DS-1 su tutto «Bleach».
+    # - asta del 2022, 75.000 dollari, «NIRWAHNA» scritto sopra, usato alla
+    #   Peel Session del 03/09/1991: Guitar World (Matt Parker, 16/11/2022);
+    #   MusicRadar (Rob Laing, 14/11/2022, tolta dall'elenco fonti per stare
+    #   nei 2200 caratteri della didascalia); Gearnews (indipendente da Future,
+    #   «sold for around $75,000», «NIRWAHNA»). Julien's Auctions, New York.
+    #   Guitar World e MusicRadar sono dello stesso editore (Future): la
+    #   seconda fonte indipendente è Gearnews.
+    # - Satriani usa il DS-1 davanti all'amplificatore, in studio e dal vivo:
+    #   Guitar Player (Darrin Fox, Satriani: «I also used [...] a Boss DS-1»
+    #   per «Surfing with the Alien»); Boss «All About» (lo porta in tour dopo
+    #   «Surfing with the Alien»); MusicRadar (Amit Sharma, «Joe Satriani's
+    #   career in gear»: DS-1 e Marshall 6100, tolta dall'elenco fonti per la
+    #   lunghezza della didascalia; url https://www.musicradar.com/news/joe-satrianis-career-in-gear-dont-worry-about-peavey-vs-marshall-worry-about-what-sets-you-free);
+    #   Total Guitar/MusicRadar 2015.
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
+    # - Satriani che non ha i soldi per portarsi in tour i Marshall d'epoca e
+    #   «mette il suono in una scatoletta»: solo Boss (che cita un video di
+    #   Music Gear Network che non ho aperto). Bello, fuori.
+    # - Cobain che porta il DS-1 a Sound City per «Nevermind» e lo considera
+    #   il cuore del suo suono: Guitar World; Ground Guitar dice che le
+    #   riviste lo citano senza fonte. Fuori.
+    # - Steve Vai, DS-1 pedale principale dal 1999 (il suo tecnico Thomas
+    #   Nordegg): solo Boss. Vai in generale: Boss + una riga di Total Guitar
+    #   2015. Non messo fra gli artisti.
+    # - Mike Stern «su tutti i miei dischi», George Lynch, Mark Speer
+    #   (Khruangbin), Frusciante su «Stadium Arcadium»: solo Boss (che cita
+    #   interviste sue o di altri).
+    # - Uffe Cederlund (Entombed), un DS-1 al centro su «Left Hand Path»:
+    #   solo Total Guitar.
+    # - un altro DS-1 di Cobain venduto a circa 9.000 dollari nel 2020:
+    #   visto solo nei risultati di ricerca (Blabbermouth, Guitar World), non
+    #   aperto.
+    # - DS-1 d'oro del 1998 per i 6 milioni di pedali Boss: Boss; Wikipedia
+    #   lo dice con «citation needed». Fuori.
+    # - DS-1-4A nero per i 40 anni: Boss dice 2018, Wikipedia 2017. Fuori.
+    # - le schede «CITIZEN 1HB» stampate sulla scheda del 2004 (chi l'ha
+    #   costruita?): nessuna fonte. Fuori, e la didascalia non ne parla.
+    # - guadagno di Dist (25 dB in Total Guitar, 35 dB per lo stadio a
+    #   transistor in Wikipedia): numeri diversi per stadi diversi, fuori.
+    #
+    # HANDLE INSTAGRAM
+    # - @bossinfoglobal: link nel piede di www.boss.info/global/ e di
+    #   articles.boss.info (letti il 13/11/2026). Verificato. Va in
+    #   menzioni_extra (il DS-1 è ancora a listino).
+    # - @joesatriani: link sulla home di www.satriani.com (letta il
+    #   13/11/2026). Verificato. Il proprietario lo segue PRIMA (regola 3).
+    # - Nirvana: nirvana.com risponde 403 dal container, non verificato:
+    #   niente tag.
+    #
+    # FOTO (thumbnail scaricati dal container e guardati il 13/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Boss-DS-1.jpg
+    #   Matt Eason, 31/05/2006, CC BY 2.5, 1321x1191. Thumbnail 960:
+    #   https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Boss-DS-1.jpg/960px-Boss-DS-1.jpg
+    #   (1280: .../1280px-Boss-DS-1.jpg). Un DS-1 usato visto di tre quarti,
+    #   scontornato su bianco: "ritaglio": True. Si leggono Distortion DS-1,
+    #   BOSS sulla gomma nera, OUTPUT, INPUT, TONE, DIST e mezzo LEVEL; vernice
+    #   scrostata sugli spigoli; in basso a sinistra la vite del coperchio,
+    #   nera, di plastica; a destra la presa jack.
+    # extra 1: https://commons.wikimedia.org/wiki/File:Boss_DS-1_On.jpg
+    #   Roadside Guitars, 21/01/2008, CC BY-SA 2.0, 2072x2617. Thumbnail 960:
+    #   https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Boss_DS-1_On.jpg/960px-Boss_DS-1_On.jpg
+    #   Descrizione: «Boss DS-1 made in Taiwan in March 2004, turned on». Dall'alto
+    #   su un tavolo di legno, verticale: in alto le 3 manopole con TONE, LEVEL,
+    #   DIST e la lucina CHECK accesa (rossa), poi OUTPUT/INPUT, Distortion
+    #   DS-1 e la gomma BOSS; cavo a destra. Per la banda: "posizione"
+    #   «center 20%» per tenere manopole e lucina.
+    # extra 2: https://commons.wikimedia.org/wiki/File:Circuit_of_a_Boss_DS-1.jpeg
+    #   Roadside Guitars, 21/01/2008, CC BY-SA 2.0, 3264x2448. Thumbnail 960:
+    #   https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Circuit_of_a_Boss_DS-1.jpeg/960px-Circuit_of_a_Boss_DS-1.jpeg
+    #   La scheda del DS-1 di Taiwan, fuori dalla scatola, orizzontale:
+    #   resistenze in fila a sinistra, «DS-1» stampato in verticale, al centro
+    #   a destra il chip nero con M5223AL leggibile, fili colorati a destra.
+    #   L'arancio della scatola non si vede: è la foto dove la macchina non
+    #   si riconosce dalla forma, ma la scritta DS-1 e il chip sì, e nessun
+    #   altro marchio compare. "posizione" «60% 60%» per tenere il chip.
+    #   "nel_reel": False (nel reel senza didascalia sembra una scheda
+    #   qualsiasi).
+    # Scartate:
+    # - «Boss DS-1 + DS-1-4A.jpg» (Kuriosatempel, CC BY-SA 4.0): bella, ma la
+    #   descrizione dice «Photo: Johan Rosén. Courtesy of bosspedals_sweden on
+    #   instagram», quindi chi carica non sembra l'autore e non c'è un
+    #   permesso registrato. Licenza dubbia, fuori.
+    # - «Keeley DS-1 Ultra Mod.jpg» (wetwebwork, CC BY 2.0): è un DS-1
+    #   modificato da Keeley, con un deviatore in più. Fuori.
+    # - «Inside of a Boss DS-1.jpg», «Boss DS-1 Back Plate.jpg», «DS-1
+    #   Circuit (back).jpg» (Roadside Guitars): buone di riserva; la targhetta
+    #   sotto dice MADE IN TAIWAN ma in banda non si legge.
+    # - «BOSS guitar pedals.jpg», «Noise makers.jpg», «Iracruzeffect.JPG»:
+    #   altri pedali in vista, il DS-1 non è la cosa più riconoscibile.
+    {
+        "slug": "ds1",
+        "numero": 87,
+        "serie": "GLI EFFETTI",
+        "strumento": "Boss DS-1 Distortion",
+        "anno": "1978",
+        "luogo": "Giappone",
+        "costruttore": "Boss",
+        "specifiche": [
+            ("USCITA", "1978"),
+            ("MANOPOLE", "3"),
+            ("DIODI", "2"),
+            ("PRIMO CHIP", "TA7136AP"),
+        ],
+        "gancio": "Quello di Kurt Cobain, con NIRWAHNA scritto sopra a pennarello, nel 2022 va all'asta per 75.000 dollari",
+        "sottotitolo": "Il primo distorsore di Boss, una scatola arancio con 3 manopole, a listino dal 1978 senza interruzioni.",
+        "la_macchina": (
+            "Le manopole sono 3, Tone, Level e Dist, poi una lucina che dice CHECK e sotto "
+            "una gomma nera col marchio, che è l'interruttore da pestare. Esce "
+            "nel 1978 ed è ancora in catalogo. Boss dice di averne venduti più "
+            "di 1,5 milioni, più di qualunque altro suo pedale compatto. Quello "
+            "della foto ha la vite del coperchio della pila di plastica nera, "
+            "quindi è nato dopo il 1981, quando sparisce quella d'argento. A me "
+            "il DS-1 è sempre sembrato il pedale che si compra per primo e si "
+            "rivende per ultimo. Non suona come un amplificatore spinto e non "
+            "ci prova nemmeno."
+        ),
+        "inventore_nome": "Boss, la ditta dei pedali di Roland",
+        "inventore": (
+            "Chi l'abbia progettato non sono riuscito a scoprirlo, Boss parla "
+            "solo dei suoi ingegneri. La ditta nasce nel 1973 come MEG "
+            "Electronics, accanto alla Roland che Ikutaro Kakehashi aveva "
+            "fondato l'anno prima, e all'inizio le due si dividono perfino gli "
+            "ingegneri. Nel 1977 escono i primi pedali compatti, tutti della "
+            "stessa forma e ognuno col colore del suo effetto, giallo l'OD-1. "
+            "L'anno dopo arriva il DS-1, arancio. Poi la produzione passa dal "
+            "Giappone a Taiwan, e qui le fonti non concordano. Total Guitar "
+            "scrive 1988, Wikipedia verso il 1990."
+        ),
+        "come_funziona": (
+            "Un transistor alza il segnale della chitarra, un amplificatore "
+            "integrato lo alza ancora e 2 diodi tagliano le punte dell'onda, "
+            "che esce quasi quadrata. Dist decide quanto forte si arriva al "
+            "taglio. Tone è parente di quello del Big Muff e a metà corsa scava "
+            "i medi intorno ai 500 hertz. Il chip è cambiato più volte. Il primo "
+            "è un Toshiba TA7136AP, che nel 1994 va fuori produzione, e i DS-1 "
+            "venuti dopo escono più piano e più frizzanti sugli acuti. Nella "
+            "foto della scheda, un DS-1 fatto a Taiwan nel 2004, il chip è un "
+            "Mitsubishi M5223AL. Provate Tone tutto a sinistra, poi alzatelo "
+            "piano finché la chitarra non punge."
+        ),
+        "richiami": [
+            ("FIG. 1", "Tone, Level, Dist"),
+            ("FIG. 2", "2 diodi che tagliano l'onda"),
+            ("FIG. 3", "Medi scavati a 500 Hz"),
+        ],
+        "chi_lusata": [
+            {"artista": "Kurt Cobain (Nirvana)",
+             "nota": "il suo suono su «Bleach» (1989), nel Fender Twin di Jack Endino",
+             "ig": None},
+            {"artista": "Joe Satriani",
+             "nota": "un DS-1 davanti all'amplificatore, in studio e in tour",
+             "ig": "joesatriani"},
+        ],
+        "menzioni_extra": [
+            {"ig": "bossinfoglobal",
+             "riga": "Il DS-1 è ancora a listino da @bossinfoglobal."},
+        ],
+        "da_ascoltare": {"brano": "About a Girl", "artista": "Nirvana", "anno": "1989",
+                         "cosa": "Le parti sporche. Per rifarle Jack Endino attacca un DS-1 allo stesso Fender Twin che Cobain usa per registrarla."},
+        "aneddoto": (
+            "Quando i Nirvana registrano «Bleach» con Jack Endino, a Seattle, "
+            "l'amplificatore di Kurt Cobain, un Randall, è dal riparatore. "
+            "Endino gli presta il suo Fender Twin. Davanti Cobain mette un DS-1 "
+            "arancio, e suona chitarre Univox che sembrano Mosrite. "
+            "Sull'annata del Twin le versioni non tornano. Endino a Guitar "
+            "World dice anni '60, poi il suo studio precisa che è un "
+            "Silverface. Quel Twin, comunque, ce l'ha ancora lui."
+        ),
+        "avvertenza": "Due DS-1 possono suonare diversi. Il chip dentro è cambiato almeno 3 volte, quindi prima di comprarne uno usato chiedete l'anno.",
+        "foto": {
+            "file": "assets/foto/ds1/principale.jpg",
+            "ritaglio": True,
+            "autore": "Matt Eason",
+            "licenza": "CC BY 2.5",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un DS-1 usato, con la vernice scrostata sugli spigoli",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/ds1/acceso.jpg",
+             "autore": "Roadside Guitars",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 20%",
+             "didascalia": "Un DS-1 fatto a Taiwan nel 2004. Le prese sono al contrario, l'uscita a sinistra"},
+            {"file": "assets/foto/ds1/scheda.jpg",
+             "autore": "Roadside Guitars",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "60% 60%",
+             "nel_reel": False,
+             "didascalia": "La scheda dello stesso pedale. Il chip nero è il Mitsubishi M5223AL"},
+        ],
+        "fonti": [
+            {"titolo": "«All About the DS-1», Jim Bybee — BOSS",
+             "url": "https://articles.boss.info/all-about-the-ds-1-the-benchmark-boss-distortion/", "data": "2026-11-13"},
+            {"titolo": "«Boss DS-1» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Boss_DS-1", "data": "2026-11-13"},
+            {"titolo": "«Boss Corporation» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Boss_Corporation", "data": "2026-11-13"},
+            {"titolo": "«How BOSS revolutionized effects» — Guitar World",
+             "url": "https://www.guitarworld.com/feature/how-boss-revolutionized-effects", "data": "2026-11-13"},
+            {"titolo": "«In praise of: Boss DS-1» — Total Guitar, 2015",
+             "url": "https://www.musicradar.com/news/guitars/in-praise-of-boss-ds-1-distortion-620822", "data": "2026-11-13"},
+            {"titolo": "«The FX files: Boss DS-1» — Total Guitar, 2018",
+             "url": "https://www.musicradar.com/how-to/the-fx-files-boss-ds-1", "data": "2026-11-13"},
+            {"titolo": "«Boss DS-1 vs Boss DS-2», Alex Lynham — Guitar World",
+             "url": "https://www.guitarworld.com/features/boss-ds-1-vs-boss-ds-2", "data": "2026-11-13"},
+            {"titolo": "Kurt Cobain gear guide, Chris Gill — Guitar World",
+             "url": "https://www.guitarworld.com/features/the-definitive-kurt-cobain-gear-guide", "data": "2026-11-13"},
+            {"titolo": "Il Twin di «Bleach», Rob Laing — MusicRadar, 2023",
+             "url": "https://www.musicradar.com/news/this-is-one-of-the-best-amps-ive-ever-played-new-video-investigates-the-fender-twin-reverb-kurt-cobain-used-on-nirvanas-bleach", "data": "2026-11-13"},
+            {"titolo": "Il DS-1 di Cobain all'asta, Matt Parker — Guitar World, 2022",
+             "url": "https://www.guitarworld.com/news/kurt-cobain-boss-ds-1-auction", "data": "2026-11-13"},
+            {"titolo": "Il DS-1 di Cobain all'asta — Gearnews, 2022",
+             "url": "https://www.gearnews.com/?p=140458", "data": "2026-11-13"},
+            {"titolo": "Satriani e «Surfing with the Alien», Darrin Fox — Guitar Player",
+             "url": "https://www.guitarplayer.com/players/joe-satriani-reflects-on-20-years-of-surfing-with-the-alien", "data": "2026-11-13"},
+        ],
+        "hashtags": ["#bossds1", "#boss", "#effettichitarra", "#nirvana", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 087", "Il Boss DS-1 di Kurt Cobain va all'asta per 75.000 dollari"),
+            ("BOSS · 1978", "Il Boss DS-1 è il primo distorsore di Boss. Arancio, 3 manopole."),
+            ("2 DIODI", "Nel DS-1 ci sono 2 diodi che tagliano le punte dell'onda della chitarra."),
+            ("BLEACH · 1989", "Per «Bleach» Kurt Cobain suona il DS-1 nel Fender Twin di Jack Endino."),
+            ("IL TWIN", "Il Fender Twin di «Bleach» oggi ce l'ha ancora Jack Endino."),
+        ],
+        "reel_cta": "Mandalo a chi ha ancora «Bleach» in cassetta",
+        "reel_audio": {
+            "file": "assets/audio/ds1/registrazione.mp3", "inizio": 0,
+            "autore": "Taxiakataxi (video), Skimel (taglio audio)", "licenza": "CC BY 3.0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Boss_DS-1_extrait_audio.ogg",
+            "cosa": "un DS-1 vero su una Ibanez S Prestige, registrato attraverso un Line 6 Pocket Pod (un simulatore di amplificatore) e una DI Behringer",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 88
+    # Arturia MicroFreak. Scheda scritta il 13/11/2026 (rifornimento
+    # automatico, bozza di un ricercatore riletta dalla sessione).
+    # Posteriore al 1988 (quota 1 su 4).
+    # TAG: niente @arturia_official. L'aneddoto racconta il comunicato che
+    #   Arturia ha dovuto correggere dopo la risposta di Gillet: anche se non
+    #   è una battuta, taggare chi è dalla parte sbagliata della storia è la
+    #   cosa che la regola 3 vieta.
+    # Fonti tutte aperte il 13/11/2026.
+    #
+    # REGISTRAZIONE: https://commons.wikimedia.org/wiki/File:Microfreak_Filter_Sweeps.ogg
+    #   Schminnte, «Own work», 13/11/2022, CC BY-SA 4.0, Ogg Vorbis 161 kbps,
+    #   19,88 s. Didascalia: «Filter sweeps on the Arturia MicroFreak's with
+    #   varying amounts of resonance, including self-oscillation». Usata nelle
+    #   voci Wikipedia EN, ES, FR del MicroFreak. Che sia la macchina vera: lo
+    #   stesso utente ha caricato registrazioni sue di altri synth piccoli
+    #   (Neutron_paraphonic_behaviour.ogg, 18/11/2022; Monotron_Duo e
+    #   Monotron_Delay, 2023), sempre «own work», ma NESSUNA foto del suo
+    #   MicroFreak: la prova è più debole che per il Jupiter-4. Nota tenuta,
+    #   filtro che si apre e si chiude: nessuna melodia di nessuno.
+    #   MISURATA (ffmpeg, trascodifica mp3 di Commons): suono da 0,35 a 17,70
+    #   s, poi 2,2 s di silenzio sotto -45 dB; -13,9 LUFS integrati, LRA 7,8,
+    #   picco -2,1 dB. Spettrogramma: 5 aperture del filtro, la 3a-4a con la
+    #   risonanza che fischia (sopra 5 kHz). USABILI 17,3 s: per suono.mp4
+    #   (15-30 s) bastano, per un reel2 da 20-25 s NO senza ripetere; da
+    #   tagliare a 17,7 s, non lasciare la coda muta.
+    #   ALTERNATIVE su Freesound (pagine lette; i file NON ascoltati: dal
+    #   container freesound.org risponde 403):
+    #   - «GatesOfWasteland-Drone.wav», Dogma_Reloaded, CC0, 2:04, 16/02/2021,
+    #     https://freesound.org/s/558835/ . «Another drone sound i created on
+    #     the microfreak. I used the SuperWave Oscillator and Modulated the
+    #     Filter Cutoff», registrato in Logic via mixer Yamaha e UR22. Più
+    #     lunga, un drone scuro: è la macchina vera ma non dice «tastiera».
+    #   - «Synth sequence», P27music, CC0, 41,7 s, 28/05/2020, mp3 320k,
+    #     https://freesound.org/s/520138/ . «Synthesizer sequencer, which I
+    #     made with Arturia Microfreak». La più musicale sulla carta; va
+    #     ascoltata (che non sia una melodia nota, che non ci siano effetti).
+    #   - scartate: «Microfreak seq arp 8» (9,6 s, utente cancellato), la
+    #     jam di AmaZeuSamples (c'è anche Animoog), le decine di effetti di
+    #     FunnyVoices («edited in Audacity», da videogioco), jocaMarino
+    #     (fatte in Ableton «in combination with» il MicroFreak), SwarmDrone
+    #     (riverbero Zoom MS-70CDR).
+    #
+    # FONTI PER FATTO (aperte il 13/11/2026)
+    # - annunciato al NAMM, gennaio 2019 (primo giorno, 24/01): Synthtopia
+    #   24/01/2019; Gearnews 25/01/2019; CDM 25/01/2019; Sonicstate
+    #   26/01/2019 («announced on the first day of NAMM 2019»); Arturia «About
+    #   us» («Introduced at NAMM 2019»).
+    # - 299 euro al lancio (349 dollari): Gearnews (299 €); CDM («$349 (299
+    #   EUR)»); Synthtopia e SOS (349 $). Prezzo di lancio, non di oggi.
+    # - 25 tasti piatti su circuito stampato, senza parti mobili, capacitivi:
+    #   Synthtopia («25-key capacitive keybed»); Arturia overview («It's a
+    #   PCB. Super-flat, with no moving parts»); SOS giugno 2019. Si vede
+    #   nella foto: tasti bianchi con un motivo stampato.
+    # - aftertouch polifonico (la pressione nota per nota): Synthtopia,
+    #   Gearnews, CDM, SOS, Arturia.
+    # - tastiere piatte alla Buchla: SOS («Buchla have long favoured them»);
+    #   CDM («flat-panel metal touch keyboard (Buchla style)»).
+    # - SOS: il recensore ci mette molto a smettere di suonare note per
+    #   sbaglio («took me ages to stop firing off notes accidentally»), poi
+    #   lo trova più controllabile della sua tastiera madre. Citazione di
+    #   una recensione, scritta come tale.
+    # - filtro analogico state-variable 12 dB/ottava, passa-basso, -banda,
+    #   -alto: Synthtopia, SOS, Arturia overview. Ispirato al SEM di
+    #   Oberheim: Arturia About us («inspired by the Oberheim SEM»); Arturia
+    #   overview («Inspired by the trailblazing 12-dB SEM filter»); CDM
+    #   («the Oberheim SEM»); SOS e Gearnews («SEM-style»).
+    # - parafonico a 4 voci (con Paraphonic acceso 4 VCA digitali, un solo
+    #   filtro): SOS; Synthtopia («up to 4 voices», un filtro); Gearnews;
+    #   Wikipedia. Il tasto «Paraphonic» si legge nella foto.
+    # - matrice 5 sorgenti x 7 destinazioni, 3 assegnabili: Synthtopia, SOS
+    #   (pag. 2), Arturia overview. Nella foto (crop 3840 px) si leggono a
+    #   sinistra CycEnv, Env, LFO, Press, Key/Arp e in alto Pitch, Wave,
+    #   Timbre, Cutoff, Assign 1-3.
+    # - le 4 manopole arancio dell'oscillatore digitale (Type, Wave, Timbre,
+    #   Shape): si leggono nella foto; Arturia overview.
+    # - sequencer 64 passi, 2 sequenze per suono: Synthtopia, SOS, Arturia.
+    #   Spice e Dice cambiano a caso lunghezze, forza, pressione delle note:
+    #   SOS («randomises gate lengths, velocities, pressures, envelope
+    #   times»); Arturia («Gate randomizers»); CDM («spice» e «dice»).
+    # - 7 motori da Plaits di Mutable Instruments: SOS («implementing seven
+    #   of the synth models from Mutable Instruments' Plaits»); Wikipedia
+    #   (7: Virtual Analogue, Waveshaper, FM a 2 operatori, Formant, Chords,
+    #   Speech, Modal); Arturia overview («7 from Mutable Instruments»).
+    #   ATTENZIONE: Gearnews e Synthtopia al lancio contano male (Gearnews
+    #   elenca 11 «Plaits» compresi Superwave e Karplus-Strong che sono di
+    #   Arturia). Si scrive 7.
+    # - quanti motori in tutto: al lancio 11 per Synthtopia, 12 per SOS; dopo
+    #   gli aggiornamenti 22 per Wikipedia (firmware 5.0), 21 per Arturia.
+    #   Le fonti non concordano: scritto «11 o 12» e «più di 20».
+    # - aggiornamenti: vocoder (2020), 3 motori di Noise Engineering (v3,
+    #   2021), campioni e grani (v5, 2023): Wikipedia; MusicRadar 2020 e
+    #   2021; Engadget 2023; Arturia overview. In scheda solo «vocoder e
+    #   campioni».
+    # - il codice di Plaits è aperto, licenza MIT: il sorgente stesso
+    #   (github.com/pichenettes/eurorack, plaits/dsp/voice.cc, «Copyright
+    #   2016 Emilie Gillet», testo MIT); CDM («available open source under an
+    #   MIT license»); Gillet citata da Sonicstate («anybody is free to use
+    #   it, as long as they credit me somewhere»).
+    # - Plaits è un modulo Eurorack: SOS («Plaits Macro Oscillator module»,
+    #   «presuming you already have a Eurorack system»); Gearnews; CDM.
+    # - Arturia, comunicato del NAMM: «this first collaboration between
+    #   Arturia and acclaimed modular synth pioneers Mutable Instruments»:
+    #   Sonicstate (che dice «since changed»); CDM («a bit overzealous», «it's
+    #   not a collaboration»); Gearnews («Talk of a collaboration was
+    #   overstated»).
+    # - la risposta di Émilie Gillet sul forum di Mutable («I provided
+    #   exactly 0 hour of work and 0 original line of code»; a maggio
+    #   l'invitano nella sede di Arturia e le mostrano i modellini del
+    #   MicroFreak; la settimana prima le mandano la foto di quello finito;
+    #   Arturia propone «Oscillator code from Mutable Instruments», la sua
+    #   forma preferita): Sonicstate 26/01/2019 (Edd Butterworth); Matrixsynth
+    #   24/01/2019, Update 2 (stesse frasi). Il forum originale
+    #   (forum.mutable-instruments.net) dal container non si risolve: le due
+    #   riviste lo riportano parola per parola.
+    # - Arturia corregge il comunicato: Sonicstate («since changed»); CDM;
+    #   Gearnews («Arturia acknowledged it only used the Plaits algorithms»).
+    # - Arturia fondata a Grenoble nel 1999 da Frédéric Brun e Gilles
+    #   Pommereuil, conosciuti all'INPG: Arturia About us; Wikipedia
+    #   «Arturia». Modular V nel 2003 con Robert Moog: idem. Origin 2009,
+    #   primo synth hardware: idem (+ SOS recensione Origin, citata da
+    #   Wikipedia). MiniBrute 2012: idem.
+    # - «Grain de folie» stampato sul pannello accanto al display: si legge
+    #   nella foto (crop 3840 px); è lo slogan francese di Arturia per il
+    #   MicroFreak («Un grain de folie», arturia.com/fr). Traduzione mia.
+    # - Trentemøller, «A Summer's Empty Room» (album «Memoria», In My Room,
+    #   11/02/2022): il MicroFreak è il synth principale del pezzo, note
+    #   semplici fatte nel suo seminterrato e passate in un pedale di una
+    #   ditta norvegese. Fonti: Dummy 29/03/2022 (Billy Ward, «The 10 best
+    #   pieces of gear used on Memoria», n. 9 «Arturia Microfreak»: «the main
+    #   sound on A Summer's Empty Room»); The Ransom Note, «Track by Track:
+    #   Trentemøller – Memoria» (Trentemøller in prima persona: «I came up
+    #   with these simple synth tones on my beloved Arturia synth Micro
+    #   Freak»). Data dell'album: Juno Daily 14/09/2021 (annuncio, «February
+    #   11, 2022 via In My Room»), The Sound of Vinyl. Arturia «Stories»
+    #   conferma che lo usa, senza dire i pezzi.
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
+    # - progettato all'inizio da Glen Darcey, poi Sébastien Rochard; sviluppo
+    #   dal 2016, 2 anni e mezzo; doveva costare 200 euro ed era nato come
+    #   «un MicroBrute più piccolo»: solo Attack Magazine 21/04/2021 (Adam
+    #   Douglas, intervista a Rochard). MMR conferma Darcey in Arturia, non
+    #   il MicroFreak. Peccato, era un bell'«inventore».
+    # - ispirazione dal Buchla Music Easel; filtro SEM preferito allo
+    #   Steiner-Parker perché «ha troppo carattere»: solo Attack (Rochard).
+    #   Il legame con Buchla resta, dalle tastiere (SOS, CDM).
+    # - Frédéric Brun che dubitava, «una scommessa»: solo Musician's Friend
+    #   (Baptiste Le Goff), visto in un estratto di ricerca.
+    # - il logo Mutable sulla scatola: solo una risposta di Gillet su
+    #   Reddit riportata da Matrixsynth.
+    # - Panda Bear, «Reset» (2022): MicroFreak solo nei crediti Discogs
+    #   ripresi da Wikipedia. Una fonte.
+    # - Jean-Michel Jarre, David Guetta, Moby, Jack Garratt, Fennesz...: solo
+    #   Equipboard (video dove si vede la macchina), nessun disco.
+    # - Legowelt «Elf Synthesis Microfreak», Renmei «Microfreak»: solo
+    #   Bandcamp degli autori.
+    # - i voti 9/10 di MusicRadar e MusicTech, «uno dei synth più
+    #   convenienti»: è recensione, la nota di CLAUDE.md dice di stare
+    #   lontani dal tono da recensione. Fuori.
+    # - MiniFreak (2022, 6 voci): Wikipedia e Arturia, ma non serve.
+    #
+    # HANDLE INSTAGRAM
+    # - @arturia_official: il link è nel sito ufficiale (curl su
+    #   https://www.arturia.com/, 2 link a https://www.instagram.com/arturia_official,
+    #   13/11/2026). DUBBIO: l'aneddoto racconta il comunicato sbagliato di
+    #   Arturia. Non è una battuta e finisce con la correzione, ma la regola 3
+    #   dice di non taggare il bersaglio: decidere se taggare. Il gancio e la
+    #   prima battuta non parlano della polemica apposta.
+    # - @trentemoeller: link Instagram in trentemoller.com e
+    #   anderstrentemoller.com (curl, 13/11/2026). Attenzione alla grafia,
+    #   «oe», non «trentemoller».
+    # - Mutable Instruments / Émilie Gillet: nessun tag (Mutable ha chiuso,
+    #   e non c'entra col prodotto per sua stessa dichiarazione).
+    # - Il proprietario deve seguire @arturia_official e @trentemoeller
+    #   prima dell'uscita (regola 3, da_seguire.py).
+    #
+    # FOTO (thumbnail scaricati e guardati il 13/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:MicroFreak.jpg
+    #   Leacsstmusic, «Own work», CC BY-SA 4.0, 4240x2832, scattata il
+    #   27/02/2019 (Sony A7S II, Lightroom), caricata da fr.wikipedia.
+    #   thumburl 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/MicroFreak.jpg/1280px-MicroFreak.jpg
+    #   (dal container passava solo thumb.wikimedia.org, stesso percorso).
+    #   Il MicroFreak intero di tre quarti, da davanti a sinistra, su fondo
+    #   grigio chiaro senza niente intorno (col multiply diventa crema), il
+    #   cavo di alimentazione che esce in alto a destra. Si vedono i 25 tasti
+    #   piatti bianchi col motivo stampato, a destra «MICRO FREAK ALGORITHMIC
+    #   SYNTHESIZER» stampato sull'ultimo tasto, la fascia illustrata in
+    #   bianco e nero con «ARTURIA», le 4 manopole arancio dell'oscillatore,
+    #   in alto a sinistra la griglia della matrice, il display, e
+    #   «Grain de folie» accanto (leggibile solo ingrandito). Foto da studio,
+    #   pulita, quasi da catalogo. DUBBIO: utente senza pagina, una foto
+    #   sola, scattata prima dell'uscita nei negozi: potrebbe essere di
+    #   qualcuno vicino ad Arturia. È su Commons dal 2019, in 6 Wikipedia,
+    #   nessun avviso di copyright.
+    # foto_extra: NESSUNA. Su Commons il MicroFreak compare solo in un'altra
+    #   foto, «Synthesizers top down.jpg» (Leo Ronert, CC BY-SA 4.0,
+    #   1600x888): un MicroFreak Vocoder bianco piccolo in alto, sotto un
+    #   MatrixBrute e un PolyBrute che prendono tutta la scena, più due
+    #   lanterne di carta. Nella banda l'occhio andrebbe sul MatrixBrute:
+    #   scartata. Le tavole 2 e 3 useranno i RITAGLI della principale (la
+    #   tastiera, le manopole arancio).
+    #
+    # DA FARE PRIMA DI ENTRARE IN CODA: timbro in suoni.VOCE_SCHEDA (slug
+    #   «microfreak»), scarico foto e registrazione (scarica-foto.yml),
+    #   numero e kick «N. 0XX» da riordina_coda.py, tavole e reel guardati.
+    {
+        "slug": "microfreak",
+        "numero": 88,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Arturia MicroFreak",
+        "anno": "2019",
+        "luogo": "Grenoble, Francia",
+        "costruttore": "Arturia",
+        "specifiche": [
+            ("USCITA", "2019"),
+            ("TASTI", "25, piatti"),
+            ("VOCI", "4 parafoniche"),
+            ("FILTRO", "analogico, 12 dB"),
+        ],
+        "gancio": "7 dei suoi suoni vengono da un modulo Eurorack, e il codice di quel modulo lo può copiare chiunque",
+        "sottotitolo": "Un synth piccolo, con un piede nel digitale e uno nell'analogico.",
+        "la_macchina": (
+            "I tasti sono 25 e non si abbassano. Sono disegnati su un circuito "
+            "stampato, bianchi con un motivo a quadretti, e sentono la pressione "
+            "di ogni dito, nota per nota. Il recensore di Sound On Sound scrive "
+            "che ci ha messo parecchio a smettere di suonare note per sbaglio. "
+            "Le 4 manopole arancio sono l'oscillatore, quelle nere il filtro e "
+            "gli inviluppi, e vicino al display c'è stampato «Grain de folie», un "
+            "pizzico di follia. Arturia lo presenta al NAMM nel gennaio 2019, a "
+            "299 euro. Secondo me è la macchina più strana che una ditta grande "
+            "abbia venduto a quel prezzo."
+        ),
+        "inventore_nome": "Arturia, Grenoble",
+        "inventore": (
+            "Arturia nasce a Grenoble nel 1999. La fondano Frédéric Brun e "
+            "Gilles Pommereuil, che si erano conosciuti al politecnico della "
+            "città, e all'inizio fa synth che vivono nel computer. Nel 2003 rifà "
+            "in software il modulare di Moog insieme a Robert Moog in persona. Il "
+            "primo synth in una scatola, l'Origin, arriva nel 2009, e nel 2012 il "
+            "MiniBrute, piccolo e tutto analogico. Il MicroFreak arriva 7 anni "
+            "dopo. Le tastiere piatte invece non le inventa Arturia. Le usava già "
+            "Buchla, e chi lo recensisce nel 2019 lo nota subito."
+        ),
+        "come_funziona": (
+            "Si parte dall'oscillatore digitale. La prima manopola arancio "
+            "sceglie il motore, cioè il modo di fare il suono, e le altre 3 lo "
+            "piegano. Quanti siano i motori non lo conta nessuno allo stesso "
+            "modo. Al lancio 11 o 12, dopo gli aggiornamenti più di 20, compresi "
+            "un vocoder e i campioni. Poi il suono entra in un filtro analogico "
+            "da 12 dB, passa-basso, passa-banda o passa-alto, ispirato a quello "
+            "dell'Oberheim SEM. In alto c'è la matrice, 5 sorgenti per 7 "
+            "destinazioni. Con Paraphonic acceso suona 4 note, ma il filtro "
+            "resta uno solo. Provate Spice e Dice sul sequencer, cambiano a caso "
+            "la lunghezza delle note."
+        ),
+        "richiami": [
+            ("FIG. 1", "25 tasti piatti, pressione per nota"),
+            ("FIG. 2", "Oscillatore digitale, filtro analogico"),
+            ("FIG. 3", "Matrice da 5 sorgenti per 7"),
+        ],
+        "chi_lusata": [
+            {"artista": "Trentemøller",
+             "nota": "il suono principale di «A Summer's Empty Room» (2022)",
+             "ig": "trentemoeller"},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "A Summer's Empty Room", "artista": "Trentemøller", "anno": "2022",
+                         "cosa": "Le note semplici che reggono il pezzo sono del MicroFreak. Trentemøller le trova nel suo seminterrato e le fa passare in un pedale norvegese."},
+        "aneddoto": (
+            "24 gennaio 2019, primo giorno del NAMM. Il comunicato di Arturia "
+            "parla di «prima collaborazione» con Mutable Instruments, la ditta di "
+            "moduli Eurorack di Émilie Gillet. Gillet risponde sul forum di "
+            "Mutable. Racconta che a maggio l'hanno invitata nella sede di Arturia "
+            "a vedere i modellini del MicroFreak, e che la settimana prima le "
+            "hanno mandato la foto di quello finito. Il codice di Plaits è aperto, "
+            "chiunque può usarlo purché la nomini. Il suo contributo, scrive, è di "
+            "«0 ore di lavoro e 0 righe di codice originale». Arturia corregge il "
+            "comunicato e scrive che il codice degli oscillatori viene da Mutable."
+        ),
+        "avvertenza": "Tasti piatti e capacitivi, senza corsa. Un dito appoggiato è già una nota. Non appoggiare la mano sulla tastiera.",
+        "foto": {
+            "file": "assets/foto/microfreak/principale.jpg",
+            "ritaglio": True,
+            "autore": "Leacsstmusic",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Il MicroFreak intero. Le manopole arancio sono l'oscillatore digitale",
+        },
+        # Nessuna foto extra libera su Commons in cui il MicroFreak sia la
+        # macchina principale (vedi FOTO sopra): le tavole 2 e 3 usano i
+        # RITAGLI della principale.
+        "foto_extra": [],
+        "fonti": [
+            {"titolo": "«Arturia MicroFreak», Simon Sherbourne — Sound On Sound, giugno 2019",
+             "url": "https://www.soundonsound.com/reviews/arturia-microfreak", "data": "2026-11-13"},
+            {"titolo": "Synthtopia, 24/01/2019",
+             "url": "https://www.synthtopia.com/content/2019/01/24/arturia-microfreak-an-inexpensive-experimental-synth-with-polyphonic-aftertouch/", "data": "2026-11-13"},
+            {"titolo": "Robin Vincent — Gearnews, 25/01/2019",
+             "url": "https://www.gearnews.com/namm-2019-arturia-cross-a-microbrute-with-mutable-plaits-and-get-microfreak/", "data": "2026-11-13"},
+            {"titolo": "«Arturia MicroFreak», Peter Kirn — CDM, 25/01/2019",
+             "url": "https://cdm.link/2019/01/arturia-microfreak/", "data": "2026-11-13"},
+            {"titolo": "La risposta di Mutable — Sonicstate, 26/01/2019",
+             "url": "https://www.sonicstate.com/news/2019/01/26/namm-2019-mutable-instruments-responds-to-arturia-microfreak/", "data": "2026-11-13"},
+            {"titolo": "La risposta di Mutable — Matrixsynth, 24/01/2019",
+             "url": "https://www.matrixsynth.com/2019/01/namm-2019-arturia-micro-freak.html", "data": "2026-11-13"},
+            {"titolo": "Plaits, codice sorgente (licenza MIT) — Émilie Gillet, GitHub",
+             "url": "https://github.com/pichenettes/eurorack/blob/master/plaits/dsp/voice.cc", "data": "2026-11-13"},
+            {"titolo": "MicroFreak, panoramica — Arturia",
+             "url": "https://www.arturia.com/products/hardware-synths/microfreak/overview", "data": "2026-11-13"},
+            {"titolo": "About us — Arturia",
+             "url": "https://www.arturia.com/company/about-us", "data": "2026-11-13"},
+            {"titolo": "«Arturia MicroFreak» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Arturia_MicroFreak", "data": "2026-11-13"},
+            {"titolo": "«Arturia» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Arturia", "data": "2026-11-13"},
+            {"titolo": "Gli attrezzi di «Memoria» — Dummy, 29/03/2022",
+             "url": "https://dmy.co/10-best/the-10-best-pieces-of-gear-used-on-memoria-according-to-trentemoller", "data": "2026-11-13"},
+            {"titolo": "Trentemøller, «Memoria» brano per brano — The Ransom Note",
+             "url": "https://theransomnote.com/?p=36384", "data": "2026-11-13"},
+        ],
+        "hashtags": ["#microfreak", "#arturia", "#sintetizzatore", "#trentemoller", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 088", "Il codice dentro il MicroFreak lo può copiare chiunque"),
+            ("ARTURIA · 2019", "L'Arturia MicroFreak ha 25 tasti piatti che sentono ogni dito."),
+            ("PLAITS", "7 motori del MicroFreak vengono da Plaits, un modulo di Émilie Gillet."),
+            ("CODICE APERTO", "Il codice di Plaits è aperto. Chiunque lo usa, basta nominare Gillet."),
+            ("NAMM · 2019", "Al NAMM Arturia parla di collaborazione. Gillet risponde «0 ore di lavoro»."),
+        ],
+        "reel_cta": "Mandalo all'amico che regala il codice su GitHub",
+        "reel_audio": {
+            "file": "assets/audio/microfreak/registrazione.mp3", "inizio": 0,
+            "autore": "Schminnte", "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Microfreak_Filter_Sweeps.ogg",
+            "cosa": "il filtro analogico di un MicroFreak vero aperto e chiuso su una nota tenuta, con la risonanza sempre più alta fino a fischiare da solo",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 89
+    # Korg Volca FM (2016) e Volca FM2 (2022). Scheda scritta il 13/11/2026
+    # (rifornimento automatico, bozza di un ricercatore riletta dalla
+    # sessione). La registrazione è di una FM2, e la scheda lo dice.
+    #
+    # REGISTRAZIONE: https://commons.wikimedia.org/wiki/File:Korg_Volca_fm_2_-_Demo_using_Yamaha_DX7_presets.flac
+    #   Attosaur, «Own work», 13/07/2024, CC BY-SA 4.0, FLAC 44,1 kHz stereo,
+    #   130,6 s. Descrizione: «Demonstration of a second-gen Korg Volca FM's
+    #   compatibility with downloaded Yamaha DX7 patches», preset di fabbrica
+    #   europei/giapponesi del DX7 («ROM1A Master»): E.PIANO 1 (0:00), KOTO
+    #   (0:19), TUB BELLS (0:39 e 1:14), BASS 1 (1:39 e 1:57). «Recorded via PC
+    #   mic/line input with no further processing», chorus spento, un po' del
+    #   riverbero della FM2. «Played live via an external mini keyboard».
+    #   È la macchina vera? Nessuna foto della sua Volca fra i caricamenti di
+    #   Attosaur. Però ha caricato, tutte a luglio 2024, una serie intera di
+    #   prove della stessa FM2 (Presets 1 to 16, Algorithm adjust, Arpeggiator,
+    #   Chorus, Reverb, Modulator Carrier LFO adjust), coerente con chi ce l'ha
+    #   davanti; le foto della FM2 su Commons sono di Multicherry. Lo dico
+    #   come lo dice lui, «una FM2 con le patch del DX7 caricate».
+    #   MELODIE PROTETTE: nessuna. Analisi delle altezze (FFT sui fotogrammi,
+    #   transcodifica mp3 di Commons, 13/11/2026): E.PIANO 1 = accordi
+    #   arpeggiati di Do maggiore, Do minore e un diminuito, a mano, con la
+    #   dinamica che cambia; KOTO = scale su e giù (Do Do# Fa Fa# La# Do, la
+    #   scala «in» giapponese); TUB BELLS = note sparse; BASS 1 = un Do2
+    #   ribattuto a forza diversa, poi arpeggi La minore / Sol. Niente di
+    #   riconoscibile. Non l'ho ASCOLTATA con le orecchie: va fatto prima di
+    #   pubblicare.
+    #   MISURE (ffmpeg, transcodifica mp3): file intero -16,2 LUFS, picco
+    #   0,0 dBFS. Silenzi sotto -45 dB: 0-0,9; 18,1-20,2; 26,8-27,7;
+    #   29,4-30,5; 37,2-40,5; 72,8-75,6; 96,9-100,1. Per tratto: E.PIANO
+    #   0,9-18,1 -12,9 LUFS; KOTO 20,2-37,2 -24,7 (12 dB sotto!); TUB BELLS
+    #   40,5-72,8 -17,7; BASS 1 100,1-129,7 -22,8.
+    #   SCELTA: inizio 0.9, E.PIANO 1 del DX7 dal primo fotogramma (il gancio
+    #   e il suono più forte del file). DUBBIO: dopo 17,2 s c'è un vuoto di 2 s
+    #   e poi il KOTO, molto più piano. In un reel da 22 s si sente E.PIANO,
+    #   2 s di niente, 3 s di koto. Se suona rotto, l'alternativa è inizio 40.5
+    #   (TUB BELLS, 32 s senza buchi). Per il sito (45 s da 0,9): E.PIANO,
+    #   KOTO, campane.
+    #   Scartata «Presets 1 to 16 Demo» (253 s, stesso autore e licenza): i
+    #   preset della FM2 non hanno i nomi nella descrizione, quindi non saprei
+    #   dire COSA suona; c'è un tratto continuo 38,7-74,1 s se servisse.
+    #
+    # FONTI PER FATTO (aperte il 13/11/2026)
+    # - motore a 6 operatori e 32 algoritmi come il DX7: Korg (pagine volca fm
+    #   e volca fm2); SOS giu. 2016 (Paul Nagle); MusicRadar 22/09/2022 (Si
+    #   Truss); Gearnews 14/04/2022; CDM 10/03/2016.
+    # - carica le patch del DX7 in SysEx: Korg (entrambe le pagine, «SYS-EX/
+    #   SYX»); SOS 2016 («Every bank I downloaded ... was squirted, without
+    #   error, into the Volca FM»); CDM 2016; Gearnews 2022.
+    # - 3 voci la prima, 6 la FM2: Korg fm («3-voice»), Korg fm2 («6 voices
+    #   (instead of the 3 of its predecessor)»); SOS 2016; CDM 2016; MusicRadar
+    #   2022; Gearnews 2022; Wikipedia «Korg Volca».
+    # - SOS: «only just qualifies as polyphonic»: è una citazione, la fonte è
+    #   la recensione stessa.
+    # - FM2 con riverbero, dinamica via MIDI, uscita MIDI su minijack, funzione
+    #   di randomizzazione: Korg fm2; MusicRadar 2022; Gearnews 2022.
+    # - prima versione: un solo valore di dinamica dal cursore VELOCITY per
+    #   tutte le note, la dinamica MIDI ignorata: SOS 2016 («the velocity
+    #   slider's position sets the value for all notes»); MusicRadar 2022 («how
+    #   the velocity slider can be used like a filter cutoff»); Korg fm2 («now
+    #   velocity sensitive via MIDI»). È l'AVVERTENZA.
+    # - prima versione solo MIDI IN: SOS 2016; Korg fm; si vede nella foto di
+    #   Ashley Pomeroy (presa DIN, «MIDI IN»).
+    # - salvataggio solo dal SYNC OUT verso una seconda Volca FM; Nagle, che
+    #   non ne ha un'altra, registra il flusso come audio e pensa allo Spectrum
+    #   e alle cassette: SOS 2016 (citazione, la fonte è l'articolo). Che due
+    #   Volca FM si copino suoni e sequenze dal cavetto del sync: Korg fm
+    #   («cloned»); CDM 2016 (Kirn: «Designer Tatsuya told me about this one»).
+    # - sequencer a 16 passi, 16 pattern, motion sequence, Warp Active Step:
+    #   Korg fm e fm2; SOS 2016.
+    # - tasti a sfioramento («touch panel keyboard»): Korg; SOS (tastiera
+    #   dorata); si vede nelle foto.
+    # - manopole MODULATOR e CARRIER che muovono insieme gli inviluppi di tutti
+    #   i portanti o tutti i modulanti: Korg fm («MODULATOR/CARRIER edit
+    #   knobs»); SOS 2016 («global envelope controls for the carriers and
+    #   modulators»). Algoritmo su una manopola sua: SOS («a master stroke»);
+    #   si legge ALGORITHM nelle foto.
+    # - il DX7 senza manopole: Wikipedia «Yamaha DX7» (che cita FACT 2017 e
+    #   MusicRadar); scheda dx7 del catalogo.
+    # - algoritmi: chi suona (portanti) e chi modula (modulanti), ognuno un
+    #   modo diverso di collegare i 6 operatori: SOS 2016 (riquadro su FM);
+    #   Wikipedia «Yamaha DX7».
+    # - 6 pile stilo e altoparlante (FM2): Korg fm2 («6 AA batteries»,
+    #   «integrated speaker»); MusicRadar 2022 («6 AA batteries»).
+    #   Altoparlante anche nella prima: SOS 2016; Korg fm.
+    # - mostrata al NAMM di gennaio 2016 senza annuncio: Synthtopia («Korg was
+    #   displaying an as-yet-unannounced Volca FM»); MusicRadar 19/04/2016
+    #   («got a shock at the NAMM Show in January»). Ufficiale il 10/03/2016:
+    #   CDM 10/03/2016; Synthtopia 10/03/2016 («Now Official»).
+    # - Tatsuya Takahashi capo ingegnere, presenta la Volca FM nel video Korg:
+    #   MusicRadar 19/04/2016; Synthtopia; CDM 2016 la chiama «designer». Le
+    #   prime due raccontano lo stesso video Korg (fonte primaria Korg); la
+    #   terza è indipendente.
+    # - Takahashi lascia il posto di capo ingegnere nel 2017: RA e FACT
+    #   17/02/2017 (già nella scheda volcakeys).
+    # - serie Volca dal 2013 coi Keys, Bass e Beats: scheda volcakeys;
+    #   Wikipedia «Korg Volca»; MusicRadar 2019.
+    # - FM2 annunciata ad aprile 2022, nei negozi da maggio: Gearnews
+    #   14/04/2022; MusicRadar (annuncio); SOS (notizia).
+    #
+    # FATTI SCARTATI
+    # - chi ha progettato la FM2: non trovato. Korg non fa nomi. In scheda.
+    # - 64 memorie sulla FM2: solo Gearnews («up to 64 sounds»).
+    # - FM2 «prima Volca con l'uscita MIDI»: solo Gearnews. Fuori.
+    # - arpeggiatore «primo nella serie volca»: solo Korg (CDM dice
+    #   «unexpected» e basta). Fuori.
+    # - 360 g senza pile (FM2): solo Korg.
+    # - pile della prima versione: SOS scrive «six AAA», Korg per la FM2 «6
+    #   AA». Non concordano (e secondo me SOS ha sbagliato), quindi in scheda
+    #   le pile sono quelle della FM2.
+    # - prezzi: £129/$159,99 (SOS 2016); 189 euro (Gearnews 2022); «RRP $339»
+    #   per la FM2 nella notizia di SOS (vista solo in un estratto di ricerca,
+    #   e non torna con gli altri). Niente prezzi in scheda (regola sulle
+    #   macchine recenti, e non concordano).
+    # - Warp Active Step «nuovo» sulla FM2 (Gearnews): sbagliato, c'era già
+    #   nel 2016 (SOS, Korg, CDM).
+    # - patch DX7 con la tastiera divisa che suonano 2 suoni insieme: solo SOS.
+    # - niente portamento né glissando: solo SOS.
+    # - editor Synthmata con il randomizzatore «intelligente»: solo Korg.
+    # - CHI L'HA USATA: nessun disco a due fonti. Trovati solo elenchi
+    #   (Equipboard: Chris Vrenna, Scott Munro dei Preoccupations da una foto),
+    #   un'intervista a Choke Chain senza brano, «dark side» di Lexinous
+    #   (Bandcamp, fonte unica), Kable54 (un profilo). Quindi chi_lusata vuota
+    #   e DA ASCOLTARE OMESSO. Il 4° hashtag, che sarebbe l'artista, è #dx7
+    #   (c'è in scheda), come #sequentialcircuits nella scheda opera6.
+    #
+    # HANDLE INSTAGRAM: @korgofficial. Link Instagram nella pagina Korg della
+    #   volca fm2 (korg.com/us/products/dj/volca_fm2/, unico link Instagram
+    #   della pagina), controllato il 13/11/2026; già verificato e usato nella
+    #   scheda volcakeys (28/10/2026), quindi il proprietario lo segue già.
+    #
+    # FOTO (thumbnail a 1280 scaricati e guardati il 13/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Korg_Volca_FM_(next-gen_-_2nd_gen_-_fm2)_(i).jpg
+    #   Multicherry (lo stesso della foto della volcakeys), CC BY-SA 4.0,
+    #   4170x2780, 05/11/2023. Ritoccata dall'autore (LED e display fotografati
+    #   a parte e risovrapposti, lo dichiara sulla pagina). La FM2 di fronte,
+    #   intera, su fondo bianco: "ritaglio": True. Si leggono KORG volca fm
+    #   DIGITAL FM SYNTHESIZER in alto a destra, IN-MIDI-OUT, il display
+    #   azzurro, i tasti dorati con 4 REVERB e 6 PROGRAM RANDOM, LED azzurri.
+    #   thumburl: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28i%29.jpg/1280px-Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28i%29.jpg
+    # extra 1: https://commons.wikimedia.org/wiki/File:Korg_Volca_FM_8994.jpg
+    #   Ashley Pomeroy, CC BY-SA 4.0, 3000x2000, 29/11/2021. La PRIMA Volca FM
+    #   di tre quarti, fondo bianco: display rosso, presa MIDI IN DIN grande in
+    #   alto al centro, LED rossi, tasto 1 POLY e 9 METRONOME (sulla FM2 il 9 è
+    #   1/4). "ritaglio": True, così la presa MIDI si vede.
+    #   thumburl: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Korg_Volca_FM_8994.jpg/1280px-Korg_Volca_FM_8994.jpg
+    # extra 2: https://commons.wikimedia.org/wiki/File:Korg_Volca_FM_(next-gen_-_2nd_gen_-_fm2)_(ii).jpg
+    #   Multicherry, CC BY-SA 4.0, 4200x2800, stessa serie ritoccata. La FM2
+    #   di tre quarti: a sinistra le manopole MODULATOR (LED rossi) e CARRIER e
+    #   i 2 cursori TRANSPOSE e VELOCITY, il display con il nome del suono.
+    #   "posizione" center 30% per tenere nella banda manopole e cursori.
+    #   thumburl: https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28ii%29.jpg/1280px-Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28ii%29.jpg
+    #   Su Commons non c'è altro della famiglia (niente interno, niente retro).
+    #   Le didascalie vanno ricontrollate sulla tavola GENERATA.
+    #
+    # DA AGGIUNGERE FUORI DALLA SCHEDA: in suoni.py, VOCE_SCHEDA, "volcafm": "fm"
+    #   (valida_scheda rifiuta la scheda senza timbro), e lo scarico della
+    #   registrazione in assets/audio/volcafm/registrazione.mp3.
+    #
+    # DUBBI APERTI
+    # - il vuoto di 2 s a 17 s dentro il reel (vedi REGISTRAZIONE).
+    # - la registrazione non ascoltata a orecchio.
+    # - la prova della FM2 (aprile 2022) non è su SOS: per la FM2 contano
+    #   Korg, MusicRadar e Gearnews.
+    {
+        "slug": "volcafm",
+        "numero": 89,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Korg Volca FM",
+        "anno": "2016",
+        "luogo": "Giappone",
+        "costruttore": "Korg",
+        "specifiche": [
+            ("USCITA", "2016, FM2 2022"),
+            ("OPERATORI", "6"),
+            ("ALGORITMI", "32"),
+            ("VOCI", "3, poi 6"),
+        ],
+        "gancio": "Prende i suoni di un DX7 del 1983 così come sono, e va a pile",
+        "sottotitolo": "Il motore a 6 operatori del DX7 in una scatola Volca: 3 voci nel 2016, 6 nella FM2 del 2022.",
+        "la_macchina": (
+            "Ha le manopole trasparenti dei Volca, 2 cursori, un display che "
+            "scrive il nome del suono e i tasti a sfioramento. Si accende con 6 "
+            "pile stilo e suona dal suo altoparlante. Dentro però non c'è niente "
+            "di analogico. La prima, nel 2016, fa 3 note per volta, e Sound On "
+            "Sound scrive che è polifonica per un pelo. Nel 2022 esce la FM2, "
+            "con 6 voci, un riverbero accanto al chorus e un tasto che rimescola "
+            "il suono a caso. Quella che sentite è una FM2. Secondo me la prima "
+            "va benissimo per bassi e campane, ma per gli accordi ci vuole la "
+            "seconda."
+        ),
+        "inventore_nome": "Korg e Tatsuya Takahashi",
+        "inventore": (
+            "Nel gennaio 2016 Korg porta al NAMM una Volca che non ha ancora "
+            "annunciato. Le Volca esistono dal 2013, quando escono Keys, Bass e "
+            "Beats, e questa fa FM, con la sigla scritta nel nome. Diventa "
+            "ufficiale il 10 marzo, e a presentarla "
+            "nel video di Korg c'è Tatsuya Takahashi, il capo ingegnere dei "
+            "Volca, quello della scheda del Volca Keys. Peter Kirn di CDM lo "
+            "chiama il suo progettista. Takahashi lascia il posto nel 2017. Chi "
+            "abbia firmato la FM2 del 2022 non sono riuscito a scoprirlo, e "
+            "Korg nella pagina del prodotto non fa nomi."
+        ),
+        "come_funziona": (
+            "Ogni operatore è un'onda sinusoidale con il suo inviluppo. "
+            "L'algoritmo decide chi suona e chi modula gli altri, e i modi di "
+            "collegare i 6 operatori sono 32. Dove suonano tutti, si sommano come "
+            "i registri di un organo. Dove uno solo suona e gli altri lo "
+            "modulano, escono armoniche che non si prevedono. Sul DX7 si "
+            "programmava coi tasti e i menu, senza manopole. Qui l'algoritmo ha "
+            "una manopola sua, e MODULATOR e CARRIER muovono insieme gli "
+            "inviluppi di tutti i modulanti o di tutti i portanti. Provate a "
+            "girare l'algoritmo tenendo una nota."
+        ),
+        "richiami": [
+            ("FIG. 1", "6 operatori, 32 algoritmi"),
+            ("FIG. 2", "Legge le patch del DX7"),
+            ("FIG. 3", "3 voci, poi 6"),
+        ],
+        "chi_lusata": [],
+        "menzioni_extra": [
+            {"ig": "korgofficial", "riga": "La Volca FM è di @korgofficial."},
+        ],
+        "aneddoto": (
+            "Giugno 2016. Paul Nagle prova la Volca FM per Sound On Sound e "
+            "vuole salvare i suoni che ha fatto. L'uscita MIDI non c'è. L'unica "
+            "strada è la presa SYNC OUT, pensata per copiare tutto in una "
+            "seconda Volca FM attaccata col cavetto. Nagle una seconda non ce "
+            "l'ha, quindi registra quello che esce dalla presa come se fosse "
+            "audio. Scrive che gli tornano in mente lo Spectrum e le cassette "
+            "che fischiano, e che almeno è più divertente che aspettare il "
+            "caricamento di un videogioco. Nella FM2 del 2022 le prese MIDI "
+            "sono due, una per entrare e una per uscire."
+        ),
+        "avvertenza": "Sulla prima Volca FM la dinamica è il cursore VELOCITY, uguale per tutte le note. Per suonare piano e forte serve la FM2 e una tastiera MIDI.",
+        "foto": {
+            "file": "assets/foto/volcafm/principale.jpg",
+            "ritaglio": True,
+            "autore": "Multicherry",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Una Volca FM2. Sui tasti dorati, REVERB e PROGRAM RANDOM sono le novità del 2022",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/volcafm/prima.jpg",
+             "ritaglio": True,
+             "autore": "Ashley Pomeroy",
+             "licenza": "CC BY-SA 4.0",
+             "fonte": "Wikimedia Commons",
+             "didascalia": "La prima Volca FM, del 2016. Display rosso e una presa MIDI sola, d'ingresso"},
+            {"file": "assets/foto/volcafm/manopole.jpg",
+             "autore": "Multicherry",
+             "licenza": "CC BY-SA 4.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 30%",
+             "didascalia": "A sinistra le manopole MODULATOR e CARRIER, e il cursore VELOCITY"},
+        ],
+        "fonti": [
+            {"titolo": "«Korg Volca FM», Paul Nagle — Sound On Sound, giugno 2016",
+             "url": "https://www.soundonsound.com/reviews/korg-volca-fm", "data": "2026-11-13"},
+            {"titolo": "Korg, pagina della volca fm",
+             "url": "https://www.korg.com/us/products/dj/volca_fm/", "data": "2026-11-13"},
+            {"titolo": "Korg, pagina della volca fm2",
+             "url": "https://www.korg.com/us/products/dj/volca_fm2/", "data": "2026-11-13"},
+            {"titolo": "«Korg Volca FM2 review», Si Truss — MusicRadar, 22/09/2022",
+             "url": "https://www.musicradar.com/reviews/korg-volca-fm2", "data": "2026-11-13"},
+            {"titolo": "«Korg Volca FM: 2nd-gen comes with 6 voices, MIDI Out», Lyubomir Dobrev — Gearnews, 14/04/2022",
+             "url": "https://www.gearnews.com/korg-volca-fm-2nd-gen-comes-with-6-voices-midi-out-and-more", "data": "2026-11-13"},
+            {"titolo": "«KORG volca FM is here», Peter Kirn — CDM, 10/03/2016",
+             "url": "https://cdm.link/2016/03/korg-volca-fm-is-here-and-does-some-unexpected-tricks/", "data": "2026-11-13"},
+            {"titolo": "«Korg engineer tells you what you need to know about the Volca FM» — MusicRadar, 19/04/2016",
+             "url": "https://www.musicradar.com/news/tech/korg-engineer-tells-you-what-you-need-to-know-about-the-volca-fm-637173", "data": "2026-11-13"},
+            {"titolo": "Synthtopia, Volca FM al NAMM e video di Takahashi, 2016",
+             "url": "https://synthtopia.com/content/tag/korg-volca-fm/page/2", "data": "2026-11-13"},
+            {"titolo": "«Korg Volca» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Korg_Volca", "data": "2026-11-13"},
+            {"titolo": "«Yamaha DX7» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Yamaha_DX7", "data": "2026-11-13"},
+        ],
+        "hashtags": ["#volcafm", "#korg", "#sintetizzatore", "#dx7", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 089", "La Korg Volca FM legge i suoni di un DX7 del 1983"),
+            ("KORG · 2016", "La Volca FM ha il motore del DX7, ma suona 3 note per volta."),
+            ("SOUND ON SOUND", "Paul Nagle prova la Volca FM e cerca un'uscita MIDI per salvare i suoni."),
+            ("SYNC OUT", "Non c'è. Nagle registra i dati come audio, come le cassette dello Spectrum."),
+            ("FM2 · 2022", "Nel 2022 la Volca FM2 ha 6 voci, un riverbero e l'uscita MIDI."),
+        ],
+        "reel_cta": "Mandalo all'amico che tiene ancora lo Spectrum",
+        "reel_audio": {
+            # registrazione.mp3 (13/11/2026, sessione): E.PIANO 1 0,9-17,75 s +
+        # TUB BELLS 40,5-70,5 s del file originale, ognuno a -15 LUFS
+        # (KOTO era 12 dB sotto e preceduto da 2,4 s di silenzio), incrociati
+        # in 0,4 s. 46,5 s, -14,9 LUFS, picco -1,7 dB, nessun silenzio sotto
+        # -40 dB. Spettrogramma guardato: note regolari, niente fischi.
+        "file": "assets/audio/volcafm/registrazione.mp3", "inizio": 0,
+            "autore": "Attosaur", "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Korg_Volca_fm_2_-_Demo_using_Yamaha_DX7_presets.flac",
+            "cosa": "una Volca FM2 vera con i suoni di fabbrica del DX7 caricati, prima il piano elettrico E.PIANO 1 e poi le campane TUB BELLS, suonati dal vivo",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 90
+    # Boss CE-3 Chorus. Scheda scritta il 13/11/2026 (rifornimento automatico,
+    # bozza di un ricercatore riletta dalla sessione). Va nella
+    # serie «GLI EFFETTI» con Cry Baby, Big Muff e DS-1. NON ripete i fatti
+    # del DS-1 (MEG 1973, compatti 1977, colori): ci rimanda in una frase.
+    #
+    # REGISTRAZIONE SCELTA:
+    #   https://commons.wikimedia.org/wiki/File:Boss_CE-3_clean_sound_demo_in_stereo_(mode_II_and_mode_I).ogg
+    #   Skimel, «own work», 21/08/2019, CC BY-SA 4.0 ({{self|cc-by-sa-4.0}}),
+    #   Ogg Vorbis stereo, 60 s (metadati Commons), 883.934 byte. Pagina
+    #   riletta dall'API il 13/11/2026. Descrizione: «Boss CE-3 sound demo in
+    #   stereo on electric guitar (Yamaha Pacifica 112) with Amplitube clean
+    #   amp simulation. The pedal was made in 1984 in Japan and has been
+    #   modded by MSM Workshop (but the mod is not active). First dry sound,
+    #   then Mode II (vibrato on left channel, dry on the right), then mode I
+    #   (chorus on both sides)».
+    #   PERCHÉ QUESTA e non le tre indicate dal coordinatore:
+    #   - è l'unica delle quattro che dice esplicitamente che la modifica MSM
+    #     del pedale è SPENTA. Il CE-3 di Skimel è modificato («Vibr'o'tone»,
+    #     levetta sul fianco: si vede nelle foto); le altre tre pagine non
+    #     dicono se la modifica fosse attiva. Con questa, «cosa» può dire
+    #     «un CE-3 di serie» senza mentire;
+    #   - è pulita: si sente il chorus e non la distorsione di un altro pedale
+    #     (le due «distorted» passano per un Blackstar HT-Dual);
+    #   - ha il modo II, che regge anche su un altoparlante solo: A = solo
+    #     effetto (vibrato), B = diretto, e sommati in mono fanno proprio il
+    #     chorus. Il modo I invece, dal pannello, è A = D+E e B = D−E: se il
+    #     telefono somma i due canali in mono l'effetto si cancella e resta
+    #     la chitarra pulita (è la teoria; sul file va provato). Quindi la
+    #     parte che conta sul telefono è il modo II.
+    #   Scartate: «clean, fast speed, low depth (both stereo modes)» (46 s,
+    #   CC BY-SA 4.0, stesso giorno: profondità bassa, il chorus si sente
+    #   meno, e non dice se la modifica è spenta); «distorted ... mode I» (43
+    #   s) e «distorted ... mode II» (37 s): Blackstar HT-Dual canale 2
+    #   davanti, simulatore Amplitube; modifica non dichiarata.
+    #   !!! NON ASCOLTATA E NON MISURATA: upload.wikimedia.org ha risposto 429
+    #   dal container sia sull'originale sia sul transcodificato .mp3 (tre
+    #   tentativi distanziati, come per il DS-1). Va scaricata dal runner
+    #   (scarica-foto.yml) e misurata PRIMA di mettere «inizio»:
+    #   - all'inizio c'è la chitarra SENZA effetto (lo dice la pagina). Il
+    #     reel non deve cominciare lì. «inizio» va messo dove comincia il
+    #     modo II: si trova da solo confrontando i canali (nel pezzo «dry» L
+    #     e R sono uguali, nel modo II divergono: correlazione L/R a finestre
+    #     da 0,5 s). Nella bozza c'è 0 come segnaposto;
+    #   - controllare LUFS, silenzi fra un pezzo e l'altro, e ASCOLTARE che
+    #     non suoni una melodia riconoscibile;
+    #   - provare la somma mono del modo I (se si cancella, meglio che il
+    #     reel stia sul modo II).
+    #   Foto del pedale della registrazione: Skimel ha caricato 4 foto dello
+    #   STESSO CE-3 (agosto 1984 dal numero di serie, modifica MSM), il
+    #   19/08/2019: sono la principale e due extra qui sotto.
+    #
+    # FONTI PER FATTO (tutte aperte il 13/11/2026)
+    # - CE-3 del 1982, 3 manopole: Boss, «The Legend of the CE-1 and RE-201
+    #   Preamps» («In 1982, the three-knob CE-3 Chorus arrived»); Crave
+    #   Guitars, «1980 Boss CE-2 Chorus» (CE-3 dal 1982); Happy Mag 2021
+    #   («A decade of shimmer», 1982).
+    # - prodotto fino al 1992, a Taiwan dal 1988: Crave Guitars («lasted until
+    #   1992», Taiwan dal 1988); pagina di supporto Roland «BOSS CE-3 Chorus
+    #   (1982-1992)» (vista solo come titolo nei risultati: la pagina dà 403
+    #   dal container). Altre date in giro (settembre 1982-giugno 1990,
+    #   ottobre 1982-febbraio 1992) senza fonte chiara: in scheda solo «fino
+    #   al 1992», nel sottotitolo.
+    # - CE-3 stereo, CE-2 mono: Crave («mono only» il CE-2, il CE-3
+    #   «stereo»); Happy Mag («the stereo output that many felt the CE-2
+    #   lacked»); mirosol, «Boss CE-3 Chorus» (2014: «the first Boss chorus
+    #   with stereo output», che vale per i COMPATTI: il CE-1 era già stereo).
+    # - CE-1 stereo: Guitar Player, Dave Hunter 2021 e 2023 («great in mono,
+    #   otherworldly in stereo»); Wikipedia «Boss Corporation» («worked in
+    #   mono and stereo», cita Hunter); Happy Mag (CE-1 «stereo output»; il
+    #   CE-2 perde «stereo output»).
+    # - i due modi: MANUALE Boss CE-3 (PDF scansionato, stampato luglio 1987,
+    #   https://static.roland.com/assets/media/pdf/CE-3_OM.pdf, letto come
+    #   immagine): «MODE I: The chorus effect is obtained from the both A and
+    #   B output jacks»; «MODE II: The sound whose pitch changes alternately
+    #   will be obtained from the OUTPUT jack A, while a normal sound is heard
+    #   from the OUTPUT jack B»; e la serigrafia del pannello «B D−E / A D+E»
+    #   (I) e «B Dir. / A Eff.» (II), che si LEGGE nella foto extra
+    #   «rear and top view». Conferme: descrizioni di Skimel sulle pagine
+    #   audio («Mode II (vibrato on left channel, dry on the right), then
+    #   mode I (chorus on both sides)»); mirosol («push zero and reverse
+    #   phases to their own outputs»); Happy Mag (modo «vibrato-style»).
+    # - avvertenza, con un amplificatore solo niente modo II: manuale («If you
+    #   use only one amplifier, do not set the STEREO MODE switch to the MODE
+    #   II position. Otherwise the chorus effect is not obtained») e, per
+    #   costruzione, la serigrafia «A Eff.» del pannello (foto).
+    # - circuito a BBD (bucket brigade) per la famiglia: Boss (CE-1, «analog
+    #   BBD circuitry»); Crave e Guitar World (CE-2 con MN3007); mirosol (CE-3
+    #   «based on MN3207 [...] controlled by a MN3102 clock», LFO con un
+    #   TL022). Il NOME del chip del CE-3 ha una fonte sola leggibile (il
+    #   forum DIYstompboxes che lo conferma dà 403): in scheda c'è «un chip
+    #   BBD», senza sigla. Il chorus come copia ritardata e modulata mescolata
+    #   al diretto: Wikipedia «Chorus (audio effect)»; manuale («the sound
+    #   whose pitch changes»); Happy Mag («emulating multiple guitars»).
+    # - Jazz Chorus JC-120 del 1975, a transistor, 2 finali (stereo) e il
+    #   chorus dentro: Guitar Player, Dave Hunter 2023 («dual-60-watt stereo
+    #   solid-state output stage [...] with built-in stereo chorus/vibrato»);
+    #   Boss (JC-120 1975, «stereo Chorus/Vibrato section»); Happy Mag (1975,
+    #   JC-60 e JC-120). Che abbia 2 altoparlanti: foto «Roland Jazz
+    #   Chorus-120 on the stage» (2 coni dietro la tela) e Guitar Player 2023
+    #   («robust 2x12 cab»).
+    # - CE-1 del 1976, primo pedale Boss e primo chorus a pedale, circuito
+    #   del JC-120: Boss («BOSS's debut effects pedal and the world's
+    #   first-ever chorus pedal»); Guitar Player 2023 («transmutation of this
+    #   circuit in 1976 into the first Boss pedal ever released, the CE-1»);
+    #   Guitar World, Chris Gill 2025 (CE-1 «introduced in 1976»); Happy Mag.
+    #   DUBBIO: Wikipedia «Boss Corporation» dice 1975 in un paragrafo e
+    #   «June 1976» in un altro. Le altre fonti 1976: scritto 1976.
+    # - CE-1 grosso e a corrente: Crave («large box mains powered stereo
+    #   CE-1»); Wikipedia («fairly large, AC-powered unit»).
+    # - CE-2 del 1979, compatto, Rate e Depth: Boss («The two-knob CE-2
+    #   Chorus joined the range in 1979»); Crave; Wikipedia; Guitar World
+    #   2025. MN3007: Crave e Guitar World («look for a unit featuring an
+    #   MN3007 BBD chip»).
+    # - il pedale della foto: agosto 1984, Giappone, dal numero di serie;
+    #   modifica MSM Workshop «Vibr'o'tone» con la levetta sul fianco
+    #   destro: descrizioni di Skimel sulle 4 foto e sulla registrazione;
+    #   adesivo e levetta si vedono nelle foto.
+    # - lucina CHECK fra le manopole: si vede nelle foto; Happy Mag scrive
+    #   che la disposizione delle manopole fu criticata perché copriva il
+    #   LED (una fonte sola: in scheda è un'OPINIONE, «a me non piace», non
+    #   un fatto sulla critica dell'epoca).
+    # - Gary Moore, gennaio 1983: Music UK, gennaio 1983, intervista di Tony
+    #   Bacon (muzines.co.uk/articles/gary-moore/7074): «I'm using a flanger,
+    #   an octave splitter, and a chorus pedal — they're all Boss pedals»;
+    #   «The chorus I only have because the chorus on my Chorus/Echo isn't
+    #   very satisfactory to me»; «I think I use the flanger once all night,
+    #   and the chorus about twice». Ground Guitar, «Gary Moore's Boss CE-3»
+    #   (riporta la stessa frase sulla Chorus/Echo, Roland SRE-555). Il
+    #   MODELLO CE-3: Guitar Player, Rod Brakes 30/11/2021 (pedaliera BCB-6
+    #   con «a CE-3 Chorus, DM-2 Delay, OC-2 Octaver, BF-2 Flanger», foto del
+    #   concerto di Tokyo del 24/01/1983); Ground Guitar (CE-3 «prior to
+    #   1984»). L'intervista NON dice il modello: scritto come dubbio.
+    #   ATTENZIONE: «due volte a sera» ha UNA fonte, ma è la sua voce in
+    #   un'intervista d'epoca (fonte primaria). Se chi integra la vuole a due
+    #   fonti, togliere la frase «Poi ammette...».
+    #
+    # FATTI SCARTATI
+    # - chip MN3207 + clock MN3102 nel CE-3: una fonte leggibile (mirosol).
+    # - Prince e un chorus Boss stereo su «The Ballad of Dorothy Parker»
+    #   (Susan Rogers): visto solo in un riassunto di ricerca; l'articolo di
+    #   Susan Rogers su RBMA (2017) non parla di chorus. Fuori.
+    # - Andy Summers col CE-1 su «Message in a Bottle», «Walking on the
+    #   Moon»: Guitar Player 2021 e Wikipedia, che però cita Guitar Player.
+    #   È il CE-1, non il CE-3: fuori anche per questo.
+    # - Gli utenti del CE-2 (Gilmour, Marr, Duffy, Fripp, Gallagher, Honeyman-
+    #   Scott): Guitar World 2025, una fonte; e sono del CE-2.
+    # - Frusciante e Bonamassa col CE-1: solo Boss.
+    # - CE-1 che vende poco perché costa troppo: solo Happy Mag.
+    # - Miko Weaver (tour di «Lovesexy»), «CE-2 o CE-3»: una fonte, modello
+    #   incerto.
+    # - Equipboard, guitarcloud, Reverb: liste senza disco, non contano.
+    # - DA ASCOLTARE: nessun disco col CE-3 a due fonti. Moore nel gennaio
+    #   1983 dice di usare per «Corridors of Power» (1982) un'attrezzatura
+    #   diversa da quella del tour: il disco non si può legare al CE-3.
+    #   Campo OMESSO.
+    # - specifiche del manuale (13 mA a 9 V, 400 g, rumore oltre 90 dB,
+    #   interruttore a FET senza clic): una fonte (il manuale; la pagina
+    #   Roland con le specifiche dà 403). In scheda non ci sono.
+    # - Happy Mag è un articolo firmato «Enmore Audio» (un negozio): usato
+    #   solo come terza conferma, mai da solo.
+    #
+    # HANDLE INSTAGRAM
+    # - @bossinfoglobal: già verificato (piede di boss.info). In
+    #   menzioni_extra. Due schede Boss di fila (DS-1 e CE-3): se escono
+    #   vicine, chi integra valuti di tenere il tag su una sola.
+    # - Gary Moore: morto nel 2011, nessun account ufficiale verificato.
+    #   Niente tag.
+    #
+    # FOTO (thumbnail scaricati dal container e guardati il 13/11/2026)
+    # NOTA: tutte e tre le foto del CE-3 sono dello stesso pedale MODIFICATO
+    # (adesivo «Vibr'o'tone» sopra la scritta Chorus, levetta d'acciaio sul
+    # fianco destro). Le didascalie lo dicono. Non esiste su Commons un CE-3
+    # di serie con licenza pulita: «Boss CE-3 Chorus.jpg» (Kuriosatempel, CC
+    # BY-SA 4.0, 3024x4032) è un CE-3 intatto, ma la descrizione dice «Photo:
+    # Johan Rosén. Courtesy of bosspedals_sweden on instagram»: chi carica
+    # non è l'autore e non c'è permesso registrato. Scartata come la gemella
+    # del DS-1 (stessa motivazione nella bozza ds1).
+    # principale: https://commons.wikimedia.org/wiki/File:1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_top.jpg
+    #   Skimel, 19/08/2019, CC BY-SA 4.0, 3456x4608. Thumbnail 960:
+    #   https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_top.jpg/960px-1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_top.jpg
+    #   (1280: .../1280px-...). Il pedale dritto, dall'alto, su un ripiano
+    #   chiaro color marmo (NON scontornato: niente "ritaglio"). Pedale
+    #   azzurro, vernice consumata. Dall'alto: CHECK (MONO) con la serigrafia
+    #   dei modi, 3 manopole nere con la tacca rossa (RATE, DEPTH, STEREO
+    #   MODE), «← OUTPUT B» a sinistra; poi OUTPUT A / INPUT, l'adesivo
+    #   «Vibr'o'tone», «Chorus CE-3» grande, la gomma nera con BOSS. Si vede
+    #   la levetta a destra e la presa di OUTPUT B a sinistra. Il pedale
+    #   occupa il centro, 20%-90% dell'altezza: il ritaglio al 20% non lo
+    #   taglia.
+    # extra 1 (slide 2, la macchina): https://commons.wikimedia.org/wiki/File:1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_left_side.jpg
+    #   Skimel, 19/08/2019, CC BY-SA 4.0, 2647x4006. Thumbnail 960:
+    #   https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_left_side.jpg/960px-1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_left_side.jpg
+    #   Di tre quarti dal fianco sinistro, verticale e vicino: le 2 prese
+    #   d'uscita sul fianco, OUTPUT B in alto (24-32% dell'altezza) e OUTPUT
+    #   A sotto (37-45%), con le scritte; manopole in alto, «Chorus CE-3» e
+    #   BOSS sotto. Banda da 500 px orizzontale: "posizione" «center 33%»
+    #   per tenere le 2 prese e le loro scritte. DA GUARDARE NELLA TAVOLA.
+    # extra 2 (slide 3, chi l'ha costruita): https://commons.wikimedia.org/wiki/File:Roland_Jazz_Chorus_JC-120_-_vibrato_and_chorus_controls.jpg
+    #   Skimel, 25/02/2023, CC BY-SA 4.0, 4000x3000 (orizzontale). Thumbnail
+    #   960: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Roland_Jazz_Chorus_JC-120_-_vibrato_and_chorus_controls.jpg/960px-Roland_Jazz_Chorus_JC-120_-_vibrato_and_chorus_controls.jpg
+    #   Il pannello di un JC-120: SPEED e DEPTH (manopole cromate), il
+    #   selettore VIB / OFF / CHORUS, a destra «JAZZ C...» e il logo Roland,
+    #   sotto la tela nera. La macchina più riconoscibile è il JC-120, non il
+    #   CE-3: la slide 3 racconta proprio il JC-120 e la didascalia lo dice
+    #   (come la foto Vox nella scheda del Cry Baby). "nel_reel": False,
+    #   perché nel reel senza didascalia sarebbe un amplificatore qualsiasi.
+    #   "posizione" «center 45%» per tenere manopole e scritte.
+    # extra 3 (slide 4, come funziona, con la legenda FIG.): https://commons.wikimedia.org/wiki/File:1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_rear_and_top_view.jpg
+    #   Skimel, 19/08/2019, CC BY-SA 4.0, 3456x4608. Thumbnail 960:
+    #   https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_rear_and_top_view.jpg/960px-1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_rear_and_top_view.jpg
+    #   Il pedale visto da dietro e dall'alto: in cima la presa
+    #   dell'alimentatore e un'etichetta, poi la serigrafia leggibile CHECK,
+    #   (MONO), «B D−E / A D+E I», «II B Dir. / A Eff.», la lucina CHECK fra
+    #   la prima e la seconda manopola, le 3 manopole. Le scritte stanno al
+    #   38-45% dell'altezza, le manopole al 45-60%: banda da 420 px,
+    #   "posizione" «center 50%». È la foto dei FIG. 2 e 3. DA GUARDARE.
+    # Altre scartate: «... right side.jpg» (Skimel, stessa serie: doppione
+    #   della principale con la levetta in vista); «Boss CE-2 Chorus.jpg»
+    #   (Kuriosatempel, licenza dubbia come sopra); «Boss CE-2.jpg» (220x291,
+    #   troppo piccola); «Boss CE-1 (screenshot).png» (858x612, fotogramma
+    #   sfocato di un video YouTube, CC BY 3.0: troppo brutta per una banda);
+    #   «Roland Jazz Chorus-120 on the stage 20211106.jpg» (Solomon203, CC
+    #   BY-SA 4.0, 1200x900: un JC-120 intero su un palco, buona di riserva
+    #   per la slide 3, ma dietro c'è un cartellone con scritte cinesi e un
+    #   pupazzo che rubano l'occhio).
+    #
+    # NOTA TECNICA: suoni.VOCE_SCHEDA non ha «ce3» (va aggiunto dal timbro
+    #   degli effetti, come crybaby/ds1).
+    {
+        "slug": "ce3",
+        "numero": 90,
+        "serie": "GLI EFFETTI",
+        "strumento": "Boss CE-3 Chorus",
+        "anno": "1982",
+        "luogo": "Giappone",
+        "costruttore": "Boss",
+        "specifiche": [
+            ("USCITA", "1982"),
+            ("MANOPOLE", "3"),
+            ("USCITE", "2, A e B"),
+            ("MODI STEREO", "2"),
+        ],
+        "gancio": "Nel 1979 il chorus di Boss perde lo stereo per stare in un pedale piccolo. Nel 1982 il CE-3 se lo riprende",
+        "sottotitolo": "Il terzo chorus di Boss, con 3 manopole e 2 uscite. Fatto in Giappone, poi a Taiwan, fino al 1992.",
+        "la_macchina": (
+            "Quello della foto è lo stesso che suona nella registrazione. Chi "
+            "l'ha registrato l'ha datato dal numero di serie, agosto 1984, "
+            "fatto in Giappone. L'adesivo «Vibr'o'tone» e la levetta sul fianco "
+            "non sono di Boss, sono una modifica di MSM Workshop, spenta nella "
+            "registrazione. Le manopole sono Rate, Depth e Stereo Mode, e le "
+            "uscite 2, A sul fianco e B più in alto. La lucina CHECK sta fra le "
+            "manopole, mezza nascosta, e a me questa cosa non è mai piaciuta. "
+            "Del CE-2 parlano tutti. Il CE-3 è il fratello di mezzo, e secondo "
+            "me suona meglio di quanto dica la sua fama."
+        ),
+        "inventore_nome": "Roland e Boss, dal Jazz Chorus in giù",
+        "inventore": (
+            "Chi l'abbia disegnato Boss non lo dice. La famiglia comincia nel "
+            "1975 col Jazz Chorus JC-120 di Roland, un amplificatore a "
+            "transistor con 2 altoparlanti, 2 finali da 60 watt e il chorus "
+            "dentro. Nel 1976 Boss stacca quel circuito e lo chiude in una "
+            "scatola sua, il CE-1 Chorus Ensemble. È il primo pedale Boss e il "
+            "primo chorus a pedale, grosso e attaccato alla corrente. Wikipedia "
+            "in un punto lo data 1975, Boss e le riviste 1976. Nel 1979 arriva "
+            "il CE-2, compatto, con 2 manopole e un chip Panasonic MN3007. Il "
+            "CE-3 esce nel 1982. La storia dei pedali compatti Boss sta nella "
+            "scheda del DS-1."
+        ),
+        "come_funziona": (
+            "Dentro c'è un chip BBD, una fila di condensatori che si passano il "
+            "segnale come secchi d'acqua e lo restituiscono con pochi millesimi "
+            "di secondo di ritardo. Un oscillatore lento allunga e accorcia "
+            "quel ritardo, e la copia sale e scende di intonazione di "
+            "pochissimo. Rate decide quanto in fretta, Depth quanto. Sommata al "
+            "suono diretto, la copia fa sembrare due chitarre. Nel modo I la "
+            "presa A dà diretto più effetto, la B diretto meno effetto, e fra 2 "
+            "amplificatori il suono si allarga. Nel modo II da A esce solo la "
+            "copia che ondeggia e da B la chitarra pulita. Il chorus allora si "
+            "forma nell'aria della stanza."
+        ),
+        "richiami": [
+            ("FIG. 1", "Rate, Depth, Stereo Mode"),
+            ("FIG. 2", "Modo I: A diretto più effetto"),
+            ("FIG. 3", "Modo II: A effetto, B diretto"),
+        ],
+        "chi_lusata": [
+            {"artista": "Gary Moore",
+             "nota": "un CE-3 sulla pedaliera Boss del tour del 1983",
+             "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "bossinfoglobal",
+             "riga": "Il CE-3 l'ha costruito @bossinfoglobal dal 1982 al 1992."},
+        ],
+        # "da_ascoltare": OMESSO. Nessun disco col CE-3 a due fonti (vedi
+        # FATTI SCARTATI).
+        "aneddoto": (
+            "Gennaio 1983. Gary Moore è in tour e Tony Bacon lo intervista per "
+            "Music UK. Moore racconta che il chorus della sua eco a nastro "
+            "Roland non lo soddisfa, e allora si porta dietro un pedale Boss, "
+            "insieme a un flanger e a un ottavatore. Poi ammette che il flanger "
+            "lo accende una volta a sera e il chorus due. Quale chorus, "
+            "nell'intervista non lo dice. Guitar Player, raccontando la sua "
+            "pedaliera Boss di quell'anno, scrive CE-3, che era uscito da pochi "
+            "mesi. Torna, ma io non lo darei per certo."
+        ),
+        "avvertenza": "Con un amplificatore solo, Stereo Mode su I. Sul II la presa A dà soltanto la copia che ondeggia, e il chorus non si forma.",
+        "foto": {
+            "file": "assets/foto/ce3/principale.jpg",
+            "autore": "Skimel",
+            "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un CE-3 del 1984, fatto in Giappone. L'adesivo e la levetta sono una modifica",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/ce3/fianco.jpg",
+             "autore": "Skimel",
+             "licenza": "CC BY-SA 4.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 33%",
+             "didascalia": "Le 2 uscite sul fianco, B in alto e A sotto"},
+            {"file": "assets/foto/ce3/jc120.jpg",
+             "autore": "Skimel",
+             "licenza": "CC BY-SA 4.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 45%",
+             "nel_reel": False,
+             "didascalia": "Il pannello di un Roland JC-120, l'amplificatore da cui viene il circuito"},
+            {"file": "assets/foto/ce3/pannello.jpg",
+             "autore": "Skimel",
+             "licenza": "CC BY-SA 4.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 50%",
+             "didascalia": "I due modi scritti sul pannello. D è il diretto, E l'effetto"},
+        ],
+        "fonti": [
+            {"titolo": "«The Legend of the CE-1 and RE-201 Preamps» — BOSS",
+             "url": "https://articles.boss.info/the-legend-of-the-ce-1-and-re-201-preamps/", "data": "2026-11-13"},
+            {"titolo": "CE-3 Chorus, manuale d'uso — BOSS, 1987",
+             "url": "https://static.roland.com/assets/media/pdf/CE-3_OM.pdf", "data": "2026-11-13"},
+            {"titolo": "«1980 Boss CE-2 Chorus» — Crave Guitars",
+             "url": "https://www.craveguitars.co.uk/home/features/effects/feature-1980-boss-ce-2-chorus/", "data": "2026-11-13"},
+            {"titolo": "JC-120 e CE-1, Dave Hunter — Guitar Player, 2023",
+             "url": "https://www.guitarplayer.com/gear/pioneering-chorus-how-the-roland-jc-120-jazz-chorus-amp-and-boss-ce-1-chorus-ensemble-pedal-set-industry-standards", "data": "2026-11-13"},
+            {"titolo": "«Classic Gear: Boss CE-1», Dave Hunter — Guitar Player, 2021",
+             "url": "https://www.guitarplayer.com/gear/classic-gear-boss-ce-1-chorus-ensemble", "data": "2026-11-13"},
+            {"titolo": "Storia del CE-2, Chris Gill — Guitar World, 2025",
+             "url": "https://www.guitarworld.com/gear/guitar-pedals/boss-ce-2-chorus-pedal-history", "data": "2026-11-13"},
+            {"titolo": "«Boss Corporation» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Boss_Corporation", "data": "2026-11-13"},
+            {"titolo": "«A decade of shimmer» — Happy Mag, 2021",
+             "url": "https://happymag.tv/a-decade-of-shimmer-the-history-of-boss-chorus-pedals-from-1975-to-1985", "data": "2026-11-13"},
+            {"titolo": "«Boss CE-3 Chorus» — mirosol, 2014",
+             "url": "https://mirosol.kapsi.fi/2014/08/boss-ce-3-chorus/", "data": "2026-11-13"},
+            {"titolo": "«Gary Moore», Tony Bacon — Music UK, gennaio 1983",
+             "url": "https://www.muzines.co.uk/articles/gary-moore/7074", "data": "2026-11-13"},
+            {"titolo": "La pedaliera di Gary Moore, Rod Brakes — Guitar Player, 2021",
+             "url": "https://www.guitarplayer.com/gear/watch-gary-moore-in-1983-introducing-the-guitar-world-to-the-pedalboard-concept", "data": "2026-11-13"},
+            {"titolo": "«Gary Moore's Boss CE-3 Chorus» — Ground Guitar",
+             "url": "https://www.groundguitar.com/gary-moore-gear/boss-ce-3-chorus/", "data": "2026-11-13"},
+        ],
+        "hashtags": ["#bossce3", "#boss", "#effettichitarra", "#garymoore", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 090", "Il primo chorus a pedale nasce dentro un amplificatore"),
+            ("ROLAND · 1975", "Il Roland Jazz Chorus JC-120 ha 2 altoparlanti e il chorus in stereo."),
+            ("BOSS · 1976", "Boss stacca quel circuito dal JC-120 e lo chiude in un pedale, il CE-1."),
+            ("BOSS · 1979", "Il CE-2 è un pedale piccolo, e lo stereo resta fuori."),
+            ("BOSS · 1982", "Il Boss CE-3 riporta lo stereo nel pedale piccolo. Ha 2 uscite, A e B."),
+        ],
+        "reel_cta": "Mandalo all'amico col Jazz Chorus in sala prove",
+        "reel_audio": {
+            "file": "assets/audio/ce3/registrazione.mp3",
+            # registrazione.mp3 (13/11/2026, sessione), dall'originale di 60 s:
+            # 0-6,3 è la chitarra asciutta (correlazione L/R 0,9), il modo II
+            # parte a 6,5 (correlazione 0,2 e sotto), 22-27 è la coda che si
+            # spegne a -38/-45 dB, il modo I va da 27,4 a 52. Presi 6,7-22,3
+            # (modo II) e 27,3-52,5 (modo I), incrociati in 0,3 s, a -15 LUFS:
+            # 40,5 s, picco -1,6 dB, nessun silenzio sotto -40 dB. Il modo I
+            # mischiato in mono NON si cancella (mono -27 dB contro -26 in
+            # stereo, misurato): dal telefono il chorus si sente.
+            "inizio": 0,
+            "autore": "Skimel", "licenza": "CC BY-SA 4.0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Boss_CE-3_clean_sound_demo_in_stereo_(mode_II_and_mode_I).ogg",
+            "cosa": "un CE-3 vero, fatto in Giappone nel 1984 (la modifica che ha sopra è spenta), su una Yamaha Pacifica 112 con un amplificatore pulito simulato in Amplitube, in stereo: prima il modo II, poi il modo I",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 91
     # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
     # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
     # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
@@ -12062,7 +13441,7 @@ SCHEDE = [
     # Commons o Freesound: il reel usa la sigla.
     {
         "slug": "autotune",
-        "numero": 87,
+        "numero": 91,
         "serie": "GLI EFFETTI",
         "strumento": "Antares Auto-Tune",
         "anno": "1997",
@@ -12148,7 +13527,7 @@ SCHEDE = [
         ],
         "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 087", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("ELETTROFONI · N. 091", "La voce robot di Cher nasce da chi cercava il petrolio"),
             ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
             ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
             ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
@@ -12159,7 +13538,7 @@ SCHEDE = [
     },
     {
         "slug": "lowrey",
-        "numero": 88,
+        "numero": 92,
         "serie": "GLI ORGANI",
         "strumento": "Lowrey DSO",
         "anno": "1965",
@@ -12252,7 +13631,7 @@ SCHEDE = [
         ],
         "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 088", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ELETTROFONI · N. 092", "Quel clavicembalo dei Beatles è un organo da salotto"),
             ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
             ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
             ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
@@ -12263,7 +13642,7 @@ SCHEDE = [
     },
     {
         "slug": "wasp",
-        "numero": 89,
+        "numero": 93,
         "serie": "I SINTETIZZATORI",
         "strumento": "EDP Wasp",
         "anno": "1978",
@@ -12355,7 +13734,7 @@ SCHEDE = [
         ],
         "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 089", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("ELETTROFONI · N. 093", "Casale dei Devo: col sudore delle dita suona da solo"),
             ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
             ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
@@ -12366,7 +13745,7 @@ SCHEDE = [
     },
     {
         "slug": "elkarhapsody",
-        "numero": 90,
+        "numero": 94,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -12456,7 +13835,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 090", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 094", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -12467,7 +13846,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 91,
+        "numero": 95,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -12553,7 +13932,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 091", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 095", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -12564,7 +13943,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 92,
+        "numero": 96,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -12653,7 +14032,7 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 092", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 096", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
@@ -12664,7 +14043,7 @@ SCHEDE = [
     },
     {
         "slug": "pianet",
-        "numero": 93,
+        "numero": 97,
         "serie": "GLI ELETTROMECCANICI",
         "strumento": "Hohner Pianet",
         "anno": "1962",
@@ -12749,7 +14128,7 @@ SCHEDE = [
         ],
         "hashtags": ["#pianet", "#hohner", "#pianoelettrico", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 093", "«She's Not There» degli Zombies: un Pianet da casa"),
+            ("ELETTROFONI · N. 097", "«She's Not There» degli Zombies: un Pianet da casa"),
             ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
             ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
@@ -12758,7 +14137,7 @@ SCHEDE = [
         "reel_cta": "Mandalo a chi canta «She's Not There» in macchina",
         "verificata": True,
     },
-    # ---------------------------------------------------------------- 93
+    # ---------------------------------------------------------------- 97
     # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
     # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
     # Scheda «ans» — sintetizzatore ANS di Evgenij Murzin (URSS, prototipo 1958).
@@ -13074,996 +14453,6 @@ SCHEDE = [
     # - Michael Allen Harrison col VFX-SD: solo la foto di Commons.
 
 
-    # ---------------------------------------------------------------- 000
-    # Boss DS-1 Distortion. Scheda scritta il 13/11/2026 (rifornimento automatico,
-    # bozza di un ricercatore riletta dalla sessione). Un
-    # effetto: va nella serie «GLI EFFETTI» con Cry Baby e Big Muff.
-    #
-    # REGISTRAZIONE: https://commons.wikimedia.org/wiki/File:Boss_DS-1_extrait_audio.ogg
-    #   Pagina riletta dall'API il 13/11/2026. Descrizione: «Short audio clip
-    #   of the Boss DS-1 distortion pedal. Signal chain: Ibanez S series
-    #   Prestige with Dimarzio's pickups, a Line 6 Pocket Pod and a Behringer
-    #   Ultra DI». Data 01/03/2012. Autori: Taxiakataxi (video originale su
-    #   YouTube, «Boss DS-1 Distortion (test).webm», licenza YouTube CC BY) e
-    #   Skimel (taglio audio e conversione in Ogg; è lo stesso Skimel della
-    #   registrazione del Cry Baby e della foto del Big Muff). CC BY 3.0,
-    #   23,97 s, 267.853 byte. Categoria «BOSS DS-1 Distortion».
-    #   ATTENZIONE: il Pocket Pod è un simulatore di amplificatore, quindi
-    #   quello che si sente è DS-1 + amplificatore simulato, non DS-1 in un
-    #   amplificatore vero. «cosa» lo dice. Nella descrizione del video
-    #   l'autore scrive di aver provato le regolazioni del manuale («british
-    #   punk», «crunch»): possono esserci più suoni di fila.
-    #   !!! NON ASCOLTATA E NON MISURATA: dal container upload.wikimedia.org
-    #   ha risposto 429 sia sull'originale sia sul transcodificato .mp3 (tre
-    #   tentativi distanziati). Va scaricata dal runner (scarica-foto.yml) e
-    #   misurata (LUFS, silenzi, picco) e ASCOLTATA prima di mettere
-    #   verificata True: chi integra controlli anche che non suoni una
-    #   melodia riconoscibile.
-    #
-    # FONTI PER FATTO (tutte aperte il 13/11/2026)
-    # - 1978, primo distorsore Boss, dopo i primi compatti del 1977: Boss,
-    #   «All About the DS-1» (Jim Bybee: «The following year, the orange DS-1
-    #   Distortion joined the pioneering yellow, green, and red "traffic
-    #   light" pedals»); Wikipedia «Boss Corporation» («Introduced in 1978,
-    #   the DS-1 was Boss's first distortion pedal»); Guitar World «How Boss
-    #   revolutionized effects» (cronologia: 1977 OD-1, PH-1, SP-1; 1978
-    #   DS-1); Total Guitar/MusicRadar 2015 (cronologia).
-    # - colori diversi per tipo d'effetto (giallo, verde, rosso; il DS-1
-    #   arancio): Boss «All About»; Guitar World «How Boss» («the
-    #   colour-coding that identified each effect class»). Che l'OD-1 sia
-    #   giallo: Boss («yellow»... in fila con OD-1, PH-1, SP-1) e foto note;
-    #   in scheda detto solo «giallo l'OD-1» perché Boss elenca giallo, verde,
-    #   rosso nell'ordine OD-1, PH-1, SP-1. Se pare debole, togliere «giallo
-    #   l'OD-1».
-    # - ancora in catalogo: Boss («has remained in the lineup ever since»);
-    #   Wikipedia «Boss DS-1» («1978—present»); Guitar World «How Boss»
-    #   («still available as the current standard DS-1»).
-    # - più venduto: Boss «più di 1,5 milioni», «best-selling compact ever»
-    #   (dato di Boss, ATTRIBUITO in scheda); Wikipedia «Boss Corporation»
-    #   («The DS-1 is Boss's bestselling pedal»); Total Guitar/MusicRadar
-    #   2018 («the best-selling distortion pedal»). Il numero è UNA fonte,
-    #   per questo in scheda c'è «Boss dice».
-    # - vite d'argento del coperchio sostituita da una di plastica nel 1981:
-    #   Total Guitar/MusicRadar 2015 (cronologia: «1981 The silver screw [...]
-    #   is replaced by a plastic version»); Boss «All About» (il DS-1-4A ha
-    #   «a vintage silver screw for the battery compartment»). Nella foto
-    #   principale la vite è nera, di plastica: per questo «dopo il 1981».
-    # - progettista: non trovato. Boss scrive solo «BOSS engineers», e una
-    #   ricerca dedicata non ha dato nomi. Scritto così.
-    # - Boss nata nel 1973 a Osaka come MEG Electronics; Roland fondata da
-    #   Ikutaro Kakehashi l'anno prima; ingegneri in comune all'inizio:
-    #   Guitar World «How Boss» (cronologia e testo: «sharing engineers»);
-    #   Wikipedia «Boss Corporation» (fondata il 13/03/1973). Osaka: solo la
-    #   cronologia di Guitar World (Wikipedia dà la sede attuale,
-    #   Hamamatsu): in scheda NON c'è la città.
-    # - spostamento in Taiwan: Total Guitar/MusicRadar 2015 («1988 Production
-    #   of Boss compact pedals moves from Japan to Taiwan»); Wikipedia «Boss
-    #   Corporation» («circa 1990»). Non concordano: scritto in scheda.
-    # - circuito, transistor che alza + amplificatore operazionale con diodi
-    #   che tagliano («hard clipping»): Boss («combined [...] transistor and
-    #   op-amp—into a single hard-clipping design»); Wikipedia «Boss DS-1»
-    #   (buffer, stadio a transistor, stadio a op-amp con diodi 1N4148);
-    #   Wikipedia «Boss Corporation» («two hard-clipping diodes»).
-    # - Tone parente di quello del Big Muff, a metà scava intorno ai 500 Hz:
-    #   Total Guitar/MusicRadar 2018 («quite similar to that found on the
-    #   Electro-Harmonix Big Muff», «cuts at around 500Hz»); Wikipedia «Boss
-    #   DS-1» («Big Muff»-style, notch near 500 Hz); Boss («slight dip in the
-    #   lower midrange»).
-    # - primo chip Toshiba TA7136AP, cambiato nel 1994 perché fuori
-    #   produzione, dopo volume più basso e suono «fizzy»: Guitar World «DS-1
-    #   vs DS-2» (Alex Lynham: TA7136AP, «unity volume pitfalls of the
-    #   post-'94 unit»); Total Guitar/MusicRadar 2018 («revised in 1994 as
-    #   the Toshiba IC [...] was nearing the end of its life», ROHM, poi
-    #   Mitsubishi «'fizz'»); Wikipedia «Boss DS-1». Almeno 3 chip (Toshiba,
-    #   Rohm, Mitsubishi): Wikipedia e Total Guitar.
-    # - Mitsubishi M5223AL nel DS-1 di Taiwan del 2004: si LEGGE sul chip
-    #   nella foto extra «Circuit of a Boss DS-1.jpeg» (stesso pedale della
-    #   foto «Boss DS-1 On.jpg», dalla targhetta di numero di serie «March
-    #   2004», descrizione Commons di Roadside Guitars); Wikipedia «Boss
-    #   DS-1» (M5223AL dal 2000). Wikipedia «Boss Corporation» dice invece
-    #   NJM3404AL dal 2007: non lo scrivo.
-    # - Cobain e il DS-1 su «Bleach»: Guitar World, «The definitive Kurt
-    #   Cobain gear guide» (Chris Gill; Endino: «the Randall was in the shop
-    #   so they borrowed my amp, which was a Sixties Fender Twin [...] He was
-    #   using a little orange Boss DS-1»); Total Guitar/MusicRadar 2018
-    #   («Cobain was known for prolifically using the pedal around the period
-    #   of Bleach»); MusicRadar 2023 (Rob Laing, il Twin di Endino usato su
-    #   «Bleach»); Wikipedia «Boss DS-1» (DS-1 degli anni '80). Boss «All
-    #   About» riporta la stessa citazione di Guitar World: non conta come
-    #   fonte indipendente.
-    # - Univox che sembrano Mosrite: Guitar World (Endino); MusicRadar 2023
-    #   (Univox High Flyer «Endino hadn't seen since Cobain had one for
-    #   Bleach»).
-    # - il Twin è ancora di Endino e lo chiama «Bleach Twin»: Boss (che cita
-    #   Endino: «it's called 'The Bleach Twin'»); MusicRadar 2023 («It's still
-    #   with Endino, now at Soundhouse Studio»). Il soprannome «Bleach Twin»
-    #   sta solo nella citazione riportata da Boss: in scheda c'è solo che
-    #   il Twin ce l'ha ancora lui (Boss + MusicRadar 2023).
-    # - l'annata del Twin non torna: Endino a Guitar World dice «Sixties»
-    #   (Boss lo riporta come «'67»), MusicRadar 2023 riferisce che lo studio
-    #   di Endino ha corretto in Silverface (quindi non il Blackface del '67).
-    #   Scritto come dubbio.
-    # - «About a Girl» (1989) per «da ascoltare»: MusicRadar 2023 (Endino
-    #   regola il Twin per far suonare «About A Girl with a DS-1 for the
-    #   overdriven parts»; Cobain usa il Twin Silverface su quel pezzo);
-    #   Guitar World e Total Guitar per il DS-1 su tutto «Bleach».
-    # - asta del 2022, 75.000 dollari, «NIRWAHNA» scritto sopra, usato alla
-    #   Peel Session del 03/09/1991: Guitar World (Matt Parker, 16/11/2022);
-    #   MusicRadar (Rob Laing, 14/11/2022, tolta dall'elenco fonti per stare
-    #   nei 2200 caratteri della didascalia); Gearnews (indipendente da Future,
-    #   «sold for around $75,000», «NIRWAHNA»). Julien's Auctions, New York.
-    #   Guitar World e MusicRadar sono dello stesso editore (Future): la
-    #   seconda fonte indipendente è Gearnews.
-    # - Satriani usa il DS-1 davanti all'amplificatore, in studio e dal vivo:
-    #   Guitar Player (Darrin Fox, Satriani: «I also used [...] a Boss DS-1»
-    #   per «Surfing with the Alien»); Boss «All About» (lo porta in tour dopo
-    #   «Surfing with the Alien»); MusicRadar (Amit Sharma, «Joe Satriani's
-    #   career in gear»: DS-1 e Marshall 6100, tolta dall'elenco fonti per la
-    #   lunghezza della didascalia; url https://www.musicradar.com/news/joe-satrianis-career-in-gear-dont-worry-about-peavey-vs-marshall-worry-about-what-sets-you-free);
-    #   Total Guitar/MusicRadar 2015.
-    #
-    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
-    # - Satriani che non ha i soldi per portarsi in tour i Marshall d'epoca e
-    #   «mette il suono in una scatoletta»: solo Boss (che cita un video di
-    #   Music Gear Network che non ho aperto). Bello, fuori.
-    # - Cobain che porta il DS-1 a Sound City per «Nevermind» e lo considera
-    #   il cuore del suo suono: Guitar World; Ground Guitar dice che le
-    #   riviste lo citano senza fonte. Fuori.
-    # - Steve Vai, DS-1 pedale principale dal 1999 (il suo tecnico Thomas
-    #   Nordegg): solo Boss. Vai in generale: Boss + una riga di Total Guitar
-    #   2015. Non messo fra gli artisti.
-    # - Mike Stern «su tutti i miei dischi», George Lynch, Mark Speer
-    #   (Khruangbin), Frusciante su «Stadium Arcadium»: solo Boss (che cita
-    #   interviste sue o di altri).
-    # - Uffe Cederlund (Entombed), un DS-1 al centro su «Left Hand Path»:
-    #   solo Total Guitar.
-    # - un altro DS-1 di Cobain venduto a circa 9.000 dollari nel 2020:
-    #   visto solo nei risultati di ricerca (Blabbermouth, Guitar World), non
-    #   aperto.
-    # - DS-1 d'oro del 1998 per i 6 milioni di pedali Boss: Boss; Wikipedia
-    #   lo dice con «citation needed». Fuori.
-    # - DS-1-4A nero per i 40 anni: Boss dice 2018, Wikipedia 2017. Fuori.
-    # - le schede «CITIZEN 1HB» stampate sulla scheda del 2004 (chi l'ha
-    #   costruita?): nessuna fonte. Fuori, e la didascalia non ne parla.
-    # - guadagno di Dist (25 dB in Total Guitar, 35 dB per lo stadio a
-    #   transistor in Wikipedia): numeri diversi per stadi diversi, fuori.
-    #
-    # HANDLE INSTAGRAM
-    # - @bossinfoglobal: link nel piede di www.boss.info/global/ e di
-    #   articles.boss.info (letti il 13/11/2026). Verificato. Va in
-    #   menzioni_extra (il DS-1 è ancora a listino).
-    # - @joesatriani: link sulla home di www.satriani.com (letta il
-    #   13/11/2026). Verificato. Il proprietario lo segue PRIMA (regola 3).
-    # - Nirvana: nirvana.com risponde 403 dal container, non verificato:
-    #   niente tag.
-    #
-    # FOTO (thumbnail scaricati dal container e guardati il 13/11/2026)
-    # principale: https://commons.wikimedia.org/wiki/File:Boss-DS-1.jpg
-    #   Matt Eason, 31/05/2006, CC BY 2.5, 1321x1191. Thumbnail 960:
-    #   https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Boss-DS-1.jpg/960px-Boss-DS-1.jpg
-    #   (1280: .../1280px-Boss-DS-1.jpg). Un DS-1 usato visto di tre quarti,
-    #   scontornato su bianco: "ritaglio": True. Si leggono Distortion DS-1,
-    #   BOSS sulla gomma nera, OUTPUT, INPUT, TONE, DIST e mezzo LEVEL; vernice
-    #   scrostata sugli spigoli; in basso a sinistra la vite del coperchio,
-    #   nera, di plastica; a destra la presa jack.
-    # extra 1: https://commons.wikimedia.org/wiki/File:Boss_DS-1_On.jpg
-    #   Roadside Guitars, 21/01/2008, CC BY-SA 2.0, 2072x2617. Thumbnail 960:
-    #   https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Boss_DS-1_On.jpg/960px-Boss_DS-1_On.jpg
-    #   Descrizione: «Boss DS-1 made in Taiwan in March 2004, turned on». Dall'alto
-    #   su un tavolo di legno, verticale: in alto le 3 manopole con TONE, LEVEL,
-    #   DIST e la lucina CHECK accesa (rossa), poi OUTPUT/INPUT, Distortion
-    #   DS-1 e la gomma BOSS; cavo a destra. Per la banda: "posizione"
-    #   «center 20%» per tenere manopole e lucina.
-    # extra 2: https://commons.wikimedia.org/wiki/File:Circuit_of_a_Boss_DS-1.jpeg
-    #   Roadside Guitars, 21/01/2008, CC BY-SA 2.0, 3264x2448. Thumbnail 960:
-    #   https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Circuit_of_a_Boss_DS-1.jpeg/960px-Circuit_of_a_Boss_DS-1.jpeg
-    #   La scheda del DS-1 di Taiwan, fuori dalla scatola, orizzontale:
-    #   resistenze in fila a sinistra, «DS-1» stampato in verticale, al centro
-    #   a destra il chip nero con M5223AL leggibile, fili colorati a destra.
-    #   L'arancio della scatola non si vede: è la foto dove la macchina non
-    #   si riconosce dalla forma, ma la scritta DS-1 e il chip sì, e nessun
-    #   altro marchio compare. "posizione" «60% 60%» per tenere il chip.
-    #   "nel_reel": False (nel reel senza didascalia sembra una scheda
-    #   qualsiasi).
-    # Scartate:
-    # - «Boss DS-1 + DS-1-4A.jpg» (Kuriosatempel, CC BY-SA 4.0): bella, ma la
-    #   descrizione dice «Photo: Johan Rosén. Courtesy of bosspedals_sweden on
-    #   instagram», quindi chi carica non sembra l'autore e non c'è un
-    #   permesso registrato. Licenza dubbia, fuori.
-    # - «Keeley DS-1 Ultra Mod.jpg» (wetwebwork, CC BY 2.0): è un DS-1
-    #   modificato da Keeley, con un deviatore in più. Fuori.
-    # - «Inside of a Boss DS-1.jpg», «Boss DS-1 Back Plate.jpg», «DS-1
-    #   Circuit (back).jpg» (Roadside Guitars): buone di riserva; la targhetta
-    #   sotto dice MADE IN TAIWAN ma in banda non si legge.
-    # - «BOSS guitar pedals.jpg», «Noise makers.jpg», «Iracruzeffect.JPG»:
-    #   altri pedali in vista, il DS-1 non è la cosa più riconoscibile.
-    {
-        "slug": "ds1",
-        "numero": 0,
-        "serie": "GLI EFFETTI",
-        "strumento": "Boss DS-1 Distortion",
-        "anno": "1978",
-        "luogo": "Giappone",
-        "costruttore": "Boss",
-        "specifiche": [
-            ("USCITA", "1978"),
-            ("MANOPOLE", "3"),
-            ("DIODI", "2"),
-            ("PRIMO CHIP", "TA7136AP"),
-        ],
-        "gancio": "Quello di Kurt Cobain, con NIRWAHNA scritto sopra a pennarello, nel 2022 va all'asta per 75.000 dollari",
-        "sottotitolo": "Il primo distorsore di Boss, una scatola arancio con 3 manopole, a listino dal 1978 senza interruzioni.",
-        "la_macchina": (
-            "Le manopole sono 3, Tone, Level e Dist, poi una lucina che dice CHECK e sotto "
-            "una gomma nera col marchio, che è l'interruttore da pestare. Esce "
-            "nel 1978 ed è ancora in catalogo. Boss dice di averne venduti più "
-            "di 1,5 milioni, più di qualunque altro suo pedale compatto. Quello "
-            "della foto ha la vite del coperchio della pila di plastica nera, "
-            "quindi è nato dopo il 1981, quando sparisce quella d'argento. A me "
-            "il DS-1 è sempre sembrato il pedale che si compra per primo e si "
-            "rivende per ultimo. Non suona come un amplificatore spinto e non "
-            "ci prova nemmeno."
-        ),
-        "inventore_nome": "Boss, la ditta dei pedali di Roland",
-        "inventore": (
-            "Chi l'abbia progettato non sono riuscito a scoprirlo, Boss parla "
-            "solo dei suoi ingegneri. La ditta nasce nel 1973 come MEG "
-            "Electronics, accanto alla Roland che Ikutaro Kakehashi aveva "
-            "fondato l'anno prima, e all'inizio le due si dividono perfino gli "
-            "ingegneri. Nel 1977 escono i primi pedali compatti, tutti della "
-            "stessa forma e ognuno col colore del suo effetto, giallo l'OD-1. "
-            "L'anno dopo arriva il DS-1, arancio. Poi la produzione passa dal "
-            "Giappone a Taiwan, e qui le fonti non concordano. Total Guitar "
-            "scrive 1988, Wikipedia verso il 1990."
-        ),
-        "come_funziona": (
-            "Un transistor alza il segnale della chitarra, un amplificatore "
-            "integrato lo alza ancora e 2 diodi tagliano le punte dell'onda, "
-            "che esce quasi quadrata. Dist decide quanto forte si arriva al "
-            "taglio. Tone è parente di quello del Big Muff e a metà corsa scava "
-            "i medi intorno ai 500 hertz. Il chip è cambiato più volte. Il primo "
-            "è un Toshiba TA7136AP, che nel 1994 va fuori produzione, e i DS-1 "
-            "venuti dopo escono più piano e più frizzanti sugli acuti. Nella "
-            "foto della scheda, un DS-1 fatto a Taiwan nel 2004, il chip è un "
-            "Mitsubishi M5223AL. Provate Tone tutto a sinistra, poi alzatelo "
-            "piano finché la chitarra non punge."
-        ),
-        "richiami": [
-            ("FIG. 1", "Tone, Level, Dist"),
-            ("FIG. 2", "2 diodi che tagliano l'onda"),
-            ("FIG. 3", "Medi scavati a 500 Hz"),
-        ],
-        "chi_lusata": [
-            {"artista": "Kurt Cobain (Nirvana)",
-             "nota": "il suo suono su «Bleach» (1989), nel Fender Twin di Jack Endino",
-             "ig": None},
-            {"artista": "Joe Satriani",
-             "nota": "un DS-1 davanti all'amplificatore, in studio e in tour",
-             "ig": "joesatriani"},
-        ],
-        "menzioni_extra": [
-            {"ig": "bossinfoglobal",
-             "riga": "Il DS-1 è ancora a listino da @bossinfoglobal."},
-        ],
-        "da_ascoltare": {"brano": "About a Girl", "artista": "Nirvana", "anno": "1989",
-                         "cosa": "Le parti sporche. Per rifarle Jack Endino attacca un DS-1 allo stesso Fender Twin che Cobain usa per registrarla."},
-        "aneddoto": (
-            "Quando i Nirvana registrano «Bleach» con Jack Endino, a Seattle, "
-            "l'amplificatore di Kurt Cobain, un Randall, è dal riparatore. "
-            "Endino gli presta il suo Fender Twin. Davanti Cobain mette un DS-1 "
-            "arancio, e suona chitarre Univox che sembrano Mosrite. "
-            "Sull'annata del Twin le versioni non tornano. Endino a Guitar "
-            "World dice anni '60, poi il suo studio precisa che è un "
-            "Silverface. Quel Twin, comunque, ce l'ha ancora lui."
-        ),
-        "avvertenza": "Due DS-1 possono suonare diversi. Il chip dentro è cambiato almeno 3 volte, quindi prima di comprarne uno usato chiedete l'anno.",
-        "foto": {
-            "file": "assets/foto/ds1/principale.jpg",
-            "ritaglio": True,
-            "autore": "Matt Eason",
-            "licenza": "CC BY 2.5",
-            "fonte": "Wikimedia Commons",
-            "didascalia": "Un DS-1 usato, con la vernice scrostata sugli spigoli",
-        },
-        "foto_extra": [
-            {"file": "assets/foto/ds1/acceso.jpg",
-             "autore": "Roadside Guitars",
-             "licenza": "CC BY-SA 2.0",
-             "fonte": "Wikimedia Commons",
-             "posizione": "center 20%",
-             "didascalia": "Un DS-1 fatto a Taiwan nel 2004. Le prese sono al contrario, l'uscita a sinistra"},
-            {"file": "assets/foto/ds1/scheda.jpg",
-             "autore": "Roadside Guitars",
-             "licenza": "CC BY-SA 2.0",
-             "fonte": "Wikimedia Commons",
-             "posizione": "60% 60%",
-             "nel_reel": False,
-             "didascalia": "La scheda dello stesso pedale. Il chip nero è il Mitsubishi M5223AL"},
-        ],
-        "fonti": [
-            {"titolo": "«All About the DS-1», Jim Bybee — BOSS",
-             "url": "https://articles.boss.info/all-about-the-ds-1-the-benchmark-boss-distortion/", "data": "2026-11-13"},
-            {"titolo": "«Boss DS-1» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Boss_DS-1", "data": "2026-11-13"},
-            {"titolo": "«Boss Corporation» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Boss_Corporation", "data": "2026-11-13"},
-            {"titolo": "«How BOSS revolutionized effects» — Guitar World",
-             "url": "https://www.guitarworld.com/feature/how-boss-revolutionized-effects", "data": "2026-11-13"},
-            {"titolo": "«In praise of: Boss DS-1» — Total Guitar, 2015",
-             "url": "https://www.musicradar.com/news/guitars/in-praise-of-boss-ds-1-distortion-620822", "data": "2026-11-13"},
-            {"titolo": "«The FX files: Boss DS-1» — Total Guitar, 2018",
-             "url": "https://www.musicradar.com/how-to/the-fx-files-boss-ds-1", "data": "2026-11-13"},
-            {"titolo": "«Boss DS-1 vs Boss DS-2», Alex Lynham — Guitar World",
-             "url": "https://www.guitarworld.com/features/boss-ds-1-vs-boss-ds-2", "data": "2026-11-13"},
-            {"titolo": "Kurt Cobain gear guide, Chris Gill — Guitar World",
-             "url": "https://www.guitarworld.com/features/the-definitive-kurt-cobain-gear-guide", "data": "2026-11-13"},
-            {"titolo": "Il Twin di «Bleach», Rob Laing — MusicRadar, 2023",
-             "url": "https://www.musicradar.com/news/this-is-one-of-the-best-amps-ive-ever-played-new-video-investigates-the-fender-twin-reverb-kurt-cobain-used-on-nirvanas-bleach", "data": "2026-11-13"},
-            {"titolo": "Il DS-1 di Cobain all'asta, Matt Parker — Guitar World, 2022",
-             "url": "https://www.guitarworld.com/news/kurt-cobain-boss-ds-1-auction", "data": "2026-11-13"},
-            {"titolo": "Il DS-1 di Cobain all'asta — Gearnews, 2022",
-             "url": "https://www.gearnews.com/?p=140458", "data": "2026-11-13"},
-            {"titolo": "Satriani e «Surfing with the Alien», Darrin Fox — Guitar Player",
-             "url": "https://www.guitarplayer.com/players/joe-satriani-reflects-on-20-years-of-surfing-with-the-alien", "data": "2026-11-13"},
-        ],
-        "hashtags": ["#bossds1", "#boss", "#effettichitarra", "#nirvana", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 000", "Il Boss DS-1 di Kurt Cobain va all'asta per 75.000 dollari"),
-            ("BOSS · 1978", "Il Boss DS-1 è il primo distorsore di Boss. Arancio, 3 manopole."),
-            ("2 DIODI", "Nel DS-1 ci sono 2 diodi che tagliano le punte dell'onda della chitarra."),
-            ("BLEACH · 1989", "Per «Bleach» Kurt Cobain suona il DS-1 nel Fender Twin di Jack Endino."),
-            ("IL TWIN", "Il Fender Twin di «Bleach» oggi ce l'ha ancora Jack Endino."),
-        ],
-        "reel_cta": "Mandalo a chi ha ancora «Bleach» in cassetta",
-        "reel_audio": {
-            "file": "assets/audio/ds1/registrazione.mp3", "inizio": 0,
-            "autore": "Taxiakataxi (video), Skimel (taglio audio)", "licenza": "CC BY 3.0",
-            "fonte": "Wikimedia Commons",
-            "url": "https://commons.wikimedia.org/wiki/File:Boss_DS-1_extrait_audio.ogg",
-            "cosa": "un DS-1 vero su una Ibanez S Prestige, registrato attraverso un Line 6 Pocket Pod (un simulatore di amplificatore) e una DI Behringer",
-        },
-        "verificata": True,
-    },
-    # ---------------------------------------------------------------- 000
-    # Arturia MicroFreak. Scheda scritta il 13/11/2026 (rifornimento
-    # automatico, bozza di un ricercatore riletta dalla sessione).
-    # Posteriore al 1988 (quota 1 su 4).
-    # TAG: niente @arturia_official. L'aneddoto racconta il comunicato che
-    #   Arturia ha dovuto correggere dopo la risposta di Gillet: anche se non
-    #   è una battuta, taggare chi è dalla parte sbagliata della storia è la
-    #   cosa che la regola 3 vieta.
-    # Fonti tutte aperte il 13/11/2026.
-    #
-    # REGISTRAZIONE: https://commons.wikimedia.org/wiki/File:Microfreak_Filter_Sweeps.ogg
-    #   Schminnte, «Own work», 13/11/2022, CC BY-SA 4.0, Ogg Vorbis 161 kbps,
-    #   19,88 s. Didascalia: «Filter sweeps on the Arturia MicroFreak's with
-    #   varying amounts of resonance, including self-oscillation». Usata nelle
-    #   voci Wikipedia EN, ES, FR del MicroFreak. Che sia la macchina vera: lo
-    #   stesso utente ha caricato registrazioni sue di altri synth piccoli
-    #   (Neutron_paraphonic_behaviour.ogg, 18/11/2022; Monotron_Duo e
-    #   Monotron_Delay, 2023), sempre «own work», ma NESSUNA foto del suo
-    #   MicroFreak: la prova è più debole che per il Jupiter-4. Nota tenuta,
-    #   filtro che si apre e si chiude: nessuna melodia di nessuno.
-    #   MISURATA (ffmpeg, trascodifica mp3 di Commons): suono da 0,35 a 17,70
-    #   s, poi 2,2 s di silenzio sotto -45 dB; -13,9 LUFS integrati, LRA 7,8,
-    #   picco -2,1 dB. Spettrogramma: 5 aperture del filtro, la 3a-4a con la
-    #   risonanza che fischia (sopra 5 kHz). USABILI 17,3 s: per suono.mp4
-    #   (15-30 s) bastano, per un reel2 da 20-25 s NO senza ripetere; da
-    #   tagliare a 17,7 s, non lasciare la coda muta.
-    #   ALTERNATIVE su Freesound (pagine lette; i file NON ascoltati: dal
-    #   container freesound.org risponde 403):
-    #   - «GatesOfWasteland-Drone.wav», Dogma_Reloaded, CC0, 2:04, 16/02/2021,
-    #     https://freesound.org/s/558835/ . «Another drone sound i created on
-    #     the microfreak. I used the SuperWave Oscillator and Modulated the
-    #     Filter Cutoff», registrato in Logic via mixer Yamaha e UR22. Più
-    #     lunga, un drone scuro: è la macchina vera ma non dice «tastiera».
-    #   - «Synth sequence», P27music, CC0, 41,7 s, 28/05/2020, mp3 320k,
-    #     https://freesound.org/s/520138/ . «Synthesizer sequencer, which I
-    #     made with Arturia Microfreak». La più musicale sulla carta; va
-    #     ascoltata (che non sia una melodia nota, che non ci siano effetti).
-    #   - scartate: «Microfreak seq arp 8» (9,6 s, utente cancellato), la
-    #     jam di AmaZeuSamples (c'è anche Animoog), le decine di effetti di
-    #     FunnyVoices («edited in Audacity», da videogioco), jocaMarino
-    #     (fatte in Ableton «in combination with» il MicroFreak), SwarmDrone
-    #     (riverbero Zoom MS-70CDR).
-    #
-    # FONTI PER FATTO (aperte il 13/11/2026)
-    # - annunciato al NAMM, gennaio 2019 (primo giorno, 24/01): Synthtopia
-    #   24/01/2019; Gearnews 25/01/2019; CDM 25/01/2019; Sonicstate
-    #   26/01/2019 («announced on the first day of NAMM 2019»); Arturia «About
-    #   us» («Introduced at NAMM 2019»).
-    # - 299 euro al lancio (349 dollari): Gearnews (299 €); CDM («$349 (299
-    #   EUR)»); Synthtopia e SOS (349 $). Prezzo di lancio, non di oggi.
-    # - 25 tasti piatti su circuito stampato, senza parti mobili, capacitivi:
-    #   Synthtopia («25-key capacitive keybed»); Arturia overview («It's a
-    #   PCB. Super-flat, with no moving parts»); SOS giugno 2019. Si vede
-    #   nella foto: tasti bianchi con un motivo stampato.
-    # - aftertouch polifonico (la pressione nota per nota): Synthtopia,
-    #   Gearnews, CDM, SOS, Arturia.
-    # - tastiere piatte alla Buchla: SOS («Buchla have long favoured them»);
-    #   CDM («flat-panel metal touch keyboard (Buchla style)»).
-    # - SOS: il recensore ci mette molto a smettere di suonare note per
-    #   sbaglio («took me ages to stop firing off notes accidentally»), poi
-    #   lo trova più controllabile della sua tastiera madre. Citazione di
-    #   una recensione, scritta come tale.
-    # - filtro analogico state-variable 12 dB/ottava, passa-basso, -banda,
-    #   -alto: Synthtopia, SOS, Arturia overview. Ispirato al SEM di
-    #   Oberheim: Arturia About us («inspired by the Oberheim SEM»); Arturia
-    #   overview («Inspired by the trailblazing 12-dB SEM filter»); CDM
-    #   («the Oberheim SEM»); SOS e Gearnews («SEM-style»).
-    # - parafonico a 4 voci (con Paraphonic acceso 4 VCA digitali, un solo
-    #   filtro): SOS; Synthtopia («up to 4 voices», un filtro); Gearnews;
-    #   Wikipedia. Il tasto «Paraphonic» si legge nella foto.
-    # - matrice 5 sorgenti x 7 destinazioni, 3 assegnabili: Synthtopia, SOS
-    #   (pag. 2), Arturia overview. Nella foto (crop 3840 px) si leggono a
-    #   sinistra CycEnv, Env, LFO, Press, Key/Arp e in alto Pitch, Wave,
-    #   Timbre, Cutoff, Assign 1-3.
-    # - le 4 manopole arancio dell'oscillatore digitale (Type, Wave, Timbre,
-    #   Shape): si leggono nella foto; Arturia overview.
-    # - sequencer 64 passi, 2 sequenze per suono: Synthtopia, SOS, Arturia.
-    #   Spice e Dice cambiano a caso lunghezze, forza, pressione delle note:
-    #   SOS («randomises gate lengths, velocities, pressures, envelope
-    #   times»); Arturia («Gate randomizers»); CDM («spice» e «dice»).
-    # - 7 motori da Plaits di Mutable Instruments: SOS («implementing seven
-    #   of the synth models from Mutable Instruments' Plaits»); Wikipedia
-    #   (7: Virtual Analogue, Waveshaper, FM a 2 operatori, Formant, Chords,
-    #   Speech, Modal); Arturia overview («7 from Mutable Instruments»).
-    #   ATTENZIONE: Gearnews e Synthtopia al lancio contano male (Gearnews
-    #   elenca 11 «Plaits» compresi Superwave e Karplus-Strong che sono di
-    #   Arturia). Si scrive 7.
-    # - quanti motori in tutto: al lancio 11 per Synthtopia, 12 per SOS; dopo
-    #   gli aggiornamenti 22 per Wikipedia (firmware 5.0), 21 per Arturia.
-    #   Le fonti non concordano: scritto «11 o 12» e «più di 20».
-    # - aggiornamenti: vocoder (2020), 3 motori di Noise Engineering (v3,
-    #   2021), campioni e grani (v5, 2023): Wikipedia; MusicRadar 2020 e
-    #   2021; Engadget 2023; Arturia overview. In scheda solo «vocoder e
-    #   campioni».
-    # - il codice di Plaits è aperto, licenza MIT: il sorgente stesso
-    #   (github.com/pichenettes/eurorack, plaits/dsp/voice.cc, «Copyright
-    #   2016 Emilie Gillet», testo MIT); CDM («available open source under an
-    #   MIT license»); Gillet citata da Sonicstate («anybody is free to use
-    #   it, as long as they credit me somewhere»).
-    # - Plaits è un modulo Eurorack: SOS («Plaits Macro Oscillator module»,
-    #   «presuming you already have a Eurorack system»); Gearnews; CDM.
-    # - Arturia, comunicato del NAMM: «this first collaboration between
-    #   Arturia and acclaimed modular synth pioneers Mutable Instruments»:
-    #   Sonicstate (che dice «since changed»); CDM («a bit overzealous», «it's
-    #   not a collaboration»); Gearnews («Talk of a collaboration was
-    #   overstated»).
-    # - la risposta di Émilie Gillet sul forum di Mutable («I provided
-    #   exactly 0 hour of work and 0 original line of code»; a maggio
-    #   l'invitano nella sede di Arturia e le mostrano i modellini del
-    #   MicroFreak; la settimana prima le mandano la foto di quello finito;
-    #   Arturia propone «Oscillator code from Mutable Instruments», la sua
-    #   forma preferita): Sonicstate 26/01/2019 (Edd Butterworth); Matrixsynth
-    #   24/01/2019, Update 2 (stesse frasi). Il forum originale
-    #   (forum.mutable-instruments.net) dal container non si risolve: le due
-    #   riviste lo riportano parola per parola.
-    # - Arturia corregge il comunicato: Sonicstate («since changed»); CDM;
-    #   Gearnews («Arturia acknowledged it only used the Plaits algorithms»).
-    # - Arturia fondata a Grenoble nel 1999 da Frédéric Brun e Gilles
-    #   Pommereuil, conosciuti all'INPG: Arturia About us; Wikipedia
-    #   «Arturia». Modular V nel 2003 con Robert Moog: idem. Origin 2009,
-    #   primo synth hardware: idem (+ SOS recensione Origin, citata da
-    #   Wikipedia). MiniBrute 2012: idem.
-    # - «Grain de folie» stampato sul pannello accanto al display: si legge
-    #   nella foto (crop 3840 px); è lo slogan francese di Arturia per il
-    #   MicroFreak («Un grain de folie», arturia.com/fr). Traduzione mia.
-    # - Trentemøller, «A Summer's Empty Room» (album «Memoria», In My Room,
-    #   11/02/2022): il MicroFreak è il synth principale del pezzo, note
-    #   semplici fatte nel suo seminterrato e passate in un pedale di una
-    #   ditta norvegese. Fonti: Dummy 29/03/2022 (Billy Ward, «The 10 best
-    #   pieces of gear used on Memoria», n. 9 «Arturia Microfreak»: «the main
-    #   sound on A Summer's Empty Room»); The Ransom Note, «Track by Track:
-    #   Trentemøller – Memoria» (Trentemøller in prima persona: «I came up
-    #   with these simple synth tones on my beloved Arturia synth Micro
-    #   Freak»). Data dell'album: Juno Daily 14/09/2021 (annuncio, «February
-    #   11, 2022 via In My Room»), The Sound of Vinyl. Arturia «Stories»
-    #   conferma che lo usa, senza dire i pezzi.
-    #
-    # FATTI SCARTATI (una fonte sola, o fonti che si copiano)
-    # - progettato all'inizio da Glen Darcey, poi Sébastien Rochard; sviluppo
-    #   dal 2016, 2 anni e mezzo; doveva costare 200 euro ed era nato come
-    #   «un MicroBrute più piccolo»: solo Attack Magazine 21/04/2021 (Adam
-    #   Douglas, intervista a Rochard). MMR conferma Darcey in Arturia, non
-    #   il MicroFreak. Peccato, era un bell'«inventore».
-    # - ispirazione dal Buchla Music Easel; filtro SEM preferito allo
-    #   Steiner-Parker perché «ha troppo carattere»: solo Attack (Rochard).
-    #   Il legame con Buchla resta, dalle tastiere (SOS, CDM).
-    # - Frédéric Brun che dubitava, «una scommessa»: solo Musician's Friend
-    #   (Baptiste Le Goff), visto in un estratto di ricerca.
-    # - il logo Mutable sulla scatola: solo una risposta di Gillet su
-    #   Reddit riportata da Matrixsynth.
-    # - Panda Bear, «Reset» (2022): MicroFreak solo nei crediti Discogs
-    #   ripresi da Wikipedia. Una fonte.
-    # - Jean-Michel Jarre, David Guetta, Moby, Jack Garratt, Fennesz...: solo
-    #   Equipboard (video dove si vede la macchina), nessun disco.
-    # - Legowelt «Elf Synthesis Microfreak», Renmei «Microfreak»: solo
-    #   Bandcamp degli autori.
-    # - i voti 9/10 di MusicRadar e MusicTech, «uno dei synth più
-    #   convenienti»: è recensione, la nota di CLAUDE.md dice di stare
-    #   lontani dal tono da recensione. Fuori.
-    # - MiniFreak (2022, 6 voci): Wikipedia e Arturia, ma non serve.
-    #
-    # HANDLE INSTAGRAM
-    # - @arturia_official: il link è nel sito ufficiale (curl su
-    #   https://www.arturia.com/, 2 link a https://www.instagram.com/arturia_official,
-    #   13/11/2026). DUBBIO: l'aneddoto racconta il comunicato sbagliato di
-    #   Arturia. Non è una battuta e finisce con la correzione, ma la regola 3
-    #   dice di non taggare il bersaglio: decidere se taggare. Il gancio e la
-    #   prima battuta non parlano della polemica apposta.
-    # - @trentemoeller: link Instagram in trentemoller.com e
-    #   anderstrentemoller.com (curl, 13/11/2026). Attenzione alla grafia,
-    #   «oe», non «trentemoller».
-    # - Mutable Instruments / Émilie Gillet: nessun tag (Mutable ha chiuso,
-    #   e non c'entra col prodotto per sua stessa dichiarazione).
-    # - Il proprietario deve seguire @arturia_official e @trentemoeller
-    #   prima dell'uscita (regola 3, da_seguire.py).
-    #
-    # FOTO (thumbnail scaricati e guardati il 13/11/2026)
-    # principale: https://commons.wikimedia.org/wiki/File:MicroFreak.jpg
-    #   Leacsstmusic, «Own work», CC BY-SA 4.0, 4240x2832, scattata il
-    #   27/02/2019 (Sony A7S II, Lightroom), caricata da fr.wikipedia.
-    #   thumburl 1280: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/MicroFreak.jpg/1280px-MicroFreak.jpg
-    #   (dal container passava solo thumb.wikimedia.org, stesso percorso).
-    #   Il MicroFreak intero di tre quarti, da davanti a sinistra, su fondo
-    #   grigio chiaro senza niente intorno (col multiply diventa crema), il
-    #   cavo di alimentazione che esce in alto a destra. Si vedono i 25 tasti
-    #   piatti bianchi col motivo stampato, a destra «MICRO FREAK ALGORITHMIC
-    #   SYNTHESIZER» stampato sull'ultimo tasto, la fascia illustrata in
-    #   bianco e nero con «ARTURIA», le 4 manopole arancio dell'oscillatore,
-    #   in alto a sinistra la griglia della matrice, il display, e
-    #   «Grain de folie» accanto (leggibile solo ingrandito). Foto da studio,
-    #   pulita, quasi da catalogo. DUBBIO: utente senza pagina, una foto
-    #   sola, scattata prima dell'uscita nei negozi: potrebbe essere di
-    #   qualcuno vicino ad Arturia. È su Commons dal 2019, in 6 Wikipedia,
-    #   nessun avviso di copyright.
-    # foto_extra: NESSUNA. Su Commons il MicroFreak compare solo in un'altra
-    #   foto, «Synthesizers top down.jpg» (Leo Ronert, CC BY-SA 4.0,
-    #   1600x888): un MicroFreak Vocoder bianco piccolo in alto, sotto un
-    #   MatrixBrute e un PolyBrute che prendono tutta la scena, più due
-    #   lanterne di carta. Nella banda l'occhio andrebbe sul MatrixBrute:
-    #   scartata. Le tavole 2 e 3 useranno i RITAGLI della principale (la
-    #   tastiera, le manopole arancio).
-    #
-    # DA FARE PRIMA DI ENTRARE IN CODA: timbro in suoni.VOCE_SCHEDA (slug
-    #   «microfreak»), scarico foto e registrazione (scarica-foto.yml),
-    #   numero e kick «N. 0XX» da riordina_coda.py, tavole e reel guardati.
-    {
-        "slug": "microfreak",
-        "numero": 0,
-        "serie": "I SINTETIZZATORI",
-        "strumento": "Arturia MicroFreak",
-        "anno": "2019",
-        "luogo": "Grenoble, Francia",
-        "costruttore": "Arturia",
-        "specifiche": [
-            ("USCITA", "2019"),
-            ("TASTI", "25, piatti"),
-            ("VOCI", "4 parafoniche"),
-            ("FILTRO", "analogico, 12 dB"),
-        ],
-        "gancio": "7 dei suoi suoni vengono da un modulo Eurorack, e il codice di quel modulo lo può copiare chiunque",
-        "sottotitolo": "Un synth piccolo, con un piede nel digitale e uno nell'analogico.",
-        "la_macchina": (
-            "I tasti sono 25 e non si abbassano. Sono disegnati su un circuito "
-            "stampato, bianchi con un motivo a quadretti, e sentono la pressione "
-            "di ogni dito, nota per nota. Il recensore di Sound On Sound scrive "
-            "che ci ha messo parecchio a smettere di suonare note per sbaglio. "
-            "Le 4 manopole arancio sono l'oscillatore, quelle nere il filtro e "
-            "gli inviluppi, e vicino al display c'è stampato «Grain de folie», un "
-            "pizzico di follia. Arturia lo presenta al NAMM nel gennaio 2019, a "
-            "299 euro. Secondo me è la macchina più strana che una ditta grande "
-            "abbia venduto a quel prezzo."
-        ),
-        "inventore_nome": "Arturia, Grenoble",
-        "inventore": (
-            "Arturia nasce a Grenoble nel 1999. La fondano Frédéric Brun e "
-            "Gilles Pommereuil, che si erano conosciuti al politecnico della "
-            "città, e all'inizio fa synth che vivono nel computer. Nel 2003 rifà "
-            "in software il modulare di Moog insieme a Robert Moog in persona. Il "
-            "primo synth in una scatola, l'Origin, arriva nel 2009, e nel 2012 il "
-            "MiniBrute, piccolo e tutto analogico. Il MicroFreak arriva 7 anni "
-            "dopo. Le tastiere piatte invece non le inventa Arturia. Le usava già "
-            "Buchla, e chi lo recensisce nel 2019 lo nota subito."
-        ),
-        "come_funziona": (
-            "Si parte dall'oscillatore digitale. La prima manopola arancio "
-            "sceglie il motore, cioè il modo di fare il suono, e le altre 3 lo "
-            "piegano. Quanti siano i motori non lo conta nessuno allo stesso "
-            "modo. Al lancio 11 o 12, dopo gli aggiornamenti più di 20, compresi "
-            "un vocoder e i campioni. Poi il suono entra in un filtro analogico "
-            "da 12 dB, passa-basso, passa-banda o passa-alto, ispirato a quello "
-            "dell'Oberheim SEM. In alto c'è la matrice, 5 sorgenti per 7 "
-            "destinazioni. Con Paraphonic acceso suona 4 note, ma il filtro "
-            "resta uno solo. Provate Spice e Dice sul sequencer, cambiano a caso "
-            "la lunghezza delle note."
-        ),
-        "richiami": [
-            ("FIG. 1", "25 tasti piatti, pressione per nota"),
-            ("FIG. 2", "Oscillatore digitale, filtro analogico"),
-            ("FIG. 3", "Matrice da 5 sorgenti per 7"),
-        ],
-        "chi_lusata": [
-            {"artista": "Trentemøller",
-             "nota": "il suono principale di «A Summer's Empty Room» (2022)",
-             "ig": "trentemoeller"},
-        ],
-        "menzioni_extra": [],
-        "da_ascoltare": {"brano": "A Summer's Empty Room", "artista": "Trentemøller", "anno": "2022",
-                         "cosa": "Le note semplici che reggono il pezzo sono del MicroFreak. Trentemøller le trova nel suo seminterrato e le fa passare in un pedale norvegese."},
-        "aneddoto": (
-            "24 gennaio 2019, primo giorno del NAMM. Il comunicato di Arturia "
-            "parla di «prima collaborazione» con Mutable Instruments, la ditta di "
-            "moduli Eurorack di Émilie Gillet. Gillet risponde sul forum di "
-            "Mutable. Racconta che a maggio l'hanno invitata nella sede di Arturia "
-            "a vedere i modellini del MicroFreak, e che la settimana prima le "
-            "hanno mandato la foto di quello finito. Il codice di Plaits è aperto, "
-            "chiunque può usarlo purché la nomini. Il suo contributo, scrive, è di "
-            "«0 ore di lavoro e 0 righe di codice originale». Arturia corregge il "
-            "comunicato e scrive che il codice degli oscillatori viene da Mutable."
-        ),
-        "avvertenza": "Tasti piatti e capacitivi, senza corsa. Un dito appoggiato è già una nota. Non appoggiare la mano sulla tastiera.",
-        "foto": {
-            "file": "assets/foto/microfreak/principale.jpg",
-            "ritaglio": True,
-            "autore": "Leacsstmusic",
-            "licenza": "CC BY-SA 4.0",
-            "fonte": "Wikimedia Commons",
-            "didascalia": "Il MicroFreak intero. Le manopole arancio sono l'oscillatore digitale",
-        },
-        # Nessuna foto extra libera su Commons in cui il MicroFreak sia la
-        # macchina principale (vedi FOTO sopra): le tavole 2 e 3 usano i
-        # RITAGLI della principale.
-        "foto_extra": [],
-        "fonti": [
-            {"titolo": "«Arturia MicroFreak», Simon Sherbourne — Sound On Sound, giugno 2019",
-             "url": "https://www.soundonsound.com/reviews/arturia-microfreak", "data": "2026-11-13"},
-            {"titolo": "Synthtopia, 24/01/2019",
-             "url": "https://www.synthtopia.com/content/2019/01/24/arturia-microfreak-an-inexpensive-experimental-synth-with-polyphonic-aftertouch/", "data": "2026-11-13"},
-            {"titolo": "Robin Vincent — Gearnews, 25/01/2019",
-             "url": "https://www.gearnews.com/namm-2019-arturia-cross-a-microbrute-with-mutable-plaits-and-get-microfreak/", "data": "2026-11-13"},
-            {"titolo": "«Arturia MicroFreak», Peter Kirn — CDM, 25/01/2019",
-             "url": "https://cdm.link/2019/01/arturia-microfreak/", "data": "2026-11-13"},
-            {"titolo": "La risposta di Mutable — Sonicstate, 26/01/2019",
-             "url": "https://www.sonicstate.com/news/2019/01/26/namm-2019-mutable-instruments-responds-to-arturia-microfreak/", "data": "2026-11-13"},
-            {"titolo": "La risposta di Mutable — Matrixsynth, 24/01/2019",
-             "url": "https://www.matrixsynth.com/2019/01/namm-2019-arturia-micro-freak.html", "data": "2026-11-13"},
-            {"titolo": "Plaits, codice sorgente (licenza MIT) — Émilie Gillet, GitHub",
-             "url": "https://github.com/pichenettes/eurorack/blob/master/plaits/dsp/voice.cc", "data": "2026-11-13"},
-            {"titolo": "MicroFreak, panoramica — Arturia",
-             "url": "https://www.arturia.com/products/hardware-synths/microfreak/overview", "data": "2026-11-13"},
-            {"titolo": "About us — Arturia",
-             "url": "https://www.arturia.com/company/about-us", "data": "2026-11-13"},
-            {"titolo": "«Arturia MicroFreak» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Arturia_MicroFreak", "data": "2026-11-13"},
-            {"titolo": "«Arturia» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Arturia", "data": "2026-11-13"},
-            {"titolo": "Gli attrezzi di «Memoria» — Dummy, 29/03/2022",
-             "url": "https://dmy.co/10-best/the-10-best-pieces-of-gear-used-on-memoria-according-to-trentemoller", "data": "2026-11-13"},
-            {"titolo": "Trentemøller, «Memoria» brano per brano — The Ransom Note",
-             "url": "https://theransomnote.com/?p=36384", "data": "2026-11-13"},
-        ],
-        "hashtags": ["#microfreak", "#arturia", "#sintetizzatore", "#trentemoller", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 000", "Il codice dentro il MicroFreak lo può copiare chiunque"),
-            ("ARTURIA · 2019", "L'Arturia MicroFreak ha 25 tasti piatti che sentono ogni dito."),
-            ("PLAITS", "7 motori del MicroFreak vengono da Plaits, un modulo di Émilie Gillet."),
-            ("CODICE APERTO", "Il codice di Plaits è aperto. Chiunque lo usa, basta nominare Gillet."),
-            ("NAMM · 2019", "Al NAMM Arturia parla di collaborazione. Gillet risponde «0 ore di lavoro»."),
-        ],
-        "reel_cta": "Mandalo all'amico che regala il codice su GitHub",
-        "reel_audio": {
-            "file": "assets/audio/microfreak/registrazione.mp3", "inizio": 0,
-            "autore": "Schminnte", "licenza": "CC BY-SA 4.0",
-            "fonte": "Wikimedia Commons",
-            "url": "https://commons.wikimedia.org/wiki/File:Microfreak_Filter_Sweeps.ogg",
-            "cosa": "il filtro analogico di un MicroFreak vero aperto e chiuso su una nota tenuta, con la risonanza sempre più alta fino a fischiare da solo",
-        },
-        "verificata": True,
-    },
-    # ---------------------------------------------------------------- 000
-    # Korg Volca FM (2016) e Volca FM2 (2022). Scheda scritta il 13/11/2026
-    # (rifornimento automatico, bozza di un ricercatore riletta dalla
-    # sessione). La registrazione è di una FM2, e la scheda lo dice.
-    #
-    # REGISTRAZIONE: https://commons.wikimedia.org/wiki/File:Korg_Volca_fm_2_-_Demo_using_Yamaha_DX7_presets.flac
-    #   Attosaur, «Own work», 13/07/2024, CC BY-SA 4.0, FLAC 44,1 kHz stereo,
-    #   130,6 s. Descrizione: «Demonstration of a second-gen Korg Volca FM's
-    #   compatibility with downloaded Yamaha DX7 patches», preset di fabbrica
-    #   europei/giapponesi del DX7 («ROM1A Master»): E.PIANO 1 (0:00), KOTO
-    #   (0:19), TUB BELLS (0:39 e 1:14), BASS 1 (1:39 e 1:57). «Recorded via PC
-    #   mic/line input with no further processing», chorus spento, un po' del
-    #   riverbero della FM2. «Played live via an external mini keyboard».
-    #   È la macchina vera? Nessuna foto della sua Volca fra i caricamenti di
-    #   Attosaur. Però ha caricato, tutte a luglio 2024, una serie intera di
-    #   prove della stessa FM2 (Presets 1 to 16, Algorithm adjust, Arpeggiator,
-    #   Chorus, Reverb, Modulator Carrier LFO adjust), coerente con chi ce l'ha
-    #   davanti; le foto della FM2 su Commons sono di Multicherry. Lo dico
-    #   come lo dice lui, «una FM2 con le patch del DX7 caricate».
-    #   MELODIE PROTETTE: nessuna. Analisi delle altezze (FFT sui fotogrammi,
-    #   transcodifica mp3 di Commons, 13/11/2026): E.PIANO 1 = accordi
-    #   arpeggiati di Do maggiore, Do minore e un diminuito, a mano, con la
-    #   dinamica che cambia; KOTO = scale su e giù (Do Do# Fa Fa# La# Do, la
-    #   scala «in» giapponese); TUB BELLS = note sparse; BASS 1 = un Do2
-    #   ribattuto a forza diversa, poi arpeggi La minore / Sol. Niente di
-    #   riconoscibile. Non l'ho ASCOLTATA con le orecchie: va fatto prima di
-    #   pubblicare.
-    #   MISURE (ffmpeg, transcodifica mp3): file intero -16,2 LUFS, picco
-    #   0,0 dBFS. Silenzi sotto -45 dB: 0-0,9; 18,1-20,2; 26,8-27,7;
-    #   29,4-30,5; 37,2-40,5; 72,8-75,6; 96,9-100,1. Per tratto: E.PIANO
-    #   0,9-18,1 -12,9 LUFS; KOTO 20,2-37,2 -24,7 (12 dB sotto!); TUB BELLS
-    #   40,5-72,8 -17,7; BASS 1 100,1-129,7 -22,8.
-    #   SCELTA: inizio 0.9, E.PIANO 1 del DX7 dal primo fotogramma (il gancio
-    #   e il suono più forte del file). DUBBIO: dopo 17,2 s c'è un vuoto di 2 s
-    #   e poi il KOTO, molto più piano. In un reel da 22 s si sente E.PIANO,
-    #   2 s di niente, 3 s di koto. Se suona rotto, l'alternativa è inizio 40.5
-    #   (TUB BELLS, 32 s senza buchi). Per il sito (45 s da 0,9): E.PIANO,
-    #   KOTO, campane.
-    #   Scartata «Presets 1 to 16 Demo» (253 s, stesso autore e licenza): i
-    #   preset della FM2 non hanno i nomi nella descrizione, quindi non saprei
-    #   dire COSA suona; c'è un tratto continuo 38,7-74,1 s se servisse.
-    #
-    # FONTI PER FATTO (aperte il 13/11/2026)
-    # - motore a 6 operatori e 32 algoritmi come il DX7: Korg (pagine volca fm
-    #   e volca fm2); SOS giu. 2016 (Paul Nagle); MusicRadar 22/09/2022 (Si
-    #   Truss); Gearnews 14/04/2022; CDM 10/03/2016.
-    # - carica le patch del DX7 in SysEx: Korg (entrambe le pagine, «SYS-EX/
-    #   SYX»); SOS 2016 («Every bank I downloaded ... was squirted, without
-    #   error, into the Volca FM»); CDM 2016; Gearnews 2022.
-    # - 3 voci la prima, 6 la FM2: Korg fm («3-voice»), Korg fm2 («6 voices
-    #   (instead of the 3 of its predecessor)»); SOS 2016; CDM 2016; MusicRadar
-    #   2022; Gearnews 2022; Wikipedia «Korg Volca».
-    # - SOS: «only just qualifies as polyphonic»: è una citazione, la fonte è
-    #   la recensione stessa.
-    # - FM2 con riverbero, dinamica via MIDI, uscita MIDI su minijack, funzione
-    #   di randomizzazione: Korg fm2; MusicRadar 2022; Gearnews 2022.
-    # - prima versione: un solo valore di dinamica dal cursore VELOCITY per
-    #   tutte le note, la dinamica MIDI ignorata: SOS 2016 («the velocity
-    #   slider's position sets the value for all notes»); MusicRadar 2022 («how
-    #   the velocity slider can be used like a filter cutoff»); Korg fm2 («now
-    #   velocity sensitive via MIDI»). È l'AVVERTENZA.
-    # - prima versione solo MIDI IN: SOS 2016; Korg fm; si vede nella foto di
-    #   Ashley Pomeroy (presa DIN, «MIDI IN»).
-    # - salvataggio solo dal SYNC OUT verso una seconda Volca FM; Nagle, che
-    #   non ne ha un'altra, registra il flusso come audio e pensa allo Spectrum
-    #   e alle cassette: SOS 2016 (citazione, la fonte è l'articolo). Che due
-    #   Volca FM si copino suoni e sequenze dal cavetto del sync: Korg fm
-    #   («cloned»); CDM 2016 (Kirn: «Designer Tatsuya told me about this one»).
-    # - sequencer a 16 passi, 16 pattern, motion sequence, Warp Active Step:
-    #   Korg fm e fm2; SOS 2016.
-    # - tasti a sfioramento («touch panel keyboard»): Korg; SOS (tastiera
-    #   dorata); si vede nelle foto.
-    # - manopole MODULATOR e CARRIER che muovono insieme gli inviluppi di tutti
-    #   i portanti o tutti i modulanti: Korg fm («MODULATOR/CARRIER edit
-    #   knobs»); SOS 2016 («global envelope controls for the carriers and
-    #   modulators»). Algoritmo su una manopola sua: SOS («a master stroke»);
-    #   si legge ALGORITHM nelle foto.
-    # - il DX7 senza manopole: Wikipedia «Yamaha DX7» (che cita FACT 2017 e
-    #   MusicRadar); scheda dx7 del catalogo.
-    # - algoritmi: chi suona (portanti) e chi modula (modulanti), ognuno un
-    #   modo diverso di collegare i 6 operatori: SOS 2016 (riquadro su FM);
-    #   Wikipedia «Yamaha DX7».
-    # - 6 pile stilo e altoparlante (FM2): Korg fm2 («6 AA batteries»,
-    #   «integrated speaker»); MusicRadar 2022 («6 AA batteries»).
-    #   Altoparlante anche nella prima: SOS 2016; Korg fm.
-    # - mostrata al NAMM di gennaio 2016 senza annuncio: Synthtopia («Korg was
-    #   displaying an as-yet-unannounced Volca FM»); MusicRadar 19/04/2016
-    #   («got a shock at the NAMM Show in January»). Ufficiale il 10/03/2016:
-    #   CDM 10/03/2016; Synthtopia 10/03/2016 («Now Official»).
-    # - Tatsuya Takahashi capo ingegnere, presenta la Volca FM nel video Korg:
-    #   MusicRadar 19/04/2016; Synthtopia; CDM 2016 la chiama «designer». Le
-    #   prime due raccontano lo stesso video Korg (fonte primaria Korg); la
-    #   terza è indipendente.
-    # - Takahashi lascia il posto di capo ingegnere nel 2017: RA e FACT
-    #   17/02/2017 (già nella scheda volcakeys).
-    # - serie Volca dal 2013 coi Keys, Bass e Beats: scheda volcakeys;
-    #   Wikipedia «Korg Volca»; MusicRadar 2019.
-    # - FM2 annunciata ad aprile 2022, nei negozi da maggio: Gearnews
-    #   14/04/2022; MusicRadar (annuncio); SOS (notizia).
-    #
-    # FATTI SCARTATI
-    # - chi ha progettato la FM2: non trovato. Korg non fa nomi. In scheda.
-    # - 64 memorie sulla FM2: solo Gearnews («up to 64 sounds»).
-    # - FM2 «prima Volca con l'uscita MIDI»: solo Gearnews. Fuori.
-    # - arpeggiatore «primo nella serie volca»: solo Korg (CDM dice
-    #   «unexpected» e basta). Fuori.
-    # - 360 g senza pile (FM2): solo Korg.
-    # - pile della prima versione: SOS scrive «six AAA», Korg per la FM2 «6
-    #   AA». Non concordano (e secondo me SOS ha sbagliato), quindi in scheda
-    #   le pile sono quelle della FM2.
-    # - prezzi: £129/$159,99 (SOS 2016); 189 euro (Gearnews 2022); «RRP $339»
-    #   per la FM2 nella notizia di SOS (vista solo in un estratto di ricerca,
-    #   e non torna con gli altri). Niente prezzi in scheda (regola sulle
-    #   macchine recenti, e non concordano).
-    # - Warp Active Step «nuovo» sulla FM2 (Gearnews): sbagliato, c'era già
-    #   nel 2016 (SOS, Korg, CDM).
-    # - patch DX7 con la tastiera divisa che suonano 2 suoni insieme: solo SOS.
-    # - niente portamento né glissando: solo SOS.
-    # - editor Synthmata con il randomizzatore «intelligente»: solo Korg.
-    # - CHI L'HA USATA: nessun disco a due fonti. Trovati solo elenchi
-    #   (Equipboard: Chris Vrenna, Scott Munro dei Preoccupations da una foto),
-    #   un'intervista a Choke Chain senza brano, «dark side» di Lexinous
-    #   (Bandcamp, fonte unica), Kable54 (un profilo). Quindi chi_lusata vuota
-    #   e DA ASCOLTARE OMESSO. Il 4° hashtag, che sarebbe l'artista, è #dx7
-    #   (c'è in scheda), come #sequentialcircuits nella scheda opera6.
-    #
-    # HANDLE INSTAGRAM: @korgofficial. Link Instagram nella pagina Korg della
-    #   volca fm2 (korg.com/us/products/dj/volca_fm2/, unico link Instagram
-    #   della pagina), controllato il 13/11/2026; già verificato e usato nella
-    #   scheda volcakeys (28/10/2026), quindi il proprietario lo segue già.
-    #
-    # FOTO (thumbnail a 1280 scaricati e guardati il 13/11/2026)
-    # principale: https://commons.wikimedia.org/wiki/File:Korg_Volca_FM_(next-gen_-_2nd_gen_-_fm2)_(i).jpg
-    #   Multicherry (lo stesso della foto della volcakeys), CC BY-SA 4.0,
-    #   4170x2780, 05/11/2023. Ritoccata dall'autore (LED e display fotografati
-    #   a parte e risovrapposti, lo dichiara sulla pagina). La FM2 di fronte,
-    #   intera, su fondo bianco: "ritaglio": True. Si leggono KORG volca fm
-    #   DIGITAL FM SYNTHESIZER in alto a destra, IN-MIDI-OUT, il display
-    #   azzurro, i tasti dorati con 4 REVERB e 6 PROGRAM RANDOM, LED azzurri.
-    #   thumburl: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28i%29.jpg/1280px-Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28i%29.jpg
-    # extra 1: https://commons.wikimedia.org/wiki/File:Korg_Volca_FM_8994.jpg
-    #   Ashley Pomeroy, CC BY-SA 4.0, 3000x2000, 29/11/2021. La PRIMA Volca FM
-    #   di tre quarti, fondo bianco: display rosso, presa MIDI IN DIN grande in
-    #   alto al centro, LED rossi, tasto 1 POLY e 9 METRONOME (sulla FM2 il 9 è
-    #   1/4). "ritaglio": True, così la presa MIDI si vede.
-    #   thumburl: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Korg_Volca_FM_8994.jpg/1280px-Korg_Volca_FM_8994.jpg
-    # extra 2: https://commons.wikimedia.org/wiki/File:Korg_Volca_FM_(next-gen_-_2nd_gen_-_fm2)_(ii).jpg
-    #   Multicherry, CC BY-SA 4.0, 4200x2800, stessa serie ritoccata. La FM2
-    #   di tre quarti: a sinistra le manopole MODULATOR (LED rossi) e CARRIER e
-    #   i 2 cursori TRANSPOSE e VELOCITY, il display con il nome del suono.
-    #   "posizione" center 30% per tenere nella banda manopole e cursori.
-    #   thumburl: https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28ii%29.jpg/1280px-Korg_Volca_FM_%28next-gen_-_2nd_gen_-_fm2%29_%28ii%29.jpg
-    #   Su Commons non c'è altro della famiglia (niente interno, niente retro).
-    #   Le didascalie vanno ricontrollate sulla tavola GENERATA.
-    #
-    # DA AGGIUNGERE FUORI DALLA SCHEDA: in suoni.py, VOCE_SCHEDA, "volcafm": "fm"
-    #   (valida_scheda rifiuta la scheda senza timbro), e lo scarico della
-    #   registrazione in assets/audio/volcafm/registrazione.mp3.
-    #
-    # DUBBI APERTI
-    # - il vuoto di 2 s a 17 s dentro il reel (vedi REGISTRAZIONE).
-    # - la registrazione non ascoltata a orecchio.
-    # - la prova della FM2 (aprile 2022) non è su SOS: per la FM2 contano
-    #   Korg, MusicRadar e Gearnews.
-    {
-        "slug": "volcafm",
-        "numero": 0,
-        "serie": "I SINTETIZZATORI",
-        "strumento": "Korg Volca FM",
-        "anno": "2016",
-        "luogo": "Giappone",
-        "costruttore": "Korg",
-        "specifiche": [
-            ("USCITA", "2016, FM2 2022"),
-            ("OPERATORI", "6"),
-            ("ALGORITMI", "32"),
-            ("VOCI", "3, poi 6"),
-        ],
-        "gancio": "Prende i suoni di un DX7 del 1983 così come sono, e va a pile",
-        "sottotitolo": "Il motore a 6 operatori del DX7 in una scatola Volca: 3 voci nel 2016, 6 nella FM2 del 2022.",
-        "la_macchina": (
-            "Ha le manopole trasparenti dei Volca, 2 cursori, un display che "
-            "scrive il nome del suono e i tasti a sfioramento. Si accende con 6 "
-            "pile stilo e suona dal suo altoparlante. Dentro però non c'è niente "
-            "di analogico. La prima, nel 2016, fa 3 note per volta, e Sound On "
-            "Sound scrive che è polifonica per un pelo. Nel 2022 esce la FM2, "
-            "con 6 voci, un riverbero accanto al chorus e un tasto che rimescola "
-            "il suono a caso. Quella che sentite è una FM2. Secondo me la prima "
-            "va benissimo per bassi e campane, ma per gli accordi ci vuole la "
-            "seconda."
-        ),
-        "inventore_nome": "Korg e Tatsuya Takahashi",
-        "inventore": (
-            "Nel gennaio 2016 Korg porta al NAMM una Volca che non ha ancora "
-            "annunciato. Le Volca esistono dal 2013, quando escono Keys, Bass e "
-            "Beats, e questa fa FM, con la sigla scritta nel nome. Diventa "
-            "ufficiale il 10 marzo, e a presentarla "
-            "nel video di Korg c'è Tatsuya Takahashi, il capo ingegnere dei "
-            "Volca, quello della scheda del Volca Keys. Peter Kirn di CDM lo "
-            "chiama il suo progettista. Takahashi lascia il posto nel 2017. Chi "
-            "abbia firmato la FM2 del 2022 non sono riuscito a scoprirlo, e "
-            "Korg nella pagina del prodotto non fa nomi."
-        ),
-        "come_funziona": (
-            "Ogni operatore è un'onda sinusoidale con il suo inviluppo. "
-            "L'algoritmo decide chi suona e chi modula gli altri, e i modi di "
-            "collegare i 6 operatori sono 32. Dove suonano tutti, si sommano come "
-            "i registri di un organo. Dove uno solo suona e gli altri lo "
-            "modulano, escono armoniche che non si prevedono. Sul DX7 si "
-            "programmava coi tasti e i menu, senza manopole. Qui l'algoritmo ha "
-            "una manopola sua, e MODULATOR e CARRIER muovono insieme gli "
-            "inviluppi di tutti i modulanti o di tutti i portanti. Provate a "
-            "girare l'algoritmo tenendo una nota."
-        ),
-        "richiami": [
-            ("FIG. 1", "6 operatori, 32 algoritmi"),
-            ("FIG. 2", "Legge le patch del DX7"),
-            ("FIG. 3", "3 voci, poi 6"),
-        ],
-        "chi_lusata": [],
-        "menzioni_extra": [
-            {"ig": "korgofficial", "riga": "La Volca FM è di @korgofficial."},
-        ],
-        "aneddoto": (
-            "Giugno 2016. Paul Nagle prova la Volca FM per Sound On Sound e "
-            "vuole salvare i suoni che ha fatto. L'uscita MIDI non c'è. L'unica "
-            "strada è la presa SYNC OUT, pensata per copiare tutto in una "
-            "seconda Volca FM attaccata col cavetto. Nagle una seconda non ce "
-            "l'ha, quindi registra quello che esce dalla presa come se fosse "
-            "audio. Scrive che gli tornano in mente lo Spectrum e le cassette "
-            "che fischiano, e che almeno è più divertente che aspettare il "
-            "caricamento di un videogioco. Nella FM2 del 2022 le prese MIDI "
-            "sono due, una per entrare e una per uscire."
-        ),
-        "avvertenza": "Sulla prima Volca FM la dinamica è il cursore VELOCITY, uguale per tutte le note. Per suonare piano e forte serve la FM2 e una tastiera MIDI.",
-        "foto": {
-            "file": "assets/foto/volcafm/principale.jpg",
-            "ritaglio": True,
-            "autore": "Multicherry",
-            "licenza": "CC BY-SA 4.0",
-            "fonte": "Wikimedia Commons",
-            "didascalia": "Una Volca FM2. Sui tasti dorati, REVERB e PROGRAM RANDOM sono le novità del 2022",
-        },
-        "foto_extra": [
-            {"file": "assets/foto/volcafm/prima.jpg",
-             "ritaglio": True,
-             "autore": "Ashley Pomeroy",
-             "licenza": "CC BY-SA 4.0",
-             "fonte": "Wikimedia Commons",
-             "didascalia": "La prima Volca FM, del 2016. Display rosso e una presa MIDI sola, d'ingresso"},
-            {"file": "assets/foto/volcafm/manopole.jpg",
-             "autore": "Multicherry",
-             "licenza": "CC BY-SA 4.0",
-             "fonte": "Wikimedia Commons",
-             "posizione": "center 30%",
-             "didascalia": "A sinistra le manopole MODULATOR e CARRIER, e il cursore VELOCITY"},
-        ],
-        "fonti": [
-            {"titolo": "«Korg Volca FM», Paul Nagle — Sound On Sound, giugno 2016",
-             "url": "https://www.soundonsound.com/reviews/korg-volca-fm", "data": "2026-11-13"},
-            {"titolo": "Korg, pagina della volca fm",
-             "url": "https://www.korg.com/us/products/dj/volca_fm/", "data": "2026-11-13"},
-            {"titolo": "Korg, pagina della volca fm2",
-             "url": "https://www.korg.com/us/products/dj/volca_fm2/", "data": "2026-11-13"},
-            {"titolo": "«Korg Volca FM2 review», Si Truss — MusicRadar, 22/09/2022",
-             "url": "https://www.musicradar.com/reviews/korg-volca-fm2", "data": "2026-11-13"},
-            {"titolo": "«Korg Volca FM: 2nd-gen comes with 6 voices, MIDI Out», Lyubomir Dobrev — Gearnews, 14/04/2022",
-             "url": "https://www.gearnews.com/korg-volca-fm-2nd-gen-comes-with-6-voices-midi-out-and-more", "data": "2026-11-13"},
-            {"titolo": "«KORG volca FM is here», Peter Kirn — CDM, 10/03/2016",
-             "url": "https://cdm.link/2016/03/korg-volca-fm-is-here-and-does-some-unexpected-tricks/", "data": "2026-11-13"},
-            {"titolo": "«Korg engineer tells you what you need to know about the Volca FM» — MusicRadar, 19/04/2016",
-             "url": "https://www.musicradar.com/news/tech/korg-engineer-tells-you-what-you-need-to-know-about-the-volca-fm-637173", "data": "2026-11-13"},
-            {"titolo": "Synthtopia, Volca FM al NAMM e video di Takahashi, 2016",
-             "url": "https://synthtopia.com/content/tag/korg-volca-fm/page/2", "data": "2026-11-13"},
-            {"titolo": "«Korg Volca» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Korg_Volca", "data": "2026-11-13"},
-            {"titolo": "«Yamaha DX7» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Yamaha_DX7", "data": "2026-11-13"},
-        ],
-        "hashtags": ["#volcafm", "#korg", "#sintetizzatore", "#dx7", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 000", "La Korg Volca FM legge i suoni di un DX7 del 1983"),
-            ("KORG · 2016", "La Volca FM ha il motore del DX7, ma suona 3 note per volta."),
-            ("SOUND ON SOUND", "Paul Nagle prova la Volca FM e cerca un'uscita MIDI per salvare i suoni."),
-            ("SYNC OUT", "Non c'è. Nagle registra i dati come audio, come le cassette dello Spectrum."),
-            ("FM2 · 2022", "Nel 2022 la Volca FM2 ha 6 voci, un riverbero e l'uscita MIDI."),
-        ],
-        "reel_cta": "Mandalo all'amico che tiene ancora lo Spectrum",
-        "reel_audio": {
-            # registrazione.mp3 (13/11/2026, sessione): E.PIANO 1 0,9-17,75 s +
-        # TUB BELLS 40,5-70,5 s del file originale, ognuno a -15 LUFS
-        # (KOTO era 12 dB sotto e preceduto da 2,4 s di silenzio), incrociati
-        # in 0,4 s. 46,5 s, -14,9 LUFS, picco -1,7 dB, nessun silenzio sotto
-        # -40 dB. Spettrogramma guardato: note regolari, niente fischi.
-        "file": "assets/audio/volcafm/registrazione.mp3", "inizio": 0,
-            "autore": "Attosaur", "licenza": "CC BY-SA 4.0",
-            "fonte": "Wikimedia Commons",
-            "url": "https://commons.wikimedia.org/wiki/File:Korg_Volca_fm_2_-_Demo_using_Yamaha_DX7_presets.flac",
-            "cosa": "una Volca FM2 vera con i suoni di fabbrica del DX7 caricati, prima il piano elettrico E.PIANO 1 e poi le campane TUB BELLS, suonati dal vivo",
-        },
-        "verificata": True,
-    },
 ]
 
 

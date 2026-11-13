@@ -154,3 +154,28 @@ pena ricordare, per non rifare il giro:
   campioni singoli, cloni o niente.
 La strada che resta è chiedere a chi ha la macchina una registrazione
 CC0/CC BY (Freesound, musei come il Castello Sforzesco o la NYU).
+
+Entrate in catalogo il 13/11/2026 (rifornimento automatico): Boss DS-1
+(Commons «Boss DS-1 extrait audio.ogg», Taxiakataxi/Skimel, CC BY 3.0,
+24 s intera, -17,5 LUFS; passa da un Line 6 Pocket Pod e lo dice «cosa»),
+Arturia MicroFreak (Commons «Microfreak Filter Sweeps.ogg», Schminnte,
+CC BY-SA 4.0, 0-17,75 s: un filtro su una nota sola, nel reel ricomincia
+una volta), Korg Volca FM (Commons «Korg Volca fm 2 - Demo using Yamaha DX7
+presets.flac», Attosaur, CC BY-SA 4.0: E.PIANO 1 0,9-17,75 + TUB BELLS
+40,5-70,5, KOTO scartato perché 12 dB sotto), Boss CE-3 (Commons «Boss CE-3
+clean sound demo in stereo (mode II and mode I).ogg», Skimel, CC BY-SA 4.0:
+modo II 6,7-22,3 + modo I 27,3-52,5; la modifica MSM sul pedale è spenta).
+Riserve: le altre demo del CE-3 di Skimel (con distorsione), «Korg Volca fm 2
+- Presets 1 to 16 Demo.flac» (253 s, preset senza nome).
+Scartate il 13/11/2026: **Yamaha CS1x**, «Yamaha-Synthesizer-CS1X-
+synthsound.ogg» (Musicproducer, CC BY-SA 3.0) è il 13° brano demo di
+fabbrica Yamaha: il ricercatore l'ha ritrovato in «CS1X-demosongs.ogg» dello
+stesso utente (627-659 s, correlazione 0,992). Una composizione Yamaha, la
+licenza non è sua da dare. «Orchestra hit - CS1X.ogg» è 1,9 s. Behringer
+Neutron (Schminnte, 16 s di prova della parafonia), Electra-Melodica Hohner
+(8,3 s): troppo corte. Freesound per il MicroFreak: «Synth sequence» di
+P27music (520138, CC0, 41,7 s) e «GatesOfWasteland-Drone» di Dogma_Reloaded
+(558835, CC0, 2:04) dicono entrambe MicroFreak, ma senza l'indirizzo
+dell'anteprima (cdn.freesound.org/previews/…, serve l'id utente) il runner
+non le scarica: se una sessione lo trova, sono migliori dello sweep.
+Roland CR-78: ancora nessuna foto libera, nemmeno su Openverse.

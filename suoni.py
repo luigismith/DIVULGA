@@ -268,7 +268,7 @@ VOCE_SCHEDA = {
     # rifornimento del 10/11/2026
     "juno60": "corda",
     # rifornimento del 13/11/2026
-    "ds1": "studio", "microfreak": "sega", "volcafm": "fm",
+    "ds1": "studio", "microfreak": "sega", "volcafm": "fm", "ce3": "studio",
     # elettronica da pochi soldi
     "stylophone": "giocattolo", "omnichord": "giocattolo", "speakspell": "giocattolo", "vl1": "giocattolo",
     # ritmiche: la voce sta sotto, comanda la batteria (vedi CON_BATTERIA)
