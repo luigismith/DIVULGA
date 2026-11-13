@@ -1,0 +1,5 @@
+assets/audio/ce3/originale.ogg https://upload.wikimedia.org/wikipedia/commons/6/67/Boss_CE-3_clean_sound_demo_in_stereo_%28mode_II_and_mode_I%29.ogg
+assets/foto/ce3/principale.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_top.jpg/960px-1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_top.jpg
+assets/foto/ce3/fianco.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_left_side.jpg/960px-1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_left_side.jpg
+assets/foto/ce3/jc120.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Roland_Jazz_Chorus_JC-120_-_vibrato_and_chorus_controls.jpg/960px-Roland_Jazz_Chorus_JC-120_-_vibrato_and_chorus_controls.jpg
+assets/foto/ce3/pannello.jpg https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_rear_and_top_view.jpg/960px-1984_Boss_CE-3_chorus_with_MSM_Workshop_mod_-_rear_and_top_view.jpg
