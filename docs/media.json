@@ -88,6 +88,10 @@
    "file": "tavole/juno106/reel2.jpg",
    "firma": "28367bb1da7206de-1"
   },
+  "jupiter4": {
+   "file": "tavole/jupiter4/reel2.jpg",
+   "firma": "463e322ce641d7d4-1"
+  },
   "jv1080": {
    "file": "tavole/jv1080/reel2.jpg",
    "firma": "a7b297cb63143241-1"
@@ -777,6 +781,26 @@
     ]
    },
    "firma": "9770d1c8f850753e-320-640-1280-1"
+  },
+  "jupiter4": {
+   "1280": "foto/jupiter4-1280.jpg",
+   "320": "foto/jupiter4-320.jpg",
+   "640": "foto/jupiter4-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "b9e7e8140718aad8-320-640-1280-1"
   },
   "jupiter8": {
    "1280": "foto/jupiter8-1280.jpg",
@@ -1988,6 +2012,11 @@
   "juno106": {
    "file": "suoni/juno106.mp3",
    "firma": "2f1cf15e10d54d3b-225-45-1",
+   "secondi": 45
+  },
+  "jupiter4": {
+   "file": "suoni/jupiter4.mp3",
+   "firma": "dd195c656224f24c-0-45-1",
    "secondi": 45
   },
   "jv1080": {
