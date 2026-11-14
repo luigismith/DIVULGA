@@ -16,6 +16,10 @@
    "file": "tavole/arpodyssey/reel2.jpg",
    "firma": "5cf92cf3cf42300b-1"
   },
+  "bigmuff": {
+   "file": "tavole/bigmuff/reel2.jpg",
+   "firma": "dcd76270d4bb0d4f-1"
+  },
   "buchla": {
    "file": "tavole/buchla/reel2.jpg",
    "firma": "059bf42229726952-1"
@@ -365,6 +369,26 @@
     ]
    },
    "firma": "8b98e8c02021a4f4-320-640-1280-1"
+  },
+  "bigmuff": {
+   "1280": "foto/bigmuff-1280.jpg",
+   "320": "foto/bigmuff-320.jpg",
+   "640": "foto/bigmuff-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     1462
+    ],
+    "320": [
+     320,
+     366
+    ],
+    "640": [
+     640,
+     731
+    ]
+   },
+   "firma": "e914ec4d5bdf537f-320-640-1280-1"
   },
   "buchla": {
    "1280": "foto/buchla-1280.jpg",
@@ -1967,6 +1991,11 @@
    "file": "suoni/arpodyssey.mp3",
    "firma": "cffe206e00442593-0-45-1",
    "secondi": 40.0
+  },
+  "bigmuff": {
+   "file": "suoni/bigmuff.mp3",
+   "firma": "0cd3ff8638a3874c-0-45-1",
+   "secondi": 45
   },
   "clavinet": {
    "file": "suoni/clavinet.mp3",
