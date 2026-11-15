@@ -505,7 +505,10 @@
    "permalink": "https://www.instagram.com/p/DfutAhGGVip/"
   }
  ],
- "ultimo_errore": null,
+ "ultimo_errore": {
+  "quando": "2026-11-15T17:07:59.939395+00:00",
+  "titolo": "pubblicazione fallita per 'juno60'"
+ },
  "reel": [
   {
    "slug": "dx7",
