@@ -354,7 +354,13 @@ def main():
         carosello = api("POST", f"{ig_user}/media", token,
                         media_type="CAROUSEL", children=",".join(figli),
                         caption=contenuti.componi_didascalia(scheda))
-        attendi_container(carosello["id"], token)
+        # LEZIONE IMPARATA (15/11/2026): il carosello col video del suono
+        # (7 elementi) non era FINISHED dopo i 60 s pensati per le sole
+        # immagini: «container ... mai FINISHED», post del Juno-60 saltato
+        # alle 18. Il contenitore del carosello aspetta che Instagram abbia
+        # digerito anche il figlio video: stesse attese del video (25 giri).
+        attendi_container(carosello["id"], token,
+                          tentativi=25 if len(figli) > 6 else 10)
         pubblicato = pubblica_quando_pronto(ig_user, token, carosello["id"])
         media_id = pubblicato["id"]
     except Exception as e:
