@@ -72,10 +72,11 @@ ROMA = zoneinfo.ZoneInfo("Europe/Rome")
 # legge il numero dal sorgente di pubblica.py senza importarlo.
 FINE_FINESTRA = 23
 
-# Copia dichiarata di pubblica.GIORNI_USCITA (lun, mer, ven dal 15/11/2026).
-# Nei giorni di pausa non esce niente APPOSTA: l'allarme giudica l'ultimo
-# giorno d'uscita, non il giorno di calendario. La allinea prova_sentinella.py.
-GIORNI_USCITA = (0, 2, 4)
+# Giorni da post (lun, mer, ven dal 15/11/2026): negli altri esce il reel,
+# quindi nessun post APPOSTA. L'allarme giudica l'ultimo giorno da post, non
+# il giorno di calendario. La regola sta in calendario.py (niente import
+# pesanti, si può importare qui).
+from calendario import GIORNI_USCITA  # noqa: E402
 
 # Regola 7 di CLAUDE.md: la coda non scende mai sotto 14 schede verificate
 # e non ancora pubblicate. Che questo numero resti allineato a quello

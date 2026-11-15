@@ -58,32 +58,10 @@ ROMA = zoneinfo.ZoneInfo("Europe/Rome")
 # coda: non si perde niente, si sposta solo.
 FINESTRA_ORE = (16, 23)   # ora italiana: si pubblica solo qui dentro
 
-# CADENZA (decisione del proprietario, 15/11/2026: «Uno strumento al giorno
-# è troppo», poi «3: lun, mer, ven»). Le schede nuove escono il lunedì, il
-# mercoledì e il venerdì alle 18; i reel delle 12:30 (rifacimenti e HeyGen)
-# continuano ogni giorno. cron-job.org e i cron di GitHub restano quotidiani:
-# è qui che si decide se oggi è giorno d'uscita, così l'innesco non va
-# toccato. Copia dichiarata in sentinella.GIORNI_USCITA (la allinea
-# prova_sentinella.py). 0 = lunedì.
-GIORNI_USCITA = (0, 2, 4)
-
-
-def ultimo_giorno_uscita(giorno):
-    """Il giorno d'uscita più recente, `giorno` compreso."""
-    while giorno.weekday() not in GIORNI_USCITA:
-        giorno -= dt.timedelta(days=1)
-    return giorno
-
-
-def oggi_si_pubblica(pubblicati, oggi):
-    """Vero nei giorni d'uscita, e nei giorni di pausa SOLO per recuperare
-    un giorno d'uscita rimasto senza post (un lunedì saltato esce martedì,
-    non mercoledì insieme alla scheda del mercoledì)."""
-    if oggi.weekday() in GIORNI_USCITA:
-        return True
-    previsto = ultimo_giorno_uscita(oggi)
-    return not any(dt.datetime.fromisoformat(x["quando"]).astimezone(ROMA).date() >= previsto
-                   for x in pubblicati)
+# CADENZA (decisioni del proprietario, 15/11/2026): post lunedì,
+# mercoledì e venerdì, reel negli altri giorni. La regola sta in
+# calendario.py, unica per post, reel e sentinella.
+from calendario import oggi_si_pubblica  # noqa: E402
 
 
 def dentro_la_finestra():
@@ -266,8 +244,8 @@ def main():
 
     if (os.environ.get("FORZA_ORARIO") != "1"
             and not oggi_si_pubblica(stato["pubblicati"], dt.datetime.now(ROMA).date())):
-        print("[stop] oggi non è giorno d'uscita (lunedì, mercoledì, venerdì) e "
-              "l'ultimo giorno d'uscita ha già il suo post: la scheda resta in coda.")
+        print("[stop] oggi non è giorno da post (lunedì, mercoledì, venerdì): oggi "
+              "esce il reel (calendario.py), la scheda resta in coda.")
         return
 
     # Guardie anti-soft-block: mai più di 2 post al giorno, mai ravvicinati.

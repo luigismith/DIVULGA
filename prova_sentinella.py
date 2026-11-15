@@ -170,13 +170,6 @@ prova("mar 17/11 23:25, lunedì recuperato martedì → zitta",
 prova("mar 17/11 23:25, lunedì mai recuperato → allarme",
       (True, dt.date(2026, 11, 17)), esito("2026-11-17T23:25", stato(VEN_13), LUN))
 
-# GIORNI_USCITA è copiato a mano da pubblica.py, come FINE_FINESTRA.
-m = re.search(r"^GIORNI_USCITA\s*=\s*\(([\d,\s]+)\)", sorgente, re.M)
-if not m:
-    errori.append("  non trovo GIORNI_USCITA in pubblica.py: la prova è cieca")
-elif tuple(int(x) for x in m.group(1).split(",") if x.strip()) != S.GIORNI_USCITA:
-    errori.append("  GIORNI_USCITA diverso fra pubblica.py e sentinella.py: allineare")
-
 if errori:
     print("PROVA FALLITA:")
     print("\n".join(errori))

@@ -158,18 +158,27 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   reel la chiusura ha una grafica sua (`_chiusura_html` in genera_reel.py):
   l'aeroplanino di carta dell'icona «Invia» con MANDALO in arancio, il
   destinatario in grande, la riga del profilo staccata in fondo.
-- Cadenza: **lunedì, mercoledì e venerdì alle 18 italiane** (dal
-  15/11/2026; prima ogni giorno, dal 26/08). Il proprietario: «Uno
-  strumento al giorno è troppo», poi «3: lun, mer, ven» e «restano i reel
-  delle 12:30». Quindi la scheda nuova e il suo reel serale escono tre
-  volte a settimana, mentre la passata delle 12:30 (rifacimenti, HeyGen
-  lunedì e giovedì, fuori catalogo) continua OGNI giorno. Gli inneschi
-  restano quotidiani: decide `GIORNI_USCITA` in `pubblica.py`, che in un
-  giorno di pausa pubblica solo per recuperare un giorno d'uscita rimasto
-  senza post (un lunedì saltato esce martedì). La sentinella giudica
-  l'ultimo giorno d'uscita, non il giorno di calendario (copia di
-  `GIORNI_USCITA`, allineata da `prova_sentinella.py`). La coda di 14
-  schede ora vale quasi 5 settimane, non 2.
+- Cadenza: **un'uscita al giorno, sempre alle 18 italiane** (dal
+  15/11/2026; prima una scheda nuova ogni giorno più i rifacimenti delle
+  12:30). Il proprietario: «Uno strumento al giorno è troppo», «3: lun,
+  mer, ven», poi «Facciamo che nei giorni in cui non esce il post esce il
+  reel», «reel della scheda del giorno prima» e «18:00, come il post».
+  · lunedì, mercoledì, venerdì: il POST (carosello e storia), niente reel;
+  · martedì, giovedì, sabato: il REEL della scheda uscita il giorno prima;
+  · domenica: il reel HEYGEN sulla scheda andata meglio (vedi sotto); se
+    c'è un reel di scheda da recuperare passa prima quello, e se HeyGen
+    non c'è esce un rifacimento, perché la domenica non resti muta.
+  I rifacimenti quotidiani delle 12:30 sono finiti. La regola sta tutta
+  in `calendario.py` (pubblica.py, sentinella.py e pubblica_reel.py la
+  importano: niente copie da tenere allineate). Gli inneschi restano
+  quotidiani e chiamano tutti `pubblica.yml`, il cui primo job chiede a
+  calendario.py «post o reel?»: nei giorni da reel lancia `reel.yml`, che
+  sceglie con `pubblica_reel.py --oggi` (UN reel al giorno, e se oggi uno
+  è già fallito dopo l'API gli altri inneschi non riprovano). In un
+  giorno da reel si pubblica il post solo per recuperare un giorno da post
+  rimasto vuoto (un lunedì saltato esce martedì, e il reel slitta). La
+  sentinella giudica l'ultimo giorno da post. La coda di 14 schede ora vale
+  quasi 5 settimane, non 2.
 - **Reel parlato, «formato 3», IN PROVA** (21/10/2026, il proprietario:
   «reels parlanti (con voce sintetica) e animati con la mascotte… che
   racconta (in un angolo) mentre le slide scorrono… BENE con strumenti
@@ -274,28 +283,27 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   `nomi_accettati`. Impaginato voluto dal proprietario: Dinamo al centro
   e grande (cornice 760 px), foto sopra. Primo: Casio SK-1, 12/11/2026,
   ~45 crediti.
-  **Due a settimana, sulle schede andate meglio** (proprietario,
-  12/11/2026: «il reel esce solo 2 volte a settimana basandosi sui post di
-  maggior successo»). Lunedì e giovedì, nella passata delle 12:30, AL POSTO
-  del rifacimento: `python scegli_heygen.py` dà la scheda già uscita col
+  **Uno a settimana, la domenica alle 18, sulla scheda andata meglio**
+  (proprietario, 12/11/2026: «il reel esce solo 2 volte a settimana
+  basandosi sui post di maggior successo»; il 15/11/2026, con la nuova
+  cadenza, è sceso a uno, la domenica). La domenica alle 12:25 la Routine
+  dei reel lo monta: `python scegli_heygen.py` dà la scheda già uscita col
   punteggio più alto nell'ultima fotografia di `metriche/` (like + 2×
   commenti + 3× salvataggi + 3× condivisioni, carosello e reel insieme;
-  fuori chi ha già il suo reel HeyGen e chi non ha `reel_audio`). È un
-  reel IN PIÙ per una scheda che il suo reel l'ha già avuto: niente tag
-  (è un rifacimento), e `pubblica_reel.py` lo blocca solo se quella
-  scheda ha già un formato 4. `reel.yml` lo mette su Pages da sé
-  (`online=1`), perché alle 12:30 la pubblicazione delle 18 non l'ha
-  ancora portato online. Le schede nuove della sera tornano al formato 2
-  e 3. Due a settimana sono ~400 crediti al mese: con 600 mensili
-  ci stanno, ma il workspace è condiviso con un altro progetto, quindi
-  la routine guarda i crediti prima (sotto 60 fa il rifacimento normale).
-- **Il reel serale ha due inneschi** (21/10/2026): la Routine delle
-  19:30 e il cron di `reel.yml` alle 17:55 UTC, che arriva dopo apposta
-  e senza slug (solo la scheda senza reel, mai rifacimenti). Quel giorno
-  la Routine è rimasta in coda due ore per un blocco della sessione.
-  `pubblica_reel.py` ora ha una finestra sua, 12-23 (`FINESTRA_REEL`):
-  dalle 12 per i rifacimenti delle 12:30, che con la finestra del post
-  (16-23) si sarebbero fermati in silenzio (`forza` per scavalcarla).
+  fuori chi ha già il suo reel HeyGen e chi non ha `reel_audio`), la
+  sessione committa `reel4.mp4`, e alle 18 `pubblica_reel.py --oggi` lo
+  trova da sé (`heygen_in_attesa`). È un reel IN PIÙ per una scheda che il
+  suo reel l'ha già avuto: niente tag (è un rifacimento). Quattro a mese
+  sono ~180 crediti; il workspace è condiviso con un altro progetto, quindi
+  la routine guarda i crediti prima (sotto 60 non lo fa, e alle 18 esce un
+  rifacimento).
+- **Gli inneschi del reel** (dal 15/11/2026): gli stessi del post, perché
+  è `pubblica.yml` a lanciare `reel.yml` nei giorni da reel; in più il
+  cron di `reel.yml` alle 18:55 come scorta e la Routine dei reel alle
+  18:25, che controlla. Prima (21/10/2026) erano la Routine delle 19:30 e
+  il cron serale: quel giorno la Routine era rimasta in coda due ore.
+  `pubblica_reel.py` ha una finestra sua, 12-23 (`FINESTRA_REEL`; `forza`
+  per scavalcarla).
 - **Il suono vero della macchina in ogni uscita** (regola del
   proprietario, 17/10/2026: «Dobbiamo lavorare meglio sul suono reale
   dello strumento. Voglio che ci sia in ogni prossimo post/storia/reel. È
@@ -375,7 +383,8 @@ passata delle 12:30 della routine dei reel, `reel.yml` con slug
 non ce l'ha (costruito sul runner, messo su Pages, pubblicato senza nuovi
 tag: gli account erano già stati avvisati). La passata delle 19:30 resta
 per il reel della scheda nuova. Primo rifacimento, di prova e verificato
-fino al permalink: Minimoog, 07/10/2026.
+fino al permalink: Minimoog, 07/10/2026. **Finiti il 15/11/2026** con la cadenza nuova:
+ne resta solo uno la domenica, se il reel HeyGen non c'è.
 
 **Risultato al 12/10/2026** (`metriche/2026-10-12.json`, mediane):
 formato 1, 45 reel: copertura 32, visione 4,0 s, abbandono nei primi 3 s
@@ -526,7 +535,8 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   delle 6 ore in `pubblica.py`). Spostate all'ora solare il 28/10/2026,
   tre giorni in ritardo perché la sessione era bloccata (il post è uscito
   lo stesso: cron-job.org ha il fuso Europe/Rome). Il cron di `reel.yml`
-  segue: `55 18` con la solare, `55 17` con la legale. **Il 28/03/2027**
+  (scorta del reel delle 18, dal 15/11/2026): `55 17` con la solare,
+  `55 16` con la legale. **Il 28/03/2027**
   si torna all'ora legale e vanno rimessi tutti e quattro.
   Le Routine invece, dal 28/10/2026, hanno il fuso scritto nel cron
   (`CRON_TZ=Europe/Rome`): prima erano in UTC e con l'ora solare la rete

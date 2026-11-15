@@ -2,7 +2,8 @@
 """ELETTROFONI — quale scheda merita il prossimo reel con HeyGen.
 
 Il proprietario, 12/11/2026: «il reel esce solo 2 volte a settimana
-basandosi sui post di maggior successo». Il reel HeyGen (formato 4,
+basandosi sui post di maggior successo»; dal 15/11/2026 uno a settimana,
+la domenica alle 18, calendario.py). Il reel HeyGen (formato 4,
 genera_reel_heygen.py) costa ~45 crediti e i crediti non si ricaricano
 fino all'11/11/2027: si spende sulle schede che hanno già dimostrato di
 interessare, non sulla scheda del giorno a caso.

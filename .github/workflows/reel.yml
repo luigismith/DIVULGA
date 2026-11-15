@@ -1,8 +1,9 @@
 # ELETTROFONI — pubblica UN reel.
 #
 # Il budget video dell'account si consuma anche coi tentativi falliti:
-# per questo non c'e' nessun retry. Lo lancia la Routine (12:30 e 19:30
-# italiane) e, dal 21/10/2026, anche un cron serale di GitHub come rete:
+# per questo non c'e' nessun retry. Dal 15/11/2026 lo lancia pubblica.yml
+# alle 18 nei giorni senza post (calendario.py); prima lo lanciava la
+# Routine (12:30 e 19:30). Dal 21/10/2026 c'e' anche un cron di GitHub come rete:
 # quel giorno la Routine e' rimasta in coda due ore per un blocco della
 # sessione e il reel della scheda del giorno e' uscito alle 21:34. Il
 # cron arriva DOPO la Routine apposta (come cron-job.org per il post):
@@ -22,16 +23,16 @@ name: Pubblica reel
 
 on:
   schedule:
-    # 18:55 UTC = 19:55 con l'ora solare (dal 28/10/2026; con l'ora
-    # legale, dal 28/03/2027, va riportato a '55 17'): sempre dopo la
-    # Routine delle 19:30 e dentro la finestra. Il cron senza
-    # input vale «--prossimo»: solo la scheda senza nessun reel, mai un
-    # rifacimento.
-    - cron: '55 18 * * *'
+    # Rete di scorta del reel delle 18 (dal 15/11/2026 il reel esce nei
+    # giorni senza post e lo lancia pubblica.yml): 17:55 UTC = 18:55
+    # italiane con l'ora solare; DAL 28/03/2027 (ora legale) va a '55 16'.
+    # Senza input vale «--oggi»: nei giorni da post, o se il reel di oggi è
+    # già uscito o già fallito, non fa niente.
+    - cron: '55 17 * * *'
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Slug della scheda; vuoto = la piu vecchia senza reel; --rifacimento = la piu vecchia senza reel del formato 2'
+        description: 'Slug della scheda; vuoto = il reel di oggi secondo calendario.py; --prossimo = la piu vecchia senza reel; --rifacimento = la piu vecchia senza reel del formato 2'
         required: false
         default: ''
         type: string
@@ -84,7 +85,7 @@ jobs:
             SLUG="${{ inputs.prova }}"
             echo "prova=1" >> "$GITHUB_OUTPUT"
           else
-            SLUG=$(python pubblica_reel.py --quale "${{ inputs.slug || '--prossimo' }}")
+            SLUG=$(python pubblica_reel.py --quale "${{ inputs.slug || '--oggi' }}")
           fi
           echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
           echo "scheda: '${SLUG}'"

@@ -41,7 +41,7 @@ NOME_HEYGEN = "reel4.mp4"
 
 def heygen_pronto(scheda):
     return (P.RADICE / "docs" / "tavole" / scheda["slug"] / NOME_HEYGEN).exists()
-FINESTRA_REEL = (12, 23)   # ore italiane: rifacimenti alle 12:30, reel della scheda la sera
+FINESTRA_REEL = (12, 23)   # ore italiane: il reel esce alle 18 (dal 15/11/2026); dalle 12 per i lanci a mano
 
 
 def formato_di(scheda):
@@ -241,6 +241,51 @@ def prossimo_reel(stato=None):
     return None
 
 
+def heygen_in_attesa(stato):
+    """La scheda uscita con un reel HeyGen già montato (reel4.mp4 committato
+    dalla sessione) e non ancora pubblicato."""
+    fatti = gia_pubblicati(stato, FORMATO_HEYGEN)
+    for p in stato["pubblicati"]:
+        s = next((x for x in contenuti.SCHEDE if x["slug"] == p["slug"]), None)
+        if s and p["slug"] not in fatti and heygen_pronto(s):
+            return p["slug"]
+    return None
+
+
+def reel_di_oggi(stato=None):
+    """Quale reel esce OGGI secondo calendario.py (15/11/2026: post lun-mer-ven,
+    reel negli altri giorni, sempre alle 18). Vuoto = oggi niente reel.
+
+    - nei giorni da post niente: il reel della scheda esce il giorno dopo;
+    - UN reel al giorno: se oggi ne è già uscito uno, niente (gli inneschi
+      sono quattro e ognuno lancia reel.yml);
+    - prima il reel della scheda che non l'ha ancora avuto (di norma quella
+      di ieri);
+    - la domenica, se non c'è da recuperare, il reel HeyGen montato dalla
+      sessione; se HeyGen non c'è, un rifacimento, perché la domenica non
+      resti muta."""
+    import calendario
+    stato = stato or P.leggi_stato()
+    oggi = P.dt.datetime.now(P.ROMA).date()
+    if calendario.cosa_oggi(stato, oggi) == "post":
+        return None
+    if calendario.reel_di_oggi(stato, oggi):
+        return None
+    # UN SOLO TENTATIVO al giorno anche con quattro inneschi: se oggi un
+    # reel è già fallito dopo l'API, gli altri inneschi non ci riprovano
+    # (il budget video lo consumano anche i fallimenti).
+    err = stato.get("ultimo_errore") or {}
+    if (err.get("titolo", "").startswith("reel ") and err.get("quando")
+            and calendario.data_italiana(err["quando"]) == oggi):
+        return None
+    slug = prossimo_reel(stato)
+    if slug:
+        return slug
+    if oggi.weekday() == calendario.GIORNO_HEYGEN:
+        return heygen_in_attesa(stato) or prossimo_rifacimento(stato)
+    return None
+
+
 def prossimo_rifacimento(stato=None):
     """La scheda piu' vecchia che ha solo il reel del formato 1."""
     stato = stato or P.leggi_stato()
@@ -267,6 +312,8 @@ if __name__ == "__main__":
             print(prossimo_rifacimento() or "")
         elif modo == "--prossimo":
             print(prossimo_reel() or "")
+        elif modo == "--oggi":
+            print(reel_di_oggi() or "")
         else:
             print(modo)
         raise SystemExit(0)
@@ -276,6 +323,12 @@ if __name__ == "__main__":
             print("[stop] tutte le schede pubblicate hanno gia' il reel del formato 2.")
             raise SystemExit(0)
         print(f"[reel] rifacimento scelto in automatico: {slug}")
+    if slug == "--oggi":
+        slug = reel_di_oggi()
+        if slug is None:
+            print("[stop] oggi non tocca a un reel (calendario.py), o è già uscito.")
+            raise SystemExit(0)
+        print(f"[reel] reel di oggi: {slug}")
     if slug == "--prossimo":
         slug = prossimo_reel()
         if slug is None:
