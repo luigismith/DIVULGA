@@ -158,7 +158,18 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   reel la chiusura ha una grafica sua (`_chiusura_html` in genera_reel.py):
   l'aeroplanino di carta dell'icona «Invia» con MANDALO in arancio, il
   destinatario in grande, la riga del profilo staccata in fondo.
-- Cadenza: OGNI GIORNO alle 18 italiane (dal 26/08/2026).
+- Cadenza: **lunedì, mercoledì e venerdì alle 18 italiane** (dal
+  15/11/2026; prima ogni giorno, dal 26/08). Il proprietario: «Uno
+  strumento al giorno è troppo», poi «3: lun, mer, ven» e «restano i reel
+  delle 12:30». Quindi la scheda nuova e il suo reel serale escono tre
+  volte a settimana, mentre la passata delle 12:30 (rifacimenti, HeyGen
+  lunedì e giovedì, fuori catalogo) continua OGNI giorno. Gli inneschi
+  restano quotidiani: decide `GIORNI_USCITA` in `pubblica.py`, che in un
+  giorno di pausa pubblica solo per recuperare un giorno d'uscita rimasto
+  senza post (un lunedì saltato esce martedì). La sentinella giudica
+  l'ultimo giorno d'uscita, non il giorno di calendario (copia di
+  `GIORNI_USCITA`, allineata da `prova_sentinella.py`). La coda di 14
+  schede ora vale quasi 5 settimane, non 2.
 - **Reel parlato, «formato 3», IN PROVA** (21/10/2026, il proprietario:
   «reels parlanti (con voce sintetica) e animati con la mascotte… che
   racconta (in un angolo) mentre le slide scorrono… BENE con strumenti

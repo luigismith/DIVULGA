@@ -72,6 +72,11 @@ ROMA = zoneinfo.ZoneInfo("Europe/Rome")
 # legge il numero dal sorgente di pubblica.py senza importarlo.
 FINE_FINESTRA = 23
 
+# Copia dichiarata di pubblica.GIORNI_USCITA (lun, mer, ven dal 15/11/2026).
+# Nei giorni di pausa non esce niente APPOSTA: l'allarme giudica l'ultimo
+# giorno d'uscita, non il giorno di calendario. La allinea prova_sentinella.py.
+GIORNI_USCITA = (0, 2, 4)
+
 # Regola 7 di CLAUDE.md: la coda non scende mai sotto 14 schede verificate
 # e non ancora pubblicate. Che questo numero resti allineato a quello
 # scritto in CLAUDE.md lo verifica `prova_sentinella.py`.
@@ -140,7 +145,14 @@ def apri_issue(titolo, corpo, etichetta="pubblicazione"):
     print(f"[issue] HTTP {r.status_code}")
 
 
-def verdetto(pubblicati, giorno):
+def ultimo_giorno_uscita(giorno, giorni=GIORNI_USCITA):
+    """Il giorno d'uscita più recente, `giorno` compreso."""
+    while giorno.weekday() not in giorni:
+        giorno -= dt.timedelta(days=1)
+    return giorno
+
+
+def verdetto(pubblicati, giorno, giorni=GIORNI_USCITA):
     """(silenzio_da_giorni, ultimo_post). 0 giorni = tutto a posto.
 
     Si confronta la data dell'ULTIMO post con il giorno da controllare,
@@ -153,7 +165,8 @@ def verdetto(pubblicati, giorno):
     if not datati:
         return (None, None)
     ultimo = max(datati, key=lambda p: p["quando"])
-    return ((giorno - data_italiana(ultimo["quando"])).days, ultimo)
+    previsto = ultimo_giorno_uscita(giorno, giorni)
+    return ((previsto - data_italiana(ultimo["quando"])).days, ultimo)
 
 
 def coda_verificata(schede, pubblicati):
@@ -219,7 +232,7 @@ def controlla_coda():
 def controlla_pubblicazione():
     """True se ha aperto (o trovato già aperto) un allarme."""
     adesso = dt.datetime.now(ROMA)
-    giorno = giorno_da_controllare(adesso)
+    giorno = ultimo_giorno_uscita(giorno_da_controllare(adesso))
     stato = json.loads(FILE_STATO.read_text()) if FILE_STATO.exists() else {"pubblicati": []}
     pubblicati = stato.get("pubblicati", [])
 

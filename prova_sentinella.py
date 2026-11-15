@@ -29,10 +29,16 @@ def stato(*iso):
     return [{"slug": f"s{i}", "quando": q, "permalink": "x"} for i, q in enumerate(iso)]
 
 
-def esito(adesso_roma, pubblicati):
+# I casi di agosto e settembre sono dell'epoca della scheda quotidiana:
+# si giudicano con quella cadenza (ogni giorno è d'uscita). I casi della
+# cadenza lun-mer-ven (dal 15/11/2026) stanno nella sezione 9.
+OGNI_GIORNO = tuple(range(7))
+
+
+def esito(adesso_roma, pubblicati, giorni=OGNI_GIORNO):
     """(suona, giorno_giudicato) — la decisione della sentinella."""
     giorno = S.giorno_da_controllare(roma(adesso_roma))
-    silenzio, _ = S.verdetto(pubblicati, giorno)
+    silenzio, _ = S.verdetto(pubblicati, giorno, giorni)
     return (silenzio is None or silenzio > 0), giorno
 
 
@@ -143,6 +149,33 @@ prova("il conto della coda salta le pubblicate e le non verificate",
       ["pronta", "altra"], S.coda_verificata(SCHEDE_FINTE, PUBBLICATI_FINTI))
 prova("con tutto pubblicato la coda e' vuota",
       [], S.coda_verificata(SCHEDE_FINTE[:1], PUBBLICATI_FINTI))
+
+# ---------------------------------------------------------------- 9
+# CADENZA LUN-MER-VEN (15/11/2026). I giorni di pausa non devono suonare,
+# un giorno d'uscita muto sì, e il recupero del giorno dopo lo spegne.
+LUN = S.GIORNI_USCITA
+VEN_13 = "2026-11-13T17:05:05+00:00"     # Jupiter-4, venerdì
+LUN_16 = "2026-11-16T17:05:00+00:00"
+MAR_17 = "2026-11-17T17:05:00+00:00"
+prova("sab 14/11 23:25, ultimo post ven 13 → zitta",
+      (False, dt.date(2026, 11, 14)), esito("2026-11-14T23:25", stato(VEN_13), LUN))
+prova("dom 15/11 23:25, ultimo post ven 13 → zitta",
+      (False, dt.date(2026, 11, 15)), esito("2026-11-15T23:25", stato(VEN_13), LUN))
+prova("lun 16/11 23:25, ultimo post ven 13 → allarme",
+      (True, dt.date(2026, 11, 16)), esito("2026-11-16T23:25", stato(VEN_13), LUN))
+prova("lun 16/11 23:25, uscita del lunedì → zitta",
+      (False, dt.date(2026, 11, 16)), esito("2026-11-16T23:25", stato(VEN_13, LUN_16), LUN))
+prova("mar 17/11 23:25, lunedì recuperato martedì → zitta",
+      (False, dt.date(2026, 11, 17)), esito("2026-11-17T23:25", stato(VEN_13, MAR_17), LUN))
+prova("mar 17/11 23:25, lunedì mai recuperato → allarme",
+      (True, dt.date(2026, 11, 17)), esito("2026-11-17T23:25", stato(VEN_13), LUN))
+
+# GIORNI_USCITA è copiato a mano da pubblica.py, come FINE_FINESTRA.
+m = re.search(r"^GIORNI_USCITA\s*=\s*\(([\d,\s]+)\)", sorgente, re.M)
+if not m:
+    errori.append("  non trovo GIORNI_USCITA in pubblica.py: la prova è cieca")
+elif tuple(int(x) for x in m.group(1).split(",") if x.strip()) != S.GIORNI_USCITA:
+    errori.append("  GIORNI_USCITA diverso fra pubblica.py e sentinella.py: allineare")
 
 if errori:
     print("PROVA FALLITA:")
