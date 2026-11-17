@@ -14453,6 +14453,639 @@ SCHEDE = [
     # - Michael Allen Harrison col VFX-SD: solo la foto di Commons.
 
 
+    # ---------------------------------------------------------------- 98
+    # Ibanez TS-808 Tube Screamer (Maxon OD-808). Scheda scritta il
+    # 17/11/2026 (rifornimento automatico: la coda era a 10).
+    #
+    # REGISTRAZIONE: https://commons.wikimedia.org/wiki/File:Maxon_OD808_Overdrive_pedal.webm
+    #   Sweet Jam Tracks (YouTube o2XKWUH7p-E, 15/04/2016), CC BY 3.0,
+    #   importato da Skimel con video2commons (11/01/2018), licenza
+    #   confermata dal bot il 14/02/2020. Descrizione: «Demo of the Maxon OD808
+    #   overdrive pedal on electric guitar. Signal chain: Warmoth Telecaster -
+    #   Maxon OD808 - Laney Cub10 - 1x12 cab with Celestion Vintage 30 speaker -
+    #   Shure SM57». È la riedizione attuale col marchio Maxon, NON un pezzo
+    #   del 1979: «cosa» lo dice. Scaricata dal runner il 17/11/2026 (webm
+    #   1920x1080, 96,8 s); nel repo solo l'audio, 1,9-94,0 s (fuori 1,9 s di
+    #   silenzio in testa e 2,7 in coda). MISURATA: -16,6 LUFS, LRA 9,2, picco
+    #   -2,9 dBFS, nessun buco sotto -45 dB fra 2 e 94 s; spettrogramma pieno
+    #   fino a 6 kHz, un tratto più spinto a 71-77 s. Il LED del pedale (100
+    #   fotogrammi guardati, uno ogni 2 s) è acceso per tutto il video: cambia
+    #   solo la posizione delle manopole. Un fotogramma (50 s) è la foto extra
+    #   «maxon.jpg». Non ascoltata da un orecchio: chitarra improvvisata in
+    #   assolo e accordi, nessun titolo nella descrizione.
+    #   Scartata «Vintage IBANEZ TS-808 comparison.webm» (3 TS-808 veri del
+    #   1980-81, MagicBus Records): la pagina è in «License review needed» e la
+    #   licenza su YouTube non l'ho potuta controllare.
+    #
+    # FONTI PER FATTO (aperte il 17/11/2026)
+    # - 1979: Guitar World 2020 («unveiled in 1979», «from 1979 to 1981»),
+    #   Vintage Guitar 2012 («starting in about 1979»), Wikipedia.
+    # - Nisshin Onpa, che fa pickup ed elettronica per altri; Maxon in
+    #   Giappone, Hoshino Gakki/Ibanez all'estero: Guitar World 2020, Vintage
+    #   Guitar, Wikipedia.
+    # - Susumu Tamura: Guitar World 2020, Premier Guitar 2013 (intervista),
+    #   Wikipedia; Vintage Guitar e Premier Guitar 2011 «S. Tamura».
+    # - primo progetto finito il phaser PT999: Premier Guitar 2013 («My first
+    #   complete design was the Phase Tone PT999»), Guitar World 2020.
+    # - il confronto col Boss OD-1: Premier Guitar 2013, Wikipedia (l'MXR
+    #   Distortion+ solo PG 2013, quindi fuori).
+    # - «not hard clipping like fuzz or distortion… with the midrange
+    #   emphasized»: è una citazione di Tamura, Premier Guitar 2013.
+    # - il taglio nel giro di retroazione dell'operazionale, primo circuito
+    #   così: Guitar World 2020 (parole di Tamura), Wikipedia (i diodi).
+    # - medi in avanti, 500-800 Hz: Guitar World 2020 (Mick Taylor), Wikipedia
+    #   («boost to midrange»), Premier Guitar 2013.
+    # - JRC4558D: Wikipedia, Vintage Guitar; si legge sul chip nella foto
+    #   del TS9.
+    # - il nome dal negozio Sam Ash di Manhattan, «screaming tube amp»:
+    #   Wikipedia, MusicRadar 19/09/2023 (morte di Sammy Ash).
+    # - SRV col Tube Screamer, «Texas Flood» e «Testify»: Vintage Guitar 2012,
+    #   Guitar World 2024 (Chris Gill). «I use the Tube Screamer because of the
+    #   Tone knob» (a Frank Joseph): le stesse due.
+    # - il disaccordo sul modello: Vintage Guitar dice TS-808; Gill (Guitar
+    #   World 2015 e 2024) dice TS9 da metà 1982 a metà 1988 e 808 solo fra
+    #   fine 1981 e inizio 1982, mai su un disco ufficiale.
+    # - Trey Anastasio: Wikipedia, Premier Guitar 2011, Guitar World 2020.
+    #
+    # FATTI SCARTATI (una fonte sola)
+    # - 350.000 pezzi dei vari 808 (solo Tamura in PG 2013); Tamura assunto
+    #   nel 1974 (PG 2013); il prezzo di lancio (nessuna fonte); simmetria del
+    #   taglio per un brevetto Boss (Wikipedia); riedizione del 2004 (VG);
+    #   Alex Turner (Wikipedia); chi dei fratelli Ash abbia detto la frase;
+    #   «Guitar Slim» nella citazione di Vaughan (solo GW 2024).
+    #
+    # HANDLE: @officialibanezguitars, linkato nel piede di
+    #   https://www.ibanez.com/eu/ (letto il 17/11/2026). Maxon: maxon.co.jp
+    #   non risponde, nessun handle verificato.
+    #
+    # FOTO (thumbnail guardati il 17/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Ibanez_TS808_Tube_Screamer_(48588080527).jpg
+    #   Guitar Chalk (Flickr), CC BY 2.0, 4032x3024, thumbnail 1280. Una
+    #   riedizione TS808 su un tavolo di legno, a sinistra: «posizione».
+    # extra: fotogramma a 50 s del video della registrazione (stessa
+    #   licenza): il Maxon OD808 dall'alto, MAXON e OD808 leggibili.
+    # extra: https://commons.wikimedia.org/wiki/File:Tube_screamer_circuit_photo.jpg
+    #   Mataresephotos, CC BY 3.0, 1816x1608. È la scheda di un TS9
+    #   (stampato IBANEZ 900101), non di un 808: la didascalia lo dice.
+    # extra: https://commons.wikimedia.org/wiki/File:Jrc4558_opamp_tube_screamer.jpg
+    #   stesso autore e licenza, 3008x2000, thumbnail 1280: il chip JRC 4558D
+    #   dello stesso TS9 da vicino. Per la tavola 4, che senza ritagliava la
+    #   foto principale sul cavo blu.
+    {
+        "slug": "tubescreamer",
+        "numero": 98,
+        "serie": "GLI EFFETTI",
+        "strumento": "Ibanez TS-808 Tube Screamer",
+        "anno": "1979",
+        "luogo": "Giappone",
+        "costruttore": "Nisshin Onpa (Maxon) per Ibanez",
+        "specifiche": [
+            ("USCITA", "1979"),
+            ("MANOPOLE", "3"),
+            ("CHIP", "JRC4558D"),
+            ("PROGETTO", "S. TAMURA"),
+        ],
+        "gancio": "Il nome glielo trova un negozio di Manhattan, dove lo sentono e pensano a un amplificatore a valvole che urla",
+        "sottotitolo": "Un pedale verde con 3 manopole che non tritura la chitarra come un fuzz, la spinge e le mette i medi davanti.",
+        "la_macchina": (
+            "Verde, 3 manopole, Overdrive, Tone e Level, e sotto il pedale da "
+            "pestare. Esce nel 1979 con 2 nomi. In Giappone è il Maxon OD-808, "
+            "all'estero l'Ibanez TS-808, ma il circuito è lo stesso e lo "
+            "costruisce la stessa ditta. Quello della foto grande è una "
+            "riedizione recente. Quello che sentite suonare è il Maxon OD808 di "
+            "oggi, col marchio giapponese. Poi arriva il TS9, che dentro cambia "
+            "poco. A me il Tube Screamer piace più davanti a un amplificatore già "
+            "caldo che da solo, ed è lì che secondo me si capisce perché ne hanno "
+            "fatto tante copie."
+        ),
+        "inventore_nome": "Susumu Tamura, alla Nisshin Onpa",
+        "inventore": (
+            "Susumu Tamura lavora alla Nisshin Onpa, una ditta giapponese che fa "
+            "pickup ed elettronica per conto di altri. Il suo primo progetto "
+            "finito è un phaser, il PT999. Poi gli chiedono un pedale che regga "
+            "il confronto col Boss OD-1. A Premier Guitar racconta che voleva "
+            "qualcosa che non tagliasse duro come un fuzz, con i medi in avanti, "
+            "perché vanno d'accordo con quasi tutte le chitarre e gli "
+            "amplificatori. In Giappone il pedale esce col marchio Maxon. "
+            "All'estero lo vende la Hoshino Gakki, la casa delle chitarre Ibanez."
+        ),
+        "come_funziona": (
+            "Dentro c'è un amplificatore operazionale, un chip nero a 8 piedini, "
+            "quasi sempre il JRC4558D. Il segnale lo attraversa e una parte torna "
+            "indietro per un giro di retroazione, ed è proprio lì in mezzo che "
+            "Tamura mette i diodi che tagliano l'onda. Così il taglio arriva "
+            "morbido e l'onda si arrotonda invece di diventare quadrata. In più "
+            "bassi e acuti vengono limati e restano i medi, una gobba fra 500 e "
+            "800 hertz. Overdrive decide quanto, Tone schiarisce, Level riporta il "
+            "volume. Provate Overdrive quasi a zero e Level alto."
+        ),
+        "richiami": [
+            ("FIG. 1", "Overdrive, Tone, Level"),
+            ("FIG. 2", "Il chip JRC4558D"),
+            ("FIG. 3", "Medi in avanti, 500-800 Hz"),
+        ],
+        "chi_lusata": [
+            {"artista": "Stevie Ray Vaughan",
+             "nota": "gli assoli di «Texas Flood» (1983); su quale modello, le riviste non concordano",
+             "ig": None},
+            {"artista": "Trey Anastasio (Phish)",
+             "nota": "fra i chitarristi che Tamura stesso cita",
+             "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "officialibanezguitars",
+             "riga": "Fuori dal Giappone il pedale esce col marchio di @officialibanezguitars."},
+        ],
+        "da_ascoltare": {"brano": "Texas Flood", "artista": "Stevie Ray Vaughan and Double Trouble", "anno": "1983",
+                         "cosa": "Gli assoli sporchi del brano che dà il titolo al disco. Lo stesso pedale lo ritrovate in «Testify»."},
+        "aneddoto": (
+            "Stevie Ray Vaughan spiega al giornalista Frank Joseph perché usa il "
+            "Tube Screamer. Per la manopola Tone, dice. Quale Tube Screamer sia "
+            "finito sui dischi, però, è una questione aperta. Vintage Guitar "
+            "scrive che su «Texas Flood» c'è un TS-808. Chris Gill, su Guitar "
+            "World, ha rimesso in fila le date. Secondo lui Vaughan ha avuto un "
+            "808 solo fra la fine del 1981 e l'inizio del 1982, e sui dischi c'è "
+            "il TS9, poi il TS10. Io tendo a credere a Gill, che ci ha scritto "
+            "sopra più di un articolo."
+        ),
+        "avvertenza": "Bassi e acuti li lima per costruzione. Se la chitarra vi sembra sottile, non cercate la manopola dei bassi, non c'è.",
+        "foto": {
+            "file": "assets/foto/tubescreamer/principale.jpg",
+            "posizione": "18% center",
+            "autore": "Guitar Chalk",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Una riedizione del TS808. Le manopole sono Overdrive, Tone e Level",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/tubescreamer/maxon.jpg",
+             "autore": "Sweet Jam Tracks (fotogramma del video)",
+             "licenza": "CC BY 3.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 40%",
+             # Nel reel no: sotto l'etichetta «IBANEZ TS-808» l'occhio legge MAXON.
+             "nel_reel": False,
+             "didascalia": "Il Maxon OD808 che suona nella registrazione. Stesso circuito, l'altro marchio"},
+            {"file": "assets/foto/tubescreamer/circuito.jpg",
+             "autore": "Mataresephotos",
+             "licenza": "CC BY 3.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 45%",
+             "nel_reel": False,
+             "didascalia": "La scheda di un TS9. Il chip JRC 4558D è quello nero a destra"},
+            {"file": "assets/foto/tubescreamer/chip.jpg",
+             "autore": "Mataresephotos",
+             "licenza": "CC BY 3.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "60% 35%",
+             "nel_reel": False,
+             "didascalia": "Il JRC 4558D da vicino, sulla scheda dello stesso TS9"},
+        ],
+        "fonti": [
+            {"titolo": "«Ibanez Tube Screamer» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Ibanez_Tube_Screamer", "data": "2026-11-17"},
+            {"titolo": "«Classic gear: Maxon Overdrive and Ibanez Tube Screamer», Rod Brakes — Guitar World, 07/08/2020",
+             "url": "https://www.guitarworld.com/features/classic-gear-maxon-overdrive-and-ibanez-tube-screamer", "data": "2026-11-17"},
+            {"titolo": "«State of the Stomp: Maxon's Susumu Tamura» — Premier Guitar, 03/10/2013",
+             "url": "https://www.premierguitar.com/gear/state-of-the-stomp-maxons-susumu-tamura-interview", "data": "2026-11-17"},
+            {"titolo": "«Tube Screamer history», Lindsay Tucker — Premier Guitar, 18/10/2011",
+             "url": "https://www.premierguitar.com/gear/tube-screamer-history", "data": "2026-11-17"},
+            {"titolo": "«Ibanez Tube Screamer», Michael Dregni — Vintage Guitar, ottobre 2012",
+             "url": "https://vintageguitar.com/17590/ibanez-tube-screamer", "data": "2026-11-17"},
+            {"titolo": "«Stevie Ray Vaughan's Tube Screamer», Chris Gill — Guitar World, 30/05/2024",
+             "url": "https://guitarworld.com/features/stevie-ray-vaughan-tube-screamer", "data": "2026-11-17"},
+            {"titolo": "«Blues Power: Stevie Ray Vaughan's arsenal», Chris Gill — Guitar World, 10/07/2015",
+             "url": "https://guitarworld.com/magazine/blues-power-depth-guide-amps-and-effect-pedals-stevie-ray-vaughan-s-arsenal", "data": "2026-11-17"},
+            {"titolo": "«Sammy Ash dies aged 65», Jonathan Horsley — MusicRadar, 19/09/2023",
+             "url": "https://musicradar.com/news/sammy-ash-dies-aged-65-sam-ash-music", "data": "2026-11-17"},
+        ],
+        "hashtags": ["#tubescreamer", "#ibanez", "#effettichitarra", "#stevierayvaughan", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 098", "Il nome del Tube Screamer lo trova un negozio di New York"),
+            ("SUSUMU TAMURA · 1979", "In Giappone Susumu Tamura progetta il pedale per la Nisshin Onpa."),
+            ("SAM ASH · MANHATTAN", "Al negozio Sam Ash lo provano e dicono che urla come un ampli a valvole."),
+            ("TEXAS FLOOD · 1983", "Stevie Ray Vaughan suona un Tube Screamer negli assoli di «Texas Flood»."),
+            ("TS-808 O TS9?", "Quale modello sia nel disco di Vaughan, le riviste non lo dicono uguale."),
+        ],
+        "reel_cta": "Mandalo a chi tiene il pedale verde sempre acceso",
+        "reel_audio": {
+            "file": "assets/audio/tubescreamer/registrazione.mp3", "inizio": 0,
+            "autore": "Sweet Jam Tracks (video caricato su Commons da Skimel)", "licenza": "CC BY 3.0",
+            "fonte": "Wikimedia Commons",
+            "url": "https://commons.wikimedia.org/wiki/File:Maxon_OD808_Overdrive_pedal.webm",
+            "cosa": "un Maxon OD808, la riedizione di oggi dello stesso circuito col marchio giapponese, acceso per tutta la registrazione: una Telecaster in un Laney Cub10 a valvole, ripreso con un microfono",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 99
+    # Moog Grandmother. Scheda scritta il 17/11/2026 (rifornimento
+    # automatico). Posteriore al 1988 (quota 1 su 4).
+    #
+    # REGISTRAZIONE: https://freesound.org/people/JupiterWhistles/sounds/472235/
+    #   «Moog Grandmother Sequence 1.wav», JupiterWhistles, 23/05/2019, CC0,
+    #   1:35,115, mono 24 bit 48 kHz. Descrizione: «Moog Grandmother, plucky
+    #   sequence in Am, 90bpm. [...] Some interesting play with noise, filter,
+    #   pulse width and the internal spring reverb of the synthesizer.
+    #   Recorded through an SSL Superanalogue preamplifier at line level,
+    #   UAD-2 Apollo 8 ADC. No EQ, no compression.» La molla interna e la presa
+    #   in linea dicono la macchina, non un plug-in. Scaricata dal runner
+    #   l'anteprima hq (mp3), utente 10009269 (dal percorso dell'avatar).
+    #   MISURATA il 17/11/2026: 95,16 s, -21,1 LUFS, LRA 2,9, picco -0,2 dBFS,
+    #   nessun silenzio sotto -45 dB; spettrogramma: note brevi ripetute con
+    #   armoniche fino a 3-4 kHz, a 66-90 s il filtro si apre. Non ascoltata da
+    #   un orecchio. Già fra le riserve del 17/10 («nessun disco a due fonti»):
+    #   ora il disco c'è (Mike Dean).
+    #
+    # FONTI PER FATTO (aperte il 17/11/2026)
+    # - presentata il 15/05/2018, prima del Moogfest di Durham (17-20/05):
+    #   Sound On Sound, Digital Music News, CDM, Attack.
+    # - 32 tasti Fatar che sentono la forza: Sound On Sound, MusicRadar.
+    # - 2 oscillatori con sync, filtro a scala 24 dB, passa-alto da 6 dB,
+    #   ingresso esterno nel filtro, sequencer 3 x 256 passi, arpeggiatore,
+    #   nessuna memoria: Sound On Sound; MusicRadar (niente preset, sequencer a
+    #   passi); Synthtopia.
+    # - prese: 41 per Sound On Sound, 35 per MusicRadar. Detto in scheda.
+    # - riverbero a molla vero: Sound On Sound («spring reverb tank»),
+    #   MusicRadar, Gearnews, Attack. Ingresso esterno: Gearnews, CDM.
+    # - ispirata ai modulari di Bob Moog degli anni '60 e '70: Sound On Sound
+    #   (dichiarazione di Moog), Gearnews e Synthtopia (904A, 905).
+    # - con Mother-32, DFAM, Eurorack: Sound On Sound, Synthtopia.
+    # - i primi 500 col distintivo «Moogfest 2018», venduti da Guitar Center:
+    #   Sound On Sound, Digital Music News; la giacca di jeans: Digital Music
+    #   News, Synthtopia.
+    # - i colori dividono: MusicRadar («source of some division»), CDM («the
+    #   most colorful Moog synth ever»), Attack.
+    # - Bob Moog morto nel 2005: Wikipedia «Robert Moog», Moog Foundation.
+    # - Mike Dean con la Grandmother nelle sessioni di «4:20»: Albumism
+    #   05/06/2020 (lui: «Keyboards—like the Moog Matriarch and Grandmother»),
+    #   Moog 20/04/2020 (ripreso da MatrixSynth). «The Eighth Night» Part 1 e
+    #   2 su «4:20» (20/04/2020): MusicBrainz, Apple Music, Exclaim!.
+    # - Adrian Younge e il video di lancio: CDM, Linear Labs (il suo studio).
+    #
+    # FATTI SCARTATI
+    # - «solo con la Grandmother, in una sessione»: lo dice solo Moog (la
+    #   pagina originale dà 404, MatrixSynth la ricopia). In scheda è detto
+    #   come affermazione di Moog.
+    # - prezzo (899 dollari in negozio): solo Sound On Sound.
+    # - il nome come omaggio alla Mother-32: Attack, «presumably».
+    # - progettista (Amos Gaynes): una fonte, irraggiungibile.
+    # - Justin Meldal-Johnsen, Anton Newcombe: una fonte ciascuno.
+    #
+    # HANDLE: @moogsynthesizers, già usato (piede di moogmusic.com).
+    #
+    # FOTO (thumbnail guardati il 17/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Moog_Grandmother_detail_(49608923708).jpg
+    #   Henry Söderlund (Flickr), CC BY 2.0, 8160x5440, thumbnail 1280.
+    #   Il pannello dall'alto. C'è una cuffia appoggiata in mezzo che copre
+    #   parte del nome (GRANDM·THER): niente di meglio su Commons, la categoria
+    #   ha 4 file.
+    # extra: https://commons.wikimedia.org/wiki/File:Moog_Grandmother_(49654085281).jpg
+    #   stesso autore, CC BY 2.0, 6000x4000: manopole WAVEFORM e CUTOFF AMT,
+    #   il tasto rosso e MOTHER in grande.
+    {
+        "slug": "grandmother",
+        "numero": 99,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Moog Grandmother",
+        "anno": "2018",
+        "luogo": "Stati Uniti",
+        "costruttore": "Moog Music",
+        "specifiche": [
+            ("USCITA", "2018"),
+            ("TASTI", "32"),
+            ("OSCILLATORI", "2"),
+            ("MEMORIE", "0"),
+        ],
+        "gancio": "Un sintetizzatore del 2018 con dentro una molla d'acciaio, per il riverbero come nei vecchi amplificatori",
+        "sottotitolo": "Un monofonico già cablato dentro, che suona appena acceso e si ricabla da fuori coi cavetti.",
+        "la_macchina": (
+            "Il pannello è a strisce gialle, azzurre e verdi, e sotto ci sono 32 "
+            "tasti che sentono la forza. Moog la presenta a metà maggio del 2018, "
+            "alla vigilia del suo festival a Durham. Non salva nessun suono, il "
+            "suono è dove stanno le manopole. Sul numero delle prese le "
+            "recensioni non tornano, 41 per Sound On Sound e 35 per MusicRadar. "
+            "Anche i colori hanno diviso, lo scrive MusicRadar, e CDM l'ha "
+            "chiamata il Moog più colorato di sempre. A me piacciono, perché "
+            "ogni sezione si trova al primo sguardo, anche al buio di un palco."
+        ),
+        "inventore_nome": "Moog Music, mezzo secolo dopo i modulari",
+        "inventore": (
+            "Qui Moog non vuol dire Bob Moog, che è morto nel 2005 e questa "
+            "macchina non l'ha vista. La fa la ditta col suo nome, e chi l'abbia "
+            "disegnata non sono riuscito a scoprirlo. Moog dice però da dove "
+            "viene. I circuiti si rifanno ai modulari degli anni '60 e '70, il "
+            "filtro al modulo 904A e il riverbero al 905. E la Grandmother si "
+            "attacca alle altre macchine di casa, la Mother-32 e il DFAM, e ai "
+            "moduli Eurorack. Per presentarla, nel 2018, Moog chiede un video ad "
+            "Adrian Younge, che di colonne sonore e vecchi strumenti vive."
+        ),
+        "come_funziona": (
+            "Semi-modulare vuol dire che i pezzi sono già collegati dentro, in un "
+            "ordine che funziona, quindi accendete e suona senza un cavo. Gli "
+            "oscillatori sono 2 e uno può agganciarsi all'altro. Poi c'è il filtro "
+            "a scala di Moog, passa-basso a 4 poli, e un passa-alto più leggero. "
+            "Un cavetto infilato in una presa scavalca il collegamento interno, e "
+            "da lì il percorso lo decidete voi. Il sequencer tiene 3 sequenze "
+            "fino a 256 passi, e c'è un arpeggiatore. Provate a mandare dentro il "
+            "suono di qualcos'altro. Filtro e molla accettano un ingresso esterno."
+        ),
+        "richiami": [
+            ("FIG. 1", "Semi-modulare, si ricabla coi cavetti"),
+            ("FIG. 2", "Filtro a scala, 4 poli"),
+            ("FIG. 3", "Riverbero a molla vero"),
+        ],
+        "chi_lusata": [
+            {"artista": "Mike Dean",
+             "nota": "nelle sessioni di «4:20», il suo disco strumentale del 2020",
+             "ig": None},
+            {"artista": "Adrian Younge",
+             "nota": "il video di presentazione, nel 2018",
+             "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "moogsynthesizers",
+             "riga": "La Grandmother la costruisce @moogsynthesizers."},
+        ],
+        "da_ascoltare": {"brano": "The Eighth Night", "artista": "Mike Dean", "anno": "2020",
+                         "cosa": "Le 2 parti su «4:20». Moog ha filmato Dean mentre la costruisce e dice che è tutta Grandmother, ma lo dice solo Moog."},
+        "aneddoto": (
+            "Maggio 2018, Durham, nella Carolina del Nord. Moog presenta la "
+            "Grandmother due giorni prima che cominci il Moogfest. I primi 500 "
+            "esemplari hanno un distintivo «Moogfest 2018» e arrivano con una "
+            "giacca di jeans di Moog. All'inizio si comprano soltanto da Guitar "
+            "Center, la catena americana di negozi di strumenti. Poi la "
+            "Grandmother arriva anche negli altri negozi. La giacca no, quella "
+            "è rimasta ai primi 500."
+        ),
+        "avvertenza": "Nessuna memoria per i suoni. Prima di spegnere fotografate il pannello, perché alla riaccensione conta solo dove stanno le manopole.",
+        "foto": {
+            "file": "assets/foto/grandmother/principale.jpg",
+            "posizione": "center 45%",
+            "autore": "Henry Söderlund",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Il pannello a strisce. Giallo l'arpeggiatore, azzurro gli oscillatori, verde il filtro",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/grandmother/pannello.jpg",
+             "autore": "Henry Söderlund",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "40% center",
+             "didascalia": "Le manopole Waveform e Cutoff Amt da vicino"},
+        ],
+        "fonti": [
+            {"titolo": "«Moog debut semi-modular Grandmother synth» — Sound On Sound, 15/05/2018",
+             "url": "https://www.soundonsound.com/news/moog-debut-semi-modular-grandmother-synth", "data": "2026-11-17"},
+            {"titolo": "«Moog Grandmother review» — MusicRadar, 18/07/2018",
+             "url": "https://www.musicradar.com/reviews/moog-grandmother", "data": "2026-11-17"},
+            {"titolo": "CDM, 15/05/2018",
+             "url": "https://cdm.link/details-moogs-new-grandmother-semi-modular-synth-keyboard/", "data": "2026-11-17"},
+            {"titolo": "Attack Magazine, 14/05/2018",
+             "url": "https://www.attackmagazine.com/news/moog-grandmother-new-analogue-synth/", "data": "2026-11-17"},
+            {"titolo": "Gearnews, 14/05/2018",
+             "url": "https://www.gearnews.com/moog-grandmother-update-videos-explore-sound-construction", "data": "2026-11-17"},
+            {"titolo": "Synthtopia, 11/05/2018",
+             "url": "https://www.synthtopia.com/content/2018/05/11/moog-grandmother-semi-modular-analog-synthesizer-combines-vintage-vibe-with-modern-connectivity/", "data": "2026-11-17"},
+            {"titolo": "Digital Music News, 16/05/2018",
+             "url": "https://www.digitalmusicnews.com/2018/05/16/moog-grandmother-synth-guitar-center/", "data": "2026-11-17"},
+            {"titolo": "Intervista a Mike Dean — Albumism, 05/06/2020",
+             "url": "https://www.albumism.com/interviews/sound-and-vision-a-conversation-with-mike-dean", "data": "2026-11-17"},
+            {"titolo": "MatrixSynth (testo di Moog), 20/04/2020",
+             "url": "https://www.matrixsynth.com/2020/04/mike-dean-eighth-night-moog-grandmother.html", "data": "2026-11-17"},
+            {"titolo": "Mike Dean, «4:20» (2020), tracce — MusicBrainz",
+             "url": "https://musicbrainz.org/release/8832093f-2640-4115-9a1f-890cda4886f5", "data": "2026-11-17"},
+            {"titolo": "Mike Dean, «4:20» — Apple Music",
+             "url": "https://music.apple.com/album/1508164573", "data": "2026-11-17"},
+            {"titolo": "«Mike Dean shares solo 4:20 mixtape» — Exclaim!, 20/04/2020",
+             "url": "https://exclaim.ca/music/article/mike_dean_shares_solo_4_20_mixtape", "data": "2026-11-17"},
+        ],
+        "hashtags": ["#mooggrandmother", "#moog", "#sintetizzatore", "#mikedean", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 099", "Un sintetizzatore del 2018 con una molla d'acciaio dentro"),
+            ("MOOG GRANDMOTHER · 2018", "La Moog Grandmother esce nel 2018, a strisce gialle, azzurre e verdi."),
+            ("SEMI-MODULARE", "La Grandmother suona appena accesa, e coi cavetti si ricabla da fuori."),
+            ("MOOGFEST · 2018", "I primi 500 esemplari arrivano con una giacca di jeans di Moog."),
+            ("MIKE DEAN · 2020", "Mike Dean usa la Grandmother per «The Eighth Night», sul disco «4:20»."),
+        ],
+        "reel_cta": "Mandalo a chi non salva mai un suono",
+        "reel_audio": {
+            "file": "assets/audio/grandmother/registrazione.mp3", "inizio": 0,
+            "autore": "JupiterWhistles", "licenza": "CC0",
+            "fonte": "Freesound",
+            "url": "https://freesound.org/people/JupiterWhistles/sounds/472235/",
+            "cosa": "una Grandmother vera che suona una sequenza in la minore a 90 bpm col suo riverbero a molla, presa in linea da un preamplificatore, senza equalizzazione (anteprima mp3 di Freesound)",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 100
+    # Keio Donca-Matic (poi Korg) e i Mini Pops. Scheda scritta il 17/11/2026
+    # (rifornimento automatico).
+    #
+    # REGISTRAZIONE: https://archive.org/details/Keio_DoncaMatic_DE_20_Rhythms
+    #   «Ernst Orwell», 10/02/2020, Public Domain Mark 1.0, Electronic Rhythm
+    #   Archive di Internet Archive. Descrizione: «The pre-programmed rhythms
+    #   of a Keio DoncaMatic DE 20 rhythm machine. (This set unfortunately
+    #   lacks both the Swing and Samba rhythms.)». Regole dell'archivio per chi
+    #   contribuisce: «No mic recording, no effects processing» e il consenso al
+    #   pubblico dominio. È un DE-20 del 1966, NON il DA-20 della foto: lo dice
+    #   «cosa». 18 WAV da 4,571 s (2 battute a 105 bpm), scaricati dal
+    #   container il 17/11/2026 (archive.org risponde, Commons no). Montaggio:
+    #   Rock 1, Cha Cha, Bossanova 1, Mambo, Beguine, ognuno 2 volte di fila
+    #   (i file attaccano sul colpo e finiscono smorzati, la giunta non si
+    #   sente nello spettrogramma). MISURATO: 45,74 s, -18,1 LUFS, LRA 1,8,
+    #   picco -0,5 dBFS, nessun silenzio; colpi fino a 10 kHz. Nessuna melodia,
+    #   solo batteria. Non ascoltato da un orecchio.
+    #
+    # FONTI PER FATTO (aperte il 17/11/2026)
+    # - Tadashi Osanai suona col Wurlitzer Sideman nel locale di Tsutomu
+    #   Katoh a Tokyo, lo trova limitato, Katoh finanzia una macchina migliore:
+    #   Sound On Sound (Gordon Reid, «History of Korg» 1, ottobre 2002), FACT
+    #   22/09/2016, Mix 31/03/2011.
+    # - Osanai fisarmonicista: FACT, Mix.
+    # - DA-20 del 1963, primo prodotto, disco che gira come nel Sideman:
+    #   Sound On Sound, Korg Giappone 16/09/2020, FACT, Mix.
+    # - nel Sideman spazzole di metallo che toccano contatti: Sound On Sound;
+    #   FACT («rotating disc»), SMEM («rotating disc with metal contacts»).
+    # - il nome dal suono «donca donca»: Sound On Sound («apocrypha»),
+    #   Wikipedia (EN, «Korg»).
+    # - Korg = Keio + organ: Sound On Sound, Mix.
+    # - 1966, DE-20 e Mini Pops a transistor: Sound On Sound, Wikipedia; FACT
+    #   dice 1967. Detto in scheda.
+    # - sul Mini Pops più tasti di ritmo insieme si sommano: FACT; Jarre stesso
+    #   (The Electricity Club 16/10/2018, MusicRadar).
+    # - Jarre e il Mini Pops su «Oxygène»: FACT, Sound On Sound febbraio 2008,
+    #   The Electricity Club. Il nastro adesivo per due ritmi insieme: The
+    #   Electricity Club (citazione), MusicRadar (titolo con la citazione).
+    #   «Part IV» è «slow rock» più «rock»: The Electricity Club, Wikipedia
+    #   «Korg Mini Pops».
+    # - Echo & the Bunnymen e la drum machine chiamata Echo, un Minipops
+    #   Junior, Rock 1, «there were only two» ritmi: One Two Testing,
+    #   dicembre 1985 (Jon Lewin); Stereogum, estratto dal libro di Will
+    #   Sergeant («Rock 1», «We can always call the drum machine Echo»). Sul
+    #   nome del gruppo le due fonti dicono cose diverse: detto in scheda.
+    # - in Giappone «donkama» per il click: Korg Giappone 2020, ja.wikipedia
+    #   ドンカマチック, Mix. Korg e Mix non sono del tutto indipendenti: NON
+    #   usato in scheda.
+    #
+    # FATTI SCARTATI (una fonte sola)
+    # - prezzo di 280.000 yen, 25 ritmi, 11 suoni (solo ja.wikipedia); il
+    #   «patrimonio tecnologico del futuro» del 2020 (solo Korg); la fabbrica
+    #   del 1962 con 4 dipendenti (solo SOS); le valvole nel DA-20 (solo
+    #   Wikipedia per la via del museo Korg); il Mini Pops senza sincrono su
+    #   «Oxygène» (solo SOS 2008); Aphex Twin e «minipops 67» (non aperta la
+    #   seconda fonte); Gorillaz «Doncamatic» (omaggio nel titolo, non suono).
+    #
+    # HANDLE: @korgofficial, già usato (piede di korg.com).
+    #
+    # FOTO (thumbnail guardati il 17/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:KORG_Donca_Matic_DA-20_(1963).jpg
+    #   Brandon Daniel (Flickr), CC BY-SA 2.0, 856x1280 (thumbnail 960 = file
+    #   originale, verticale). Il DA-20 al museo Korg di Tokyo, dietro un
+    #   cordone rosso, col cartello «DONCA MATIC DA-20 (1963年)». Scartata la
+    #   versione «clip1» di Clusternote: ingrandita.
+    # extra: https://commons.wikimedia.org/wiki/File:Korg_Mini-Pops_5.jpg
+    #   Alison Cassidy, CC BY-SA 4.0, 4032x3024, thumbnail 1280: il pannello
+    #   del Mini Pops 5 con la targa DONCA MATIC MINI POPS 5 e i tasti dei
+    #   ritmi, da WALTZ a FOX-SWING.
+    {
+        "slug": "doncamatic",
+        "numero": 100,
+        "serie": "LE DRUM MACHINE",
+        "strumento": "Keio Donca-Matic",
+        "anno": "1963",
+        "luogo": "Tokyo, Giappone",
+        "costruttore": "Keio (poi Korg)",
+        "specifiche": [
+            ("USCITA", "1963"),
+            ("MECCANICA", "DISCO ROTANTE"),
+            ("MINI POPS", "1966"),
+            ("DITTA", "KEIO, POI KORG"),
+        ],
+        "gancio": "Il primo prodotto della ditta che diventerà Korg è una batteria elettrica, fatta per un fisarmonicista",
+        "sottotitolo": "Un mobile col disco che gira e chiude contatti, poi una scatola da tavolo con i ritmi delle sale da ballo.",
+        "la_macchina": (
+            "Quello della foto è il DA-20 del 1963, oggi in un museo dietro un "
+            "cordone rosso. È un mobile alto, con una fila di tasti per scegliere "
+            "il ritmo e le manopole del tempo, e dietro il vetro si vede il "
+            "telaio. Pochi anni dopo la stessa ditta lo rifà a transistor, col "
+            "DE-20 e coi Mini Pops, che stanno su un tavolo. Quello che sentite è "
+            "un DE-20, non il DA-20. I ritmi hanno i nomi delle sale da ballo, "
+            "beguine, mambo, cha cha, bossa nova. A me il rock 1 fa ancora "
+            "sorridere, sembra una scatola di fiammiferi suonata con le dita."
+        ),
+        "inventore_nome": "Tadashi Osanai e Tsutomu Katoh",
+        "inventore": (
+            "Tadashi Osanai suona la fisarmonica. A Tokyo suona nel locale di "
+            "Tsutomu Katoh, accompagnato da un Wurlitzer Sideman, una batteria "
+            "elettrica americana, e il Sideman gli sta stretto. Convince Katoh a "
+            "pagargli una macchina migliore. La ditta si chiama Keio, e il "
+            "Donca-Matic DA-20 del 1963 è il suo primo prodotto. Il nome, si "
+            "racconta, viene dal suono che fa, donca donca. Più avanti sugli "
+            "strumenti compare la parola Korg, da Keio e organ. Sull'anno dei "
+            "Mini Pops le fonti non concordano, Sound On Sound dice 1966 e FACT "
+            "1967."
+        ),
+        "come_funziona": (
+            "Un motore fa girare un disco, e sul disco i contatti sono messi in "
+            "fila come le punte di un carillon. Ogni contatto che passa sotto una "
+            "spazzola di metallo chiude un circuito, e quel circuito fa un "
+            "colpo, la cassa, il rullante, un piatto. Cambiare ritmo vuol dire "
+            "leggere un'altra fila. I suoni non sono registrati da nessuna parte, "
+            "li fanno i circuiti stessi. Sui Mini Pops i tasti dei ritmi si "
+            "possono premere in 2 alla volta, e i ritmi si sommano. Ascoltate la "
+            "registrazione sapendo che lì dentro non c'è nessun batterista."
+        ),
+        "richiami": [
+            ("FIG. 1", "Un disco che gira e chiude contatti"),
+            ("FIG. 2", "Ritmi da sala da ballo"),
+            ("FIG. 3", "2 tasti insieme, 2 ritmi sommati"),
+        ],
+        "chi_lusata": [
+            {"artista": "Jean-Michel Jarre",
+             "nota": "un Mini Pops per la batteria di «Oxygène» (1976)",
+             "ig": None},
+            {"artista": "Echo & the Bunnymen",
+             "nota": "un Minipops Junior al posto del batterista, all'inizio",
+             "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "korgofficial",
+             "riga": "Il Donca-Matic è il primo prodotto della ditta che oggi è @korgofficial."},
+        ],
+        "da_ascoltare": {"brano": "Oxygène (Part IV)", "artista": "Jean-Michel Jarre", "anno": "1976",
+                         "cosa": "La batteria è un Mini Pops con 2 ritmi, slow rock e rock, tenuti premuti insieme col nastro adesivo."},
+        "aneddoto": (
+            "All'inizio gli Echo & the Bunnymen non hanno un batterista. Hanno "
+            "un Minipops Junior, che dipingono di verde, e il ritmo è il Rock 1. "
+            "Nel 1985 raccontano a One Two Testing che di ritmi ce n'erano 2, e "
+            "che a un certo punto li avevano finiti. La drum machine aveva anche "
+            "un nome, Echo. La rivista scrive che è stata lei a dare il nome al "
+            "gruppo. Will Sergeant, nel suo libro, la racconta al contrario. Il "
+            "nome del gruppo veniva da una lista di un coinquilino, e la "
+            "macchina è diventata Echo dopo."
+        ),
+        "avvertenza": "Tasti di ritmo premuti insieme si sommano. Prima di fermarne 2 col nastro adesivo, controllate che vadano d'accordo.",
+        "foto": {
+            "file": "assets/foto/doncamatic/principale.jpg",
+            "posizione": "center 55%",
+            "autore": "Brandon Daniel",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Il DA-20 del 1963 al museo Korg di Tokyo. I tasti dei ritmi stanno in alto",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/doncamatic/minipops5.jpg",
+             "autore": "Alison Cassidy",
+             "licenza": "CC BY-SA 4.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 70%",
+             "didascalia": "Un Mini Pops 5. I tasti vanno dal valzer al fox-swing"},
+        ],
+        "fonti": [
+            {"titolo": "«The History of Korg, part 1», Gordon Reid — Sound On Sound, ottobre 2002",
+             "url": "https://www.soundonsound.com/music-business/history-korg-part-1", "data": "2026-11-17"},
+            {"titolo": "«The 14 drum machines that shaped modern music», Scott Wilson — FACT, 22/09/2016",
+             "url": "https://www.factmag.com/2016/09/22/the-14-drum-machines-that-shaped-modern-music/", "data": "2026-11-17"},
+            {"titolo": "Korg, notizia del 16/09/2020 sul Donca-Matic DA-20 (giapponese)",
+             "url": "https://www.korg.com/jp/news/2020/0916/", "data": "2026-11-17"},
+            {"titolo": "Korg USA, 50 anni — Mix, 31/03/2011",
+             "url": "https://www.mixonline.com/?p=58812", "data": "2026-11-17"},
+            {"titolo": "«Jean-Michel Jarre: 30 years of Oxygène» — Sound On Sound, febbraio 2008",
+             "url": "https://www.soundonsound.com/people/jean-michel-jarre-30-years-oxygene", "data": "2026-11-17"},
+            {"titolo": "Jean-Michel Jarre su «Oxygène» — The Electricity Club, 16/10/2018",
+             "url": "https://www.electricity-club.co.uk/?p=65725", "data": "2026-11-17"},
+            {"titolo": "«By using Sellotape I could make it play two preset rhythms…» — MusicRadar",
+             "url": "https://www.musicradar.com/artists/by-using-sellotape-i-could-make-it-play-two-preset-rhythms-at-the-same-time-creating-cool-beats-50-years-ago-this-summer-jean-michel-jarre-began-making-the-album-that-took-electronic-music-global", "data": "2026-11-17"},
+            {"titolo": "«Echo And The Bunnymen», Jon Lewin — One Two Testing, dicembre 1985",
+             "url": "http://www.muzines.co.uk/articles/echo-plex/11955", "data": "2026-11-17"},
+            {"titolo": "Will Sergeant, estratto del libro — Stereogum",
+             "url": "https://www.stereogum.com/2165413/will-sergeant-echo-and-the-bunnymen-memoir/columns/sounding-board/book-club/", "data": "2026-11-17"},
+            {"titolo": "«Korg» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Korg", "data": "2026-11-17"},
+            {"titolo": "«Korg Mini Pops» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Korg_Mini_Pops", "data": "2026-11-17"},
+            {"titolo": "Wurlitzer Sideman — SMEM, Friburgo",
+             "url": "https://www.smemmusic.ch/index.php/de/node/1100", "data": "2026-11-17"},
+        ],
+        "hashtags": ["#doncamatic", "#korg", "#drummachine", "#jeanmicheljarre", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 100", "La prima macchina della futura Korg è una batteria elettrica"),
+            ("TOKYO · ANNI '60", "Tadashi Osanai suona in un locale col Wurlitzer Sideman, che è limitato."),
+            ("DONCA-MATIC · 1963", "Tsutomu Katoh gli paga una macchina migliore, il Donca-Matic DA-20."),
+            ("MINI POPS", "Poi la ditta di Katoh rifà il Donca-Matic piccolo: è il Mini Pops."),
+            ("OXYGÈNE · 1976", "Jean-Michel Jarre blocca 2 ritmi del Mini Pops col nastro adesivo."),
+        ],
+        "reel_cta": "Mandalo a chi fischia «Oxygène» in macchina",
+        "reel_audio": {
+            "file": "assets/audio/doncamatic/registrazione.mp3", "inizio": 0,
+            "autore": "Ernst Orwell (Electronic Rhythm Archive)", "licenza": "Pubblico dominio (PD Mark 1.0)",
+            "fonte": "Internet Archive",
+            "url": "https://archive.org/details/Keio_DoncaMatic_DE_20_Rhythms",
+            "cosa": "un Keio Donca-Matic DE-20 del 1966, non il DA-20 della foto: i ritmi di fabbrica (rock 1, cha cha, bossa nova, mambo, beguine) presi dall'uscita, senza microfono né effetti, montati in fila",
+        },
+        "verificata": True,
+    },
 ]
 
 

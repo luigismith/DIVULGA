@@ -1,0 +1,2 @@
+assets/audio/jp8000/originale.mp3 https://cdn.freesound.org/previews/337/337734_282376-hq.mp3
+assets/foto/jp8000/principale.png https://upload.wikimedia.org/wikipedia/commons/3/3b/JP-8000.png
