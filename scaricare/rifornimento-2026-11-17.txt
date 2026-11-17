@@ -1,3 +1,2 @@
-assets/audio/vl1/originale.ogg https://upload.wikimedia.org/wikipedia/commons/d/dc/Casio_vl1_music.ogg
 assets/audio/tubescreamer/originale.webm https://upload.wikimedia.org/wikipedia/commons/a/ab/Maxon_OD808_Overdrive_pedal.webm
 assets/audio/grandmother/originale.mp3 https://cdn.freesound.org/previews/472/472235_10009269-hq.mp3
