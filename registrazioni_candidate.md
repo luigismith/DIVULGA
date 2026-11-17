@@ -179,3 +179,37 @@ P27music (520138, CC0, 41,7 s) e «GatesOfWasteland-Drone» di Dogma_Reloaded
 dell'anteprima (cdn.freesound.org/previews/…, serve l'id utente) il runner
 non le scarica: se una sessione lo trova, sono migliori dello sweep.
 Roland CR-78: ancora nessuna foto libera, nemmeno su Openverse.
+
+Entrate in catalogo il 17/11/2026 (rifornimento automatico, coda da 10 a
+14): Ibanez Tube Screamer (Commons «Maxon OD808 Overdrive pedal.webm»,
+Sweet Jam Tracks via Skimel, CC BY 3.0, la riedizione Maxon, 1,9-94 s),
+Moog Grandmother (Freesound 472235, CC0: il disco a due fonti ora c'è, Mike
+Dean «The Eighth Night»), Keio Donca-Matic (Internet Archive, Electronic
+Rhythm Archive, DE-20, PD Mark: archive.org si scarica DAL CONTAINER),
+Roland JP-8000 (Freesound 337734, gmegas, CC BY 4.0, 10 minuti, estratto
+15-105 s).
+**L'Electronic Rhythm Archive** (https://archive.org/details/electronicrhythmarchive,
+25 macchine, PD Mark, presi dall'uscita senza effetti) è una miniera di
+ritmi di fabbrica: Casio VL-1, SK-1, MT/CT vari, Yamaha PSS, Boss DR-110,
+Wurlitzer Sideman, organi Thomas e Kimball. Loop corti (2-10 s): vanno
+montati in fila, come il Donca-Matic.
+Riserve trovate il 17/11/2026:
+- Wurlitzer Sideman: archive.org «wurlitzer_sideman_rhythms» (PD Mark, 18 x
+  ~9,6 s); foto Commons «Wurlitzer Sideman (1959) upper half.jpg» (CC BY-SA
+  2.0, 1200x900). Manca un disco a due fonti, e la storia di Osanai sta già
+  nel Donca-Matic.
+- Maxon PT999 Phase Tone (Commons, Sweet Jam Tracks, CC BY 4.0, 78 s): il
+  primo progetto di Tamura, ma un phaser come il Phase 90.
+- «Vintage IBANEZ TS-808 comparison.webm» (MagicBus, CC BY 3.0, 3 TS-808
+  del 1980-81): licenza in revisione su Commons, da ricontrollare.
+- Roland Alpha Juno (archive.org «sepha-roland-alpha-juno-pt1», CC BY 4.0):
+  accordi tenuti con un filtro, non un'esecuzione. La storia del «hoover»
+  c'è.
+- Jen SX-1000 (Pescara; Freesound 62895, vedas, CC BY 3.0, 5 min): solo
+  effetti su una nota e foto da telefono del 2006. Filone italiano senza
+  registrazioni libere: Binson Echorec, Meazzi, Eko ComputeRhythm, Davoli,
+  GEM, Logan, Crumar Multiman (ricerca del 17/11/2026, niente).
+Scartato: il Casio VL-1 come scheda nuova, è già uscito il 18/10 (slug
+`vl1`) col suo suono; la sua registrazione «Casio vl1 music.ogg» (CC BY-SA
+3.0, melodia popolare svizzera «Unterländers Heimweh») resta una riserva per
+il sito.
