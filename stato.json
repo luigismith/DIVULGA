@@ -517,7 +517,10 @@
    "permalink": "https://www.instagram.com/p/Dfz2sRTCjnM/"
   }
  ],
- "ultimo_errore": null,
+ "ultimo_errore": {
+  "quando": "2026-11-17T17:03:25.150550+00:00",
+  "titolo": "reel 'ds1': pubblicazione fallita"
+ },
  "reel": [
   {
    "slug": "dx7",
