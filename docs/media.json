@@ -136,6 +136,10 @@
    "file": "tavole/mellotron/reel2.jpg",
    "firma": "70b2cc7c43639264-1"
   },
+  "microfreak": {
+   "file": "tavole/microfreak/reel2.jpg",
+   "firma": "29290265ea544e2e-1"
+  },
   "microkorg": {
    "file": "tavole/microkorg/reel2.jpg",
    "firma": "2b8f712eeddd0edd-1"
@@ -1021,6 +1025,26 @@
     ]
    },
    "firma": "da2bce5d1811fb78-320-640-1280-1"
+  },
+  "microfreak": {
+   "1280": "foto/microfreak-1280.jpg",
+   "320": "foto/microfreak-320.jpg",
+   "640": "foto/microfreak-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     855
+    ],
+    "320": [
+     320,
+     214
+    ],
+    "640": [
+     640,
+     428
+    ]
+   },
+   "firma": "c80ab58c59ec04c2-320-640-1280-1"
   },
   "microkorg": {
    "1280": "foto/microkorg-1280.jpg",
@@ -2138,6 +2162,11 @@
    "file": "suoni/mellotron.mp3",
    "firma": "7bfdc1abd844c0c0-0-45-1",
    "secondi": 14.6
+  },
+  "microfreak": {
+   "file": "suoni/microfreak.mp3",
+   "firma": "782c3e2ca6dce1b5-0-45-1",
+   "secondi": 17.8
   },
   "microkorg": {
    "file": "suoni/microkorg.mp3",
