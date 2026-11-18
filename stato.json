@@ -515,12 +515,14 @@
    "quando": "2026-11-16T17:05:36.481174+00:00",
    "media_id": "17883457512630801",
    "permalink": "https://www.instagram.com/p/Dfz2sRTCjnM/"
+  },
+  {
+   "slug": "microfreak",
+   "quando": "2026-11-18T17:05:04.799062+00:00",
+   "media_id": "18131518069882271"
   }
  ],
- "ultimo_errore": {
-  "quando": "2026-11-17T17:03:25.150550+00:00",
-  "titolo": "reel 'ds1': pubblicazione fallita"
- },
+ "ultimo_errore": null,
  "reel": [
   {
    "slug": "dx7",
