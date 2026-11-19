@@ -512,8 +512,10 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
    stop e issue, mai retry in loop.
 7. La coda in `contenuti.py` non scende mai sotto **14 schede verificate**
    (= 2 settimane a 1 post/giorno). Ogni sessione di rifornimento ne
-   aggiunge di nuove e le verifica; c'è una Routine che apre sessioni di
-   rifornimento due volte a settimana.
+   aggiunge di nuove e le verifica; c'è una Routine che apre una sessione
+   di rifornimento il martedì alle 9:07 (una volta a settimana dal
+   19/11/2026, decisione del proprietario: con tre schede a settimana la
+   coda di 14 dura quasi 5 settimane; prima era martedì e venerdì).
 8. Dopo ogni pubblicazione si verifica il post DAVVERO (aprire il
    permalink/archivio, non fidarsi del codice di risposta).
 9. Quando sbagli: dirlo chiaro al proprietario e scrivere la regola in un
