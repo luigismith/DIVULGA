@@ -109,7 +109,8 @@ def main(slug):
         if slug in gia_pubblicati(stato, FORMATO_HEYGEN):
             print(f"[stop] il reel HeyGen di '{slug}' risulta già pubblicato: non lo rifaccio.")
             return 0
-    elif any(slug in gia_pubblicati(stato, f) for f in (FORMATO, FORMATO_VOCE)):
+    elif (any(slug in gia_pubblicati(stato, f) for f in (FORMATO, FORMATO_VOCE))
+          and not (formato == FORMATO and da_rifare_col_ritmo(stato, slug))):
         print(f"[stop] il reel di '{slug}' (formato 2 o 3) risulta già pubblicato: non lo rifaccio.")
         return 0
     # Un reel ha senso solo per una scheda già uscita nel feed.
@@ -269,14 +270,14 @@ def reel_di_oggi(stato=None):
     oggi = P.dt.datetime.now(P.ROMA).date()
     if calendario.cosa_oggi(stato, oggi) == "post":
         return None
-    if calendario.reel_di_oggi(stato, oggi):
+    # Conta solo la passata della SERA: il reel di mezzogiorno (un
+    # rifacimento, 20/11/2026) non toglie il posto a quello delle 18.
+    if calendario.reel_di_oggi(stato, oggi, "sera"):
         return None
-    # UN SOLO TENTATIVO al giorno anche con quattro inneschi: se oggi un
+    # UN SOLO TENTATIVO a passata anche con quattro inneschi: se stasera un
     # reel è già fallito dopo l'API, gli altri inneschi non ci riprovano
     # (il budget video lo consumano anche i fallimenti).
-    err = stato.get("ultimo_errore") or {}
-    if (err.get("titolo", "").startswith("reel ") and err.get("quando")
-            and calendario.data_italiana(err["quando"]) == oggi):
+    if errore_di_oggi(stato, oggi, "sera"):
         return None
     slug = prossimo_reel(stato)
     if slug:
@@ -286,15 +287,78 @@ def reel_di_oggi(stato=None):
     return None
 
 
-def prossimo_rifacimento(stato=None):
-    """La scheda piu' vecchia che ha solo il reel del formato 1."""
+def errore_di_oggi(stato, oggi, solo_fascia):
+    """Vero se oggi, in quella passata, un reel è già fallito dopo l'API."""
+    import calendario
+    err = stato.get("ultimo_errore") or {}
+    return bool(err.get("titolo", "").startswith("reel ") and err.get("quando")
+                and calendario.data_italiana(err["quando"]) == oggi
+                and calendario.fascia(err["quando"]) == solo_fascia)
+
+
+def da_rifare_col_ritmo(stato, slug):
+    """Vero se la scheda ha SOLO reel del formato 2 a 2,6 s fissi (usciti
+    prima del 13/10/2026, senza `ritmo`): niente lettura, niente parlato,
+    niente HeyGen. Rifarlo col ritmo di lettura è un video diverso (le
+    battute restano sullo schermo il tempo di leggerle: i commenti dicevano
+    «troppo veloci»)."""
+    suoi = [r for r in stato.get("reel", []) if r["slug"] == slug]
+    return (any(r.get("formato") == FORMATO for r in suoi)
+            and not any(r.get("ritmo") == genera_reel.RITMO
+                        or r.get("formato") in (FORMATO_VOCE, FORMATO_HEYGEN)
+                        for r in suoi))
+
+
+def candidati_rifacimento(stato=None):
+    """I rifacimenti possibili, nell'ordine in cui escono.
+
+    Prima le schede che hanno solo il reel del formato 1, poi quelle che
+    hanno solo il formato 2 a ritmo fisso. Dentro ciascun gruppo vengono
+    avanti quelle col suono vero (`reel_audio`, regola del 17/10/2026), poi
+    l'ordine di uscita. Fuori i fuori catalogo (non stanno in `pubblicati`)
+    e le schede il cui reel oggi sarebbe HeyGen o parlato: quelli hanno
+    un'altra strada."""
     stato = stato or P.leggi_stato()
     nuovi = (gia_pubblicati(stato, FORMATO) | gia_pubblicati(stato, FORMATO_VOCE)
              | gia_pubblicati(stato, FORMATO_HEYGEN))
+    con_reel = gia_pubblicati(stato)
+    schede = {s["slug"]: s for s in contenuti.SCHEDE}
+    primi, secondi = [], []
     for p in stato["pubblicati"]:
-        if p["slug"] not in nuovi:
-            return p["slug"]
-    return None
+        slug = p["slug"]
+        s = schede.get(slug)
+        if s is None or slug not in con_reel:
+            continue        # senza nessun reel è prossimo_reel, non un rifacimento
+        if slug not in nuovi:
+            primi.append(s)
+        elif da_rifare_col_ritmo(stato, slug) and formato_di(s) == FORMATO:
+            secondi.append(s)
+    chiave = lambda s: not s.get("reel_audio")      # False (col suono) prima
+    return [s["slug"] for s in sorted(primi, key=chiave) + sorted(secondi, key=chiave)]
+
+
+def prossimo_rifacimento(stato=None):
+    """Il primo rifacimento possibile (vedi candidati_rifacimento)."""
+    c = candidati_rifacimento(stato)
+    return c[0] if c else None
+
+
+def rifacimento_di_oggi(stato=None):
+    """Il reel di MEZZOGIORNO (12:30, tutti i giorni dal 20/11/2026): un
+    rifacimento. Vuoto se ne è già uscito uno stamattina, se stamattina è
+    già fallito dopo l'API, o se ormai è pomeriggio: un cron in ritardo che
+    arriva alle 17 non deve pubblicare a ridosso dell'uscita delle 18."""
+    import calendario
+    stato = stato or P.leggi_stato()
+    ora = P.dt.datetime.now(P.ROMA)
+    oggi = ora.date()
+    if not (FINESTRA_REEL[0] <= ora.hour < calendario.ORA_SERA):
+        return None
+    if calendario.reel_di_oggi(stato, oggi, "mezzogiorno"):
+        return None
+    if errore_di_oggi(stato, oggi, "mezzogiorno"):
+        return None
+    return prossimo_rifacimento(stato)
 
 
 if __name__ == "__main__":
@@ -314,9 +378,22 @@ if __name__ == "__main__":
             print(prossimo_reel() or "")
         elif modo == "--oggi":
             print(reel_di_oggi() or "")
+        elif modo == "--mezzogiorno":
+            print(rifacimento_di_oggi() or "")
         else:
             print(modo)
         raise SystemExit(0)
+    if slug == "--ricostruire":
+        # Per reel.yml: 1 se il reel2.mp4 su disco è quello vecchio a ritmo
+        # fisso già pubblicato, e va rifatto prima di pubblicare.
+        print("1" if da_rifare_col_ritmo(P.leggi_stato(), sys.argv[2]) else "")
+        raise SystemExit(0)
+    if slug == "--mezzogiorno":
+        slug = rifacimento_di_oggi()
+        if slug is None:
+            print("[stop] niente reel di mezzogiorno: già uscito, già fallito, fuori orario o niente da rifare.")
+            raise SystemExit(0)
+        print(f"[reel] reel di mezzogiorno (rifacimento): {slug}")
     if slug == "--rifacimento":
         slug = prossimo_rifacimento()
         if slug is None:

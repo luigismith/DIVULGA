@@ -168,7 +168,24 @@ l'automazione vive su GitHub Actions, i segreti nei GitHub secrets.
   · domenica: il reel HEYGEN sulla scheda andata meglio (vedi sotto); se
     c'è un reel di scheda da recuperare passa prima quello, e se HeyGen
     non c'è esce un rifacimento, perché la domenica non resti muta.
-  I rifacimenti quotidiani delle 12:30 sono finiti. La regola sta tutta
+  **Più il reel di MEZZOGIORNO, tutti i giorni alle 12:30** (dal
+  20/11/2026, il proprietario: «stiamo crescendo meno. rimedia»): un
+  rifacimento (`pubblica_reel.py --mezzogiorno`, cron di `reel.yml` alle
+  12:35 e Routine dei reel alle 12:25). **Errore mio del 15/11**: lui aveva
+  risposto «Restano i reel delle 12:30», io dopo ho letto «un'uscita al
+  giorno» come se li cancellasse. Prima: 2 reel al giorno, ~11 follower al
+  giorno. Dal 16 al 20/11: 1 reel in 5 giorni, ~1 follower al giorno. Il
+  98% della copertura è di chi non ci segue e arriva dai reel. Regola:
+  quando una risposta nuova sembra contraddirne una vecchia, si chiede.
+  I rifacimenti (`candidati_rifacimento`): prima le schede col solo reel
+  del formato 1, poi quelle col solo formato 2 a 2,6 s fissi, rifatte col
+  ritmo di lettura (reel.yml ricostruisce il reel2.mp4); dentro ciascun
+  gruppo prima quelle col suono vero. Il 20/11 erano 24, cioè fino a metà
+  dicembre: prima che finiscano si decide col proprietario cosa viene dopo.
+  Le due passate sono indipendenti (`calendario.fascia`, confine alle 16):
+  il reel di mezzogiorno non toglie il posto a quello delle 18, e un errore
+  a mezzogiorno non blocca la sera. Dopo le 16 il mezzogiorno non pubblica.
+  La regola sta tutta
   in `calendario.py` (pubblica.py, sentinella.py e pubblica_reel.py la
   importano: niente copie da tenere allineate). Gli inneschi restano
   quotidiani e chiamano tutti `pubblica.yml`, il cui primo job chiede a
@@ -383,8 +400,8 @@ passata delle 12:30 della routine dei reel, `reel.yml` con slug
 non ce l'ha (costruito sul runner, messo su Pages, pubblicato senza nuovi
 tag: gli account erano già stati avvisati). La passata delle 19:30 resta
 per il reel della scheda nuova. Primo rifacimento, di prova e verificato
-fino al permalink: Minimoog, 07/10/2026. **Finiti il 15/11/2026** con la cadenza nuova:
-ne resta solo uno la domenica, se il reel HeyGen non c'è.
+fino al permalink: Minimoog, 07/10/2026. Fermati per errore dal 15 al
+20/11/2026 e **ripresi il 20/11 tutti i giorni alle 12:30** (vedi «Cadenza»).
 
 **Risultato al 12/10/2026** (`metriche/2026-10-12.json`, mediane):
 formato 1, 45 reel: copertura 32, visione 4,0 s, abbandono nei primi 3 s
@@ -538,8 +555,10 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
   tre giorni in ritardo perché la sessione era bloccata (il post è uscito
   lo stesso: cron-job.org ha il fuso Europe/Rome). Il cron di `reel.yml`
   (scorta del reel delle 18, dal 15/11/2026): `55 17` con la solare,
-  `55 16` con la legale. **Il 28/03/2027**
-  si torna all'ora legale e vanno rimessi tutti e quattro.
+  `55 16` con la legale; e quello del reel di mezzogiorno (dal
+  20/11/2026): `35 11` con la solare, `35 10` con la legale, scritto
+  DUE volte in reel.yml (cron e passo «Quale scheda»). **Il 28/03/2027**
+  si torna all'ora legale e vanno rimessi tutti e cinque.
   Le Routine invece, dal 28/10/2026, hanno il fuso scritto nel cron
   (`CRON_TZ=Europe/Rome`): prima erano in UTC e con l'ora solare la rete
   delle 18:20 sarebbe partita alle 17:20, PRIMA di cron-job.org, e

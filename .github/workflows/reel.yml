@@ -29,10 +29,17 @@ on:
     # Senza input vale «--oggi»: nei giorni da post, o se il reel di oggi è
     # già uscito o già fallito, non fa niente.
     - cron: '55 17 * * *'
+    # Il reel di MEZZOGIORNO (un rifacimento, tutti i giorni dal 20/11/2026,
+    # vedi calendario.py): 11:35 UTC = 12:35 italiane con l'ora solare;
+    # DAL 28/03/2027 va a '35 10'. Lo stesso valore è scritto sotto, nel
+    # passo «Quale scheda»: si cambiano insieme. La Routine dei reel delle
+    # 12:25 lo lancia a mano prima; se il reel è già uscito, questo non fa
+    # niente.
+    - cron: '35 11 * * *'
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Slug della scheda; vuoto = il reel di oggi secondo calendario.py; --prossimo = la piu vecchia senza reel; --rifacimento = la piu vecchia senza reel del formato 2'
+        description: 'Slug della scheda; vuoto = il reel di oggi secondo calendario.py; --mezzogiorno = il rifacimento delle 12:30; --prossimo = la piu vecchia senza reel; --rifacimento = il prossimo rifacimento'
         required: false
         default: ''
         type: string
@@ -85,7 +92,12 @@ jobs:
             SLUG="${{ inputs.prova }}"
             echo "prova=1" >> "$GITHUB_OUTPUT"
           else
-            SLUG=$(python pubblica_reel.py --quale "${{ inputs.slug || '--oggi' }}")
+            MODO="${{ inputs.slug || '--oggi' }}"
+            if [ "${{ github.event.schedule }}" = "35 11 * * *" ]; then
+              MODO="--mezzogiorno"
+            fi
+            echo "modo: $MODO"
+            SLUG=$(python pubblica_reel.py --quale "$MODO")
           fi
           echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
           echo "scheda: '${SLUG}'"
@@ -96,6 +108,12 @@ jobs:
               echo "voce=1" >> "$GITHUB_OUTPUT"
             fi
             if [ -n "${{ inputs.prova }}" ] || [ ! -f "docs/tavole/$SLUG/$FILE" ]; then
+              echo "costruire=1" >> "$GITHUB_OUTPUT"
+            fi
+            # Rifacimento di un reel del formato 2 a ritmo fisso: il
+            # reel2.mp4 su disco è quello VECCHIO, già pubblicato. Va rifatto
+            # col ritmo di lettura, se no si ripubblica lo stesso video.
+            if [ "$(python pubblica_reel.py --ricostruire "$SLUG")" = "1" ]; then
               echo "costruire=1" >> "$GITHUB_OUTPUT"
             fi
             # Il reel HeyGen (formato 4) lo monta la sessione e lo committa

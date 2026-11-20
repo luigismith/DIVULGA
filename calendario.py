@@ -10,6 +10,15 @@ Decisioni del proprietario, 15/11/2026:
   (uno a settimana, non più due). I rifacimenti delle 12:30 si fermano.
 Un'uscita al giorno, sempre alle 18: chi ci segue sa quando guardare.
 
+PIÙ il reel di mezzogiorno, tutti i giorni (20/11/2026, il proprietario:
+«stiamo crescendo meno. rimedia»). ERRORE MIO, da non rifare: il 15/11 alla
+domanda «i reel delle 12:30?» aveva risposto «Restano», e io dopo ho letto
+«un'uscita al giorno» come se li cancellasse. Prima del 15/11 uscivano 2
+reel al giorno e arrivavano ~11 follower al giorno; dal 16 al 20/11 è uscito
+1 reel in 5 giorni e ne è arrivato ~1 al giorno. Il 98% di chi ci vede non
+ci segue, e arriva dai reel. Regola: quando una risposta nuova sembra
+contraddirne una vecchia, si chiede, non si sceglie da soli quale vale.
+
 Gli inneschi restano quotidiani (cron-job.org alle 18 chiama
 pubblica.yml, più i cron di GitHub): è questo file che dice a pubblica.yml
 se oggi tocca al post o al reel, e a reel.yml quale reel. Un solo posto
@@ -55,10 +64,24 @@ def oggi_si_pubblica(pubblicati, oggi):
     return not any(data_italiana(x["quando"]) >= previsto for x in pubblicati)
 
 
-def reel_di_oggi(stato, oggi):
-    """Gli slug dei reel già usciti oggi (fuso di Roma)."""
+# Il reel di MEZZOGIORNO (12:30, un rifacimento) e l'uscita delle 18 sono
+# due passate distinte: una cosa uscita prima di questa ora appartiene al
+# mezzogiorno, il resto alla sera. Serve perché «un reel al giorno» vale per
+# ciascuna passata, non per la giornata (20/11/2026, vedi REEL_MEZZOGIORNO).
+ORA_SERA = 16
+
+
+def fascia(iso):
+    ora = dt.datetime.fromisoformat(iso).astimezone(ROMA).hour
+    return "sera" if ora >= ORA_SERA else "mezzogiorno"
+
+
+def reel_di_oggi(stato, oggi, solo_fascia=None):
+    """Gli slug dei reel già usciti oggi (fuso di Roma); con `solo_fascia`
+    («mezzogiorno» o «sera») solo quelli di quella passata."""
     return [r["slug"] for r in stato.get("reel", [])
-            if r.get("quando") and data_italiana(r["quando"]) == oggi]
+            if r.get("quando") and data_italiana(r["quando"]) == oggi
+            and (solo_fascia is None or fascia(r["quando"]) == solo_fascia)]
 
 
 def cosa_oggi(stato, oggi=None):
