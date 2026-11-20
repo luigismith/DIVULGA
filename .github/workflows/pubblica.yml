@@ -131,6 +131,14 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
 
+      # Indirizzo del sito (20/11/2026, trasloco su elettrofoni.luigimassari.com):
+      # lo dice indirizzo.py a ogni corsa, così il giorno che il dominio
+      # nuovo è attivo pubblicazione, canonical e sitemap lo seguono da soli.
+      - name: Indirizzo del sito
+        run: |
+          BASE=$(python indirizzo.py)
+          echo "BASE_PAGES=$BASE" >> "$GITHUB_ENV"
+          echo "sito: $BASE"
       - name: Identità git
         run: |
           git config user.name "elettrofoni-bot"

@@ -49,6 +49,7 @@ Niente file pesanti in più: Pages ha un tetto di 1 GB e il sito è già a
 import hashlib
 import html
 import json
+import os
 import pathlib
 import re
 import shutil
@@ -63,7 +64,10 @@ DOCS = RADICE / "docs"
 # Indirizzo pubblico dell'archivio (og:, canonical, sitemap, dati
 # strutturati). I link FRA le pagine sono tutti relativi: se un giorno
 # cambia l'indirizzo, si cambia questa riga e basta.
-BASE = "https://luigismith.github.io/DIVULGA"
+# Dal 20/11/2026 la riga la scrive indirizzo.py a ogni corsa (BASE_PAGES
+# nell'ambiente, passo «Indirizzo del sito» di pubblica.yml): il sito trasloca
+# su elettrofoni.luigimassari.com il giorno che il dominio risponde.
+BASE = os.environ.get("BASE_PAGES", "https://luigismith.github.io/DIVULGA").rstrip("/")
 # La 404 viene servita a QUALSIASI indirizzo sbagliato, anche tre cartelle
 # sotto: lì i link relativi non funzionano, servono assoluti.
 PERCORSO = urlparse(BASE).path.rstrip("/")

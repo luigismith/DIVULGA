@@ -763,6 +763,22 @@ degli artisti apre con «Chi ci ha suonato», non «L'hanno resa leggenda».
     provare il giorno che si fa. È anche l'unico modo di avere il nome
     del sito su Google, che non lo mostra per le sottocartelle. Decide
     lui, e fino ad allora non si tocca.
+    **Deciso il 20/11/2026** (il proprietario: «ho il mio dominio
+    luigimassari.com. trasferisci tutto lì. parla con la sessione del sito
+    e organizzatevi»): **elettrofoni.luigimassari.com**, servito ancora da
+    Pages di QUESTO repo. Non una cartella del sito luigimassari.com, che
+    sta su un altro repo: 870 MB ridistribuiti a ogni uscita gli
+    riempirebbero Pages. Col dominio personalizzato GitHub rimanda (301) i
+    vecchi indirizzi /DIVULGA al nuovo, quindi Google, bio e pagine
+    dell'app Meta non si rompono. L'indirizzo lo sceglie `indirizzo.py` a
+    ogni corsa (passo «Indirizzo del sito» in pubblica.yml e reel.yml →
+    `BASE_PAGES`, letto anche da genera_archivio.py): finché il dominio
+    nuovo non serve il nostro logo.png si usa il vecchio. Così il cambio
+    di DNS e di impostazioni, che fa chi ha le credenziali (OVH, Settings →
+    Pages), non va sincronizzato con un commit. Da fare a mano dopo: link
+    della bio, URL privacy e cancellazione dati nel pannello Meta, nuova
+    proprietà in Search Console (se luigimassari.com non è già verificato
+    come Dominio). Quel giorno si mettono NUOVO come default nei due file.
   Ogni ritocco si guarda con Playwright su computer E telefono (390 px),
   controllando che la larghezza della pagina non superi lo schermo.
   **Ridisegnato il 12/11/2026, due volte.** Il proprietario ha chiesto
