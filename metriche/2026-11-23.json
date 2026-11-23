@@ -1,5 +1,5 @@
 {
- "raccolta": "2026-11-23T17:25:24.216686+00:00",
+ "raccolta": "2026-11-23T18:30:17.662407+00:00",
  "account": {
   "profilo": {
    "username": "elettrofoni",
@@ -123,7 +123,7 @@
    },
    {
     "giorno": "2026-11-22",
-    "nuovi": 0
+    "nuovi": 5
    }
   ],
   "reach": [
@@ -142,6 +142,12 @@
        "results": [
         {
          "dimension_values": [
+          "STORY"
+         ],
+         "value": 540
+        },
+        {
+         "dimension_values": [
           "REEL"
          ],
          "value": 19787
@@ -151,12 +157,6 @@
           "CAROUSEL_CONTAINER"
          ],
          "value": 879
-        },
-        {
-         "dimension_values": [
-          "STORY"
-         ],
-         "value": 540
         }
        ]
       }
@@ -226,15 +226,15 @@
         },
         {
          "dimension_values": [
-          "POST"
-         ],
-         "value": 325
-        },
-        {
-         "dimension_values": [
           "REEL"
          ],
          "value": 2080
+        },
+        {
+         "dimension_values": [
+          "POST"
+         ],
+         "value": 325
         }
        ]
       }
@@ -2107,15 +2107,15 @@
        "results": [
         {
          "dimension_values": [
-          "NON_FOLLOWER"
-         ],
-         "value": 19770
-        },
-        {
-         "dimension_values": [
           "FOLLOWER"
          ],
          "value": 521
+        },
+        {
+         "dimension_values": [
+          "NON_FOLLOWER"
+         ],
+         "value": 19770
         }
        ]
       }
@@ -2138,15 +2138,15 @@
    "like_count": 0,
    "comments_count": 1,
    "insights": {
-    "reach": 0,
-    "views": 18,
+    "reach": 19,
+    "views": 48,
     "likes": 0,
     "comments": 1,
     "shares": 0,
     "saved": 0,
     "total_interactions": 1,
     "follows": 0,
-    "profile_visits": 0
+    "profile_visits": 1
    },
    "rifiutate": []
   },
@@ -2168,9 +2168,9 @@
     "shares": 0,
     "saved": 0,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 5543,
-    "ig_reels_video_view_total_time": 781623,
-    "reels_skip_rate": 59.2
+    "ig_reels_avg_watch_time": 5504,
+    "ig_reels_video_view_total_time": 781640,
+    "reels_skip_rate": 59.9
    },
    "rifiutate": []
   },
@@ -2185,16 +2185,16 @@
    "like_count": 17,
    "comments_count": 1,
    "insights": {
-    "reach": 1345,
-    "views": 1748,
+    "reach": 1352,
+    "views": 1757,
     "likes": 17,
     "comments": 1,
     "shares": 3,
     "saved": 4,
     "total_interactions": 25,
-    "ig_reels_avg_watch_time": 9661,
-    "ig_reels_video_view_total_time": 12994624,
-    "reels_skip_rate": 53.8
+    "ig_reels_avg_watch_time": 9667,
+    "ig_reels_video_view_total_time": 13060732,
+    "reels_skip_rate": 53.5
    },
    "rifiutate": []
   },
@@ -2216,8 +2216,8 @@
     "shares": 1,
     "saved": 1,
     "total_interactions": 11,
-    "ig_reels_avg_watch_time": 8254,
-    "ig_reels_video_view_total_time": 5192007,
+    "ig_reels_avg_watch_time": 8246,
+    "ig_reels_video_view_total_time": 5195119,
     "reels_skip_rate": 48.1
    },
    "rifiutate": []
@@ -2234,7 +2234,7 @@
    "comments_count": 1,
    "insights": {
     "reach": 1350,
-    "views": 1649,
+    "views": 1650,
     "likes": 15,
     "comments": 1,
     "shares": 1,
@@ -2306,7 +2306,7 @@
    "comments_count": 1,
    "insights": {
     "reach": 128,
-    "views": 273,
+    "views": 275,
     "likes": 7,
     "comments": 1,
     "shares": 0,
@@ -2335,8 +2335,8 @@
     "shares": 0,
     "saved": 0,
     "total_interactions": 4,
-    "ig_reels_avg_watch_time": 6741,
-    "ig_reels_video_view_total_time": 1395525,
+    "ig_reels_avg_watch_time": 6723,
+    "ig_reels_video_view_total_time": 1398566,
     "reels_skip_rate": 57.3
    },
    "rifiutate": []
@@ -4628,9 +4628,9 @@
     "shares": 27,
     "saved": 29,
     "total_interactions": 196,
-    "ig_reels_avg_watch_time": 12289,
-    "ig_reels_video_view_total_time": 49921682,
-    "reels_skip_rate": 31
+    "ig_reels_avg_watch_time": 12287,
+    "ig_reels_video_view_total_time": 49922965,
+    "reels_skip_rate": 31.1
    },
    "rifiutate": []
   },
