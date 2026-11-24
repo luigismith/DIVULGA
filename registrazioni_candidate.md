@@ -213,3 +213,26 @@ Scartato: il Casio VL-1 come scheda nuova, è già uscito il 18/10 (slug
 `vl1`) col suo suono; la sua registrazione «Casio vl1 music.ogg» (CC BY-SA
 3.0, melodia popolare svizzera «Unterländers Heimweh») resta una riserva per
 il sito.
+
+Entrate in catalogo il 24/11/2026 (rifornimento automatico, coda da 11 a
+15), tutte da Internet Archive, che si scarica DAL CONTAINER:
+- Roland Alpha Juno (item «sepha-roland-alpha-juno-pt1», sephabeats, CC BY
+  4.0): «P-67 SynthBass2 (Filter Sweep, Amin Chord)», 51 s intera, -15,7
+  LUFS. NON è l'hoover «What the», e la scheda lo dice. Nello stesso item
+  ci sono altri 20 sweep lunghi (High String 132 s, VoicePad 70 s...).
+- Ensoniq Mirage (item «EnsoniqMirageDMS1», Nacho Marty, PD Mark): sax
+  campionato su un DMS-1, 585 s, estratto 10-55 s. Analisi delle altezze:
+  un giro di note ripetuto, nessuna melodia riconoscibile.
+- Wurlitzer Sideman (item «wurlitzer_sideman_rhythms», Electronic Rhythm
+  Archive, PD Mark): cha cha, rumba, samba, bolero, tango in fila, 48 s.
+  Su Commons le foto sono da 960 px: niente zoom coi RITAGLI.
+- Sequential Prophet-6 (item «20181111_PR», Pete Scott, CC BY 4.0, «+ FX»
+  non detto): «PR130_01 sweet tune», estratto 1-46 s. Riserve dello stesso
+  autore: item «20190511_PR_GM_2» («polyphonic stargaze», 162 s) e
+  «20190805_PR_GM» («melancholy hope», 602 s). Da evitare i suoi file con
+  titoli da brani noti («stranger things», «close encounters», «dr who»).
+Scartati il 24/11/2026: Boss DR-110 (Electronic Rhythm Archive, ritmi da
+2,5 s l'uno), «Bass Station» di Crufty (CC0, ma con batteria e «I think»
+nella descrizione), Novation MiniNova (38 s, nessuna storia).
+Foto: da Commons dal container `upload.wikimedia.org` dà 429 a raffiche,
+`thumb.wikimedia.org` (stesso percorso) è passato.

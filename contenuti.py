@@ -14260,6 +14260,1164 @@ SCHEDE = [
         "verificata": True,
     },
     # ---------------------------------------------------------------- 95
+    # Roland Alpha Juno (Alpha Juno-1 / JU-1 e Alpha Juno-2 / JU-2). Scheda
+    # scritta il 24/11/2026 (rifornimento).
+    #
+    # REGISTRAZIONE: https://archive.org/details/sepha-roland-alpha-juno-pt1
+    #   «Roland Alpha Juno-1 Chords, Filter Sweeps & Multisamples, pt. 1»,
+    #   sephabeats, 21/12/2021, CC BY 4.0, Internet Archive. Descrizione
+    #   dell'autore: campioni registrati col SUO Alpha Juno-1, preset di
+    #   fabbrica; «The filter sweeps were performed using the Alpha Dial on the
+    #   Juno to control the "Brilliance" parameter». File scelto: «Juno - P-67
+    #   SynthBass2 (Filter Sweep, Amin Chord).mp3», 51,1 s, MISURATO -15,7
+    #   LUFS, picco -5,3 dBFS, LRA 3,5, silenzio 0-1,4 s e 48,9-51,1 s.
+    #   NON è il suono hoover («What the»): è il preset SynthBass2. La scheda
+    #   lo dice in «come_funziona» e in «cosa»; nessuna battuta del reel dice
+    #   che quello che si sente è l'hoover. Non ascoltata da un orecchio.
+    #
+    # FONTI PER FATTO (aperte il 24/11/2026)
+    # - 1985: MusicRadar «Blast from the past» (30/10/2014, «launched in
+    #   1985»), gearnews (Adam Douglas, 2026, «In 1985, Roland followed up the
+    #   popular Juno-106»), Wikipedia (EN). Sound On Sound ottobre 1998 (Gordon
+    #   Reid): annunciato nell'inverno 1985, ma nella tabella prezzi 1986;
+    #   Vintage Synth Explorer dà 1986 per il JU-2. Detto in scheda.
+    # - erede del Juno-106, stessa voce analogica: Sound On Sound marzo 1986
+    #   (Mark Jenkins, «based on the Juno 106 analogue voice»), gearnews.
+    # - 6 voci: SOS 1986, SOS 1998, MusicRadar 2014, Vintage Synth Explorer,
+    #   gearnews.
+    # - 1 DCO per voce, 5 denti di sega, 3 onde a impulso, sub-oscillatore,
+    #   rumore: SOS 1986 (5 saw, 3 pulse, sub a 6 opzioni), MusicRadar 2014
+    #   (identico), SOS 1998 (DCO), Vintage Synth Explorer.
+    # - filtro analogico: SOS 1986 (voce analogica del 106), Wikipedia
+    #   (passa-basso 24 dB risonante; i 24 dB NON in scheda, una fonte aperta).
+    # - JU-1 49 tasti (4 ottave), JU-2 61 tasti con dinamica e aftertouch:
+    #   SOS 1986 (4 ottave), SOS 1998 (4 e 5 ottave, «velocity and
+    #   aftertouch»), MusicRadar 2014, Vintage Synth Explorer, Wikipedia.
+    # - Alpha Dial, una ruota che gira senza fine e serve a scegliere e a
+    #   cambiare i parametri: SOS 1986 («a single continuously rotating
+    #   control»), MusicRadar 2014 («single, free-spinning»), gearnews,
+    #   Wikipedia. Il pulsante BRILLIANCE accanto al display: si legge nella
+    #   foto principale, e Wikipedia lo nomina fra i selettori dedicati.
+    # - inviluppo a più tratti: SOS 1986 («new multi-stage envelope»),
+    #   Wikipedia, MusicRadar 2019 (linear and exponential sections). Il
+    #   disegno dell'inviluppo e delle forme d'onda stampato sul pannello: si
+    #   vede in TUTTE E DUE le foto; Wikipedia (One Two Testing 1986).
+    # - 64 preset + 64 memorie: SOS 1986, SOS 1998, MusicRadar 2014, VSE.
+    # - JU-1 a 575 sterline: SOS 1986 («retails at £575 including VAT»),
+    #   MusicRadar 2014, gearnews. JU-2 a 799: gearnews, Wikipedia.
+    # - PG-300, programmatore a parte, un cursore per parametro, 200 sterline:
+    #   SOS 1998 («added £200»), MusicRadar 2014 («another 200 quid»),
+    #   gearnews, Wikipedia.
+    # - preset «What the» diventato l'«hoover» dei rave: MusicRadar 2014
+    #   (Blast: «"What the" became known as the 'Hoover'»), MusicRadar/Future
+    #   Music 09/10/2014 (Sylenth1), RBMA Daily 2014, Wikipedia (Hoover sound,
+    #   Roland Alpha Juno).
+    # - «What the» programmato da Eric Persing, sound designer Roland:
+    #   gearnews («programmed by none other than Eric Persing»), Wikipedia
+    #   (Roland Alpha Juno, dal libro di Kim Bjørn 2022; Hoover sound).
+    # - il timbro viene dal dente di sega a impulso variabile mosso dall'LFO
+    #   e dal chorus: MusicRadar 2014 (Sylenth1, «LFO-modulated PWM sawtooth
+    #   and unique Roland chorus»), Wikipedia (Hoover sound, «fast LFO
+    #   controlling the PWM and the chorus»), MusicRadar 2019 (il chorus).
+    # - «Mentasm»: Mundo Muzique registra il riff sul suo Alpha Juno-1 col
+    #   preset «What the», poi nello studio di Joey Beltram lo campionano nel
+    #   Casio FZ-1: RBMA Daily «Key Tracks: Mundo Muzique on Second Phase's
+    #   'Mentasm'» (Phil Moffa, 2014, lui in prima persona), gearnews («sampled
+    #   it into Beltram's Casio FZ-1 sampler»). Alpha Juno in «Mentasm» anche
+    #   MusicRadar 2014 (Sylenth1), Wikipedia.
+    # - duo di New York, Second Phase, R&S Records, 1991: gearnews, Wikipedia
+    #   (Joey Beltram, «released under the artist name Second Phase in 1991»),
+    #   Discogs/Beatport (R&S RS 9109, 1991; letti dai risultati di ricerca,
+    #   Discogs non si apre dal container). RBMA conferma R&S.
+    # - «Dominator» di Human Resource col suono hoover: MusicRadar 2014
+    #   (Sylenth1), gearnews, Wikipedia (Hoover sound), MusicRadar 2019
+    #   (ReDominator prende il nome dal brano, col permesso del gruppo).
+    # - The Prodigy, «Charly», col preset: MusicRadar 2014 (Sylenth1),
+    #   Wikipedia (Roland Alpha Juno, «Charly (Alley Cat Mix)»).
+    #
+    # FATTI SCARTATI (una fonte sola, o non aperta)
+    # - Persing che crea «What the» «as a joke» (solo Wikipedia, dal libro di
+    #   Bjørn, non aperto); «What the» è il preset 86 (solo gearnews); il «suono
+    #   inutile» e «stupido» secondo i colleghi di Muzique, il Mac SE, Master
+    #   Tracks Pro, il pitch bend nel riff, il campionamento nell'FZ-1 per un
+    #   problema di sincrono MIDI, Renaat di R&S che all'inizio non capisce il
+    #   riff (solo RBMA); «Dominator» n. 6 in Olanda e top 10 nel mondo (solo
+    #   Wikipedia); gli anni di «Dominator» e «Charly» (non trovata la seconda
+    #   fonte aperta: in scheda senza anno); Lady Gaga «Bad Romance» e Rihanna
+    #   «Birthday Cake» (solo Wikipedia, con una recensione per uno); chorus a
+    #   velocità programmabile contro i 2 tempi del 106 (SOS 1986, e Wikipedia
+    #   che cita SOS: non indipendenti); slot per cartuccia del JU-2 (solo
+    #   Wikipedia aperta); poco successo all'uscita per colpa della FM Yamaha
+    #   (solo Wikipedia); MKS-50 «didn't sell in large quantities» (solo SOS
+    #   1998); il chip della voce (nessuna delle fonti aperte lo nomina: NON
+    #   in scheda); la lista di VSE (Vince Clarke, Massive Attack, Fatboy
+    #   Slim...): una fonte.
+    #
+    # HANDLE: @rolandglobal, già usato (piede di roland.com/global). Nessun tag
+    #   agli artisti: account ufficiali non verificati.
+    #
+    # FOTO (thumbnail scaricati e guardati il 24/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Roland_alpha_juno.jpg
+    #   Taras (Commons), CC BY-SA 3.0, 1841x569, 13/10/2007, thumbnail 1280
+    #   (1280x396). L'Alpha Juno-1 INTERO visto dall'alto su una moquette
+    #   rossa: «Roland» e «αJUNO-1» leggibili, a sinistra la ruota grande
+    #   (sotto c'è scritto α-DIAL), sopra i tasti i pulsanti morbidi
+    #   (BRILLIANCE, MOD RATE...), a destra il disegno di forme d'onda e
+    #   inviluppo. È un JU-1, come la registrazione. Molto larga (3,2:1): nella
+    #   banda va con "ritaglio": True, o perde i lati (cioè la ruota).
+    # extra: https://commons.wikimedia.org/wiki/File:Roland_Alpha_Juno_2_logo_%26_params.jpg
+    #   Derek Gavey (Flickr), CC BY 2.0, 3872x2592, 13/12/2010, thumbnail 1280.
+    #   Macro dell'Alpha Juno-2 preso da dietro la tastiera: il grafico
+    #   dell'inviluppo (linea rossa) e le forme d'onda in azzurro, a fuoco; la
+    #   scritta JUNO-2 grande e CAPOVOLTA. Per questo "nel_reel": False (come il
+    #   CZ-101 in CLAUDE.md). Sulla tavola la didascalia lo spiega.
+    # Non trovate su Commons foto libere del PG-300 né del MKS-50.
+    {
+        "slug": "alphajuno",
+        "numero": 95,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Roland Alpha Juno",
+        "anno": "1985",
+        "luogo": "Giappone",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("USCITA", "1985"),
+            ("VOCI", "6"),
+            ("OSCILLATORE", "1 DCO PER VOCE"),
+            ("TASTI", "49 O 61"),
+        ],
+        "gancio": "Il ronzio dei rave del 1991 è un suono di fabbrica di questa tastiera Roland, e si chiama «What the»",
+        "sottotitolo": "Un Juno a cui Roland toglie le manopole e lascia una ruota sola, che gira senza fine.",
+        "la_macchina": (
+            "Quello della foto è l'Alpha Juno-1, con 49 tasti. A sinistra c'è "
+            "una ruota grande, l'Alpha Dial. Sopra i tasti ci sono un display e "
+            "una fila di pulsanti morbidi, e a destra il disegno delle forme "
+            "d'onda e dell'inviluppo, stampato sul pannello. L'Alpha Juno-2 ha "
+            "61 tasti, che sentono quanto forte premete e quanto spingete dopo. "
+            "In Inghilterra il piccolo costa 575 sterline e il grande 799. "
+            "Secondo me il pannello è bello proprio perché è vuoto, sembra un "
+            "elettrodomestico. Dentro però c'è un analogico vero."
+        ),
+        "inventore_nome": "Roland ed Eric Persing",
+        "inventore": (
+            "Chi abbia disegnato i circuiti Roland non lo dice. Si sa che nel "
+            "1985 la ditta fa seguire al Juno-106 questo Alpha Juno, con la "
+            "stessa voce analogica e senza più una manopola per ogni cosa. "
+            "Sull'anno le fonti non coincidono del tutto. Sound On Sound nel "
+            "1998 scrive che fu annunciato nell'inverno 1985, e Vintage Synth "
+            "Explorer mette il Juno-2 nel 1986. Fra i 64 suoni di fabbrica ce "
+            "n'è uno che si chiama «What the». Lo programma Eric Persing, che "
+            "per Roland fa i suoni. A me quel nome fa ridere ogni volta che lo "
+            "leggo sul display."
+        ),
+        "come_funziona": (
+            "Ogni voce ha un oscillatore, un DCO, che dà 5 denti di sega, 3 onde "
+            "a impulso, un sub-oscillatore più basso e il rumore. Poi un filtro "
+            "analogico e il chorus. Le voci sono 6. Per cambiare un suono "
+            "premete un pulsante, per esempio BRILLIANCE, e girate l'Alpha Dial. "
+            "Chi voleva un cursore per ogni parametro comprava a parte il PG-300, "
+            "per altre 200 sterline. Il ronzio di «What the» viene da un dente di "
+            "sega a impulso variabile mosso in fretta e dal chorus. Quello che "
+            "sentite qui invece è un altro preset, SynthBass2, con l'autore che "
+            "apre e chiude il filtro girando la ruota."
+        ),
+        "richiami": [
+            ("FIG. 1", "Alpha Dial, una ruota senza fine"),
+            ("FIG. 2", "1 DCO per voce, 6 voci"),
+            ("FIG. 3", "Il preset «What the»"),
+        ],
+        "chi_lusata": [
+            {"artista": "Second Phase",
+             "nota": "Joey Beltram e Mundo Muzique, «Mentasm» (1991), col preset «What the»",
+             "ig": None},
+            {"artista": "Human Resource",
+             "nota": "«Dominator», lo stesso ronzio portato in classifica",
+             "ig": None},
+            {"artista": "The Prodigy",
+             "nota": "«Charly», fra i primi dischi con l'hoover",
+             "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "rolandglobal",
+             "riga": "L'Alpha Juno è una macchina di @rolandglobal."},
+        ],
+        "da_ascoltare": {"brano": "Mentasm", "artista": "Second Phase", "anno": "1991",
+                         "cosa": "Il riff che ringhia è «What the», il preset di un Alpha Juno-1, campionato poi nel Casio FZ-1 di Joey Beltram."},
+        "aneddoto": (
+            "A New York Mundo Muzique ha in studio un Alpha Juno-1. Prende il "
+            "preset «What the» e ci registra sopra un riff. Il pezzo lo finisce "
+            "insieme a Joey Beltram, nello studio di Beltram, dove il riff viene campionato "
+            "in un Casio FZ-1 e passa da lì invece che dalla tastiera. Nel 1991 "
+            "lo pubblica la belga R&S, col nome Second Phase, e si intitola "
+            "«Mentasm». Nei rave europei quel suono si prende presto un nome da "
+            "casa, hoover, che in inglese vuol dire aspirapolvere."
+        ),
+        "avvertenza": "L'Alpha Dial gira senza fine corsa. Prima di girarlo, guardate sul display quale parametro avete scelto.",
+        "foto": {
+            "file": "assets/foto/alphajuno/principale.jpg",
+            "posizione": "center",
+            "ritaglio": True,
+            "autore": "Taras",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "L'Alpha Juno-1 visto dall'alto. La ruota grande a sinistra è l'Alpha Dial",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/alphajuno/pannello.jpg",
+             "autore": "Derek Gavey",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "30% 60%",
+             "nel_reel": False,
+             "didascalia": "L'Alpha Juno-2 visto da dietro, col disegno dell'inviluppo e delle forme d'onda"},
+        ],
+        "fonti": [
+            {"titolo": "«Dial-A-Dream: Roland Alpha Juno-1», Mark Jenkins — Sound On Sound, marzo 1986",
+             "url": "https://www.muzines.co.uk/articles/dial-a-dream/1313", "data": "2026-11-24"},
+            {"titolo": "«Roland Alpha Juno 1 & 2 (Retro)», Gordon Reid — Sound On Sound, ottobre 1998",
+             "url": "https://www.soundonsound.com/reviews/roland-alpha-juno-1-2", "data": "2026-11-24"},
+            {"titolo": "«Blast from the past: Roland Alpha Juno» — MusicRadar, 30/10/2014",
+             "url": "https://www.musicradar.com/news/tech/blast-from-the-past-roland-alpha-juno-608881", "data": "2026-11-24"},
+            {"titolo": "«How to create a hoover sound in Sylenth1» — MusicRadar (Future Music), 09/10/2014",
+             "url": "https://www.musicradar.com/tuition/tech/how-to-create-a-hoover-sound-in-sylenth1-608251", "data": "2026-11-24"},
+            {"titolo": "«How to design a Dominator-style hoover sound with ReDominator» — MusicRadar, 2019",
+             "url": "https://www.musicradar.com/how-to/how-to-design-a-dominator-style-hoover-sound-with-audiorealisms-redominator", "data": "2026-11-24"},
+            {"titolo": "«Key Tracks: Mundo Muzique on Second Phase's 'Mentasm'», Phil Moffa — RBMA Daily, 2014",
+             "url": "https://daily.redbullmusicacademy.com/2014/05/key-tracks-mundo-muzique-on-mentasm", "data": "2026-11-24"},
+            {"titolo": "«Roland Alpha Juno: Classic Synths», Adam Douglas — gearnews",
+             "url": "https://www.gearnews.com/roland-alpha-juno-synth/", "data": "2026-11-24"},
+            {"titolo": "«Roland Alpha Juno-2» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/roland/alpha-juno-2", "data": "2026-11-24"},
+            {"titolo": "«Roland Alpha Juno» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_Alpha_Juno", "data": "2026-11-24"},
+            {"titolo": "«Hoover sound» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Hoover_sound", "data": "2026-11-24"},
+            {"titolo": "«Joey Beltram» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Joey_Beltram", "data": "2026-11-24"},
+        ],
+        "hashtags": ["#alphajuno", "#roland", "#sintetizzatore", "#theprodigy", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 095", "Il ronzio dei rave del 1991 è un suono di fabbrica Roland"),
+            ("ALPHA JUNO · 1985", "Nel 1985 Roland fa l'Alpha Juno, un synth analogico con una ruota sola."),
+            ("WHAT THE", "Fra i suoni dell'Alpha Juno c'è «What the», programmato da Eric Persing."),
+            ("NEW YORK", "Mundo Muzique suona un riff su «What the» e Joey Beltram lo campiona."),
+            ("MENTASM · 1991", "Esce «Mentasm» di Second Phase, e «What the» diventa l'hoover dei rave."),
+        ],
+        "reel_cta": "Mandalo all'amico che ai rave ci andava davvero",
+        "reel_audio": {
+            "file": "assets/audio/alphajuno/registrazione.mp3", "inizio": 0,
+            "autore": "sephabeats", "licenza": "CC BY 4.0",
+            "fonte": "Internet Archive",
+            "url": "https://archive.org/details/sepha-roland-alpha-juno-pt1",
+            "cosa": "un accordo di la minore sul preset SynthBass2 dell'Alpha Juno-1 dell'autore, col filtro aperto e chiuso girando l'Alpha Dial sul parametro Brilliance; non è il suono hoover «What the»",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- mirage
+    # Ensoniq Mirage (DSK-8, 1984; rack DMS-8 e DMS-1). Bozza del 24/11/2026.
+    # Tutte le pagine aperte il 2026-11-24. La scheda VFX ha già la storia di
+    # Ensoniq nel campo «inventore»: qui la si racconta dal lato del Mirage
+    # (Q-chip, prezzo, anno discorde) e senza Creative né ESQ-1 come date.
+    #
+    # REGISTRAZIONE (data dal brief, ricopiata)
+    # https://archive.org/details/EnsoniqMirageDMS1
+    #   «Ensoniq Mirage DMS-1 sound test (sax sound)», creator Nacho Marty,
+    #   Public Domain Mark 1.0, caricata il 21/06/2015, collezione Community
+    #   Audio. Un file ogg di 585 s, misurato -20,0 LUFS, picco -4,6 dBFS, un
+    #   solo silenzio (2,6 s a 409-412 s). Riletta la pagina con WebFetch il
+    #   24/11: NESSUNA descrizione oltre al titolo e al tag «Ensoniq Mirage
+    #   DMS-1». Non dice se il campione di sax è dei dischetti di fabbrica o
+    #   dell'autore, né come è stata presa (linea o microfono). Il tratto lo
+    #   sceglie chi integra. Il DMS-1 è la seconda versione rack del Mirage
+    #   (Wikipedia: prima il DMS-8, poi il DMS-1), non un altro strumento.
+    #
+    # COSA VUOL DIRE «DMS» (dubbio, risolto a metà)
+    # - Wikipedia «Ensoniq Mirage» (che cita Syntaur): «Digital Sampling
+    #   Module».
+    # - Il pannello del DMS-8 nella foto extra porta stampato «DIGITAL
+    #   MULTI-SAMPLER»; E&MM maggio 1986 (Simon Trask) recensisce il rack col
+    #   nome «Mirage MultiSampler»; le inserzioni Reverb dicono «Digital
+    #   Multi-Sampler». In scheda si scrive solo che sul pannello c'è scritto
+    #   Digital Multi-Sampler (si vede), senza sciogliere la sigla.
+    #
+    # FONTI PER FATTO
+    # - 3 fondatori ex Commodore (Bruce Crockett, Al Charpentier, Bob Yannes):
+    #   SOS feb. 1988 (Craig Anderton, «all refugees from Commodore»);
+    #   Wikipedia «Ensoniq» (infobox; nella storia anche Winterble e
+    #   Ziembicki, Peripheral Visions).
+    # - Yannes ha disegnato il SID del Commodore 64: SOS feb. 1988; Wikipedia
+    #   «Ensoniq Mirage» (Mark Vail, «The Synthesizer», 2014).
+    # - Pennsylvania: Wikipedia «Ensoniq» (Malvern, fabbrica a Great Valley);
+    #   SOS feb. 1988 (visita alla sede americana). Il nome della città non
+    #   è scritto.
+    # - il Mirage è il primo prodotto di Ensoniq: Wikipedia «Ensoniq Mirage»;
+    #   MusicRadar «Blast from the past»; Vintage Synth Explorer.
+    # - Q-chip, chip progettato da loro, dentro il Mirage: SOS feb. 1988;
+    #   One Two Testing giu. 1985 (Freff, «custom Q Chip»); Wikipedia (ES5503).
+    #   Il prezzo basso grazie al chip fatto in casa: MusicRadar («custom chip
+    #   design and cost-cutting measures»); SOS 1988 (il Q-chip frutto della
+    #   loro esperienza VLSI, «power for its price»).
+    # - lo stesso chip nell'ESQ-1 e nell'Apple IIGS: SOS feb. 1988; Wikipedia
+    #   «Ensoniq» e «Ensoniq Mirage».
+    # - ANNO DISCORDE (scritto in scheda): 1984 per Wikipedia «Ensoniq Mirage»
+    #   e Vintage Synth Explorer (1984-1988); Anderton (SOS 1988): a fine 1984
+    #   se ne parlava già («Have you heard about this $1700 sampler?»),
+    #   presentazione ufficiale al NAMM di febbraio 1985. Wikipedia «Ensoniq»
+    #   si contraddice da sola (fine 1984, 1985, 1984).
+    # - circa 1.700 dollari: SOS 1988 («$1700 sampler»); Wikipedia Mirage e
+    #   Ensoniq (1.695 dollari).
+    # - in Inghilterra circa un quarto di un Emulator: One Two Testing 1985
+    #   («about a quarter of the Emulator I's price», 1.695 sterline);
+    #   MusicRadar (Mirage 1.695 sterline, Emulator circa 8.000). E&MM lug.
+    #   1985 dà 1.795 sterline: per questo in scheda niente cifra in sterline.
+    # - modelli europei costruiti in Italia per un periodo: SOS feb. 1988
+    #   («For a while European models were being manufactured in Italy»);
+    #   E&MM lug. 1985 (Paul Wiffen, il modello europeo «made under licence in
+    #   Italy»); Wikipedia (Mark Jenkins, SOS: variante italiana col lettore
+    #   più veloce, quest'ultimo dettaglio NON scritto).
+    # - 61 tasti (5 ottave) sensibili alla dinamica: Wikipedia; Vintage Synth
+    #   Explorer; One Two Testing 1985; E&MM lug. 1985.
+    # - dischetto da 3,5 pollici, sistema operativo caricato dal dischetto a
+    #   ogni accensione: E&MM lug. 1985 («on disk, not EPROM», 15 s); One Two
+    #   Testing 1985; Wikipedia; Vintage Synth Explorer.
+    # - display di 2 cifre: One Two Testing 1985 («two-character amber
+    #   display»); E&MM lug. 1985 («double seven-segment display»); E&MM mag.
+    #   1986; MusicRadar; Wikipedia («two-digit LED»). Esadecimale: One Two
+    #   Testing, E&MM 1986, MusicRadar. Si vede nella foto extra («21»).
+    # - tasti Param e Value per scegliere parametro e valore: si vedono nella
+    #   foto extra; E&MM 1986 (tastierino numerico, niente manopole); One Two
+    #   Testing (quasi cento parametri dal pannello).
+    # - 8 bit: tutte le fonti.
+    # - 8 voci: Wikipedia; Vintage Synth Explorer; One Two Testing; E&MM 1985 e
+    #   1986.
+    # - memoria in 2 metà da 64K, una per la parte bassa e una per l'alta:
+    #   One Two Testing («two 64k sections (UPPER and LOWER)»); E&MM mag. 1986
+    #   («64K for each keyboard half»); Wikipedia (128 KB, 64 per metà).
+    #   E&MM lug. 1985 scrive 64K in tutto: 3 contro 1.
+    # - 2,2 secondi per metà alla frequenza di serie (circa 33 kHz): One Two
+    #   Testing; E&MM lug. 1985. Fino a 6,5 s abbassando la frequenza: E&MM
+    #   lug. 1985; Vintage Synth Explorer; Wikipedia.
+    # - un filtro analogico per voce: One Two Testing (un VCF per voce);
+    #   Wikipedia (Curtis CEM3328, uno per voce); MusicRadar (filtri
+    #   analogici Curtis).
+    # - modello DSK-1, in plastica, venuto dopo: Vintage Synth Explorer (1986);
+    #   Wikipedia (1987, Keyfax). Anno discorde: non scritto. Il file Commons
+    #   lo dice del 1986.
+    # - versione rack (DMS-8, poi DMS-1): Wikipedia; Vintage Synth Explorer
+    #   (DMS-8 del 1985); E&MM mag. 1986 (il rack «loses nothing in terms of
+    #   facilities»).
+    # - venduti: 25.000 e più entro il 1988 (SOS feb. 1988); circa 30.000 fra
+    #   il 1984 e il 1988 (MusicRadar; Wikipedia con «citation needed»).
+    #   Scritto che i conti non coincidono.
+    # - Jimmy Jam e il Mirage in «Nasty» (Janet Jackson, «Control», 1986): RBMA
+    #   Daily, «Key Tracks: Jimmy Jam on Janet Jackson's Control», 26/02/2016
+    #   (Jam: «The keyboard sounds on "Nasty" are from the Mirage»); MusicRadar
+    #   06/02/2026, Ben Rogerson («the main keyboard part on Nasty», con
+    #   racconti che in RBMA non ci sono, quindi un'altra intervista);
+    #   Wikipedia «Nasty» (Jam: «more of a sound-effect type of sound»).
+    #   Uscita del singolo 1986: Wikipedia «Nasty»; MusicRadar.
+    # - Hank Shocklee, il Mirage come unico campionatore e i 3 secondi: RBMA,
+    #   lezione di Seattle 2005 («the only sampler that I had at the time,
+    #   which was the Mirage», «three seconds of sample time and that's it»);
+    #   Tape Op n. 51, 2006 (Philip Stevenson; «Mirage came out with this
+    #   three-second sampler», «I found the Mirage»).
+    # - poi l'Akai S900, e il Mirage tenuto per la sua grana: Tape Op 2006
+    #   («stayed with the Mirage but we ended up using the 900 for other
+    #   things», «a feel and sound that the Mirage had at 8-bits»); RBMA 2005
+    #   (all'inizio il suono liscio dell'S-900 non gli piace).
+    # - Shocklee lo chiama «a 4 bit» alla RBMA e «a 8 bit» a Tape Op: le due
+    #   trascrizioni (citate sopra). Il Mirage è a 8 bit per tutte le altre.
+    # - «Rebel Without a Pause» (1987) nata sul Mirage: RBMA 2005 («that was
+    #   originally done with the only sampler that I had at the time, which was
+    #   the Mirage»). Wikipedia «Rebel Without a Pause» e Hip Hop Golden Age
+    #   lo ripetono (demo sul Mirage, poi l'S-900 in studio), ma tutti e due
+    #   vengono da lì. È UNA fonte: in scheda sempre «racconta lui», e per
+    #   questo «Rebel» NON è in da_ascoltare (il disco uscito è fatto in studio
+    #   con l'S-900).
+    #
+    # FATTI SCARTATI (una fonte sola o fonti che si copiano)
+    # - «Rebel» come fatto nudo (vedi sopra); il sax dei J.B. («The Grunt»),
+    #   preso riavvolgendo il disco a mano: solo RBMA e Wikipedia che la copia.
+    # - Yannes al NAMM 1984: «un calo di prezzo di 10 a 1»: solo SOS 1988.
+    # - PVI che al NAMM 1984 mostra una scheda batteria per Apple II e una drum
+    #   machine da 200 dollari: solo SOS 1988.
+    # - Crockett «non siamo fieri dell'affidabilità del Mirage»: solo SOS 1988.
+    # - Q-chip con più di 20.000 componenti: solo SOS 1988.
+    # - quasi 8.000 venduti nel primo anno, più di tutti gli altri campionatori
+    #   messi insieme: Wikipedia (Vail) e Yannes in SOS dicono la seconda cosa
+    #   su numeri diversi; lasciato fuori.
+    # - prezzo tagliato a 1.295 sterline, poi a 899 dollari dopo l'EPS: fonti
+    #   diverse su mercati diversi, non serviva.
+    # - le «horn stabs» e il piano di «When I Think of You»: solo RBMA 2016.
+    # - Janet che sente il suono e dice «voglio una canzone sui nasty boys»:
+    #   solo MusicRadar 2026.
+    # - Le Tigre e «Deceptacon» (Song Exploder, citato da Wikipedia; non
+    #   aperto); OMD dal vivo (solo Music Technology 1986); Prince, Vangelis,
+    #   Skinny Puppy, Derrick May: liste senza disco o fonte unica.
+    # - prime unità col lettore Shugart, il primo microfloppy venduto: solo
+    #   Wikipedia.
+    # - il lettore più veloce della versione italiana: solo Wikipedia.
+    #
+    # HANDLE
+    # - @janetjackson: link nel piede di janetjackson.com (letto via WebFetch
+    #   il 2026-11-24, «https://www.instagram.com/janetjackson/»). Va seguito
+    #   prima dell'uscita (regola 3).
+    # - Ensoniq non esiste più (Creative, 1998): nessun account. Shocklee e
+    #   Jimmy Jam: non verificati, ig None.
+    #
+    # FOTO (API di Commons letta via WebFetch il 2026-11-24)
+    # - principale: https://commons.wikimedia.org/wiki/File:Ensoniq_Mirage_(with_cable).jpg
+    #   emily przybylinski (Flickr, «le tigre equipment», 10/08/2008), CC BY
+    #   2.0, 1600x1067, thumbnail 1280. Un Mirage DSK-1 (il modello in
+    #   plastica, non il DSK-8 del 1984) intero dentro la sua valigia aperta,
+    #   un cavo appoggiato sul pannello, «Mirage-DSK» in arancio leggibile, i
+    #   61 tasti tutti. La metà alta è il coperchio di gommapiuma nera:
+    #   posizione bassa. Guardato il thumbnail a 960.
+    # - extra: https://commons.wikimedia.org/wiki/File:Ensoniq_Mirage_DMS-8.jpg
+    #   Alison Cassidy, opera propria, CC BY-SA 4.0, 3612x932, thumbnail 1280
+    #   (1280x330). Il rack DMS-8 di fronte, nitido: logo ensoniq, display a 2
+    #   cifre acceso su «21», tasti Param/Value e numerici, lettore di
+    #   dischetti, «DIGITAL MULTI-SAMPLER» e «Mirage». Striscia 4:1:
+    #   "ritaglio": True. È il modello più vicino al DMS-1 della registrazione.
+    # - scartate: File:Ensoniq_Mirage_DSK-8_(1985).jpg (Charles Nadeau /
+    #   Clusternote, CC BY 2.0, 1334x365): è il DSK-8 giusto ma ritagliato da
+    #   una foto di negozio, sfocato e ingrandito, a 1280 non regge.
+    #   File:Ensoniq_Mirage_DSK.jpg: montaggio di due foto, con un EPS.
+    {
+        "slug": "mirage",
+        "numero": 96,
+        "serie": "I CAMPIONATORI",
+        "strumento": "Ensoniq Mirage",
+        "anno": "1984",
+        "luogo": "Pennsylvania, USA",
+        "costruttore": "Ensoniq",
+        "specifiche": [
+            ("USCITA", "1984"),
+            ("RISOLUZIONE", "8 BIT"),
+            ("MEMORIA", "2 METÀ DA 64K"),
+            ("RACK", "DMS-8, POI DMS-1"),
+        ],
+        "gancio": "In Inghilterra costava un quarto di un Emulator, e un campionatore lo poteva comprare chiunque suonasse",
+        "sottotitolo": "Il suono è sporco, e a qualcuno è piaciuto proprio per quello.",
+        "la_macchina": (
+            "Sono 61 tasti sensibili a quanto forte premete, e accanto c'è un "
+            "lettore di dischetti da 3,5 pollici. Per leggere i numeri c'è un "
+            "display di 2 cifre e basta. Negli Stati Uniti costa circa 1.700 "
+            "dollari. Per un periodo i Mirage per l'Europa li costruiscono in "
+            "Italia. Poi arrivano il rack, che sul pannello porta scritto Digital "
+            "Multi-Sampler, e il DSK-1 in plastica della copertina. Quanti ne abbiano "
+            "venduti non si sa bene, Sound On Sound nel 1988 dice più di 25.000, "
+            "MusicRadar circa 30.000. A me piace perché è fatto risparmiando su "
+            "tutto, e non lo nasconde."
+        ),
+        "inventore_nome": "Ensoniq e il Q-chip",
+        "inventore": (
+            "Ensoniq la mettono su in Pennsylvania 3 ingegneri usciti dalla "
+            "Commodore, Bob Yannes, Bruce Crockett e Al Charpentier. La loro "
+            "storia l'abbiamo raccontata nella scheda del VFX. Il Mirage è il "
+            "primo strumento che vendono, e il prezzo basso viene da un chip "
+            "disegnato in casa, il Q-chip. Lo "
+            "stesso chip poi finisce nell'ESQ-1 e nell'Apple IIGS. Sull'anno le "
+            "fonti non concordano. Wikipedia e Vintage Synth Explorer dicono "
+            "1984. Craig Anderton, su Sound On Sound, racconta che a fine 1984 "
+            "se ne parlava già, ma che la presentazione ufficiale è al NAMM di "
+            "febbraio 1985."
+        ),
+        "come_funziona": (
+            "Il Mirage registra a 8 bit. La memoria è divisa in 2 metà da 64K, "
+            "una per la parte bassa della tastiera e una per l'alta, e ognuna "
+            "tiene il suo suono. Alla frequenza di serie fanno 2,2 secondi per "
+            "metà. Abbassandola si arriva a 6,5, e il suono perde gli acuti. Poi "
+            "il campione passa da un filtro analogico, uno per ognuna delle 8 "
+            "voci. Tutto il resto si regola a numeri. Premete Param, scegliete il "
+            "parametro, premete Value e cambiate il valore, e le 2 cifre del "
+            "display vi rispondono, spesso in esadecimale. Se ne trovate uno, "
+            "campionate la vostra voce a 6,5 secondi e ascoltate cosa resta."
+        ),
+        "richiami": [
+            ("FIG. 1", "8 bit, 2 metà da 64K"),
+            ("FIG. 2", "Un filtro analogico per voce"),
+            ("FIG. 3", "Il display di 2 cifre"),
+        ],
+        "chi_lusata": [
+            {"artista": "Janet Jackson",
+             "nota": "in «Nasty» (1986) le tastiere sono del Mirage di Jimmy Jam",
+             "ig": "janetjackson"},
+            {"artista": "Hank Shocklee",
+             "nota": "il suo primo campionatore, per Public Enemy, racconta lui",
+             "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Nasty", "artista": "Janet Jackson", "anno": "1986",
+                         "cosa": "La tastiera principale. Jimmy Jam racconta che viene dal Mirage, e quella grana a 8 bit si sente."},
+        "aneddoto": (
+            "Quando Hank Shocklee comincia a campionare, l'unico campionatore che "
+            "ha è un Mirage. Lo racconta alla Red Bull Music Academy nel 2005 e a "
+            "Tape Op nel 2006. Ha 3 secondi di memoria e basta, quindi il pezzo "
+            "di disco giusto va preso al primo colpo. Alla Red Bull dice che la "
+            "prima versione di «Rebel Without a Pause» l'ha fatta così. Poi "
+            "Public Enemy passa a un Akai S900, e il Mirage resta per la sua "
+            "grana. In una delle due interviste lo chiama un campionatore a 4 "
+            "bit, nell'altra a 8. Sono 8."
+        ),
+        "avvertenza": "Il sistema operativo sta sul dischetto. Senza il dischetto giusto nel lettore, il Mirage acceso non sa ancora di essere un campionatore.",
+        "foto": {
+            "file": "assets/foto/mirage/principale.jpg",
+            "posizione": "center 68%",
+            "autore": "emily przybylinski",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un Mirage DSK-1, il modello in plastica venuto dopo, nella sua valigia",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/mirage/rack.jpg",
+             "ritaglio": True,
+             "autore": "Alison Cassidy",
+             "licenza": "CC BY-SA 4.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center",
+             "didascalia": "Il rack DMS-8. Il display ha 2 cifre, e sul pannello c'è scritto Digital Multi-Sampler"},
+        ],
+        "fonti": [
+            {"titolo": "Craig Anderton — Sound On Sound, feb. 1988",
+             "url": "https://www.muzines.co.uk/articles/sampling-ensoniq/3473", "data": "2026-11-24"},
+            {"titolo": "Freff — One Two Testing, giu. 1985",
+             "url": "https://www.muzines.co.uk/articles/ensoniq-mirage/11768", "data": "2026-11-24"},
+            {"titolo": "Paul Wiffen — E&MM, lug. 1985",
+             "url": "https://www.muzines.co.uk/articles/ensoniq-mirage/9076", "data": "2026-11-24"},
+            {"titolo": "Simon Trask — E&MM, mag. 1986",
+             "url": "https://www.muzines.co.uk/articles/mirage-multisampler/1681", "data": "2026-11-24"},
+            {"titolo": "«Ensoniq Mirage» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Ensoniq_Mirage", "data": "2026-11-24"},
+            {"titolo": "«Ensoniq» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Ensoniq", "data": "2026-11-24"},
+            {"titolo": "«Ensoniq Mirage» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/ensoniq/mirage", "data": "2026-11-24"},
+            {"titolo": "«Blast from the past: Ensoniq Mirage» — MusicRadar",
+             "url": "https://www.musicradar.com/news/tech/blast-from-the-past-ensoniq-mirage-622501", "data": "2026-11-24"},
+            {"titolo": "Jimmy Jam su «Control» — RBMA Daily, 2016",
+             "url": "https://daily.redbullmusicacademy.com/2016/02/key-tracks-janet-jackson-control", "data": "2026-11-24"},
+            {"titolo": "Jam & Lewis e il Mirage — MusicRadar, 2026",
+             "url": "https://www.musicradar.com/artists/im-like-ok-put-the-drum-machine-in-when-i-played-it-she-said-oh-i-like-that-i-like-that-and-she-said-i-want-to-do-a-song-about-the-nasty-boys-how-janet-jackson-and-jam-and-lewis-made-control-with-a-little-help-from-the-ensoniq-mirage", "data": "2026-11-24"},
+            {"titolo": "«Nasty (Janet Jackson song)» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Nasty_(Janet_Jackson_song)", "data": "2026-11-24"},
+            {"titolo": "Hank Shocklee, lezione — Red Bull Music Academy, Seattle 2005",
+             "url": "https://www.redbullmusicacademy.com/lectures/hank-shocklee-art-brut", "data": "2026-11-24"},
+            {"titolo": "Hank Shocklee — Tape Op n. 51, 2006",
+             "url": "https://tapeop.com/interviews/51/hank-shocklee", "data": "2026-11-24"},
+        ],
+        "hashtags": ["#ensoniqmirage", "#ensoniq", "#campionatore", "#janetjackson", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 096", "Le tastiere di «Nasty» escono da un campionatore a 8 bit"),
+            ("ENSONIQ MIRAGE · 1984", "L'Ensoniq Mirage campiona a 8 bit, poco più di 2 secondi per metà tastiera."),
+                        ("UN QUARTO DI EMULATOR", "In Inghilterra il Mirage costa un quarto di un Emulator."),
+            ("PUBLIC ENEMY", "Hank Shocklee comincia a campionare su un Mirage, con 3 secondi di memoria."),
+            ("NASTY · 1986", "Jimmy Jam suona il Mirage in «Nasty» di Janet Jackson."),
+        ],
+        "reel_cta": "Mandalo a chi balla ancora «Nasty» in cucina",
+        "reel_audio": {
+            "file": "assets/audio/mirage/registrazione.mp3", "inizio": 0,
+            "autore": "Nacho Marty", "licenza": "Pubblico dominio (PD Mark 1.0)",
+            "fonte": "Internet Archive",
+            "url": "https://archive.org/details/EnsoniqMirageDMS1",
+            "cosa": "una prova di un suono di sax campionato, suonato su un Mirage DMS-1, la versione rack; l'autore non dice se il campione è di fabbrica o suo, né come l'ha registrato",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 97
+    # Wurlitzer Sideman (Model 5000), 1959. Scheda scritta il 24/11/2026
+    # (rifornimento).
+    #
+    # REGISTRAZIONE: https://archive.org/details/wurlitzer_sideman_rhythms
+    #   «Wurlitzer SideMan Rhythms», creator circlesdrumsamples.com,
+    #   11/02/2020, Public Domain Mark 1.0, parte dell'Electronic Rhythm
+    #   Archive di Internet Archive (regole dell'archivio: presi dall'uscita,
+    #   niente microfono né effetti). Descrizione: «The pre-programmed rhythms
+    #   of a Wurlitzer SideMan rhythm companion. Graciously provided by
+    #   circlesdrumsamples.com». 18 file da 4-9,6 s (BEGUINE, BOLERO, CHA CHA,
+    #   Fox Trot A-H, MARCH, RHUMBA, SAMBA, SHUFFLE, TANGO, WALTZ, WESTERN),
+    #   misurati -24/-31 LUFS. Montaggio (lo fa chi coordina): CHA CHA,
+    #   RHUMBA, SAMBA, BOLERO, TANGO in fila, circa 48 s.
+    #
+    # FONTI PER FATTO (aperte il 24/11/2026)
+    # - 1959, Wurlitzer: SMEM Friburgo, The Henry Ford, National Music Centre
+    #   (Google Arts & Culture), Science Museum Group, FACT 22/09/2016,
+    #   Wikipedia «Drum machine».
+    # - «prima drum machine in commercio» per The Henry Ford e NMC; SMEM la
+    #   dice SECONDA dopo la Chamberlin Rhythmate. La Rhythmate suonava
+    #   nastri di batteria vera: FACT, Wikipedia «Drum machine», Thom Holmes
+    #   («Drum Machines: A Recorded History, part 1»). Detto in scheda come
+    #   disaccordo.
+    # - pensato per organisti e pianisti che suonano da soli: SMEM, NMC,
+    #   International Musician feb. 1961 (pagina Wurlitzer: «for the solo
+    #   performer, organist or pianist»).
+    # - il nome dai «side men» del jazz, i musicisti che accompagnano il
+    #   solista: Popular Mechanics novembre 1960 p. 149, NMC.
+    # - Model 5000: The Henry Ford («Wurlitzer Sideman Model 5000»), blog
+    #   The Central Shaft (14/06/2014).
+    # - alto circa 66 cm: The Henry Ford (26,5 in), Science Museum Group
+    #   (665 x 635 x 290 mm); il blog dà 66 x 29 x 63 cm.
+    # - mobile di legno con amplificatore e altoparlante dentro: 120 Years of
+    #   Electronic Music, Science Museum Group («in-built speaker and
+    #   amplifier»), MusicRadar 17/05/2023. Altoparlante da 12 pollici: SMEM,
+    #   The Central Shaft; si vede nella foto dell'interno.
+    # - disco che gira con contatti di metallo, ogni contatto un colpo:
+    #   SMEM, Thom Holmes, 120 Years, MusicRadar (2022, «spinning disc powered
+    #   by an electric motor, featuring contact points»).
+    # - 10 suoni fatti a valvole, niente registrato: SMEM, Holmes, 120 Years,
+    #   Popular Mechanics 1960 («10 percussion instruments»). Niente nastri:
+    #   SMEM («does not employ tape loops»), Holmes.
+    # - niente rullante; spazzola, maracas, claves, temple block, piatto,
+    #   tom, wood block, cassa: Thom Holmes (elenco dei 10), The Central Shaft
+    #   («There was no dedicated snare»).
+    # - 12 ritmi scelti con una manopola: SMEM (elenco), Holmes (elenco),
+    #   NMC, 120 Years, The Central Shaft (manopola).
+    # - cursore del tempo che fa girare il disco più svelto: 120 Years,
+    #   The Central Shaft; Wikipedia («A slider controls the tempo»).
+    # - tempo: 36-195 bpm per Popular Mechanics 1960 e SMEM; 34-150 per
+    #   Wikipedia, FACT, The Central Shaft. Detto in scheda come disaccordo.
+    # - tasti per suonare i colpi a mano: 120 Years (10 tasti), Wikipedia,
+    #   FACT, MusicRadar 2023.
+    # - fine produzione: 1969 per The Henry Ford, Science Museum Group,
+    #   Wikipedia/FACT; 1965 per Holmes (e synthmuseum via Commons), fine 1964
+    #   per The Central Shaft. Detto in scheda come disaccordo.
+    # - Wurlitzer ditta di organi e jukebox, sede a De Kalb, Illinois:
+    #   International Musician feb. 1961 («World's Largest Builder of Pianos
+    #   and Organs, De Kalb, Illinois»), Popular Mechanics 1960 («The
+    #   Wurlitzer Co., De Kalb, Ill.»); jukebox: The Central Shaft («jukebox
+    #   and organ manufacturer»), Wikipedia «Wurlitzer».
+    #   (Wikipedia «Wurlitzer», raw aperto il 24/11/2026: «electronic organs
+    #   and jukeboxes», stabilimento di DeKalb).
+    # - la regola del sindacato (AFM): le sezioni locali non possono vietarlo,
+    #   ma i soci non lo usano dove si balla, né negli spettacoli dove di
+    #   solito c'è una percussione, né al posto di un musicista vivo:
+    #   International Musician febbraio 1961 p. 5-6 (pagina Wurlitzer che
+    #   riporta il testo della regola, scaricata e letta), Wikipedia «Drum
+    #   machine» (che cita Down Beat 27/04/1961, «could not be used for
+    #   dancing»). Tutte e due vengono da una pagina pubblicitaria Wurlitzer:
+    #   lo dice la scheda. FACT dice «solo nei cocktail lounge»: versione
+    #   diversa, non usata.
+    # - Hal Davis: suona l'organo in un locale, il batterista non può venire,
+    #   va a prendere il Sideman a casa a 7 miglia, 3 coppie ballano sul
+    #   Sideman da solo, primi anni '60: lui stesso su Mechanical Music Digest
+    #   31/01/1999; FACT 22/09/2016 (lo chiama «produttore Motown»: non
+    #   usato, il post di MMD non lo dice e un altro sito lo dà come
+    #   presidente di un sindacato di Pittsburgh; in scheda solo «suona
+    #   l'organo in un locale»).
+    # - Tadashi Osanai e il Sideman a Tokyo: CDM (Create Digital Music),
+    #   Wikipedia «Drum machine» (che cita Colbeck, Keyfax). Già raccontato
+    #   in doncamatic (n. 093) e rhythmace: qui solo una riga in chi_lusata.
+    # - LCD Soundsystem, «Somebody's Calling Me» (traccia 8 di «This Is
+    #   Happening», 2010), Wurlitzer SideMan suonato da James Murphy:
+    #   Wikipedia «This Is Happening» (crediti presi dalle note del disco,
+    #   DFA 2010: «Wurlitzer SideMan (track 8)», e pianoforte sulla 8),
+    #   Thom Holmes («an authentic Side Man is clearly audible in the mix»).
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti in disaccordo)
+    # - prezzo: 395 dollari per Thom Holmes e per un commento su diyAudio
+    #   (non leggibile dal fetch); 375/365 dollari nel 1960 per The Central
+    #   Shaft. Fonti in disaccordo e nessuna d'epoca: niente prezzo.
+    # - peso: nessuna fonte trovata.
+    # - progettista dentro la Wurlitzer: nessuna fonte, nessun brevetto
+    #   trovato. Detto in scheda.
+    # - «85 different beat patterns» (solo Popular Mechanics 1960, forse le
+    #   combinazioni); 15 watt di amplificatore a valvole, braccio con 8
+    #   contatti a molla su un disco di Pertinax, pezzi fatti a Hüllhorst in
+    #   Germania, una valvola per ogni suono (solo The Central Shaft); dieci
+    #   valvole (solo MusicRadar 2023).
+    # - John Carroll Kirby che suona il Sideman dal vivo in «Oropendola»
+    #   (2023): solo MusicRadar (KCRW 429, nessun'altra fonte).
+    # - il sindacato che fa pressione per rallentare la produzione: solo The
+    #   Central Shaft.
+    #
+    # HANDLE: @lcdsoundsystem, link nel sito ufficiale lcdsoundsystem.com
+    #   (controllato il 24/11/2026). Wurlitzer: nessun account ufficiale
+    #   legato al Sideman, nessun tag. Da far seguire al proprietario prima
+    #   dell'uscita.
+    #
+    # FOTO (guardate il 24/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Wurlitzer_Sideman_(1959)_upper_half.jpg
+    #   ritaglio di Clusternote da «Akaphon (1963).jpg» di andrew garton
+    #   (Flickr, «Arts Birthday 2009»), CC BY-SA 2.0, 1200x900 (il thumbnail
+    #   1280 è l'originale; scarico il 960). Mostra «Zauberhafte
+    #   Klangmaschinen», Kulturfabrik Hainburg (Austria), 2008-2009. Il
+    #   mobile di legno chiaro di tre quarti, con la buca del coperchio dove
+    #   stanno i tasti bianchi e un cavo arrotolato sopra; dietro, la tastiera
+    #   nera dell'Akaphon; in basso a destra lo spigolo di un altro mobile
+    #   grigio. Nessun marchio leggibile. Tagliata in basso (è la metà
+    #   superiore): la macchina è la cosa più riconoscibile, ma non intera.
+    # extra: https://commons.wikimedia.org/wiki/File:Wurlitzer_Sideman_drum_machine_(inside)_front_view.jpg
+    #   ritaglio raddrizzato di Clusternote da «Wurlitzer Sideman drum
+    #   machine (inside).jpg» di guiltysin (Flickr «First drum machine»,
+    #   2009), CC BY 2.0. Il file dice 4488x5526 ma è un ingrandimento di un
+    #   originale 750x1000: scarico il 960. Un Sideman della Cantos
+    #   Foundation di Calgary (la descrizione dice 1957, come la vendono i
+    #   negozi; le fonti dicono 1959) aperto da dietro: in alto a destra il
+    #   disco marrone coi contatti in cerchi concentrici, a sinistra i fili e
+    #   le valvole, sotto a destra l'altoparlante grande col tweeter davanti.
+    #   Con «center 25%» nella banda entrano il disco e la parte alta
+    #   dell'altoparlante.
+    # Scartate: «National Music Centre (38265395586).jpg» (Mack Male, CC BY-SA
+    #   2.0): il Sideman aperto c'è, in una teca in basso, ma la cosa più
+    #   riconoscibile è il DX7 appeso; «Wurlitzer Sideman (1959) disc
+    #   sequencer.jpg»: 480x360, troppo piccola.
+    {
+        "slug": "sideman",
+        "numero": 97,
+        "serie": "LE DRUM MACHINE",
+        "strumento": "Wurlitzer Sideman",
+        "anno": "1959",
+        "luogo": "De Kalb, Illinois, Stati Uniti",
+        "costruttore": "Wurlitzer",
+        "specifiche": [
+            ("USCITA", "1959"),
+            ("SUONI", "10, A VALVOLE"),
+            ("RITMI", "12, SU UN DISCO"),
+            ("ALTEZZA", "66 CM"),
+        ],
+        "gancio": "Nel 1959 la Wurlitzer mette in vendita un batterista di legno, con le valvole e senza rullante",
+        "sottotitolo": "Un mobiletto da mettere accanto all'organo, con un disco di contatti che gira e 12 ritmi da sala da ballo.",
+        "la_macchina": (
+            "Si mette per terra accanto all'organo ed è alto 66 centimetri. È un "
+            "mobiletto di legno con dentro l'amplificatore e un altoparlante da "
+            "12 pollici, e sopra, in una buca del coperchio, ci sono i tasti. Sul "
+            "catalogo è il Model 5000. Il nome viene dal jazz, dove il sideman è "
+            "il musicista che accompagna il solista, e qui il solista è chi suona "
+            "l'organo o il pianoforte da solo. Della batteria ha poco. Il "
+            "rullante non c'è, al suo posto c'è una spazzola, e intorno maracas, "
+            "claves, temple block e un piatto. A me piace proprio per questo, "
+            "sembra l'orchestrina di un albergo al mare."
+        ),
+        "inventore_nome": "La Wurlitzer di De Kalb",
+        "inventore": (
+            "La Wurlitzer è la ditta dei jukebox e degli organi, con la sede a De "
+            "Kalb, nell'Illinois. Il Sideman esce nel 1959, per chi suona da "
+            "solo. Chi l'abbia progettato là dentro non sono riuscito a trovarlo "
+            "scritto da nessuna parte, e un nome a caso non ce lo metto. Sul "
+            "primato le fonti litigano. Più di un museo lo chiama la prima drum "
+            "machine in commercio, ma la Rhythmate di Harry Chamberlin era "
+            "arrivata prima, e suonava nastri di batteria vera. Il Sideman i suoi "
+            "colpi li fa da sé. Nemmeno sulla fine c'è accordo, c'è chi scrive "
+            "1964, chi 1965 e chi 1969."
+        ),
+        "come_funziona": (
+            "Un motore fa girare un disco, e sul disco ci sono contatti di metallo "
+            "messi in cerchi. Ogni contatto che passa chiude un circuito e fa "
+            "partire un colpo. I 10 suoni li fanno le valvole, di registrato non "
+            "c'è niente. Con una manopola si sceglie uno dei 12 ritmi, valzer, "
+            "tango, samba e gli altri, e il cursore del tempo fa girare il disco "
+            "più piano o più svelto. I tasti sopra servono a suonare i colpi a "
+            "mano. Sulla velocità le fonti non concordano, Popular Mechanics nel "
+            "1960 scrive da 36 a 195 battiti al minuto, altri da 34 a 150. "
+            "Ascoltate la registrazione sapendo che ogni colpo è un contatto."
+        ),
+        "richiami": [
+            ("FIG. 1", "Il disco coi contatti in cerchio"),
+            ("FIG. 2", "10 suoni a valvole, niente nastro"),
+            ("FIG. 3", "Altoparlante da 12 pollici"),
+        ],
+        "chi_lusata": [
+            {"artista": "Hal Davis",
+             "nota": "una sera, al posto del suo batterista",
+             "ig": None},
+            {"artista": "LCD Soundsystem",
+             "nota": "James Murphy lo suona in «Somebody's Calling Me» (2010)",
+             "ig": "lcdsoundsystem"},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Somebody's Calling Me", "artista": "LCD Soundsystem", "anno": "2010",
+                         "cosa": "Nelle note del disco il Sideman è accreditato a James Murphy. Il passo lento sotto il pianoforte, secondo me, è lui."},
+        "aneddoto": (
+            "Primi anni '60. Hal Davis suona l'organo in un locale, e una sera il "
+            "suo batterista non può venire. Il Sideman ce l'ha a casa, a 7 "
+            "miglia. Va a prenderlo, torna e lo attacca. A un certo punto alza "
+            "gli occhi e vede 3 coppie che ballano, sul ritmo del Sideman da "
+            "solo. All'inizio del 1961 il sindacato dei musicisti americani "
+            "decide come si usa. Le sezioni locali non lo possono vietare, ma "
+            "niente spettacoli dove di solito c'è una batteria e niente sale "
+            "dove si balla. Lo sappiamo dalla Wurlitzer stessa, che ricopia la "
+            "regola in una pagina pubblicitaria sulla rivista del sindacato e "
+            "nel titolo gli fa i complimenti."
+        ),
+        "avvertenza": "I 12 ritmi sono contatti fissati sul disco che gira. Un tredicesimo non si programma, il disco è quello.",
+        "foto": {
+            "file": "assets/foto/sideman/principale.jpg",
+            "posizione": "center 60%",
+            "autore": "andrew garton (ritaglio di Clusternote)",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un Sideman a una mostra in Austria. I tasti per suonare i colpi a mano stanno nella buca del coperchio",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/sideman/interno.jpg",
+             "autore": "guiltysin (ritaglio di Clusternote)",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 25%",
+             "didascalia": "Aperto da dietro. In alto a destra il disco dei contatti, sotto l'altoparlante"},
+            # Le due foto sono da 960 px: ingrandite coi RITAGLI di
+            # genera_tavole (zoom 1,55-2,1) uscivano sgranate e mostravano
+            # solo il cavo. Quindi inquadrature dichiarate, senza zoom.
+            {"file": "assets/foto/sideman/principale.jpg",
+             "autore": "andrew garton (ritaglio di Clusternote)",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 85%",
+             "didascalia": "Il mobiletto di legno. La fessura sul davanti è la griglia dell'altoparlante"},
+            {"file": "assets/foto/sideman/interno.jpg",
+             "autore": "guiltysin (ritaglio di Clusternote)",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "right top",
+             "nel_reel": False},
+            {"file": "assets/foto/sideman/principale.jpg",
+             "autore": "andrew garton (ritaglio di Clusternote)",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 70%",
+             "nel_reel": False,
+             "didascalia": "I tasti nella buca del coperchio, per suonare i colpi a mano"},
+        ],
+        "fonti": [
+            {"titolo": "Wurlitzer Side Man — SMEM, Friburgo",
+             "url": "https://www.smemmusic.ch/index.php/de/node/1100", "data": "2026-11-24"},
+            {"titolo": "Sideman Model 5000 — The Henry Ford",
+             "url": "https://www.thehenryford.org/collections/explore/artifact/142279", "data": "2026-11-24"},
+            {"titolo": "«Sideman» — Science Museum Group",
+             "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8631935/wurlitzer-rhythm-unit", "data": "2026-11-24"},
+            {"titolo": "SideMan — National Music Centre",
+             "url": "https://artsandculture.google.com/asset/wurlitzer-sideman-drum-machine-electromechanical-the-wurlitzer-company/0AHIbcimdgynMg", "data": "2026-11-24"},
+            {"titolo": "«Electronic Side Man» — Popular Mechanics, novembre 1960, p. 149",
+             "url": "https://archive.org/details/PopularMechanics1960", "data": "2026-11-24"},
+            {"titolo": "Pagina Wurlitzer sulla regola dell'AFM — International Musician, febbraio 1961",
+             "url": "https://worldradiohistory.com/Archive-All-Music/International-Musician/60s/International-Musician-1961-02.pdf", "data": "2026-11-24"},
+            {"titolo": "Hal Davis — Mechanical Music Digest, 31/01/1999",
+             "url": "https://www.mmdigest.com/Archives/Digests/199901/1999.01.31.06.html", "data": "2026-11-24"},
+            {"titolo": "Scott Wilson — FACT, 22/09/2016",
+             "url": "https://www.factmag.com/2016/09/22/the-14-drum-machines-that-shaped-modern-music/", "data": "2026-11-24"},
+            {"titolo": "«Drum Machines», Thom Holmes",
+             "url": "https://www.thomholmes.com/post/drum-machines-a-recorded-history-part-1-analog-drum-machines", "data": "2026-11-24"},
+            {"titolo": "«The Wurlitzer Side Man» — 120 Years of Electronic Music",
+             "url": "https://120years.net/the-side-manwurlitzerusa1959/", "data": "2026-11-24"},
+            {"titolo": "«Analogue Dreams» — The Central Shaft, 2014",
+             "url": "https://thecentralshaft.blogspot.com/2014/06/analogue-dreams-1959s-wurlitzer-sideman.html", "data": "2026-11-24"},
+            {"titolo": "«Drum machine» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Drum_machine", "data": "2026-11-24"},
+            {"titolo": "«Birth of the drum machine» — CDM",
+             "url": "https://cdm.link/electronic-music-history-birth-of-the-drum-machine/", "data": "2026-11-24"},
+            {"titolo": "«This Is Happening» — Wikipedia (EN), crediti dalle note del disco",
+             "url": "https://en.wikipedia.org/wiki/This_Is_Happening", "data": "2026-11-24"},
+            {"titolo": "Il Sideman aperto — MusicRadar",
+             "url": "https://musicradar.com/news/video-the-inside-of-this-1950s-drum-machine-is-a-sight-to-behold", "data": "2026-11-24"},
+        ],
+        "hashtags": ["#wurlitzersideman", "#wurlitzer", "#drummachine", "#lcdsoundsystem", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 097", "Il sindacato vieta il Wurlitzer Sideman dove si balla"),
+            ("WURLITZER · 1959", "Il Wurlitzer Sideman esce nel 1959, per chi suona l'organo da solo."),
+            ("10 SUONI A VALVOLE", "Dentro il Sideman gira un disco di contatti, e le valvole fanno i colpi."),
+            ("PRIMI ANNI '60", "Hal Davis suona l'organo in un locale. Una sera il batterista non viene."),
+            ("3 COPPIE IN PISTA", "Hal porta il Sideman, e 3 coppie ballano sulla macchina da sola."),
+        ],
+        "reel_cta": "Mandalo al batterista che arriva sempre tardi",
+        "reel_audio": {
+            "file": "assets/audio/sideman/registrazione.mp3", "inizio": 0,
+            "autore": "circlesdrumsamples.com (Electronic Rhythm Archive)",
+            "licenza": "Pubblico dominio (PD Mark 1.0)",
+            "fonte": "Internet Archive",
+            "url": "https://archive.org/details/wurlitzer_sideman_rhythms",
+            "cosa": "un Wurlitzer Sideman, i ritmi di fabbrica (cha cha, rumba, samba, bolero, tango) presi dall'uscita, senza microfono né effetti, montati in fila",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 98
+    # Sequential Prophet-6. Scheda scritta il 24/11/2026 (rifornimento).
+    # Posteriore al 1988 (quota 1 su 4).
+    #
+    # REGISTRAZIONE: https://archive.org/details/20181111_PR
+    #   «20181111 Dave Smith Prophet 6 sound samples», Pete Scott, CC BY 4.0
+    #   (licenseurl dell'item). Descrizione dell'autore: «Dave Smith Prophet 6
+    #   + FX», soggetti «Dave Smith Prophet 6», «experimental». File scelto:
+    #   «20181111_PR130_01_sweet tune.mp3» (122 s; esiste anche il .wav
+    #   originale e il .flac). PR130 è con ogni probabilità il numero di
+    #   programma: tutti i file dell'autore si chiamano PRnnn, e quelli in
+    #   cui suona anche il Grandmother si chiamano GM_PRnnn.
+    #   Download diretto dal container (archive.org non blocca):
+    #   https://archive.org/download/20181111_PR/20181111_PR130_01_sweet%20tune.mp3
+    #   MISURATA il 24/11/2026: 122,0 s, -13,7 LUFS integrati, LRA 5,1 LU;
+    #   silenzio (sotto -45 dB per più di 0,7 s) solo da 0 a 0,9 s e da
+    #   120,7 s alla fine. Tratto 1-46 s: -12,4 LUFS, LRA 1,7; con passa-alto
+    #   a 200 Hz -13,7 (perde 1,3 dB: dal telefono si sente). Spettrogramma:
+    #   una sequenza ritmica continua con accordi, armoniche fino a 10 kHz,
+    #   nessun buco. Tratto consigliato: 1-46 s (o intera, 1-120 s).
+    #   Che sia l'hardware: lo dice l'autore (titolo, descrizione, soggetti);
+    #   in 2018 non risulta un Prophet-6 in software. «+ FX» vuol dire che
+    #   c'è almeno un effetto (negli item del 2019 nomina pedali Meris e Red
+    #   Panda; qui non dice quali). Non ascoltata da un orecchio: titolo
+    #   («sweet tune») e aspetto dello spettrogramma fanno pensare a una frase
+    #   dell'autore, non a un brano noto, ma non è verificato.
+    #   Riserve dello stesso autore, stessa licenza: «20190511_PR006_03_
+    #   polyphonic stargaze.mp3» (item 20190511_PR_GM_2, 162 s, -12,4 LUFS,
+    #   LRA 2,9, nessun silenzio fino a 159,9 s: accordi tenuti, mostra bene
+    #   le 6 voci); «20190805_PR249_melancholy hope.mp3» (item
+    #   20190805_PR_GM, 602 s, -13,4 LUFS, continuo da 6,5 a 428 s). Da
+    #   EVITARE i file con titoli che richiamano brani protetti («stranger
+    #   things», «close encounters», «dr who», «French Bach», «Aphex»).
+    #
+    # FONTI PER FATTO (aperte il 24/11/2026)
+    # - Sequential chiude nel 1987, Yamaha ne compra nome e beni: annuncio
+    #   Sequential del 22/01/2015 («When Sequential ceased operations in 1987,
+    #   its name and assets were acquired by Yamaha»); Gearnews, Robin
+    #   Vincent, 01/09/2018 («acquired by Yamaha» nel 1987). 1987→2015 = 28
+    #   anni (conto mio).
+    # - Kakehashi convince Yamaha a ridare il nome, gennaio 2015: annuncio
+    #   Sequential 22/01/2015 («Instrumental in restoring the Sequential name
+    #   was Roland's Founder, Ikutaro Kakehashi»); Gearnews 2018 («encouraged
+    #   by Ikutaro Kakehashi»). Synthtopia 22/01/2015 lo riporta ma è il
+    #   comunicato ricopiato, non conta come seconda fonte.
+    # - «To say that I'm grateful would be putting it mildly» (Smith):
+    #   annuncio Sequential; MusicRadar, Ben Rogerson, 22/01/2015.
+    # - Prophet-6 presentato alla NAMM di gennaio 2015, tributo/discendente
+    #   del Prophet-5: annuncio Sequential («a tribute to … the Prophet-5»),
+    #   MusicRadar 22/01/2015, pagina prodotto Sequential («a descendent of
+    #   the legendary Prophet-5»). Foto di Commons «2015 NAMM Show».
+    # - Smith dopo il 1987 lavora per Yamaha e Korg: annuncio Sequential
+    #   (ricopiato da Synthtopia), Gearnews 2018 («consulted for Yamaha and
+    #   Korg»).
+    # - Sequential Circuits fondata nel 1974, Prophet-5 del 1978: Gearnews
+    #   2018 («founded in 1974», «The 1978 Prophet-5»); Music Inc. 2022 (1974);
+    #   MusicRadar 2022 (titolo: «designer of the Prophet-5»).
+    # - Dave Smith Instruments fondata nel 2002: Gearnews 2018; Music Inc.,
+    #   01/06/2022 (necrologio).
+    # - DSI prende il nome Sequential nel 2018: Gearnews 01/09/2018; MusicRadar
+    #   «Dave Smith Instruments is dead, long live Sequential» (2018).
+    # - Smith muore nel 2022 a 72 anni: MusicRadar «Synth legend Dave Smith,
+    #   designer of the Prophet-5, dies aged 72»; MusicTech «Dave Smith,
+    #   founder of Sequential and 'father' of MIDI, has died at 72».
+    # - 6 voci, 2 VCO discreti per voce con sub-oscillatore: Sound On Sound,
+    #   Gordon Reid, novembre 2015; MusicRadar 22/01/2015; pagina Sequential.
+    # - passa-alto a 2 poli e passa-basso a 4 poli ispirato al Prophet-5:
+    #   SOS 2015 (12 e 24 dB/ott.); MusicRadar 2015 («inspired by the
+    #   original Prophet 5 filter»); pagina Sequential.
+    # - Slop, instabilità voluta dell'intonazione: SOS 2015 («adds some
+    #   inconsistency»); pagina Sequential («Oscillator Slop amount for
+    #   increased tuning instability»).
+    # - distorsione analogica + 2 effetti digitali, a effetti spenti il
+    #   percorso resta analogico: SOS 2015 («the original signal always
+    #   remains in the analogue domain»); pagina Sequential («True bypass
+    #   maintains fully analog signal path»); MusicRadar 2015 (distorsione
+    #   analogica, effetti digitali a 24 bit).
+    # - tastiera di 4 ottave semipesata con velocity e aftertouch: SOS 2015
+    #   (49 note), MusicRadar 2015, pagina Sequential. La critica di Reid alle
+    #   4 ottave: SOS (opinione sua, citata come tale).
+    # - sequencer polifonico a 64 passi, arpeggiatore: SOS, MusicRadar,
+    #   Sequential.
+    # - 500 programmi di fabbrica e 500 dell'utente: SOS 2015, pagina
+    #   Sequential.
+    # - Poly Mod: SOS 2015 (5 destinazioni contro le 3 del Prophet-5, una
+    #   fonte sola per i numeri: in scheda senza numeri), pagina Sequential.
+    # - prezzo 2.799 dollari: SOS 2015, MusicRadar 2015.
+    # - Max Cooper: Ableton, «Composing Infinity», intervista di DJ Pangburn,
+    #   03/12/2019 («most of the album was made using a Dave Smith Instruments
+    #   Prophet 6», «a bit more use on the album than the Moog One», il Prophet
+    #   6 «go-to synth over the last couple of years»); Fiesta y Bullshit,
+    #   #INTHESTUDIO, 09/07/2019, mentre lavora all'album da presentare al
+    #   Barbican il 28/09 («The Prophet 6 is still my favourite at the
+    #   moment»); MusicRadar, Si Truss, 29/07/2024 («The Prophet-6 is my most
+    #   used synth»). Album «Yearning for the Infinite», commissionato dal
+    #   Barbican: Ableton 2019, maxcooper.net (31/07/2019, «borne out of a
+    #   commission from The Barbican»); uscito il 7/11/2019 (Wikipedia «Max
+    #   Cooper (music producer)», Beatport MESH025). Belfast e dottorato in
+    #   biologia computazionale: solo Wikipedia, non usati.
+    #
+    # FATTI SCARTATI (una fonte sola, o da comunicato)
+    # - il nome del presidente Yamaha Takuya Nakata (solo il comunicato e la
+    #   sua copia su Synthtopia); Smith che disegna gran parte della
+    #   Wavestation (idem); lo Slop fino a ±1 semitono (solo SOS); Poly Mod a
+    #   5 destinazioni (solo SOS); Focusrite che compra Sequential nel 2021
+    #   (solo il riassunto di una ricerca, pagina non aperta); Kevin Parker,
+    #   Thom Yorke, Trent Reznor (solo Equipboard, autodichiarato); Jon
+    #   Carin, CoastalDives, Fred Everything (solo pagine promozionali
+    #   Sequential o un'intervista sola); la versione da tavolo del 2017 (solo
+    #   il titolo di una foto).
+    #
+    # HANDLE
+    # - @sequential_llc: link Instagram nel piede di sequential.com (letto il
+    #   24/11/2026).
+    # - @maxcoopermax: link Instagram in maxcooper.net (letto il 24/11/2026).
+    #   Da seguire prima dell'uscita (regola 3).
+    #
+    # FOTO
+    # principale: https://commons.wikimedia.org/wiki/File:Sequential_Prophet-6_-_front_-_2015_NAMM_Show.jpg
+    #   Pete Brown (Flickr psychlist1972/15750728843), CC BY 2.0, 5472x3648.
+    #   Il Prophet-6 intero visto dall'alto alla NAMM 2015: fianchi di legno,
+    #   pannello grigio, «prophet-6» leggibile a destra, le rotelle a
+    #   sinistra. In alto un altro synth tagliato e, sotto, due cuffie
+    #   audio-technica: col ritaglio in centro restano marginali (controllare
+    #   la tavola: «posizione» center 55%).
+    # extra 1: https://commons.wikimedia.org/wiki/File:Sequential_Prophet-6_Back_Logo_-_2015_NAMM_Show.jpg
+    #   Brandon Daniel (Flickr bdu/15729839773), CC BY-SA 2.0, 4928x3280.
+    #   Il retro con la scritta SEQUENTIAL grande, le manopole e la presa
+    #   d'alimentazione. È la foto della storia del nome.
+    # extra 2: https://commons.wikimedia.org/wiki/File:Sequential_Prophet-6_-_keyboard_details_-_2015_NAMM_Show.jpg
+    #   Pete Brown (Flickr psychlist1972/16370750735), CC BY 2.0, 5472x3648.
+    #   I tasti di sbieco, le rotelle illuminate di rosso a sinistra, il
+    #   display PROGRAM in alto. Nessun marchio leggibile: va bene per una
+    #   banda di dettaglio, non per il reel.
+    # Scartate: «SEQUENTIAL Prophet-6 (center) … Henry Söderlund» (CC BY 2.0,
+    #   non vista: thumbnail 429), «right angled … Kazuhisa OTSUBO» (1080x1080,
+    #   piccola), le foto col Pro 2 o con l'OB-6 (due macchine, il marchio più
+    #   leggibile potrebbe non essere il Prophet-6).
+    {
+        "slug": "prophet6",
+        "numero": 98,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Sequential Prophet-6",
+        "anno": "2015",
+        "luogo": "Stati Uniti",
+        "costruttore": "Dave Smith Instruments (oggi Sequential)",
+        "specifiche": [
+            ("VOCI", "6"),
+            ("OSCILLATORI", "2 VCO PER VOCE"),
+            ("TASTIERA", "4 OTTAVE"),
+            ("PROGRAMMI", "500 + 500"),
+        ],
+        "gancio": "Per 28 anni il nome scritto sul retro di questo synth è stato di Yamaha",
+        "sottotitolo": "Un polifonico analogico a 6 voci, discendente del Prophet-5, con un pomello che serve a stonarlo apposta.",
+        "la_macchina": (
+            "I fianchi sono di legno e il pannello è grigio scuro, pieno di "
+            "manopole messe in fila per sezioni. La tastiera ha 4 ottave, "
+            "semipesata, con velocity e aftertouch. Gordon Reid, che la prova "
+            "su Sound On Sound nel novembre 2015, se la prende proprio con "
+            "quelle 4 ottave, e su questo ha ragione lui. Le voci sono 6, tutte "
+            "analogiche. Esce a 2.799 dollari. Dentro ci sono 500 programmi di "
+            "fabbrica e altri 500 da scrivere. A me piace che non finga di "
+            "essere un Prophet-5 rifatto. Gli somiglia molto nel suono, ma ha "
+            "un sequencer e due effetti che nel 1978 non c'erano."
+        ),
+        "inventore_nome": "Dave Smith",
+        "inventore": (
+            "Dave Smith fonda la Sequential Circuits nel 1974 e disegna il "
+            "Prophet-5, che esce nel 1978. Quando la ditta chiude, lui va avanti a "
+            "lavorare per altri, per Yamaha e per Korg. Nel 2002 riparte con "
+            "una ditta a suo nome, Dave Smith Instruments, e per 13 anni le sue "
+            "macchine portano quella sigla. Il Prophet-6 è il primo a tornare "
+            "alla vecchia. Nel 2018 anche la ditta cambia nome e diventa "
+            "Sequential. Smith muore nel 2022, a 72 anni. Secondo me il "
+            "Prophet-6 è la macchina in cui si sente di più che stava facendo "
+            "i conti con la propria storia."
+        ),
+        "come_funziona": (
+            "Ogni voce ha 2 oscillatori analogici discreti e un "
+            "sub-oscillatore un'ottava sotto. Poi due filtri in fila, un "
+            "passa-alto a 2 poli e un passa-basso a 4 poli ricalcato su quello "
+            "del Prophet-5. C'è un pomello che si chiama Slop. Fa sbandare un "
+            "poco l'intonazione degli oscillatori, apposta. La distorsione è analogica, gli altri "
+            "due effetti sono digitali, e se li spegnete il segnale non passa "
+            "mai dal digitale. Provate un accordo con lo Slop a zero, poi "
+            "giratelo piano e ascoltate cosa cambia."
+        ),
+        "richiami": [
+            ("FIG. 1", "Lo Slop, l'intonazione che sbanda"),
+            ("FIG. 2", "Passa-alto e passa-basso in fila"),
+            ("FIG. 3", "Sequencer polifonico, 64 passi"),
+        ],
+        "chi_lusata": [
+            {"artista": "Max Cooper",
+             "nota": "ci fa quasi tutto «Yearning for the Infinite» (2019), ed è ancora il synth che usa di più",
+             "ig": "maxcoopermax"},
+        ],
+        "menzioni_extra": [
+            {"ig": "sequential_llc",
+             "riga": "Il Prophet-6 è una macchina di @sequential_llc."},
+        ],
+        "da_ascoltare": {"brano": "Yearning for the Infinite", "artista": "Max Cooper", "anno": "2019",
+                         "cosa": "Un album intero, scritto per il Barbican di Londra. Lui dice che il Prophet-6 l'ha usato più del Moog One."},
+        "aneddoto": (
+            "Nel 1987 la Sequential smette di lavorare e Yamaha ne compra il "
+            "nome e i beni. A "
+            "gennaio del 2015 a convincere Yamaha a ridarlo a Smith è Ikutaro "
+            "Kakehashi, il fondatore di Roland, cioè della concorrenza. Smith "
+            "scrive che dire che è grato sarebbe dire poco. Nella stessa "
+            "settimana, alla NAMM, presenta il Prophet-6. Sul retro, in "
+            "lettere grandi, c'è di nuovo scritto SEQUENTIAL."
+        ),
+        "avvertenza": "Lo Slop stona gli oscillatori apposta. Se il Prophet-6 sembra scordato, prima di accordarlo guardate dov'è quel pomello.",
+        "foto": {
+            "file": "assets/foto/prophet6/principale.jpg",
+            # In fondo all'originale ci sono due cuffie con «audio-technica»
+            # ben leggibile, e il marchio sbagliato si legge prima della
+            # didascalia. Il riquadro della copertina prende la foto intera,
+            # quindi l'inquadratura non bastava: il file è ritagliato (y da
+            # 210 a 710 sul thumbnail da 1280), e il credito lo dice.
+            "posizione": "center",
+            "ritaglio": True,
+            "autore": "Pete Brown (ritagliata)",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Il Prophet-6 dall'alto, alla NAMM del 2015. Le manopole stanno tutte sopra i tasti",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/prophet6/retro.jpg",
+             "autore": "Brandon Daniel",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 55%",
+             "didascalia": "Il retro, con la scritta SEQUENTIAL in grande"},
+            {"file": "assets/foto/prophet6/tasti.jpg",
+             "autore": "Pete Brown",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 40%",
+             "didascalia": "I tasti semipesati e, a sinistra, le due rotelle illuminate",
+             "nel_reel": False},
+        ],
+        "fonti": [
+            {"titolo": "«Sequential is back» — Dave Smith Instruments, 22/01/2015",
+             "url": "https://sequential.com/2015/01/sequential-back/", "data": "2026-11-24"},
+            {"titolo": "Robin Vincent — Gearnews, 01/09/2018",
+             "url": "https://www.gearnews.com/sequential-is-back-dave-smith-instruments-takes-back-the-legendary-name/", "data": "2026-11-24"},
+            {"titolo": "Ben Rogerson — MusicRadar, 22/01/2015",
+             "url": "https://www.musicradar.com/news/tech/namm-2015-dave-smith-presents-sequential-prophet-6-614683", "data": "2026-11-24"},
+            {"titolo": "Gordon Reid — Sound On Sound, novembre 2015",
+             "url": "https://www.soundonsound.com/reviews/dave-smith-instruments-sequential-prophet-6", "data": "2026-11-24"},
+            {"titolo": "«Prophet-6» — Sequential, pagina del prodotto",
+             "url": "https://sequential.com/modern-analog/prophet-6/", "data": "2026-11-24"},
+            {"titolo": "Dave Smith muore a 72 anni — MusicRadar, 2022",
+             "url": "https://musicradar.com/news/dave-smith-dies-72", "data": "2026-11-24"},
+            {"titolo": "Dave Smith muore a 72 anni — MusicTech, 2022",
+             "url": "https://musictech.com/news/industry/dave-smith-sequential-dies-at-72-prophet-5", "data": "2026-11-24"},
+            {"titolo": "DSI diventa Sequential — MusicRadar, 2018",
+             "url": "https://www.musicradar.com/news/dave-smith-instruments-is-dead-long-live-sequential", "data": "2026-11-24"},
+            {"titolo": "Music Inc., 01/06/2022",
+             "url": "https://www.musicincmag.com/news/detail/sequentials-dave-smith-passes-away", "data": "2026-11-24"},
+            {"titolo": "DJ Pangburn — Ableton, 03/12/2019",
+             "url": "https://www.ableton.com/en/blog/composing-infinity-max-cooper-his-new-album/", "data": "2026-11-24"},
+            {"titolo": "«#INTHESTUDIO: Max Cooper» — Fiesta y Bullshit, 09/07/2019",
+             "url": "https://www.fiestaybullshit.com/en/inthestudio-max-cooper/", "data": "2026-11-24"},
+            {"titolo": "Si Truss — MusicRadar, 29/07/2024",
+             "url": "https://www.musicradar.com/news/max-cooper-in-the-studio", "data": "2026-11-24"},
+            {"titolo": "«Yearning for the Infinite» — maxcooper.net, 31/07/2019",
+             "url": "https://maxcooper.net/yearning-for-the-infinite-album", "data": "2026-11-24"},
+        ],
+        "hashtags": ["#prophet6", "#sequential", "#sintetizzatore", "#maxcooper", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 098", "Per 28 anni il nome scritto sul Prophet-6 è di Yamaha"),
+            ("SEQUENTIAL · 1987", "La Sequential di Dave Smith chiude, e Yamaha ne compra il nome."),
+            ("IKUTARO KAKEHASHI · 2015", "Il fondatore di Roland convince Yamaha a ridare il nome a Dave Smith."),
+            ("PROPHET-6 · NAMM 2015", "Dave Smith presenta il Prophet-6, con SEQUENTIAL scritto sul retro."),
+            ("MAX COOPER · 2019", "Max Cooper fa quasi tutto un album col Prophet-6, per il Barbican."),
+        ],
+        "reel_cta": "Mandalo a chi non ti ha mai ridato un disco",
+        "reel_audio": {
+            "file": "assets/audio/prophet6/registrazione.mp3", "inizio": 0,
+            "autore": "Pete Scott", "licenza": "CC BY 4.0",
+            "fonte": "Internet Archive",
+            "url": "https://archive.org/details/20181111_PR",
+            "cosa": "una frase con accordi e sequenza suonata sul Prophet-6 dell'autore, con un effetto esterno che non dice; estratto da 1 a 46 s di «sweet tune», programma 130, con una dissolvenza in coda",
+        },
+        "verificata": True,
+    },
+    # ---------------------------------------------------------------- 99
     # Prima scheda dopo il 1988 (decisione del proprietario, 16/10/2026:
     # «fino a oggi, Auto-Tune sì, una su quattro va bene»), messa avanti
     # in coda su sua richiesta. Fatti con due fonti indipendenti; SCARTATI
@@ -14273,7 +15431,7 @@ SCHEDE = [
     # Commons o Freesound: il reel usa la sigla.
     {
         "slug": "autotune",
-        "numero": 95,
+        "numero": 99,
         "serie": "GLI EFFETTI",
         "strumento": "Antares Auto-Tune",
         "anno": "1997",
@@ -14359,7 +15517,7 @@ SCHEDE = [
         ],
         "hashtags": ["#autotune", "#antares", "#effettiaudio", "#cher", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 095", "La voce robot di Cher nasce da chi cercava il petrolio"),
+            ("ELETTROFONI · N. 099", "La voce robot di Cher nasce da chi cercava il petrolio"),
             ("EXXON · ANNI '70", "Andy Hildebrand legge i dati sismici con una formula, l'autocorrelazione."),
             ("NAMM · ANNI '90", "A pranzo una donna gli chiede una scatola per cantare intonata."),
             ("ANTARES · 1997", "Auto-Tune nasce dalla formula del petrolio, usata sulla voce."),
@@ -14370,7 +15528,7 @@ SCHEDE = [
     },
     {
         "slug": "lowrey",
-        "numero": 96,
+        "numero": 100,
         "serie": "GLI ORGANI",
         "strumento": "Lowrey DSO",
         "anno": "1965",
@@ -14463,7 +15621,7 @@ SCHEDE = [
         ],
         "hashtags": ["#lowreyorgan", "#lowrey", "#organo", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 096", "Quel clavicembalo dei Beatles è un organo da salotto"),
+            ("ELETTROFONI · N. 100", "Quel clavicembalo dei Beatles è un organo da salotto"),
             ("ABBEY ROAD · 1° MARZO 1967", "McCartney cerca l'attacco di «Lucy in the Sky with Diamonds»."),
             ("LOWREY DSO · CHICAGO", "Il Lowrey si compra a rate, accompagnamento automatico incluso."),
             ("4 REGISTRI INSIEME", "McCartney ne apre 4: clavicembalo, vibrafono, carillon e chitarra."),
@@ -14474,7 +15632,7 @@ SCHEDE = [
     },
     {
         "slug": "wasp",
-        "numero": 97,
+        "numero": 101,
         "serie": "I SINTETIZZATORI",
         "strumento": "EDP Wasp",
         "anno": "1978",
@@ -14566,7 +15724,7 @@ SCHEDE = [
         ],
         "hashtags": ["#edpwasp", "#edp", "#sintetizzatore", "#eurythmics", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 097", "Casale dei Devo: col sudore delle dita suona da solo"),
+            ("ELETTROFONI · N. 101", "Casale dei Devo: col sudore delle dita suona da solo"),
             ("1977 · 10.000 STERLINE", "Wagner suona, Huggett progetta. Presta i soldi un negozio di Londra."),
             ("1978 · 199 STERLINE", "Il Wasp taglia tutto: al posto dei tasti, un adesivo sopra il rame."),
             ("GERALD CASALE · DEVO", "Le piastrine leggono il contatto, e il sudore è un contatto."),
@@ -14577,7 +15735,7 @@ SCHEDE = [
     },
     {
         "slug": "elkarhapsody",
-        "numero": 98,
+        "numero": 102,
         "serie": "GLI ORGANI",
         "strumento": "Elka Rhapsody 490",
         "anno": "1975 circa",
@@ -14667,7 +15825,7 @@ SCHEDE = [
         ],
         "hashtags": ["#elkarhapsody", "#elka", "#stringmachine", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 098", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
+            ("ELETTROFONI · N. 102", "I Tangerine Dream la suonano. Nessuno sa quando è nata"),
             ("ELKA · ITALIA", "È la Elka Rhapsody 490: 49 tasti e 4 comandi in tutto."),
             ("TRE FONTI, TRE ANNI", "Wikipedia dice 1974, un museo svizzero 1972, chi le ripara 1975."),
             ("HOHNER STRINGVOX", "All'estero la vende la tedesca Hohner, bianca e col nome StringVox."),
@@ -14678,7 +15836,7 @@ SCHEDE = [
     },
     {
         "slug": "taurus",
-        "numero": 99,
+        "numero": 103,
         "serie": "I SINTETIZZATORI",
         "strumento": "Moog Taurus",
         "anno": "1975",
@@ -14764,7 +15922,7 @@ SCHEDE = [
         ],
         "hashtags": ["#moogtaurus", "#moog", "#sintetizzatore", "#genesis", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 099", "Il synth che Genesis e Rush suonano coi piedi"),
+            ("ELETTROFONI · N. 103", "Il synth che Genesis e Rush suonano coi piedi"),
             ("MOOG TAURUS", "13 pedali, 2 oscillatori e un filtro da 24 dB per ottava."),
             ("IL SISTEMA MAI USCITO", "È il terzo pezzo del Constellation, che non uscirà mai."),
             ("DA SOLA", "L'Apollo diventa la Polymoog. La pedaliera esce per conto suo."),
@@ -14775,7 +15933,7 @@ SCHEDE = [
     },
     {
         "slug": "echoplex",
-        "numero": 100,
+        "numero": 104,
         "serie": "GLI EFFETTI",
         "strumento": "Maestro Echoplex",
         "anno": "1959",
@@ -14864,7 +16022,7 @@ SCHEDE = [
         ],
         "hashtags": ["#echoplex", "#maestro", "#effettichitarra", "#ledzeppelin", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 100", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
+            ("ELETTROFONI · N. 104", "L'eco di Jimmy Page e Van Halen: un anello di nastro"),
             ("MAESTRO ECHOPLEX", "Nel 1959 se ne vendono i primi 500, a Chicago."),
             ("LA TESTINA", "Si sposta la testina, non la velocità: l'intonazione non cambia."),
             ("EP-3, 1970", "Mike Battle, l'inventore, non ama il transistor e lascia la ditta."),
@@ -14875,7 +16033,7 @@ SCHEDE = [
     },
     {
         "slug": "pianet",
-        "numero": 101,
+        "numero": 105,
         "serie": "GLI ELETTROMECCANICI",
         "strumento": "Hohner Pianet",
         "anno": "1962",
@@ -14960,7 +16118,7 @@ SCHEDE = [
         ],
         "hashtags": ["#pianet", "#hohner", "#pianoelettrico", "#beatles", "#storiadellamusica"],
         "reel_battute": [
-            ("ELETTROFONI · N. 101", "«She's Not There» degli Zombies: un Pianet da casa"),
+            ("ELETTROFONI · N. 105", "«She's Not There» degli Zombies: un Pianet da casa"),
             ("HOHNER · 1962", "Un pianoforte elettrico a lamelle, da casa, progettato da Ernst Zacharias."),
             ("COME SUONA", "Un tasto alza il cuscinetto, la lamella vibra, un pickup la amplifica."),
             ("IL GUAIO", "I cuscinetti invecchiano. Molti Pianet anni '60 sono rimasti muti."),
@@ -14969,7 +16127,7 @@ SCHEDE = [
         "reel_cta": "Mandalo a chi canta «She's Not There» in macchina",
         "verificata": True,
     },
-    # ---------------------------------------------------------------- 101
+    # ---------------------------------------------------------------- 105
     # Rifornimento del 20/10/2026. Audio: «inizio» è 0 perché il file è già
     # l'estratto tagliato (tratto scelto sullo spettrogramma, vedi sotto).
     # Scheda «ans» — sintetizzatore ANS di Evgenij Murzin (URSS, prototipo 1958).
@@ -15285,876 +16443,6 @@ SCHEDE = [
     # - Michael Allen Harrison col VFX-SD: solo la foto di Commons.
 
 
-    # ---------------------------------------------------------------- 102
-    # Roland Alpha Juno (Alpha Juno-1 / JU-1 e Alpha Juno-2 / JU-2). Scheda
-    # scritta il 24/11/2026 (rifornimento).
-    #
-    # REGISTRAZIONE: https://archive.org/details/sepha-roland-alpha-juno-pt1
-    #   «Roland Alpha Juno-1 Chords, Filter Sweeps & Multisamples, pt. 1»,
-    #   sephabeats, 21/12/2021, CC BY 4.0, Internet Archive. Descrizione
-    #   dell'autore: campioni registrati col SUO Alpha Juno-1, preset di
-    #   fabbrica; «The filter sweeps were performed using the Alpha Dial on the
-    #   Juno to control the "Brilliance" parameter». File scelto: «Juno - P-67
-    #   SynthBass2 (Filter Sweep, Amin Chord).mp3», 51,1 s, MISURATO -15,7
-    #   LUFS, picco -5,3 dBFS, LRA 3,5, silenzio 0-1,4 s e 48,9-51,1 s.
-    #   NON è il suono hoover («What the»): è il preset SynthBass2. La scheda
-    #   lo dice in «come_funziona» e in «cosa»; nessuna battuta del reel dice
-    #   che quello che si sente è l'hoover. Non ascoltata da un orecchio.
-    #
-    # FONTI PER FATTO (aperte il 24/11/2026)
-    # - 1985: MusicRadar «Blast from the past» (30/10/2014, «launched in
-    #   1985»), gearnews (Adam Douglas, 2026, «In 1985, Roland followed up the
-    #   popular Juno-106»), Wikipedia (EN). Sound On Sound ottobre 1998 (Gordon
-    #   Reid): annunciato nell'inverno 1985, ma nella tabella prezzi 1986;
-    #   Vintage Synth Explorer dà 1986 per il JU-2. Detto in scheda.
-    # - erede del Juno-106, stessa voce analogica: Sound On Sound marzo 1986
-    #   (Mark Jenkins, «based on the Juno 106 analogue voice»), gearnews.
-    # - 6 voci: SOS 1986, SOS 1998, MusicRadar 2014, Vintage Synth Explorer,
-    #   gearnews.
-    # - 1 DCO per voce, 5 denti di sega, 3 onde a impulso, sub-oscillatore,
-    #   rumore: SOS 1986 (5 saw, 3 pulse, sub a 6 opzioni), MusicRadar 2014
-    #   (identico), SOS 1998 (DCO), Vintage Synth Explorer.
-    # - filtro analogico: SOS 1986 (voce analogica del 106), Wikipedia
-    #   (passa-basso 24 dB risonante; i 24 dB NON in scheda, una fonte aperta).
-    # - JU-1 49 tasti (4 ottave), JU-2 61 tasti con dinamica e aftertouch:
-    #   SOS 1986 (4 ottave), SOS 1998 (4 e 5 ottave, «velocity and
-    #   aftertouch»), MusicRadar 2014, Vintage Synth Explorer, Wikipedia.
-    # - Alpha Dial, una ruota che gira senza fine e serve a scegliere e a
-    #   cambiare i parametri: SOS 1986 («a single continuously rotating
-    #   control»), MusicRadar 2014 («single, free-spinning»), gearnews,
-    #   Wikipedia. Il pulsante BRILLIANCE accanto al display: si legge nella
-    #   foto principale, e Wikipedia lo nomina fra i selettori dedicati.
-    # - inviluppo a più tratti: SOS 1986 («new multi-stage envelope»),
-    #   Wikipedia, MusicRadar 2019 (linear and exponential sections). Il
-    #   disegno dell'inviluppo e delle forme d'onda stampato sul pannello: si
-    #   vede in TUTTE E DUE le foto; Wikipedia (One Two Testing 1986).
-    # - 64 preset + 64 memorie: SOS 1986, SOS 1998, MusicRadar 2014, VSE.
-    # - JU-1 a 575 sterline: SOS 1986 («retails at £575 including VAT»),
-    #   MusicRadar 2014, gearnews. JU-2 a 799: gearnews, Wikipedia.
-    # - PG-300, programmatore a parte, un cursore per parametro, 200 sterline:
-    #   SOS 1998 («added £200»), MusicRadar 2014 («another 200 quid»),
-    #   gearnews, Wikipedia.
-    # - preset «What the» diventato l'«hoover» dei rave: MusicRadar 2014
-    #   (Blast: «"What the" became known as the 'Hoover'»), MusicRadar/Future
-    #   Music 09/10/2014 (Sylenth1), RBMA Daily 2014, Wikipedia (Hoover sound,
-    #   Roland Alpha Juno).
-    # - «What the» programmato da Eric Persing, sound designer Roland:
-    #   gearnews («programmed by none other than Eric Persing»), Wikipedia
-    #   (Roland Alpha Juno, dal libro di Kim Bjørn 2022; Hoover sound).
-    # - il timbro viene dal dente di sega a impulso variabile mosso dall'LFO
-    #   e dal chorus: MusicRadar 2014 (Sylenth1, «LFO-modulated PWM sawtooth
-    #   and unique Roland chorus»), Wikipedia (Hoover sound, «fast LFO
-    #   controlling the PWM and the chorus»), MusicRadar 2019 (il chorus).
-    # - «Mentasm»: Mundo Muzique registra il riff sul suo Alpha Juno-1 col
-    #   preset «What the», poi nello studio di Joey Beltram lo campionano nel
-    #   Casio FZ-1: RBMA Daily «Key Tracks: Mundo Muzique on Second Phase's
-    #   'Mentasm'» (Phil Moffa, 2014, lui in prima persona), gearnews («sampled
-    #   it into Beltram's Casio FZ-1 sampler»). Alpha Juno in «Mentasm» anche
-    #   MusicRadar 2014 (Sylenth1), Wikipedia.
-    # - duo di New York, Second Phase, R&S Records, 1991: gearnews, Wikipedia
-    #   (Joey Beltram, «released under the artist name Second Phase in 1991»),
-    #   Discogs/Beatport (R&S RS 9109, 1991; letti dai risultati di ricerca,
-    #   Discogs non si apre dal container). RBMA conferma R&S.
-    # - «Dominator» di Human Resource col suono hoover: MusicRadar 2014
-    #   (Sylenth1), gearnews, Wikipedia (Hoover sound), MusicRadar 2019
-    #   (ReDominator prende il nome dal brano, col permesso del gruppo).
-    # - The Prodigy, «Charly», col preset: MusicRadar 2014 (Sylenth1),
-    #   Wikipedia (Roland Alpha Juno, «Charly (Alley Cat Mix)»).
-    #
-    # FATTI SCARTATI (una fonte sola, o non aperta)
-    # - Persing che crea «What the» «as a joke» (solo Wikipedia, dal libro di
-    #   Bjørn, non aperto); «What the» è il preset 86 (solo gearnews); il «suono
-    #   inutile» e «stupido» secondo i colleghi di Muzique, il Mac SE, Master
-    #   Tracks Pro, il pitch bend nel riff, il campionamento nell'FZ-1 per un
-    #   problema di sincrono MIDI, Renaat di R&S che all'inizio non capisce il
-    #   riff (solo RBMA); «Dominator» n. 6 in Olanda e top 10 nel mondo (solo
-    #   Wikipedia); gli anni di «Dominator» e «Charly» (non trovata la seconda
-    #   fonte aperta: in scheda senza anno); Lady Gaga «Bad Romance» e Rihanna
-    #   «Birthday Cake» (solo Wikipedia, con una recensione per uno); chorus a
-    #   velocità programmabile contro i 2 tempi del 106 (SOS 1986, e Wikipedia
-    #   che cita SOS: non indipendenti); slot per cartuccia del JU-2 (solo
-    #   Wikipedia aperta); poco successo all'uscita per colpa della FM Yamaha
-    #   (solo Wikipedia); MKS-50 «didn't sell in large quantities» (solo SOS
-    #   1998); il chip della voce (nessuna delle fonti aperte lo nomina: NON
-    #   in scheda); la lista di VSE (Vince Clarke, Massive Attack, Fatboy
-    #   Slim...): una fonte.
-    #
-    # HANDLE: @rolandglobal, già usato (piede di roland.com/global). Nessun tag
-    #   agli artisti: account ufficiali non verificati.
-    #
-    # FOTO (thumbnail scaricati e guardati il 24/11/2026)
-    # principale: https://commons.wikimedia.org/wiki/File:Roland_alpha_juno.jpg
-    #   Taras (Commons), CC BY-SA 3.0, 1841x569, 13/10/2007, thumbnail 1280
-    #   (1280x396). L'Alpha Juno-1 INTERO visto dall'alto su una moquette
-    #   rossa: «Roland» e «αJUNO-1» leggibili, a sinistra la ruota grande
-    #   (sotto c'è scritto α-DIAL), sopra i tasti i pulsanti morbidi
-    #   (BRILLIANCE, MOD RATE...), a destra il disegno di forme d'onda e
-    #   inviluppo. È un JU-1, come la registrazione. Molto larga (3,2:1): nella
-    #   banda va con "ritaglio": True, o perde i lati (cioè la ruota).
-    # extra: https://commons.wikimedia.org/wiki/File:Roland_Alpha_Juno_2_logo_%26_params.jpg
-    #   Derek Gavey (Flickr), CC BY 2.0, 3872x2592, 13/12/2010, thumbnail 1280.
-    #   Macro dell'Alpha Juno-2 preso da dietro la tastiera: il grafico
-    #   dell'inviluppo (linea rossa) e le forme d'onda in azzurro, a fuoco; la
-    #   scritta JUNO-2 grande e CAPOVOLTA. Per questo "nel_reel": False (come il
-    #   CZ-101 in CLAUDE.md). Sulla tavola la didascalia lo spiega.
-    # Non trovate su Commons foto libere del PG-300 né del MKS-50.
-    {
-        "slug": "alphajuno",
-        "numero": 102,
-        "serie": "I SINTETIZZATORI",
-        "strumento": "Roland Alpha Juno",
-        "anno": "1985",
-        "luogo": "Giappone",
-        "costruttore": "Roland",
-        "specifiche": [
-            ("USCITA", "1985"),
-            ("VOCI", "6"),
-            ("OSCILLATORE", "1 DCO PER VOCE"),
-            ("TASTI", "49 O 61"),
-        ],
-        "gancio": "Il ronzio dei rave del 1991 è un suono di fabbrica di questa tastiera Roland, e si chiama «What the»",
-        "sottotitolo": "Un Juno a cui Roland toglie le manopole e lascia una ruota sola, che gira senza fine.",
-        "la_macchina": (
-            "Quello della foto è l'Alpha Juno-1, con 49 tasti. A sinistra c'è "
-            "una ruota grande, l'Alpha Dial. Sopra i tasti ci sono un display e "
-            "una fila di pulsanti morbidi, e a destra il disegno delle forme "
-            "d'onda e dell'inviluppo, stampato sul pannello. L'Alpha Juno-2 ha "
-            "61 tasti, che sentono quanto forte premete e quanto spingete dopo. "
-            "In Inghilterra il piccolo costa 575 sterline e il grande 799. "
-            "Secondo me il pannello è bello proprio perché è vuoto, sembra un "
-            "elettrodomestico. Dentro però c'è un analogico vero."
-        ),
-        "inventore_nome": "Roland ed Eric Persing",
-        "inventore": (
-            "Chi abbia disegnato i circuiti Roland non lo dice. Si sa che nel "
-            "1985 la ditta fa seguire al Juno-106 questo Alpha Juno, con la "
-            "stessa voce analogica e senza più una manopola per ogni cosa. "
-            "Sull'anno le fonti non coincidono del tutto. Sound On Sound nel "
-            "1998 scrive che fu annunciato nell'inverno 1985, e Vintage Synth "
-            "Explorer mette il Juno-2 nel 1986. Fra i 64 suoni di fabbrica ce "
-            "n'è uno che si chiama «What the». Lo programma Eric Persing, che "
-            "per Roland fa i suoni. A me quel nome fa ridere ogni volta che lo "
-            "leggo sul display."
-        ),
-        "come_funziona": (
-            "Ogni voce ha un oscillatore, un DCO, che dà 5 denti di sega, 3 onde "
-            "a impulso, un sub-oscillatore più basso e il rumore. Poi un filtro "
-            "analogico e il chorus. Le voci sono 6. Per cambiare un suono "
-            "premete un pulsante, per esempio BRILLIANCE, e girate l'Alpha Dial. "
-            "Chi voleva un cursore per ogni parametro comprava a parte il PG-300, "
-            "per altre 200 sterline. Il ronzio di «What the» viene da un dente di "
-            "sega a impulso variabile mosso in fretta e dal chorus. Quello che "
-            "sentite qui invece è un altro preset, SynthBass2, con l'autore che "
-            "apre e chiude il filtro girando la ruota."
-        ),
-        "richiami": [
-            ("FIG. 1", "Alpha Dial, una ruota senza fine"),
-            ("FIG. 2", "1 DCO per voce, 6 voci"),
-            ("FIG. 3", "Il preset «What the»"),
-        ],
-        "chi_lusata": [
-            {"artista": "Second Phase",
-             "nota": "Joey Beltram e Mundo Muzique, «Mentasm» (1991), col preset «What the»",
-             "ig": None},
-            {"artista": "Human Resource",
-             "nota": "«Dominator», lo stesso ronzio portato in classifica",
-             "ig": None},
-            {"artista": "The Prodigy",
-             "nota": "«Charly», fra i primi dischi con l'hoover",
-             "ig": None},
-        ],
-        "menzioni_extra": [
-            {"ig": "rolandglobal",
-             "riga": "L'Alpha Juno è una macchina di @rolandglobal."},
-        ],
-        "da_ascoltare": {"brano": "Mentasm", "artista": "Second Phase", "anno": "1991",
-                         "cosa": "Il riff che ringhia è «What the», il preset di un Alpha Juno-1, campionato poi nel Casio FZ-1 di Joey Beltram."},
-        "aneddoto": (
-            "A New York Mundo Muzique ha in studio un Alpha Juno-1. Prende il "
-            "preset «What the» e ci registra sopra un riff. Il pezzo lo finisce "
-            "insieme a Joey Beltram, nello studio di Beltram, dove il riff viene campionato "
-            "in un Casio FZ-1 e passa da lì invece che dalla tastiera. Nel 1991 "
-            "lo pubblica la belga R&S, col nome Second Phase, e si intitola "
-            "«Mentasm». Nei rave europei quel suono si prende presto un nome da "
-            "casa, hoover, che in inglese vuol dire aspirapolvere."
-        ),
-        "avvertenza": "L'Alpha Dial gira senza fine corsa. Prima di girarlo, guardate sul display quale parametro avete scelto.",
-        "foto": {
-            "file": "assets/foto/alphajuno/principale.jpg",
-            "posizione": "center",
-            "ritaglio": True,
-            "autore": "Taras",
-            "licenza": "CC BY-SA 3.0",
-            "fonte": "Wikimedia Commons",
-            "didascalia": "L'Alpha Juno-1 visto dall'alto. La ruota grande a sinistra è l'Alpha Dial",
-        },
-        "foto_extra": [
-            {"file": "assets/foto/alphajuno/pannello.jpg",
-             "autore": "Derek Gavey",
-             "licenza": "CC BY 2.0",
-             "fonte": "Wikimedia Commons",
-             "posizione": "30% 60%",
-             "nel_reel": False,
-             "didascalia": "L'Alpha Juno-2 visto da dietro, col disegno dell'inviluppo e delle forme d'onda"},
-        ],
-        "fonti": [
-            {"titolo": "«Dial-A-Dream: Roland Alpha Juno-1», Mark Jenkins — Sound On Sound, marzo 1986",
-             "url": "https://www.muzines.co.uk/articles/dial-a-dream/1313", "data": "2026-11-24"},
-            {"titolo": "«Roland Alpha Juno 1 & 2 (Retro)», Gordon Reid — Sound On Sound, ottobre 1998",
-             "url": "https://www.soundonsound.com/reviews/roland-alpha-juno-1-2", "data": "2026-11-24"},
-            {"titolo": "«Blast from the past: Roland Alpha Juno» — MusicRadar, 30/10/2014",
-             "url": "https://www.musicradar.com/news/tech/blast-from-the-past-roland-alpha-juno-608881", "data": "2026-11-24"},
-            {"titolo": "«How to create a hoover sound in Sylenth1» — MusicRadar (Future Music), 09/10/2014",
-             "url": "https://www.musicradar.com/tuition/tech/how-to-create-a-hoover-sound-in-sylenth1-608251", "data": "2026-11-24"},
-            {"titolo": "«How to design a Dominator-style hoover sound with ReDominator» — MusicRadar, 2019",
-             "url": "https://www.musicradar.com/how-to/how-to-design-a-dominator-style-hoover-sound-with-audiorealisms-redominator", "data": "2026-11-24"},
-            {"titolo": "«Key Tracks: Mundo Muzique on Second Phase's 'Mentasm'», Phil Moffa — RBMA Daily, 2014",
-             "url": "https://daily.redbullmusicacademy.com/2014/05/key-tracks-mundo-muzique-on-mentasm", "data": "2026-11-24"},
-            {"titolo": "«Roland Alpha Juno: Classic Synths», Adam Douglas — gearnews",
-             "url": "https://www.gearnews.com/roland-alpha-juno-synth/", "data": "2026-11-24"},
-            {"titolo": "«Roland Alpha Juno-2» — Vintage Synth Explorer",
-             "url": "https://www.vintagesynth.com/roland/alpha-juno-2", "data": "2026-11-24"},
-            {"titolo": "«Roland Alpha Juno» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Roland_Alpha_Juno", "data": "2026-11-24"},
-            {"titolo": "«Hoover sound» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Hoover_sound", "data": "2026-11-24"},
-            {"titolo": "«Joey Beltram» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Joey_Beltram", "data": "2026-11-24"},
-        ],
-        "hashtags": ["#alphajuno", "#roland", "#sintetizzatore", "#theprodigy", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 102", "Il ronzio dei rave del 1991 è un suono di fabbrica Roland"),
-            ("ALPHA JUNO · 1985", "Nel 1985 Roland fa l'Alpha Juno, un synth analogico con una ruota sola."),
-            ("WHAT THE", "Fra i suoni dell'Alpha Juno c'è «What the», programmato da Eric Persing."),
-            ("NEW YORK", "Mundo Muzique suona un riff su «What the» e Joey Beltram lo campiona."),
-            ("MENTASM · 1991", "Esce «Mentasm» di Second Phase, e «What the» diventa l'hoover dei rave."),
-        ],
-        "reel_cta": "Mandalo all'amico che ai rave ci andava davvero",
-        "reel_audio": {
-            "file": "assets/audio/alphajuno/registrazione.mp3", "inizio": 0,
-            "autore": "sephabeats", "licenza": "CC BY 4.0",
-            "fonte": "Internet Archive",
-            "url": "https://archive.org/details/sepha-roland-alpha-juno-pt1",
-            "cosa": "un accordo di la minore sul preset SynthBass2 dell'Alpha Juno-1 dell'autore, col filtro aperto e chiuso girando l'Alpha Dial sul parametro Brilliance; non è il suono hoover «What the»",
-        },
-        "verificata": True,
-    },
-    # ---------------------------------------------------------------- mirage
-    # Ensoniq Mirage (DSK-8, 1984; rack DMS-8 e DMS-1). Bozza del 24/11/2026.
-    # Tutte le pagine aperte il 2026-11-24. La scheda VFX ha già la storia di
-    # Ensoniq nel campo «inventore»: qui la si racconta dal lato del Mirage
-    # (Q-chip, prezzo, anno discorde) e senza Creative né ESQ-1 come date.
-    #
-    # REGISTRAZIONE (data dal brief, ricopiata)
-    # https://archive.org/details/EnsoniqMirageDMS1
-    #   «Ensoniq Mirage DMS-1 sound test (sax sound)», creator Nacho Marty,
-    #   Public Domain Mark 1.0, caricata il 21/06/2015, collezione Community
-    #   Audio. Un file ogg di 585 s, misurato -20,0 LUFS, picco -4,6 dBFS, un
-    #   solo silenzio (2,6 s a 409-412 s). Riletta la pagina con WebFetch il
-    #   24/11: NESSUNA descrizione oltre al titolo e al tag «Ensoniq Mirage
-    #   DMS-1». Non dice se il campione di sax è dei dischetti di fabbrica o
-    #   dell'autore, né come è stata presa (linea o microfono). Il tratto lo
-    #   sceglie chi integra. Il DMS-1 è la seconda versione rack del Mirage
-    #   (Wikipedia: prima il DMS-8, poi il DMS-1), non un altro strumento.
-    #
-    # COSA VUOL DIRE «DMS» (dubbio, risolto a metà)
-    # - Wikipedia «Ensoniq Mirage» (che cita Syntaur): «Digital Sampling
-    #   Module».
-    # - Il pannello del DMS-8 nella foto extra porta stampato «DIGITAL
-    #   MULTI-SAMPLER»; E&MM maggio 1986 (Simon Trask) recensisce il rack col
-    #   nome «Mirage MultiSampler»; le inserzioni Reverb dicono «Digital
-    #   Multi-Sampler». In scheda si scrive solo che sul pannello c'è scritto
-    #   Digital Multi-Sampler (si vede), senza sciogliere la sigla.
-    #
-    # FONTI PER FATTO
-    # - 3 fondatori ex Commodore (Bruce Crockett, Al Charpentier, Bob Yannes):
-    #   SOS feb. 1988 (Craig Anderton, «all refugees from Commodore»);
-    #   Wikipedia «Ensoniq» (infobox; nella storia anche Winterble e
-    #   Ziembicki, Peripheral Visions).
-    # - Yannes ha disegnato il SID del Commodore 64: SOS feb. 1988; Wikipedia
-    #   «Ensoniq Mirage» (Mark Vail, «The Synthesizer», 2014).
-    # - Pennsylvania: Wikipedia «Ensoniq» (Malvern, fabbrica a Great Valley);
-    #   SOS feb. 1988 (visita alla sede americana). Il nome della città non
-    #   è scritto.
-    # - il Mirage è il primo prodotto di Ensoniq: Wikipedia «Ensoniq Mirage»;
-    #   MusicRadar «Blast from the past»; Vintage Synth Explorer.
-    # - Q-chip, chip progettato da loro, dentro il Mirage: SOS feb. 1988;
-    #   One Two Testing giu. 1985 (Freff, «custom Q Chip»); Wikipedia (ES5503).
-    #   Il prezzo basso grazie al chip fatto in casa: MusicRadar («custom chip
-    #   design and cost-cutting measures»); SOS 1988 (il Q-chip frutto della
-    #   loro esperienza VLSI, «power for its price»).
-    # - lo stesso chip nell'ESQ-1 e nell'Apple IIGS: SOS feb. 1988; Wikipedia
-    #   «Ensoniq» e «Ensoniq Mirage».
-    # - ANNO DISCORDE (scritto in scheda): 1984 per Wikipedia «Ensoniq Mirage»
-    #   e Vintage Synth Explorer (1984-1988); Anderton (SOS 1988): a fine 1984
-    #   se ne parlava già («Have you heard about this $1700 sampler?»),
-    #   presentazione ufficiale al NAMM di febbraio 1985. Wikipedia «Ensoniq»
-    #   si contraddice da sola (fine 1984, 1985, 1984).
-    # - circa 1.700 dollari: SOS 1988 («$1700 sampler»); Wikipedia Mirage e
-    #   Ensoniq (1.695 dollari).
-    # - in Inghilterra circa un quarto di un Emulator: One Two Testing 1985
-    #   («about a quarter of the Emulator I's price», 1.695 sterline);
-    #   MusicRadar (Mirage 1.695 sterline, Emulator circa 8.000). E&MM lug.
-    #   1985 dà 1.795 sterline: per questo in scheda niente cifra in sterline.
-    # - modelli europei costruiti in Italia per un periodo: SOS feb. 1988
-    #   («For a while European models were being manufactured in Italy»);
-    #   E&MM lug. 1985 (Paul Wiffen, il modello europeo «made under licence in
-    #   Italy»); Wikipedia (Mark Jenkins, SOS: variante italiana col lettore
-    #   più veloce, quest'ultimo dettaglio NON scritto).
-    # - 61 tasti (5 ottave) sensibili alla dinamica: Wikipedia; Vintage Synth
-    #   Explorer; One Two Testing 1985; E&MM lug. 1985.
-    # - dischetto da 3,5 pollici, sistema operativo caricato dal dischetto a
-    #   ogni accensione: E&MM lug. 1985 («on disk, not EPROM», 15 s); One Two
-    #   Testing 1985; Wikipedia; Vintage Synth Explorer.
-    # - display di 2 cifre: One Two Testing 1985 («two-character amber
-    #   display»); E&MM lug. 1985 («double seven-segment display»); E&MM mag.
-    #   1986; MusicRadar; Wikipedia («two-digit LED»). Esadecimale: One Two
-    #   Testing, E&MM 1986, MusicRadar. Si vede nella foto extra («21»).
-    # - tasti Param e Value per scegliere parametro e valore: si vedono nella
-    #   foto extra; E&MM 1986 (tastierino numerico, niente manopole); One Two
-    #   Testing (quasi cento parametri dal pannello).
-    # - 8 bit: tutte le fonti.
-    # - 8 voci: Wikipedia; Vintage Synth Explorer; One Two Testing; E&MM 1985 e
-    #   1986.
-    # - memoria in 2 metà da 64K, una per la parte bassa e una per l'alta:
-    #   One Two Testing («two 64k sections (UPPER and LOWER)»); E&MM mag. 1986
-    #   («64K for each keyboard half»); Wikipedia (128 KB, 64 per metà).
-    #   E&MM lug. 1985 scrive 64K in tutto: 3 contro 1.
-    # - 2,2 secondi per metà alla frequenza di serie (circa 33 kHz): One Two
-    #   Testing; E&MM lug. 1985. Fino a 6,5 s abbassando la frequenza: E&MM
-    #   lug. 1985; Vintage Synth Explorer; Wikipedia.
-    # - un filtro analogico per voce: One Two Testing (un VCF per voce);
-    #   Wikipedia (Curtis CEM3328, uno per voce); MusicRadar (filtri
-    #   analogici Curtis).
-    # - modello DSK-1, in plastica, venuto dopo: Vintage Synth Explorer (1986);
-    #   Wikipedia (1987, Keyfax). Anno discorde: non scritto. Il file Commons
-    #   lo dice del 1986.
-    # - versione rack (DMS-8, poi DMS-1): Wikipedia; Vintage Synth Explorer
-    #   (DMS-8 del 1985); E&MM mag. 1986 (il rack «loses nothing in terms of
-    #   facilities»).
-    # - venduti: 25.000 e più entro il 1988 (SOS feb. 1988); circa 30.000 fra
-    #   il 1984 e il 1988 (MusicRadar; Wikipedia con «citation needed»).
-    #   Scritto che i conti non coincidono.
-    # - Jimmy Jam e il Mirage in «Nasty» (Janet Jackson, «Control», 1986): RBMA
-    #   Daily, «Key Tracks: Jimmy Jam on Janet Jackson's Control», 26/02/2016
-    #   (Jam: «The keyboard sounds on "Nasty" are from the Mirage»); MusicRadar
-    #   06/02/2026, Ben Rogerson («the main keyboard part on Nasty», con
-    #   racconti che in RBMA non ci sono, quindi un'altra intervista);
-    #   Wikipedia «Nasty» (Jam: «more of a sound-effect type of sound»).
-    #   Uscita del singolo 1986: Wikipedia «Nasty»; MusicRadar.
-    # - Hank Shocklee, il Mirage come unico campionatore e i 3 secondi: RBMA,
-    #   lezione di Seattle 2005 («the only sampler that I had at the time,
-    #   which was the Mirage», «three seconds of sample time and that's it»);
-    #   Tape Op n. 51, 2006 (Philip Stevenson; «Mirage came out with this
-    #   three-second sampler», «I found the Mirage»).
-    # - poi l'Akai S900, e il Mirage tenuto per la sua grana: Tape Op 2006
-    #   («stayed with the Mirage but we ended up using the 900 for other
-    #   things», «a feel and sound that the Mirage had at 8-bits»); RBMA 2005
-    #   (all'inizio il suono liscio dell'S-900 non gli piace).
-    # - Shocklee lo chiama «a 4 bit» alla RBMA e «a 8 bit» a Tape Op: le due
-    #   trascrizioni (citate sopra). Il Mirage è a 8 bit per tutte le altre.
-    # - «Rebel Without a Pause» (1987) nata sul Mirage: RBMA 2005 («that was
-    #   originally done with the only sampler that I had at the time, which was
-    #   the Mirage»). Wikipedia «Rebel Without a Pause» e Hip Hop Golden Age
-    #   lo ripetono (demo sul Mirage, poi l'S-900 in studio), ma tutti e due
-    #   vengono da lì. È UNA fonte: in scheda sempre «racconta lui», e per
-    #   questo «Rebel» NON è in da_ascoltare (il disco uscito è fatto in studio
-    #   con l'S-900).
-    #
-    # FATTI SCARTATI (una fonte sola o fonti che si copiano)
-    # - «Rebel» come fatto nudo (vedi sopra); il sax dei J.B. («The Grunt»),
-    #   preso riavvolgendo il disco a mano: solo RBMA e Wikipedia che la copia.
-    # - Yannes al NAMM 1984: «un calo di prezzo di 10 a 1»: solo SOS 1988.
-    # - PVI che al NAMM 1984 mostra una scheda batteria per Apple II e una drum
-    #   machine da 200 dollari: solo SOS 1988.
-    # - Crockett «non siamo fieri dell'affidabilità del Mirage»: solo SOS 1988.
-    # - Q-chip con più di 20.000 componenti: solo SOS 1988.
-    # - quasi 8.000 venduti nel primo anno, più di tutti gli altri campionatori
-    #   messi insieme: Wikipedia (Vail) e Yannes in SOS dicono la seconda cosa
-    #   su numeri diversi; lasciato fuori.
-    # - prezzo tagliato a 1.295 sterline, poi a 899 dollari dopo l'EPS: fonti
-    #   diverse su mercati diversi, non serviva.
-    # - le «horn stabs» e il piano di «When I Think of You»: solo RBMA 2016.
-    # - Janet che sente il suono e dice «voglio una canzone sui nasty boys»:
-    #   solo MusicRadar 2026.
-    # - Le Tigre e «Deceptacon» (Song Exploder, citato da Wikipedia; non
-    #   aperto); OMD dal vivo (solo Music Technology 1986); Prince, Vangelis,
-    #   Skinny Puppy, Derrick May: liste senza disco o fonte unica.
-    # - prime unità col lettore Shugart, il primo microfloppy venduto: solo
-    #   Wikipedia.
-    # - il lettore più veloce della versione italiana: solo Wikipedia.
-    #
-    # HANDLE
-    # - @janetjackson: link nel piede di janetjackson.com (letto via WebFetch
-    #   il 2026-11-24, «https://www.instagram.com/janetjackson/»). Va seguito
-    #   prima dell'uscita (regola 3).
-    # - Ensoniq non esiste più (Creative, 1998): nessun account. Shocklee e
-    #   Jimmy Jam: non verificati, ig None.
-    #
-    # FOTO (API di Commons letta via WebFetch il 2026-11-24)
-    # - principale: https://commons.wikimedia.org/wiki/File:Ensoniq_Mirage_(with_cable).jpg
-    #   emily przybylinski (Flickr, «le tigre equipment», 10/08/2008), CC BY
-    #   2.0, 1600x1067, thumbnail 1280. Un Mirage DSK-1 (il modello in
-    #   plastica, non il DSK-8 del 1984) intero dentro la sua valigia aperta,
-    #   un cavo appoggiato sul pannello, «Mirage-DSK» in arancio leggibile, i
-    #   61 tasti tutti. La metà alta è il coperchio di gommapiuma nera:
-    #   posizione bassa. Guardato il thumbnail a 960.
-    # - extra: https://commons.wikimedia.org/wiki/File:Ensoniq_Mirage_DMS-8.jpg
-    #   Alison Cassidy, opera propria, CC BY-SA 4.0, 3612x932, thumbnail 1280
-    #   (1280x330). Il rack DMS-8 di fronte, nitido: logo ensoniq, display a 2
-    #   cifre acceso su «21», tasti Param/Value e numerici, lettore di
-    #   dischetti, «DIGITAL MULTI-SAMPLER» e «Mirage». Striscia 4:1:
-    #   "ritaglio": True. È il modello più vicino al DMS-1 della registrazione.
-    # - scartate: File:Ensoniq_Mirage_DSK-8_(1985).jpg (Charles Nadeau /
-    #   Clusternote, CC BY 2.0, 1334x365): è il DSK-8 giusto ma ritagliato da
-    #   una foto di negozio, sfocato e ingrandito, a 1280 non regge.
-    #   File:Ensoniq_Mirage_DSK.jpg: montaggio di due foto, con un EPS.
-    {
-        "slug": "mirage",
-        "numero": 103,
-        "serie": "I CAMPIONATORI",
-        "strumento": "Ensoniq Mirage",
-        "anno": "1984",
-        "luogo": "Pennsylvania, USA",
-        "costruttore": "Ensoniq",
-        "specifiche": [
-            ("USCITA", "1984"),
-            ("RISOLUZIONE", "8 BIT"),
-            ("MEMORIA", "2 METÀ DA 64K"),
-            ("RACK", "DMS-8, POI DMS-1"),
-        ],
-        "gancio": "In Inghilterra costava un quarto di un Emulator, e un campionatore lo poteva comprare chiunque suonasse",
-        "sottotitolo": "Il suono è sporco, e a qualcuno è piaciuto proprio per quello.",
-        "la_macchina": (
-            "Sono 61 tasti sensibili a quanto forte premete, e accanto c'è un "
-            "lettore di dischetti da 3,5 pollici. Per leggere i numeri c'è un "
-            "display di 2 cifre e basta. Negli Stati Uniti costa circa 1.700 "
-            "dollari. Per un periodo i Mirage per l'Europa li costruiscono in "
-            "Italia. Poi arrivano il rack, che sul pannello porta scritto Digital "
-            "Multi-Sampler, e il DSK-1 in plastica della copertina. Quanti ne abbiano "
-            "venduti non si sa bene, Sound On Sound nel 1988 dice più di 25.000, "
-            "MusicRadar circa 30.000. A me piace perché è fatto risparmiando su "
-            "tutto, e non lo nasconde."
-        ),
-        "inventore_nome": "Ensoniq e il Q-chip",
-        "inventore": (
-            "Ensoniq la mettono su in Pennsylvania 3 ingegneri usciti dalla "
-            "Commodore, Bob Yannes, Bruce Crockett e Al Charpentier. La loro "
-            "storia l'abbiamo raccontata nella scheda del VFX. Il Mirage è il "
-            "primo strumento che vendono, e il prezzo basso viene da un chip "
-            "disegnato in casa, il Q-chip. Lo "
-            "stesso chip poi finisce nell'ESQ-1 e nell'Apple IIGS. Sull'anno le "
-            "fonti non concordano. Wikipedia e Vintage Synth Explorer dicono "
-            "1984. Craig Anderton, su Sound On Sound, racconta che a fine 1984 "
-            "se ne parlava già, ma che la presentazione ufficiale è al NAMM di "
-            "febbraio 1985."
-        ),
-        "come_funziona": (
-            "Il Mirage registra a 8 bit. La memoria è divisa in 2 metà da 64K, "
-            "una per la parte bassa della tastiera e una per l'alta, e ognuna "
-            "tiene il suo suono. Alla frequenza di serie fanno 2,2 secondi per "
-            "metà. Abbassandola si arriva a 6,5, e il suono perde gli acuti. Poi "
-            "il campione passa da un filtro analogico, uno per ognuna delle 8 "
-            "voci. Tutto il resto si regola a numeri. Premete Param, scegliete il "
-            "parametro, premete Value e cambiate il valore, e le 2 cifre del "
-            "display vi rispondono, spesso in esadecimale. Se ne trovate uno, "
-            "campionate la vostra voce a 6,5 secondi e ascoltate cosa resta."
-        ),
-        "richiami": [
-            ("FIG. 1", "8 bit, 2 metà da 64K"),
-            ("FIG. 2", "Un filtro analogico per voce"),
-            ("FIG. 3", "Il display di 2 cifre"),
-        ],
-        "chi_lusata": [
-            {"artista": "Janet Jackson",
-             "nota": "in «Nasty» (1986) le tastiere sono del Mirage di Jimmy Jam",
-             "ig": "janetjackson"},
-            {"artista": "Hank Shocklee",
-             "nota": "il suo primo campionatore, per Public Enemy, racconta lui",
-             "ig": None},
-        ],
-        "menzioni_extra": [],
-        "da_ascoltare": {"brano": "Nasty", "artista": "Janet Jackson", "anno": "1986",
-                         "cosa": "La tastiera principale. Jimmy Jam racconta che viene dal Mirage, e quella grana a 8 bit si sente."},
-        "aneddoto": (
-            "Quando Hank Shocklee comincia a campionare, l'unico campionatore che "
-            "ha è un Mirage. Lo racconta alla Red Bull Music Academy nel 2005 e a "
-            "Tape Op nel 2006. Ha 3 secondi di memoria e basta, quindi il pezzo "
-            "di disco giusto va preso al primo colpo. Alla Red Bull dice che la "
-            "prima versione di «Rebel Without a Pause» l'ha fatta così. Poi "
-            "Public Enemy passa a un Akai S900, e il Mirage resta per la sua "
-            "grana. In una delle due interviste lo chiama un campionatore a 4 "
-            "bit, nell'altra a 8. Sono 8."
-        ),
-        "avvertenza": "Il sistema operativo sta sul dischetto. Senza il dischetto giusto nel lettore, il Mirage acceso non sa ancora di essere un campionatore.",
-        "foto": {
-            "file": "assets/foto/mirage/principale.jpg",
-            "posizione": "center 68%",
-            "autore": "emily przybylinski",
-            "licenza": "CC BY 2.0",
-            "fonte": "Wikimedia Commons",
-            "didascalia": "Un Mirage DSK-1, il modello in plastica venuto dopo, nella sua valigia",
-        },
-        "foto_extra": [
-            {"file": "assets/foto/mirage/rack.jpg",
-             "ritaglio": True,
-             "autore": "Alison Cassidy",
-             "licenza": "CC BY-SA 4.0",
-             "fonte": "Wikimedia Commons",
-             "posizione": "center",
-             "didascalia": "Il rack DMS-8. Il display ha 2 cifre, e sul pannello c'è scritto Digital Multi-Sampler"},
-        ],
-        "fonti": [
-            {"titolo": "Craig Anderton — Sound On Sound, feb. 1988",
-             "url": "https://www.muzines.co.uk/articles/sampling-ensoniq/3473", "data": "2026-11-24"},
-            {"titolo": "Freff — One Two Testing, giu. 1985",
-             "url": "https://www.muzines.co.uk/articles/ensoniq-mirage/11768", "data": "2026-11-24"},
-            {"titolo": "Paul Wiffen — E&MM, lug. 1985",
-             "url": "https://www.muzines.co.uk/articles/ensoniq-mirage/9076", "data": "2026-11-24"},
-            {"titolo": "Simon Trask — E&MM, mag. 1986",
-             "url": "https://www.muzines.co.uk/articles/mirage-multisampler/1681", "data": "2026-11-24"},
-            {"titolo": "«Ensoniq Mirage» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Ensoniq_Mirage", "data": "2026-11-24"},
-            {"titolo": "«Ensoniq» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Ensoniq", "data": "2026-11-24"},
-            {"titolo": "«Ensoniq Mirage» — Vintage Synth Explorer",
-             "url": "https://www.vintagesynth.com/ensoniq/mirage", "data": "2026-11-24"},
-            {"titolo": "«Blast from the past: Ensoniq Mirage» — MusicRadar",
-             "url": "https://www.musicradar.com/news/tech/blast-from-the-past-ensoniq-mirage-622501", "data": "2026-11-24"},
-            {"titolo": "Jimmy Jam su «Control» — RBMA Daily, 2016",
-             "url": "https://daily.redbullmusicacademy.com/2016/02/key-tracks-janet-jackson-control", "data": "2026-11-24"},
-            {"titolo": "Jam & Lewis e il Mirage — MusicRadar, 2026",
-             "url": "https://www.musicradar.com/artists/im-like-ok-put-the-drum-machine-in-when-i-played-it-she-said-oh-i-like-that-i-like-that-and-she-said-i-want-to-do-a-song-about-the-nasty-boys-how-janet-jackson-and-jam-and-lewis-made-control-with-a-little-help-from-the-ensoniq-mirage", "data": "2026-11-24"},
-            {"titolo": "«Nasty (Janet Jackson song)» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Nasty_(Janet_Jackson_song)", "data": "2026-11-24"},
-            {"titolo": "Hank Shocklee, lezione — Red Bull Music Academy, Seattle 2005",
-             "url": "https://www.redbullmusicacademy.com/lectures/hank-shocklee-art-brut", "data": "2026-11-24"},
-            {"titolo": "Hank Shocklee — Tape Op n. 51, 2006",
-             "url": "https://tapeop.com/interviews/51/hank-shocklee", "data": "2026-11-24"},
-        ],
-        "hashtags": ["#ensoniqmirage", "#ensoniq", "#campionatore", "#janetjackson", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 103", "Le tastiere di «Nasty» escono da un campionatore a 8 bit"),
-            ("ENSONIQ MIRAGE · 1984", "L'Ensoniq Mirage campiona a 8 bit, poco più di 2 secondi per metà tastiera."),
-                        ("UN QUARTO DI EMULATOR", "In Inghilterra il Mirage costa un quarto di un Emulator."),
-            ("PUBLIC ENEMY", "Hank Shocklee comincia a campionare su un Mirage, con 3 secondi di memoria."),
-            ("NASTY · 1986", "Jimmy Jam suona il Mirage in «Nasty» di Janet Jackson."),
-        ],
-        "reel_cta": "Mandalo a chi balla ancora «Nasty» in cucina",
-        "reel_audio": {
-            "file": "assets/audio/mirage/registrazione.mp3", "inizio": 0,
-            "autore": "Nacho Marty", "licenza": "Pubblico dominio (PD Mark 1.0)",
-            "fonte": "Internet Archive",
-            "url": "https://archive.org/details/EnsoniqMirageDMS1",
-            "cosa": "una prova di un suono di sax campionato, suonato su un Mirage DMS-1, la versione rack; l'autore non dice se il campione è di fabbrica o suo, né come l'ha registrato",
-        },
-        "verificata": True,
-    },
-    # ---------------------------------------------------------------- 000
-    # Wurlitzer Sideman (Model 5000), 1959. Scheda scritta il 24/11/2026
-    # (rifornimento).
-    #
-    # REGISTRAZIONE: https://archive.org/details/wurlitzer_sideman_rhythms
-    #   «Wurlitzer SideMan Rhythms», creator circlesdrumsamples.com,
-    #   11/02/2020, Public Domain Mark 1.0, parte dell'Electronic Rhythm
-    #   Archive di Internet Archive (regole dell'archivio: presi dall'uscita,
-    #   niente microfono né effetti). Descrizione: «The pre-programmed rhythms
-    #   of a Wurlitzer SideMan rhythm companion. Graciously provided by
-    #   circlesdrumsamples.com». 18 file da 4-9,6 s (BEGUINE, BOLERO, CHA CHA,
-    #   Fox Trot A-H, MARCH, RHUMBA, SAMBA, SHUFFLE, TANGO, WALTZ, WESTERN),
-    #   misurati -24/-31 LUFS. Montaggio (lo fa chi coordina): CHA CHA,
-    #   RHUMBA, SAMBA, BOLERO, TANGO in fila, circa 48 s.
-    #
-    # FONTI PER FATTO (aperte il 24/11/2026)
-    # - 1959, Wurlitzer: SMEM Friburgo, The Henry Ford, National Music Centre
-    #   (Google Arts & Culture), Science Museum Group, FACT 22/09/2016,
-    #   Wikipedia «Drum machine».
-    # - «prima drum machine in commercio» per The Henry Ford e NMC; SMEM la
-    #   dice SECONDA dopo la Chamberlin Rhythmate. La Rhythmate suonava
-    #   nastri di batteria vera: FACT, Wikipedia «Drum machine», Thom Holmes
-    #   («Drum Machines: A Recorded History, part 1»). Detto in scheda come
-    #   disaccordo.
-    # - pensato per organisti e pianisti che suonano da soli: SMEM, NMC,
-    #   International Musician feb. 1961 (pagina Wurlitzer: «for the solo
-    #   performer, organist or pianist»).
-    # - il nome dai «side men» del jazz, i musicisti che accompagnano il
-    #   solista: Popular Mechanics novembre 1960 p. 149, NMC.
-    # - Model 5000: The Henry Ford («Wurlitzer Sideman Model 5000»), blog
-    #   The Central Shaft (14/06/2014).
-    # - alto circa 66 cm: The Henry Ford (26,5 in), Science Museum Group
-    #   (665 x 635 x 290 mm); il blog dà 66 x 29 x 63 cm.
-    # - mobile di legno con amplificatore e altoparlante dentro: 120 Years of
-    #   Electronic Music, Science Museum Group («in-built speaker and
-    #   amplifier»), MusicRadar 17/05/2023. Altoparlante da 12 pollici: SMEM,
-    #   The Central Shaft; si vede nella foto dell'interno.
-    # - disco che gira con contatti di metallo, ogni contatto un colpo:
-    #   SMEM, Thom Holmes, 120 Years, MusicRadar (2022, «spinning disc powered
-    #   by an electric motor, featuring contact points»).
-    # - 10 suoni fatti a valvole, niente registrato: SMEM, Holmes, 120 Years,
-    #   Popular Mechanics 1960 («10 percussion instruments»). Niente nastri:
-    #   SMEM («does not employ tape loops»), Holmes.
-    # - niente rullante; spazzola, maracas, claves, temple block, piatto,
-    #   tom, wood block, cassa: Thom Holmes (elenco dei 10), The Central Shaft
-    #   («There was no dedicated snare»).
-    # - 12 ritmi scelti con una manopola: SMEM (elenco), Holmes (elenco),
-    #   NMC, 120 Years, The Central Shaft (manopola).
-    # - cursore del tempo che fa girare il disco più svelto: 120 Years,
-    #   The Central Shaft; Wikipedia («A slider controls the tempo»).
-    # - tempo: 36-195 bpm per Popular Mechanics 1960 e SMEM; 34-150 per
-    #   Wikipedia, FACT, The Central Shaft. Detto in scheda come disaccordo.
-    # - tasti per suonare i colpi a mano: 120 Years (10 tasti), Wikipedia,
-    #   FACT, MusicRadar 2023.
-    # - fine produzione: 1969 per The Henry Ford, Science Museum Group,
-    #   Wikipedia/FACT; 1965 per Holmes (e synthmuseum via Commons), fine 1964
-    #   per The Central Shaft. Detto in scheda come disaccordo.
-    # - Wurlitzer ditta di organi e jukebox, sede a De Kalb, Illinois:
-    #   International Musician feb. 1961 («World's Largest Builder of Pianos
-    #   and Organs, De Kalb, Illinois»), Popular Mechanics 1960 («The
-    #   Wurlitzer Co., De Kalb, Ill.»); jukebox: The Central Shaft («jukebox
-    #   and organ manufacturer»), Wikipedia «Wurlitzer».
-    #   (Wikipedia «Wurlitzer», raw aperto il 24/11/2026: «electronic organs
-    #   and jukeboxes», stabilimento di DeKalb).
-    # - la regola del sindacato (AFM): le sezioni locali non possono vietarlo,
-    #   ma i soci non lo usano dove si balla, né negli spettacoli dove di
-    #   solito c'è una percussione, né al posto di un musicista vivo:
-    #   International Musician febbraio 1961 p. 5-6 (pagina Wurlitzer che
-    #   riporta il testo della regola, scaricata e letta), Wikipedia «Drum
-    #   machine» (che cita Down Beat 27/04/1961, «could not be used for
-    #   dancing»). Tutte e due vengono da una pagina pubblicitaria Wurlitzer:
-    #   lo dice la scheda. FACT dice «solo nei cocktail lounge»: versione
-    #   diversa, non usata.
-    # - Hal Davis: suona l'organo in un locale, il batterista non può venire,
-    #   va a prendere il Sideman a casa a 7 miglia, 3 coppie ballano sul
-    #   Sideman da solo, primi anni '60: lui stesso su Mechanical Music Digest
-    #   31/01/1999; FACT 22/09/2016 (lo chiama «produttore Motown»: non
-    #   usato, il post di MMD non lo dice e un altro sito lo dà come
-    #   presidente di un sindacato di Pittsburgh; in scheda solo «suona
-    #   l'organo in un locale»).
-    # - Tadashi Osanai e il Sideman a Tokyo: CDM (Create Digital Music),
-    #   Wikipedia «Drum machine» (che cita Colbeck, Keyfax). Già raccontato
-    #   in doncamatic (n. 093) e rhythmace: qui solo una riga in chi_lusata.
-    # - LCD Soundsystem, «Somebody's Calling Me» (traccia 8 di «This Is
-    #   Happening», 2010), Wurlitzer SideMan suonato da James Murphy:
-    #   Wikipedia «This Is Happening» (crediti presi dalle note del disco,
-    #   DFA 2010: «Wurlitzer SideMan (track 8)», e pianoforte sulla 8),
-    #   Thom Holmes («an authentic Side Man is clearly audible in the mix»).
-    #
-    # FATTI SCARTATI (una fonte sola, o fonti in disaccordo)
-    # - prezzo: 395 dollari per Thom Holmes e per un commento su diyAudio
-    #   (non leggibile dal fetch); 375/365 dollari nel 1960 per The Central
-    #   Shaft. Fonti in disaccordo e nessuna d'epoca: niente prezzo.
-    # - peso: nessuna fonte trovata.
-    # - progettista dentro la Wurlitzer: nessuna fonte, nessun brevetto
-    #   trovato. Detto in scheda.
-    # - «85 different beat patterns» (solo Popular Mechanics 1960, forse le
-    #   combinazioni); 15 watt di amplificatore a valvole, braccio con 8
-    #   contatti a molla su un disco di Pertinax, pezzi fatti a Hüllhorst in
-    #   Germania, una valvola per ogni suono (solo The Central Shaft); dieci
-    #   valvole (solo MusicRadar 2023).
-    # - John Carroll Kirby che suona il Sideman dal vivo in «Oropendola»
-    #   (2023): solo MusicRadar (KCRW 429, nessun'altra fonte).
-    # - il sindacato che fa pressione per rallentare la produzione: solo The
-    #   Central Shaft.
-    #
-    # HANDLE: @lcdsoundsystem, link nel sito ufficiale lcdsoundsystem.com
-    #   (controllato il 24/11/2026). Wurlitzer: nessun account ufficiale
-    #   legato al Sideman, nessun tag. Da far seguire al proprietario prima
-    #   dell'uscita.
-    #
-    # FOTO (guardate il 24/11/2026)
-    # principale: https://commons.wikimedia.org/wiki/File:Wurlitzer_Sideman_(1959)_upper_half.jpg
-    #   ritaglio di Clusternote da «Akaphon (1963).jpg» di andrew garton
-    #   (Flickr, «Arts Birthday 2009»), CC BY-SA 2.0, 1200x900 (il thumbnail
-    #   1280 è l'originale; scarico il 960). Mostra «Zauberhafte
-    #   Klangmaschinen», Kulturfabrik Hainburg (Austria), 2008-2009. Il
-    #   mobile di legno chiaro di tre quarti, con la buca del coperchio dove
-    #   stanno i tasti bianchi e un cavo arrotolato sopra; dietro, la tastiera
-    #   nera dell'Akaphon; in basso a destra lo spigolo di un altro mobile
-    #   grigio. Nessun marchio leggibile. Tagliata in basso (è la metà
-    #   superiore): la macchina è la cosa più riconoscibile, ma non intera.
-    # extra: https://commons.wikimedia.org/wiki/File:Wurlitzer_Sideman_drum_machine_(inside)_front_view.jpg
-    #   ritaglio raddrizzato di Clusternote da «Wurlitzer Sideman drum
-    #   machine (inside).jpg» di guiltysin (Flickr «First drum machine»,
-    #   2009), CC BY 2.0. Il file dice 4488x5526 ma è un ingrandimento di un
-    #   originale 750x1000: scarico il 960. Un Sideman della Cantos
-    #   Foundation di Calgary (la descrizione dice 1957, come la vendono i
-    #   negozi; le fonti dicono 1959) aperto da dietro: in alto a destra il
-    #   disco marrone coi contatti in cerchi concentrici, a sinistra i fili e
-    #   le valvole, sotto a destra l'altoparlante grande col tweeter davanti.
-    #   Con «center 25%» nella banda entrano il disco e la parte alta
-    #   dell'altoparlante.
-    # Scartate: «National Music Centre (38265395586).jpg» (Mack Male, CC BY-SA
-    #   2.0): il Sideman aperto c'è, in una teca in basso, ma la cosa più
-    #   riconoscibile è il DX7 appeso; «Wurlitzer Sideman (1959) disc
-    #   sequencer.jpg»: 480x360, troppo piccola.
-    {
-        "slug": "sideman",
-        "numero": 104,
-        "serie": "LE DRUM MACHINE",
-        "strumento": "Wurlitzer Sideman",
-        "anno": "1959",
-        "luogo": "De Kalb, Illinois, Stati Uniti",
-        "costruttore": "Wurlitzer",
-        "specifiche": [
-            ("USCITA", "1959"),
-            ("SUONI", "10, A VALVOLE"),
-            ("RITMI", "12, SU UN DISCO"),
-            ("ALTEZZA", "66 CM"),
-        ],
-        "gancio": "Nel 1959 la Wurlitzer mette in vendita un batterista di legno, con le valvole e senza rullante",
-        "sottotitolo": "Un mobiletto da mettere accanto all'organo, con un disco di contatti che gira e 12 ritmi da sala da ballo.",
-        "la_macchina": (
-            "Si mette per terra accanto all'organo ed è alto 66 centimetri. È un "
-            "mobiletto di legno con dentro l'amplificatore e un altoparlante da "
-            "12 pollici, e sopra, in una buca del coperchio, ci sono i tasti. Sul "
-            "catalogo è il Model 5000. Il nome viene dal jazz, dove il sideman è "
-            "il musicista che accompagna il solista, e qui il solista è chi suona "
-            "l'organo o il pianoforte da solo. Della batteria ha poco. Il "
-            "rullante non c'è, al suo posto c'è una spazzola, e intorno maracas, "
-            "claves, temple block e un piatto. A me piace proprio per questo, "
-            "sembra l'orchestrina di un albergo al mare."
-        ),
-        "inventore_nome": "La Wurlitzer di De Kalb",
-        "inventore": (
-            "La Wurlitzer è la ditta dei jukebox e degli organi, con la sede a De "
-            "Kalb, nell'Illinois. Il Sideman esce nel 1959, per chi suona da "
-            "solo. Chi l'abbia progettato là dentro non sono riuscito a trovarlo "
-            "scritto da nessuna parte, e un nome a caso non ce lo metto. Sul "
-            "primato le fonti litigano. Più di un museo lo chiama la prima drum "
-            "machine in commercio, ma la Rhythmate di Harry Chamberlin era "
-            "arrivata prima, e suonava nastri di batteria vera. Il Sideman i suoi "
-            "colpi li fa da sé. Nemmeno sulla fine c'è accordo, c'è chi scrive "
-            "1964, chi 1965 e chi 1969."
-        ),
-        "come_funziona": (
-            "Un motore fa girare un disco, e sul disco ci sono contatti di metallo "
-            "messi in cerchi. Ogni contatto che passa chiude un circuito e fa "
-            "partire un colpo. I 10 suoni li fanno le valvole, di registrato non "
-            "c'è niente. Con una manopola si sceglie uno dei 12 ritmi, valzer, "
-            "tango, samba e gli altri, e il cursore del tempo fa girare il disco "
-            "più piano o più svelto. I tasti sopra servono a suonare i colpi a "
-            "mano. Sulla velocità le fonti non concordano, Popular Mechanics nel "
-            "1960 scrive da 36 a 195 battiti al minuto, altri da 34 a 150. "
-            "Ascoltate la registrazione sapendo che ogni colpo è un contatto."
-        ),
-        "richiami": [
-            ("FIG. 1", "Il disco coi contatti in cerchio"),
-            ("FIG. 2", "10 suoni a valvole, niente nastro"),
-            ("FIG. 3", "Altoparlante da 12 pollici"),
-        ],
-        "chi_lusata": [
-            {"artista": "Hal Davis",
-             "nota": "una sera, al posto del suo batterista",
-             "ig": None},
-            {"artista": "LCD Soundsystem",
-             "nota": "James Murphy lo suona in «Somebody's Calling Me» (2010)",
-             "ig": "lcdsoundsystem"},
-        ],
-        "menzioni_extra": [],
-        "da_ascoltare": {"brano": "Somebody's Calling Me", "artista": "LCD Soundsystem", "anno": "2010",
-                         "cosa": "Nelle note del disco il Sideman è accreditato a James Murphy. Il passo lento sotto il pianoforte, secondo me, è lui."},
-        "aneddoto": (
-            "Primi anni '60. Hal Davis suona l'organo in un locale, e una sera il "
-            "suo batterista non può venire. Il Sideman ce l'ha a casa, a 7 "
-            "miglia. Va a prenderlo, torna e lo attacca. A un certo punto alza "
-            "gli occhi e vede 3 coppie che ballano, sul ritmo del Sideman da "
-            "solo. All'inizio del 1961 il sindacato dei musicisti americani "
-            "decide come si usa. Le sezioni locali non lo possono vietare, ma "
-            "niente spettacoli dove di solito c'è una batteria e niente sale "
-            "dove si balla. Lo sappiamo dalla Wurlitzer stessa, che ricopia la "
-            "regola in una pagina pubblicitaria sulla rivista del sindacato e "
-            "nel titolo gli fa i complimenti."
-        ),
-        "avvertenza": "I 12 ritmi sono contatti fissati sul disco che gira. Un tredicesimo non si programma, il disco è quello.",
-        "foto": {
-            "file": "assets/foto/sideman/principale.jpg",
-            "posizione": "center 60%",
-            "autore": "andrew garton (ritaglio di Clusternote)",
-            "licenza": "CC BY-SA 2.0",
-            "fonte": "Wikimedia Commons",
-            "didascalia": "Un Sideman a una mostra in Austria. I tasti per suonare i colpi a mano stanno nella buca del coperchio",
-        },
-        "foto_extra": [
-            {"file": "assets/foto/sideman/interno.jpg",
-             "autore": "guiltysin (ritaglio di Clusternote)",
-             "licenza": "CC BY 2.0",
-             "fonte": "Wikimedia Commons",
-             "posizione": "center 25%",
-             "didascalia": "Aperto da dietro. In alto a destra il disco dei contatti, sotto l'altoparlante"},
-            # Le due foto sono da 960 px: ingrandite coi RITAGLI di
-            # genera_tavole (zoom 1,55-2,1) uscivano sgranate e mostravano
-            # solo il cavo. Quindi inquadrature dichiarate, senza zoom.
-            {"file": "assets/foto/sideman/principale.jpg",
-             "autore": "andrew garton (ritaglio di Clusternote)",
-             "licenza": "CC BY-SA 2.0",
-             "fonte": "Wikimedia Commons",
-             "posizione": "center 85%",
-             "didascalia": "Il mobiletto di legno. La fessura sul davanti è la griglia dell'altoparlante"},
-            {"file": "assets/foto/sideman/interno.jpg",
-             "autore": "guiltysin (ritaglio di Clusternote)",
-             "licenza": "CC BY 2.0",
-             "fonte": "Wikimedia Commons",
-             "posizione": "right top",
-             "nel_reel": False},
-            {"file": "assets/foto/sideman/principale.jpg",
-             "autore": "andrew garton (ritaglio di Clusternote)",
-             "licenza": "CC BY-SA 2.0",
-             "fonte": "Wikimedia Commons",
-             "posizione": "center 70%",
-             "nel_reel": False,
-             "didascalia": "I tasti nella buca del coperchio, per suonare i colpi a mano"},
-        ],
-        "fonti": [
-            {"titolo": "Wurlitzer Side Man — SMEM, Friburgo",
-             "url": "https://www.smemmusic.ch/index.php/de/node/1100", "data": "2026-11-24"},
-            {"titolo": "Sideman Model 5000 — The Henry Ford",
-             "url": "https://www.thehenryford.org/collections/explore/artifact/142279", "data": "2026-11-24"},
-            {"titolo": "«Sideman» — Science Museum Group",
-             "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8631935/wurlitzer-rhythm-unit", "data": "2026-11-24"},
-            {"titolo": "SideMan — National Music Centre",
-             "url": "https://artsandculture.google.com/asset/wurlitzer-sideman-drum-machine-electromechanical-the-wurlitzer-company/0AHIbcimdgynMg", "data": "2026-11-24"},
-            {"titolo": "«Electronic Side Man» — Popular Mechanics, novembre 1960, p. 149",
-             "url": "https://archive.org/details/PopularMechanics1960", "data": "2026-11-24"},
-            {"titolo": "Pagina Wurlitzer sulla regola dell'AFM — International Musician, febbraio 1961",
-             "url": "https://worldradiohistory.com/Archive-All-Music/International-Musician/60s/International-Musician-1961-02.pdf", "data": "2026-11-24"},
-            {"titolo": "Hal Davis — Mechanical Music Digest, 31/01/1999",
-             "url": "https://www.mmdigest.com/Archives/Digests/199901/1999.01.31.06.html", "data": "2026-11-24"},
-            {"titolo": "Scott Wilson — FACT, 22/09/2016",
-             "url": "https://www.factmag.com/2016/09/22/the-14-drum-machines-that-shaped-modern-music/", "data": "2026-11-24"},
-            {"titolo": "«Drum Machines», Thom Holmes",
-             "url": "https://www.thomholmes.com/post/drum-machines-a-recorded-history-part-1-analog-drum-machines", "data": "2026-11-24"},
-            {"titolo": "«The Wurlitzer Side Man» — 120 Years of Electronic Music",
-             "url": "https://120years.net/the-side-manwurlitzerusa1959/", "data": "2026-11-24"},
-            {"titolo": "«Analogue Dreams» — The Central Shaft, 2014",
-             "url": "https://thecentralshaft.blogspot.com/2014/06/analogue-dreams-1959s-wurlitzer-sideman.html", "data": "2026-11-24"},
-            {"titolo": "«Drum machine» — Wikipedia (EN)",
-             "url": "https://en.wikipedia.org/wiki/Drum_machine", "data": "2026-11-24"},
-            {"titolo": "«Birth of the drum machine» — CDM",
-             "url": "https://cdm.link/electronic-music-history-birth-of-the-drum-machine/", "data": "2026-11-24"},
-            {"titolo": "«This Is Happening» — Wikipedia (EN), crediti dalle note del disco",
-             "url": "https://en.wikipedia.org/wiki/This_Is_Happening", "data": "2026-11-24"},
-            {"titolo": "Il Sideman aperto — MusicRadar",
-             "url": "https://musicradar.com/news/video-the-inside-of-this-1950s-drum-machine-is-a-sight-to-behold", "data": "2026-11-24"},
-        ],
-        "hashtags": ["#wurlitzersideman", "#wurlitzer", "#drummachine", "#lcdsoundsystem", "#storiadellamusica"],
-        "reel_battute": [
-            ("ELETTROFONI · N. 104", "Il sindacato vieta il Wurlitzer Sideman dove si balla"),
-            ("WURLITZER · 1959", "Il Wurlitzer Sideman esce nel 1959, per chi suona l'organo da solo."),
-            ("10 SUONI A VALVOLE", "Dentro il Sideman gira un disco di contatti, e le valvole fanno i colpi."),
-            ("PRIMI ANNI '60", "Hal Davis suona l'organo in un locale. Una sera il batterista non viene."),
-            ("3 COPPIE IN PISTA", "Hal porta il Sideman, e 3 coppie ballano sulla macchina da sola."),
-        ],
-        "reel_cta": "Mandalo al batterista che arriva sempre tardi",
-        "reel_audio": {
-            "file": "assets/audio/sideman/registrazione.mp3", "inizio": 0,
-            "autore": "circlesdrumsamples.com (Electronic Rhythm Archive)",
-            "licenza": "Pubblico dominio (PD Mark 1.0)",
-            "fonte": "Internet Archive",
-            "url": "https://archive.org/details/wurlitzer_sideman_rhythms",
-            "cosa": "un Wurlitzer Sideman, i ritmi di fabbrica (cha cha, rumba, samba, bolero, tango) presi dall'uscita, senza microfono né effetti, montati in fila",
-        },
-        "verificata": True,
-    },
 ]
 
 
