@@ -271,7 +271,7 @@ VOCE_SCHEDA = {
     "ds1": "studio", "microfreak": "sega", "volcafm": "fm", "ce3": "studio",
     "tubescreamer": "studio", "grandmother": "sega", "doncamatic": "sega", "jp8000": "sega",
     # rifornimento del 24/11/2026
-    "alphajuno": "sega",
+    "alphajuno": "sega", "mirage": "fm",
     # elettronica da pochi soldi
     "stylophone": "giocattolo", "omnichord": "giocattolo", "speakspell": "giocattolo", "vl1": "giocattolo",
     # ritmiche: la voce sta sotto, comanda la batteria (vedi CON_BATTERIA)

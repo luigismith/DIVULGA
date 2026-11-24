@@ -15539,6 +15539,317 @@ SCHEDE = [
         },
         "verificata": True,
     },
+    # ---------------------------------------------------------------- mirage
+    # Ensoniq Mirage (DSK-8, 1984; rack DMS-8 e DMS-1). Bozza del 24/11/2026.
+    # Tutte le pagine aperte il 2026-11-24. La scheda VFX ha già la storia di
+    # Ensoniq nel campo «inventore»: qui la si racconta dal lato del Mirage
+    # (Q-chip, prezzo, anno discorde) e senza Creative né ESQ-1 come date.
+    #
+    # REGISTRAZIONE (data dal brief, ricopiata)
+    # https://archive.org/details/EnsoniqMirageDMS1
+    #   «Ensoniq Mirage DMS-1 sound test (sax sound)», creator Nacho Marty,
+    #   Public Domain Mark 1.0, caricata il 21/06/2015, collezione Community
+    #   Audio. Un file ogg di 585 s, misurato -20,0 LUFS, picco -4,6 dBFS, un
+    #   solo silenzio (2,6 s a 409-412 s). Riletta la pagina con WebFetch il
+    #   24/11: NESSUNA descrizione oltre al titolo e al tag «Ensoniq Mirage
+    #   DMS-1». Non dice se il campione di sax è dei dischetti di fabbrica o
+    #   dell'autore, né come è stata presa (linea o microfono). Il tratto lo
+    #   sceglie chi integra. Il DMS-1 è la seconda versione rack del Mirage
+    #   (Wikipedia: prima il DMS-8, poi il DMS-1), non un altro strumento.
+    #
+    # COSA VUOL DIRE «DMS» (dubbio, risolto a metà)
+    # - Wikipedia «Ensoniq Mirage» (che cita Syntaur): «Digital Sampling
+    #   Module».
+    # - Il pannello del DMS-8 nella foto extra porta stampato «DIGITAL
+    #   MULTI-SAMPLER»; E&MM maggio 1986 (Simon Trask) recensisce il rack col
+    #   nome «Mirage MultiSampler»; le inserzioni Reverb dicono «Digital
+    #   Multi-Sampler». In scheda si scrive solo che sul pannello c'è scritto
+    #   Digital Multi-Sampler (si vede), senza sciogliere la sigla.
+    #
+    # FONTI PER FATTO
+    # - 3 fondatori ex Commodore (Bruce Crockett, Al Charpentier, Bob Yannes):
+    #   SOS feb. 1988 (Craig Anderton, «all refugees from Commodore»);
+    #   Wikipedia «Ensoniq» (infobox; nella storia anche Winterble e
+    #   Ziembicki, Peripheral Visions).
+    # - Yannes ha disegnato il SID del Commodore 64: SOS feb. 1988; Wikipedia
+    #   «Ensoniq Mirage» (Mark Vail, «The Synthesizer», 2014).
+    # - Pennsylvania: Wikipedia «Ensoniq» (Malvern, fabbrica a Great Valley);
+    #   SOS feb. 1988 (visita alla sede americana). Il nome della città non
+    #   è scritto.
+    # - il Mirage è il primo prodotto di Ensoniq: Wikipedia «Ensoniq Mirage»;
+    #   MusicRadar «Blast from the past»; Vintage Synth Explorer.
+    # - Q-chip, chip progettato da loro, dentro il Mirage: SOS feb. 1988;
+    #   One Two Testing giu. 1985 (Freff, «custom Q Chip»); Wikipedia (ES5503).
+    #   Il prezzo basso grazie al chip fatto in casa: MusicRadar («custom chip
+    #   design and cost-cutting measures»); SOS 1988 (il Q-chip frutto della
+    #   loro esperienza VLSI, «power for its price»).
+    # - lo stesso chip nell'ESQ-1 e nell'Apple IIGS: SOS feb. 1988; Wikipedia
+    #   «Ensoniq» e «Ensoniq Mirage».
+    # - ANNO DISCORDE (scritto in scheda): 1984 per Wikipedia «Ensoniq Mirage»
+    #   e Vintage Synth Explorer (1984-1988); Anderton (SOS 1988): a fine 1984
+    #   se ne parlava già («Have you heard about this $1700 sampler?»),
+    #   presentazione ufficiale al NAMM di febbraio 1985. Wikipedia «Ensoniq»
+    #   si contraddice da sola (fine 1984, 1985, 1984).
+    # - circa 1.700 dollari: SOS 1988 («$1700 sampler»); Wikipedia Mirage e
+    #   Ensoniq (1.695 dollari).
+    # - in Inghilterra circa un quarto di un Emulator: One Two Testing 1985
+    #   («about a quarter of the Emulator I's price», 1.695 sterline);
+    #   MusicRadar (Mirage 1.695 sterline, Emulator circa 8.000). E&MM lug.
+    #   1985 dà 1.795 sterline: per questo in scheda niente cifra in sterline.
+    # - modelli europei costruiti in Italia per un periodo: SOS feb. 1988
+    #   («For a while European models were being manufactured in Italy»);
+    #   E&MM lug. 1985 (Paul Wiffen, il modello europeo «made under licence in
+    #   Italy»); Wikipedia (Mark Jenkins, SOS: variante italiana col lettore
+    #   più veloce, quest'ultimo dettaglio NON scritto).
+    # - 61 tasti (5 ottave) sensibili alla dinamica: Wikipedia; Vintage Synth
+    #   Explorer; One Two Testing 1985; E&MM lug. 1985.
+    # - dischetto da 3,5 pollici, sistema operativo caricato dal dischetto a
+    #   ogni accensione: E&MM lug. 1985 («on disk, not EPROM», 15 s); One Two
+    #   Testing 1985; Wikipedia; Vintage Synth Explorer.
+    # - display di 2 cifre: One Two Testing 1985 («two-character amber
+    #   display»); E&MM lug. 1985 («double seven-segment display»); E&MM mag.
+    #   1986; MusicRadar; Wikipedia («two-digit LED»). Esadecimale: One Two
+    #   Testing, E&MM 1986, MusicRadar. Si vede nella foto extra («21»).
+    # - tasti Param e Value per scegliere parametro e valore: si vedono nella
+    #   foto extra; E&MM 1986 (tastierino numerico, niente manopole); One Two
+    #   Testing (quasi cento parametri dal pannello).
+    # - 8 bit: tutte le fonti.
+    # - 8 voci: Wikipedia; Vintage Synth Explorer; One Two Testing; E&MM 1985 e
+    #   1986.
+    # - memoria in 2 metà da 64K, una per la parte bassa e una per l'alta:
+    #   One Two Testing («two 64k sections (UPPER and LOWER)»); E&MM mag. 1986
+    #   («64K for each keyboard half»); Wikipedia (128 KB, 64 per metà).
+    #   E&MM lug. 1985 scrive 64K in tutto: 3 contro 1.
+    # - 2,2 secondi per metà alla frequenza di serie (circa 33 kHz): One Two
+    #   Testing; E&MM lug. 1985. Fino a 6,5 s abbassando la frequenza: E&MM
+    #   lug. 1985; Vintage Synth Explorer; Wikipedia.
+    # - un filtro analogico per voce: One Two Testing (un VCF per voce);
+    #   Wikipedia (Curtis CEM3328, uno per voce); MusicRadar (filtri
+    #   analogici Curtis).
+    # - modello DSK-1, in plastica, venuto dopo: Vintage Synth Explorer (1986);
+    #   Wikipedia (1987, Keyfax). Anno discorde: non scritto. Il file Commons
+    #   lo dice del 1986.
+    # - versione rack (DMS-8, poi DMS-1): Wikipedia; Vintage Synth Explorer
+    #   (DMS-8 del 1985); E&MM mag. 1986 (il rack «loses nothing in terms of
+    #   facilities»).
+    # - venduti: 25.000 e più entro il 1988 (SOS feb. 1988); circa 30.000 fra
+    #   il 1984 e il 1988 (MusicRadar; Wikipedia con «citation needed»).
+    #   Scritto che i conti non coincidono.
+    # - Jimmy Jam e il Mirage in «Nasty» (Janet Jackson, «Control», 1986): RBMA
+    #   Daily, «Key Tracks: Jimmy Jam on Janet Jackson's Control», 26/02/2016
+    #   (Jam: «The keyboard sounds on "Nasty" are from the Mirage»); MusicRadar
+    #   06/02/2026, Ben Rogerson («the main keyboard part on Nasty», con
+    #   racconti che in RBMA non ci sono, quindi un'altra intervista);
+    #   Wikipedia «Nasty» (Jam: «more of a sound-effect type of sound»).
+    #   Uscita del singolo 1986: Wikipedia «Nasty»; MusicRadar.
+    # - Hank Shocklee, il Mirage come unico campionatore e i 3 secondi: RBMA,
+    #   lezione di Seattle 2005 («the only sampler that I had at the time,
+    #   which was the Mirage», «three seconds of sample time and that's it»);
+    #   Tape Op n. 51, 2006 (Philip Stevenson; «Mirage came out with this
+    #   three-second sampler», «I found the Mirage»).
+    # - poi l'Akai S900, e il Mirage tenuto per la sua grana: Tape Op 2006
+    #   («stayed with the Mirage but we ended up using the 900 for other
+    #   things», «a feel and sound that the Mirage had at 8-bits»); RBMA 2005
+    #   (all'inizio il suono liscio dell'S-900 non gli piace).
+    # - Shocklee lo chiama «a 4 bit» alla RBMA e «a 8 bit» a Tape Op: le due
+    #   trascrizioni (citate sopra). Il Mirage è a 8 bit per tutte le altre.
+    # - «Rebel Without a Pause» (1987) nata sul Mirage: RBMA 2005 («that was
+    #   originally done with the only sampler that I had at the time, which was
+    #   the Mirage»). Wikipedia «Rebel Without a Pause» e Hip Hop Golden Age
+    #   lo ripetono (demo sul Mirage, poi l'S-900 in studio), ma tutti e due
+    #   vengono da lì. È UNA fonte: in scheda sempre «racconta lui», e per
+    #   questo «Rebel» NON è in da_ascoltare (il disco uscito è fatto in studio
+    #   con l'S-900).
+    #
+    # FATTI SCARTATI (una fonte sola o fonti che si copiano)
+    # - «Rebel» come fatto nudo (vedi sopra); il sax dei J.B. («The Grunt»),
+    #   preso riavvolgendo il disco a mano: solo RBMA e Wikipedia che la copia.
+    # - Yannes al NAMM 1984: «un calo di prezzo di 10 a 1»: solo SOS 1988.
+    # - PVI che al NAMM 1984 mostra una scheda batteria per Apple II e una drum
+    #   machine da 200 dollari: solo SOS 1988.
+    # - Crockett «non siamo fieri dell'affidabilità del Mirage»: solo SOS 1988.
+    # - Q-chip con più di 20.000 componenti: solo SOS 1988.
+    # - quasi 8.000 venduti nel primo anno, più di tutti gli altri campionatori
+    #   messi insieme: Wikipedia (Vail) e Yannes in SOS dicono la seconda cosa
+    #   su numeri diversi; lasciato fuori.
+    # - prezzo tagliato a 1.295 sterline, poi a 899 dollari dopo l'EPS: fonti
+    #   diverse su mercati diversi, non serviva.
+    # - le «horn stabs» e il piano di «When I Think of You»: solo RBMA 2016.
+    # - Janet che sente il suono e dice «voglio una canzone sui nasty boys»:
+    #   solo MusicRadar 2026.
+    # - Le Tigre e «Deceptacon» (Song Exploder, citato da Wikipedia; non
+    #   aperto); OMD dal vivo (solo Music Technology 1986); Prince, Vangelis,
+    #   Skinny Puppy, Derrick May: liste senza disco o fonte unica.
+    # - prime unità col lettore Shugart, il primo microfloppy venduto: solo
+    #   Wikipedia.
+    # - il lettore più veloce della versione italiana: solo Wikipedia.
+    #
+    # HANDLE
+    # - @janetjackson: link nel piede di janetjackson.com (letto via WebFetch
+    #   il 2026-11-24, «https://www.instagram.com/janetjackson/»). Va seguito
+    #   prima dell'uscita (regola 3).
+    # - Ensoniq non esiste più (Creative, 1998): nessun account. Shocklee e
+    #   Jimmy Jam: non verificati, ig None.
+    #
+    # FOTO (API di Commons letta via WebFetch il 2026-11-24)
+    # - principale: https://commons.wikimedia.org/wiki/File:Ensoniq_Mirage_(with_cable).jpg
+    #   emily przybylinski (Flickr, «le tigre equipment», 10/08/2008), CC BY
+    #   2.0, 1600x1067, thumbnail 1280. Un Mirage DSK-1 (il modello in
+    #   plastica, non il DSK-8 del 1984) intero dentro la sua valigia aperta,
+    #   un cavo appoggiato sul pannello, «Mirage-DSK» in arancio leggibile, i
+    #   61 tasti tutti. La metà alta è il coperchio di gommapiuma nera:
+    #   posizione bassa. Guardato il thumbnail a 960.
+    # - extra: https://commons.wikimedia.org/wiki/File:Ensoniq_Mirage_DMS-8.jpg
+    #   Alison Cassidy, opera propria, CC BY-SA 4.0, 3612x932, thumbnail 1280
+    #   (1280x330). Il rack DMS-8 di fronte, nitido: logo ensoniq, display a 2
+    #   cifre acceso su «21», tasti Param/Value e numerici, lettore di
+    #   dischetti, «DIGITAL MULTI-SAMPLER» e «Mirage». Striscia 4:1:
+    #   "ritaglio": True. È il modello più vicino al DMS-1 della registrazione.
+    # - scartate: File:Ensoniq_Mirage_DSK-8_(1985).jpg (Charles Nadeau /
+    #   Clusternote, CC BY 2.0, 1334x365): è il DSK-8 giusto ma ritagliato da
+    #   una foto di negozio, sfocato e ingrandito, a 1280 non regge.
+    #   File:Ensoniq_Mirage_DSK.jpg: montaggio di due foto, con un EPS.
+    {
+        "slug": "mirage",
+        "numero": 103,
+        "serie": "I CAMPIONATORI",
+        "strumento": "Ensoniq Mirage",
+        "anno": "1984",
+        "luogo": "Pennsylvania, USA",
+        "costruttore": "Ensoniq",
+        "specifiche": [
+            ("USCITA", "1984"),
+            ("RISOLUZIONE", "8 BIT"),
+            ("MEMORIA", "2 METÀ DA 64K"),
+            ("RACK", "DMS-8, POI DMS-1"),
+        ],
+        "gancio": "In Inghilterra costava un quarto di un Emulator, e un campionatore lo poteva comprare chiunque suonasse",
+        "sottotitolo": "Il suono è sporco, e a qualcuno è piaciuto proprio per quello.",
+        "la_macchina": (
+            "Sono 61 tasti sensibili a quanto forte premete, e accanto c'è un "
+            "lettore di dischetti da 3,5 pollici. Per leggere i numeri c'è un "
+            "display di 2 cifre e basta. Negli Stati Uniti costa circa 1.700 "
+            "dollari. Per un periodo i Mirage per l'Europa li costruiscono in "
+            "Italia. Poi arrivano il rack, che sul pannello porta scritto Digital "
+            "Multi-Sampler, e il DSK-1 in plastica della copertina. Quanti ne abbiano "
+            "venduti non si sa bene, Sound On Sound nel 1988 dice più di 25.000, "
+            "MusicRadar circa 30.000. A me piace perché è fatto risparmiando su "
+            "tutto, e non lo nasconde."
+        ),
+        "inventore_nome": "Ensoniq e il Q-chip",
+        "inventore": (
+            "Ensoniq la mettono su in Pennsylvania 3 ingegneri usciti dalla "
+            "Commodore, Bob Yannes, Bruce Crockett e Al Charpentier. La loro "
+            "storia l'abbiamo raccontata nella scheda del VFX. Il Mirage è il "
+            "primo strumento che vendono, e il prezzo basso viene da un chip "
+            "disegnato in casa, il Q-chip. Lo "
+            "stesso chip poi finisce nell'ESQ-1 e nell'Apple IIGS. Sull'anno le "
+            "fonti non concordano. Wikipedia e Vintage Synth Explorer dicono "
+            "1984. Craig Anderton, su Sound On Sound, racconta che a fine 1984 "
+            "se ne parlava già, ma che la presentazione ufficiale è al NAMM di "
+            "febbraio 1985."
+        ),
+        "come_funziona": (
+            "Il Mirage registra a 8 bit. La memoria è divisa in 2 metà da 64K, "
+            "una per la parte bassa della tastiera e una per l'alta, e ognuna "
+            "tiene il suo suono. Alla frequenza di serie fanno 2,2 secondi per "
+            "metà. Abbassandola si arriva a 6,5, e il suono perde gli acuti. Poi "
+            "il campione passa da un filtro analogico, uno per ognuna delle 8 "
+            "voci. Tutto il resto si regola a numeri. Premete Param, scegliete il "
+            "parametro, premete Value e cambiate il valore, e le 2 cifre del "
+            "display vi rispondono, spesso in esadecimale. Se ne trovate uno, "
+            "campionate la vostra voce a 6,5 secondi e ascoltate cosa resta."
+        ),
+        "richiami": [
+            ("FIG. 1", "8 bit, 2 metà da 64K"),
+            ("FIG. 2", "Un filtro analogico per voce"),
+            ("FIG. 3", "Il display di 2 cifre"),
+        ],
+        "chi_lusata": [
+            {"artista": "Janet Jackson",
+             "nota": "in «Nasty» (1986) le tastiere sono del Mirage di Jimmy Jam",
+             "ig": "janetjackson"},
+            {"artista": "Hank Shocklee",
+             "nota": "il suo primo campionatore, per Public Enemy, racconta lui",
+             "ig": None},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Nasty", "artista": "Janet Jackson", "anno": "1986",
+                         "cosa": "La tastiera principale. Jimmy Jam racconta che viene dal Mirage, e quella grana a 8 bit si sente."},
+        "aneddoto": (
+            "Quando Hank Shocklee comincia a campionare, l'unico campionatore che "
+            "ha è un Mirage. Lo racconta alla Red Bull Music Academy nel 2005 e a "
+            "Tape Op nel 2006. Ha 3 secondi di memoria e basta, quindi il pezzo "
+            "di disco giusto va preso al primo colpo. Alla Red Bull dice che la "
+            "prima versione di «Rebel Without a Pause» l'ha fatta così. Poi "
+            "Public Enemy passa a un Akai S900, e il Mirage resta per la sua "
+            "grana. In una delle due interviste lo chiama un campionatore a 4 "
+            "bit, nell'altra a 8. Sono 8."
+        ),
+        "avvertenza": "Il sistema operativo sta sul dischetto. Senza il dischetto giusto nel lettore, il Mirage acceso non sa ancora di essere un campionatore.",
+        "foto": {
+            "file": "assets/foto/mirage/principale.jpg",
+            "posizione": "center 68%",
+            "autore": "emily przybylinski",
+            "licenza": "CC BY 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un Mirage DSK-1, il modello in plastica venuto dopo, nella sua valigia",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/mirage/rack.jpg",
+             "ritaglio": True,
+             "autore": "Alison Cassidy",
+             "licenza": "CC BY-SA 4.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center",
+             "didascalia": "Il rack DMS-8. Il display ha 2 cifre, e sul pannello c'è scritto Digital Multi-Sampler"},
+        ],
+        "fonti": [
+            {"titolo": "Craig Anderton — Sound On Sound, feb. 1988",
+             "url": "https://www.muzines.co.uk/articles/sampling-ensoniq/3473", "data": "2026-11-24"},
+            {"titolo": "Freff — One Two Testing, giu. 1985",
+             "url": "https://www.muzines.co.uk/articles/ensoniq-mirage/11768", "data": "2026-11-24"},
+            {"titolo": "Paul Wiffen — E&MM, lug. 1985",
+             "url": "https://www.muzines.co.uk/articles/ensoniq-mirage/9076", "data": "2026-11-24"},
+            {"titolo": "Simon Trask — E&MM, mag. 1986",
+             "url": "https://www.muzines.co.uk/articles/mirage-multisampler/1681", "data": "2026-11-24"},
+            {"titolo": "«Ensoniq Mirage» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Ensoniq_Mirage", "data": "2026-11-24"},
+            {"titolo": "«Ensoniq» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Ensoniq", "data": "2026-11-24"},
+            {"titolo": "«Ensoniq Mirage» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/ensoniq/mirage", "data": "2026-11-24"},
+            {"titolo": "«Blast from the past: Ensoniq Mirage» — MusicRadar",
+             "url": "https://www.musicradar.com/news/tech/blast-from-the-past-ensoniq-mirage-622501", "data": "2026-11-24"},
+            {"titolo": "Jimmy Jam su «Control» — RBMA Daily, 2016",
+             "url": "https://daily.redbullmusicacademy.com/2016/02/key-tracks-janet-jackson-control", "data": "2026-11-24"},
+            {"titolo": "Jam & Lewis e il Mirage — MusicRadar, 2026",
+             "url": "https://www.musicradar.com/artists/im-like-ok-put-the-drum-machine-in-when-i-played-it-she-said-oh-i-like-that-i-like-that-and-she-said-i-want-to-do-a-song-about-the-nasty-boys-how-janet-jackson-and-jam-and-lewis-made-control-with-a-little-help-from-the-ensoniq-mirage", "data": "2026-11-24"},
+            {"titolo": "«Nasty (Janet Jackson song)» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Nasty_(Janet_Jackson_song)", "data": "2026-11-24"},
+            {"titolo": "Hank Shocklee, lezione — Red Bull Music Academy, Seattle 2005",
+             "url": "https://www.redbullmusicacademy.com/lectures/hank-shocklee-art-brut", "data": "2026-11-24"},
+            {"titolo": "Hank Shocklee — Tape Op n. 51, 2006",
+             "url": "https://tapeop.com/interviews/51/hank-shocklee", "data": "2026-11-24"},
+        ],
+        "hashtags": ["#ensoniqmirage", "#ensoniq", "#campionatore", "#janetjackson", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 103", "Le tastiere di «Nasty» escono da un campionatore a 8 bit"),
+            ("ENSONIQ MIRAGE · 1984", "L'Ensoniq Mirage campiona a 8 bit, poco più di 2 secondi per metà tastiera."),
+                        ("UN QUARTO DI EMULATOR", "In Inghilterra il Mirage costa un quarto di un Emulator."),
+            ("PUBLIC ENEMY", "Hank Shocklee comincia a campionare su un Mirage, con 3 secondi di memoria."),
+            ("NASTY · 1986", "Jimmy Jam suona il Mirage in «Nasty» di Janet Jackson."),
+        ],
+        "reel_cta": "Mandalo a chi balla ancora «Nasty» in cucina",
+        "reel_audio": {
+            "file": "assets/audio/mirage/registrazione.mp3", "inizio": 0,
+            "autore": "Nacho Marty", "licenza": "Pubblico dominio (PD Mark 1.0)",
+            "fonte": "Internet Archive",
+            "url": "https://archive.org/details/EnsoniqMirageDMS1",
+            "cosa": "una prova di un suono di sax campionato, suonato su un Mirage DMS-1, la versione rack; l'autore non dice se il campione è di fabbrica o suo, né come l'ha registrato",
+        },
+        "verificata": True,
+    },
 ]
 
 
