@@ -15285,6 +15285,260 @@ SCHEDE = [
     # - Michael Allen Harrison col VFX-SD: solo la foto di Commons.
 
 
+    # ---------------------------------------------------------------- 102
+    # Roland Alpha Juno (Alpha Juno-1 / JU-1 e Alpha Juno-2 / JU-2). Scheda
+    # scritta il 24/11/2026 (rifornimento).
+    #
+    # REGISTRAZIONE: https://archive.org/details/sepha-roland-alpha-juno-pt1
+    #   «Roland Alpha Juno-1 Chords, Filter Sweeps & Multisamples, pt. 1»,
+    #   sephabeats, 21/12/2021, CC BY 4.0, Internet Archive. Descrizione
+    #   dell'autore: campioni registrati col SUO Alpha Juno-1, preset di
+    #   fabbrica; «The filter sweeps were performed using the Alpha Dial on the
+    #   Juno to control the "Brilliance" parameter». File scelto: «Juno - P-67
+    #   SynthBass2 (Filter Sweep, Amin Chord).mp3», 51,1 s, MISURATO -15,7
+    #   LUFS, picco -5,3 dBFS, LRA 3,5, silenzio 0-1,4 s e 48,9-51,1 s.
+    #   NON è il suono hoover («What the»): è il preset SynthBass2. La scheda
+    #   lo dice in «come_funziona» e in «cosa»; nessuna battuta del reel dice
+    #   che quello che si sente è l'hoover. Non ascoltata da un orecchio.
+    #
+    # FONTI PER FATTO (aperte il 24/11/2026)
+    # - 1985: MusicRadar «Blast from the past» (30/10/2014, «launched in
+    #   1985»), gearnews (Adam Douglas, 2026, «In 1985, Roland followed up the
+    #   popular Juno-106»), Wikipedia (EN). Sound On Sound ottobre 1998 (Gordon
+    #   Reid): annunciato nell'inverno 1985, ma nella tabella prezzi 1986;
+    #   Vintage Synth Explorer dà 1986 per il JU-2. Detto in scheda.
+    # - erede del Juno-106, stessa voce analogica: Sound On Sound marzo 1986
+    #   (Mark Jenkins, «based on the Juno 106 analogue voice»), gearnews.
+    # - 6 voci: SOS 1986, SOS 1998, MusicRadar 2014, Vintage Synth Explorer,
+    #   gearnews.
+    # - 1 DCO per voce, 5 denti di sega, 3 onde a impulso, sub-oscillatore,
+    #   rumore: SOS 1986 (5 saw, 3 pulse, sub a 6 opzioni), MusicRadar 2014
+    #   (identico), SOS 1998 (DCO), Vintage Synth Explorer.
+    # - filtro analogico: SOS 1986 (voce analogica del 106), Wikipedia
+    #   (passa-basso 24 dB risonante; i 24 dB NON in scheda, una fonte aperta).
+    # - JU-1 49 tasti (4 ottave), JU-2 61 tasti con dinamica e aftertouch:
+    #   SOS 1986 (4 ottave), SOS 1998 (4 e 5 ottave, «velocity and
+    #   aftertouch»), MusicRadar 2014, Vintage Synth Explorer, Wikipedia.
+    # - Alpha Dial, una ruota che gira senza fine e serve a scegliere e a
+    #   cambiare i parametri: SOS 1986 («a single continuously rotating
+    #   control»), MusicRadar 2014 («single, free-spinning»), gearnews,
+    #   Wikipedia. Il pulsante BRILLIANCE accanto al display: si legge nella
+    #   foto principale, e Wikipedia lo nomina fra i selettori dedicati.
+    # - inviluppo a più tratti: SOS 1986 («new multi-stage envelope»),
+    #   Wikipedia, MusicRadar 2019 (linear and exponential sections). Il
+    #   disegno dell'inviluppo e delle forme d'onda stampato sul pannello: si
+    #   vede in TUTTE E DUE le foto; Wikipedia (One Two Testing 1986).
+    # - 64 preset + 64 memorie: SOS 1986, SOS 1998, MusicRadar 2014, VSE.
+    # - JU-1 a 575 sterline: SOS 1986 («retails at £575 including VAT»),
+    #   MusicRadar 2014, gearnews. JU-2 a 799: gearnews, Wikipedia.
+    # - PG-300, programmatore a parte, un cursore per parametro, 200 sterline:
+    #   SOS 1998 («added £200»), MusicRadar 2014 («another 200 quid»),
+    #   gearnews, Wikipedia.
+    # - preset «What the» diventato l'«hoover» dei rave: MusicRadar 2014
+    #   (Blast: «"What the" became known as the 'Hoover'»), MusicRadar/Future
+    #   Music 09/10/2014 (Sylenth1), RBMA Daily 2014, Wikipedia (Hoover sound,
+    #   Roland Alpha Juno).
+    # - «What the» programmato da Eric Persing, sound designer Roland:
+    #   gearnews («programmed by none other than Eric Persing»), Wikipedia
+    #   (Roland Alpha Juno, dal libro di Kim Bjørn 2022; Hoover sound).
+    # - il timbro viene dal dente di sega a impulso variabile mosso dall'LFO
+    #   e dal chorus: MusicRadar 2014 (Sylenth1, «LFO-modulated PWM sawtooth
+    #   and unique Roland chorus»), Wikipedia (Hoover sound, «fast LFO
+    #   controlling the PWM and the chorus»), MusicRadar 2019 (il chorus).
+    # - «Mentasm»: Mundo Muzique registra il riff sul suo Alpha Juno-1 col
+    #   preset «What the», poi nello studio di Joey Beltram lo campionano nel
+    #   Casio FZ-1: RBMA Daily «Key Tracks: Mundo Muzique on Second Phase's
+    #   'Mentasm'» (Phil Moffa, 2014, lui in prima persona), gearnews («sampled
+    #   it into Beltram's Casio FZ-1 sampler»). Alpha Juno in «Mentasm» anche
+    #   MusicRadar 2014 (Sylenth1), Wikipedia.
+    # - duo di New York, Second Phase, R&S Records, 1991: gearnews, Wikipedia
+    #   (Joey Beltram, «released under the artist name Second Phase in 1991»),
+    #   Discogs/Beatport (R&S RS 9109, 1991; letti dai risultati di ricerca,
+    #   Discogs non si apre dal container). RBMA conferma R&S.
+    # - «Dominator» di Human Resource col suono hoover: MusicRadar 2014
+    #   (Sylenth1), gearnews, Wikipedia (Hoover sound), MusicRadar 2019
+    #   (ReDominator prende il nome dal brano, col permesso del gruppo).
+    # - The Prodigy, «Charly», col preset: MusicRadar 2014 (Sylenth1),
+    #   Wikipedia (Roland Alpha Juno, «Charly (Alley Cat Mix)»).
+    #
+    # FATTI SCARTATI (una fonte sola, o non aperta)
+    # - Persing che crea «What the» «as a joke» (solo Wikipedia, dal libro di
+    #   Bjørn, non aperto); «What the» è il preset 86 (solo gearnews); il «suono
+    #   inutile» e «stupido» secondo i colleghi di Muzique, il Mac SE, Master
+    #   Tracks Pro, il pitch bend nel riff, il campionamento nell'FZ-1 per un
+    #   problema di sincrono MIDI, Renaat di R&S che all'inizio non capisce il
+    #   riff (solo RBMA); «Dominator» n. 6 in Olanda e top 10 nel mondo (solo
+    #   Wikipedia); gli anni di «Dominator» e «Charly» (non trovata la seconda
+    #   fonte aperta: in scheda senza anno); Lady Gaga «Bad Romance» e Rihanna
+    #   «Birthday Cake» (solo Wikipedia, con una recensione per uno); chorus a
+    #   velocità programmabile contro i 2 tempi del 106 (SOS 1986, e Wikipedia
+    #   che cita SOS: non indipendenti); slot per cartuccia del JU-2 (solo
+    #   Wikipedia aperta); poco successo all'uscita per colpa della FM Yamaha
+    #   (solo Wikipedia); MKS-50 «didn't sell in large quantities» (solo SOS
+    #   1998); il chip della voce (nessuna delle fonti aperte lo nomina: NON
+    #   in scheda); la lista di VSE (Vince Clarke, Massive Attack, Fatboy
+    #   Slim...): una fonte.
+    #
+    # HANDLE: @rolandglobal, già usato (piede di roland.com/global). Nessun tag
+    #   agli artisti: account ufficiali non verificati.
+    #
+    # FOTO (thumbnail scaricati e guardati il 24/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Roland_alpha_juno.jpg
+    #   Taras (Commons), CC BY-SA 3.0, 1841x569, 13/10/2007, thumbnail 1280
+    #   (1280x396). L'Alpha Juno-1 INTERO visto dall'alto su una moquette
+    #   rossa: «Roland» e «αJUNO-1» leggibili, a sinistra la ruota grande
+    #   (sotto c'è scritto α-DIAL), sopra i tasti i pulsanti morbidi
+    #   (BRILLIANCE, MOD RATE...), a destra il disegno di forme d'onda e
+    #   inviluppo. È un JU-1, come la registrazione. Molto larga (3,2:1): nella
+    #   banda va con "ritaglio": True, o perde i lati (cioè la ruota).
+    # extra: https://commons.wikimedia.org/wiki/File:Roland_Alpha_Juno_2_logo_%26_params.jpg
+    #   Derek Gavey (Flickr), CC BY 2.0, 3872x2592, 13/12/2010, thumbnail 1280.
+    #   Macro dell'Alpha Juno-2 preso da dietro la tastiera: il grafico
+    #   dell'inviluppo (linea rossa) e le forme d'onda in azzurro, a fuoco; la
+    #   scritta JUNO-2 grande e CAPOVOLTA. Per questo "nel_reel": False (come il
+    #   CZ-101 in CLAUDE.md). Sulla tavola la didascalia lo spiega.
+    # Non trovate su Commons foto libere del PG-300 né del MKS-50.
+    {
+        "slug": "alphajuno",
+        "numero": 102,
+        "serie": "I SINTETIZZATORI",
+        "strumento": "Roland Alpha Juno",
+        "anno": "1985",
+        "luogo": "Giappone",
+        "costruttore": "Roland",
+        "specifiche": [
+            ("USCITA", "1985"),
+            ("VOCI", "6"),
+            ("OSCILLATORE", "1 DCO PER VOCE"),
+            ("TASTI", "49 O 61"),
+        ],
+        "gancio": "Il ronzio dei rave del 1991 è un suono di fabbrica di questa tastiera Roland, e si chiama «What the»",
+        "sottotitolo": "Un Juno a cui Roland toglie le manopole e lascia una ruota sola, che gira senza fine.",
+        "la_macchina": (
+            "Quello della foto è l'Alpha Juno-1, con 49 tasti. A sinistra c'è "
+            "una ruota grande, l'Alpha Dial. Sopra i tasti ci sono un display e "
+            "una fila di pulsanti morbidi, e a destra il disegno delle forme "
+            "d'onda e dell'inviluppo, stampato sul pannello. L'Alpha Juno-2 ha "
+            "61 tasti, che sentono quanto forte premete e quanto spingete dopo. "
+            "In Inghilterra il piccolo costa 575 sterline e il grande 799. "
+            "Secondo me il pannello è bello proprio perché è vuoto, sembra un "
+            "elettrodomestico. Dentro però c'è un analogico vero."
+        ),
+        "inventore_nome": "Roland ed Eric Persing",
+        "inventore": (
+            "Chi abbia disegnato i circuiti Roland non lo dice. Si sa che nel "
+            "1985 la ditta fa seguire al Juno-106 questo Alpha Juno, con la "
+            "stessa voce analogica e senza più una manopola per ogni cosa. "
+            "Sull'anno le fonti non coincidono del tutto. Sound On Sound nel "
+            "1998 scrive che fu annunciato nell'inverno 1985, e Vintage Synth "
+            "Explorer mette il Juno-2 nel 1986. Fra i 64 suoni di fabbrica ce "
+            "n'è uno che si chiama «What the». Lo programma Eric Persing, che "
+            "per Roland fa i suoni. A me quel nome fa ridere ogni volta che lo "
+            "leggo sul display."
+        ),
+        "come_funziona": (
+            "Ogni voce ha un oscillatore, un DCO, che dà 5 denti di sega, 3 onde "
+            "a impulso, un sub-oscillatore più basso e il rumore. Poi un filtro "
+            "analogico e il chorus. Le voci sono 6. Per cambiare un suono "
+            "premete un pulsante, per esempio BRILLIANCE, e girate l'Alpha Dial. "
+            "Chi voleva un cursore per ogni parametro comprava a parte il PG-300, "
+            "per altre 200 sterline. Il ronzio di «What the» viene da un dente di "
+            "sega a impulso variabile mosso in fretta e dal chorus. Quello che "
+            "sentite qui invece è un altro preset, SynthBass2, con l'autore che "
+            "apre e chiude il filtro girando la ruota."
+        ),
+        "richiami": [
+            ("FIG. 1", "Alpha Dial, una ruota senza fine"),
+            ("FIG. 2", "1 DCO per voce, 6 voci"),
+            ("FIG. 3", "Il preset «What the»"),
+        ],
+        "chi_lusata": [
+            {"artista": "Second Phase",
+             "nota": "Joey Beltram e Mundo Muzique, «Mentasm» (1991), col preset «What the»",
+             "ig": None},
+            {"artista": "Human Resource",
+             "nota": "«Dominator», lo stesso ronzio portato in classifica",
+             "ig": None},
+            {"artista": "The Prodigy",
+             "nota": "«Charly», fra i primi dischi con l'hoover",
+             "ig": None},
+        ],
+        "menzioni_extra": [
+            {"ig": "rolandglobal",
+             "riga": "L'Alpha Juno è una macchina di @rolandglobal."},
+        ],
+        "da_ascoltare": {"brano": "Mentasm", "artista": "Second Phase", "anno": "1991",
+                         "cosa": "Il riff che ringhia è «What the», il preset di un Alpha Juno-1, campionato poi nel Casio FZ-1 di Joey Beltram."},
+        "aneddoto": (
+            "A New York Mundo Muzique ha in studio un Alpha Juno-1. Prende il "
+            "preset «What the» e ci registra sopra un riff. Il pezzo lo finisce "
+            "insieme a Joey Beltram, nello studio di Beltram, dove il riff viene campionato "
+            "in un Casio FZ-1 e passa da lì invece che dalla tastiera. Nel 1991 "
+            "lo pubblica la belga R&S, col nome Second Phase, e si intitola "
+            "«Mentasm». Nei rave europei quel suono si prende presto un nome da "
+            "casa, hoover, che in inglese vuol dire aspirapolvere."
+        ),
+        "avvertenza": "L'Alpha Dial gira senza fine corsa. Prima di girarlo, guardate sul display quale parametro avete scelto.",
+        "foto": {
+            "file": "assets/foto/alphajuno/principale.jpg",
+            "posizione": "center",
+            "ritaglio": True,
+            "autore": "Taras",
+            "licenza": "CC BY-SA 3.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "L'Alpha Juno-1 visto dall'alto. La ruota grande a sinistra è l'Alpha Dial",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/alphajuno/pannello.jpg",
+             "autore": "Derek Gavey",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "30% 60%",
+             "nel_reel": False,
+             "didascalia": "L'Alpha Juno-2 visto da dietro, col disegno dell'inviluppo e delle forme d'onda"},
+        ],
+        "fonti": [
+            {"titolo": "«Dial-A-Dream: Roland Alpha Juno-1», Mark Jenkins — Sound On Sound, marzo 1986",
+             "url": "https://www.muzines.co.uk/articles/dial-a-dream/1313", "data": "2026-11-24"},
+            {"titolo": "«Roland Alpha Juno 1 & 2 (Retro)», Gordon Reid — Sound On Sound, ottobre 1998",
+             "url": "https://www.soundonsound.com/reviews/roland-alpha-juno-1-2", "data": "2026-11-24"},
+            {"titolo": "«Blast from the past: Roland Alpha Juno» — MusicRadar, 30/10/2014",
+             "url": "https://www.musicradar.com/news/tech/blast-from-the-past-roland-alpha-juno-608881", "data": "2026-11-24"},
+            {"titolo": "«How to create a hoover sound in Sylenth1» — MusicRadar (Future Music), 09/10/2014",
+             "url": "https://www.musicradar.com/tuition/tech/how-to-create-a-hoover-sound-in-sylenth1-608251", "data": "2026-11-24"},
+            {"titolo": "«How to design a Dominator-style hoover sound with ReDominator» — MusicRadar, 2019",
+             "url": "https://www.musicradar.com/how-to/how-to-design-a-dominator-style-hoover-sound-with-audiorealisms-redominator", "data": "2026-11-24"},
+            {"titolo": "«Key Tracks: Mundo Muzique on Second Phase's 'Mentasm'», Phil Moffa — RBMA Daily, 2014",
+             "url": "https://daily.redbullmusicacademy.com/2014/05/key-tracks-mundo-muzique-on-mentasm", "data": "2026-11-24"},
+            {"titolo": "«Roland Alpha Juno: Classic Synths», Adam Douglas — gearnews",
+             "url": "https://www.gearnews.com/roland-alpha-juno-synth/", "data": "2026-11-24"},
+            {"titolo": "«Roland Alpha Juno-2» — Vintage Synth Explorer",
+             "url": "https://www.vintagesynth.com/roland/alpha-juno-2", "data": "2026-11-24"},
+            {"titolo": "«Roland Alpha Juno» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Roland_Alpha_Juno", "data": "2026-11-24"},
+            {"titolo": "«Hoover sound» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Hoover_sound", "data": "2026-11-24"},
+            {"titolo": "«Joey Beltram» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Joey_Beltram", "data": "2026-11-24"},
+        ],
+        "hashtags": ["#alphajuno", "#roland", "#sintetizzatore", "#theprodigy", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 102", "Il ronzio dei rave del 1991 è un suono di fabbrica Roland"),
+            ("ALPHA JUNO · 1985", "Nel 1985 Roland fa l'Alpha Juno, un synth analogico con una ruota sola."),
+            ("WHAT THE", "Fra i suoni dell'Alpha Juno c'è «What the», programmato da Eric Persing."),
+            ("NEW YORK", "Mundo Muzique suona un riff su «What the» e Joey Beltram lo campiona."),
+            ("MENTASM · 1991", "Esce «Mentasm» di Second Phase, e «What the» diventa l'hoover dei rave."),
+        ],
+        "reel_cta": "Mandalo all'amico che ai rave ci andava davvero",
+        "reel_audio": {
+            "file": "assets/audio/alphajuno/registrazione.mp3", "inizio": 0,
+            "autore": "sephabeats", "licenza": "CC BY 4.0",
+            "fonte": "Internet Archive",
+            "url": "https://archive.org/details/sepha-roland-alpha-juno-pt1",
+            "cosa": "un accordo di la minore sul preset SynthBass2 dell'Alpha Juno-1 dell'autore, col filtro aperto e chiuso girando l'Alpha Dial sul parametro Brilliance; non è il suono hoover «What the»",
+        },
+        "verificata": True,
+    },
 ]
 
 
