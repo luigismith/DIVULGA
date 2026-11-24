@@ -15850,6 +15850,311 @@ SCHEDE = [
         },
         "verificata": True,
     },
+    # ---------------------------------------------------------------- 000
+    # Wurlitzer Sideman (Model 5000), 1959. Scheda scritta il 24/11/2026
+    # (rifornimento).
+    #
+    # REGISTRAZIONE: https://archive.org/details/wurlitzer_sideman_rhythms
+    #   «Wurlitzer SideMan Rhythms», creator circlesdrumsamples.com,
+    #   11/02/2020, Public Domain Mark 1.0, parte dell'Electronic Rhythm
+    #   Archive di Internet Archive (regole dell'archivio: presi dall'uscita,
+    #   niente microfono né effetti). Descrizione: «The pre-programmed rhythms
+    #   of a Wurlitzer SideMan rhythm companion. Graciously provided by
+    #   circlesdrumsamples.com». 18 file da 4-9,6 s (BEGUINE, BOLERO, CHA CHA,
+    #   Fox Trot A-H, MARCH, RHUMBA, SAMBA, SHUFFLE, TANGO, WALTZ, WESTERN),
+    #   misurati -24/-31 LUFS. Montaggio (lo fa chi coordina): CHA CHA,
+    #   RHUMBA, SAMBA, BOLERO, TANGO in fila, circa 48 s.
+    #
+    # FONTI PER FATTO (aperte il 24/11/2026)
+    # - 1959, Wurlitzer: SMEM Friburgo, The Henry Ford, National Music Centre
+    #   (Google Arts & Culture), Science Museum Group, FACT 22/09/2016,
+    #   Wikipedia «Drum machine».
+    # - «prima drum machine in commercio» per The Henry Ford e NMC; SMEM la
+    #   dice SECONDA dopo la Chamberlin Rhythmate. La Rhythmate suonava
+    #   nastri di batteria vera: FACT, Wikipedia «Drum machine», Thom Holmes
+    #   («Drum Machines: A Recorded History, part 1»). Detto in scheda come
+    #   disaccordo.
+    # - pensato per organisti e pianisti che suonano da soli: SMEM, NMC,
+    #   International Musician feb. 1961 (pagina Wurlitzer: «for the solo
+    #   performer, organist or pianist»).
+    # - il nome dai «side men» del jazz, i musicisti che accompagnano il
+    #   solista: Popular Mechanics novembre 1960 p. 149, NMC.
+    # - Model 5000: The Henry Ford («Wurlitzer Sideman Model 5000»), blog
+    #   The Central Shaft (14/06/2014).
+    # - alto circa 66 cm: The Henry Ford (26,5 in), Science Museum Group
+    #   (665 x 635 x 290 mm); il blog dà 66 x 29 x 63 cm.
+    # - mobile di legno con amplificatore e altoparlante dentro: 120 Years of
+    #   Electronic Music, Science Museum Group («in-built speaker and
+    #   amplifier»), MusicRadar 17/05/2023. Altoparlante da 12 pollici: SMEM,
+    #   The Central Shaft; si vede nella foto dell'interno.
+    # - disco che gira con contatti di metallo, ogni contatto un colpo:
+    #   SMEM, Thom Holmes, 120 Years, MusicRadar (2022, «spinning disc powered
+    #   by an electric motor, featuring contact points»).
+    # - 10 suoni fatti a valvole, niente registrato: SMEM, Holmes, 120 Years,
+    #   Popular Mechanics 1960 («10 percussion instruments»). Niente nastri:
+    #   SMEM («does not employ tape loops»), Holmes.
+    # - niente rullante; spazzola, maracas, claves, temple block, piatto,
+    #   tom, wood block, cassa: Thom Holmes (elenco dei 10), The Central Shaft
+    #   («There was no dedicated snare»).
+    # - 12 ritmi scelti con una manopola: SMEM (elenco), Holmes (elenco),
+    #   NMC, 120 Years, The Central Shaft (manopola).
+    # - cursore del tempo che fa girare il disco più svelto: 120 Years,
+    #   The Central Shaft; Wikipedia («A slider controls the tempo»).
+    # - tempo: 36-195 bpm per Popular Mechanics 1960 e SMEM; 34-150 per
+    #   Wikipedia, FACT, The Central Shaft. Detto in scheda come disaccordo.
+    # - tasti per suonare i colpi a mano: 120 Years (10 tasti), Wikipedia,
+    #   FACT, MusicRadar 2023.
+    # - fine produzione: 1969 per The Henry Ford, Science Museum Group,
+    #   Wikipedia/FACT; 1965 per Holmes (e synthmuseum via Commons), fine 1964
+    #   per The Central Shaft. Detto in scheda come disaccordo.
+    # - Wurlitzer ditta di organi e jukebox, sede a De Kalb, Illinois:
+    #   International Musician feb. 1961 («World's Largest Builder of Pianos
+    #   and Organs, De Kalb, Illinois»), Popular Mechanics 1960 («The
+    #   Wurlitzer Co., De Kalb, Ill.»); jukebox: The Central Shaft («jukebox
+    #   and organ manufacturer»), Wikipedia «Wurlitzer».
+    #   (Wikipedia «Wurlitzer», raw aperto il 24/11/2026: «electronic organs
+    #   and jukeboxes», stabilimento di DeKalb).
+    # - la regola del sindacato (AFM): le sezioni locali non possono vietarlo,
+    #   ma i soci non lo usano dove si balla, né negli spettacoli dove di
+    #   solito c'è una percussione, né al posto di un musicista vivo:
+    #   International Musician febbraio 1961 p. 5-6 (pagina Wurlitzer che
+    #   riporta il testo della regola, scaricata e letta), Wikipedia «Drum
+    #   machine» (che cita Down Beat 27/04/1961, «could not be used for
+    #   dancing»). Tutte e due vengono da una pagina pubblicitaria Wurlitzer:
+    #   lo dice la scheda. FACT dice «solo nei cocktail lounge»: versione
+    #   diversa, non usata.
+    # - Hal Davis: suona l'organo in un locale, il batterista non può venire,
+    #   va a prendere il Sideman a casa a 7 miglia, 3 coppie ballano sul
+    #   Sideman da solo, primi anni '60: lui stesso su Mechanical Music Digest
+    #   31/01/1999; FACT 22/09/2016 (lo chiama «produttore Motown»: non
+    #   usato, il post di MMD non lo dice e un altro sito lo dà come
+    #   presidente di un sindacato di Pittsburgh; in scheda solo «suona
+    #   l'organo in un locale»).
+    # - Tadashi Osanai e il Sideman a Tokyo: CDM (Create Digital Music),
+    #   Wikipedia «Drum machine» (che cita Colbeck, Keyfax). Già raccontato
+    #   in doncamatic (n. 093) e rhythmace: qui solo una riga in chi_lusata.
+    # - LCD Soundsystem, «Somebody's Calling Me» (traccia 8 di «This Is
+    #   Happening», 2010), Wurlitzer SideMan suonato da James Murphy:
+    #   Wikipedia «This Is Happening» (crediti presi dalle note del disco,
+    #   DFA 2010: «Wurlitzer SideMan (track 8)», e pianoforte sulla 8),
+    #   Thom Holmes («an authentic Side Man is clearly audible in the mix»).
+    #
+    # FATTI SCARTATI (una fonte sola, o fonti in disaccordo)
+    # - prezzo: 395 dollari per Thom Holmes e per un commento su diyAudio
+    #   (non leggibile dal fetch); 375/365 dollari nel 1960 per The Central
+    #   Shaft. Fonti in disaccordo e nessuna d'epoca: niente prezzo.
+    # - peso: nessuna fonte trovata.
+    # - progettista dentro la Wurlitzer: nessuna fonte, nessun brevetto
+    #   trovato. Detto in scheda.
+    # - «85 different beat patterns» (solo Popular Mechanics 1960, forse le
+    #   combinazioni); 15 watt di amplificatore a valvole, braccio con 8
+    #   contatti a molla su un disco di Pertinax, pezzi fatti a Hüllhorst in
+    #   Germania, una valvola per ogni suono (solo The Central Shaft); dieci
+    #   valvole (solo MusicRadar 2023).
+    # - John Carroll Kirby che suona il Sideman dal vivo in «Oropendola»
+    #   (2023): solo MusicRadar (KCRW 429, nessun'altra fonte).
+    # - il sindacato che fa pressione per rallentare la produzione: solo The
+    #   Central Shaft.
+    #
+    # HANDLE: @lcdsoundsystem, link nel sito ufficiale lcdsoundsystem.com
+    #   (controllato il 24/11/2026). Wurlitzer: nessun account ufficiale
+    #   legato al Sideman, nessun tag. Da far seguire al proprietario prima
+    #   dell'uscita.
+    #
+    # FOTO (guardate il 24/11/2026)
+    # principale: https://commons.wikimedia.org/wiki/File:Wurlitzer_Sideman_(1959)_upper_half.jpg
+    #   ritaglio di Clusternote da «Akaphon (1963).jpg» di andrew garton
+    #   (Flickr, «Arts Birthday 2009»), CC BY-SA 2.0, 1200x900 (il thumbnail
+    #   1280 è l'originale; scarico il 960). Mostra «Zauberhafte
+    #   Klangmaschinen», Kulturfabrik Hainburg (Austria), 2008-2009. Il
+    #   mobile di legno chiaro di tre quarti, con la buca del coperchio dove
+    #   stanno i tasti bianchi e un cavo arrotolato sopra; dietro, la tastiera
+    #   nera dell'Akaphon; in basso a destra lo spigolo di un altro mobile
+    #   grigio. Nessun marchio leggibile. Tagliata in basso (è la metà
+    #   superiore): la macchina è la cosa più riconoscibile, ma non intera.
+    # extra: https://commons.wikimedia.org/wiki/File:Wurlitzer_Sideman_drum_machine_(inside)_front_view.jpg
+    #   ritaglio raddrizzato di Clusternote da «Wurlitzer Sideman drum
+    #   machine (inside).jpg» di guiltysin (Flickr «First drum machine»,
+    #   2009), CC BY 2.0. Il file dice 4488x5526 ma è un ingrandimento di un
+    #   originale 750x1000: scarico il 960. Un Sideman della Cantos
+    #   Foundation di Calgary (la descrizione dice 1957, come la vendono i
+    #   negozi; le fonti dicono 1959) aperto da dietro: in alto a destra il
+    #   disco marrone coi contatti in cerchi concentrici, a sinistra i fili e
+    #   le valvole, sotto a destra l'altoparlante grande col tweeter davanti.
+    #   Con «center 25%» nella banda entrano il disco e la parte alta
+    #   dell'altoparlante.
+    # Scartate: «National Music Centre (38265395586).jpg» (Mack Male, CC BY-SA
+    #   2.0): il Sideman aperto c'è, in una teca in basso, ma la cosa più
+    #   riconoscibile è il DX7 appeso; «Wurlitzer Sideman (1959) disc
+    #   sequencer.jpg»: 480x360, troppo piccola.
+    {
+        "slug": "sideman",
+        "numero": 104,
+        "serie": "LE DRUM MACHINE",
+        "strumento": "Wurlitzer Sideman",
+        "anno": "1959",
+        "luogo": "De Kalb, Illinois, Stati Uniti",
+        "costruttore": "Wurlitzer",
+        "specifiche": [
+            ("USCITA", "1959"),
+            ("SUONI", "10, A VALVOLE"),
+            ("RITMI", "12, SU UN DISCO"),
+            ("ALTEZZA", "66 CM"),
+        ],
+        "gancio": "Nel 1959 la Wurlitzer mette in vendita un batterista di legno, con le valvole e senza rullante",
+        "sottotitolo": "Un mobiletto da mettere accanto all'organo, con un disco di contatti che gira e 12 ritmi da sala da ballo.",
+        "la_macchina": (
+            "Si mette per terra accanto all'organo ed è alto 66 centimetri. È un "
+            "mobiletto di legno con dentro l'amplificatore e un altoparlante da "
+            "12 pollici, e sopra, in una buca del coperchio, ci sono i tasti. Sul "
+            "catalogo è il Model 5000. Il nome viene dal jazz, dove il sideman è "
+            "il musicista che accompagna il solista, e qui il solista è chi suona "
+            "l'organo o il pianoforte da solo. Della batteria ha poco. Il "
+            "rullante non c'è, al suo posto c'è una spazzola, e intorno maracas, "
+            "claves, temple block e un piatto. A me piace proprio per questo, "
+            "sembra l'orchestrina di un albergo al mare."
+        ),
+        "inventore_nome": "La Wurlitzer di De Kalb",
+        "inventore": (
+            "La Wurlitzer è la ditta dei jukebox e degli organi, con la sede a De "
+            "Kalb, nell'Illinois. Il Sideman esce nel 1959, per chi suona da "
+            "solo. Chi l'abbia progettato là dentro non sono riuscito a trovarlo "
+            "scritto da nessuna parte, e un nome a caso non ce lo metto. Sul "
+            "primato le fonti litigano. Più di un museo lo chiama la prima drum "
+            "machine in commercio, ma la Rhythmate di Harry Chamberlin era "
+            "arrivata prima, e suonava nastri di batteria vera. Il Sideman i suoi "
+            "colpi li fa da sé. Nemmeno sulla fine c'è accordo, c'è chi scrive "
+            "1964, chi 1965 e chi 1969."
+        ),
+        "come_funziona": (
+            "Un motore fa girare un disco, e sul disco ci sono contatti di metallo "
+            "messi in cerchi. Ogni contatto che passa chiude un circuito e fa "
+            "partire un colpo. I 10 suoni li fanno le valvole, di registrato non "
+            "c'è niente. Con una manopola si sceglie uno dei 12 ritmi, valzer, "
+            "tango, samba e gli altri, e il cursore del tempo fa girare il disco "
+            "più piano o più svelto. I tasti sopra servono a suonare i colpi a "
+            "mano. Sulla velocità le fonti non concordano, Popular Mechanics nel "
+            "1960 scrive da 36 a 195 battiti al minuto, altri da 34 a 150. "
+            "Ascoltate la registrazione sapendo che ogni colpo è un contatto."
+        ),
+        "richiami": [
+            ("FIG. 1", "Il disco coi contatti in cerchio"),
+            ("FIG. 2", "10 suoni a valvole, niente nastro"),
+            ("FIG. 3", "Altoparlante da 12 pollici"),
+        ],
+        "chi_lusata": [
+            {"artista": "Hal Davis",
+             "nota": "una sera, al posto del suo batterista",
+             "ig": None},
+            {"artista": "LCD Soundsystem",
+             "nota": "James Murphy lo suona in «Somebody's Calling Me» (2010)",
+             "ig": "lcdsoundsystem"},
+        ],
+        "menzioni_extra": [],
+        "da_ascoltare": {"brano": "Somebody's Calling Me", "artista": "LCD Soundsystem", "anno": "2010",
+                         "cosa": "Nelle note del disco il Sideman è accreditato a James Murphy. Il passo lento sotto il pianoforte, secondo me, è lui."},
+        "aneddoto": (
+            "Primi anni '60. Hal Davis suona l'organo in un locale, e una sera il "
+            "suo batterista non può venire. Il Sideman ce l'ha a casa, a 7 "
+            "miglia. Va a prenderlo, torna e lo attacca. A un certo punto alza "
+            "gli occhi e vede 3 coppie che ballano, sul ritmo del Sideman da "
+            "solo. All'inizio del 1961 il sindacato dei musicisti americani "
+            "decide come si usa. Le sezioni locali non lo possono vietare, ma "
+            "niente spettacoli dove di solito c'è una batteria e niente sale "
+            "dove si balla. Lo sappiamo dalla Wurlitzer stessa, che ricopia la "
+            "regola in una pagina pubblicitaria sulla rivista del sindacato e "
+            "nel titolo gli fa i complimenti."
+        ),
+        "avvertenza": "I 12 ritmi sono contatti fissati sul disco che gira. Un tredicesimo non si programma, il disco è quello.",
+        "foto": {
+            "file": "assets/foto/sideman/principale.jpg",
+            "posizione": "center 60%",
+            "autore": "andrew garton (ritaglio di Clusternote)",
+            "licenza": "CC BY-SA 2.0",
+            "fonte": "Wikimedia Commons",
+            "didascalia": "Un Sideman a una mostra in Austria. I tasti per suonare i colpi a mano stanno nella buca del coperchio",
+        },
+        "foto_extra": [
+            {"file": "assets/foto/sideman/interno.jpg",
+             "autore": "guiltysin (ritaglio di Clusternote)",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 25%",
+             "didascalia": "Aperto da dietro. In alto a destra il disco dei contatti, sotto l'altoparlante"},
+            # Le due foto sono da 960 px: ingrandite coi RITAGLI di
+            # genera_tavole (zoom 1,55-2,1) uscivano sgranate e mostravano
+            # solo il cavo. Quindi inquadrature dichiarate, senza zoom.
+            {"file": "assets/foto/sideman/principale.jpg",
+             "autore": "andrew garton (ritaglio di Clusternote)",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 85%",
+             "didascalia": "Il mobiletto di legno. La fessura sul davanti è la griglia dell'altoparlante"},
+            {"file": "assets/foto/sideman/interno.jpg",
+             "autore": "guiltysin (ritaglio di Clusternote)",
+             "licenza": "CC BY 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "right top",
+             "nel_reel": False},
+            {"file": "assets/foto/sideman/principale.jpg",
+             "autore": "andrew garton (ritaglio di Clusternote)",
+             "licenza": "CC BY-SA 2.0",
+             "fonte": "Wikimedia Commons",
+             "posizione": "center 70%",
+             "nel_reel": False,
+             "didascalia": "I tasti nella buca del coperchio, per suonare i colpi a mano"},
+        ],
+        "fonti": [
+            {"titolo": "Wurlitzer Side Man — SMEM, Friburgo",
+             "url": "https://www.smemmusic.ch/index.php/de/node/1100", "data": "2026-11-24"},
+            {"titolo": "Sideman Model 5000 — The Henry Ford",
+             "url": "https://www.thehenryford.org/collections/explore/artifact/142279", "data": "2026-11-24"},
+            {"titolo": "«Sideman» — Science Museum Group",
+             "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8631935/wurlitzer-rhythm-unit", "data": "2026-11-24"},
+            {"titolo": "SideMan — National Music Centre",
+             "url": "https://artsandculture.google.com/asset/wurlitzer-sideman-drum-machine-electromechanical-the-wurlitzer-company/0AHIbcimdgynMg", "data": "2026-11-24"},
+            {"titolo": "«Electronic Side Man» — Popular Mechanics, novembre 1960, p. 149",
+             "url": "https://archive.org/details/PopularMechanics1960", "data": "2026-11-24"},
+            {"titolo": "Pagina Wurlitzer sulla regola dell'AFM — International Musician, febbraio 1961",
+             "url": "https://worldradiohistory.com/Archive-All-Music/International-Musician/60s/International-Musician-1961-02.pdf", "data": "2026-11-24"},
+            {"titolo": "Hal Davis — Mechanical Music Digest, 31/01/1999",
+             "url": "https://www.mmdigest.com/Archives/Digests/199901/1999.01.31.06.html", "data": "2026-11-24"},
+            {"titolo": "Scott Wilson — FACT, 22/09/2016",
+             "url": "https://www.factmag.com/2016/09/22/the-14-drum-machines-that-shaped-modern-music/", "data": "2026-11-24"},
+            {"titolo": "«Drum Machines», Thom Holmes",
+             "url": "https://www.thomholmes.com/post/drum-machines-a-recorded-history-part-1-analog-drum-machines", "data": "2026-11-24"},
+            {"titolo": "«The Wurlitzer Side Man» — 120 Years of Electronic Music",
+             "url": "https://120years.net/the-side-manwurlitzerusa1959/", "data": "2026-11-24"},
+            {"titolo": "«Analogue Dreams» — The Central Shaft, 2014",
+             "url": "https://thecentralshaft.blogspot.com/2014/06/analogue-dreams-1959s-wurlitzer-sideman.html", "data": "2026-11-24"},
+            {"titolo": "«Drum machine» — Wikipedia (EN)",
+             "url": "https://en.wikipedia.org/wiki/Drum_machine", "data": "2026-11-24"},
+            {"titolo": "«Birth of the drum machine» — CDM",
+             "url": "https://cdm.link/electronic-music-history-birth-of-the-drum-machine/", "data": "2026-11-24"},
+            {"titolo": "«This Is Happening» — Wikipedia (EN), crediti dalle note del disco",
+             "url": "https://en.wikipedia.org/wiki/This_Is_Happening", "data": "2026-11-24"},
+            {"titolo": "Il Sideman aperto — MusicRadar",
+             "url": "https://musicradar.com/news/video-the-inside-of-this-1950s-drum-machine-is-a-sight-to-behold", "data": "2026-11-24"},
+        ],
+        "hashtags": ["#wurlitzersideman", "#wurlitzer", "#drummachine", "#lcdsoundsystem", "#storiadellamusica"],
+        "reel_battute": [
+            ("ELETTROFONI · N. 104", "Il sindacato vieta il Wurlitzer Sideman dove si balla"),
+            ("WURLITZER · 1959", "Il Wurlitzer Sideman esce nel 1959, per chi suona l'organo da solo."),
+            ("10 SUONI A VALVOLE", "Dentro il Sideman gira un disco di contatti, e le valvole fanno i colpi."),
+            ("PRIMI ANNI '60", "Hal Davis suona l'organo in un locale. Una sera il batterista non viene."),
+            ("3 COPPIE IN PISTA", "Hal porta il Sideman, e 3 coppie ballano sulla macchina da sola."),
+        ],
+        "reel_cta": "Mandalo al batterista che arriva sempre tardi",
+        "reel_audio": {
+            "file": "assets/audio/sideman/registrazione.mp3", "inizio": 0,
+            "autore": "circlesdrumsamples.com (Electronic Rhythm Archive)",
+            "licenza": "Pubblico dominio (PD Mark 1.0)",
+            "fonte": "Internet Archive",
+            "url": "https://archive.org/details/wurlitzer_sideman_rhythms",
+            "cosa": "un Wurlitzer Sideman, i ritmi di fabbrica (cha cha, rumba, samba, bolero, tango) presi dall'uscita, senza microfono né effetti, montati in fila",
+        },
+        "verificata": True,
+    },
 ]
 
 
