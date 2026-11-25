@@ -303,7 +303,21 @@ jobs:
         with:
           path: docs
           name: github-pages-archivio
+      # Stesso inciampo del primo deploy (25/11/2026: «No artifacts named
+      # github-pages-archivio were found» un secondo dopo il caricamento):
+      # pausa e un secondo tentativo. Qui il post è già uscito, quindi un
+      # fallimento lascia solo l'archivio indietro fino al prossimo deploy.
       - name: Redeploy Pages con archivio aggiornato
+        id: redeploy1
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-archivio
+      - name: Pausa prima del secondo redeploy
+        if: steps.redeploy1.outcome == 'failure'
+        run: sleep 60
+      - name: Redeploy Pages, secondo tentativo
+        if: steps.redeploy1.outcome == 'failure'
         uses: actions/deploy-pages@v4
         with:
           artifact_name: github-pages-archivio
