@@ -300,6 +300,10 @@
    "file": "tavole/trautonium/reel2.jpg",
    "firma": "454183c3363605e7-1"
   },
+  "tubescreamer": {
+   "file": "tavole/tubescreamer/reel2.jpg",
+   "firma": "64f07465054f68ab-1"
+  },
   "univibe": {
    "file": "tavole/univibe/reel2.jpg",
    "firma": "59159825fe392206-1"
@@ -1938,6 +1942,26 @@
    },
    "firma": "8dccf202963739fd-320-640-1280-1"
   },
+  "tubescreamer": {
+   "1280": "foto/tubescreamer-1280.jpg",
+   "320": "foto/tubescreamer-320.jpg",
+   "640": "foto/tubescreamer-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     960
+    ],
+    "320": [
+     320,
+     240
+    ],
+    "640": [
+     640,
+     480
+    ]
+   },
+   "firma": "763aaa53629ad559-320-640-1280-1"
+  },
   "univibe": {
    "1280": "foto/univibe-1280.jpg",
    "320": "foto/univibe-320.jpg",
@@ -2364,6 +2388,11 @@
    "file": "suoni/tr909.mp3",
    "firma": "bccc00e3a650cd1e-0-45-1",
    "secondi": 40.0
+  },
+  "tubescreamer": {
+   "file": "suoni/tubescreamer.mp3",
+   "firma": "86bc7ea03d97b7a8-0-45-1",
+   "secondi": 45
   },
   "univibe": {
    "file": "suoni/univibe.mp3",
