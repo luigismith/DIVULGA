@@ -243,6 +243,9 @@ jobs:
         if: (steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1') || steps.quale.outputs.online == '1'
         continue-on-error: true
         uses: actions/deploy-pages@v4
+      - name: Pausa prima del secondo deploy
+        if: ((steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1') || steps.quale.outputs.online == '1') && steps.deploy1.outcome == 'failure'
+        run: sleep 60   # vedi pubblica.yml, 25/11/2026
       - name: Deploy Pages, secondo tentativo
         if: ((steps.quale.outputs.costruire == '1' && steps.quale.outputs.prova != '1') || steps.quale.outputs.online == '1') && steps.deploy1.outcome == 'failure'
         uses: actions/deploy-pages@v4

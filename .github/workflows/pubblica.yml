@@ -252,6 +252,15 @@ jobs:
         id: deploy1
         continue-on-error: true
         uses: actions/deploy-pages@v4
+      # LEZIONE (25/11/2026): il post del mercoledì non è uscito perché i due
+      # deploy sono partiti a un secondo l'uno dall'altro, subito dopo il
+      # caricamento (910 MB, «successfully finalized»), e tutti e due hanno
+      # avuto «No artifacts named github-pages were found»: GitHub non vedeva
+      # ancora l'artifact appena caricato. Un secondo tentativo immediato
+      # ripete la stessa domanda nello stesso istante. Si aspetta un minuto.
+      - name: Pausa prima del secondo deploy
+        if: steps.deploy1.outcome == 'failure'
+        run: sleep 60
       - name: Deploy Pages, secondo tentativo
         if: steps.deploy1.outcome == 'failure'
         uses: actions/deploy-pages@v4
