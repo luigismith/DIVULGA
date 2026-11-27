@@ -92,6 +92,10 @@
    "file": "tavole/fonologia/reel2.jpg",
    "firma": "0ccbb90b2a171718-1"
   },
+  "grandmother": {
+   "file": "tavole/grandmother/reel2.jpg",
+   "firma": "7a8c56b59c371efe-1"
+  },
   "h910": {
    "file": "tavole/h910/reel2.jpg",
    "firma": "d4448905aa15e602-1"
@@ -829,6 +833,26 @@
     ]
    },
    "firma": "9390bf54f8a34582-320-640-1280-1"
+  },
+  "grandmother": {
+   "1280": "foto/grandmother-1280.jpg",
+   "320": "foto/grandmother-320.jpg",
+   "640": "foto/grandmother-640.jpg",
+   "dimensioni": {
+    "1280": [
+     1280,
+     853
+    ],
+    "320": [
+     320,
+     213
+    ],
+    "640": [
+     640,
+     427
+    ]
+   },
+   "firma": "c3fd1d4121c20b7f-320-640-1280-1"
   },
   "h910": {
    "1280": "foto/h910-1280.jpg",
@@ -2221,6 +2245,11 @@
    "file": "suoni/fairlight.mp3",
    "firma": "42bc7fff49e08678-0-45-1",
    "secondi": 13.0
+  },
+  "grandmother": {
+   "file": "suoni/grandmother.mp3",
+   "firma": "6f2beee93330c005-0-45-1",
+   "secondi": 45
   },
   "hammond": {
    "file": "suoni/hammond.mp3",
